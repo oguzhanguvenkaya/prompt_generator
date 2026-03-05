@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env.local
+.env
+*.tsbuildinfo
+.DS_Store
+.vercel
+*.docx
+*.zip
+~$*
+images/
+*.html
