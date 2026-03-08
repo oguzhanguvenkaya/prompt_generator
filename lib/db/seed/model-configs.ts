@@ -53,28 +53,97 @@ export const modelConfigsSeed: NewModelConfig[] = [
     isActive: true,
   },
   {
-    id: "lovart",
+    id: "lovart-nano-banana-pro",
     category: "image",
-    name: "Lovart",
+    name: "Nano Banana Pro",
     provider: "lovart",
     promptFormat: "natural",
     supportedSizes: [
       { name: "1:1", width: 1024, height: 1024, label: "Square 1:1" },
-      { name: "16:9", width: 1024, height: 576, label: "Landscape 16:9" },
-      { name: "9:16", width: 576, height: 1024, label: "Portrait 9:16" },
-      { name: "custom", width: null, height: null, label: "Custom" },
+      { name: "16:9", width: 1344, height: 768, label: "Landscape 16:9" },
+      { name: "9:16", width: 768, height: 1344, label: "Portrait 9:16" },
+    ],
+    qualityOptions: [
+      { id: "high", label: "High" },
+      { id: "draft", label: "Draft" },
+    ],
+    stylePresets: ["Photograph", "Painting", "3D Render", "Sketch"],
+    supportsNegativePrompt: true,
+    maxPromptLength: 1000,
+    documentationUrl: "https://lovart.ai/docs",
+    specificRules:
+      "Nano Banana Pro via Lovart. Strong action verb openings (Generate, Create, Edit). Cultural references boost quality (+1.5★). Named lighting: Rembrandt, butterfly, split. Supports 14 reference images with @reference tags.",
+    isActive: true,
+  },
+  {
+    id: "lovart-seedream-5.0",
+    category: "image",
+    name: "Seedream 5.0",
+    provider: "lovart",
+    promptFormat: "natural",
+    supportedSizes: [
+      { name: "1:1", width: 1024, height: 1024, label: "Square 1:1" },
+      { name: "16:9", width: 1344, height: 768, label: "Landscape 16:9" },
+      { name: "9:16", width: 768, height: 1344, label: "Portrait 9:16" },
+      { name: "4K", width: 2048, height: 2048, label: "4K Square" },
     ],
     qualityOptions: [
       { id: "high", label: "High" },
       { id: "draft", label: "Draft" },
       { id: "300dpi", label: "300 DPI (Print)" },
     ],
-    stylePresets: ["Photograph", "Painting", "3D Render", "Sketch"],
-    supportsNegativePrompt: false,
-    maxPromptLength: null,
+    stylePresets: ["Photograph", "Painting", "Commercial", "Text Render"],
+    supportsNegativePrompt: true,
+    maxPromptLength: 1000,
     documentationUrl: "https://lovart.ai/docs",
     specificRules:
-      "Lovart uses natural language prompts. Supports guidance and style_strength parameters for fine-tuning output. Guidance controls how closely the model follows the prompt (range 1-20). Style_strength adjusts the intensity of the selected style preset (range 0-1).",
+      "Seedream 5.0 via Lovart. Surface materials boost quality (+1.0★): 'light oak', 'white marble', 'ceramic'. Light direction + source critical (+1.2★). Publication anchors (+1.3★): 'Architectural Digest', 'Vogue editorial'. E-commerce presets: white bg, ghost mannequin, flat lay.",
+    isActive: true,
+  },
+  {
+    id: "lovart-flux-2",
+    category: "image",
+    name: "Flux 2",
+    provider: "lovart",
+    promptFormat: "natural",
+    supportedSizes: [
+      { name: "1:1", width: 1024, height: 1024, label: "Square 1:1" },
+      { name: "16:9", width: 1440, height: 810, label: "Landscape 16:9" },
+      { name: "9:16", width: 810, height: 1440, label: "Portrait 9:16" },
+    ],
+    qualityOptions: [
+      { id: "high", label: "High" },
+      { id: "draft", label: "Draft" },
+    ],
+    stylePresets: ["Photograph", "Art", "Graphic Design"],
+    supportsNegativePrompt: true,
+    maxPromptLength: 1000,
+    documentationUrl: "https://lovart.ai/docs",
+    specificRules:
+      "Flux 2 via Lovart. Natural language sentences are critical (+2.0★ impact). Subject-first ordering (+1.5★). Camera + lens specs boost quality (+1.3★): 'Sony A7IV with 85mm f/1.8'. Optimal 40-50 words. HEX color support. Anti-pattern: keyword lists, (word:1.5) syntax.",
+    isActive: true,
+  },
+  {
+    id: "lovart-gpt-image-1",
+    category: "image",
+    name: "GPT Image-1",
+    provider: "lovart",
+    promptFormat: "natural",
+    supportedSizes: [
+      { name: "1:1", width: 1024, height: 1024, label: "Square 1:1" },
+      { name: "16:9", width: 1792, height: 1024, label: "Landscape 16:9" },
+      { name: "9:16", width: 1024, height: 1792, label: "Portrait 9:16" },
+    ],
+    qualityOptions: [
+      { id: "high", label: "High" },
+      { id: "standard", label: "Standard" },
+    ],
+    stylePresets: ["Photorealistic", "Digital Art", "Text Render", "Infographic"],
+    supportsNegativePrompt: true,
+    maxPromptLength: 1000,
+    documentationUrl: "https://lovart.ai/docs",
+    specificRules:
+      "GPT Image-1 via Lovart. OpenAI's image generation model. Strong at text rendering in images and infographic-style layouts. Use clear, descriptive natural language.",
     isActive: true,
   },
   {
@@ -153,6 +222,29 @@ export const modelConfigsSeed: NewModelConfig[] = [
       "Leonardo Lightning XL is optimized for fast generation with good quality. Best for rapid iteration and concept exploration. Supports negative prompts. Use clear, direct descriptions for best results.",
     isActive: true,
   },
+  {
+    id: "leonardo-ideogram-3",
+    category: "image",
+    name: "Ideogram 3",
+    provider: "leonardo",
+    promptFormat: "natural",
+    supportedSizes: [
+      { name: "1:1", width: 1024, height: 1024, label: "Square 1:1" },
+      { name: "16:9", width: 1344, height: 768, label: "Landscape 16:9" },
+      { name: "9:16", width: 768, height: 1344, label: "Portrait 9:16" },
+    ],
+    qualityOptions: [
+      { id: "quality", label: "Quality" },
+      { id: "fast", label: "Fast" },
+    ],
+    stylePresets: ["Typography", "Graphic Design"],
+    supportsNegativePrompt: true,
+    maxPromptLength: 1500,
+    documentationUrl: "https://docs.leonardo.ai",
+    specificRules:
+      "Ideogram 3 via Leonardo AI. Excels at typography and text rendering in images. Best for logos, posters, and designs with embedded text. Use clear font descriptions and text placement instructions.",
+    isActive: true,
+  },
 
   // ─── VIDEO Models ───────────────────────────────────────────────────────────
 
@@ -226,7 +318,7 @@ export const modelConfigsSeed: NewModelConfig[] = [
     isActive: true,
   },
   {
-    id: "higgsfield-veo",
+    id: "higgsfield-veo-3.1",
     category: "video",
     name: "Veo 3.1 (Higgsfield)",
     provider: "higgsfield",
@@ -248,7 +340,7 @@ export const modelConfigsSeed: NewModelConfig[] = [
     isActive: true,
   },
   {
-    id: "higgsfield-wan",
+    id: "higgsfield-wan-2.5",
     category: "video",
     name: "WAN 2.5 (Higgsfield)",
     provider: "higgsfield",
@@ -271,7 +363,7 @@ export const modelConfigsSeed: NewModelConfig[] = [
     isActive: true,
   },
   {
-    id: "higgsfield-sora",
+    id: "higgsfield-sora-2",
     category: "video",
     name: "Sora 2 (Higgsfield)",
     provider: "higgsfield",
@@ -291,6 +383,29 @@ export const modelConfigsSeed: NewModelConfig[] = [
     documentationUrl: "https://higgsfield.ai",
     specificRules:
       "Sora 2 via Higgsfield platform. OpenAI's video model known for realistic, cinematic output with excellent lighting control. Focus on detailed scene descriptions, atmosphere, and natural motion. Sora 2 MAX tier provides highest quality. Available with Higgsfield's face swap and character animation tools.",
+    isActive: true,
+  },
+  {
+    id: "seedance-2.0",
+    category: "video",
+    name: "Seedance 2.0",
+    provider: "bytedance",
+    promptFormat: "natural",
+    supportedSizes: [
+      { name: "16:9", width: 1920, height: 1080, label: "Landscape 16:9" },
+      { name: "9:16", width: 1080, height: 1920, label: "Portrait 9:16" },
+      { name: "1:1", width: 1080, height: 1080, label: "Square 1:1" },
+    ],
+    qualityOptions: [
+      { id: "standard", label: "Standard" },
+      { id: "high", label: "High" },
+    ],
+    stylePresets: ["Cinematic", "Physics Simulation", "Character", "Product"],
+    supportsNegativePrompt: false,
+    maxPromptLength: 1000,
+    documentationUrl: "https://jimeng.jianying.com",
+    specificRules:
+      "Seedance 2.0 by ByteDance. @Reference system (+2.0★): @Image1, @Video1, @Audio1 for multi-modal input. Physics triggers (+1.3★): 'cascade', 'billows', 'breath visible'. Multi-shot syntax (+1.5★): 'Shot 1: ... Cut to: Shot 2:'. Audio-visual sync (+1.2★). Duration strategy: 4s=test, 5-10s=social, 10-15s=narrative.",
     isActive: true,
   },
 
