@@ -72,7 +72,7 @@ export function ChatMessageList({ messages, isLoading, agentColor, onOptionSelec
           />
         );
       })}
-      {isLoading && <StreamingIndicator />}
+      {isLoading && lastAssistantIndex === -1 && <StreamingIndicator />}
       <div ref={bottomRef} />
     </div>
   );

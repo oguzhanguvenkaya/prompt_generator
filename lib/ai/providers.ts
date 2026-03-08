@@ -25,9 +25,7 @@ export function getLanguageModel(provider: string, modelId?: string) {
     case "openai":
       return openai(modelId || "gpt-5.4");
     case "openai-thinking":
-      return openai(modelId || "gpt-5.4", {
-        reasoningEffort: "high",
-      });
+      return openai(modelId || "gpt-5.4");
     case "openai-pro":
       return openai(modelId || "gpt-5.4-pro");
     case "google":
@@ -41,6 +39,23 @@ export function getLanguageModel(provider: string, modelId?: string) {
   }
 }
 
+// Text agent model mapping — model config IDs → provider + modelId
+const textModelMap: Record<string, { provider: string; modelId?: string }> = {
+  "claude-sonnet": { provider: "anthropic", modelId: "claude-sonnet-4-20250514" },
+  "claude-haiku": { provider: "anthropic", modelId: "claude-haiku-4-5-20251001" },
+  "gpt-5.4": { provider: "openai", modelId: "gpt-5.4" },
+  "gpt-5.4-pro": { provider: "openai-pro", modelId: "gpt-5.4-pro" },
+  "gemini-2.0-flash": { provider: "google", modelId: "gemini-2.0-flash" },
+  "moonshot-v1-128k": { provider: "moonshot", modelId: "moonshot-v1-128k" },
+  "qwen-plus": { provider: "alibaba", modelId: "qwen-plus" },
+};
+
+export function getTextAgentModel(targetModelId: string) {
+  const entry = textModelMap[targetModelId];
+  if (entry) return getLanguageModel(entry.provider, entry.modelId);
+  return getLanguageModel("openai"); // fallback
+}
+
 // Default conversation model (used by agents for chat)
 export function getConversationModel() {
   return openai("gpt-5.4");
@@ -48,7 +63,5 @@ export function getConversationModel() {
 
 // Conversation model with reasoning (for complex tasks like Boost evaluation)
 export function getReasoningModel() {
-  return openai("gpt-5.4", {
-    reasoningEffort: "high",
-  });
+  return openai("gpt-5.4");
 }

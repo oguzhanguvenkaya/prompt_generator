@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { ModelSelector } from "@/components/chat/model-selector";
 import { StylePresets } from "./style-presets";
 import { SizeSelector } from "./size-selector";
@@ -7,8 +8,11 @@ import { QualitySelector } from "./quality-selector";
 import { CameraSelector } from "./camera-selector";
 import { Select } from "@/components/ui/select";
 import { useChatStore } from "@/lib/store/chat-store";
-import { models, getModelsByCategory } from "@/lib/ai/models";
+import { getModelsByCategory } from "@/lib/ai/models";
 import type { AgentId, AgentCategory } from "@/lib/agents/types";
+import { ChevronDown, ChevronUp, Sparkles } from "lucide-react";
+import { SettingLabel } from "@/components/ui/info-tooltip";
+import { SettingDropdown } from "@/components/ui/setting-dropdown";
 
 // Default presets per model (client-side fallback)
 // Grouped by platform — models within the same platform share similar UI presets
@@ -78,23 +82,6 @@ const modelPresets: Record<string, {
       { label: "Metin Render", value: "text_render" },
     ],
   },
-  "lovart-seedream-4.5": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "High", value: "high" },
-      { label: "Draft", value: "draft" },
-      { label: "300 DPI", value: "300dpi" },
-    ],
-    styles: [
-      { label: "Fotoğraf", value: "photograph" },
-      { label: "Resim", value: "painting" },
-      { label: "3D Render", value: "3d_render" },
-    ],
-  },
   "lovart-flux-2": {
     sizes: [
       { label: "1:1", width: 1024, height: 1024 },
@@ -121,22 +108,14 @@ const modelPresets: Record<string, {
       { label: "High", value: "high" },
       { label: "Standard", value: "standard" },
     ],
-    styles: [],
-  },
-  "lovart-gemini-imagen-3": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
+    styles: [
+      { label: "Fotorealistik", value: "photorealistic" },
+      { label: "Dijital Art", value: "digital_art" },
+      { label: "Metin Iceren", value: "text_render" },
+      { label: "Infografik", value: "infographic" },
     ],
-    qualities: [
-      { label: "High", value: "high" },
-      { label: "Standard", value: "standard" },
-    ],
-    styles: [],
   },
-
-  // ─── Leonardo AI (Gen AI Studio) ─────────────────────────────
+  // ─── Leonardo AI ─────────────────────────────────────────────
   "leonardo-phoenix": {
     sizes: [
       { label: "1:1", width: 1024, height: 1024 },
@@ -161,117 +140,6 @@ const modelPresets: Record<string, {
       { label: "Minimalist", value: "MINIMALIST" },
       { label: "3D Render", value: "RENDER_3D" },
     ],
-  },
-  "leonardo-lucid-origin": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "Quality", value: "quality" },
-      { label: "Fast", value: "fast" },
-    ],
-    styles: [
-      { label: "Sinematik", value: "CINEMATIC" },
-      { label: "Dinamik", value: "DYNAMIC" },
-      { label: "Yaratıcı", value: "CREATIVE" },
-      { label: "Grafik Tasarım", value: "GRAPHIC_DESIGN" },
-    ],
-  },
-  "leonardo-lucid-realism": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "Quality", value: "quality" },
-      { label: "Fast", value: "fast" },
-    ],
-    styles: [
-      { label: "Fotoğraf", value: "PHOTOGRAPHY" },
-      { label: "Portre", value: "PORTRAIT" },
-      { label: "Stok Fotoğraf", value: "STOCK_PHOTO" },
-      { label: "Pro B&W", value: "PRO_BW" },
-    ],
-  },
-  "leonardo-kino-xl": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "Quality", value: "quality" },
-      { label: "Fast", value: "fast" },
-    ],
-    styles: [
-      { label: "Sinematik", value: "CINEMATIC" },
-      { label: "Film Noir", value: "FILM" },
-      { label: "Kasvetli", value: "MOODY" },
-      { label: "Retro", value: "RETRO" },
-    ],
-  },
-  "leonardo-lightning-xl": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "Fast", value: "fast" },
-    ],
-    styles: [
-      { label: "Dinamik", value: "DYNAMIC" },
-      { label: "İllüstrasyon", value: "ILLUSTRATION" },
-      { label: "Anime", value: "ANIME" },
-    ],
-  },
-  "leonardo-vision-xl": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "Quality", value: "quality" },
-      { label: "Fast", value: "fast" },
-    ],
-    styles: [
-      { label: "Fotoğraf", value: "PHOTOGRAPHY" },
-      { label: "Portre", value: "PORTRAIT" },
-      { label: "Makro", value: "MACRO" },
-      { label: "Bokeh", value: "BOKEH" },
-    ],
-  },
-  "leonardo-anime-xl": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "Quality", value: "quality" },
-      { label: "Fast", value: "fast" },
-    ],
-    styles: [
-      { label: "Anime", value: "ANIME" },
-      { label: "İllüstrasyon", value: "ILLUSTRATION" },
-      { label: "Eskiz (Renkli)", value: "SKETCH_COLOR" },
-    ],
-  },
-  "leonardo-flux-kontext": {
-    sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "16:9", width: 1344, height: 768 },
-      { label: "9:16", width: 768, height: 1344 },
-    ],
-    qualities: [
-      { label: "Quality", value: "quality" },
-      { label: "Fast", value: "fast" },
-    ],
-    styles: [],
   },
   "leonardo-ideogram-3": {
     sizes: [
@@ -300,34 +168,14 @@ const modelPresets: Record<string, {
       { label: "Standard", value: "standard" },
       { label: "Professional", value: "professional" },
     ],
-    styles: [],
+    styles: [
+      { label: "Sinematik", value: "cinematic" },
+      { label: "Gercekci", value: "realistic" },
+      { label: "Belgesel", value: "documentary" },
+      { label: "Slow Motion", value: "slow_motion" },
+    ],
   },
-  "kling-2.6": {
-    sizes: [
-      { label: "16:9", width: 1920, height: 1080 },
-      { label: "9:16", width: 1080, height: 1920 },
-      { label: "1:1", width: 1080, height: 1080 },
-    ],
-    qualities: [
-      { label: "Standard", value: "standard", costMultiplier: 1 },
-      { label: "Professional", value: "professional", costMultiplier: 1.65 },
-    ],
-    styles: [],
-  },
-  "kling-o1": {
-    sizes: [
-      { label: "16:9", width: 1920, height: 1080 },
-      { label: "9:16", width: 1080, height: 1920 },
-      { label: "1:1", width: 1080, height: 1080 },
-    ],
-    qualities: [
-      { label: "Standard", value: "standard" },
-      { label: "Professional", value: "professional" },
-    ],
-    styles: [],
-  },
-
-  // ─── Higgsfield (Multi-model Studio) ──────────────────────────
+  // ─── Higgsfield ──────────────────────────────────────────────
   "higgsfield-sora-2": {
     sizes: [
       { label: "16:9", width: 1920, height: 1080 },
@@ -342,19 +190,6 @@ const modelPresets: Record<string, {
       { label: "Gerçekçi", value: "realistic" },
       { label: "Sinematik", value: "cinematic" },
       { label: "Sanatsal", value: "artistic" },
-    ],
-  },
-  "higgsfield-sora-2-max": {
-    sizes: [
-      { label: "16:9", width: 1920, height: 1080 },
-      { label: "9:16", width: 1080, height: 1920 },
-    ],
-    qualities: [
-      { label: "MAX", value: "max" },
-    ],
-    styles: [
-      { label: "Gerçekçi", value: "realistic" },
-      { label: "Sinematik", value: "cinematic" },
     ],
   },
   "higgsfield-veo-3.1": {
@@ -388,7 +223,8 @@ const modelPresets: Record<string, {
       { label: "Dans", value: "dance" },
     ],
   },
-  "higgsfield-kling-2.6": {
+  // ─── ByteDance ──────────────────────────────────────────────
+  "seedance-2.0": {
     sizes: [
       { label: "16:9", width: 1920, height: 1080 },
       { label: "9:16", width: 1080, height: 1920 },
@@ -396,21 +232,26 @@ const modelPresets: Record<string, {
     ],
     qualities: [
       { label: "Standard", value: "standard" },
-      { label: "Professional", value: "professional" },
+      { label: "High", value: "high" },
     ],
-    styles: [],
-  },
-  "higgsfield-minimax": {
-    sizes: [
-      { label: "16:9", width: 1920, height: 1080 },
-      { label: "9:16", width: 1080, height: 1920 },
+    styles: [
+      { label: "Sinematik", value: "cinematic" },
+      { label: "Fizik Simülasyon", value: "physics" },
+      { label: "Karakter Odaklı", value: "character" },
+      { label: "Ürün", value: "product" },
     ],
-    qualities: [
-      { label: "Standard", value: "standard" },
-    ],
-    styles: [],
   },
 };
+
+const domainOptions = [
+  { label: "Genel", value: "general" },
+  { label: "Branding", value: "branding" },
+  { label: "E-Ticaret", value: "e-commerce" },
+  { label: "Illüstrasyon", value: "illustration" },
+  { label: "UI Tasarım", value: "ui-design" },
+  { label: "Fotoğrafçılık", value: "photography" },
+  { label: "Sosyal Medya", value: "social-media" },
+];
 
 const textFrameworks = [
   { label: "CO-STAR", value: "co-star" },
@@ -433,11 +274,7 @@ const durationOptionsByModel: Record<string, { label: string; value: string }[]>
     { label: "10s", value: "10s" },
     { label: "15s", value: "15s" },
   ],
-  "kling-2.6": [
-    { label: "5s", value: "5s" },
-    { label: "10s", value: "10s" },
-  ],
-  "kling-o1": [
+  "higgsfield-sora-2": [
     { label: "5s", value: "5s" },
     { label: "10s", value: "10s" },
   ],
@@ -445,10 +282,18 @@ const durationOptionsByModel: Record<string, { label: string; value: string }[]>
     { label: "4s", value: "4s" },
     { label: "6s", value: "6s" },
     { label: "8s", value: "8s" },
+    { label: "15s", value: "15s" },
+    { label: "30s", value: "30s" },
   ],
   "higgsfield-wan-2.5": [
     { label: "5s", value: "5s" },
     { label: "10s", value: "10s" },
+  ],
+  "seedance-2.0": [
+    { label: "4s", value: "4s" },
+    { label: "5s", value: "5s" },
+    { label: "10s", value: "10s" },
+    { label: "15s", value: "15s" },
   ],
 };
 const defaultDurationOptions = [
@@ -463,19 +308,21 @@ interface QuickSettingsPanelProps {
 
 export function QuickSettingsPanel({ agentId, category }: QuickSettingsPanelProps) {
   const { quickSettings, updateQuickSettings } = useChatStore();
+  const [showAdvanced, setShowAdvanced] = useState(false);
   const categoryModels = getModelsByCategory(category);
 
   const currentModel = quickSettings.model || categoryModels[0]?.id || "";
   const presets = modelPresets[currentModel];
+
+  // Check if model supports negative prompt
+  const supportsNegative = category === "image" || category === "video";
 
   return (
     <div className="border-b bg-muted/30 p-4 space-y-3">
       {/* Row 1: Model + basic settings */}
       <div className="flex flex-wrap items-end gap-4">
         <div>
-          <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 block">
-            Model
-          </label>
+          <SettingLabel label="Model" tooltip="Prompt'un hedef AI modeli. Her modelin farklı güçlü yanları ve prompt kuralları var." />
           <ModelSelector
             models={categoryModels.map((m) => ({
               id: m.id,
@@ -483,7 +330,23 @@ export function QuickSettingsPanel({ agentId, category }: QuickSettingsPanelProp
               platformLabel: m.platformLabel,
             }))}
             value={currentModel}
-            onChange={(id) => updateQuickSettings({ model: id, style: "", size: "1:1", quality: "standard" })}
+            onChange={(id) => {
+              const newPresets = modelPresets[id];
+              const firstSize = newPresets?.sizes?.[0]?.label || "1:1";
+              const firstQuality = newPresets?.qualities?.[0]?.value || "standard";
+              updateQuickSettings({ model: id, style: "", size: firstSize, quality: firstQuality });
+            }}
+          />
+        </div>
+
+        {/* Domain filter for RAG retrieval */}
+        <div>
+          <SettingLabel label="Domain" tooltip="Örnek prompt'ların hangi alandan getiriliceğini belirler. Genel = tüm alanlar. Branding, e-ticaret vb. seçerek daha ilgili örnekler alırsın." />
+          <Select
+            value={quickSettings.domain}
+            onChange={(e) => updateQuickSettings({ domain: e.target.value })}
+            options={domainOptions}
+            className="w-[140px]"
           />
         </div>
 
@@ -491,9 +354,7 @@ export function QuickSettingsPanel({ agentId, category }: QuickSettingsPanelProp
         {category === "text" && (
           <>
             <div>
-              <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 block">
-                Framework
-              </label>
+              <SettingLabel label="Framework" tooltip="CO-STAR → Context/Objective/Style/Tone/Audience/Response. RISEN → Role/Input/Steps/Expectation/Narrowing. Prompt yapılandırma şablonu." />
               <Select
                 value={quickSettings.framework}
                 onChange={(e) => updateQuickSettings({ framework: e.target.value })}
@@ -502,9 +363,7 @@ export function QuickSettingsPanel({ agentId, category }: QuickSettingsPanelProp
               />
             </div>
             <div>
-              <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 block">
-                Çıktı Formatı
-              </label>
+              <SettingLabel label="Çıktı Formatı" tooltip="Markdown → Zengin metin. Plain Text → Düz metin. JSON → Yapılandırılmış veri. XML → Etiketli yapı." />
               <Select
                 value={quickSettings.outputFormat}
                 onChange={(e) => updateQuickSettings({ outputFormat: e.target.value })}
@@ -534,24 +393,36 @@ export function QuickSettingsPanel({ agentId, category }: QuickSettingsPanelProp
 
         {/* Video: Duration */}
         {category === "video" && (
+          <SettingDropdown
+            label="Süre"
+            tooltip="Video uzunluğu. Kısa süre = daha kaliteli. Model sınırlarına göre seçenekler değişir."
+            options={(durationOptionsByModel[currentModel] || defaultDurationOptions).map((d) => ({
+              label: d.label,
+              value: d.value,
+              description: `${d.label} video süresi`,
+            }))}
+            selected={quickSettings.duration}
+            onChange={(value) => updateQuickSettings({ duration: value })}
+          />
+        )}
+
+        {/* Kling 3.0 Creativity */}
+        {currentModel === "kling-3.0" && (
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 block">
-              Süre
-            </label>
-            <div className="flex gap-1.5">
-              {(durationOptionsByModel[currentModel] || defaultDurationOptions).map((d) => (
-                <button
-                  key={d.value}
-                  onClick={() => updateQuickSettings({ duration: d.value })}
-                  className={`px-3 py-1.5 text-xs rounded-md border transition-colors ${
-                    quickSettings.duration === d.value
-                      ? "bg-primary text-primary-foreground border-primary"
-                      : "bg-background border-input hover:bg-accent"
-                  }`}
-                >
-                  {d.label}
-                </button>
-              ))}
+            <SettingLabel label="Creativity" tooltip="Düşük (0.5) = prompt'a sadık, gerçekçi. Yüksek (1.0) = yaratıcı özgürlük. Önerilen: 0.7 dengeli." />
+            <div className="flex items-center gap-2">
+              <input
+                type="range"
+                min={0.5}
+                max={1.0}
+                step={0.1}
+                value={quickSettings.creativity !== "" ? Number(quickSettings.creativity) : 0.7}
+                onChange={(e) => updateQuickSettings({ creativity: e.target.value })}
+                className="w-[100px] h-1.5 accent-primary"
+              />
+              <span className="text-xs text-muted-foreground w-[30px]">
+                {quickSettings.creativity !== "" ? Number(quickSettings.creativity) : 0.7}
+              </span>
             </div>
           </div>
         )}
@@ -572,6 +443,69 @@ export function QuickSettingsPanel({ agentId, category }: QuickSettingsPanelProp
           selected={quickSettings.cameraMovement}
           onChange={(value) => updateQuickSettings({ cameraMovement: value })}
         />
+      )}
+
+      {/* Row 4: Advanced Settings (collapsible — Leonardo AI inspired) */}
+      {category !== "text" && (
+        <div>
+          <button
+            onClick={() => setShowAdvanced(!showAdvanced)}
+            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Sparkles className="h-3 w-3" />
+            Gelişmiş Ayarlar
+            {showAdvanced ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+          </button>
+
+          {showAdvanced && (
+            <div className="mt-3 space-y-3 pl-1 border-l-2 border-muted ml-1">
+              <div className="pl-3 space-y-3">
+                {/* Negative Prompt */}
+                {supportsNegative && (
+                  <div>
+                    <SettingLabel label="Negatif Prompt" tooltip="Görselde/videoda istemediğin şeyleri yaz. Örn: 'blurry, watermark, text'. Desteklemeyen modellerde etkisiz." />
+                    <input
+                      type="text"
+                      value={quickSettings.negativePrompt}
+                      onChange={(e) => updateQuickSettings({ negativePrompt: e.target.value })}
+                      placeholder="blurry, low quality, deformed, watermark..."
+                      className="w-full text-xs px-3 py-1.5 rounded-md border bg-background placeholder:text-muted-foreground/50"
+                    />
+                  </div>
+                )}
+
+                {/* Seed */}
+                <div className="flex gap-4">
+                  <div>
+                    <SettingLabel label="Seed" tooltip="Aynı seed + aynı prompt = aynı sonuç. Tekrarlanabilir üretim için kullan. Boş bırakırsan rastgele." />
+                    <input
+                      type="text"
+                      value={quickSettings.seed}
+                      onChange={(e) => updateQuickSettings({ seed: e.target.value.replace(/\D/g, "") })}
+                      placeholder="Rastgele"
+                      className="w-[140px] text-xs px-3 py-1.5 rounded-md border bg-background placeholder:text-muted-foreground/50"
+                    />
+                  </div>
+
+                  {/* Prompt Enhance toggle */}
+                  <div>
+                    <SettingLabel label="Prompt İyileştirme" tooltip="AI modeli prompt'unu otomatik zenginleştirir. Daha detaylı ve optimize edilmiş prompt üretir." />
+                    <button
+                      onClick={() => updateQuickSettings({ promptEnhance: !quickSettings.promptEnhance })}
+                      className={`px-3 py-1.5 text-xs rounded-md border transition-colors ${
+                        quickSettings.promptEnhance
+                          ? "bg-primary text-primary-foreground border-primary"
+                          : "bg-background border-input hover:bg-accent"
+                      }`}
+                    >
+                      {quickSettings.promptEnhance ? "Açık" : "Kapalı"}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       )}
     </div>
   );

@@ -1,30 +1,224 @@
-import { streamText } from "ai";
-import { getConversationModel } from "@/lib/ai/providers";
+import { streamText, convertToModelMessages, stepCountIs, type UIMessage } from "ai";
+import { getConversationModel, getTextAgentModel } from "@/lib/ai/providers";
 import { getAgent } from "@/lib/agents/registry";
-import type { AgentId, ModelConfig } from "@/lib/agents/types";
+import { addMessage, updateSessionTitle, getMessages } from "@/lib/db/queries";
+import { searchInspirationTool } from "@/lib/tools/search-inspiration";
+import { trimMessages } from "@/lib/utils/context-window";
+import { logger } from "@/lib/utils/logger";
+import type { AgentId } from "@/lib/agents/types";
 
-export const runtime = "edge";
+// Switched from "edge" to "nodejs" for reliable logging during development.
+// Edge runtime can swallow stream callback logs in local dev.
+// Switch back to "edge" for production deployment.
+export const runtime = "nodejs";
+
+interface QuickSettings {
+  model: string;
+  size: string;
+  quality: string;
+  style: string;
+  cameraMovement: string;
+  duration: string;
+  framework: string;
+  outputFormat: string;
+  negativePrompt: string;
+  seed: string;
+  promptEnhance: boolean;
+  domain: string;
+}
+
+function buildQuickSettingsContext(qs: QuickSettings, agentCategory: string): string {
+  const lines: string[] = ["## Kullanıcının Seçili Ayarları"];
+  if (qs.size) lines.push(`- Boyut: ${qs.size}`);
+  if (qs.quality) lines.push(`- Kalite: ${qs.quality}`);
+  if (qs.style) lines.push(`- Stil Preset: ${qs.style}`);
+  if (agentCategory === "video") {
+    if (qs.cameraMovement && qs.cameraMovement !== "static")
+      lines.push(`- Kamera Hareketi: ${qs.cameraMovement}`);
+    if (qs.duration) lines.push(`- Süre: ${qs.duration}`);
+  }
+  if (agentCategory === "text") {
+    if (qs.framework) lines.push(`- Framework: ${qs.framework}`);
+    if (qs.outputFormat) lines.push(`- Çıktı Formatı: ${qs.outputFormat}`);
+  }
+  if (qs.negativePrompt) lines.push(`- Negatif Prompt: ${qs.negativePrompt}`);
+  if (qs.seed) lines.push(`- Seed: ${qs.seed}`);
+  if (qs.promptEnhance) lines.push(`- Prompt İyileştirme: Açık`);
+  lines.push("\nBu ayarları ürettiğin prompt'a yansıt. Kullanıcı bu parametreleri zaten seçti, tekrar sorma.");
+  lines.push("Boyut ve kalite bilgisini prompt metnine EKLEME — bunlar API parametreleri olarak ayrı gönderilir.");
+  return lines.join("\n");
+}
 
 export async function POST(req: Request) {
-  const { messages, agentId, targetModel, modelConfig } = await req.json();
+  const requestStart = Date.now();
+
+  let body: Record<string, unknown>;
+  try {
+    body = await req.json();
+  } catch (e) {
+    return new Response(JSON.stringify({ error: "Invalid JSON" }), { status: 400 });
+  }
+
+  const { messages, agentId, targetModel, quickSettings, sessionId } = body as {
+    messages: UIMessage[];
+    agentId: string;
+    targetModel?: string;
+    quickSettings?: QuickSettings;
+    sessionId?: string;
+  };
+
+  logger.info("CHAT", "━━━ New request ━━━", {
+    agentId,
+    targetModel: targetModel || "none",
+    sessionId: sessionId || "new",
+    messageCount: messages?.length || 0,
+  });
 
   const agent = getAgent(agentId as AgentId);
 
-  // Build system prompt with model-specific rules
+  // Build system prompt with model-specific rules + quick settings
   let systemPrompt = agent.systemPrompt;
-  if (modelConfig) {
-    systemPrompt +=
-      "\n\n" + agent.getModelSpecificPrompt(modelConfig as ModelConfig);
+  if (targetModel) {
+    systemPrompt += "\n\n" + agent.getModelSpecificPrompt(targetModel);
+  }
+  if (quickSettings) {
+    systemPrompt += "\n\n" + buildQuickSettingsContext(quickSettings, agent.category);
   }
 
-  // Use GPT-5.4 as the default conversation model for all agents
-  const model = getConversationModel();
-
-  const result = streamText({
-    model,
-    system: systemPrompt,
-    messages,
+  logger.debug("CHAT", "System prompt built", {
+    length: systemPrompt.length,
+    hasQuickSettings: !!quickSettings,
+    domain: quickSettings?.domain || "none",
   });
 
-  return result.toDataStreamResponse();
+  // Save user message to DB if session exists
+  if (sessionId) {
+    const lastMsg = messages[messages.length - 1];
+    if (lastMsg?.role === "user") {
+      // v6: extract text from parts array
+      const content = lastMsg.parts
+        .filter((p): p is { type: "text"; text: string } => p.type === "text" && "text" in p)
+        .map((p) => p.text)
+        .join("") || "";
+      logger.debug("CHAT", "Saving user message to DB", {
+        preview: content.slice(0, 80),
+      });
+
+      await addMessage(
+        sessionId,
+        "user",
+        content
+      );
+
+      // Auto-generate title from first user message
+      const existing = await getMessages(sessionId);
+      if (existing.length <= 1) {
+        const title = content.slice(0, 50) || "Yeni sohbet";
+        await updateSessionTitle(sessionId, title);
+      }
+    }
+  }
+
+  const model = agent.category === "text" && targetModel
+    ? getTextAgentModel(targetModel)
+    : getConversationModel();
+
+  try {
+    const coreMessages = await convertToModelMessages(messages);
+    const trimmedMessages = trimMessages(coreMessages);
+
+    logger.info("CHAT", "Starting streamText", {
+      model: targetModel || "gpt-5.4",
+      tools: "search_inspiration",
+      maxSteps: 3,
+      trimmedMessageCount: trimmedMessages.length,
+    });
+    const result = streamText({
+      model,
+      system: systemPrompt,
+      messages: trimmedMessages,
+      tools: {
+        search_inspiration: searchInspirationTool,
+      },
+      stopWhen: stepCountIs(3),
+      experimental_download: async (downloads) => {
+        // Handle data URLs inline instead of trying to fetch them
+        return downloads.map(({ url }) => {
+          if (url.protocol === "data:") {
+            const dataUrl = url.toString();
+            const commaIdx = dataUrl.indexOf(",");
+            if (commaIdx === -1) return null;
+            const meta = dataUrl.slice(5, commaIdx); // after "data:" before ","
+            const mediaType = meta.split(";")[0] || undefined;
+            const base64 = dataUrl.slice(commaIdx + 1);
+            const data = new Uint8Array(Buffer.from(base64, "base64"));
+            return { data, mediaType };
+          }
+          return null; // Let SDK handle non-data URLs normally
+        });
+      },
+      onChunk: (() => {
+        let textStartLogged = false;
+        return ({ chunk }: { chunk: Record<string, unknown> }) => {
+          if (chunk.type === "tool-call") {
+            logger.info("STREAM", "Tool call chunk", {
+              toolName: chunk.toolName,
+              argsPreview: JSON.stringify(chunk.input).slice(0, 120),
+            });
+          } else if (chunk.type === "tool-result") {
+            const res = chunk.output as unknown as Record<string, unknown> | undefined;
+            logger.info("STREAM", "Tool result chunk", {
+              toolName: chunk.toolName,
+              exampleCount: Array.isArray(res?.examples) ? res.examples.length : "N/A",
+            });
+          } else if (chunk.type === "text-delta" && !textStartLogged) {
+            textStartLogged = true;
+            logger.info("STREAM", "Text streaming started");
+          }
+        };
+      })(),
+      async onStepFinish({ stepNumber, toolCalls, toolResults, text, finishReason }) {
+        const elapsed = Date.now() - requestStart;
+        const hasToolCalls = toolCalls && toolCalls.length > 0;
+        logger.info("CHAT", `Step #${stepNumber} completed`, {
+          elapsed: `${elapsed}ms`,
+          finishReason: finishReason || "unknown",
+          toolCalls: hasToolCalls ? toolCalls.map((tc) => tc.toolName).join(", ") : "none",
+          toolResults: toolResults?.length || 0,
+          textLength: text?.length || 0,
+        });
+      },
+      async onFinish({ text, steps, usage }) {
+        const elapsed = Date.now() - requestStart;
+        const toolCallSteps = steps?.filter((s) => s.toolCalls && s.toolCalls.length > 0).length || 0;
+
+        logger.info("CHAT", "━━━ Stream finished ━━━", {
+          totalDuration: `${elapsed}ms`,
+          steps: steps?.length || 0,
+          toolCallSteps,
+          textLength: text?.length || 0,
+          tokens: usage ? `${usage.inputTokens}+${usage.outputTokens}` : "unknown",
+        });
+
+        if (sessionId && text) {
+          await addMessage(sessionId, "assistant", text);
+          logger.debug("CHAT", "Assistant message saved to DB");
+        }
+      },
+    });
+
+    logger.info("CHAT", "Stream created, sending response...");
+    return result.toUIMessageStreamResponse();
+  } catch (error) {
+    const elapsed = Date.now() - requestStart;
+    const message = error instanceof Error ? error.message : String(error);
+    logger.error("CHAT", "━━━ Stream FAILED ━━━", {
+      elapsed: `${elapsed}ms`,
+      error: message,
+    });
+    return new Response(JSON.stringify({ error: message }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
 }
