@@ -1,6 +1,6 @@
 import { generateQueryEmbedding } from "@/lib/embeddings/openai";
 import { rerankDocuments } from "@/lib/rerank/cohere";
-import { vectorSearch } from "@/lib/search/hybrid-search";
+import { vectorSearch, type SearchResult } from "@/lib/search/hybrid-search";
 import { generateText } from "ai";
 import { openai } from "@ai-sdk/openai";
 import { logger, withTiming } from "@/lib/utils/logger";
@@ -58,6 +58,73 @@ export interface ResearchResult {
 
 const MODULE = "RESEARCH";
 
+interface CandidateSearchParams {
+  queryEmbedding: number[];
+  category: "text" | "image" | "video";
+  targetModel?: string;
+  domain?: string;
+  limit: number;
+}
+
+function getTargetModelFallbacks(targetModel: string): string[] {
+  const fallbacks: string[] = [];
+
+  // Legacy rows in some datasets use generic "lovart" instead of specific model IDs.
+  if (targetModel.startsWith("lovart-")) {
+    fallbacks.push("lovart");
+  }
+
+  // Keep a safe fallback for model-family compatibility.
+  if (targetModel === "higgsfield-sora-2-max") {
+    fallbacks.push("higgsfield-sora-2");
+  }
+
+  return [...new Set(fallbacks.filter((m) => m !== targetModel))];
+}
+
+async function fetchVectorCandidates(
+  params: CandidateSearchParams
+): Promise<SearchResult[]> {
+  const { queryEmbedding, category, targetModel, domain, limit } = params;
+  const baseParams = {
+    queryEmbedding,
+    category,
+    limit,
+    ...(domain && domain !== "general" ? { domain } : {}),
+  };
+
+  if (!targetModel) {
+    return vectorSearch(baseParams);
+  }
+
+  const strictResults = await vectorSearch({ ...baseParams, targetModel });
+  if (strictResults.length > 0) {
+    return strictResults;
+  }
+
+  for (const fallbackModel of getTargetModelFallbacks(targetModel)) {
+    const fallbackResults = await vectorSearch({
+      ...baseParams,
+      targetModel: fallbackModel,
+    });
+    if (fallbackResults.length > 0) {
+      logger.warn(MODULE, "No strict model matches; used fallback model", {
+        requestedModel: targetModel,
+        fallbackModel,
+        candidateCount: fallbackResults.length,
+      });
+      return fallbackResults;
+    }
+  }
+
+  logger.warn(MODULE, "No model-specific matches; falling back to category/domain search", {
+    requestedModel: targetModel,
+    category,
+    domain: domain || "general",
+  });
+  return vectorSearch(baseParams);
+}
+
 /**
  * Research pipeline: embedding search → rerank → LLM annotation
  */
@@ -90,13 +157,13 @@ export async function executeResearch(
     logger.info(MODULE, "Embedding cache hit", { query: enrichedQuery.slice(0, 60) });
   }
 
-  // 3. Vector search — top 10 candidates
-  // targetModel filter skipped: LLM model names don't match DB model IDs.
-  // domain filter applied when user explicitly selects (dropdown values match DB).
+  // 3. Vector search — top candidates
+  // Try strict model filter first, then safe fallback(s) to keep recall high.
   const candidates = await withTiming(MODULE, "pgvector search", () =>
-    vectorSearch({
+    fetchVectorCandidates({
       queryEmbedding,
       category,
+      ...(targetModel ? { targetModel } : {}),
       limit: 10,
       ...(domain && domain !== "general" ? { domain } : {}),
     })
@@ -123,34 +190,54 @@ export async function executeResearch(
     return parts.join(" | ");
   });
 
-  const rerankResults = await withTiming(MODULE, "Cohere rerank", () =>
-    rerankDocuments({
-      query: enrichedQuery,
-      documents: documentsForRerank,
-      topN: maxResults,
-      relevanceThreshold: 0.3,
-    })
-  );
+  let rankedCandidates: CandidateWithScore[];
+  try {
+    const rerankResults = await withTiming(MODULE, "Cohere rerank", () =>
+      rerankDocuments({
+        query: enrichedQuery,
+        documents: documentsForRerank,
+        topN: maxResults,
+        relevanceThreshold: 0.3,
+      })
+    );
 
-  logger.info(MODULE, "Rerank results", {
-    inputCount: candidates.length,
-    passedThreshold: rerankResults.length,
-    scores: rerankResults.map((r) => r.relevanceScore.toFixed(3)).join(", ") || "none",
-  });
+    logger.info(MODULE, "Rerank results", {
+      inputCount: candidates.length,
+      passedThreshold: rerankResults.length,
+      scores: rerankResults.map((r) => r.relevanceScore.toFixed(3)).join(", ") || "none",
+    });
 
-  if (rerankResults.length === 0) {
-    logger.warn(MODULE, "All candidates below rerank threshold — pipeline ending");
-    return {
-      examples: [],
-      searchSummary: "Yeterli benzerlikte örnek bulunamadı.",
-    };
+    const mappedCandidates = rerankResults
+      .map((r) => {
+        const candidate = candidates[r.index];
+        if (!candidate) return null;
+        return {
+          ...candidate,
+          relevanceScore: r.relevanceScore,
+        };
+      })
+      .filter(
+        (c): c is SearchResult & { relevanceScore: number } => c !== null
+      );
+
+    if (mappedCandidates.length > 0) {
+      rankedCandidates = mappedCandidates;
+    } else {
+      logger.warn(MODULE, "Rerank returned no usable matches; using vector similarity fallback");
+      rankedCandidates = candidates.slice(0, maxResults).map((c) => ({
+        ...c,
+        relevanceScore: c.similarity,
+      }));
+    }
+  } catch (err) {
+    logger.warn(MODULE, "Cohere rerank unavailable; using vector similarity fallback", {
+      error: err instanceof Error ? err.message : String(err),
+    });
+    rankedCandidates = candidates.slice(0, maxResults).map((c) => ({
+      ...c,
+      relevanceScore: c.similarity,
+    }));
   }
-
-  // 5. Map reranked results back to candidates
-  const rankedCandidates = rerankResults.map((r) => ({
-    ...candidates[r.index],
-    relevanceScore: r.relevanceScore,
-  }));
 
   // 6. LLM Annotation
   const annotated = await withTiming(MODULE, "LLM annotation", () =>
@@ -174,16 +261,7 @@ export async function executeResearch(
   };
 }
 
-interface CandidateWithScore {
-  prompt: string;
-  negativePrompt?: string | null;
-  description?: string | null;
-  domain?: string | null;
-  styleSet?: string | null;
-  targetModel?: string | null;
-  tags?: unknown;
-  whyItWorks?: string | null;
-  modelNotes?: string | null;
+interface CandidateWithScore extends SearchResult {
   relevanceScore: number;
 }
 

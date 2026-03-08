@@ -21,11 +21,15 @@ export default function AgentPage() {
   const router = useRouter();
   const agentId = params.agentId as string;
   const meta = agentMetas[agentId as AgentId];
-  const { updateQuickSettings } = useChatStore();
 
   const sessionId = searchParams.get("session");
   const [sessions, setSessions] = useState<SessionItem[]>([]);
   const draftCounter = useRef(0);
+  const pendingCreatedSessionIdRef = useRef<string | null>(null);
+  const lastRouteSessionIdRef = useRef<string | null>(sessionId);
+  const [chatKey, setChatKey] = useState(() =>
+    sessionId ? `session-${sessionId}` : `draft-${draftCounter.current}`
+  );
 
   // Fetch sessions from DB
   const fetchSessions = useCallback(async () => {
@@ -66,25 +70,45 @@ export default function AgentPage() {
     };
   }, [fetchSessions]);
 
+  // Only reset QuickSettings when the agent ACTUALLY changes, not on page refresh.
+  // Persisted settings survive refresh; switching agents resets to defaults.
   useEffect(() => {
-    if (meta) {
-      const { resetQuickSettings, updateQuickSettings } = useChatStore.getState();
-      resetQuickSettings();
-      updateQuickSettings({ model: meta.defaultModel });
+    if (!meta) return;
+    const store = useChatStore.getState();
+    if (store.lastAgentId === agentId) return; // Same agent — keep persisted settings
+    store.resetQuickSettings();
+    store.updateQuickSettings({ model: meta.defaultModel });
+    store.setLastAgentId(agentId);
+  }, [agentId, meta]);
+
+  useEffect(() => {
+    if (lastRouteSessionIdRef.current === sessionId) return;
+    lastRouteSessionIdRef.current = sessionId;
+
+    if (sessionId && pendingCreatedSessionIdRef.current === sessionId) {
+      pendingCreatedSessionIdRef.current = null;
+      return;
     }
-  }, [agentId]); // eslint-disable-line react-hooks/exhaustive-deps
+
+    setChatKey(sessionId ? `session-${sessionId}` : `draft-${draftCounter.current}`);
+  }, [sessionId]);
 
   // "Yeni Sohbet" just navigates to clean URL — no DB session created yet
   const handleNewSession = useCallback(() => {
     draftCounter.current += 1;
+    pendingCreatedSessionIdRef.current = null;
+    setChatKey(`draft-${draftCounter.current}`);
     router.push(`/agent/${agentId}`);
   }, [agentId, router]);
 
-  // Called by ChatContainer when first message is sent (lazy session creation)
-  // Use replaceState instead of router.push to update URL without remounting ChatContainer.
-  // router.push changes the key prop → full remount → pending message + images lost.
+  // Called by ChatContainer when the first message creates a real session from a draft.
+  // Update the URL, but keep the current ChatContainer instance alive so the active stream survives.
   const handleSessionCreated = useCallback((session: { id: string; title: string | null; createdAt: string }) => {
-    setSessions((prev) => [session, ...prev]);
+    pendingCreatedSessionIdRef.current = session.id;
+    setSessions((prev) => {
+      if (prev.some((item) => item.id === session.id)) return prev;
+      return [session, ...prev];
+    });
     window.history.replaceState(null, "", `/agent/${agentId}?session=${session.id}`);
   }, [agentId]);
 
@@ -137,7 +161,7 @@ export default function AgentPage() {
         />
         <div className="flex-1 flex flex-col min-w-0 min-h-0 overflow-hidden">
           <ChatContainer
-            key={sessionId ?? `draft-${draftCounter.current}`}
+            key={chatKey}
             agentId={agentId as AgentId}
             agentColor={meta.color}
             sessionId={sessionId ?? undefined}

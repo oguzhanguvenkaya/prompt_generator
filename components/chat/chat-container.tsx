@@ -7,6 +7,7 @@ import { ChatMessageList } from "./chat-message-list";
 import { ChatInput } from "./chat-input";
 import type { ImageAttachment } from "./chat-input";
 import type { AgentId } from "@/lib/agents/types";
+import { buildMessageParts } from "@/lib/chat/message-parts";
 import { useChatStore } from "@/lib/store/chat-store";
 
 interface ChatContainerProps {
@@ -21,13 +22,12 @@ export function ChatContainer({ agentId, agentColor, sessionId, onSessionCreated
   const [loadingHistory, setLoadingHistory] = useState(false);
   const [activeSessionId, setActiveSessionId] = useState(sessionId);
   const historyLoaded = useRef(false);
-  const creatingSession = useRef(false);
+  const initialSessionIdRef = useRef(sessionId);
 
-  // Stable chat ID — never changes after mount. This prevents useChat from
-  // resetting messages when activeSessionId changes (draft → real session).
-  const chatId = useRef(sessionId ?? `draft-${Date.now()}`);
+  // Stable chat ID — never changes after mount.
+  const chatId = useRef(sessionId ?? `draft-${agentId}`);
 
-  // Ref always holds the latest sessionId — read by custom fetch at request time.
+  // Ref always holds the latest sessionId — read by transport at request time.
   const sessionIdRef = useRef(activeSessionId);
   sessionIdRef.current = activeSessionId;
 
@@ -35,25 +35,68 @@ export function ChatContainer({ agentId, agentColor, sessionId, onSessionCreated
   const quickSettingsRef = useRef(quickSettings);
   quickSettingsRef.current = quickSettings;
 
-  // Transport only recreates when agentId changes — settings injected via ref at request time
+  // Ref for onSessionCreated callback — avoids stale closure in transport
+  const onSessionCreatedRef = useRef(onSessionCreated);
+  onSessionCreatedRef.current = onSessionCreated;
+
+  // Session creation promise — shared between handleSubmit and transport fetch.
+  // sendMessage is called IMMEDIATELY (optimistic UI), transport fetch awaits this
+  // promise to ensure sessionId is available before the HTTP request fires.
+  const sessionPromiseRef = useRef<Promise<string | null> | null>(null);
+
+  const createSession = useCallback((): Promise<string | null> => {
+    // Already have a session
+    if (sessionIdRef.current) return Promise.resolve(sessionIdRef.current);
+    // Session creation already in progress — return existing promise
+    if (sessionPromiseRef.current) return sessionPromiseRef.current;
+
+    sessionPromiseRef.current = (async () => {
+      try {
+        const res = await fetch("/api/sessions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ agentId, targetModel: quickSettingsRef.current.model }),
+        });
+        if (!res.ok) return null;
+        const session = await res.json();
+        sessionIdRef.current = session.id;
+        setActiveSessionId(session.id);
+        onSessionCreatedRef.current?.(session);
+        return session.id;
+      } catch {
+        return null;
+      } finally {
+        sessionPromiseRef.current = null;
+      }
+    })();
+
+    return sessionPromiseRef.current;
+  }, [agentId]);
+
+  // Transport — only recreates when agentId changes.
+  // Request preparation awaits session creation before the HTTP request fires.
   const transport = useMemo(
     () =>
       new DefaultChatTransport({
         api: "/api/chat",
-        fetch: async (url, options) => {
-          if (options?.body && typeof options.body === "string") {
-            try {
-              const body = JSON.parse(options.body);
-              body.sessionId = sessionIdRef.current;
-              body.agentId = agentId;
-              body.targetModel = quickSettingsRef.current.model;
-              body.quickSettings = quickSettingsRef.current;
-              return globalThis.fetch(url, { ...options, body: JSON.stringify(body) });
-            } catch {
-              // fallback — send as-is
-            }
+        prepareSendMessagesRequest: async ({ id, messages, body, trigger, messageId }) => {
+          if (sessionPromiseRef.current) {
+            await sessionPromiseRef.current;
           }
-          return globalThis.fetch(url, options);
+
+          return {
+            body: {
+              ...body,
+              id,
+              messages,
+              trigger,
+              messageId,
+              sessionId: sessionIdRef.current,
+              agentId,
+              targetModel: quickSettingsRef.current.model,
+              quickSettings: quickSettingsRef.current,
+            },
+          };
         },
       }),
     [agentId]
@@ -69,18 +112,24 @@ export function ChatContainer({ agentId, agentColor, sessionId, onSessionCreated
 
   const isLoading = status === "submitted" || status === "streaming";
 
-  // Load message history once on mount (only if session exists)
+  // Debug: log status and message changes to diagnose stream rendering issues
   useEffect(() => {
-    if (!activeSessionId || historyLoaded.current) return;
+    console.log("[ChatContainer] status=%s messages=%d chatId=%s", status, messages.length, chatId.current);
+  }, [status, messages.length]);
+
+  // Load message history once on mount — only for sessions that existed at mount time.
+  useEffect(() => {
+    const historySessionId = initialSessionIdRef.current;
+    if (!historySessionId || historyLoaded.current) return;
     historyLoaded.current = true;
     setLoadingHistory(true);
-    fetch(`/api/sessions/${activeSessionId}/messages`)
+    fetch(`/api/sessions/${historySessionId}/messages`)
       .then((res) => res.json())
       .then((dbMessages: Array<{ id: string; role: string; content: string; attachments?: unknown[] }>) => {
         const msgs: UIMessage[] = dbMessages.map((m) => ({
           id: m.id,
           role: m.role as UIMessage["role"],
-          parts: [{ type: "text" as const, text: m.content }],
+          parts: buildMessageParts(m.content, m.attachments),
         }));
         if (msgs.length > 0) {
           setMessages(msgs);
@@ -88,39 +137,18 @@ export function ChatContainer({ agentId, agentColor, sessionId, onSessionCreated
       })
       .catch(() => {})
       .finally(() => setLoadingHistory(false));
-  }, [activeSessionId, setMessages]);
+  }, [setMessages]);
 
-  // Create session lazily on first message
-  const ensureSession = useCallback(async (): Promise<string | null> => {
-    if (activeSessionId) return activeSessionId;
-    if (creatingSession.current) return null;
-    creatingSession.current = true;
-    try {
-      const res = await fetch("/api/sessions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ agentId, targetModel: quickSettings.model }),
-      });
-      if (!res.ok) return null;
-      const session = await res.json();
-      // Update both ref (immediate) and state (triggers re-render)
-      sessionIdRef.current = session.id;
-      setActiveSessionId(session.id);
-      onSessionCreated?.(session);
-      return session.id;
-    } catch {
-      return null;
-    } finally {
-      creatingSession.current = false;
+  // Send message: trigger session creation (non-blocking) then sendMessage immediately.
+  // The optimistic user message (text + files) appears in UI instantly.
+  // Transport request preparation will await session creation before firing the HTTP request.
+  const handleSubmit = useCallback((content: string, images?: ImageAttachment[]) => {
+    // Kick off session creation if needed (don't await — let transport handle it)
+    if (!sessionIdRef.current) {
+      createSession();
     }
-  }, [activeSessionId, agentId, quickSettings.model, onSessionCreated]);
 
-  const handleSubmit = async (content: string, images?: ImageAttachment[]) => {
-    const sid = await ensureSession();
-    if (!sid) return;
-
-    // sendMessage immediately — custom fetch reads sessionIdRef.current
-    // which is already set (no need to wait for React re-render)
+    // Send IMMEDIATELY — optimistic message appears in UI with text + images
     if (images && images.length > 0) {
       const files = images.map((img) => ({
         type: "file" as const,
@@ -131,13 +159,14 @@ export function ChatContainer({ agentId, agentColor, sessionId, onSessionCreated
     } else {
       sendMessage({ text: content });
     }
-  };
+  }, [createSession, sendMessage]);
 
-  const handleOptionSelect = async (text: string) => {
-    const sid = await ensureSession();
-    if (!sid) return;
+  const handleOptionSelect = useCallback((text: string) => {
+    if (!sessionIdRef.current) {
+      createSession();
+    }
     sendMessage({ text });
-  };
+  }, [createSession, sendMessage]);
 
   const allowImages = agentId === "pixel-forge" || agentId === "motion-lab";
 
