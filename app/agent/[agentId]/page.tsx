@@ -1,28 +1,70 @@
 "use client";
 
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
-import { Header } from "@/components/layout/header";
+import { useParams, useSearchParams, useRouter } from "next/navigation";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { Sidebar } from "@/components/layout/sidebar";
 import { ChatContainer } from "@/components/chat/chat-container";
 import { QuickSettingsPanel } from "@/components/agent/quick-settings-panel";
 import { useChatStore } from "@/lib/store/chat-store";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, PenTool, Palette, Film } from "lucide-react";
-import Link from "next/link";
 import type { AgentId, AgentCategory } from "@/lib/agents/types";
+import { agentMetas } from "@/lib/agents/agent-meta";
 
-const agentMeta: Record<string, { name: string; category: AgentCategory; icon: React.ElementType; color: string; defaultModel: string }> = {
-  "text-craft": { name: "TextCraft", category: "text", icon: PenTool, color: "text-indigo-600", defaultModel: "claude-sonnet" },
-  "pixel-forge": { name: "PixelForge", category: "image", icon: Palette, color: "text-pink-600", defaultModel: "recraft-v3" },
-  "motion-lab": { name: "MotionLab", category: "video", icon: Film, color: "text-amber-600", defaultModel: "kling-2.6" },
-};
+interface SessionItem {
+  id: string;
+  title: string | null;
+  createdAt: string;
+}
 
 export default function AgentPage() {
   const params = useParams();
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const agentId = params.agentId as string;
-  const meta = agentMeta[agentId];
-  const { sessions, currentSessionId, updateQuickSettings } = useChatStore();
+  const meta = agentMetas[agentId as AgentId];
+  const { updateQuickSettings } = useChatStore();
+
+  const sessionId = searchParams.get("session");
+  const [sessions, setSessions] = useState<SessionItem[]>([]);
+  const draftCounter = useRef(0);
+
+  // Fetch sessions from DB
+  const fetchSessions = useCallback(async () => {
+    try {
+      const res = await fetch(`/api/sessions?agentId=${agentId}`);
+      if (res.ok) {
+        const data = await res.json();
+        setSessions(data);
+      }
+    } catch {
+      // silently fail
+    }
+  }, [agentId]);
+
+  useEffect(() => {
+    fetchSessions();
+  }, [fetchSessions]);
+
+  // Re-fetch sessions when tab becomes visible (instead of aggressive polling)
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.visibilityState === "visible") {
+        fetchSessions();
+      }
+    };
+    document.addEventListener("visibilitychange", handleVisibility);
+
+    // Light polling only when tab is active — 15s interval
+    const interval = setInterval(() => {
+      if (document.visibilityState === "visible") {
+        fetchSessions();
+      }
+    }, 15000);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibility);
+      clearInterval(interval);
+    };
+  }, [fetchSessions]);
 
   useEffect(() => {
     if (meta) {
@@ -30,26 +72,46 @@ export default function AgentPage() {
     }
   }, [agentId]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // "Yeni Sohbet" just navigates to clean URL — no DB session created yet
+  const handleNewSession = useCallback(() => {
+    draftCounter.current += 1;
+    router.push(`/agent/${agentId}`);
+  }, [agentId, router]);
+
+  // Called by ChatContainer when first message is sent (lazy session creation)
+  // Use replaceState instead of router.push to update URL without remounting ChatContainer.
+  // router.push changes the key prop → full remount → pending message + images lost.
+  const handleSessionCreated = useCallback((session: { id: string; title: string | null; createdAt: string }) => {
+    setSessions((prev) => [session, ...prev]);
+    window.history.replaceState(null, "", `/agent/${agentId}?session=${session.id}`);
+  }, [agentId]);
+
+  const handleDeleteSession = useCallback(async (id: string) => {
+    try {
+      await fetch(`/api/sessions/${id}`, { method: "DELETE" });
+      setSessions((prev) => prev.filter((s) => s.id !== id));
+      if (sessionId === id) {
+        router.push(`/agent/${agentId}`);
+      }
+    } catch {
+      // silently fail
+    }
+  }, [agentId, sessionId, router]);
+
   if (!meta) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="flex-1 flex items-center justify-center">
         <p>Bilinmeyen ajan: {agentId}</p>
       </div>
     );
   }
 
   const Icon = meta.icon;
-  const agentSessions = sessions.filter((s) => s.agentId === agentId);
 
   return (
-    <div className="h-screen flex flex-col">
-      {/* Agent Header */}
-      <div className="border-b bg-background px-4 py-3 flex items-center gap-3">
-        <Link href="/">
-          <Button variant="ghost" size="icon" className="h-8 w-8">
-            <ArrowLeft className="h-4 w-4" />
-          </Button>
-        </Link>
+    <div className="flex flex-col h-full">
+      {/* Agent info bar */}
+      <div className="border-b bg-background px-4 py-2 flex items-center gap-3 shrink-0">
         <Icon className={`h-5 w-5 ${meta.color}`} />
         <h1 className="font-semibold">{meta.name}</h1>
         <span className="text-sm text-muted-foreground">— {getCategoryLabel(meta.category)} Prompt Uzmanı</span>
@@ -58,20 +120,27 @@ export default function AgentPage() {
       {/* Quick Settings */}
       <QuickSettingsPanel agentId={agentId as AgentId} category={meta.category} />
 
-      {/* Main Area: Sidebar + Chat */}
-      <div className="flex flex-1 min-h-0">
+      {/* Session Sidebar + Chat */}
+      <div className="flex flex-1 min-h-0 overflow-hidden">
         <Sidebar
-          sessions={agentSessions.map((s) => ({
+          sessions={sessions.map((s) => ({
             id: s.id,
-            title: s.title,
-            createdAt: s.createdAt.toISOString(),
+            title: s.title || "Yeni sohbet",
+            createdAt: s.createdAt,
           }))}
-          currentSessionId={currentSessionId}
+          currentSessionId={sessionId}
           agentId={agentId}
-          onNewSession={() => {}}
+          onNewSession={handleNewSession}
+          onDeleteSession={handleDeleteSession}
         />
-        <div className="flex-1 flex flex-col min-h-0">
-          <ChatContainer agentId={agentId as AgentId} />
+        <div className="flex-1 flex flex-col min-w-0 min-h-0 overflow-hidden">
+          <ChatContainer
+            key={sessionId ?? `draft-${draftCounter.current}`}
+            agentId={agentId as AgentId}
+            agentColor={meta.color}
+            sessionId={sessionId ?? undefined}
+            onSessionCreated={handleSessionCreated}
+          />
         </div>
       </div>
     </div>
