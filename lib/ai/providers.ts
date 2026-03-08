@@ -39,21 +39,26 @@ export function getLanguageModel(provider: string, modelId?: string) {
   }
 }
 
-// Text agent model mapping — model config IDs → provider + modelId
-const textModelMap: Record<string, { provider: string; modelId?: string }> = {
-  "claude-sonnet": { provider: "anthropic", modelId: "claude-sonnet-4-20250514" },
-  "claude-haiku": { provider: "anthropic", modelId: "claude-haiku-4-5-20251001" },
-  "gpt-5.4": { provider: "openai", modelId: "gpt-5.4" },
-  "gpt-5.4-pro": { provider: "openai-pro", modelId: "gpt-5.4-pro" },
-  "gemini-2.0-flash": { provider: "google", modelId: "gemini-2.0-flash" },
-  "moonshot-v1-128k": { provider: "moonshot", modelId: "moonshot-v1-128k" },
-  "qwen-plus": { provider: "alibaba", modelId: "qwen-plus" },
+import { models } from "./models";
+
+// Model ID → actual API model ID mapping for text models.
+// Only needed when UI model ID differs from the actual API model ID.
+const modelIdOverrides: Record<string, string> = {
+  "claude-sonnet": "claude-sonnet-4-20250514",
+  "claude-opus": "claude-opus-4-20250514",
+  "gpt-4o": "gpt-4o",
+  "gpt-5.4-thinking": "gpt-5.4",
+  "gemini-pro": "gemini-2.5-pro",
+  "kimi-k2.5": "kimi-k2.5",
+  "qwen": "qwen-plus",
 };
 
 export function getTextAgentModel(targetModelId: string) {
-  const entry = textModelMap[targetModelId];
-  if (entry) return getLanguageModel(entry.provider, entry.modelId);
-  return getLanguageModel("openai"); // fallback
+  const modelInfo = models.find((m) => m.id === targetModelId);
+  if (!modelInfo) return getLanguageModel("openai"); // fallback
+
+  const actualModelId = modelIdOverrides[targetModelId] || targetModelId;
+  return getLanguageModel(modelInfo.provider, actualModelId);
 }
 
 // Default conversation model (used by agents for chat)
