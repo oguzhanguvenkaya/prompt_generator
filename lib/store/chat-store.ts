@@ -1,15 +1,6 @@
 "use client";
 
 import { create } from "zustand";
-import type { AgentId } from "@/lib/agents/types";
-
-interface ChatSession {
-  id: string;
-  agentId: AgentId;
-  targetModel: string;
-  title: string;
-  createdAt: Date;
-}
 
 interface QuickSettings {
   model: string;
@@ -20,17 +11,23 @@ interface QuickSettings {
   duration: string;
   framework: string;
   outputFormat: string;
+  // Advanced settings
+  negativePrompt: string;
+  seed: string;
+  promptEnhance: boolean;
+  // Domain filter for RAG retrieval
+  domain: string;
+  // Kling 3.0 creativity slider
+  creativity: string;
 }
 
 interface ChatState {
-  currentSessionId: string | null;
-  sessions: ChatSession[];
   quickSettings: QuickSettings;
+  sidebarCollapsed: boolean;
 
-  setCurrentSession: (id: string | null) => void;
-  addSession: (session: ChatSession) => void;
   updateQuickSettings: (updates: Partial<QuickSettings>) => void;
   resetQuickSettings: () => void;
+  toggleSidebar: () => void;
 }
 
 const defaultQuickSettings: QuickSettings = {
@@ -42,17 +39,21 @@ const defaultQuickSettings: QuickSettings = {
   duration: "5s",
   framework: "co-star",
   outputFormat: "markdown",
+  negativePrompt: "",
+  seed: "",
+  promptEnhance: false,
+  domain: "general",
+  creativity: "0.7",
 };
 
+function getInitialSidebarCollapsed(): boolean {
+  if (typeof window === "undefined") return false;
+  return localStorage.getItem("sidebar-collapsed") === "true";
+}
+
 export const useChatStore = create<ChatState>((set) => ({
-  currentSessionId: null,
-  sessions: [],
   quickSettings: { ...defaultQuickSettings },
-
-  setCurrentSession: (id) => set({ currentSessionId: id }),
-
-  addSession: (session) =>
-    set((state) => ({ sessions: [session, ...state.sessions] })),
+  sidebarCollapsed: getInitialSidebarCollapsed(),
 
   updateQuickSettings: (updates) =>
     set((state) => ({
@@ -61,4 +62,11 @@ export const useChatStore = create<ChatState>((set) => ({
 
   resetQuickSettings: () =>
     set({ quickSettings: { ...defaultQuickSettings } }),
+
+  toggleSidebar: () =>
+    set((state) => {
+      const next = !state.sidebarCollapsed;
+      localStorage.setItem("sidebar-collapsed", String(next));
+      return { sidebarCollapsed: next };
+    }),
 }));
