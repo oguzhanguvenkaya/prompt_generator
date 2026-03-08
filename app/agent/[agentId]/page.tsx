@@ -68,6 +68,8 @@ export default function AgentPage() {
 
   useEffect(() => {
     if (meta) {
+      const { resetQuickSettings, updateQuickSettings } = useChatStore.getState();
+      resetQuickSettings();
       updateQuickSettings({ model: meta.defaultModel });
     }
   }, [agentId]); // eslint-disable-line react-hooks/exhaustive-deps
