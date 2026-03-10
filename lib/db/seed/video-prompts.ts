@@ -8,6 +8,9 @@ export const videoPromptsSeed = [
     tags: ["drone", "landscape", "sunrise", "4K", "aerial", "kling3"],
     quality: 0.96,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "4K drone çekimi, dağ vadisinde gün doğumu, volumetrik bulutlar",
   },
   {
     category: "video",
@@ -17,6 +20,9 @@ export const videoPromptsSeed = [
     tags: ["macro", "water", "slow-motion", "4K", "nature"],
     quality: 0.94,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Makro su damlası, ağır çekim dalgalanma efekti, prizma yansımaları",
   },
 
   // ─── Kling 2.6 ───────────────────────────────────────────────
@@ -28,6 +34,9 @@ export const videoPromptsSeed = [
     tags: ["drone", "landscape", "sunrise", "cinematic", "aerial"],
     quality: 0.93,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Sinematik drone çekimi, sisli dağ vadisinde gün doğumu",
   },
   {
     category: "video",
@@ -37,6 +46,9 @@ export const videoPromptsSeed = [
     tags: ["tea ceremony", "japan", "calm", "static", "traditional"],
     quality: 0.91,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Japon çay seremonisi, sakin atmosfer, statik kamera",
   },
   {
     category: "video",
@@ -46,6 +58,9 @@ export const videoPromptsSeed = [
     tags: ["music", "rain", "neon", "orbit", "moody", "audio"],
     quality: 0.92,
     source: "curated",
+    domain: "social-media",
+    styleSet: "photorealistic",
+    description: "Yağmurda sokak müzisyeni, neon yansımaları ve orbit kamera",
   },
 
   // ─── Kling O1 ────────────────────────────────────────────────
@@ -57,43 +72,125 @@ export const videoPromptsSeed = [
     tags: ["food", "chef", "tracking", "professional", "character-consistent"],
     quality: 0.90,
     source: "curated",
+    domain: "e-commerce",
+    styleSet: "photorealistic",
+    description: "Profesyonel şef tabak sunumu, tracking shot, karakter tutarlılığı",
   },
 
   // ─── Higgsfield Veo 3.1 ──────────────────────────────────────
   {
     category: "video",
-    targetModel: "higgsfield-veo",
+    targetModel: "higgsfield-veo-3.1",
     prompt: "Cinematic establishing shot of an ancient temple ruins at sunset. Warm golden light casting long shadows across moss-covered stone pillars. A flock of birds takes flight from the treeline. Camera: slow pan right revealing the full temple complex. Atmospheric haze, volumetric god rays. 8 seconds.",
     tags: ["temple", "ruins", "sunset", "cinematic", "pan", "veo"],
     quality: 0.93,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Antik tapınak harabeleri establishing shot, volumetrik güneş ışınları",
   },
 
   // ─── Higgsfield WAN 2.5 ──────────────────────────────────────
   {
     category: "video",
-    targetModel: "higgsfield-wan",
+    targetModel: "higgsfield-wan-2.5",
     prompt: "A young dancer performing contemporary ballet in an abandoned warehouse. Dramatic backlighting creating silhouette effect. Fluid body movements transitioning from slow to fast. Dust particles visible in light beams. Character-focused animation with detailed body mechanics. 10 seconds.",
     tags: ["dance", "character", "dramatic", "silhouette", "contemporary"],
     quality: 0.88,
     source: "curated",
+    domain: "social-media",
+    styleSet: "photorealistic",
+    description: "Çağdaş bale dansçısı, terk edilmiş depoda dramatik arka ışık",
   },
   {
     category: "video",
-    targetModel: "higgsfield-wan",
+    targetModel: "higgsfield-wan-2.5",
     prompt: "Street dancer performing breakdancing moves in an urban setting. Graffiti wall background. Camera: low angle, slight orbit. Dynamic energy, sharp transitions between freeze frames and fluid motion. Golden hour side lighting. Hip-hop atmosphere. 8 seconds.",
     tags: ["breakdance", "urban", "dynamic", "character", "motion-transfer"],
     quality: 0.89,
     source: "curated",
+    domain: "social-media",
+    styleSet: "photorealistic",
+    description: "Breakdance sokak performansı, dinamik enerji ve graffiti arka plan",
   },
 
   // ─── Higgsfield Sora 2 ───────────────────────────────────────
   {
     category: "video",
-    targetModel: "higgsfield-sora",
+    targetModel: "higgsfield-sora-2",
     prompt: "A woman walking through a field of tall golden wheat at magic hour. Soft wind creating gentle waves in the grain. Camera: steady tracking shot from the side. Lens flare from low sun. Flowing summer dress with natural fabric movement. Warm cinematic color grading. Photorealistic. 8 seconds.",
     tags: ["nature", "portrait", "golden-hour", "tracking", "cinematic", "sora"],
     quality: 0.95,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Buğday tarlasında kadın portresi, altın saat tracking shot",
+  },
+
+  // ─── Kling 3.0 — Multi-shot storyboard ───────────────────────
+  {
+    category: "video",
+    targetModel: "kling-3.0",
+    prompt: "A barista in a specialty coffee shop performing latte art. Scene begins with close-up of hands tamping espresso, then pulls back to show steam wand frothing milk, finally a top-down shot of the latte art being poured into a pattern. Camera: static for close-ups, slow crane up for final reveal. Warm morning light from a large window. 4K 60fps. 15 seconds.",
+    negativePrompt: "shaky, low quality, distorted hands, watermark",
+    tags: ["coffee", "latte-art", "multi-shot", "4K", "barista"],
+    quality: 0.95,
+    source: "curated",
+    domain: "e-commerce",
+    styleSet: "photorealistic",
+    description: "Barista latte art çoklu sahne, espresso tamping'den fincan sunumuna",
+  },
+
+  // ─── Higgsfield Sora 2 MAX ──────────────────────────────────
+  {
+    category: "video",
+    targetModel: "higgsfield-sora-2-max",
+    prompt: "A luminous jellyfish drifting through a bioluminescent underwater cave. Soft pulsating glow from the jellyfish illuminating crystal formations on cave walls. Camera: slow dolly forward following the jellyfish. Deep ocean blues and ethereal greens. Particles of plankton floating in water. Photorealistic, cinematic quality.",
+    tags: ["underwater", "jellyfish", "bioluminescent", "cinematic", "sora-max"],
+    quality: 0.96,
+    source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Biyolüminesan denizanası, sualtı mağarasında dolly forward",
+  },
+
+  // ─── Higgsfield Minimax ─────────────────────────────────────
+  {
+    category: "video",
+    targetModel: "higgsfield-minimax",
+    prompt: "Animated logo reveal for a tech startup. A geometric abstract shape assembles from scattered particles, forming a clean minimalist logo. Smooth particle dynamics with subtle glow trails. Dark background with electric blue accent color. Camera: static, centered. 5 seconds.",
+    tags: ["logo-reveal", "animation", "tech", "particles", "minimax"],
+    quality: 0.87,
+    source: "curated",
+    domain: "branding",
+    styleSet: "3d-render",
+    description: "Tech startup logo reveal animasyonu, parçacık dinamikleri",
+  },
+
+  // ─── Kling 2.6 — Product showcase ──────────────────────────
+  {
+    category: "video",
+    targetModel: "kling-2.6",
+    prompt: "A luxury perfume bottle rotating slowly on a mirrored surface. Camera: smooth orbit 360 degrees. Dramatic studio lighting with warm golden key light and cool blue fill. Volumetric light rays passing through the amber liquid. Rose petals falling gently in soft focus background. Professional quality. 10 seconds.",
+    negativePrompt: "cheap look, plastic, blurry, distorted reflections, watermark",
+    tags: ["product", "perfume", "luxury", "orbit", "360"],
+    quality: 0.93,
+    source: "curated",
+    domain: "e-commerce",
+    styleSet: "photorealistic",
+    description: "Lüks parfüm 360° ürün videosu, gül yaprakları ve volumetrik ışık",
+  },
+
+  // ─── Kling O1 — Video editing prompt ──────────────────────
+  {
+    category: "video",
+    targetModel: "kling-o1",
+    prompt: "Transform the existing video: change the sky to a dramatic sunset with orange and purple clouds. Add volumetric god rays streaming through the clouds. Keep the foreground subject unchanged. Maintain natural color blending at the horizon line.",
+    tags: ["edit", "sky-replacement", "sunset", "post-processing"],
+    quality: 0.89,
+    source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Video düzenleme: gökyüzü değiştirme, dramatik gün batımı ekleme",
   },
 ];

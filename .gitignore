@@ -10,3 +10,10 @@ node_modules/
 ~$*
 images/
 *.html
+.env*.local
+
+# Assets
+*.webp
+*.png
+*.jpg
+*.jpeg

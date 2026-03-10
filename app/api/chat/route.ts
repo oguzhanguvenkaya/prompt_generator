@@ -2,6 +2,7 @@ import { streamText, convertToModelMessages, stepCountIs, type UIMessage } from 
 import { getConversationModel, getTextAgentModel } from "@/lib/ai/providers";
 import { getAgent } from "@/lib/agents/registry";
 import { addMessage, updateSessionTitle, getMessages } from "@/lib/db/queries";
+import { getMessageAttachments, getMessageText } from "@/lib/chat/message-parts";
 import { searchInspirationTool } from "@/lib/tools/search-inspiration";
 import { trimMessages } from "@/lib/utils/context-window";
 import { logger } from "@/lib/utils/logger";
@@ -25,10 +26,12 @@ interface QuickSettings {
   seed: string;
   promptEnhance: boolean;
   domain: string;
+  creativity: string;
 }
 
 function buildQuickSettingsContext(qs: QuickSettings, agentCategory: string): string {
   const lines: string[] = ["## Kullanıcının Seçili Ayarları"];
+  if (qs.model) lines.push(`- Hedef Model: ${qs.model}`);
   if (qs.size) lines.push(`- Boyut: ${qs.size}`);
   if (qs.quality) lines.push(`- Kalite: ${qs.quality}`);
   if (qs.style) lines.push(`- Stil Preset: ${qs.style}`);
@@ -36,16 +39,21 @@ function buildQuickSettingsContext(qs: QuickSettings, agentCategory: string): st
     if (qs.cameraMovement && qs.cameraMovement !== "static")
       lines.push(`- Kamera Hareketi: ${qs.cameraMovement}`);
     if (qs.duration) lines.push(`- Süre: ${qs.duration}`);
+    if (qs.creativity) lines.push(`- Creativity: ${qs.creativity}`);
   }
   if (agentCategory === "text") {
     if (qs.framework) lines.push(`- Framework: ${qs.framework}`);
     if (qs.outputFormat) lines.push(`- Çıktı Formatı: ${qs.outputFormat}`);
   }
+  if (qs.domain) lines.push(`- Referans Domain: ${qs.domain}`);
   if (qs.negativePrompt) lines.push(`- Negatif Prompt: ${qs.negativePrompt}`);
   if (qs.seed) lines.push(`- Seed: ${qs.seed}`);
   if (qs.promptEnhance) lines.push(`- Prompt İyileştirme: Açık`);
   lines.push("\nBu ayarları ürettiğin prompt'a yansıt. Kullanıcı bu parametreleri zaten seçti, tekrar sorma.");
   lines.push("Boyut ve kalite bilgisini prompt metnine EKLEME — bunlar API parametreleri olarak ayrı gönderilir.");
+  lines.push(
+    `search_inspiration aracını çağırırsan category='${agentCategory}', targetModel='${qs.model || "any"}', domain='${qs.domain || "general"}' kullan.`
+  );
   return lines.join("\n");
 }
 
@@ -55,7 +63,7 @@ export async function POST(req: Request) {
   let body: Record<string, unknown>;
   try {
     body = await req.json();
-  } catch (e) {
+  } catch {
     return new Response(JSON.stringify({ error: "Invalid JSON" }), { status: 400 });
   }
 
@@ -95,19 +103,18 @@ export async function POST(req: Request) {
   if (sessionId) {
     const lastMsg = messages[messages.length - 1];
     if (lastMsg?.role === "user") {
-      // v6: extract text from parts array
-      const content = lastMsg.parts
-        .filter((p): p is { type: "text"; text: string } => p.type === "text" && "text" in p)
-        .map((p) => p.text)
-        .join("") || "";
+      const content = getMessageText(lastMsg.parts);
+      const attachments = getMessageAttachments(lastMsg.parts);
       logger.debug("CHAT", "Saving user message to DB", {
         preview: content.slice(0, 80),
+        attachmentCount: attachments.length,
       });
 
       await addMessage(
         sessionId,
         "user",
-        content
+        content,
+        attachments
       );
 
       // Auto-generate title from first user message

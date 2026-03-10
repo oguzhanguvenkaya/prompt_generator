@@ -46,7 +46,7 @@ export interface AgentConfig {
   supportedModels: string[]; // model config IDs
   defaultModel: string;
   systemPrompt: string;
-  getModelSpecificPrompt: (model: ModelConfig) => string;
+  getModelSpecificPrompt: (modelId: string) => string;
 }
 
 export interface ChatMessage {

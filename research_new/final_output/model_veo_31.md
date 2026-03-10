@@ -1,0 +1,7114 @@
+# Veo 3.1 — Prompt Database
+
+**Type**: video | **Company**: Google DeepMind | **Total**: 442 prompts
+
+## Model Overview
+
+- **Strengths**: Native audio, timestamp multi-shot, cinematic quality
+- **Key Technique**: Timestamp-based multi-shot prompting with native Audio: sections
+- **Best For**: commercial video, brand films, social media reels, product demos
+- **Average Score**: 8.5/10
+
+## Abstract & Artistic (24 prompts)
+
+### [veo_31_0353] Score: 10/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: futuristic, neon-lit, mirrored, anamorphic, dynamic
+
+```
+A futuristic, neon-lit art film shot inside a mirrored cubical room where silhouettes dance and multiply infinitely. Use steadicam with continuous tracking movements combined with anamorphic lens flares to enhance depth and visual complexity. The lighting cycles through saturated neon colors synced to the track's beats. Timestamp: [00:00-00:07] Wide shot showing mirrored reflections; [00:07-00:15] Medium close-up on dancer silhouette with shifting colors. Audio: pulsating synthwave with layered reverb.
+```
+
+**Why it works**: Infinite reflections combined with dynamic neon lighting and fluid camera movement create a mesmerizing, futuristic visual experience.
+
+**Technique**: Steadicam tracking with anamorphic lens flare
+
+---
+
+### [veo_31_0341] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: surreal, kaleidoscopic, iridescent, cinematic, photorealistic
+
+```
+A surreal, photorealistic music video scene featuring a dancer clad in flowing iridescent fabric moving gracefully through a shifting kaleidoscopic environment. The camera employs slow dolly pushes combined with seamless rack focus transitions shifting between the dancer and the morphing abstract forms. Golden hour lighting bathes the scene in warm glows, contrasted with occasional neon-lit accents pulsing to the rhythm. Incorporate film grain and subtle bokeh to enhance cinematic texture. Timestamp: [00:00-00:05] Wide tracking shot of the dancer entering the frame; [00:05-00:10] Close-up on fabric details blending into the background. Audio: ethereal ambient music with soft chimes and rhythmic bass pulses.
+```
+
+**Why it works**: Combines fluid motion and shifting abstract environments with immersive camera work and lighting to create an evocative visual narrative.
+
+**Technique**: Dolly push with rack focus transitions
+
+---
+
+### [veo_31_0343] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: dreamlike, translucent, geometric, pastel, ethereal
+
+```
+A dreamlike sequence featuring translucent geometric shapes floating and slowly rotating in a foggy, pastel-colored studio environment. The camera uses gentle crane up and down movements combined with smooth steadicam tracking to explore the shapes from varied angles. Natural diffused lighting softens edges and creates ethereal shadows. Timestamp: [00:00-00:08] Wide establishing shot of the studio filled with floating shapes; [00:08-00:16] Medium close-ups highlighting translucency and internal reflections. Audio: minimalistic piano chords with gentle wind chimes underscoring the serene atmosphere.
+```
+
+**Why it works**: Combines soft lighting and fluid camera movement to evoke a meditative and immersive abstract environment.
+
+**Technique**: Crane movement with steadicam tracking under natural diffused lighting
+
+---
+
+### [veo_31_0345] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: fractal, neon, psychedelic, dynamic, experimental
+
+```
+An experimental music video featuring a sequence of fractal patterns pulsating rhythmically to the soundtrack, rendered with dynamic camera dolly and zoom cuts that intensify viewer immersion. The visuals employ vivid neon palettes against deep black backgrounds with subtle lens flare effects accentuating key fractal nodes. Timestamp: [00:00-00:04] Wide shot of fractal expansion; [00:04-00:10] Rapid zoom-ins on evolving details; [00:10-00:15] Slow dolly back to reveal full mandala-like fractal. Audio: dense electronic synth layers matched with fractal pulsations.
+```
+
+**Why it works**: Dynamic camera work combined with vibrant fractal visuals creates hypnotic, music-synced visual stimulation.
+
+**Technique**: Dolly and zoom cuts with lens flare accents
+
+---
+
+### [veo_31_0347] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: kinetic, colorful, ultra-slow motion, macro, high key
+
+```
+A vibrant, kinetic art film sequence of paint splashes captured in ultra-slow motion with a macro lens, revealing droplets and fine texture details as they collide and merge on a glass surface. The lighting is studio bright with high key setting, emphasizing color saturation and gloss. The camera does slow crane ups combined with subtle tracking shots around the paint forms. Timestamp: [00:00-00:06] Medium close-up of paint impact; [00:06-00:14] Extreme macro close-ups revealing micro droplets and surface tension. Audio: rhythmic percussion with splattering paint sound effects.
+```
+
+**Why it works**: Ultra-slow motion combined with macro detail and bright lighting captures the beauty and complexity of abstract color movement.
+
+**Technique**: Ultra-slow motion with macro close-ups and high key studio lighting
+
+---
+
+### [veo_31_0350] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: vibrant, industrial, ultra-slow motion, dynamic focus, textured
+
+```
+A visually striking art film segment showing colorful smoke bombs exploding in ultra-slow motion inside a dark industrial warehouse. The camera uses slow steadycam tracking coupled with dynamic rack focus shifts moving from the expanding smoke to the gritty environment textures. Neon rim lighting highlights smoke edges with a vibrant color palette. Timestamp: [00:00-00:07] Wide shot of initial explosion; [00:07-00:15] Medium shots focusing on smoke tendrils. Audio: deep bass tones with soft crackling, timed to expansion.
+```
+
+**Why it works**: The contrast between vibrant smoke and harsh industrial textures combined with slow motion creates powerful visual tension.
+
+**Technique**: Steadycam tracking with rack focus and neon rim lighting
+
+---
+
+### [veo_31_0352] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: immersive, cinematic 4K, macro, swirling, natural diffused
+
+```
+An immersive art film scene featuring swirling ink drops dispersing in clear water captured with macro lenses in cinematic 4K. The camera employs slow dolly pushes combined with subtle zooms to explore the evolving shapes and gradients. Natural diffused light enhances soft color transitions with gentle bokeh in the background. Timestamp: [00:00-00:06] Medium close-up on first ink drop; [00:06-00:14] Extreme close-ups revealing detailed gradients and flows. Audio: gentle orchestral strings with water ripple effects.
+```
+
+**Why it works**: The combination of macro detail and diffused lighting makes fluid abstract forms visually poetic and engaging.
+
+**Technique**: Cinematic 4K macro with dolly pushes and natural diffused lighting
+
+---
+
+### [veo_31_0355] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: abstract, smoke rings, neon accent, colorful, dynamic focus
+
+```
+An abstract art film portraying swirling smoke rings interlaced with colorful light trails inside a dark haze-filled studio. The camera uses slow dolly pushes combined with rack focus shifts to alternate between the smoke's soft edges and vibrant light strands. Neon-lit accent lighting with a palette of magentas and cyans creates a vivid environment. Timestamp: [00:00-00:07] Medium shot of smoke rings forming; [00:07-00:15] Close-ups revealing intricate light trails inside smoke. Audio: dreamy synth pads with echoing pulses.
+```
+
+**Why it works**: The interplay of smoke and neon light with dynamic camera focus creates a compelling and visually rich abstract narrative.
+
+**Technique**: Dolly push with rack focus and neon accent lighting
+
+---
+
+### [veo_31_0358] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: dynamic, liquid mercury, urban, neon rim lighting, surreal
+
+```
+A dynamic art film showcasing liquid mercury-like surfaces reflecting fragmented city neon lights at night. The camera employs slow aerial drone tracking combined with subtle zoom-ins on reflective details. Neon rim lighting and film-quality grain create a gritty yet surreal urban mood. Timestamp: [00:00-00:07] Wide aerial shot over reflective liquid surface; [00:07-00:15] Medium close-ups highlighting neon fragments. Audio: deep urban synth beats with distant cityscape ambiance.
+```
+
+**Why it works**: The reflective liquid combined with urban neon lighting and aerial perspective delivers a visually striking futuristic cityscape impression.
+
+**Technique**: Aerial drone tracking with neon rim lighting and grain overlays
+
+---
+
+### [veo_31_0360] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: mesmerizing, underwater, translucent fabric, tactile, soft undulations
+
+```
+A mesmerizing art film sequence capturing slow-motion translucent fabric flowing underwater lit by shifting colored spotlights. The camera combines slow steadicam tracking and crane up movements to reveal layered depths and soft undulations. Incorporate subtle film grain and shallow depth of field for tactile texture. Timestamp: [00:00-00:07] Wide underwater shot of fabric flow; [00:07-00:15] Medium close-ups on folds and light refractions. Audio: ambient synth pads with water bubbles and gentle currents.
+```
+
+**Why it works**: The underwater environment combined with fabric movement and layered lighting creates an immersive sensory experience.
+
+**Technique**: Steadicam tracking with crane up and shallow depth of field underwater
+
+---
+
+### [veo_31_0361] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: surreal, neon-lit, cinematic, anamorphic, film grain
+
+```
+A surreal art film scene unfolds in a vast desert of shifting neon sands under a twilight sky. [00:00-00:05] A slow dolly push captures a dancer clad in reflective metallic fabric performing fluid robotic movements, creating prismatic light effects. [00:05-00:10] Cut to an extreme close-up of water droplets on glass distorting colorful abstract patterns. The lighting is neon-lit with saturated blues and magentas, enhanced by subtle lens flares and anamorphic film grain for cinematic texture. The mood is hypnotic and otherworldly, emphasizing fluidity and transformation. Audio: ethereal synth music with gentle mechanical pulses | SFX: wind sweeping through sand dunes.
+```
+
+**Why it works**: The combination of surreal visuals and neon lighting creates an immersive hypnotic experience ideal for an avant-garde music video.
+
+**Technique**: anamorphic lens with neon-lit lighting and dolly push
+
+---
+
+### [veo_31_0363] Score: 9/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: futuristic, projection mapping, steadycam, natural diffused, bokeh
+
+```
+In an urban rooftop at dawn, the camera cranes up revealing a kaleidoscopic projection of shifting geometric patterns on concrete surfaces and performers' bodies. [00:00-00:06] A steadycam follows dancers moving in sync with the pulsating visuals, their shadows merging with light play. [00:06-00:12] Dissolve to macro shots of reflective surfaces capturing refracted city lights with bokeh effects. Lighting is natural diffused morning light enhanced by projection-generated colors. The mood is futuristic and immersive, exploring the fusion of technology and human form. Audio: experimental electronic beats with glitch textures | SFX: subtle city ambient noise.
+```
+
+**Why it works**: The integration of projection art with dynamic camera movement delivers a visually rich exploration of urban futurism.
+
+**Technique**: projection mapping combined with steadycam tracking and natural diffused lighting
+
+---
+
+### [veo_31_0342] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: avant-garde, glitch, fragmented, neon-lit, dynamic
+
+```
+An avant-garde art film segment showcasing fractured human silhouettes composed of glitch-inspired particle effects dissolving and reforming against a backdrop of deep blues and purples. Utilize handheld camera with subtle shake to enhance the fragmented, unstable feel. Neon-lit rim lighting highlights edges of the figures, creating a stark contrast with shadowed areas. Timestamp: [00:00-00:07] Medium shot tracking fragmented forms; [00:07-00:15] Extreme close-up on particle dispersion and reassembly. Audio: glitch electronic beats with sporadic static interference sounds complementing the visual disruptions.
+```
+
+**Why it works**: The glitch particle effects paired with handheld camera create a tense and immersive experience that visually interprets music beats.
+
+**Technique**: Handheld camera with dynamic particle effects
+
+---
+
+### [veo_31_0344] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: monochrome, liquid metal, macro, high-contrast, textured
+
+```
+A high-contrast black-and-white art film scene capturing slow-motion liquid metal droplets merging and separating on a reflective surface. The camera uses macro close-ups and subtle rack focus shifts to reveal the intricate fluid dynamics. Studio lighting with sharp rim lights emphasizes the metallic sheen and textures. Timestamp: [00:00-00:06] Extreme close-up on droplets forming; [00:06-00:12] Slow pull-back to reveal abstract patterns formed. Audio: ambient industrial tones with metallic clangs and liquid splashes timed to movement.
+```
+
+**Why it works**: Macro detail and dramatic lighting transform familiar liquid behavior into hypnotic abstract artistry.
+
+**Technique**: Macro close-ups with rack focus and sharp rim lighting
+
+---
+
+### [veo_31_0348] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: hypnotic, bioluminescent, aerial, surreal, ambient
+
+```
+A hypnotic art film visual featuring a continuous aerial drone shot over a vast field of bioluminescent plants glowing in sync with electronic music beats. Camera performs smooth tracking and slow crane ups to reveal the glowing field patterns and their slow pulsations. Magic hour lighting blends with natural bioluminescence creating a surreal atmosphere. Timestamp: [00:00-00:07] Wide aerial establishing shot; [00:07-00:15] Smooth crane movement revealing glowing details. Audio: ambient electronic music with natural insect-like sounds.
+```
+
+**Why it works**: Combining natural glowing elements with ethereal lighting and immersive aerial movement generates captivating abstract imagery.
+
+**Technique**: Aerial drone with magic hour lighting and smooth crane shots
+
+---
+
+### [veo_31_0349] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: distorted, translucent, textured, neon-lit, immersive
+
+```
+An abstract music video scene portraying distorted reflections on rippling water with layers of translucent textures shifting dynamically. The camera uses slow handheld tracking along the water’s edge, combined with lens flare and film grain to add depth and texture. Neon-lit accents reflect from unseen sources creating pops of color. Timestamp: [00:00-00:08] Wide shot tracking reflections; [00:08-00:16] Close-up on surface distortions and refractions. Audio: ambient synth waves blended with soft water dripping sounds.
+```
+
+**Why it works**: The interplay of natural elements and neon-lit artificial colors creates a rich visual texture synchronized with sound.
+
+**Technique**: Handheld tracking with lens flare and film grain overlays
+
+---
+
+### [veo_31_0351] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: conceptual, fragmented, rotating, colored gels, reflective
+
+```
+A conceptual art film showing fragmented glass sculptures rotating slowly within a dark space illuminated by shifting colored gels. Use a dolly pull combined with a crane up approach to reveal intricate reflections and refracted light patterns. Incorporate film-quality grain and subtle lens flare to elevate texture and depth. Timestamp: [00:00-00:05] Wide shot showing multiple sculptures; [00:05-00:12] Close-up revealing detailed light refractions. Audio: experimental synth layers with crystalline chimes.
+```
+
+**Why it works**: The interplay of fragmenting light and rotating sculptures creates a visually stimulating abstract experience.
+
+**Technique**: Dolly pull with crane up and colored gel lighting
+
+---
+
+### [veo_31_0354] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: poetic, metallic, fluid, shallow depth, high contrast
+
+```
+A poetic art film frame capturing ripples on a metallic liquid surface reflecting fragmented neon lights. The camera gently cranes up while slowly pulling back to reveal an abstract, fluid environment. Use subtle film grain overlay and shallow depth of field to emphasize texture. Lighting is high contrast, combining natural diffused highlights with sharp neon reflections. Timestamp: [00:00-00:06] Close-up on ripple details; [00:06-00:13] Wide shot showing fluid surface and reflections. Audio: mellow electronic tones with water drop echoes.
+```
+
+**Why it works**: The merging of natural fluid dynamics with sharp neon reflections and delicate camera movement creates an exquisite abstract mood.
+
+**Technique**: Crane up with shallow depth of field and film grain
+
+---
+
+### [veo_31_0357] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: layered, projection, intimate, film grain, emotive
+
+```
+An inspired montage capturing layered projections of abstract shapes and colors over human faces in dimly lit studio with natural diffused light. Camera uses handheld close-ups and slow dolly pulls to explore emotional expressions interwoven with the abstract visuals. Incorporate film grain and subtle lens flare to enhance intimacy. Timestamp: [00:00-00:05] Medium close-up on face projections; [00:05-00:12] Extreme close-ups blending human skin and shapes. Audio: haunting vocal layers with ambient synth textures.
+```
+
+**Why it works**: The fusion of abstract projections and emotional human expressions creates a powerful artistic contrast.
+
+**Technique**: Handheld close-ups with natural diffused lighting and film grain
+
+---
+
+### [veo_31_0359] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: expressive, bioluminescent, misty, soft diffusion, otherworldly
+
+```
+An expressive abstract art film sequence featuring suspended floating orbs emitting bioluminescent glows in a misty studio setting. Use slow dolly pushes and crane ups transitioning into extreme close-ups revealing internal swirling lights. Lighting mixes soft natural diffusion with neon highlights creating an otherworldly ambiance. Timestamp: [00:00-00:08] Wide shot showing orb formations; [00:08-00:16] Close-ups on glowing orb interiors. Audio: soft ambient drones with subtle pulsations.
+```
+
+**Why it works**: The blend of lighting techniques and gentle camera movement crafts a mystical visual atmosphere.
+
+**Technique**: Dolly push with crane up and mixed natural/neon lighting
+
+---
+
+### [veo_31_0362] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: intimate, golden hour, slow motion, handheld, abstract
+
+```
+Inside a dark studio flooded with swirling colored smoke and shafts of golden hour light piercing through, an abstract silhouette performs interpretive dance. [00:00-00:04] A handheld camera circles around the figure, capturing dynamic shadows and highlights, focusing occasionally with rack focus on textured smoke particles. [00:04-00:08] Fade into a slow-motion sequence of paint splashes bursting in mid-air, captured with extreme close-up and shallow depth of field. The mood is intimate and emotional, blending tactile textures with fluid human movement. Audio: slow ambient piano with distant echoing vocals | SFX: soft brush strokes and paint splatter.
+```
+
+**Why it works**: The interplay of light, smoke, and painterly textures evokes deep emotional resonance through abstract visual storytelling.
+
+**Technique**: handheld tracking with rack focus and golden hour lighting
+
+---
+
+### [veo_31_0364] Score: 8/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: slow motion, rim light, studio lighting, film grain, aerial drone
+
+```
+A dimly lit interior with cascading rim light reveals slow-motion footage of dripping colored liquids merging and separating on glass surfaces. [00:00-00:07] An aerial drone slowly descends capturing the mesmerizing flow patterns from above, with soft film grain and shallow depth of field emphasizing texture. [00:07-00:12] Cut to a close-up handheld shot of a musician plucking strings, the strings vibrating with visible abstract waves. Lighting is studio controlled with cool blue and warm amber hues, creating contrast and drama. The mood is contemplative and sensory, emphasizing the interplay of sound and visual rhythm. Audio: minimalistic plucked string composition | SFX: liquid droplets and subtle string resonance.
+```
+
+**Why it works**: The tactile textures of liquids combined with intimate musical visuals create a multisensory poetic experience.
+
+**Technique**: aerial drone with rim lighting and slow-motion capture
+
+---
+
+### [veo_31_0346] Score: 7/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: minimalistic, smoke, dreamy, intimate, cool tones
+
+```
+A minimalistic art film capturing the slow movement of smoke trails forming abstract shapes against a dark background. The camera uses a steady dolly push forward combined with a soft focus lens to create a dreamy, intimate atmosphere. Rim lighting with a cool blue hue outlines the smoke details. Timestamp: [00:00-00:05] Wide shot introducing smoke trails; [00:05-00:12] Close-up tracking of swirling forms. Audio: soft ambient synth pads with gentle wind-like sounds.
+```
+
+**Why it works**: The combination of controlled lighting and subtle camera motion aesthetically elevates simple smoke patterns into moving abstract art.
+
+**Technique**: Steady dolly push with soft focus and rim lighting
+
+---
+
+### [veo_31_0356] Score: 7/10
+
+**Subcategory**: Music Video & Art Film | **Use Case**: `art_film`
+
+**Tags**: contemplative, slow-motion, crystal droplets, macro, cool tones
+
+```
+A contemplative art film segment featuring slow-motion crystal droplets falling and shattering softly on reflective surfaces. Use macro lenses combined with steadycam tracking and subtle zoom-out to reveal the fragile beauty of momentary structures. Studio lighting with cool white and soft blue tones highlights shape and clarity. Timestamp: [00:00-00:06] Extreme close-up on droplets forming; [00:06-00:14] Pull back revealing wider scene. Audio: delicate piano notes with soft glass chimes.
+```
+
+**Why it works**: Macro slow-motion reveals ephemeral beauty of fragile forms enhanced by cool studio lighting and precise camera work.
+
+**Technique**: Macro slow-motion with steadycam tracking and subtle zoom
+
+---
+
+## Architecture & Real Estate (24 prompts)
+
+### [veo_31_0317] Score: 10/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: modern, luxury, golden hour, aerial, cinematic
+
+```
+Showcase a modern luxury villa exterior during golden hour with an aerial drone shot slowly circling the property to highlight sprawling gardens and pool area. Transition via a smooth dolly push into the grand foyer with natural diffused light pouring in through large windows. Capture a tracking shot through the open plan living and dining area featuring floor-to-ceiling glass walls with a shallow depth of field to emphasize luxury details. Use cinematic 4K quality with subtle film grain and lens flare effects for warmth. Timestamp structure: [00:00-00:05] Aerial drone circle, [00:05-00:10] Dolly push into foyer, [00:10-00:20] Tracking shot through living space. Audio: Ambient outdoor sounds blending into soft instrumental music.
+```
+
+**Why it works**: Combining aerial and interior shots with cinematic lighting creates an immersive luxury property viewing experience.
+
+**Technique**: aerial drone with dolly push and natural diffused lighting
+
+---
+
+### [veo_31_0321] Score: 10/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: high-rise, sunset, golden hour, tracking shot, cinematic
+
+```
+Create a virtual tour of a high-rise condominium’s rooftop amenities at sunset using a tracking shot to follow the infinity pool edge towards panoramic city views. Apply golden hour lighting enhanced by subtle lens flare and bokeh effects on nearby plants. Transition smoothly with fade-ins between poolside relaxation zones and an open-air bar with ambient string lighting. Capture native audio of gentle water rippling and distant urban sounds fused with light lounge music. Timestamp: [00:00-00:08] Tracking poolside, [00:08-00:15] Bar close-ups, [00:15-00:20] Panoramic rooftop views. Quality: cinematic 4K.
+```
+
+**Why it works**: Combining sunset lighting with smooth tracking highlights luxury rooftop amenities in a captivating way.
+
+**Technique**: tracking shot with golden hour lighting and lens flare
+
+---
+
+### [veo_31_0326] Score: 10/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: penthouse, luxury, dusk, steadycam, neon-lit
+
+```
+Highlight a high-end penthouse interior using steadycam with slow pans and gentle crane down shots to emphasize floor-to-ceiling windows and cityscape views at dusk. Utilize neon-lit accents inside the space paired with subtle lens flare effects on pendant lights. Use rack focus shifting between luxury furniture and skyline vistas. Include native audio of soft urban night sounds and chill lounge music. Timestamp: [00:00-00:08] Steadycam slow pans, [00:08-00:15] Crane down windows, [00:15-00:20] Rack focus details. Quality: photorealistic 4K with film-quality finish.
+```
+
+**Why it works**: Combining steadycam and crane shots with neon lighting brings out penthouse sophistication and views.
+
+**Technique**: steadycam with crane down and neon-lit accents
+
+---
+
+### [veo_31_0336] Score: 10/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: upscale, suburban, dusk, crane shot, rim lighting
+
+```
+Showcase an upscale suburban mansion exterior at dusk with a crane up shot from garden path to rooftop, highlighting elegant landscaping and facade lighting. Transition to tracking shots inside luxurious open-plan living with warm rim lighting and rich textures. Use cut close-ups on marble countertops and crystal chandeliers with subtle film grain for depth. Overlay native audio of soft classical strings and distant evening sounds. Timestamp: [00:00-00:07] Crane up exterior dusk, [00:07-00:15] Tracking interior, [00:15-00:20] Detail close-ups. Quality: cinematic 4K.
+```
+
+**Why it works**: Elevated crane shots combined with warm interior lighting emphasize mansion elegance and comfort.
+
+**Technique**: crane shot with tracking interior and rim lighting
+
+---
+
+### [veo_31_0340] Score: 10/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: high-rise, minimalist, magic hour, drone, cinematic
+
+```
+Highlight a sleek high-rise penthouse at magic hour featuring panoramic city skyline views through floor-to-ceiling windows. Begin with a drone tracking shot approaching the building, then cut to a crane down shot inside emphasizing minimalist decor and polished concrete floors with rim lighting accentuating edges and textures. Use a slow dolly push across the open living area to the outdoor terrace where soft bokeh lights from the city create a cinematic backdrop. Include a camera rack focus from a glass of wine in the foreground to the vibrant skyline outside. Add background audio of ambient city noises with subtle jazz music. End with a fade-out while zooming out aerially. Cinematic 4K, photorealistic with subtle film grain.
+```
+
+**Why it works**: The combination of magic hour lighting and cinematic depth of field highlights luxury and exclusivity, captivating discerning buyers.
+
+**Technique**: Drone tracking with crane down and dolly push plus rack focus
+
+---
+
+### [veo_31_0318] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: contemporary, urban, magic hour, steadycam, cinematic
+
+```
+Present a contemporary urban apartment interior at magic hour using steadycam to glide smoothly through the kitchen, living room, and balcony views of the city skyline. Utilize rim lighting to accentuate modern furniture edges and textures. Apply rack focus when shifting attention from the panoramic window to indoor decorative elements. Include cut transitions between shots to maintain rhythm. Capture audio of subtle city ambiance with soft jazz music underlying. Timestamp structure: [00:00-00:07] Steadycam through kitchen, [00:07-00:15] Living room close-ups with rack focus, [00:15-00:20] Balcony panoramic shot. Quality: film-quality 4K with bokeh highlights.
+```
+
+**Why it works**: Smooth steadycam navigation paired with natural lighting and rack focus creates an intimate, high-end apartment tour.
+
+**Technique**: steadycam with rim lighting and rack focus
+
+---
+
+### [veo_31_0320] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: minimalistic, futuristic, neon-lit, crane shot, photorealistic
+
+```
+Highlight a sleek minimalistic office space using a crane up shot from reception desk to ceiling light installations, emphasizing height and spaciousness. Employ neon-lit accents and controlled shadows for a futuristic mood. Use a close-up rack focus on designer chairs, then cut to wide shots of meeting rooms with glass partitions. Capture audio of soft typing and distant office chatter to add realism. Timestamp: [00:00-00:05] Crane up reception, [00:05-00:10] Rack focus close-ups, [00:10-00:18] Wide meeting rooms. Quality: photorealistic 4K with lens flare on light fixtures.
+```
+
+**Why it works**: Dynamic crane shots paired with neon lighting showcase the office’s modernity and open design.
+
+**Technique**: crane up shot with neon-lit accents and rack focus
+
+---
+
+### [veo_31_0323] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: beachfront, modern, magic hour, aerial drone, bokeh
+
+```
+Show a beachfront modern home exterior at magic hour using an aerial drone ascending from ocean waves to reveal the property’s glass facade and infinity pool. Transition to a dolly push interior shot across open living spaces illuminated by natural diffused light. Use bokeh effects on tropical plants near wide glass doors. Include native audio of gentle ocean breeze mixed with soft background music. Timestamp: [00:00-00:06] Aerial drone ocean to house, [00:06-00:15] Dolly push interior, [00:15-00:20] Close-ups of plants and decor. Quality: cinematic 4K.
+```
+
+**Why it works**: Dynamic aerial and interior shots with magic hour lighting emphasize oceanfront luxury.
+
+**Technique**: aerial drone with dolly push and natural diffused lighting
+
+---
+
+### [veo_31_0325] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: suburban, family, magic hour, dolly pull-back, cinematic
+
+```
+Showcase a suburban family home exterior at magic hour with a dolly pull-back shot starting from the front door to reveal the entire facade and landscaped garden. Transition to tracking shots through the spacious open-plan kitchen and family room bathed in warm natural light. Use depth of field to focus on family-friendly features such as play areas and cozy seating. Capture native audio of children playing with soft acoustic background music. Timestamp: [00:00-00:06] Dolly pull-back exterior, [00:06-00:15] Tracking interior, [00:15-00:20] Feature close-ups. Quality: cinematic 4K.
+```
+
+**Why it works**: Warm magic hour lighting and smooth dolly shots convey an inviting family living space.
+
+**Technique**: dolly pull-back with natural light and depth of field
+
+---
+
+### [veo_31_0327] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: mountain, rustic, sunrise, aerial drone, natural lighting
+
+```
+Film a mountain cabin exterior at sunrise with an aerial drone pulling back to show rugged terrain and surrounding pine trees. Transition to interior hand-held shots focusing on rustic wood beams and stone fireplace with natural diffused morning light. Use cut transitions to shift between exterior and cozy living areas, adding film grain and warm bokeh effects for a homely ambiance. Capture native audio of birds chirping and crackling fire. Timestamp: [00:00-00:07] Aerial drone exterior sunrise, [00:07-00:15] Handheld interior, [00:15-00:20] Cozy detail shots. Quality: cinematic 4K.
+```
+
+**Why it works**: Sunrise aerials combined with handheld cozy interiors evoke a serene mountain retreat.
+
+**Technique**: aerial drone pull back with handheld interior and natural diffused light
+
+---
+
+### [veo_31_0329] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: countryside, luxury, magic hour, crane shot, studio lighting
+
+```
+Film a luxury countryside estate exterior at afternoon magic hour with crane shots rising from landscaped gardens to the rooftop, highlighting symmetry and stonework. Transition to steadycam interior walkthrough emphasizing classic furnishings under warm studio lighting. Use cut transitions to detail shots of handcrafted woodwork and fireplaces with soft film grain. Audio includes birdsong, rustling leaves, and subtle orchestral music. Timestamp: [00:00-00:08] Crane up exterior garden to roof, [00:08-00:16] Steadycam interior, [00:16-00:20] Detail close-ups. Quality: cinematic 4K.
+```
+
+**Why it works**: Crane shots paired with steadycam interiors reveal grandeur and intricate estate details.
+
+**Technique**: crane shot with steadycam and warm studio lighting
+
+---
+
+### [veo_31_0330] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: modern, townhouse, golden hour, tracking shot, aerial
+
+```
+Showcase a sleek modern townhouse interior using tracking shots with natural diffused light highlighting open-plan living and polished concrete floors. Use rack focus to alternate between designer furniture and city views through large windows. Cut to aerial drone fly-over exterior at sunset with warm golden hour tones and lens flare effects on the facade. Add native audio of footsteps, soft conversation, and faint street sounds. Timestamp: [00:00-00:10] Tracking interior, [00:10-00:20] Aerial exterior sunset. Quality: cinematic 4K.
+```
+
+**Why it works**: Combining dynamic tracking interior shots with golden hour aerials creates a comprehensive luxury experience.
+
+**Technique**: tracking shot with natural diffused light and aerial drone
+
+---
+
+### [veo_31_0331] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: luxury, twilight, neon-lit, dolly push, bokeh
+
+```
+Film a luxury penthouse rooftop terrace at twilight using a dolly push from the outdoor lounge to glass railing overlooking the city skyline. Use neon-lit accents on furniture and subtle lens flare from city lights. Transition to close-ups with bokeh on cocktails and lounge details. Capture native audio of gentle evening breeze and soft lounge music. Timestamp: [00:00-00:08] Dolly push terrace, [00:08-00:15] Neon-lit close-ups, [00:15-00:20] Skyline bokeh shots. Quality: photorealistic 4K.
+```
+
+**Why it works**: Dolly moves combined with neon accents and bokeh create a glamorous twilight rooftop vibe.
+
+**Technique**: dolly push with neon-lit accents and bokeh
+
+---
+
+### [veo_31_0333] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: chic, boutique, studio lighting, steadycam, cinematic
+
+```
+Film a chic boutique hotel lobby with steadycam pans and dolly pushes showcasing marble floors, artistic sculptures, and dramatic chandeliers under studio lighting. Use rack focus to shift attention between reception desk and guest seating. Cut to intimate close-ups of textured wall panels with subtle film grain. Audio includes soft chatter and elegant piano music. Timestamp: [00:00-00:06] Steadycam lobby pan, [00:06-00:14] Dolly push reception, [00:14-00:20] Detail close-ups. Quality: cinematic 4K.
+```
+
+**Why it works**: Steadycam and dolly shots with studio lighting capture luxury and artistic detail in hospitality spaces.
+
+**Technique**: steadycam with dolly push and rack focus
+
+---
+
+### [veo_31_0334] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: ultra-modern, night, neon-lit, aerial drone, handheld
+
+```
+Present an ultra-modern glass house exterior at night using aerial drone with neon-lit colored landscaping. Use crane down shot to move from roofline to entrance highlighting transparency and architectural lines. Transition smoothly to interior handheld shots emphasizing open spaces with rim lighting on furniture edges. Include subtle lens flare on light fixtures. Audio: soft nighttime ambiance with electronic background tones. Timestamp: [00:00-00:08] Aerial drone neon-lit exterior, [00:08-00:16] Crane down entrance, [00:16-00:20] Handheld interior rim lighting. Quality: photorealistic 4K.
+```
+
+**Why it works**: Neon lighting and drone movement dramatize the modern glass house’s architectural brilliance.
+
+**Technique**: aerial drone with crane down and handheld rim lighting
+
+---
+
+### [veo_31_0337] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: modern, luxury, golden hour, aerial drone, photorealistic
+
+```
+A luxury modern villa at golden hour with floor-to-ceiling glass walls showcasing an open-plan living space and infinity pool. Begin with a wide aerial drone shot slowly descending to reveal the property nestled in lush greenery. Cut to a smooth dolly push into the living room emphasizing natural diffused lighting through the large windows. Use rack focus to shift attention from minimalist furniture to the panoramic outdoor view. Transition seamlessly to a close-up of the kitchen island with rim light highlighting the marble textures. End with a handheld steadicam walkthrough of the master bedroom, highlighting spaciousness and high-end finishes. Audio: ambient nature sounds with soft instrumental music fading in. Cinematic 4K, photorealistic quality with subtle film grain.
+```
+
+**Why it works**: Combines dynamic camera movements and golden hour lighting to highlight luxury details and spaciousness, engaging potential buyers emotionally.
+
+**Technique**: Timestamp multi-shot with aerial drone and dolly push
+
+---
+
+### [veo_31_0339] Score: 9/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: classic, suburban, natural light, steadicam, warm
+
+```
+Present a classic suburban family home interior during natural diffused daylight. Open with a steadycam walkthrough from the entrance hall leading into the spacious living room decorated with warm tones and family photos. Use a slow rack focus effect shifting from a vase of fresh flowers in the foreground to the fireplace and seating area. Transition via dissolve to a close-up of the kitchen’s handcrafted cabinetry and marble countertops. Follow with a dolly pull back to capture the dining area set for a family meal, emphasizing warmth and comfort with rim lighting. Overlay soft piano music and subtle fireplace crackling sounds. Finish with an aerial drone shot circling the property’s landscaped garden. Film-quality, photorealistic 4K.
+```
+
+**Why it works**: Natural lighting and family-oriented staging create an emotional connection, while smooth camera techniques provide a comforting flow.
+
+**Technique**: Steadicam walkthrough with rack focus and aerial drone circle
+
+---
+
+### [veo_31_0319] Score: 8/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: rustic, countryside, handheld, natural lighting, nostalgic
+
+```
+Film a rustic countryside cottage interior with handheld camera to create a warm, lived-in feel. Use natural diffused light filtering through lace curtains and wooden beams. Include a dolly pull-back to reveal the cozy fireplace and vintage furnishings. Transition with a soft dissolve to an exterior tracking shot of the stone facade surrounded by wildflowers at golden hour. Add film grain and slight vignette for nostalgic ambiance. Timestamp: [00:00-00:06] Handheld close-ups, [00:06-00:12] Dolly pull-back fireplace, [00:12-00:20] Tracking exterior golden hour. Audio: Crackling fireplace with birdsong.
+```
+
+**Why it works**: The handheld approach combined with warm natural lighting makes the cottage feel inviting and authentic.
+
+**Technique**: handheld camera with natural diffused light and dolly pull-back
+
+---
+
+### [veo_31_0322] Score: 8/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: historic, antique, handheld, studio lighting, film grain
+
+```
+Film a historic townhouse interior with a handheld camera emphasizing intricate moldings and antique furniture under soft studio lighting. Use rack focus to shift between ornate ceiling details and vintage decor. Cut between wide shots of the grand staircase and intimate close-ups of textured wallpaper and fixtures. Include audio of creaking wood and quiet classical music for atmosphere. Timestamp: [00:00-00:07] Handheld wide staircase, [00:07-00:12] Rack focus close-ups, [00:12-00:20] Detail shots. Quality: film-quality 4K with subtle film grain.
+```
+
+**Why it works**: Handheld filming combined with soft studio lighting conveys historic charm and intimacy.
+
+**Technique**: handheld camera with rack focus and studio lighting
+
+---
+
+### [veo_31_0324] Score: 8/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: urban, industrial, handheld, rim lighting, photorealistic
+
+```
+Capture a cozy urban loft with steel and brick textures using handheld shots combined with rim lighting to emphasize industrial design details. Rack focus between exposed pipes and soft furnishing contrasts. Use cut transitions from living area to kitchen with pendant neon lighting. Add ambient city sounds mixed with mellow electronic beats. Timestamp: [00:00-00:07] Handheld living area, [00:07-00:14] Rack focus industrial details, [00:14-00:20] Kitchen neon-lit. Quality: photorealistic 4K with subtle film grain.
+```
+
+**Why it works**: Handheld combined with rim lighting and rack focus highlights the loft’s raw yet comfortable style.
+
+**Technique**: handheld camera with rim lighting and rack focus
+
+---
+
+### [veo_31_0328] Score: 8/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: urban, minimalist, rim lighting, dolly push, night
+
+```
+Display a chic urban studio apartment with smooth dolly push shots from entrance to living space, using rim lighting to highlight minimalist decor and reflective surfaces. Employ rack focus to transition between artwork and sleek furnishings. Add cut transitions to a wide shot of the balcony terrace overlooking city lights at night with bokeh effects. Include native audio of soft nightlife ambiance combined with mellow electronic beats. Timestamp: [00:00-00:06] Dolly push entrance to living, [00:06-00:14] Rack focus decor, [00:14-00:20] Balcony night wide. Quality: photorealistic 4K.
+```
+
+**Why it works**: Dolly movements with rim lighting create a sleek and stylish studio presentation.
+
+**Technique**: dolly push with rim lighting and rack focus
+
+---
+
+### [veo_31_0332] Score: 8/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: eco-friendly, modern, dawn, aerial drone, natural lighting
+
+```
+Highlight an eco-friendly modern home with exterior drone shots at dawn showcasing solar panels and green roofing surrounded by lush greenery. Transition to tracking shots inside focusing on sustainable materials under natural diffused light. Use cut transitions to detail up-close shots of recycled wood cabinetry and smart home controls. Include ambient nature sounds with soft instrumental music. Timestamp: [00:00-00:07] Drone exterior dawn, [00:07-00:15] Tracking interior, [00:15-00:20] Detail shots. Quality: cinematic 4K with subtle film grain.
+```
+
+**Why it works**: Drone dawn shots combined with natural interior lighting effectively emphasize sustainable architecture.
+
+**Technique**: aerial drone with tracking interior and natural diffused lighting
+
+---
+
+### [veo_31_0335] Score: 8/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: minimalist, Japanese-style, natural lighting, dolly push, cinematic
+
+```
+Film a minimalist Japanese-style home interior with smooth dolly push shots capturing tatami mats, sliding shoji doors, and natural wood under soft natural diffused morning light. Use rack focus to move between indoor garden views and calligraphy art. Cut transitions bring emphasis on detail shots of handcrafted ceramics. Audio: gentle wind chimes and ambient nature sounds. Timestamp: [00:00-00:10] Dolly push main rooms, [00:10-00:18] Rack focus garden and art, [00:18-00:20] Close-ups. Quality: cinematic 4K.
+```
+
+**Why it works**: Smooth dolly and delicate rack focus under natural light evoke serene minimalist living.
+
+**Technique**: dolly push with natural diffused lighting and rack focus
+
+---
+
+### [veo_31_0338] Score: 8/10
+
+**Subcategory**: Property Showcase | **Use Case**: `real_estate_video`
+
+**Tags**: urban, industrial, neon-lit, handheld, cinematic
+
+```
+Showcase a cozy urban loft apartment with exposed brick walls and industrial décor under soft neon-lit lighting for a trendy vibe. Start with a handheld tracking shot entering through a large window, capturing cityscape reflections on glass surfaces. Cut to a close-up with shallow depth of field focusing on designer furniture and unique art pieces. Employ a slow crane up shot to reveal an open mezzanine bedroom bathed in natural diffused light from skylights. Use subtle lens flare effects on metallic fixtures to emphasize the industrial style. Include audio of city murmurs blended with upbeat lounge music. Finish with a fade out while panning across the rooftop terrace view at twilight. Cinematic 4K quality with film grain for texture.
+```
+
+**Why it works**: The interplay of neon lighting and industrial textures with dynamic camera work creates an inviting lifestyle atmosphere for urban buyers.
+
+**Technique**: Handheld tracking shot combined with crane up and lens flare
+
+---
+
+## Cinematic (31 prompts)
+
+### [veo_31_0095] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: golden hour, dolly push, cinematic 4K, natural diffused, lens flare
+
+```
+A sleek electric car accelerates smoothly down a winding mountain road during golden hour, the sun casting warm lens flares across the polished metal surface. The camera executes a dolly push from a wide establishing shot into a close-up of the logo badge on the hood. Natural diffused lighting highlights every curve with cinematic 4K clarity. Audio: subtle electric engine hum mixed with soft ambient nature sounds.
+```
+
+**Why it works**: Combines dynamic car movement with warm lighting and engaging camera motion to showcase product sophistication.
+
+**Technique**: Timestamp-based dolly push with natural diffused golden hour lighting
+
+---
+
+### [veo_31_0097] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: crane shot, neon-lit, anamorphic, film grain, futuristic
+
+```
+A high-tech smartwatch displayed on a wrist amidst a sleek corporate office environment. The camera performs a slow crane shot from the wrist up to the user's confident smile. Neon-lit accents reflect off glass surfaces, creating a futuristic vibe. Anamorphic lens and film grain add cinematic flair. Audio: subtle electronic beeps synchronized with UI animations.
+```
+
+**Why it works**: Futuristic setting and advanced lens techniques highlight product innovation and modern lifestyle appeal.
+
+**Technique**: Crane shot combined with anamorphic lens and neon lighting
+
+---
+
+### [veo_31_0099] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: rack focus, film grain, natural diffused, dramatic lighting, cinematic 4K
+
+```
+A luxury watch on a wrist resting on a polished wooden desk, sunlight filtering through Venetian blinds creating dramatic stripes of light and shadow. The camera uses rack focus shifting from the watch face to the intricate craftsmanship of the gears beneath the glass. Film grain and color grading emphasize texture and elegance. Audio: soft ticking combined with classical music undertones.
+```
+
+**Why it works**: Sophisticated lighting and focus techniques elevate the perception of craftsmanship and timeless quality.
+
+**Technique**: Rack focus with natural diffused light and film grain
+
+---
+
+### [veo_31_0101] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: steadicam, magic hour, cinematic 4K, natural lighting, motivational
+
+```
+A young woman jogging through a misty early morning park, dressed in vibrant athleisure. The camera follows with a steadicam tracking shot, capturing her determined expression and fluid movement. Magic hour golden lighting filters softly through the trees. Audio: rhythmic footsteps and motivating upbeat music.
+```
+
+**Why it works**: Inspires energy and health through natural light and smooth camera work emphasizing human connection.
+
+**Technique**: Steadicam tracking shot with magic hour lighting
+
+---
+
+### [veo_31_0103] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: neon-lit, tracking shot, anamorphic, film grain, cinematic 4K
+
+```
+A luxury fashion model walking along a rain-soaked city street at night, illuminated by vibrant neon signs. Tracking shot follows her confident stride, reflections shimmering on wet pavement. Anamorphic lens with deep focus and film grain adds cinematic drama. Audio: soft rain with distant urban sounds and subtle electronic music.
+```
+
+**Why it works**: Stylish, moody visuals paired with dynamic camera work create aspirational urban luxury aesthetics.
+
+**Technique**: Tracking shot combined with anamorphic lens and neon lighting
+
+---
+
+### [veo_31_0105] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: dolly shot, natural diffused, warm color grading, cinematic 4K, family oriented
+
+```
+A family enjoying a picnic in a bright, sunlit park with vivid green grass and blooming flowers. The camera uses a steady dolly shot circling the group, capturing smiles and joyful interactions. Diffused natural light and subtle color grading enhance warmth and happiness. Audio: cheerful laughter and light acoustic guitar.
+```
+
+**Why it works**: Emotional storytelling grounded in authentic moments with smooth camera work and natural lighting.
+
+**Technique**: Dolly shot with natural diffused lighting emphasizing emotional connection
+
+---
+
+### [veo_31_0107] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: dolly push, rack focus, studio lighting, cool color grading, cinematic 4K
+
+```
+A professional athlete tying running shoes in a minimalist gym with soft studio lighting. The camera performs a slow dolly push focusing on the shoes, then shifts focus to the athlete’s determined eyes (rack focus). Cool blue color grading emphasizes focus and performance. Audio: ambient gym sounds with motivating instrumental music.
+```
+
+**Why it works**: Visual storytelling of preparation and mindset enhanced by dynamic focus shifts and professional lighting.
+
+**Technique**: Dolly push combined with rack focus under studio lighting
+
+---
+
+### [veo_31_0109] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: shallow depth of field, warm lighting, film grain, tracking shot, cozy
+
+```
+A premium coffee cup steaming in a cozy, softly lit interior with shallow depth of field. The camera slowly tracks inward to the cup's branded logo with warm golden hour-inspired lighting. Gentle film grain adds tactile warmth. Audio: crackling fireplace and soft jazz music.
+```
+
+**Why it works**: Invokes comfort and premium quality using depth of field and soft warm lighting to focus the viewer's attention.
+
+**Technique**: Tracking shot with shallow depth of field and warm golden hour lighting
+
+---
+
+### [veo_31_0111] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: slow motion, studio lighting, natural diffused, golden hour, cinematic 4K
+
+```
+[00:00-00:05] Slow-motion close-up of water droplets splashing on a new fitness water bottle under crisp studio lighting. [00:05-00:08] Cut to a runner taking a refreshing sip mid-run in a sunlit forest. Natural diffused and golden hour lighting mix creates a vibrant, healthy mood. Audio: gentle water splash followed by upbeat nature sounds.
+```
+
+**Why it works**: Visual emphasis on product freshness combined with active lifestyle appeal through lighting and pacing.
+
+**Technique**: Timestamp slow-motion close-up to action with mixed lighting
+
+---
+
+### [veo_31_0113] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: aerial drone, magic hour, shallow depth of field, lens flare, cinematic 4K
+
+```
+[00:00-00:03] Wide drone shot of a sun-drenched vineyard landscape during magic hour. [00:03-00:06] Close-up of a winemaker swirling red wine in a glass, shallow depth of field blurring the vineyard behind. Warm natural lighting and subtle lens flare accentuate richness and tradition. Audio: soft wind and delicate clinking of glasses.
+```
+
+**Why it works**: Combines expansive landscape beauty with intimate craft detail to evoke heritage and quality.
+
+**Technique**: Timestamp multi-shot with aerial and shallow focus with natural lighting
+
+---
+
+### [veo_31_0115] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: natural lighting, shallow depth of field, film grain, warm color grading, cinematic 4K
+
+```
+[00:00-00:04] A luxury skincare product bottle resting on a marble countertop illuminated by soft natural morning light. [00:04-00:07] Cut to a close-up of a woman applying cream with delicate fingertips, shallow depth of field focusing on smooth skin texture. Film grain and warm color grading enhance elegance. Audio: gentle water droplets and soft ambient music.
+```
+
+**Why it works**: Elegantly highlights product luxury and effectiveness through intimate focus and warm natural lighting.
+
+**Technique**: Timestamp-based wide to close-up shots with natural lighting and film grain
+
+---
+
+### [veo_31_0117] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: tracking shot, natural diffused, golden hour, cinematic 4K, adventure
+
+```
+[00:00-00:03] Close-up of a pair of hands lacing up hiking boots on a rugged trail with natural diffused morning light. [00:03-00:07] Tracking shot following a hiker ascending a sunlit mountain ridge during golden hour. Vibrant color grading and cinematic 4K clarity emphasize adventure and resilience. Audio: crunching gravel and inspiring instrumental music.
+```
+
+**Why it works**: Captures the spirit of exploration with detailed close-ups and expansive natural landscapes under beautiful light.
+
+**Technique**: Timestamp close-up to tracking shot with natural and golden hour lighting
+
+---
+
+### [veo_31_0119] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: slow motion, natural diffused, golden hour, lens flare, cinematic 4K
+
+```
+[00:00-00:05] Slow motion close-up of a perfume bottle releasing a fine mist against a soft-focus floral background with natural diffused light. [00:05-00:08] Cut to a glamorous model walking through a sun-dappled garden with golden hour lighting and lens flare. Audio: soft orchestral music and subtle nature sounds.
+```
+
+**Why it works**: Evokes elegance and sensory appeal through slow motion and warm natural light paired with emotive music.
+
+**Technique**: Timestamp slow motion to cinematic beauty shot with natural and golden hour lighting
+
+---
+
+### [veo_31_0120] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: aerial drone, golden hour, cinematic 4K, lens flare, natural lighting
+
+```
+[00:00-00:04] A sleek electric car glides along a coastal highway at golden hour, aerial drone shot capturing expansive ocean views and warm sunlight reflecting off the polished surface. [00:04-00:07] Cut to interior close-up: hands on a minimalist steering wheel, dashboard softly illuminated with ambient blue lighting. [00:07-00:10] Tracking shot from the side as the car accelerates smoothly, lens flare accentuating its speed and elegance. Lighting is natural diffused with golden hour warmth, mood is aspirational and futuristic. Audio: gentle hum of electric motor mixed with subtle ocean waves and soft cinematic score building anticipation.
+```
+
+**Why it works**: This prompt combines aspirational lifestyle visuals with high-end product focus, using cinematic lighting and dynamic camera work to engage viewers emotionally.
+
+**Technique**: Timestamp-based multi-shot with aerial drone and close-up transitions
+
+---
+
+### [veo_31_0122] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: steadicam, neon-lit, bokeh, color graded, cinematic 4K
+
+```
+[00:00-00:06] A vibrant urban street market at night, neon-lit signage casting colorful reflections on wet pavement, steadicam tracking shot following a young woman savoring a gourmet street food. [00:06-00:09] Cut to close-up of the food steaming and glistening with fresh ingredients, shallow depth of field with bokeh lights in background. Lighting is neon-lit with cinematic color grading to amplify energy and warmth. Mood is lively, youthful, and adventurous. Audio: ambient street sounds layered with upbeat electronic music and sizzling food sounds.
+```
+
+**Why it works**: This prompt uses dynamic lighting and immersive camera movement to create an engaging sensory experience that highlights product freshness and urban lifestyle appeal.
+
+**Technique**: Steadicam tracking with multi-shot neon-lit urban environment and detailed close-ups
+
+---
+
+### [veo_31_0125] Score: 9/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: slow motion, cinematic film grain, anamorphic lens, dramatic lighting, magic hour
+
+```
+[00:00-00:05] Slow motion close-up of a professional athlete's determined face, sweat glistening under stadium spotlights during magic hour. [00:05-00:09] Cut to wide crane shot revealing the athlete sprinting on a track, muscles tense, crowd blurred with cinematic film grain and anamorphic lens effect. Lighting is dramatic with high contrast and warm rim light. Mood is intense, inspiring, and empowering. Audio: rhythmic heartbeat mixed with rising orchestral score and distant crowd cheers.
+```
+
+**Why it works**: The use of slow motion and dramatic lighting enhances emotional impact, while cinematic grain and anamorphic lenses create a premium sports commercial aesthetic.
+
+**Technique**: Slow motion combined with crane shot, anamorphic lens, and timestamp multi-shot transition
+
+---
+
+### [veo_31_0096] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: magic hour, handheld, shallow depth of field, studio lighting, color graded
+
+```
+[00:00-00:04] A bustling urban café terrace at magic hour with soft neon signs glowing. [00:04-00:07] Close-up of a barista expertly pouring latte art, shallow depth of field blurring the background. Handheld camera adds intimate feel. Studio lighting balances natural and artificial sources for vibrant color grading. Audio: ambient city chatter and espresso machine sounds.
+```
+
+**Why it works**: Blends urban lifestyle with artisanal craft, using intimate camera work and vibrant lighting to appeal emotionally.
+
+**Technique**: Timestamp multi-shot with handheld camera and balanced studio lighting
+
+---
+
+### [veo_31_0098] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: aerial drone, natural diffused, bokeh, warm color grading, cinematic 4K
+
+```
+[00:00-00:03] Wide aerial drone shot of a lush organic farm at dawn, mist rising from the fields. [00:03-00:06] Close-up close-up of hands picking ripe vegetables, shallow focus with bokeh. Natural diffused lighting with warm color grading evokes freshness and purity. Audio: gentle birdsong and rustling leaves.
+```
+
+**Why it works**: Combines expansive natural beauty with intimate human interaction to evoke trust and freshness in organic branding.
+
+**Technique**: Timestamp-based aerial to close-up shots with natural lighting and bokeh
+
+---
+
+### [veo_31_0100] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: tracking shot, studio lighting, warm color grading, close-up, cinematic 4K
+
+```
+[00:00-00:05] Close-up of a chef’s hands slicing vibrant vegetables on a wooden board with soft studio lighting. [00:05-00:08] Tracking shot pulling back to reveal a lively kitchen bustling with chefs preparing dishes. Warm, inviting color grading and crisp 4K detail. Audio: chopping sounds mixed with kitchen ambience.
+```
+
+**Why it works**: Dynamic movement and warm lighting create an inviting atmosphere that highlights quality and craft in food preparation.
+
+**Technique**: Timestamp multi-shot with tracking shot and studio lighting
+
+---
+
+### [veo_31_0102] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: studio lighting, close-up, cool color grading, UI animation, cinematic 4K
+
+```
+[00:00-00:03] Wide establishing shot of a sleek modern kitchen featuring a smart refrigerator with illuminated touch interface. [00:03-00:06] Close-up on a hand swiping the touchscreen, displaying vibrant UI animations. Studio lighting with cool blue accents sets a tech-savvy mood. Audio: soft tech beeps and subtle background music.
+```
+
+**Why it works**: Clear demonstration of product features with clean lighting and crisp visuals appeals to tech-focused audiences.
+
+**Technique**: Timestamp-based establishing to close-up shots with studio lighting
+
+---
+
+### [veo_31_0104] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: macro shot, golden hour, natural lens flare, studio lighting, cinematic 4K
+
+```
+[00:00-00:04] Macro shot of bubbles rising through a freshly poured sparkling beverage in a crystal glass under studio lighting. [00:04-00:07] Cut to a smiling group of friends clinking glasses on a rooftop terrace at sunset. Warm golden hour lighting with natural lens flare. Audio: soft laughter and clinking glasses.
+```
+
+**Why it works**: Combines product detail with social enjoyment, using warm lighting and close-up visuals for emotional engagement.
+
+**Technique**: Timestamp-based macro to social scene transition with natural lighting
+
+---
+
+### [veo_31_0106] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: anamorphic, handheld, neon-lit, film grain, low light
+
+```
+[00:00-00:03] Close-up of a smartphone camera lens reflecting vibrant city lights at dusk. [00:03-00:06] Pull back to reveal a young photographer capturing street life with handheld camera movement. Neon and low light create contrast, enhanced by film grain and anamorphic lens flare. Audio: distant city sounds with soft electronic beats.
+```
+
+**Why it works**: Captures artistic tech usage with moody urban lighting and dynamic handheld camera for authenticity.
+
+**Technique**: Timestamp-based close-up to handheld shot with anamorphic and neon lighting
+
+---
+
+### [veo_31_0108] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: magic hour, studio lighting, warm color grading, close-up, cinematic 4K
+
+```
+[00:00-00:04] Wide establishing shot of a modern smart home exterior at twilight with soft interior lights glowing. [00:04-00:07] Interior close-up of family interacting with voice-activated smart assistant. Warm magic hour lighting transitions to cozy interior studio lighting. Audio: voice commands and soft background music.
+```
+
+**Why it works**: Shows spaciousness and intimacy of smart home technology with smooth lighting transitions and relatable interaction.
+
+**Technique**: Timestamp-based exterior to interior shots with lighting transition
+
+---
+
+### [veo_31_0110] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: handheld, neon-lit, motion blur, high contrast, urban
+
+```
+An energetic young professional stepping onto a bustling subway platform, the camera employing a handheld style to complement fast-paced city life. Neon signage and moving trains provide color and motion blur. Color graded for high contrast with urban grit. Audio: subway announcements and rhythmic footsteps.
+```
+
+**Why it works**: Captures urban energy and movement authentically with handheld camera and vivid neon lighting.
+
+**Technique**: Handheld camera with neon lighting and motion blur
+
+---
+
+### [veo_31_0112] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: dolly push, natural diffused, film grain, cool color grading, minimalist
+
+```
+A minimalist office desk showcasing the latest ultrathin laptop. The camera uses a subtle dolly push from keyboard close-up to the user's focused face, with natural diffused morning light streaming through a window. Soft film grain and cool color grading add sophistication. Audio: quiet typing and ambient office hum.
+```
+
+**Why it works**: Highlights product sleekness and user concentration in a clean, professional environment with natural lighting.
+
+**Technique**: Dolly push with natural diffused lighting and film grain
+
+---
+
+### [veo_31_0114] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: handheld, close-up, studio lighting, colorful, fresh
+
+```
+A vibrant smoothie bowl being artfully prepared with fresh fruits and superfoods on a bright kitchen counter. The camera employs a handheld style with close-up shots of colorful ingredients. Soft studio lighting creates a fresh and healthy atmosphere. Audio: crisp chopping and pouring sounds combined with light acoustic music.
+```
+
+**Why it works**: Engages viewers through vivid colors, dynamic camera work, and sensory audio to promote health and vitality.
+
+**Technique**: Handheld close-up with soft studio lighting
+
+---
+
+### [veo_31_0116] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: steadicam, neon-lit, anamorphic, dramatic color grading, futuristic
+
+```
+A futuristic kitchen interior with holographic cooking displays floating above a sleek counter. The camera glides with steadycam through the space, showcasing smart appliances with neon-lit accents. Anamorphic lens and dramatic color grading create a high-tech cinematic atmosphere. Audio: soft digital beeps and futuristic soundscapes.
+```
+
+**Why it works**: Immersive futuristic visuals combined with smooth camera movement appeal to tech enthusiasts and innovators.
+
+**Technique**: Steadicam glide with neon lighting and anamorphic lens
+
+---
+
+### [veo_31_0118] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: aerial crane shot, neon-lit, anamorphic, film grain, futuristic
+
+```
+A sleek drone delivers a high-tech package over a futuristic cityscape at twilight. The camera uses an aerial crane shot to track the drone's flight path, neon city lights reflecting off metallic surfaces. Anamorphic lens and subtle film grain add cinematic depth. Audio: soft drone hum and ambient city noises.
+```
+
+**Why it works**: Combines advanced technology with cinematic techniques to create a compelling futuristic commercial imagery.
+
+**Technique**: Aerial crane shot with anamorphic lens and neon lighting
+
+---
+
+### [veo_31_0121] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: rack focus, studio lighting, magic hour, cinematic 4K, slow dolly push
+
+```
+[00:00-00:05] Close-up of a luxury wristwatch on a wrist, subtle rack focus shifting from the intricate mechanical gears to the polished watch face, studio lighting highlighting metallic textures with soft shadows. [00:05-00:09] Cut to a slow dolly push pulling back to reveal an elegant businessman adjusting his cufflinks in a sleek penthouse office at magic hour, city skyline glowing in the background. Mood is refined, sophisticated, and timeless. Audio: subtle ticking synchronized with a refined piano melody and soft ambient city sounds.
+```
+
+**Why it works**: The combination of detailed product shots with lifestyle context creates an emotional connection to luxury and success, enhanced by expert lighting and cinematic techniques.
+
+**Technique**: Rack focus with slow dolly push and timestamped scene transitions
+
+---
+
+### [veo_31_0123] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: crane shot, natural diffused, lens flare, bokeh, cinematic 4K
+
+```
+[00:00-00:04] Wide establishing shot of a modern kitchen bathed in natural diffused morning light, a family laughing and cooking breakfast together. Crane shot slowly descends to focus on hands pouring freshly brewed coffee into mugs. [00:04-00:08] Cut to close-up of coffee steaming, golden bokeh from background windows, lens flare adds warmth. Mood is cozy, inviting, and wholesome. Audio: soft acoustic guitar with ambient morning sounds like birds chirping and kettle whistle.
+```
+
+**Why it works**: The intimate family moment paired with warm natural lighting and cinematic camera movement creates an emotional appeal ideal for food and beverage ads.
+
+**Technique**: Crane shot combined with timestamped close-ups and natural diffused lighting
+
+---
+
+### [veo_31_0124] Score: 8/10
+
+**Subcategory**: Commercial Ad | **Use Case**: `tv_commercial`
+
+**Tags**: tracking shot, cool lighting, depth of field, color graded, cinematic 4K
+
+```
+[00:00-00:05] High-speed tracking shot through a vibrant tech startup office, young professionals collaborating enthusiastically, screens glowing with colorful data visualizations. Lighting is modern, with cool blue and magenta tones creating a futuristic atmosphere. [00:05-00:08] Cut to close-up of hands typing rapidly on a sleek laptop keyboard, depth of field isolates the detail. Mood is energetic, innovative, and optimistic. Audio: upbeat synth music with subtle keyboard clicks and ambient office chatter.
+```
+
+**Why it works**: Capturing a dynamic work environment with modern lighting and fast-paced camera movement communicates innovation and energy effectively for tech product commercials.
+
+**Technique**: High-speed tracking with depth of field focus and timestamp-based scene cuts
+
+---
+
+## Cinematic Advertising (30 prompts)
+
+### [veo_31_0239] Score: 10/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: mystical, magic hour, anamorphic, film grain, romantic
+
+```
+A luxury perfume commercial set in a misty forest during early morning magic hour. The camera uses an anamorphic lens with a slow dolly push through tall trees, capturing soft film grain and bokeh effects around blooming flowers. Close-ups of the perfume bottle with dew drops emphasize elegance and natural beauty. The mood is mystical, romantic, and refined. Timestamp multi-shot: [00:00-00:06] dolly push through forest, [00:06-00:12] close-up sharp focus on bottle with bokeh. Audio: ethereal ambient music with gentle bird calls.
+```
+
+**Why it works**: Anamorphic lenses and natural mist create a dreamy atmosphere that aligns perfectly with luxury branding.
+
+**Technique**: Anamorphic lens dolly push with film grain and bokeh
+
+---
+
+### [veo_31_0255] Score: 10/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: luxury, dramatic, sharp, golden hour, refined
+
+```
+A luxury watch brand commercial featuring a close-up of the watch face under dramatic rim lighting. [00:00-00:03] Macro tracking shot over the intricate gears turning. [00:03-00:07] Slow crane pull revealing a confident businessman adjusting his cufflinks in a sleek office at magic hour. Mood is refined and aspirational. Lighting uses a combination of golden hour and rim light creating sharp contrasts. Audio: Minimalist piano melody with ticking SFX perfectly synced to the watch movement. Cinematic 4K with extreme depth of field and film-quality sharpness.
+```
+
+**Why it works**: Focuses on craftsmanship and lifestyle with cinematic detail enhancing brand prestige.
+
+**Technique**: Macro tracking with rim lighting and extreme depth of field
+
+---
+
+### [veo_31_0260] Score: 10/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: luxury, elegant, sensual, opulent, cinematic
+
+```
+A luxury perfume brand film in an opulent ballroom setting during magic hour. [00:00-00:04] Tracking dolly shot following a woman in flowing gown walking through the grand hall with soft lens flare. [00:04-00:08] Close-up slow-motion shot of perfume mist spraying with bokeh highlights. Lighting is rich with rim light and natural diffused warm tones. Mood is sensual and elegant. Audio: Soft orchestral music with subtle ambient echoes. Cinematic 4K, anamorphic lens, film grain for texture and depth.
+```
+
+**Why it works**: Creates a luxurious and immersive sensory experience matching the brand’s sophistication.
+
+**Technique**: Dolly tracking with rim lighting and slow-motion bokeh spray
+
+---
+
+### [veo_31_0233] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: luxury, golden hour, aerial drone, film grain, photorealistic
+
+```
+A luxury watch advertisement set on a rooftop overlooking a bustling city skyline at golden hour. The camera begins with an aerial drone shot sweeping over the city, then dolly pushes in to a close-up of the watch on a wrist as sunlight glints off the bezel. Natural diffused lighting enhances the polished metal and sapphire crystal face. The mood is aspirational and elegant, with film grain adding a timeless feel. Timestamp multi-shot: [00:00-00:05] aerial drone of city, [00:05-00:10] dolly push close-up of watch. Audio: soft orchestral music with subtle city ambiance in background. Cinematic 4K photorealistic quality.
+```
+
+**Why it works**: Combining dynamic aerial shots with intimate close-ups creates an aspirational narrative that highlights product luxury.
+
+**Technique**: Timestamp multi-shot with aerial drone to close-up dolly push
+
+---
+
+### [veo_31_0235] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: futuristic, neon-lit, crane up, lens flare, modern
+
+```
+A futuristic tech brand film showcasing a smart home system at night. The camera uses a smooth crane up shot starting from a sleek control panel on a desk, rising to reveal a modern living room lit with neon-lit accents. Depth of field highlights interactive touchscreens, with lens flare effects on reflective surfaces. The mood is sleek and cutting-edge, enhanced by cool blue and purple neon lighting. Timestamp multi-shot: [00:00-00:04] crane up from control panel, [00:04-00:08] close-ups on touchscreen interactions. Audio: minimal electronic music with subtle clicks and beeps of the interface.
+```
+
+**Why it works**: Neon lighting combined with dynamic crane shots creates a sophisticated tech narrative that captivates viewers.
+
+**Technique**: Crane up with lens flare and depth of field emphasis
+
+---
+
+### [veo_31_0237] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: warm, natural diffused, dolly pull, shallow depth, artisanal
+
+```
+A premium coffee brand advertisement in a cozy, urban café during soft natural diffused morning light. The camera uses a dolly pull-back to reveal a barista expertly crafting espresso, focusing on steam, crema, and hand movements with shallow depth of field and warm color grading. The mood is comforting and artisanal. Timestamp multi-shot: [00:00-00:05] close-up dolly pull of espresso preparation, [00:05-00:10] medium shot of barista serving coffee. Audio: gentle jazz piano with café ambiance.
+```
+
+**Why it works**: Detailed craftsmanship paired with inviting lighting creates a sensory and authentic brand experience.
+
+**Technique**: Dolly pull-back close-up with shallow depth of field
+
+---
+
+### [veo_31_0238] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: dynamic, rim light, handheld, energetic, gritty
+
+```
+A sportswear commercial featuring a high-intensity track workout at dawn. The camera employs a handheld approach with quick cuts between wide shots of athletes sprinting on a stadium track and close-ups of sweat, muscle movement, and branded gear. Rim lighting highlights definition in bodies against the darkening sky. The mood is powerful, determined, and gritty. Timestamp multi-shot: [00:00-00:05] handheld wide tracking shots, [00:05-00:10] close-ups with rim light. Audio: energetic electronic beats with breath and footfalls.
+```
+
+**Why it works**: The raw handheld intensity combined with dramatic lighting emphasizes athletic performance and brand energy.
+
+**Technique**: Handheld quick cuts with rim lighting
+
+---
+
+### [veo_31_0240] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: futuristic, neon-lit, crane down, rainy, sleek
+
+```
+A futuristic electric vehicle brand film shot in a neon-lit, rain-soaked city street at night. The camera uses a crane down movement from above to street level, revealing the sleek car with reflective wet pavement. Close-ups highlight illuminated logos and charging ports with a shallow depth of field. The mood is sleek, modern, and electric. Timestamp multi-shot: [00:00-00:05] crane down reveal, [00:05-00:10] close-up shallow focus. Audio: deep synthwave music with city rain ambiance.
+```
+
+**Why it works**: The interplay of neon reflections and crane movements enhances the futuristic and luxurious appeal of the EV.
+
+**Technique**: Crane down with neon-lit rain reflections and shallow depth
+
+---
+
+### [veo_31_0243] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: high-tech, studio lighting, rack focus, lens flare, precise
+
+```
+A cutting-edge smartphone commercial filmed in a high-tech lab with cool-white studio lighting. The camera employs rack focus techniques shifting between sleek device surfaces and engineer’s hands testing functions. Close-ups use shallow depth of field with lens flare on reflective edges. The mood is innovative and precise. Timestamp multi-shot: [00:00-00:05] medium shot rack focus, [00:05-00:10] close-up lens flare details. Audio: futuristic ambient synth with soft clicks and taps.
+```
+
+**Why it works**: Rack focus combined with crisp studio lighting visually communicates innovation and quality.
+
+**Technique**: Rack focus with lens flare on device details
+
+---
+
+### [veo_31_0244] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: adventurous, sunset, handheld, rim light, empowering
+
+```
+An adventure travel gear commercial set atop a windy cliff at sunset. The camera uses a handheld steadicam to capture the rugged landscape and the athlete’s dynamic movements, while rim lighting accentuates the silhouette against the colorful sky. Cut to close-ups of the gear’s rugged textures and functionality with shallow depth of field. The mood is adventurous and empowering. Timestamp multi-shot: [00:00-00:07] handheld wide shots with rim lighting, [00:07-00:12] detailed close-ups. Audio: uplifting orchestral with natural wind sounds.
+```
+
+**Why it works**: Dynamic camera work combined with dramatic natural lighting captures spirit of adventure effectively.
+
+**Technique**: Handheld steadicam with rim lighting and shallow depth close-ups
+
+---
+
+### [veo_31_0246] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: immersive, neon-lit, tracking shot, lens flare, exciting
+
+```
+A cutting-edge gaming console film featuring a neon-lit basement gaming setup at night. The camera uses a tracking shot circling around the user intensely focused on the screen, intercut with close-ups of controller buttons and LED lights with lens flare. The mood is immersive and exciting. Timestamp multi-shot: [00:00-00:06] tracking circular shot, [00:06-00:12] extreme close-ups with lens flare. Audio: pulsating electronic music with game sound effects.
+```
+
+**Why it works**: Dynamic tracking and stylized neon lighting create an intense gamer-focused atmosphere.
+
+**Technique**: Tracking circular shot with lens flare close-ups
+
+---
+
+### [veo_31_0249] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: energetic, neon-lit, handheld, rack focus, edgy
+
+```
+An urban sneaker commercial featuring a diverse group of dancers in a neon-lit warehouse at night. The camera uses a handheld approach with fast rack focus between dancers and shoe details, enhanced by neon rim lighting and shallow depth of field. The mood is energetic, youthful, and edgy. Timestamp multi-shot: [00:00-00:05] handheld dance wide shots, [00:05-00:10] close-up fast rack focus on shoes. Audio: high-tempo hip-hop beats with crowd cheer.
+```
+
+**Why it works**: The kinetic energy of dance combined with neon highlights creates a compelling urban brand story.
+
+**Technique**: Handheld with fast rack focus close-ups
+
+---
+
+### [veo_31_0252] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: cozy, magic hour, crane up, rack focus, sophisticated
+
+```
+A high-end home fragrance brand film set in a modern living room at magic hour. The camera slowly cranes up from a candle flame to the whole room bathed in warm diffused light, with rack focus transitioning between the flame and elegant décor. The mood is cozy, sophisticated, and calming. Timestamp multi-shot: [00:00-00:06] crane up from candle flame, [00:06-00:12] rack focus on décor details. Audio: soft acoustic guitar with subtle crackling fire sounds.
+```
+
+**Why it works**: Elegant lighting and layered focus techniques evoke warmth and luxury that align with premium fragrance branding.
+
+**Technique**: Crane up with rack focus transitions
+
+---
+
+### [veo_31_0253] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: futuristic, sleek, golden hour, cinematic, photorealistic
+
+```
+A premium electric car glides silently through a futuristic cityscape at golden hour, neon reflections shimmering on sleek chrome surfaces. [00:00-00:05] Aerial drone shot tracking alongside the car. [00:05-00:10] Crane pull-up revealing the vibrant city skyline. Lighting is natural diffused with rim light to emphasize contours. Mood is aspirational and sleek. Cut-to close-ups of the dashboard’s holographic interface with bokeh effects. Audio: Engine hum with ambient city sounds and subtle electronic music. SFX: Soft tire sounds on wet pavement. Cinematic 4K quality with anamorphic lens flare for a high-end tech vibe.
+```
+
+**Why it works**: Combines modern technology aesthetics with cinematic techniques to evoke luxury and innovation.
+
+**Technique**: Aerial drone smooth tracking with rim lighting and anamorphic lens flare
+
+---
+
+### [veo_31_0256] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: energetic, natural, dynamic, golden hour, cinematic
+
+```
+A dynamic sports shoe commercial capturing a runner sprinting along a rugged mountain trail during sunrise. [00:00-00:05] Steadicam tracking shot following the runner’s feet in motion with dust particles highlighted by backlight. [00:05-00:10] Wide aerial crane shot revealing expansive nature vistas. Lighting is golden hour with natural diffused sunlight and lens flare. Mood is energetic and empowering. Audio: Heartbeat sounds layered with uplifting electronic music. SFX: Footsteps pounding on gravel. Cinematic 4K, film grain for texture, and depth of field to isolate subject.
+```
+
+**Why it works**: Combines movement and environment to inspire and motivate the viewer effectively.
+
+**Technique**: Steadicam tracking with golden hour backlight and lens flare
+
+---
+
+### [veo_31_0258] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: modern, innovative, youthful, minimalist, cinematic
+
+```
+An energetic tech gadget launch featuring a young professional unboxing a new smartphone in a minimalist loft. [00:00-00:03] Handheld tracking shot over the unboxing process. [00:03-00:07] Push-in dolly shot focusing on the user’s excited expression as the device lights up. Lighting is natural diffused with subtle neon rim lights for a modern edge. Mood is innovative and youthful. Audio: Futuristic electronic beats with soft button click SFX. Cinematic 4K, film grain effect, and depth of field to focus on product and emotion.
+```
+
+**Why it works**: Captures product excitement through dynamic camera work and fresh lighting.
+
+**Technique**: Handheld tracking with neon rim lighting and dolly push-in
+
+---
+
+### [veo_31_0262] Score: 9/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: moody, refined, neon-lit, sophisticated, cinematic
+
+```
+A sophisticated whiskey brand story unfolds in a dimly neon-lit bar late at night. [00:00-00:04] Slow dolly push-in on a glass swirling amber liquid with film grain and lens flare. [00:04-00:08] Rack focus to the bartender’s skilled hands pouring and lighting a cigar. Lighting uses neon rim light mixing cool and warm tones creating a moody atmosphere. Mood is mysterious and refined. Audio: Deep jazz saxophone with subtle pouring SFX. Cinematic 4K with anamorphic lens and cinematic color grading.
+```
+
+**Why it works**: Uses immersive lighting and sound to evoke brand heritage and exclusivity.
+
+**Technique**: Dolly push-in with neon rim lighting and rack focus
+
+---
+
+### [veo_31_0234] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: natural, magic hour, handheld, bokeh, uplifting
+
+```
+An energetic health drink commercial filmed during magic hour on a hiking trail. The camera follows a diverse group of friends with a handheld steadicam as they ascend a mountain path, capturing natural smiles and sweat glistening in rim light. Cuts to close-ups of the product bottle with dew and condensation, shot with a shallow depth of field and bokeh background. The mood is uplifting and vibrant, enhanced by natural diffused light. Timestamp multi-shot: [00:00-00:06] tracking shot following group, [00:06-00:12] close-up of bottle with bokeh effect. Audio: upbeat indie music with ambient nature sounds.
+```
+
+**Why it works**: Capturing authentic outdoor energy paired with detailed product shots makes the brand relatable and desirable.
+
+**Technique**: Tracking handheld steadicam with bokeh close-ups
+
+---
+
+### [veo_31_0236] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: warm, golden hour, steadicam, rack focus, family
+
+```
+A family car commercial set on an open highway at sunrise. The camera captures a steadicam tracking shot alongside the vehicle, highlighting its sleek design under warm golden hour lighting. Cuts to interior close-ups showing smiling family members enjoying the ride, using rack focus to switch between driver and surroundings. The mood evokes safety, freedom, and warmth. Timestamp multi-shot: [00:00-00:07] tracking steadicam alongside car, [00:07-00:12] interior rack focus close-ups. Audio: uplifting acoustic guitar with ambient road sounds.
+```
+
+**Why it works**: The combination of exterior motion shots and intimate interior moments builds emotional connection to the car’s experience.
+
+**Technique**: Steadicam tracking with rack focus interior close-ups
+
+---
+
+### [veo_31_0241] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: chic, golden hour, steadicam, rim light, sophisticated
+
+```
+A high-end fashion brand commercial on a sun-drenched urban rooftop during golden hour. The camera uses a steadicam to smoothly track a model walking confidently, with natural rim light emphasizing textures of fabric. Cut to close-ups with shallow depth of field showing intricate details of accessories. The mood is chic, confident, and sophisticated. Timestamp multi-shot: [00:00-00:07] steadicam tracking shot, [00:07-00:12] close-up on accessories. Audio: smooth lounge music with city ambient sounds.
+```
+
+**Why it works**: Fluid tracking paired with highlights on craftsmanship creates an immersive luxury fashion experience.
+
+**Technique**: Steadicam tracking with natural rim light and shallow depth close-ups
+
+---
+
+### [veo_31_0242] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: warm, natural diffused, dolly push, film grain, artisanal
+
+```
+A gourmet chocolate brand film set inside a rustic kitchen with natural diffused afternoon light filtering through windows. The camera uses a dolly push to follow a chocolatier shaping confections, focusing on rich textures with film grain for warmth. Close-ups of melting chocolate and hands emphasize artisanal craftsmanship. The mood is warm, nostalgic, and indulgent. Timestamp multi-shot: [00:00-00:06] dolly push following chocolatier, [00:06-00:12] detailed close-ups. Audio: soft classical music with kitchen ambient sounds.
+```
+
+**Why it works**: Warm lighting and tactile close-ups evoke sensory indulgence that connects emotionally with viewers.
+
+**Technique**: Dolly push with film grain and tactile close-ups
+
+---
+
+### [veo_31_0245] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: minimalist, natural diffused, dolly push, film grain, serene
+
+```
+A premium skincare product commercial filmed in a minimalist bathroom with natural diffused soft light. The camera uses a dolly push-in to capture smooth skin textures and product application, employing subtle film grain to add warmth. Close-ups employ a shallow depth of field and bokeh to create intimacy. The mood is serene, clean, and luxurious. Timestamp multi-shot: [00:00-00:05] dolly push product application, [00:05-00:10] close-up soft focus. Audio: gentle ambient sounds with soft piano.
+```
+
+**Why it works**: Soft lighting and intimate close-ups highlight product efficacy while maintaining aspirational luxury.
+
+**Technique**: Dolly push with film grain and shallow depth close-ups
+
+---
+
+### [veo_31_0247] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: aspirational, golden hour, dolly push, rim light, sophisticated
+
+```
+A high-end travel luggage commercial at an international airport during golden hour. The camera uses a slow dolly push alongside a stylish traveler wheeling luggage through grand architectural spaces. Rim lighting accentuates metallic and leather textures, with cutaways to close-ups of zippers and handles with shallow depth of field. The mood is aspirational and sophisticated. Timestamp multi-shot: [00:00-00:07] dolly push tracking traveler, [00:07-00:12] close-ups tactile details. Audio: smooth jazz with ambient airport sounds.
+```
+
+**Why it works**: Combining architectural grandeur with intimate product details elevates the brand’s premium image.
+
+**Technique**: Dolly push with rim lighting and shallow focus close-ups
+
+---
+
+### [veo_31_0248] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: tranquil, natural diffused, steadicam, rack focus, elegant
+
+```
+A gourmet tea brand commercial set in a lush garden with natural diffused afternoon light. The camera glides with a steadicam through blooming flowers to a table with steaming cups of tea, using rack focus to shift between blossoms and tea leaves. Close-ups emphasize delicate textures and warm tones. The mood is tranquil and elegant. Timestamp multi-shot: [00:00-00:06] steadicam glide through garden, [00:06-00:12] rack focus close-ups. Audio: soft classical strings with gentle birdsong.
+```
+
+**Why it works**: Flowing camera movement paired with subtle focus shifts creates a peaceful, sensory-rich brand experience.
+
+**Technique**: Steadicam glide with rack focus transitions
+
+---
+
+### [veo_31_0250] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: futuristic, natural diffused, dolly push, lens flare, clinical
+
+```
+A futuristic beverage brand commercial in a sleek laboratory setting with cool, natural diffused lighting. The camera performs a slow dolly push over scientific glassware and ends on a close-up of the glowing bottle. Lens flare and shallow depth of field emphasize the product’s innovation. The mood is clinical yet exciting. Timestamp multi-shot: [00:00-00:06] dolly push over lab equipment, [00:06-00:12] close-up glowing bottle. Audio: ambient electronic hum with soft pulses.
+```
+
+**Why it works**: Clinical lighting combined with glowing product highlights visually conveys innovation and purity.
+
+**Technique**: Slow dolly push with lens flare and shallow depth close-up
+
+---
+
+### [veo_31_0251] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: nostalgic, golden hour, dolly pull, film grain, joyful
+
+```
+A premium chocolate milkshake commercial filmed in a retro diner with warm, golden hour lighting. The camera uses a dolly pull-back from a close-up of whipped cream topped shake to a medium shot of friends enjoying the moment. Film grain adds nostalgic warmth, while shallow depth of field isolates the product. The mood is joyful and nostalgic. Timestamp multi-shot: [00:00-00:05] dolly pull-back close-up, [00:05-00:10] medium shot group. Audio: upbeat vintage rock with diner ambiance.
+```
+
+**Why it works**: Nostalgic lighting and film grain combined with social joy create an emotional connection to the product.
+
+**Technique**: Dolly pull-back with film grain and shallow depth
+
+---
+
+### [veo_31_0254] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: warm, natural, cozy, intimate, film grain
+
+```
+A vibrant outdoor café scene as morning sunlight filters through autumn leaves, capturing a young woman savoring her coffee. [00:00-00:04] Handheld close-up on her smiling face, natural diffused light. [00:04-00:08] Dolly push pulling out to a wide shot revealing diverse patrons enjoying the café vibe. Soft film grain adds warmth. Mood is cozy and uplifting. Transition to slow-motion shot of coffee pouring with bokeh background. Audio: Ambient chatter with gentle jazz music overlay. SFX: Coffee pouring and clinking cups. Cinematic 4K with depth of field to highlight product intimacy.
+```
+
+**Why it works**: Creates an emotional connection by focusing on relatable moments and sensory details.
+
+**Technique**: Handheld camera with natural diffused lighting and soft film grain
+
+---
+
+### [veo_31_0257] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: elegant, soft, fresh, studio, intimate
+
+```
+A sleek cosmetic brand film showing a model applying foundation in a modern studio setting with softbox studio lighting. [00:00-00:04] Rack focus from the makeup brush to the model’s flawless skin. [00:04-00:08] Close-up slow-motion shot capturing product texture and application. Lighting emphasizes soft shadows and natural skin tones. Mood is elegant and fresh. Audio: Soft whispering voiceover with ambient spa music. SFX: Subtle brush strokes and light tapping sounds. Cinematic 4K with shallow depth of field and film-quality clarity.
+```
+
+**Why it works**: Highlights product benefits through tactile detail and intimate cinematography.
+
+**Technique**: Rack focus and slow-motion close-ups under soft studio lighting
+
+---
+
+### [veo_31_0259] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: authentic, warm, inviting, natural, cinematic
+
+```
+A gourmet food commercial showcasing a chef preparing a signature dish in a warmly lit kitchen at magic hour. [00:00-00:05] Close-up steadycam shot of hands plating the dish with precise movements. [00:05-00:10] Crane up reveal of the chef nodding proudly toward the finished meal at the rustic wooden table. Mood is authentic and inviting. Lighting features warm golden hour tones with natural diffused fill and rim light. Audio: Soft instrumental with kitchen ambience and sizzling sounds. Cinematic 4K with film grain and depth of field.
+```
+
+**Why it works**: Emphasizes craftsmanship and warmth, making the food and chef relatable and desirable.
+
+**Technique**: Steadycam close-ups with golden hour lighting and crane reveal
+
+---
+
+### [veo_31_0261] Score: 8/10
+
+**Subcategory**: TV Commercial & Brand Film | **Use Case**: `tv_commercial`
+
+**Tags**: fresh, natural, vibrant, eco-friendly, cinematic
+
+```
+A sustainable fashion brand commercial featuring diverse models walking confidently through an urban green rooftop garden at magic hour. [00:00-00:05] Wide handheld tracking shot showcasing the clothing line with natural golden hour lighting. [00:05-00:10] Cut to close-ups highlighting fabric texture and eco-friendly tags with depth of field. Mood is vibrant, fresh, and conscientious. Audio: Uplifting indie acoustic with ambient nature sounds. SFX: Light breeze rustling leaves. Cinematic 4K with film grain and soft diffusion for warmth.
+```
+
+**Why it works**: Authentically showcases brand values through environment and relatable human elements.
+
+**Technique**: Handheld tracking with natural golden hour lighting and depth of field
+
+---
+
+## Corporate & Brand (12 prompts)
+
+### [veo_31_0401] Score: 9/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: cinematic, natural diffused, aerial drone, anamorphic lens, corporate
+
+```
+A modern tech company’s headquarters at golden hour, showcasing employees collaborating in open office spaces with glass walls. Begin with a wide aerial drone shot over the building, transition to a dolly push into a lively brainstorming session with diverse team members. Use natural diffused lighting combined with anamorphic lens for cinematic depth. Capture moments of genuine interaction and innovation, with rack focus shifting between speakers. End with a slow crane up revealing the city skyline. Audio: Soft ambient office sounds and low inspirational music underscore the scene. SFX: Keyboard typing, murmurs.
+```
+
+**Why it works**: Combines dynamic camera movements with natural lighting to create an inspiring and authentic corporate environment.
+
+**Technique**: aerial drone combined with dolly push and rack focus
+
+---
+
+### [veo_31_0403] Score: 9/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: magic hour, neon-lit, handheld, lens flare, luxury
+
+```
+Inside a luxury fashion brand’s flagship store at magic hour with neon-lit accents. Begin with a rack focus from the brand’s iconic logo on a storefront window to elegant mannequins displaying the latest collection. Use handheld camera for intimate close-ups on fabric textures and designer sketches. Incorporate lens flare effects as natural light blends with atmospheric neon. Transition through a dissolve to a behind-the-scenes look at artisans crafting garments in a softly lit studio. Audio: Ambient city street sounds mixed with smooth jazz and designer commentary.
+```
+
+**Why it works**: Evokes luxury and craftsmanship by blending atmospheric lighting and intimate camerawork.
+
+**Technique**: handheld close-ups with lens flare and rack focus
+
+---
+
+### [veo_31_0405] Score: 9/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: studio lighting, crane down, anamorphic, rack focus, professional
+
+```
+A global consulting firm’s teamwork story told through a crane down shot from the rooftop terrace into a busy conference room filled with diverse professionals. Use studio lighting to highlight polished interiors and professional attire. Cut to close-ups of intense discussions, data analysis on screens, and handshake agreements, using rack focus to shift attention naturally. Apply anamorphic lens and subtle film grain to add cinematic texture. Audio: Confident voiceover narrating company values, with ambient office noise and soft dynamic music.
+```
+
+**Why it works**: Integrates cinematic visuals with professional settings to convey expertise and collaboration.
+
+**Technique**: crane down combined with rack focus and anamorphic lens
+
+---
+
+### [veo_31_0407] Score: 9/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: magic hour, rim light, dolly push, handheld, futuristic
+
+```
+A fintech company’s high-tech office environment at magic hour with rim lighting accentuating futuristic glass and metal architecture. Begin with a dolly push through a corridor of transparent meeting rooms, cut to close-ups of coders analyzing data on multiple screens. Use depth of field and subtle lens flare to add visual interest. Incorporate handheld camera movements during collaborative coding sessions to add energy and realism. Audio: Upbeat electronic background score blended with typing sounds and tech chatter.
+```
+
+**Why it works**: Conveys cutting-edge innovation with dynamic lighting and immersive camerawork.
+
+**Technique**: dolly push with rim lighting and handheld close-ups
+
+---
+
+### [veo_31_0410] Score: 9/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: golden hour, tracking shot, aerial drone, rim light, cinematic 4K
+
+```
+A global logistics company’s precision and speed story, shot in a bustling shipping port at golden hour. Start with a tracking shot following a container from ship unloading to warehouse sorting. Use cinematic 4K with film-quality detail and natural diffused lighting. Incorporate close-ups of workers operating machinery, highlighted by rim light to emphasize dedication and teamwork. End with an aerial drone shot over the entire port as sunset colors fill the sky. Audio: Rhythmic machinery sounds, interspersed with motivating narration and orchestral music.
+```
+
+**Why it works**: Captures scale and human effort using diverse camera angles and evocative lighting.
+
+**Technique**: tracking shot combined with aerial drone and rim lighting
+
+---
+
+### [veo_31_0412] Score: 9/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: golden hour, dolly push, rim light, film grain, timeless
+
+```
+A financial services firm’s tradition and trust story, filmed inside a historic office building with warm golden hour lighting streaming through tall windows. Start with a dolly push capturing antique furniture and portraits, then focus on a senior executive delivering a heartfelt address. Use rim light to accentuate facial features and apply film grain for a timeless feel. Cut to close-ups of handshake deals and archival documents with a rack focus effect. Audio: Calm orchestral music and the executive’s clear narration emphasizing legacy and reliability.
+```
+
+**Why it works**: Blends heritage and professionalism with cinematic lighting and focus to build trust.
+
+**Technique**: dolly push with rim lighting and rack focus
+
+---
+
+### [veo_31_0402] Score: 8/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: studio lighting, steadicam, film grain, rim light, industrial
+
+```
+A multinational manufacturing plant’s story, starting with a wide steadicam walk-through of the production floor under bright studio lighting, capturing workers and advanced machinery in sync. Cut to close-ups of precision engineering and hand inspections with rim light highlighting details. Use film grain and shallow depth of field to emphasize craftsmanship and tradition meeting innovation. Transition to a tracking shot following a product from assembly to packaging. Audio: Narration detailing the brand’s heritage, supported by subtle mechanical sounds and uplifting orchestral music.
+```
+
+**Why it works**: Marries technical precision with human craftsmanship using cinematic techniques to tell a brand story.
+
+**Technique**: steadicam walk combined with rim lighting and film grain
+
+---
+
+### [veo_31_0404] Score: 8/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: golden hour, tracking shot, natural diffused, film grain, startup
+
+```
+A startup incubator’s vibrant workspace during golden hour, featuring young diverse entrepreneurs brainstorming and coding on laptops. Start with a tracking shot weaving through open-plan desks and collaborative zones, then cut to close-ups of creative sketches and prototype models. Use natural diffused lighting to convey energy and optimism. Incorporate subtle film grain and a shallow depth of field to enhance focus on innovation. End with a slow fade out on a group high-five. Audio: Background conversations, keyboard clicks, and motivational background music.
+```
+
+**Why it works**: Captures the dynamic spirit of innovation with fluid camera work and warm lighting.
+
+**Technique**: tracking shot with natural diffused lighting and shallow depth of field
+
+---
+
+### [veo_31_0406] Score: 8/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: golden hour, aerial drone, steadycam, natural diffused, sustainable
+
+```
+A family-owned organic farm at dawn, featuring golden hour natural diffused light filtering through morning mist. Begin with an aerial drone shot over lush fields, then a steadycam close-up of farmers planting and harvesting. Use a soft film grain and slow dolly push to emphasize the connection between nature and sustainable business practices. Transition to a tracking shot following produce from field to local market stall. Audio: Ambient farm sounds, birds chirping, and calm acoustic guitar music.
+```
+
+**Why it works**: Showcases sustainability and tradition using warm natural lighting and cinematic camera movements.
+
+**Technique**: aerial drone paired with steadycam and dolly push
+
+---
+
+### [veo_31_0408] Score: 8/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: studio lighting, rim light, shallow depth of field, film grain, compassionate
+
+```
+A healthcare provider’s commitment story, filmed in a bright, clean hospital environment under studio lighting. Start with wide shots of medical staff interacting compassionately with patients, then cut to close-ups featuring empathetic facial expressions with soft rim light. Use shallow depth of field and film grain to humanize the clinical setting. Transition smoothly with dissolves to advanced medical equipment and lab work. Audio: Calm voiceover emphasizing care and trust, supported by gentle piano music and hospital ambient sounds.
+```
+
+**Why it works**: Balances clinical professionalism with human warmth through lighting and focus techniques.
+
+**Technique**: rim light with shallow depth of field and dissolves
+
+---
+
+### [veo_31_0409] Score: 8/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: natural diffused, steadicam, rack focus, film grain, eco-friendly
+
+```
+An eco-friendly urban tech startup’s day, using natural diffused light streaming through large windows. Begin with a wide steadicam shot of employees using sustainable materials and eco gadgets in a bright open space. Shift to close-ups of hands assembling prototypes, with rack focus highlighting key details. Apply film grain and subtle bokeh to create a warm, approachable aesthetic. End with a fade out on a rooftop garden where the team gathers. Audio: Light indie pop music with natural city sounds and cheerful chatter.
+```
+
+**Why it works**: Effectively links sustainability and innovation with inviting visual storytelling.
+
+**Technique**: steadicam with rack focus and natural diffused lighting
+
+---
+
+### [veo_31_0411] Score: 8/10
+
+**Subcategory**: Corporate Brand Story | **Use Case**: `corporate_video`
+
+**Tags**: magic hour, handheld, lens flare, shallow depth of field, creative
+
+```
+A creative advertising agency’s dynamic office filmed at magic hour with neon accents. Open with a handheld shot weaving through brainstorming sessions and storyboard walls. Use lens flare and shallow depth of field to highlight vibrant design elements. Transition with a dissolve to a client pitch scene under studio lighting, focusing on confident presentations and interactive screens. Add subtle film grain for cinematic texture. Audio: Energetic pop soundtrack mixed with conversations and click sounds of digital devices.
+```
+
+**Why it works**: Conveys creativity and energy with vivid lighting and dynamic camera movement.
+
+**Technique**: handheld with lens flare and shallow depth of field
+
+---
+
+## E-commerce (12 prompts)
+
+### [veo_31_0433] Score: 10/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: tech, neon-lit, high contrast, dynamic, 4K cinematic
+
+```
+Feature a cutting-edge gaming laptop inside a dark room lit by neon RGB accent lights. Begin with a wide shot using a crane down to focus on the illuminated keyboard and screen, then rack focus to a close-up of hands typing rapidly. Employ film-quality 4K resolution with deep contrast and lens flare effects on the screen. Transition with a dissolve to animated overlays showing key specifications. Audio: Energetic synthwave music with mechanical keystroke SFX. SFX: Cooling fans and subtle electronic hum.
+```
+
+**Why it works**: Captures the high-energy essence of gaming tech through vibrant lighting and engaging visual focus shifts.
+
+**Technique**: Crane down combined with rack focus and neon lighting
+
+---
+
+### [veo_31_0437] Score: 10/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: cozy, golden hour, slow-motion, aerial drone, warm
+
+```
+Launch a premium coffee machine in a cozy café setting during golden hour. Open with a wide aerial drone shot through the café window, then dissolve to a close-up steadycam shot of steaming coffee pouring into a branded mug. Use natural diffused and warm golden hour lighting, enhancing steam and crema texture with depth of field. Transition to slow-motion once the coffee is poured, focusing on the rich color and froth. Audio: Soft jazz music with ambient café chatter and espresso machine sounds.
+```
+
+**Why it works**: Builds a sensory-rich narrative that connects product quality with lifestyle aspirations.
+
+**Technique**: Aerial drone to steadycam tracking with slow-motion detail shots
+
+---
+
+### [veo_31_0431] Score: 9/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: modern, golden hour, minimalist, shallow depth of field, cinematic
+
+```
+Showcase a sleek new smartwatch in a modern urban loft setting during golden hour. Start with a wide shot of the product on a minimalist table with soft natural diffused light, then dolly in for a detailed close-up of the watch face displaying dynamic health metrics. Utilize shallow depth of field and subtle bokeh to emphasize the premium design. Transition smoothly to a steadicam tracking shot of a model putting on the watch, highlighting comfort and style. End with a crisp product shot enhanced by rim lighting to accentuate contours. Audio: Upbeat electronic music with ambient city sounds. SFX: Soft button clicks and subtle ticking.
+```
+
+**Why it works**: Combines lifestyle appeal with detailed product focus using dynamic camera techniques to engage viewers.
+
+**Technique**: Dolly push-in combined with rim lighting for product emphasis
+
+---
+
+### [veo_31_0434] Score: 9/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: luxury, studio lighting, macro, elegant, soft
+
+```
+Introduce a luxury skincare serum on a pristine white studio set with softbox lighting for natural diffused illumination. Start with a close-up macro shot of the glass bottle’s texture and liquid drops, then cut to a dolly pull-back revealing the full product line arranged artistically. Use film grain and gentle bokeh to evoke elegance. End with a steady handheld shot of a model applying the serum to her face, emphasizing smooth skin. Audio: Soft piano melody with gentle water dripping SFX.
+```
+
+**Why it works**: Highlights product purity and luxury by combining macro details with refined human interaction.
+
+**Technique**: Macro close-up with dolly pull-back to reveal product line
+
+---
+
+### [veo_31_0436] Score: 9/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: modern, warm lighting, rim light, voice activation, intimate
+
+```
+Highlight a smart home assistant device on a modern kitchen counter during magic hour. Use warm rim lighting to accentuate the device’s sleek design and reflective surfaces. Begin with a dolly-in wide shot from the sink to the product, then cut to a rack focus between the device and user’s hand activating voice commands. Incorporate subtle lens flare on the shiny surfaces. End with a fade-out on the product logo glowing softly. Audio: Clear voice command sample with soft ambient home sounds.
+```
+
+**Why it works**: Creates an inviting atmosphere that blends home comfort with futuristic tech appeal.
+
+**Technique**: Rim lighting with dolly-in and rack focus to emphasize interaction
+
+---
+
+### [veo_31_0438] Score: 9/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: futuristic, neon-lit, high contrast, dynamic cuts, tech
+
+```
+Feature a new line of wireless earbuds in a futuristic neon-lit studio. Begin with a close-up crane shot highlighting the earbuds’ sleek design and soft-touch finish. Use vibrant neon colors and high-contrast lighting to create a tech-forward vibe. Employ rack focus to shift attention between earbuds and charging case. End with quick cuts showcasing the earbuds in use during workouts and commuting. Audio: Pulsing electronic beats matched with crisp button tap SFX.
+```
+
+**Why it works**: Captures tech sophistication and lifestyle versatility through vibrant lighting and fast editing.
+
+**Technique**: Crane shot combined with rack focus and neon lighting
+
+---
+
+### [veo_31_0440] Score: 9/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: romantic, warm, intimate, shallow depth of field, film grain
+
+```
+Introduce a premium chocolate box with a romantic candle-lit dinner setting. Use warm rim lighting and shallow depth of field to create an intimate atmosphere. Begin with a close-up of the box opening to reveal assorted chocolates, then crane up to a wide shot of an elegantly set table with soft film grain overlay. Transition to a handheld shot capturing reactions of people enjoying the chocolates. Audio: Soft classical piano and ambient dinner conversation. SFX: Soft unwrap sounds.
+```
+
+**Why it works**: Connects product with emotional experience through warm lighting and personal focus.
+
+**Technique**: Warm rim lighting with crane and handheld shots
+
+---
+
+### [veo_31_0442] Score: 9/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: modern, clean, macro, golden hour, intimate
+
+```
+Feature a premium electric toothbrush in a sleek modern bathroom at magic hour. Use natural diffused and rim lighting to highlight the brush’s ergonomic handle and LED indicators. Begin with a close-up macro of the brush head spinning, then dolly out to reveal the full bathroom setup with soft golden light. Transition to a tracking shot following a user brushing teeth with gentle depth of field focus shifts. End with a fade to the product logo glowing softly. Audio: Crisp brushing sounds with clean ambient music.
+```
+
+**Why it works**: Demonstrates product effectiveness with close-up detail and inviting real-life use context.
+
+**Technique**: Macro close-up combined with dolly out and rim lighting
+
+---
+
+### [veo_31_0432] Score: 8/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: natural, cinematic, eco-friendly, aerial drone, film grain
+
+```
+Launch a new eco-friendly water bottle with an aerial drone shot over a lush forest, descending into a close-up handheld shot of the bottle on moss. Use natural diffused lighting to highlight the sustainable materials and textures. Introduce a slow crane down revealing the bottle in use by an active hiker. Incorporate film grain and anamorphic lens to deliver a cinematic feel. End with a fade-out on the product logo embossed on the bottle. Audio: Calm nature sounds mixed with inspiring acoustic guitar. SFX: Water pouring and gentle leaves rustling.
+```
+
+**Why it works**: Uses immersive natural environments and cinematic techniques to connect product with sustainability values.
+
+**Technique**: Aerial drone transition to handheld close-up for immersive storytelling
+
+---
+
+### [veo_31_0435] Score: 8/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: urban, cinematic, industrial, steadicam, slow-motion
+
+```
+Present a new line of fashion sneakers in an industrial warehouse setting with natural diffused light filtering through large windows. Use a steadicam for smooth tracking shots following a model walking confidently. Start with wide shots revealing the gritty environment and zoom into close-ups of the shoe’s textures and design details. Add subtle film grain and lens flare for cinematic depth. Conclude with a slow-motion crane-up shot highlighting the sneaker on a pedestal. Audio: Upbeat urban beats with crowd ambience. SFX: Footsteps and sneaker squeaks.
+```
+
+**Why it works**: Combines urban style and dynamic movement to appeal to trend-conscious consumers.
+
+**Technique**: Steadicam tracking with slow-motion crane up
+
+---
+
+### [veo_31_0439] Score: 8/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: minimalist, natural light, ergonomic, professional, clean
+
+```
+Showcase an innovative ergonomic office chair in a bright minimalist office. Start with a dolly push-in on the chair from an angle accentuating ergonomic curves. Use natural diffused lighting and soft shadows for a clean look. Transition to a steadicam tracking shot of a professional sitting down and adjusting the chair, demonstrating comfort and functionality. Apply subtle film grain and shallow depth of field for artistic depth. Audio: Calm ambient office sounds with subtle chair adjustment SFX.
+```
+
+**Why it works**: Effectively communicates product comfort and professionalism in a relatable office environment.
+
+**Technique**: Dolly push-in combined with steadicam tracking
+
+---
+
+### [veo_31_0441] Score: 8/10
+
+**Subcategory**: Product Launch Video | **Use Case**: `ecommerce_video`
+
+**Tags**: outdoor, golden hour, cinematic, lens flare, adventure
+
+```
+Present a new DSLR camera body on a rugged outdoor photography location at magic hour. Start with an aerial drone sweeping over the landscape, then cut to a steadycam shot of the photographer assembling the camera. Use golden hour natural lighting to evoke warmth, combined with lens flare and a subtle film grain effect. Highlight button controls and LCD screen with a close-up rack focus. End with a slow dolly out revealing the captured panoramic view. Audio: Ambient nature sounds with shutter clicks and camera focus beeps.
+```
+
+**Why it works**: Appeals to photography enthusiasts by blending product features with inspiring environment visuals.
+
+**Technique**: Aerial drone to steadycam with dolly out transition
+
+---
+
+## Fashion & Lifestyle (30 prompts)
+
+### [veo_31_0267] Score: 10/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: luxury, natural light, haute couture, steadicam, elegant
+
+```
+Luxury fashion film set inside a classic grand hotel lobby during daytime using natural diffused lighting. The female model elegantly walks through the space wearing haute couture dresses. Use smooth dolly pushes combined with steadicam tracking shots to follow movement fluidly. Employ shallow depth of field focusing on intricate garment details while softly blurring opulent architectural elements. Capture native ambient sounds like footsteps on marble and distant chatter to enrich the sophisticated mood.
+```
+
+**Why it works**: Blends timeless elegance with cinematic techniques that highlight garment craftsmanship and location beauty.
+
+**Technique**: steadicam tracking with dolly push and shallow depth of field
+
+---
+
+### [veo_31_0271] Score: 10/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: elegant, ballroom, magic hour, anamorphic, classic
+
+```
+Elegant indoor evening wear fashion film shot in a dimly lit ballroom with chandeliers. Utilize magic hour ambient light filtering through windows combined with warm rim lighting to create depth. Steadicam tracks model walking slowly, alternating with close-ups using anamorphic lens for cinematic bokeh effects. Include subtle film grain to evoke classic glamour. Capture native sounds of soft footsteps and distant classical music to enhance atmosphere. Use slow fades between shots for a dreamy, poetic mood.
+```
+
+**Why it works**: Conveys timeless luxury and sophistication through carefully crafted lighting and camera work.
+
+**Technique**: steadicam tracking with anamorphic lens and bokeh
+
+---
+
+### [veo_31_0277] Score: 10/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: editorial, desert, silk, magic hour, ethereal
+
+```
+High fashion editorial film shot in an open desert landscape with models in flowing silk gowns. Utilize aerial drone for sweeping wide shots and steadycam for intimate close-ups emphasizing fabric movement and sand textures. Capture magic hour lighting with rim light to add depth. Native sounds include wind blowing and distant wildlife to enhance the ethereal mood. Use slow dissolves and rack focus for poetic scene transitions reflecting freedom and elegance.
+```
+
+**Why it works**: Marries natural grandeur with fashion elegance to create visually stunning editorial content.
+
+**Technique**: aerial drone with steadycam and rack focus
+
+---
+
+### [veo_31_0279] Score: 10/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: bridal, magic hour, cinematic, natural light, romantic
+
+```
+Elegant bridal fashion film shot outdoors in a lush garden during magic hour. Use steadicam tracking to follow the bride walking slowly through flower arches. Employ soft natural diffused lighting with rim light to highlight lace and embroidery. Utilize shallow depth of field and anamorphic lens for dreamy bokeh and cinematic softness. Capture native sounds of birds and gentle breeze. Transition with slow fades to evoke romance and timeless beauty.
+```
+
+**Why it works**: Captures bridal elegance with romantic cinematic techniques that emphasize delicate details and mood.
+
+**Technique**: steadicam tracking with anamorphic lens and shallow depth of field
+
+---
+
+### [veo_31_0282] Score: 10/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: winter, alpine, magic hour, cozy, elegant
+
+```
+Elegant winter fashion film shot in a snowy alpine village at magic hour. Female models wear layered coats and cashmere scarves. Combine aerial drone establishing shots of snow-covered roofs with steadycam close-ups emphasizing fabric textures. Utilize soft natural diffused light and rim lighting to outline figures against white snow. Capture native sounds of crunching snow and wind for immersive atmosphere. Use slow fades and rack focus to evoke a cozy yet sophisticated winter mood.
+```
+
+**Why it works**: Balances serene winter landscapes with intimate fashion details for a luxurious seasonal narrative.
+
+**Technique**: aerial drone with steadycam close-ups and rack focus
+
+---
+
+### [veo_31_0287] Score: 10/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: resort, natural, golden hour, lifestyle, vibrant
+
+```
+A sunny beachside shoot featuring a male and female model in resort wear, showcasing flowing fabrics and vibrant prints. Use aerial drone shots to open with a wide view of ocean and coastline, transitioning to steadicam close-ups capturing fabric movement in the breeze and candid model interactions. Golden hour lighting with warm, natural diffused tones creates a relaxed, aspirational lifestyle mood. Timestamp multi-shot: [00:00-00:06] aerial drone wide establishing shot; [00:06-00:10] steadicam close-ups on fabric and models; [00:10-00:14] medium shot tracking models walking. Audio: gentle ocean waves mixed with upbeat tropical music.
+```
+
+**Why it works**: Combining aerial and steadicam shots with golden hour lighting captures both the fashion details and an aspirational lifestyle setting.
+
+**Technique**: aerial drone combined with steadicam close-ups on movement
+
+---
+
+### [veo_31_0292] Score: 10/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: festival, eclectic, dynamic, vibrant, nostalgic
+
+```
+A vibrant fashion film set in a bustling carnival at dusk, featuring a multiethnic group of models showcasing eclectic festival wear with vivid prints and accessories. Use a combination of handheld and steadicam shots to capture energy and spontaneity as models interact with rides, lights, and crowds. Lighting includes neon and carnival bulbs mixed with natural dusk light, enhanced with lens flare and film grain to evoke excitement and nostalgia. Timestamp multi-shot: [00:00-00:05] wide handheld establishing shot of carnival; [00:05-00:10] steadicam close-ups on models and outfit details; [00:10-00:15] tracking shot following group moving through crowd. Audio: lively carnival sounds layered with upbeat indie pop music.
+```
+
+**Why it works**: Dynamic camera work with vibrant carnival lighting effectively conveys the energy and diversity of festival fashion.
+
+**Technique**: handheld and steadicam capturing lively interaction and movement
+
+---
+
+### [veo_31_0263] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: urban, golden hour, natural light, cinematic, shallow depth of field
+
+```
+Outdoor urban fashion film featuring a diverse model walking through a bustling city street at golden hour. Use a handheld camera with subtle dolly push to follow the model closely, capturing natural diffused light and cinematic 4K quality. Incorporate shallow depth of field to emphasize the outfit details, with occasional lens flare when sunlight hits the camera. Transition between wide shots of the cityscape and intimate close-ups of accessories and fabric textures. Capture ambient city sounds and footsteps natively to enhance realism.
+```
+
+**Why it works**: Combines dynamic urban energy with intimate fashion details for relatable yet aspirational storytelling.
+
+**Technique**: handheld dolly push with shallow depth of field
+
+---
+
+### [veo_31_0265] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: beachside, magic hour, aerial drone, natural light, dreamy
+
+```
+Beachside fashion film at magic hour featuring a female model in flowing summer dresses. Use aerial drone shots for wide scenic views, intercut with close-up handheld shots focusing on fabric movement. Highlight natural diffused lighting with strategic use of rim light to enhance silhouette outlines. Employ slow dolly pulls to reveal intricate embroidery and accessories. Include native sound of ocean waves and gentle breeze to immerse the viewer in a serene, dreamy mood.
+```
+
+**Why it works**: Combines stunning natural landscapes with intimate fashion moments for an ethereal visual experience.
+
+**Technique**: aerial drone combined with handheld close-ups
+
+---
+
+### [veo_31_0266] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: nighttime, neon-lit, streetwear, cinematic, urban
+
+```
+Nighttime fashion film in a neon-lit city alley with a male model wearing streetwear. Use a crane down shot transitioning to a handheld close-up of the model adjusting a jacket zipper. Employ neon reflections and rim lighting to sculpt the outfit's textures, shot in cinematic 4K with subtle film grain. Include ambient city nightlife audio and muted electronic beats to set an edgy, urban vibe. Transition scenes with quick dissolves matching the beat to energize the visual flow.
+```
+
+**Why it works**: Captures youthful energy and modern style with strong visual contrasts and dynamic urban sounds.
+
+**Technique**: crane down to handheld close-up with neon rim lighting
+
+---
+
+### [veo_31_0269] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: bohemian, golden hour, natural light, aerial drone, rustic
+
+```
+Outdoor countryside fashion film featuring models in bohemian-inspired outfits during golden hour. Use natural diffused sunlight enhanced with rim lighting to emphasize textures. Employ steadycam to track models walking through tall grass fields, alternating with slow aerial drone shots for expansive landscape views. Integrate native nature sounds like birdsong and wind rustling for immersive atmosphere. Cut between wide shots and intimate close-ups of hand-woven fabrics and accessories.
+```
+
+**Why it works**: Creates a romantic, free-spirited tone connecting fashion with natural beauty.
+
+**Technique**: steadicam tracking with aerial drone wide shots
+
+---
+
+### [veo_31_0270] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: urban, sunset, streetwear, dynamic, cinematic
+
+```
+High-energy urban streetwear fashion film featuring a group of diverse models performing dynamic movements on rooftop at sunset. Use handheld cameras with quick dolly pushes and crane ups to capture energetic motion. Apply rim lighting to accent silhouettes against the city skyline, shot in cinematic 4K with film grain for grit. Layer native city sounds with rhythmic beats. Transition fast cuts synchronized with beats to enhance the dynamic, youthful vibe.
+```
+
+**Why it works**: Brings vibrancy and movement to street fashion highlighting energy and attitude.
+
+**Technique**: handheld quick dolly push combined with crane up
+
+---
+
+### [veo_31_0273] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: black and white, industrial, high contrast, edgy, avant-garde
+
+```
+Monochrome black and white fashion film set in an industrial warehouse featuring edgy androgynous looks. Use high contrast lighting with strong rim light to sculpt models’ outlines. Handheld camera follows model’s fluid movements with occasional crane ups to reveal architecture. Apply film grain for raw texture and rack focus between face and garment details to build tension. Native audio captures echoing footsteps and subtle garment sounds, enhancing a moody, avant-garde aesthetic.
+```
+
+**Why it works**: Creates a striking visual narrative by combining raw environment and high-fashion styling.
+
+**Technique**: handheld tracking with rack focus and strong rim lighting
+
+---
+
+### [veo_31_0275] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: futuristic, minimalist, neon-lit, studio, innovative
+
+```
+Futuristic fashion film set in a minimal white architectural space with reflective surfaces. Models wear metallic and transparent garments with neon accents. Use crane down shots combined with slow dolly pushes and rack focus to shift between model features and futuristic garment details. Employ studio lighting with neon-lit enhancements and subtle film grain for texture. Capture native electronic ambient sounds to complement the sci-fi mood. Transition with smooth dissolves to emphasize fluidity and innovation.
+```
+
+**Why it works**: Blends cutting-edge fashion with sleek modern visuals to create a strong futuristic vibe.
+
+**Technique**: crane down with dolly push and rack focus
+
+---
+
+### [veo_31_0278] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: athleisure, industrial, neon, dynamic, energetic
+
+```
+Modern athleisure fashion film in an industrial gym setting with models performing dynamic workouts. Use handheld cameras with fast dolly pushes and crane ups to follow movement energetically. Employ neon rim lighting and film grain for an edgy look. Capture native sounds of weights clanking and energetic breathing to enhance immersion. Transition with quick cuts and dissolves synchronized to pulse-pounding electronic music for high impact visuals.
+```
+
+**Why it works**: Fuses fashion and fitness with energetic visuals and audio to appeal to active lifestyle audiences.
+
+**Technique**: handheld fast dolly push with crane up
+
+---
+
+### [veo_31_0281] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: edgy, urban, twilight, neon, metallic
+
+```
+Edgy high-contrast fashion film in an urban rooftop during twilight featuring models in metallic and leather garments. Use crane ups and handheld tracking with strong rim neon lighting. Capture cinematic 4K with subtle film grain for texture. Native audio includes distant traffic and soft electronic beats. Transition with quick dissolves and cuts synced to music to emphasize attitude and futuristic urban style.
+```
+
+**Why it works**: Fuses urban grit and futuristic fashion with dynamic camera work and moody lighting.
+
+**Technique**: crane ups with handheld tracking and rim neon lighting
+
+---
+
+### [veo_31_0283] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: urban, cinematic, golden hour, streetwear, dynamic
+
+```
+A high-fashion urban rooftop setting at golden hour, featuring a diverse female model wearing modern streetwear with bold colors and textures. Use a steadycam dolly push-in to capture dynamic movement as she walks confidently, intercut with slow-motion close-ups on fabric details and accessories. Employ natural diffused lighting mixed with golden hour warmth to highlight skin tones and fabric textures. Incorporate subtle lens flares and shallow depth of field to create an immersive and cinematic mood. Timestamp multi-shot: [00:00-00:05] wide shot of rooftop cityscape with model walking; [00:05-00:08] close-up on fabric texture and accessories; [00:08-00:12] slow-motion tracking shot. Audio: ambient city sounds with soft electronic music.
+```
+
+**Why it works**: Combining natural golden hour lighting with dynamic camera movement creates a vibrant and authentic urban fashion narrative.
+
+**Technique**: steadycam dolly push-in capturing confident model movement
+
+---
+
+### [veo_31_0284] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: luxury, studio, cinematic, timeless, elegant
+
+```
+An elegant indoor studio shoot with a male model showcasing luxury eveningwear. Use a combination of crane up/down and subtle rack focus to transition seamlessly between shots of the full outfit and detailed close-ups on cufflinks and fabric weaves. Lighting is controlled studio rim light with soft diffusion to highlight silhouette and texture, combined with slight film grain for a timeless cinematic effect. Timestamp multi-shot: [00:00-00:04] crane down wide shot revealing model in full attire; [00:04-00:07] rack focus shifting from face to suit detail; [00:07-00:10] close-up slow dolly push on accessory. Audio: refined jazz instrumental with soft ambient background noise.
+```
+
+**Why it works**: Studio-controlled lighting combined with crane and rack focus techniques enhances the luxury mood and draws attention to garment details.
+
+**Technique**: crane up/down with rack focus to emphasize outfit and accessory detail
+
+---
+
+### [veo_31_0288] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: cyberpunk, neon-lit, futuristic, cinematic, stylized
+
+```
+A futuristic neon-lit cityscape at night with a female model dressed in cyberpunk-inspired fashion featuring reflective materials and LED accessories. Use a mix of tracking shots and rack focus to alternate between model’s face and glowing outfit elements. Integrate artificial neon lighting with vibrant magenta and cyan hues, combined with film grain and anamorphic lens flare for a stylized cinematic aesthetic. Timestamp multi-shot: [00:00-00:04] wide tracking shot through neon-lit street; [00:04-00:08] close-up rack focus on face and accessories; [00:08-00:12] tracking dolly shot following model. Audio: pulsing electronic synth beat with city ambient noise.
+```
+
+**Why it works**: Neon-lit lighting combined with rack focus and tracking shots effectively showcases futuristic fashion details in a moody urban environment.
+
+**Technique**: rack focus highlighting glowing outfit elements
+
+---
+
+### [veo_31_0290] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: streetstyle, edgy, industrial, textured, gritty
+
+```
+An industrial warehouse setting with a male model wearing edgy streetstyle featuring layered textures and oversized silhouettes. Utilize a steadicam tracking shot circling the model as he moves, interspersed with close-ups on fabric layering and accessories. Use natural diffused lighting supplemented by rim light to create contrast and depth, with subtle film grain for a gritty yet polished look. Timestamp multi-shot: [00:00-00:04] wide steadicam circle shot; [00:04-00:08] close-up on layered fabrics; [00:08-00:12] medium shot following model’s movement. Audio: ambient industrial sounds fused with a hip-hop beat.
+```
+
+**Why it works**: Steadicam tracking combined with industrial lighting creates a raw backdrop that highlights streetwear textures and attitude.
+
+**Technique**: steadicam tracking circling model to reveal outfit layers
+
+---
+
+### [veo_31_0291] Score: 9/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: minimalist, chic, editorial, sophisticated, modern
+
+```
+A chic minimalist penthouse interior at dusk featuring a female model dressed in sleek modern eveningwear. Employ crane down and dolly push shots to reveal architectural lines and model poses in a clean, sophisticated environment. Use soft diffused window light blended with warm artificial rim lighting to sculpt the model’s silhouette and highlight fabric sheen. Add subtle film grain and bokeh effects for a high-fashion editorial feel. Timestamp multi-shot: [00:00-00:05] crane down wide revealing penthouse and model; [00:05-00:09] dolly push close-up on fabric texture; [00:09-00:13] medium shot with gentle rack focus. Audio: smooth lounge jazz with background city ambiance.
+```
+
+**Why it works**: Combining architectural environment with controlled lighting and crane/dolly shots enhances the elegance of modern eveningwear.
+
+**Technique**: crane down and dolly push revealing environment and details
+
+---
+
+### [veo_31_0264] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: avant-garde, studio, rim light, film grain, anamorphic
+
+```
+Studio-based fashion film showcasing an avant-garde collection with dramatic rim lighting and a black seamless backdrop. Utilize a steadicam for smooth tracking shots circling the model, highlighting sculptural garment shapes with film grain and anamorphic lens effects. Employ a rack focus between face and outfit elements to create depth and mood. Capture native sounds of fabric rustling and the model's breath to add intimacy. Transition with slow fades to build a sense of mystery and high fashion artistry.
+```
+
+**Why it works**: Elevates the experimental fashion with cinematic techniques that emphasize texture and mood.
+
+**Technique**: steadicam tracking with rack focus
+
+---
+
+### [veo_31_0268] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: minimalist, studio, high-key lighting, monochrome, clean
+
+```
+Minimalist indoor fashion film featuring a model in monochrome outfits against a white studio backdrop. Incorporate high-key lighting with soft shadows to create a clean, modern aesthetic. Use slow rack focus shifts between the model's face and minimalist accessories. Employ a static wide shot transitioning to a subtle dolly pull for variety. Capture native audio of fabric movement and model’s quiet breathing to maintain intimacy and simplicity.
+```
+
+**Why it works**: Focuses attention on form and fabric with a restrained, visually striking style.
+
+**Technique**: rack focus combined with dolly pull
+
+---
+
+### [veo_31_0272] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: casual, natural light, cozy, lifestyle, relaxed
+
+```
+Casual lifestyle fashion film shot in a cozy, natural lit café with models wearing relaxed weekend wear. Use static wide shots combined with handheld close-ups highlighting textures like knits and denim. Employ natural diffused light through windows with occasional rim lighting for depth. Capture native café ambient sounds including clinking cups and murmured conversations. Use slow dissolve transitions to create a warm, inviting mood, emphasizing comfort and everyday elegance.
+```
+
+**Why it works**: Creates approachable, relatable fashion moments that feel authentic and warm.
+
+**Technique**: static wide shot blended with handheld close-ups
+
+---
+
+### [veo_31_0274] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: retro, vintage, golden hour, nostalgic, cinematic
+
+```
+Retro-inspired fashion film inside a vintage diner during golden hour. Feature models in 70s-style outfits using natural diffused light and lens flare to evoke nostalgia. Use steadycam to follow slow dance movements and dolly pull to reveal detailed prints and accessories. Incorporate native diner sounds like clinking glasses and old jukebox music for atmosphere. Cut between wide shots of interior and close-ups of hairstyles and makeup to complete period-authentic feel.
+```
+
+**Why it works**: Authentically captures retro fashion with immersive period detail and warm cinematic techniques.
+
+**Technique**: steadicam tracking with dolly pull and natural diffused light
+
+---
+
+### [veo_31_0276] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: casual, denim, golden hour, natural, lifestyle
+
+```
+Casual denim lookbook filmed on a sunny suburban street with pastel-colored houses. Female models walk and interact naturally, filmed with handheld dolly pulls and wide static shots. Use golden hour lighting to create warmth and soft shadows. Capture natural sounds of neighborhood ambiance, children playing, and birds to enhance lifestyle authenticity. Incorporate slow fades and lens flare effects for a nostalgic, carefree feel.
+```
+
+**Why it works**: Communicates approachable everyday style with a warm, nostalgic atmosphere.
+
+**Technique**: handheld dolly pull with wide static shots
+
+---
+
+### [veo_31_0280] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: fall, forest, warm, natural, cozy
+
+```
+Casual fall fashion film set in a forest with models wearing layered knits and scarves. Use handheld dolly pulls and aerial drone shots that capture warm golden hour light filtering through trees. Apply natural diffused lighting and rim light to sculpt silhouettes. Capture native forest sounds such as crunching leaves and birdsong. Use slow dissolves and cuts between wide and close-up shots to emphasize texture and seasonal comfort.
+```
+
+**Why it works**: Evokes seasonal warmth and texture by blending natural settings with cozy fashion.
+
+**Technique**: handheld dolly pull with aerial drone wide shots
+
+---
+
+### [veo_31_0285] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: bohemian, natural, intimate, warm, lively
+
+```
+A vibrant outdoor urban market at magic hour featuring a young female model styled in bohemian fashion. Employ handheld camera work to create an intimate and lively feel as she interacts with colorful stalls and fabrics. Utilize natural magic hour lighting with warm tones and occasional rim light to highlight contours and clothing layers. Include quick cuts and dissolves between wide establishing shots and close-ups of fabric movement and accessories. Timestamp multi-shot: [00:00-00:03] wide establishing shot of market; [00:03-00:07] handheld close-ups on model selecting items; [00:07-00:10] medium shot tracking the model walking. Audio: ambient market chatter and acoustic guitar melody.
+```
+
+**Why it works**: Handheld camera and magic hour lighting create an immersive and authentic lifestyle vibe that highlights fashion in a real-world context.
+
+**Technique**: handheld camera capturing natural interaction and movement
+
+---
+
+### [veo_31_0286] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: minimalist, avant-garde, monochrome, editorial, textured
+
+```
+A minimalist indoor setting with a female model wearing avant-garde high fashion pieces in monochrome tones. Utilize tracking shots combined with slow dolly pull-back to reveal volumetric fabric shapes and silhouette changes as the model moves gracefully. Add soft diffused natural lighting paired with subtle lens flare effects to emphasize texture and depth. Incorporate film grain for a high-fashion editorial mood. Timestamp multi-shot: [00:00-00:05] close-up on fabric texture; [00:05-00:10] tracking shot following model's movement; [00:10-00:13] dolly pull-back wide shot. Audio: sparse ambient synth with gentle piano notes.
+```
+
+**Why it works**: Minimalist lighting and fluid camera movements draw focus on avant-garde fashion shapes and fabric textures.
+
+**Technique**: tracking shots with dolly pull-back revealing fabric volumes
+
+---
+
+### [veo_31_0289] Score: 8/10
+
+**Subcategory**: Fashion Film & Lookbook | **Use Case**: `fashion_film`
+
+**Tags**: bohemian, natural, warm, dreamy, nostalgic
+
+```
+A rustic countryside meadow at magic hour featuring a female model in flowing boho dresses and floral prints. Use a handheld camera with gentle crane up/down movements to follow the model’s natural, carefree motion through tall grass. Employ warm diffused natural lighting with rim light to create a dreamy, nostalgic atmosphere. Include soft focus transitions between wide scenic shots and intimate close-ups on fabric detail and hair movement. Timestamp multi-shot: [00:00-00:05] wide crane shot over meadow; [00:05-00:10] handheld close-ups on dress and model’s face; [00:10-00:14] slow tracking shot following model walking. Audio: ambient birdsong mixed with soft acoustic guitar.
+```
+
+**Why it works**: Soft natural lighting paired with handheld and crane shots enhances the free-spirited boho fashion narrative.
+
+**Technique**: handheld with gentle crane up/down capturing natural flow
+
+---
+
+## Fashion Editorial (31 prompts)
+
+### [veo_31_0126] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: golden hour, cinematic 4K, lens flare
+
+```
+A high-end fashion editorial featuring a female model in an opulent silk gown walking through a modern glass atrium. The camera performs a slow dolly push from a wide establishing shot to a tight close-up on intricate jewelry details. Golden hour natural diffused lighting enhances skin tones and fabric textures. The mood is elegant and aspirational with subtle lens flare and shallow depth of field creating a dreamy atmosphere. [00:00-00:05] Wide shot establishing the architectural space, [00:05-00:10] Close-up on the silk fabric and diamond necklace. Audio: soft orchestral strings underscore the luxury vibe.
+```
+
+**Why it works**: Combining natural golden hour lighting with detailed close-ups highlights luxury materials and craftsmanship effectively.
+
+**Technique**: Timestamp-based multi-shot with dolly push and lens flare
+
+---
+
+### [veo_31_0129] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: golden hour, aerial drone, cinematic 4K
+
+```
+A cinematic seaside cliff at sunset featuring a female model in a flowing haute couture gown. The camera performs an aerial drone shot circling the model, capturing the fabric billowing in the wind against the vast ocean. Warm golden hour lighting creates a romantic and ethereal mood. Depth of field isolates the subject against the dramatic landscape. [00:00-00:08] Aerial drone establishing and circling shot. Audio: gentle ocean waves mixed with soft classical piano.
+```
+
+**Why it works**: Aerial shots combined with natural dramatic lighting evoke a sense of freedom and luxury lifestyle aspiration.
+
+**Technique**: Aerial drone shot with natural golden hour lighting and depth of field
+
+---
+
+### [veo_31_0133] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: magic hour, dolly push, natural diffused
+
+```
+A serene desert landscape at magic hour featuring a female model in an ethereal chiffon gown with intricate embroidery. The camera uses a slow dolly push followed by a tracking shot moving with the model as the fabric flows in the wind. Soft golden lighting with natural diffused sunlight enhances textures and creates a calm, dreamy atmosphere. [00:00-00:07] Dolly push to tracking shot. Audio: gentle desert wind mixed with ambient instrumental music.
+```
+
+**Why it works**: Natural environment combined with slow camera movement emphasizes luxury craftsmanship and natural beauty.
+
+**Technique**: Timestamp-based dolly push to tracking shot
+
+---
+
+### [veo_31_0136] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: neon-lit, handheld, slow-motion
+
+```
+A dramatic nighttime runway on a rain-soaked cobblestone street, featuring models in shimmering metallic gowns and tuxedos. The camera uses slow-motion handheld shots capturing reflections and raindrops under moody neon lighting. Depth of field isolates the models while bokeh highlights blurred city lights. The atmosphere is bold and cinematic with high contrast color grading. [00:00-00:10] Slow-motion handheld tracking shot. Audio: rhythmic rain with subtle cinematic score.
+```
+
+**Why it works**: Rain effects combined with neon lighting and slow motion create a luxurious moody atmosphere with dynamic visual interest.
+
+**Technique**: Handheld slow-motion with neon lighting and bokeh
+
+---
+
+### [veo_31_0141] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: magic hour, aerial drone, natural diffused
+
+```
+A surreal fashion editorial on a glass bridge overlooking a foggy forest, with a female model wearing a flowing avant-garde dress made of feathers. The camera uses an aerial drone shot slowly ascending to reveal the vastness of nature contrasted with delicate fashion. Soft magic hour lighting with natural diffused fog creates a mysterious, ethereal atmosphere. [00:00-00:08] Aerial drone slow ascend shot. Audio: soft wind with ethereal vocal harmonies.
+```
+
+**Why it works**: Combining surreal natural environments with high fashion creates an unforgettable luxury editorial experience.
+
+**Technique**: Aerial drone slow ascend with natural diffused fog lighting
+
+---
+
+### [veo_31_0145] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, tracking shot, cinematic 4K
+
+```
+An ethereal underwater fashion shoot with a model in a flowing silk dress. The camera uses slow, floating tracking shots with natural diffused lighting filtered underwater, creating rippling light patterns on fabric and skin. The mood is surreal and serene. [00:00-00:10] Slow floating tracking shots underwater. Audio: soft ambient water sounds with subtle orchestral music.
+```
+
+**Why it works**: Underwater visuals combined with slow tracking highlight fabric movement and create dreamlike luxury imagery.
+
+**Technique**: Slow tracking shot with natural diffused underwater lighting
+
+---
+
+### [veo_31_0150] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, dolly push, film grain
+
+```
+A surreal editorial featuring a female model in a sculptural avant-garde dress inside a modern glass cube installation. The camera uses a slow 360-degree dolly push circling the model with reflections and refractions playing on the glass. Soft natural diffused lighting with subtle film grain creates a futuristic and artistic atmosphere. [00:00-00:10] Slow 360-degree dolly push. Audio: ambient electronic soundscape with subtle echoes.
+```
+
+**Why it works**: Glass reflections and slow circular motion create a mesmerizing visual highlighting avant-garde luxury fashion.
+
+**Technique**: 360-degree dolly push with natural diffused lighting and film grain
+
+---
+
+### [veo_31_0151] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: cinematic 4K, golden hour, shallow depth of field
+
+```
+[00:00-00:05] Ultra-wide establishing shot of a sleek, modern urban rooftop at dusk, with a distinguished model in an elegant, flowing silk gown standing poised against the city skyline. [00:05-00:10] Tracking shot circling the model, capturing intricate fabric textures with a shallow depth of field. Camera movement: slow dolly push transitioning to handheld for intimate close-ups. Lighting: golden hour natural light mixed with subtle neon accent lights. Mood: sophisticated, aspirational, and ethereal. Audio: ambient city sounds blending with soft ambient electronic music.
+```
+
+**Why it works**: Combines dramatic urban luxury with natural and neon lighting to highlight fabric detail and model elegance, creating a timeless yet modern brand aesthetic.
+
+**Technique**: Timestamp-based multi-shot with dolly push and handheld for dynamic perspective
+
+---
+
+### [veo_31_0153] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: aerial drone, magic hour, photorealistic
+
+```
+[00:00-00:04] Aerial drone shot over a sprawling, sun-drenched vineyard estate with models wearing flowing summer resort wear. [00:04-00:08] Cut to steadycam tracking along a sunlit cobblestone path showcasing the movement and texture of the fabrics. Lighting: natural diffused afternoon light with warm magic hour hues. Mood: relaxed luxury, timeless elegance. Style: photorealistic with film grain for subtle texture. Audio: gentle breeze with distant birdsong and soft acoustic guitar.
+```
+
+**Why it works**: Utilizes epic natural settings and fluid camera work to embody aspirational lifestyle and highlight fabric fluidity in a luxurious outdoor environment.
+
+**Technique**: Timestamp-based multi-shot combining aerial drone and steadycam tracking
+
+---
+
+### [veo_31_0155] Score: 9/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: baroque, studio lighting, rack focus
+
+```
+[00:00-00:06] Slow dolly push through an opulent, baroque-inspired interior with gold accents, where a model in a richly embroidered gown poses regally. [00:06-00:10] Rack focus shifting from ornate chandeliers to the model’s intricate makeup and accessories. Lighting: warm studio lighting with soft shadows creating depth and texture. Mood: regal, timeless luxury. Audio: soft orchestral strings enhancing the grandeur.
+```
+
+**Why it works**: Evokes classic sophistication and heritage through setting and lighting, appealing to luxury consumers who value craftsmanship and tradition.
+
+**Technique**: Dolly push combined with rack focus for layered visual emphasis
+
+---
+
+### [veo_31_0127] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: magic hour, cinematic 4K, neon-lit
+
+```
+An urban rooftop setting at magic hour showcasing a male model dressed in a tailored black velvet tuxedo with bold gold accessories. The camera uses a handheld tracking shot circling the model, capturing dynamic movement and fabric flow. Neon-lit cityscape in the background adds modern luxury contrast. The atmosphere is confident and mysterious with color grading emphasizing deep blacks and vibrant gold hues. [00:00-00:07] Tracking shot around the model, [00:07-00:12] Close-up on cufflinks and watch. Audio: ambient city sounds mixed with subtle electronic beats.
+```
+
+**Why it works**: The combination of urban neon light with luxurious velvet textures creates a visually striking contrast suited for modern luxury branding.
+
+**Technique**: Handheld tracking shot with timestamped close-ups
+
+---
+
+### [veo_31_0130] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, steadycam tracking, bokeh
+
+```
+An opulent indoor ballroom scene with a male and female model wearing matching embroidered velvet evening wear. The camera moves with a steadycam in a slow tracking shot following the couple as they dance under crystal chandeliers. Warm, diffused studio lighting with subtle bokeh effects creates a romantic and timeless atmosphere. [00:00-00:10] Tracking steadycam shot around the dancing couple. Audio: live string quartet music with ambient ballroom ambiance.
+```
+
+**Why it works**: Classic ballroom setting combined with fluid steadycam movement highlights elegance and timeless luxury.
+
+**Technique**: Steadycam tracking shot with bokeh lighting effects
+
+---
+
+### [veo_31_0132] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: neon-lit, handheld, lens flare
+
+```
+A cosmopolitan night scene on a rooftop party with a diverse group of models dressed in bold, avant-garde luxury fashion. The camera uses handheld shots with dynamic zooms and quick cuts to capture the energy and textures of the fabrics under neon-lit ambient lighting. Lens flare and color grading emphasize vibrant purples and blues. The mood is energetic and exclusive. [00:00-00:06] Handheld tracking shots of party scenes, [00:06-00:12] Close-ups of fabric details and accessories. Audio: upbeat electronic lounge music.
+```
+
+**Why it works**: Dynamic handheld shots paired with neon lighting create a vivid, immersive luxury nightlife vibe.
+
+**Technique**: Handheld shots with lens flare and dynamic zoom
+
+---
+
+### [veo_31_0134] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, crane shot, cinematic 4K
+
+```
+An extravagant fashion shoot inside a modern art museum featuring a male model in a tailored white suit with gold detailing. The camera performs a slow crane shot moving from abstract sculptures down to the model posing elegantly. Soft studio lighting highlights the clean lines of the suit while maintaining subtle shadows for depth. The mood is avant-garde and sophisticated. [00:00-00:08] Crane shot from ceiling to model. Audio: minimalist ambient music with soft echo effects.
+```
+
+**Why it works**: Combining architecture and sculpture with fashion creates a powerful luxury art crossover.
+
+**Technique**: Crane shot with soft studio lighting
+
+---
+
+### [veo_31_0138] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, crane shot, shallow depth of field
+
+```
+A pristine white marble staircase with a female model descending in a dramatic silk evening gown. The camera employs a smooth crane shot from above to follow her descent, capturing fabric movement and architectural grandeur. Natural diffused daylight brightens the scene with subtle shadows, while shallow depth of field emphasizes the model. The mood is regal and timeless. [00:00-00:07] Crane shot descending. Audio: soft choral music with echo.
+```
+
+**Why it works**: Architecture and slow crane movement together create a visually majestic presentation of luxury fashion.
+
+**Technique**: Crane shot with natural lighting and shallow depth of field
+
+---
+
+### [veo_31_0139] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, handheld, neon-lit
+
+```
+A fashion shoot inside a contemporary luxury penthouse suite, featuring a male model in a silk smoking jacket. The camera uses a handheld tracking shot moving through the room, capturing reflections in glass surfaces and intricate fabric details. Evening natural diffused lighting combined with subtle neon accents create a moody, sophisticated ambiance. [00:00-00:10] Handheld tracking shot through living area. Audio: smooth lounge jazz with city ambiance.
+```
+
+**Why it works**: Mixing natural and neon lighting with reflective surfaces adds depth and luxury modernity to the setting.
+
+**Technique**: Handheld tracking with mixed natural and neon lighting
+
+---
+
+### [veo_31_0142] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: neon-lit, dolly push, rack focus
+
+```
+A bold color-blocked editorial in an industrial warehouse featuring a male model in a vibrant red tailored suit. The camera uses a dolly push with rack focus from graffiti walls to the suit textures. Neon-lit accents add an urban luxury feel, balanced with soft natural diffused lighting. The mood is energetic and edgy. [00:00-00:07] Dolly push with rack focus. Audio: upbeat synthwave music with ambient city sounds.
+```
+
+**Why it works**: Urban grit contrasted with bold luxury fashion and rack focus draws attention to the garments in a dynamic way.
+
+**Technique**: Dolly push with rack focus and neon lighting
+
+---
+
+### [veo_31_0144] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, dolly push, lens flare
+
+```
+A dramatic fashion portrait in a high-ceiling art deco hotel lobby with crystal chandeliers. A female model poses in a floor-length velvet gown with a subtle lens flare effect. The camera uses a slow dolly push with rack focus from the chandelier to the model’s face. Warm studio lighting enhances the luxurious textures and golden tones. [00:00-00:08] Dolly push with rack focus. Audio: elegant classical music with ambient lobby sounds.
+```
+
+**Why it works**: Classic luxury setting paired with dynamic camera and lighting highlights opulence and sophistication.
+
+**Technique**: Dolly push rack focus with lens flare
+
+---
+
+### [veo_31_0146] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, aerial drone, cool color grading
+
+```
+A glamorous winter editorial in a snow-covered forest, featuring a female model in a fur-trimmed couture coat. The camera uses an aerial drone shot with slow descending movement to reveal the model amidst the white landscape. Soft natural diffused light with cool blue color grading evokes a crisp, luxurious atmosphere. [00:00-00:08] Aerial drone slow descend. Audio: gentle wind with soft piano.
+```
+
+**Why it works**: Combining natural winter landscape with aerial crane shots emphasizes luxury and exclusivity in a fresh setting.
+
+**Technique**: Aerial drone slow descent with natural diffused lighting
+
+---
+
+### [veo_31_0148] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, handheld, cinematic 4K
+
+```
+A vibrant fashion editorial set in a lush botanical garden with a female model wearing a flowing floral dress. The camera uses smooth handheld tracking shots weaving through foliage, with natural diffused sunlight creating dappled light and shadow patterns. The mood is fresh, organic, and luxurious. [00:00-00:10] Handheld tracking shots through greenery. Audio: natural garden sounds with soft harp music.
+```
+
+**Why it works**: Integrating nature with fashion creates an aspirational luxury lifestyle image with vibrant energy.
+
+**Technique**: Handheld tracking with natural diffused dappled lighting
+
+---
+
+### [veo_31_0149] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, handheld, rack focus
+
+```
+A nighttime fashion editorial in a luxury hotel bar with a female model wearing a sequined cocktail dress. The camera uses a handheld dolly push with rack focus shifting between the model and glittering bar lights. Neon-lit accents and warm studio lighting create a glamorous and intimate mood. [00:00-00:08] Handheld dolly push with rack focus. Audio: soft jazz saxophone with ambient bar chatter.
+```
+
+**Why it works**: Rack focus combined with neon and warm lighting emphasizes luxury nightlife elegance and detail.
+
+**Technique**: Handheld dolly push with rack focus and neon lighting
+
+---
+
+### [veo_31_0152] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, rack focus, minimalist
+
+```
+Close-up shot of haute couture jewelry pieces on a model’s hands and neckline, using rack focus to shift between sparkling diamonds and smooth velvet fabric. Camera movement: slow crane shot rising behind the model to reveal a minimalist white studio with diffused natural lighting. Mood: clean, refined, and luxurious. Scene transition: fade in from black. Lighting: soft studio lighting emphasizing texture and shine. Audio: soft classical piano notes underscoring refined sophistication.
+```
+
+**Why it works**: Focuses on exquisite detail and craftsmanship of luxury accessories with elegant lighting and camera techniques to elevate the brand’s prestige.
+
+**Technique**: Rack focus combined with crane shot for layered visual storytelling
+
+---
+
+### [veo_31_0154] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: neon-lit, handheld, lens flare
+
+```
+Neon-lit interior of a high-end club with models dressed in avant-garde evening wear. Camera movement: handheld close-ups intercut with wide steadycam shots to create immersive, kinetic energy. Lighting: vibrant neon pinks and blues with lens flare effects creating a futuristic vibe. Mood: edgy, bold, and glamorous. Scene transition: dissolve between shots to maintain fluidity. Audio: pulsing electronic dance music synced with visual cuts.
+```
+
+**Why it works**: Captures modern luxury nightlife energy with bold lighting and dynamic camera movements to appeal to a younger, fashion-forward audience.
+
+**Technique**: Use of neon lighting combined with handheld and steadycam shots for immersive atmosphere
+
+---
+
+### [veo_31_0156] Score: 8/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: cinematic 4K, anamorphic, film grain
+
+```
+Monochrome cinematic 4K shoot featuring a model in minimalist luxury streetwear walking through rain-soaked neon streets at night. Camera movement: steadycam tracking with subtle lens flare and anamorphic bokeh effects on wet surfaces. Lighting: neon reflections and natural diffused street lighting. Mood: urban elegance, mysterious allure. Scene transition: fade out with soft film grain overlay. Audio: ambient city sounds mixed with low-tempo electronic beats.
+```
+
+**Why it works**: Combines urban grit with refined style, using cinematic techniques to create a moody, modern luxury narrative ideal for contemporary brand positioning.
+
+**Technique**: Use of anamorphic lens flare and steadycam for atmospheric urban storytelling
+
+---
+
+### [veo_31_0128] Score: 7/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, film grain, anamorphic
+
+```
+A minimalist white studio setting with a female model wearing a sleek metallic gown. The camera uses a smooth crane shot starting overhead and descending to an intimate close-up on the dress’s reflective fabric. Studio lighting with diffused softboxes creates clean shadows and highlights the gown’s texture. The mood is futuristic and refined, enhanced by subtle film grain and an anamorphic aspect ratio. [00:00-00:06] Crane shot from above to mid-shot, [00:06-00:10] Close-up on metallic textures. Audio: soft ambient synth pads for a modern luxury feel.
+```
+
+**Why it works**: Minimalist setting paired with dynamic crane movement emphasizes fabric innovation and futuristic luxury.
+
+**Technique**: Crane shot with anamorphic lens effect and film grain
+
+---
+
+### [veo_31_0131] Score: 7/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, dolly push, rack focus
+
+```
+A high-fashion editorial inside a vintage luxury car showroom. A female model wears a tailored silk suit with pearl accessories. The camera alternates between a dolly push wide shot showcasing the classic cars and a close-up on the model’s face and accessories with rack focus transitions. Natural diffused lighting from large windows creates soft shadows and highlights. The mood is sophisticated and nostalgic. [00:00-00:05] Wide dolly push shot, [00:05-00:09] Rack focus close-up on face and pearls. Audio: soft jazz piano with subtle ambient showroom sounds.
+```
+
+**Why it works**: Rack focus technique draws attention to luxury accessories while the vintage setting creates aspirational lifestyle context.
+
+**Technique**: Dolly push with rack focus transitions
+
+---
+
+### [veo_31_0135] Score: 7/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, rack focus, close-up detail
+
+```
+A close-up focused editorial on intricate haute couture embroidery, showing detailed stitching on a luxurious cape worn by a female model. The camera uses rack focus to shift from embroidery details to the model’s elegant expression. Natural diffused window light softly illuminates textures with a warm tone. The mood is intimate and refined. [00:00-00:05] Extreme close-up on embroidery, [00:05-00:10] Rack focus to model’s face. Audio: quiet classical strings emphasizing delicacy.
+```
+
+**Why it works**: Rack focus technique draws viewer attention from craftsmanship to human emotion, enhancing luxury storytelling.
+
+**Technique**: Rack focus close-up with natural diffused lighting
+
+---
+
+### [veo_31_0137] Score: 7/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, dolly push, film grain
+
+```
+An elegant indoor lounge scene with a female model draped in a cashmere shawl, seated by a grand piano. The camera uses a slow dolly push with rack focus passing from the model’s contemplative gaze to the soft fabric textures. Warm studio lighting with soft shadows and subtle film grain creates a nostalgic, luxurious mood. [00:00-00:08] Dolly push with rack focus shifts. Audio: live piano melody with ambient room tone.
+```
+
+**Why it works**: Combining rack focus with soft lighting and film grain adds emotional depth suited for luxury storytelling.
+
+**Technique**: Dolly push with rack focus and film grain
+
+---
+
+### [veo_31_0140] Score: 7/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, rack focus, macro close-up
+
+```
+A close-up editorial of intricate luxury watch design on a male model’s wrist, shot with extreme macro lens focusing on the craftsmanship. The camera employs rack focus to shift from the watch face to the model’s poised hand. Studio lighting with softboxes creates crisp highlights and shadows emphasizing metal textures. The mood is precise, technical, and refined. [00:00-00:06] Extreme close-up macro rack focus shot. Audio: subtle ticking mixed with ambient luxury store soundscape.
+```
+
+**Why it works**: Macro shots with rack focus effectively highlight product craftsmanship critical in luxury branding.
+
+**Technique**: Rack focus macro close-up with studio lighting
+
+---
+
+### [veo_31_0143] Score: 7/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: natural diffused, handheld, shallow depth of field
+
+```
+An intimate behind-the-scenes look at a high-fashion runway preparation with close-ups on makeup, hairstyling, and fabric fitting. The camera employs a handheld shallow focus style with natural diffused lighting to capture authenticity and detail. The mood is focused and elegant. [00:00-00:10] Handheld close-ups with shallow depth of field. Audio: subtle backstage murmurs and soft instrumental music.
+```
+
+**Why it works**: Behind-the-scenes authenticity combined with luxurious attention to detail creates emotional connection to the brand.
+
+**Technique**: Handheld shallow focus with natural diffused lighting
+
+---
+
+### [veo_31_0147] Score: 7/10
+
+**Subcategory**: Luxury Brand | **Use Case**: `brand_campaign`
+
+**Tags**: studio lighting, black and white, shallow depth of field
+
+```
+A high-contrast black and white studio portrait of a male model wearing a classic tuxedo. The camera uses a static shot with shallow depth of field focusing on sharp facial features and fabric textures. Dramatic studio lighting casts defined shadows enhancing the mood of timeless elegance. [00:00-00:06] Static close-up shot. Audio: quiet piano notes.
+```
+
+**Why it works**: Black and white imagery with dramatic lighting focuses on form and texture, perfect for classic luxury branding.
+
+**Technique**: Static shallow focus with dramatic studio lighting
+
+---
+
+## Food & Beverage (24 prompts)
+
+### [veo_31_0297] Score: 10/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: golden hour, fine dining, slow dolly, elegant, cinematic
+
+```
+[00:00-00:06] Wide shot of an elegant fine dining restaurant interior, warm rim light compliments the candlelit tables during magic hour. [00:06-00:12] Slow dolly push close-up on a chef’s hands assembling a delicate dessert with edible flowers. Depth of field softly blurs the refined background. Audio: Soft classical piano, gentle clinking of silverware. SFX: Whisk mixing, subtle plating noise. Cinematic 4K with lens flare and subtle film grain for luxurious feel.
+```
+
+**Why it works**: The combination of slow deliberate motion and warm lighting enhances the luxury and craftsmanship of gourmet desserts.
+
+**Technique**: Slow dolly push with rim lighting and depth of field
+
+---
+
+### [veo_31_0300] Score: 10/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: aerial drone, golden hour, seafood, coastal, cinematic
+
+```
+[00:00-00:06] Aerial drone shot of a beachside seafood restaurant during golden hour, waves crashing nearby. [00:06-00:12] Close-up dolly push on a vibrant seafood platter featuring lobster, oysters, and shrimp. Natural diffused lighting accentuates freshness and vivid colors. Audio: Seagulls, ocean waves, soft acoustic music. SFX: Shell cracking, knife slicing. Cinematic 4K with lens flare for an inviting coastal luxury mood.
+```
+
+**Why it works**: Combining aerial context with detailed close-ups evokes a strong sensory connection to fresh coastal cuisine.
+
+**Technique**: Aerial drone with dolly push and natural diffused lighting
+
+---
+
+### [veo_31_0304] Score: 10/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: aerial drone, festival, vibrant, street food, cinematic
+
+```
+[00:00-00:06] Wide aerial drone shot of a large food festival with colorful food trucks and happy crowds under bright natural light. [00:06-00:12] Steadicam follows a family tasting street food specialties. Rich colors and vivid textures are enhanced by vibrant natural lighting. Audio: Festival music, laughter, vendor calls. SFX: Frying, chopping. Cut to close-up shots focusing on unique dishes with film-quality clarity.
+```
+
+**Why it works**: Captures the energetic diversity of food culture with expansive and intimate perspectives.
+
+**Technique**: Aerial drone with steadicam and natural vibrant lighting
+
+---
+
+### [veo_31_0315] Score: 10/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: aerial drone, handheld, natural sunlight, lens flare, cinematic 4K
+
+```
+[Scene setup] Outdoor summer food truck festival scene featuring vibrant colorful street food dishes being served to diverse customers. [Camera movement] Aerial drone shot sweeping over the crowd, then switching to handheld close-ups of food being prepared and served. [Lighting] Bright, natural sunlight with occasional lens flare to evoke warmth and festivity. [Mood] Energetic, joyful, community-focused street food vibe. [Timestamp structure] [00:00-00:05] Aerial wide shot of festival crowd and food trucks. [00:05-00:10] Handheld close-ups of sizzling food and smiling customers. [Audio] Audio: lively festival sounds with laughter and chatter | SFX: food sizzling and chopping. Cinematic 4K with film grain for authentic texture.
+```
+
+**Why it works**: Vividly captures the vibrant atmosphere and excitement of outdoor food culture, perfect for brand storytelling.
+
+**Technique**: Aerial drone combined with handheld close-ups and natural sunlight lens flare
+
+---
+
+### [veo_31_0293] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: cinematic, natural lighting, urban, gourmet, 4K
+
+```
+[00:00-00:03] Wide shot of a trendy urban rooftop restaurant at golden hour, patrons enjoying gourmet dishes. [00:03-00:07] Close-up tracking shot of a chef expertly plating a vibrant sushi roll with precision. Natural diffused lighting highlights fresh ingredients, with a subtle bokeh effect on background diners. Camera uses a smooth dolly push to emphasize detail. Audio: Ambient chatter and clinking cutlery, soft background jazz. SFX: Knife slicing crisp fish, gentle sizzle from pans. Cinematic 4K quality with film grain for a polished, inviting atmosphere.
+```
+
+**Why it works**: Combines dynamic camera movement and natural light to create an immersive, appetizing restaurant experience.
+
+**Technique**: Timestamp multi-shot with dolly push and natural diffused lighting
+
+---
+
+### [veo_31_0295] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: aerial drone, natural sunlight, market, vibrant, artisan
+
+```
+[00:00-00:05] Aerial drone shot of an outdoor Mediterranean food market bustling with vendors and customers under natural sunlight. [00:05-00:10] Tracking shot through colorful stalls focused on fresh produce and artisan breads. Studio-quality clarity with vibrant colors and subtle film grain. Audio: Sounds of lively market chatter, vendors calling out. SFX: Crunch of fresh vegetables, rustle of baskets. Transition: smooth dissolve between shots.
+```
+
+**Why it works**: Captures vibrant, lively food culture with dynamic aerial and tracking shots for immersive storytelling.
+
+**Technique**: Aerial drone combined with tracking shot and natural lighting
+
+---
+
+### [veo_31_0298] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: handheld, rustic, wood-fired, artisanal, natural light
+
+```
+[00:00-00:05] Handheld close-up of a pizza chef tossing dough in a rustic wood-fired pizzeria with natural diffused light. [00:05-00:10] Tracking shot following the pizza sliding into the flame glowing oven. Ambient warm tones highlight artisanal cooking. Audio: Fire crackling, Italian chatter, upbeat acoustic guitar. SFX: Dough stretching, oven door opening. Transition: fade in/out to focus on texture and movement.
+```
+
+**Why it works**: Handheld authentic shots paired with warm natural lighting bring out the tactile artistry of pizza making.
+
+**Technique**: Handheld close-up with tracking shot in natural diffused lighting
+
+---
+
+### [veo_31_0301] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: handheld, neon-lit, cocktail, energetic, cinematic
+
+```
+[00:00-00:05] Close-up handheld shot of a mixologist shaking a vibrant cocktail under neon bar lights. [00:05-00:09] Crane down shot revealing the full bar with patrons enjoying drinks in an energetic atmosphere. Depth of field isolates the cocktail’s textures with bokeh highlights. Audio: Shaker clinking, upbeat electronic music. SFX: Ice shaking, glass tapping. Film-grain and lens flare add dynamic flair.
+```
+
+**Why it works**: Dynamic camera angles and neon lighting bring excitement and focus to the cocktail craft.
+
+**Technique**: Crane down shot combined with handheld close-up and neon-lit setting
+
+---
+
+### [veo_31_0303] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: tracking shot, artisan, natural light, warm, handheld
+
+```
+[00:00-00:05] Tracking shot through a bustling bakery kitchen with chefs preparing artisan bread under natural diffused light. [00:05-00:10] Close-up handheld shot on hands kneading dough and sprinkling flour. Warm golden hour light energizes the scene. Audio: Oven timers, mixer hum, light chatter. SFX: Dough stretching, flour dust settling. Transition: dissolve between wide and close-up shots for storytelling depth.
+```
+
+**Why it works**: Movement through the space combined with intimate detail shots creates authentic bakery storytelling.
+
+**Technique**: Tracking shot and handheld close-up with natural diffused lighting
+
+---
+
+### [veo_31_0306] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: handheld, neon-lit, urban, food truck, cinematic
+
+```
+[00:00-00:05] Handheld close-up of a gourmet burger’s layers being stacked with fresh ingredients under neon bar lighting. [00:05-00:10] Tracking shot along a vibrant food truck park at night, colorful lights and excited customers create a lively backdrop. Audio: Upbeat hip hop music, street sounds. SFX: Burger patty sizzling, crowd laughter. Film grain and lens flare add urban edginess.
+```
+
+**Why it works**: Dynamic urban lighting and candid movement showcase street food culture with energetic flair.
+
+**Technique**: Handheld close-up with tracking shot and neon lighting
+
+---
+
+### [veo_31_0308] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: slow-motion, studio lighting, Italian, authentic, cinematic
+
+```
+[00:00-00:06] Close-up slow-motion shot of fresh pasta being tossed in a pan with olive oil and herbs, studio lighting emphasizes shine and texture. [00:06-00:12] Wide crane down shot into a vibrant Italian trattoria with customers enjoying meals during magic hour. Audio: Italian chatter, soft mandolin music. SFX: Sizzling, stirring sounds. Film-quality with subtle lens flare for a romantic, authentic feel.
+```
+
+**Why it works**: Slow-motion detail paired with warm interiors evokes both craft and conviviality typical of Italian dining.
+
+**Technique**: Slow-motion close-up with crane down shot and studio lighting
+
+---
+
+### [veo_31_0310] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: moody, cocktail lounge, rim light, sophisticated, cinematic
+
+```
+[00:00-00:06] Wide shot of a high-end cocktail lounge with moody ambient lighting and rim light accentuating glassware sparkle. [00:06-00:12] Close-up dolly push on a bartender garnishing a signature drink with fresh herbs. Audio: Smooth lounge music, soft conversations. SFX: Ice clinking, herb leaves rustling. Film grain and lens flare add sophistication and warmth.
+```
+
+**Why it works**: Lighting and camera work elegantly highlight premium cocktail craftsmanship and upscale ambience.
+
+**Technique**: Dolly push close-up with rim lighting and film grain
+
+---
+
+### [veo_31_0312] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: slow dolly, golden hour, artisanal, rustic, cinematic
+
+```
+[00:00-00:07] Slow dolly push over an elegant cheese board with various artisanal cheeses, nuts, and honey, soft golden hour light streaming through a window. [00:07-00:12] Wide shot of a rustic winery tasting room with patrons savoring pairings. Audio: Soft acoustic guitar, quiet conversation. SFX: Glass pouring, knife cutting cheese. Cinematic 4K with film grain and gentle lens flare creates a warm inviting mood.
+```
+
+**Why it works**: Combining close detailed shots with atmospheric environment conveys premium artisanal food culture.
+
+**Technique**: Slow dolly push with golden hour lighting and film grain
+
+---
+
+### [veo_31_0313] Score: 9/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: natural diffused lighting, steadicam tracking, golden hour, cinematic 4K, photorealistic
+
+```
+[Scene setup] A bustling upscale restaurant kitchen during dinner service, chefs plating vibrant gourmet dishes with fresh ingredients. [Camera movement] Steadicam tracking shot moving through the kitchen, focusing on hands skillfully garnishing plates, then dolly push to reveal a beautifully arranged dining table. [Lighting] Natural diffused lighting mixed with warm golden hour tones streaming through large windows. [Mood] Energetic yet refined atmosphere highlighting craftsmanship and quality. [Timestamp structure] [00:00-00:04] Wide shot of kitchen activity. [00:04-00:08] Close-up on plating details. [00:08-00:12] Smooth dolly push to dining table setup. [Audio] Audio: ambient kitchen sounds with chef chatter and sizzling pans | SFX: subtle plating clinks and sizzling. Cinematic 4K, photorealistic quality emphasizing texture and color vibrancy.
+```
+
+**Why it works**: Captures the authentic energy and artistry of live kitchen action, ideal for premium restaurant branding.
+
+**Technique**: Steadicam tracking shot with natural diffused and golden hour lighting
+
+---
+
+### [veo_31_0294] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: handheld, magic hour, cozy, latte art, cinematic
+
+```
+[00:00-00:04] Close-up handheld shot of a barista pouring latte art in a hipster coffee shop, rim light accentuates steam and crema texture. [00:04-00:08] Crane up shot revealing cozy interior with customers sipping coffee by large windows during magic hour. Depth of field isolates cup details with warm, golden hues. Audio: Espresso machine steaming, soft indie music. SFX: Milk frothing, cup clinks. Film-quality with subtle lens flare to evoke warmth and craftmanship.
+```
+
+**Why it works**: Intimate close-ups paired with ambient shots highlight coffee craftsmanship and inviting space.
+
+**Technique**: Rim lighting with crane up shot for layered storytelling
+
+---
+
+### [veo_31_0296] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: steadicam, neon-lit, retro, gourmet burger, film grain
+
+```
+[00:00-00:04] Steadicam shot following a waiter serving a signature gourmet burger to a table in a dimly lit, neon-lit diner. [00:04-00:08] Close-up rack focus shifting from the glowing neon sign to the juicy burger with melting cheese. Film grain adds retro charm. Audio: Sizzling grill, diner chatter, jukebox music. SFX: Burger patty flipping, soft chair movements. Lighting uses neon hues to evoke urban late-night vibe.
+```
+
+**Why it works**: Combines nostalgic lighting and smooth camerawork to elevate a classic food scene with modern style.
+
+**Technique**: Rack focus with neon-lit lighting and steadicam movement
+
+---
+
+### [veo_31_0299] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: rack focus, neon-lit, bar scene, craft beer, cozy
+
+```
+[00:00-00:04] Close-up rack focus shifts from a frosty glass of craft beer to a bartender pouring the golden liquid in an ambient bar lit by neon signs. [00:04-00:08] Steadicam pans across patrons enjoying lively conversation in the bar. Film-quality grain and bokeh effect create a cozy vibe. Audio: Background chatter, glasses clinking. SFX: Pouring beer, fizzing bubbles. Cinematic 4K resolution with rim lighting emphasizes texture and atmosphere.
+```
+
+**Why it works**: Focus shifts and rim lighting capture both product details and social ambience effectively.
+
+**Technique**: Rack focus with steadicam and rim lighting
+
+---
+
+### [veo_31_0302] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: studio, slow-motion, luxury, minimalist, cinematic
+
+```
+[00:00-00:07] Studio-lit slow-motion close-up of chocolate truffles being dusted with cocoa powder. [00:07-00:12] Cut to a wide shot of a sleek, minimalist patisserie with customers selecting desserts. Crisp, clean lighting with shallow depth of field. Audio: Soft piano melody, light customer murmurs. SFX: Cocoa dust puff, soft footsteps. Cinematic 4K resolution with bokeh to emphasize texture and luxury.
+```
+
+**Why it works**: Slow motion and studio lighting highlight fine details that appeal to luxury dessert consumers.
+
+**Technique**: Slow-motion close-up with studio lighting and shallow depth of field
+
+---
+
+### [veo_31_0305] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: dolly push, plant-based, natural light, modern, cinematic
+
+```
+[00:00-00:06] Close-up dolly push focusing on a chef’s precise hands decorating a plated vegan dish with microgreens. [00:06-00:12] Wide shot of a contemporary plant-based restaurant interior with soft natural window light. Depth of field softly blurs diners enjoying their meals. Audio: Calm ambient music, soft conversation. SFX: Knife chopping, plating sound. Cinematic 4K with film grain for a fresh, modern vibe.
+```
+
+**Why it works**: Combining focused plating detail with elegant environment shots highlights the sophistication of vegan cuisine.
+
+**Technique**: Close-up dolly push with natural window lighting and depth of field
+
+---
+
+### [veo_31_0307] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: slow dolly, rustic, cozy, charcuterie, cinematic
+
+```
+[00:00-00:07] Slow dolly push over a colorful charcuterie board laid out on a rustic wooden table, natural diffused light streaming through nearby window. [00:07-00:12] Wide shot of a cozy wine bar with ambient rim lighting emphasizing wood and glass textures. Audio: Soft jazz, light clinking of glasses. SFX: Cork popping, wine pouring. Cinematic 4K with shallow depth of field and bokeh for an intimate mood.
+```
+
+**Why it works**: Combining detailed slow-motion food shots with atmospheric interiors creates a warm, inviting story.
+
+**Technique**: Slow dolly push with natural diffused light and rim lighting
+
+---
+
+### [veo_31_0309] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: steadicam, modern, natural light, fresh, cinematic
+
+```
+[00:00-00:05] Steadicam shot circling a chef at work assembling a colorful poke bowl in a bright, modern kitchen with natural diffused light. [00:05-00:10] Close-up rack focus from fresh diced fish to vibrant vegetables. Audio: Kitchen noises, soft upbeat music. SFX: Knife chopping, bowl tapping. Cinematic 4K with clean colors and shallow depth of field for a fresh, health-focused mood.
+```
+
+**Why it works**: Smooth movement and sharp focus highlight freshness and expert preparation in a bright environment.
+
+**Technique**: Steadicam with rack focus and natural diffused lighting
+
+---
+
+### [veo_31_0311] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: handheld, morning light, fresh juice, healthy, cinematic
+
+```
+[00:00-00:05] Close-up handheld shot of vibrant fresh juice being poured into a glass over ice, bright natural morning light floods the scene. [00:05-00:10] Tracking shot following a health-conscious customer enjoying juice on a sunny café patio. Audio: Birds chirping, light chatter. SFX: Juice pouring, ice clinking. Cinematic 4K with crisp colors and shallow depth of field to emphasize freshness and vitality.
+```
+
+**Why it works**: Natural bright lighting and close focus communicate freshness and energetic lifestyle appeal.
+
+**Technique**: Handheld close-up with tracking shot and natural morning lighting
+
+---
+
+### [veo_31_0314] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: neon-lit, rack focus, crane shot, bokeh, film-quality
+
+```
+[Scene setup] Artistic close-up shots of a barista preparing specialty coffee drinks at a trendy café, showcasing latte art and espresso shots. [Camera movement] Rack focus cycling between coffee machine details and barista’s hands, ending with a crane up to reveal patrons enjoying drinks. [Lighting] Neon-lit interior with warm rim light highlighting steam from the espresso. [Mood] Cozy, modern, slightly moody vibe emphasizing craft and community. [Timestamp structure] [00:00-00:03] Extreme close-up of espresso pouring. [00:03-00:06] Rack focus to latte art being drawn. [00:06-00:09] Crane up revealing café interior. [Audio] Audio: soft café chatter, milk steaming sounds | SFX: espresso machine hisses. Film-quality with bokeh and depth of field to isolate details.
+```
+
+**Why it works**: Combines intimate detail with ambient environment to emphasize artisanal coffee culture.
+
+**Technique**: Rack focus combined with crane up shot to transition between details and environment
+
+---
+
+### [veo_31_0316] Score: 8/10
+
+**Subcategory**: Restaurant & Food Brand | **Use Case**: `food_video`
+
+**Tags**: studio lighting, dolly pull back, rack focus, shallow depth of field, film-quality
+
+```
+[Scene setup] Elegant plated desserts being artistically assembled in a minimalist, modern dessert bar with marble counters. [Camera movement] Slow dolly pull back from extreme close-up of chocolate drizzle to reveal pastry chef at work, finishing with a rack focus from dessert foreground to the chef’s focused expression. [Lighting] Studio lighting with softbox diffusion creating crisp, clean highlights and subtle rim light. [Mood] Sophisticated, meticulous, and indulgent ambiance. [Timestamp structure] [00:00-00:03] Extreme close-up on chocolate drizzle. [00:03-00:07] Slow dolly pull back showing plating process. [00:07-00:10] Rack focus shift from dessert to chef. [Audio] Audio: gentle plating sounds and ambient kitchen calm | SFX: soft whisking and spoon tapping. Film-quality with shallow depth of field emphasizing texture and detail.
+```
+
+**Why it works**: Elegantly showcases craftsmanship and detail in high-end dessert preparation, reinforcing brand luxury.
+
+**Technique**: Slow dolly pull back combined with rack focus under studio lighting
+
+---
+
+## Lifestyle (31 prompts)
+
+### [veo_31_0157] Score: 9/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: photorealistic, golden hour, tracking shot
+
+```
+A group of friends hiking along a rugged mountain trail during golden hour, capturing their dynamic movement and joyful interaction. The camera uses a smooth tracking shot following closely behind the hikers, emphasizing the expansive natural landscape with photorealistic details and warm, natural diffused lighting. The scene transitions from a wide establishing shot of the mountains to close-up shots of their determined expressions and the texture of rocky terrain. Audio: ambient sounds of footsteps on gravel, distant birdsong, and light wind rustling through pine trees.
+```
+
+**Why it works**: Combines emotional human connection with breathtaking landscapes, appealing strongly to adventure enthusiasts on social media.
+
+**Technique**: Timestamp-based multi-shot with tracking shot and natural diffused lighting
+
+---
+
+### [veo_31_0161] Score: 9/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: steadycam, aerial drone, golden hour
+
+```
+A family kayaking down a gently flowing river surrounded by autumn foliage. The camera alternates between a steadycam shot inside the kayak focusing on the paddler’s expressions and an aerial drone shot capturing the vibrant colors and meandering waterway. The lighting is warm golden hour with soft bokeh effects on falling leaves. The mood is joyful and serene with seamless dissolve transitions between shots. Audio: gentle water splashes, paddles cutting through water, and distant laughter.
+```
+
+**Why it works**: Delivers a warm, family-friendly outdoor adventure with dynamic perspectives and inviting natural colors.
+
+**Technique**: Multi-camera approach combining steadycam and aerial drone shots with warm lighting
+
+---
+
+### [veo_31_0175] Score: 9/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: aerial drone, magic hour, color graded
+
+```
+A panoramic wide aerial shot of a hot air balloon drifting over a colorful autumn forest during magic hour. The camera slowly orbits the balloon providing 360-degree immersive views with soft glowing light and cinematic color grading. Audio: distant ambient wind and occasional balloon burner bursts.
+```
+
+**Why it works**: Offers mesmerizing aerial perspective and warm seasonal colors, perfect for inspiring awe and wanderlust.
+
+**Technique**: Aerial drone orbit with magic hour lighting and cinematic color grading
+
+---
+
+### [veo_31_0181] Score: 9/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: aerial drone, dolly push, color graded
+
+```
+Aerial drone shot of a winding river cutting through a dense jungle canopy at midday, gradually dollying in to reveal a kayaker paddling downstream. Lighting is natural diffused with vibrant color grading emphasizing lush greens and deep blues. The scene cuts to close-up shots of water ripples and paddler’s focused face. Audio: rushing water, jungle bird calls, and paddle splashes.
+```
+
+**Why it works**: Delivers dynamic nature and adventure imagery with intimate details, engaging travel and outdoor audiences.
+
+**Technique**: Aerial drone with dolly push and vibrant color grading
+
+---
+
+### [veo_31_0182] Score: 9/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: golden hour, photorealistic, tracking shot
+
+```
+[00:00-00:04] A group of diverse young adults hiking along a rugged mountain trail at golden hour, wide establishing shot capturing vast landscapes and vibrant skies. [00:04-00:07] Close-up of smiling faces, hands gripping trekking poles, with natural diffused lighting enhancing skin textures. Camera uses smooth tracking shot following the hikers’ movement uphill. Mood is uplifting and adventurous. Audio: ambient nature sounds with soft wind and distant bird calls. Cinematic 4K photorealistic style with subtle film grain to add warmth and authenticity.
+```
+
+**Why it works**: Combines dynamic movement and emotive close-ups that resonate with social audiences craving genuine outdoor experiences.
+
+**Technique**: Timestamp-based multi-shot with tracking camera for immersive storytelling
+
+---
+
+### [veo_31_0184] Score: 9/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: handheld, natural lighting, film grain
+
+```
+[00:00-00:03] Handheld steadycam shot following a mountain biker speeding down a dusty trail, dust particles catching warm late afternoon light. [00:03-00:06] Cut to close-up of spinning wheels and focused eyes behind goggles, shallow depth of field creating bokeh background. Lighting is natural diffused with hints of sunlight filtering through trees. Mood is energetic and thrilling. Audio: rhythmic bike chain noise, tires crunching gravel, wind rushing past. Film grain added for gritty, immersive texture.
+```
+
+**Why it works**: Captures the adrenaline and tactile details of mountain biking, generating excitement and engagement for adventure enthusiasts online.
+
+**Technique**: Handheld steadycam with rack focus for dynamic action and immersive detail
+
+---
+
+### [veo_31_0186] Score: 9/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: steadicam, natural diffused, bokeh
+
+```
+[00:00-00:03] An early morning trail runner crossing a wooden bridge in a misty forest, shot with a steadycam tracking from side angle. [00:03-00:06] Cut to close-up of determined face and sweat beads, shallow depth of field with bokeh highlights from scattered sunlight through leaves. Lighting is natural diffused with warm undertones. Mood conveys resilience and harmony with nature. Audio: footsteps on wood, breathing, soft birdsong. Cinematic 4K with color grading emphasizing earthy tones.
+```
+
+**Why it works**: Portrays personal strength and connection to nature in an inspiring way, perfect for motivational lifestyle content.
+
+**Technique**: Steadicam tracking with selective focus and bokeh for emotional engagement
+
+---
+
+### [veo_31_0158] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: cinematic, handheld, magic hour
+
+```
+A solo mountain biker navigating a narrow dirt trail through a dense forest during magic hour. The camera employs a handheld style to capture the intensity and speed with shallow depth of field, focusing on the biker's determined face and flying dirt. The lighting is cinematic with warm magic hour hues filtering through tree canopies, creating dramatic lens flare effects. The sequence begins with a wide establishing shot of the lush forest, dissolving into close-up shots of the bike tires and the biker’s grip on the handlebars. Audio: rhythmic bike chain sound and nature ambience with birds chirping.
+```
+
+**Why it works**: Captures adrenaline and focus with immersive camera work and dramatic lighting, perfect for engaging outdoor sports audiences.
+
+**Technique**: Handheld camera with rack focus and lens flare
+
+---
+
+### [veo_31_0160] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: cinematic 4K, aerial drone, natural diffused
+
+```
+A close-up of a seasoned rock climber gripping a rugged cliff face with chalk-covered hands, shot in cinematic 4K with extreme depth of field focusing on the texture of the rock and veins on hands. The lighting is natural diffused, highlighting the climber's sweat and determination. The scene transitions with a cut to an aerial drone pulling back to reveal the vast mountain range below. Audio: wind gusts and the faint sound of climbing gear clinking.
+```
+
+**Why it works**: Showcases detail and scale, catering to audiences fascinated by extreme sports and nature's textures.
+
+**Technique**: Combination of close-up with aerial drone shots and natural diffused lighting
+
+---
+
+### [veo_31_0163] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: aerial drone, lens flare, magic hour
+
+```
+A group of friends gathered around a mountain summit, raising their trekking poles in celebration during magic hour. The camera uses an aerial drone shot orbiting the group for dynamic perspective, capturing the vast valley below. The lighting is cinematic with magic hour tones and lens flare emphasizing exhilaration. The scene cuts to close-ups of smiling faces and hands gripping trekking poles. Audio: cheers, wind gusts, and distant bird calls.
+```
+
+**Why it works**: Combines triumph and immersive landscape capture, inspiring viewers with adventurous camaraderie.
+
+**Technique**: Aerial drone orbit with lens flare and magic hour lighting
+
+---
+
+### [veo_31_0165] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: dolly push, golden hour, film grain
+
+```
+A panoramic wide shot of a lone surfer walking toward the ocean at sunrise, carrying a surfboard. The camera dollies backward slowly as waves gently crash along the shore. Lighting is golden hour with cinematic 4K clarity and subtle film grain for texture. The scene fades to a close-up of the surfer’s feet in wet sand with shallow depth of field. Audio: ocean waves, seagulls, and soft wind.
+```
+
+**Why it works**: Combines serene natural beauty with anticipation and solitude, resonating with lifestyle and adventure audiences.
+
+**Technique**: Dolly push with fade and cinematic 4K film grain
+
+---
+
+### [veo_31_0168] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: aerial drone, crane shot, cinematic 4K
+
+```
+An aerial drone shot reveals a winding desert hiking trail cutting through red rock formations at noon with harsh sunlight creating high-contrast shadows. The camera slowly cranes up to show a lone hiker silhouetted against the expansive blue sky. The scene uses color grading to enhance warm reds and deep blues, delivering cinematic 4K sharpness. Audio: dry wind and distant bird calls.
+```
+
+**Why it works**: Highlights stark natural beauty and solitude, appealing to adventurous spirits seeking rugged landscapes.
+
+**Technique**: Aerial drone with crane shot and cinematic color grading
+
+---
+
+### [veo_31_0170] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: dolly push, lens flare, golden hour
+
+```
+A family cycling along a coastal cliff path at sunset, captured with a dolly push shot moving alongside them, showcasing ocean vistas and vibrant sky colors. The lighting uses golden hour warm tones with subtle lens flare on the sun. The scene cuts to close-ups of smiling faces and spinning wheels with depth of field effects. Audio: ocean waves crashing and cheerful chatter.
+```
+
+**Why it works**: Combines activity, family bonding, and stunning scenery to create emotionally uplifting content.
+
+**Technique**: Dolly push camera movement with lens flare and warm lighting
+
+---
+
+### [veo_31_0172] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: steadicam, golden hour, bokeh
+
+```
+A group of friends clambering over rocky terrain during a golden hour hike, captured by a steadicam for smooth motion through uneven ground. The warm sunlight creates dramatic shadows and soft bokeh on wildflowers in the foreground. The scene cuts between medium shots showing teamwork and close-ups of hands helping each other. Audio: laughter, gravel crunching, and distant wind.
+```
+
+**Why it works**: Highlights teamwork and natural beauty with smooth cinematic motion, engaging adventure and friendship themes.
+
+**Technique**: Steadicam movement with bokeh and warm lighting
+
+---
+
+### [veo_31_0173] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: crane shot, cinematic 4K, dissolve
+
+```
+A climber atop a snowy peak planting a flag as the camera slowly cranes up from the icy ground to reveal panoramic mountain vistas under clear blue sky. The lighting is bright with natural diffused sunlight and crisp cinematic 4K clarity. The scene dissolves to a close-up of the climber’s triumphant expression and frost-covered gear. Audio: wind gusts and crunching snow.
+```
+
+**Why it works**: Conveys achievement and scale with clean visuals and emotional close-ups, ideal for inspirational adventure content.
+
+**Technique**: Crane shot with dissolve transitions and cinematic 4K lighting
+
+---
+
+### [veo_31_0177] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: handheld, steadycam, neon-lit
+
+```
+A group of friends roasting marshmallows over a campfire at night, illuminated by flickering firelight and soft neon-lit tent interiors. The camera uses handheld shots for intimacy alternating with steadycam wide shots showing starry sky and surrounding forest. Audio: fire crackling, laughter, and light acoustic guitar strumming.
+```
+
+**Why it works**: Captures warmth, friendship, and night-time outdoor magic with versatile camera work and cozy lighting.
+
+**Technique**: Alternating handheld and steadycam shots with neon-lit environment
+
+---
+
+### [veo_31_0179] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: steadicam, golden hour, depth of field
+
+```
+A sunrise yoga session on a mountaintop, filmed with a steadicam circling a yogi in a warrior pose. Lighting capitalizes on soft golden hour hues with cinematic depth of field isolating the subject from a vast sky backdrop. Audio: calm wind, soft flute music, and distant bird calls.
+```
+
+**Why it works**: Blends physical wellness with inspiring natural setting, perfect for lifestyle and mindfulness content.
+
+**Technique**: Steadicam circular movement with golden hour lighting and shallow depth of field
+
+---
+
+### [veo_31_0183] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: aerial drone, magic hour, cinematic 4K
+
+```
+[00:00-00:05] Early morning drone aerial shot over a serene lake surrounded by pine forests, mist gently rising, capturing golden hour light with magic hour glow. [00:05-00:08] Cut to a solo kayaker paddling silently, close-up on paddle slicing the water, lens flare from backlight. Camera employs smooth crane shot descending towards the water surface. Mood is peaceful and introspective. Audio: soft water splashes and gentle breeze. Color graded with cool blues and warm highlights for contrast, cinematic 4K clarity.
+```
+
+**Why it works**: A visually stunning combination of aerial and intimate shots evokes tranquility and connection to nature, appealing strongly on social platforms.
+
+**Technique**: Multi-shot with drone and crane camera angles for dynamic perspective shifts
+
+---
+
+### [veo_31_0185] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: dolly push, neon-lit, slow motion
+
+```
+[00:00-00:04] Wide shot of a campsite by a crystal-clear river at dusk, glowing tent lights casting warm illumination, surrounded by tall fir trees. [00:04-00:07] Close-up on hands preparing a campfire, sparks flying with slow-motion effect. Camera uses dolly push-in to intensify intimacy. Lighting incorporates neon-lit string lights mixed with natural twilight blues. Mood is cozy and communal. Audio: crackling fire, soft laughter, night insects. Color graded for rich contrast and golden warmth.
+```
+
+**Why it works**: Combines inviting warmth with the serene beauty of wilderness nights to create relatable and aspirational outdoor content.
+
+**Technique**: Dolly push combined with slow-motion and mixed lighting for emotional depth
+
+---
+
+### [veo_31_0187] Score: 8/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: handheld, golden hour, rack focus
+
+```
+[00:00-00:05] Sunset beach bonfire gathering with friends playing acoustic guitar, wide establishing shot showing ocean waves and vibrant sky colors. [00:05-00:08] Close-up on hands strumming guitar strings and smiling faces illuminated by firelight, using rack focus to transition between subjects. Camera uses handheld for organic, intimate feel. Lighting blends golden hour with warm firelight creating cozy ambiance. Audio: acoustic guitar, ocean waves, soft chatter and laughter. Film grain and color graded for nostalgic warmth.
+```
+
+**Why it works**: Evokes feelings of friendship and freedom, a timeless outdoor lifestyle moment that performs well on social feeds.
+
+**Technique**: Rack focus with handheld camera for natural intimacy and storytelling
+
+---
+
+### [veo_31_0159] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: cinematic, crane shot, neon-lit
+
+```
+A couple setting up a campsite beside a serene lake at twilight, with a glowing campfire as the central focus. The scene uses a crane shot starting from the lake's reflective surface rising to reveal the tent and fire, bathed in soft neon-lit blue and orange contrasts from the natural firelight and fading sky. The atmosphere is cozy and intimate with film grain adding a nostalgic touch. Audio: crackling fire mixed with gentle water lapping and distant nighttime forest sounds.
+```
+
+**Why it works**: Emphasizes the warmth and tranquility of outdoor living, capturing mood and color contrasts ideal for lifestyle storytelling.
+
+**Technique**: Crane shot with neon-lit color grading and film grain
+
+---
+
+### [veo_31_0162] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: rack focus, golden hour, fade in
+
+```
+A solo camper waking up in a tent with a panoramic mountain sunrise view. The sequence starts with a fade-in from black to an establishing wide shot of the tent silhouetted against the glowing horizon. Then a close-up rack focus shifts from dew on tent fabric to the camper’s sleepy eyes opening. Lighting is natural golden hour, emphasizing warmth and hope. Audio: soft morning birdsong and gentle breeze.
+```
+
+**Why it works**: Creates an intimate, relatable moment of connection with nature, perfect for inspirational lifestyle content.
+
+**Technique**: Fade in with rack focus and natural golden hour lighting
+
+---
+
+### [veo_31_0164] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: handheld, diffused lighting, rapid cuts
+
+```
+A young woman trail running through a misty forest early morning, captured with a handheld camera to convey speed and energy. The lighting is soft and diffused with muted color grading to evoke a mysterious mood. The scene employs rapid cuts between wide shots showing the path and close-ups of the runner’s focused face and feet hitting the ground. Audio: rhythmic breathing, footfalls on dirt, and distant forest sounds.
+```
+
+**Why it works**: Conveys raw energy and determination in a visually poetic way, appealing to fitness and outdoor enthusiasts.
+
+**Technique**: Handheld camera with rapid cuts and natural diffused lighting
+
+---
+
+### [veo_31_0166] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: tracking shot, aerial drone, natural diffused
+
+```
+A diverse group of trail runners crossing a wooden bridge over a rushing mountain stream during midday with natural diffused lighting. The camera performs a smooth tracking shot from the front, capturing the runners’ synchronized footsteps and determined expressions. The scene cuts to an overhead aerial drone shot emphasizing the lush green forest surrounding the bridge. Audio: rushing water, footsteps on wood, and upbeat nature ambience.
+```
+
+**Why it works**: Showcases teamwork and physical endurance with rich natural environment visuals, ideal for active lifestyle branding.
+
+**Technique**: Multi-angle tracking and aerial drone shots with natural diffused lighting
+
+---
+
+### [veo_31_0167] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: close-up, natural diffused, fade out
+
+```
+A camper preparing a morning coffee over a portable stove in a dense forest illuminated by soft morning light. The camera uses close-up shots with shallow depth of field focusing on the steam rising from the mug, hands holding it, and surrounding moss textures. The lighting is natural diffused with warm undertones. The scene fades to a wide shot showing the peaceful campsite setting. Audio: gentle water boiling, birdsong, and rustling leaves.
+```
+
+**Why it works**: Evokes sensory connection to nature and morning routines, perfect for intimate lifestyle storytelling.
+
+**Technique**: Close-up with shallow depth of field and natural diffused lighting
+
+---
+
+### [veo_31_0169] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: rack focus, golden hour, dissolve
+
+```
+A close-up of hands lacing up hiking boots on a forest trail, with a rack focus shifting to a detailed map and compass lying beside the boots. Lighting is natural with soft golden hour tones enhancing texture and detail. The scene transitions through dissolve to a wide establishing shot of the hiker beginning their journey on a sun-dappled path. Audio: light footsteps on leaves and gentle breeze.
+```
+
+**Why it works**: Symbolizes preparation and adventure readiness with engaging visual storytelling techniques.
+
+**Technique**: Rack focus combined with dissolve transitions and warm lighting
+
+---
+
+### [veo_31_0171] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: aerial drone, diffused lighting, fade transition
+
+```
+A kayaker paddling through calm misty lake waters at early dawn, captured by an aerial drone slowly descending toward the water surface. The lighting is soft and diffused with pastel color grading to evoke calmness and introspection. The scene transitions with a fade to a close-up of paddle slicing through water with droplets sparkling. Audio: gentle water lapping and distant wildlife calls.
+```
+
+**Why it works**: Evokes peaceful solitude and connection with nature, ideal for mindful and reflective outdoor content.
+
+**Technique**: Aerial drone descending with fade transition and pastel color grading
+
+---
+
+### [veo_31_0174] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: dolly push, anamorphic, film grain
+
+```
+A cyclist pausing on a hilltop to admire a sunset city skyline in the distance. The shot uses a dolly push backward to reveal the full vista with anamorphic lens flare accentuating the setting sun. Lighting is golden hour with warm tones and slight film grain for cinematic feel. Audio: soft city sounds blending with nature ambience.
+```
+
+**Why it works**: Juxtaposes urban and natural elements with stylish cinematic effects, appealing to active urban explorers.
+
+**Technique**: Dolly push with anamorphic lens flare and film grain
+
+---
+
+### [veo_31_0176] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: close-up, natural diffused, cut transition
+
+```
+A close-up shot of hands preparing a fishing rod beside a tranquil river at dawn. The camera uses shallow depth of field with natural diffused lighting highlighting water droplets and textured rod components. The scene cuts to a wide establishing shot of the angler casting their line with mist rising off the water. Audio: gentle river flow, birdsong, and rod reel winding.
+```
+
+**Why it works**: Invokes calm and patience associated with fishing through detailed and immersive visuals.
+
+**Technique**: Shallow depth of field with cut transitions and natural lighting
+
+---
+
+### [veo_31_0178] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: dolly push, cinematic 4K, color graded
+
+```
+A panoramic wide shot of a scenic coastal trail winding through cliffs with wildflowers under a bright midday sun. The camera uses a slow dolly push forward with crisp cinematic 4K resolution and vibrant color grading emphasizing blues and greens. The scene cuts to close-ups of fluttering butterflies and textured plants. Audio: ocean breeze and distant seagulls.
+```
+
+**Why it works**: Highlights natural beauty in vivid detail, appealing to nature lovers and outdoor explorers.
+
+**Technique**: Dolly push with cinematic 4K and vibrant color grading
+
+---
+
+### [veo_31_0180] Score: 7/10
+
+**Subcategory**: Outdoor Adventure | **Use Case**: `social_media`
+
+**Tags**: fade transition, film grain, warm lighting
+
+```
+A close-up of a campfire’s glowing embers transitioning with a slow fade to a wide shot of friends lying on a hilltop watching stars. The scene employs warm firelight with deep blue night sky and subtle film grain. Audio: crackling fire, soft voices, and nighttime nature sounds.
+```
+
+**Why it works**: Captures the magic of nighttime outdoor camaraderie with evocative lighting and smooth transitions.
+
+**Technique**: Fade transition with film grain and warm lighting
+
+---
+
+## Nature & Travel (18 prompts)
+
+### [veo_31_0371] Score: 10/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: handheld tracking, rack focus, natural diffused, rim light, film-quality 4K
+
+```
+Film the vibrant street life of Rio de Janeiro during Carnaval. [00:00-00:05] Handheld tracking shot following dancers in elaborate costumes weaving through festive crowds. [00:05-00:10] Close-up on expressive faces and detailed beadwork using rack focus transitions. Use vibrant natural diffused daylight with added rim light to create dynamic contrast. Capture native festival music and crowd cheers natively. Employ film-quality 4K with high saturation and shallow depth of field for energetic immersion.
+```
+
+**Why it works**: The handheld energetic movement combined with vibrant lighting and detailed rack focus captures the festive spirit authentically.
+
+**Technique**: Handheld tracking with rack focus and rim light
+
+---
+
+### [veo_31_0373] Score: 10/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: static wide shot, dolly in, rim light, cinematic 4K, film grain
+
+```
+Capture the enchanting Northern Lights over a frozen Scandinavian lake at midnight. [00:00-00:08] Static wide shot of vibrant aurora colors dancing across a star-filled sky with reflective ice foreground. [00:08-00:12] Slowly dolly in to a close-up of frost crystals on pine branches with rim light accentuating texture. Use natural ambient cold blue lighting with subtle lens flare effects from stars. Add native audio of tranquil wind and distant wildlife calls. Render in cinematic 4K with film grain for a magical yet authentic feel.
+```
+
+**Why it works**: The contrast of dramatic wide night skies with intimate frosted foreground under natural cold lighting conveys wonder and stillness effectively.
+
+**Technique**: Static wide with dolly close-up and rim lighting
+
+---
+
+### [veo_31_0379] Score: 10/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: aerial drone, handheld close-up, rack focus, magic hour, cinematic 4K
+
+```
+Film the vibrant wildlife of the Serengeti at dawn. [00:00-00:07] Tracking aerial drone shot over vast savannah with herds of migrating wildebeests. [00:07-00:12] Close-up handheld shot of a lioness stalking prey in tall grass using rack focus to switch between predator and environment. Use magic hour warm lighting with subtle rim light highlighting animal contours. Include native savannah ambient sounds and distant animal calls. Render in cinematic 4K with shallow depth of field for dramatic storytelling.
+```
+
+**Why it works**: The juxtaposition of sweeping landscape shots with tense close-ups under golden light creates compelling wildlife storytelling.
+
+**Technique**: Aerial drone with handheld rack focus during magic hour
+
+---
+
+### [veo_31_0382] Score: 10/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: tracking shot, steadicam close-up, golden hour, film-quality 4K, bokeh
+
+```
+Explore the historic streets and waterways of Venice at sunrise. [00:00-00:06] Tracking shot from gondola perspective gliding through narrow canals reflecting pastel-colored buildings. [00:06-00:12] Close-up steadicam focusing on artisan craftsmen restoring masks in a workshop. Use golden hour natural lighting with soft lens flare and warm bokeh effects. Capture native audio of water lapping against gondola and distant church bells. Render in film-quality 4K with shallow depth of field for romantic, immersive storytelling.
+```
+
+**Why it works**: The immersive water-level tracking combined with intimate artisan close-ups under warm light evokes Venice’s timeless charm.
+
+**Technique**: Tracking shot from gondola with steadicam close-up and golden hour lighting
+
+---
+
+### [veo_31_0365] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: aerial drone, golden hour, cinematic 4K, natural diffused, film grain
+
+```
+Capture the serene early morning mist rolling over the lush valleys of the Scottish Highlands. [00:00-00:05] Aerial drone shot sweeping across the fog-covered landscape, revealing scattered ancient castles and winding rivers. [00:05-00:10] Cut to a steadycam close-up of dew-covered heather and wildflowers swaying gently in the breeze. Use natural diffused golden hour lighting to enhance the soft, mystical atmosphere. Add ambient natural sounds of birdsong and distant water flowing. Emphasize cinematic 4K resolution with subtle film grain for a timeless, immersive experience.
+```
+
+**Why it works**: The combination of aerial and close-up shots with golden hour lighting creates a visually rich and immersive introduction to a remote natural landscape.
+
+**Technique**: Aerial drone with natural diffused lighting
+
+---
+
+### [veo_31_0367] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: underwater steadycam, natural filtered light, photorealistic 4K, depth of field, native audio
+
+```
+Explore the pristine coral reefs of the Great Barrier Reef underwater. [00:00-00:06] Underwater steadycam dolly push through colorful coral formations with vibrant tropical fish. [00:06-00:10] Close-up of a sea turtle gliding gracefully. Utilize natural filtered sunlight penetrating the water surface for authentic lighting and film grain to enhance texture realism. Sync with native underwater audio of bubbles and distant marine life sounds. Emphasize photorealistic 4K quality for vivid detail and immersive depth of field.
+```
+
+**Why it works**: The underwater dolly push combined with natural filtered lighting captures the vibrant reef ecosystem authentically and beautifully.
+
+**Technique**: Underwater steadycam dolly push with natural filtered sunlight
+
+---
+
+### [veo_31_0369] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: crane down, rack focus, natural diffused, anamorphic lens, photorealistic 4K
+
+```
+Film the vibrant autumn colors of Kyoto’s ancient temples and gardens. [00:00-00:06] Smooth crane down shot revealing red maple leaves falling gently around moss-covered stone paths. [00:06-00:11] Rack focus from delicate temple architecture to serene koi pond reflections. Utilize natural diffused lighting to soften the scene and cultivate a tranquil mood. Include native audio of rustling leaves and soft temple bell chimes. Use anamorphic lens to create cinematic horizontal flares and photorealistic 4K detail to enhance texture richness.
+```
+
+**Why it works**: The combination of crane shots and rack focus highlights both nature’s beauty and cultural heritage with cinematic finesse.
+
+**Technique**: Crane down with rack focus and anamorphic lens
+
+---
+
+### [veo_31_0372] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: aerial drone, tracking shot, natural diffused, photorealistic 4K, film grain
+
+```
+Explore the dense Amazon rainforest canopy from above. [00:00-00:05] Aerial drone crane up revealing layers of lush green foliage and winding rivers. [00:05-00:12] Dissolve to tracking close-up of exotic birds perched on branches with dew drops catching sunlight. Use natural diffused morning light to emphasize freshness and depth. Incorporate native sounds of wildlife calls and rustling leaves to enhance immersion. Apply photorealistic 4K quality with depth of field and subtle film grain to highlight textures.
+```
+
+**Why it works**: Combining expansive aerial views with intimate wildlife close-ups under soft morning light conveys the rainforest’s richness vividly.
+
+**Technique**: Aerial drone crane up with tracking close-up and natural diffused lighting
+
+---
+
+### [veo_31_0375] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: aerial drone, steadicam close-up, natural diffused, cinematic 4K, film grain
+
+```
+Document the historic Incan ruins of Machu Picchu shrouded in morning fog. [00:00-00:07] Aerial drone tracking shot circling the ruins as fog slowly dissipates revealing terraces and mountain peaks. [00:07-00:12] Close-up steadicam capturing intricate stonework and moss textures. Use natural diffused early morning light to enhance mystique and depth. Include native audio of distant bird calls and gentle wind. Render in cinematic 4K with film grain to evoke an ancient, timeless atmosphere.
+```
+
+**Why it works**: The foggy atmospheric conditions combined with detailed close-ups and smooth drone movement immerse viewers in historical mystery.
+
+**Technique**: Aerial drone tracking with steadicam close-ups and natural diffused light
+
+---
+
+### [veo_31_0376] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: aerial drone, underwater dolly push, golden hour, photorealistic 4K, native audio
+
+```
+Highlight the vibrant coral atolls of the Maldives from above. [00:00-00:05] Aerial drone crane down showing turquoise lagoons and white sand beaches with gentle waves. [00:05-00:11] Close-up underwater dolly push revealing colorful coral gardens and schools of fish. Employ natural filtered sunlight for underwater scenes and golden hour light for aerial footage. Add native ocean sounds and subtle ambient music. Use photorealistic 4K with depth of field to create immersive tropical paradise visuals.
+```
+
+**Why it works**: The mix of aerial and underwater shots with natural lighting showcases the diverse beauty of tropical island ecosystems.
+
+**Technique**: Aerial drone crane down combined with underwater dolly push
+
+---
+
+### [veo_31_0378] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: crane down aerial, steadycam close-up, golden hour, natural diffused, photorealistic 4K
+
+```
+Showcase the cultural heritage and natural beauty of Bali’s terraced rice paddies. [00:00-00:06] Crane down aerial shot revealing layered green terraces framed by palm trees and mountain backdrops. [00:06-00:12] Close-up steadycam shot of farmers planting rice with detailed hand movements. Use warm golden hour lighting and natural diffused light to highlight lush textures. Capture native audio of water flowing and soft traditional gamelan music. Use photorealistic 4K with film grain for authenticity.
+```
+
+**Why it works**: The harmonious blend of aerial landscapes and intimate human activity under warm lighting conveys cultural and ecological richness.
+
+**Technique**: Crane down aerial combined with steadycam close-up and golden hour light
+
+---
+
+### [veo_31_0381] Score: 9/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: aerial drone, dolly push, natural diffused, rim light, cinematic 4K
+
+```
+Document the quiet beauty of New Zealand’s fjords during twilight. [00:00-00:07] Aerial drone glide over calm waters reflecting towering cliffs. [00:07-00:12] Close-up dolly push focusing on native birdlife resting on rock ledges. Use natural diffused twilight lighting combined with subtle rim light to define contours. Native audio includes gentle water lapping and soft bird calls. Render in cinematic 4K with film grain to create a peaceful, ethereal mood.
+```
+
+**Why it works**: The tranquil aerial and intimate close-up pairing under twilight lighting conveys serene natural splendor beautifully.
+
+**Technique**: Aerial drone glide with dolly push under twilight lighting
+
+---
+
+### [veo_31_0366] Score: 8/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: handheld, rack focus, neon-lit, film-quality, native audio
+
+```
+Document a bustling street market in Marrakech at dusk. [00:00-00:07] Handheld tracking shots weaving through colorful stalls filled with spices, textiles, and handcrafted lanterns. [00:07-00:12] Rack focus transitioning from a vendor’s face to vibrant merchandise. Employ neon-lit and warm incandescent lighting to highlight the vibrant colors and dynamic atmosphere. Include native audio capturing the chatter of vendors, calls of merchants, and ambient market sounds. Use film-quality depth of field to create a vivid, immersive scene.
+```
+
+**Why it works**: The lively market environment combined with dynamic camera techniques and vibrant lighting immerses viewers into local culture.
+
+**Technique**: Handheld tracking shot with rack focus transition
+
+---
+
+### [veo_31_0368] Score: 8/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: aerial drone, magic hour, cinematic 4K, lens flare, shallow depth of field
+
+```
+Showcase the vast expanse of the Sahara Desert during magic hour. [00:00-00:08] Aerial drone tracking shot following desert nomads and their camels crossing endless sand dunes with rippling textures. [00:08-00:12] Close-up of sand grains shifting in the wind with a shallow depth of field. Use warm, golden magic hour lighting to emphasize the desert’s otherworldly beauty. Native audio captures the whispering wind and distant camel bells. Integrate cinematic 4K with lens flares highlighting the sun’s low position for a dramatic effect.
+```
+
+**Why it works**: Combining sweeping aerial shots with intimate close-ups under magic hour lighting evokes the desert’s vastness and fragile beauty.
+
+**Technique**: Aerial drone with magic hour lighting and lens flare
+
+---
+
+### [veo_31_0370] Score: 8/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: tracking shot, steadycam, natural diffused, rim light, film grain
+
+```
+Document the rugged coastline of Iceland under overcast skies. [00:00-00:07] Tracking shot along black basalt cliffs, waves crashing dramatically. [00:07-00:12] Close-up steadycam capturing intricate rock textures and seabird nests. Employ natural diffused lighting with subtle rim light to accentuate cliff edges and water spray. Add native audio of strong ocean winds and crashing waves. Incorporate film grain for raw, authentic atmosphere and cinematic 4K for sharpness.
+```
+
+**Why it works**: The interplay of wide rugged coastal shots with focused texture close-ups delivers a powerful and intimate sense of place.
+
+**Technique**: Tracking shot with rim lighting and film grain texture
+
+---
+
+### [veo_31_0374] Score: 8/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: crane down, handheld close-up, golden hour, photorealistic 4K, film grain
+
+```
+Explore the vibrant tulip fields of the Netherlands in spring. [00:00-00:06] Crane down aerial shot revealing endless colorful rows with farmhouses dotted around. [00:06-00:10] Close-up handheld of bees pollinating flowers with shallow depth of field. Use golden hour warm lighting to enhance color saturation and create soft lens flares. Native audio captures gentle breeze and buzzing bees. Employ photorealistic 4K with subtle film grain for natural texture and immersive detail.
+```
+
+**Why it works**: The aerial perspective combined with intimate nature close-ups and warm lighting highlights natural beauty and seasonal vibrancy.
+
+**Technique**: Crane down aerial with handheld close-up and golden hour lighting
+
+---
+
+### [veo_31_0377] Score: 8/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: tracking shot, rack focus, natural diffused, rim light, cinematic 4K
+
+```
+Capture the mystic landscapes of Patagonia with dramatic cloud cover. [00:00-00:08] Tracking shot along jagged mountain ridges covered in snow and glaciers. [00:08-00:12] Close-up of wild guanacos grazing on windswept grasslands using rack focus. Utilize natural diffused lighting with subtle rim light on mountain edges to enhance contrast. Include native sounds of wind and distant bird calls. Render in cinematic 4K with film grain to provide a raw and epic feel.
+```
+
+**Why it works**: The dynamic interplay between epic landscapes and intimate wildlife moments effectively conveys Patagonia’s rugged beauty.
+
+**Technique**: Tracking shot with rack focus and rim lighting
+
+---
+
+### [veo_31_0380] Score: 8/10
+
+**Subcategory**: Travel Documentary | **Use Case**: `travel_video`
+
+**Tags**: handheld tracking, steadycam close-up, neon-lit, film-quality 4K, natural diffused
+
+```
+Explore the vibrant street art and urban culture of Berlin. [00:00-00:06] Handheld tracking shot moving through graffiti-covered alleyways at dusk. [00:06-00:11] Close-up steadycam capturing artists painting murals with colorful sprays. Use neon-lit and natural diffused lighting to blend urban grit with artistic vibrancy. Capture native street sounds mixed with ambient electronic music. Employ film-quality 4K with shallow depth of field to emphasize textures and colors.
+```
+
+**Why it works**: The combination of gritty urban lighting and intimate artist shots creates an authentic, immersive documentary experience.
+
+**Technique**: Handheld tracking with neon-lit environment
+
+---
+
+## Portrait & Human (18 prompts)
+
+### [veo_31_0417] Score: 10/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: golden hour, aerial drone, film grain, candid, warm
+
+```
+[Rooftop sunset scene overlooking city skyline. A diverse group of friends sharing drinks, laughing, and enjoying the view. Camera: aerial drone orbiting slowly capturing wide group dynamics and occasional close-ups with shallow depth of field. Lighting: natural golden hour with lens flare and subtle film grain. Mood: celebratory, carefree, warm. Timestamp: [00:00-00:07] Wide aerial shot. [00:07-00:14] Medium close-ups and candid interactions. Audio: city ambiance, laughter | SFX: clinking glasses.]
+```
+
+**Why it works**: Dynamic aerial shots combined with warm lighting create an engaging, joyful group portrait.
+
+**Technique**: aerial drone orbit with shallow focus
+
+---
+
+### [veo_31_0427] Score: 10/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: magic hour, handheld, warm, candid, bokeh
+
+```
+[Suburban backyard barbecue at dusk. Multi-generational family gathered around picnic table sharing food and stories. Camera: handheld medium wide shots capturing natural interactions intercut with close-ups of laughter and food. Lighting: warm magic hour supplemented by string lights creating cozy ambient glow. Mood: warm, joyful, communal. Timestamp: [00:00-00:08] Medium wide shots. [00:08-00:15] Close-ups with soft bokeh. Audio: ambient chatter and laughter | SFX: grill sizzling.]
+```
+
+**Why it works**: Natural handheld shots paired with warm evening lighting capture joyful family connection authentically.
+
+**Technique**: handheld with magic hour and bokeh
+
+---
+
+### [veo_31_0413] Score: 9/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: natural light, warm tones, candid, intimate, soft focus
+
+```
+[Urban coffee shop interior scene. A young woman reading a book by the window, natural diffused morning light filtering softly through sheer curtains. Camera: handheld tracking shot circling gently around her to capture candid expressions and atmosphere. Lighting: warm golden hour glow with soft rim light highlighting contours. Mood: cozy, introspective, calm. Timestamp: [00:00-00:05] Medium shot capturing the subject and surroundings. [00:05-00:10] Close-up of hands turning book pages with selective focus and film grain. Audio: ambient café sounds with soft jazz music | SFX: coffee machine steaming, pages flipping.]
+```
+
+**Why it works**: Combines warm natural lighting and intimate camera movement to evoke a relatable, serene atmosphere.
+
+**Technique**: handheld tracking shot with natural diffused lighting
+
+---
+
+### [veo_31_0415] Score: 9/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: natural light, intimate, candid, warm, steadicam
+
+```
+[Modern minimalist kitchen interior. A young couple cooking together laughing and feeding each other small bites. Camera: steadicam handheld following their interaction with smooth rack focus transitions between faces and food. Lighting: natural diffused daylight supplemented with soft rim light to create warmth and depth. Mood: joyful, intimate, playful. Timestamp: [00:00-00:06] Medium wide shot establishing environment with both subjects. [00:06-00:12] Close-ups intercut showing smiles, food details, and hand touches. Audio: light chatter and laughter | SFX: chopping, sizzling sounds.]
+```
+
+**Why it works**: Seamless steadicam movement combined with warm lighting enhances the genuine connection between subjects.
+
+**Technique**: steadicam handheld with rack focus
+
+---
+
+### [veo_31_0418] Score: 9/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: neon-lit, handheld, moody, urban, cinematic
+
+```
+[Rainy city street at night. A young man in a raincoat walking with umbrella, neon-lit signs reflecting on wet pavement. Camera: handheld tracking following subject from behind, then quick cut to close-up with rain droplets on face. Lighting: neon-lit with strong rim light and reflections. Mood: moody, urban, cinematic. Timestamp: [00:00-00:05] Wide tracking shot from behind. [00:05-00:10] Close-up with rain and neon reflections. Audio: rain, distant traffic | SFX: footsteps, umbrella rustle.]
+```
+
+**Why it works**: Uses neon lighting and handheld shots to evoke a stylish, atmospheric urban portrait.
+
+**Technique**: handheld tracking with neon lighting
+
+---
+
+### [veo_31_0421] Score: 9/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: warm practicals, dolly pull-back, nostalgic, reflective, selective focus
+
+```
+[Vintage style home library. Elderly man reading glasses on, thoughtfully leafing through old photo albums. Camera: dolly pull-back from close-up on face to reveal cozy environment. Lighting: warm soft tungsten practicals combined with subtle rim light. Mood: nostalgic, warm, reflective. Timestamp: [00:00-00:06] Close-up dolly pull-back revealing bookshelves. [00:06-00:12] Medium shot with selective focus on album. Audio: gentle page rustling | SFX: fireplace crackling.]
+```
+
+**Why it works**: The dolly pull-back combined with warm lighting creates an inviting, intimate portrait of memory.
+
+**Technique**: dolly pull-back with warm tungsten lighting
+
+---
+
+### [veo_31_0423] Score: 9/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: high contrast, steadicam, intense, rim light, film grain
+
+```
+[Contemporary gym interior. A young man lifting weights, sweat glistening, intense focus on face. Camera: steadicam tracking shot circling slowly to capture muscle definition and determination. Lighting: high contrast with rim light and subtle film grain to emphasize texture. Mood: intense, driven, energetic. Timestamp: [00:00-00:06] Medium shot establishing environment. [00:06-00:12] Close-up rack focus between face and hands. Audio: gym ambient sounds | SFX: weights clinking.]
+```
+
+**Why it works**: The dynamic steadicam movement and dramatic lighting highlight strength and determination vividly.
+
+**Technique**: steadicam tracking with high contrast rim lighting
+
+---
+
+### [veo_31_0426] Score: 9/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: neon-lit, dolly push-in, shallow focus, gritty, film grain
+
+```
+[Nighttime urban street food vendor. A woman preparing street food with steam rising, neon signs reflecting on surfaces. Camera: dolly push-in from wide shot to close-up with shallow depth of field, emphasizing sensory details. Lighting: neon-lit with rim lights and soft film grain to add atmosphere. Mood: vibrant, gritty, immersive. Timestamp: [00:00-00:05] Wide establishing shot. [00:05-00:12] Slow dolly push-in to close-up on hands and food. Audio: sizzling sounds, ambient street noise | SFX: steam hiss.]
+```
+
+**Why it works**: Combines neon lighting and slow dolly movement to highlight sensory and cultural richness.
+
+**Technique**: dolly push-in with neon lighting
+
+---
+
+### [veo_31_0429] Score: 9/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: natural light, aerial drone, handheld, authentic, warm tones
+
+```
+[Countryside morning. A farmer tending chickens in a barn, soft natural morning light. Camera: aerial drone descending to medium shot with handheld close-up on hands feeding animals. Lighting: natural diffused with rim light and warm tones. Mood: grounded, peaceful, authentic. Timestamp: [00:00-00:06] Aerial shot descending. [00:06-00:12] Handheld close-ups on interaction. Audio: morning birds, animal sounds | SFX: feed rustling.]
+```
+
+**Why it works**: Mixing aerial and intimate handheld shots with natural light creates a genuine rural lifestyle portrayal.
+
+**Technique**: aerial drone descending combined with handheld close-ups
+
+---
+
+### [veo_31_0414] Score: 8/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: golden hour, aerial drone, shallow depth of field, calm, natural
+
+```
+[Outdoor park setting during golden hour. A middle-aged man practicing yoga on a mat amid autumn foliage. Camera: crane down slowly from wide aerial shot to close-up on face showing concentration and calm. Lighting: warm golden hour sunlight with lens flare and soft bokeh effect to enhance depth. Mood: peaceful, focused, rejuvenating. Timestamp: [00:00-00:04] Wide aerial drone shot. [00:04-00:08] Smooth crane down to medium shot. [00:08-00:12] Close-up rack focus on face with shallow depth of field. Audio: gentle breeze, distant birdsong | SFX: soft yoga mat movement sounds.]
+```
+
+**Why it works**: Captures the calming essence of yoga with cinematic lighting and dynamic aerial camera movement.
+
+**Technique**: aerial crane down with golden hour lighting
+
+---
+
+### [veo_31_0416] Score: 8/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: warm practicals, film grain, nostalgic, dolly push-in, intimate
+
+```
+[Cozy living room in the evening. A teenager playing acoustic guitar beside a softly glowing lamp. Camera: dolly push-in from wide shot to close-up emphasizing emotion and detail of fingers on strings. Lighting: warm practicals with soft shadows and subtle film grain for nostalgic feel. Mood: contemplative, creative, relaxed. Timestamp: [00:00-00:05] Wide shot with environment. [00:05-00:10] Slow dolly push-in to close-up on face and hands. Audio: gentle guitar strumming | SFX: faint room ambiance.]
+```
+
+**Why it works**: Combines controlled lighting and camera movement to highlight artistic expression and mood.
+
+**Technique**: dolly push-in with warm practical lighting
+
+---
+
+### [veo_31_0419] Score: 8/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: golden hour, crane shot, natural, peaceful, soft focus
+
+```
+[Beach sunrise. A woman practicing tai chi alone on the shore, soft waves behind her. Camera: slow crane up from wide shot to close-up on focused face. Lighting: soft natural sunrise golden hour light with subtle haze and bokeh. Mood: peaceful, spiritual, refreshing. Timestamp: [00:00-00:06] Wide crane shot. [00:06-00:12] Close up with rack focus to breathing and expression. Audio: ocean waves, distant seabirds | SFX: gentle wind.]
+```
+
+**Why it works**: Combines graceful camera movement with gentle lighting to capture serene lifestyle moments.
+
+**Technique**: crane up with natural golden hour lighting
+
+---
+
+### [veo_31_0422] Score: 8/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: natural light, handheld, authentic, shallow focus, vibrant
+
+```
+[Open-air market at midday. A vendor woman arranging fresh flowers, smiling warmly to customers. Camera: handheld close-ups with shallow depth of field and natural diffused light under canopy. Lighting: soft natural daylight with rim light accents. Mood: vibrant, friendly, authentic. Timestamp: [00:00-00:05] Medium close-up establishing environment. [00:05-00:10] Close-ups on hands and flower details. Audio: market chatter and ambient noise | SFX: rustling flowers.]
+```
+
+**Why it works**: Authentic candid style with natural lighting captures the warmth of daily life interactions.
+
+**Technique**: handheld close-ups with natural diffused light
+
+---
+
+### [veo_31_0424] Score: 8/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: natural light, handheld tracking, playful, motion blur, shallow focus
+
+```
+[Quiet suburban street in early morning. A child riding a bicycle happily with soft natural ambient light. Camera: handheld tracking shot following from side, capturing spontaneous joyful moments and motion blur. Lighting: natural diffused with soft shadows. Mood: playful, carefree, fresh. Timestamp: [00:00-00:07] Tracking medium shot. [00:07-00:12] Close-up on smiling face with shallow focus. Audio: bicycle bells, birds chirping | SFX: wheels on pavement.]
+```
+
+**Why it works**: Captures spontaneous joy with natural light and fluid handheld motion for authentic lifestyle feel.
+
+**Technique**: handheld tracking with shallow depth of field
+
+---
+
+### [veo_31_0428] Score: 8/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: neon rim light, steadicam, retro, inviting, shallow focus
+
+```
+[Vintage diner interior with neon signs. A barista preparing coffee behind the counter, smiling. Camera: steadicam medium close-up with shallow depth of field, natural diffused overhead lighting. Lighting: cool tones with neon rim light highlights. Mood: retro, friendly, inviting. Timestamp: [00:00-00:06] Medium close-up establishing barista. [00:06-00:12] Close-ups on coffee preparation details. Audio: espresso machine, light chatter | SFX: milk steaming.]
+```
+
+**Why it works**: Combines retro neon lighting with smooth steadicam shots for a nostalgic yet polished portrait.
+
+**Technique**: steadicam with neon rim lighting
+
+---
+
+### [veo_31_0430] Score: 8/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: golden hour, static, shallow focus, serene, lens flare
+
+```
+[Modern urban balcony garden at sunset. A woman watering plants with serene smile. Camera: static medium shot with shallow depth of field and soft golden hour lighting. Lighting: golden hour backlight creating warm rim light and lens flare. Mood: serene, nurturing, hopeful. Timestamp: [00:00-00:08] Static shot with occasional focus pulls between subject and plants. Audio: soft breeze, distant city hum | SFX: water droplets falling.]
+```
+
+**Why it works**: Static composition and golden hour backlighting highlight peaceful moments of everyday nurturing lifestyle.
+
+**Technique**: static shot with golden hour rim light and lens flare
+
+---
+
+### [veo_31_0420] Score: 7/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: natural light, minimalist, shallow depth of field, static, film grain
+
+```
+[Co-working space interior during daytime. A young professional woman typing on laptop with focused expression. Camera: static medium close-up with shallow depth of field and mild film grain for texture. Lighting: natural diffused window light softened by sheer curtains. Mood: productive, modern, minimalist. Timestamp: [00:00-00:08] Static shot with occasional focus pull from hands to face. Audio: keyboard typing softly | SFX: ambient office murmur.]
+```
+
+**Why it works**: Clean static composition with soft natural light emphasizes focused modern work lifestyle.
+
+**Technique**: static medium close-up with shallow focus
+
+---
+
+### [veo_31_0425] Score: 7/10
+
+**Subcategory**: Lifestyle Portrait Film | **Use Case**: `lifestyle_film`
+
+**Tags**: natural hard light, static, film grain, creative, shallow focus
+
+```
+[Industrial loft apartment with large windows. A young artist painting on a canvas, sunlight casting dramatic shadows. Camera: static medium shot with shallow depth of field and subtle film grain. Lighting: natural hard sunlight creating defined shadows and highlights. Mood: creative, focused, inspiring. Timestamp: [00:00-00:10] Static shot maintaining focus pull between canvas and artist’s face. Audio: soft ambient music | SFX: brush strokes.]
+```
+
+**Why it works**: Strong sunlight and static composition emphasize artistic focus and textured atmosphere.
+
+**Technique**: static shot with natural hard sunlight
+
+---
+
+## Product Photography (47 prompts)
+
+### [veo_31_0001] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, macro, depth of field, photorealistic, product catalog
+
+```
+[00:00-00:04] Ultra-clean studio shot of a high-performance alloy wheel, positioned on a rotating platform. Smooth dolly push reveals intricate spoke details with sharp reflections. Studio lighting with softboxes ensures even illumination, highlighting polished metal surfaces. Crisp depth of field isolates product with subtle bokeh background. Cut to [00:04-00:06] macro close-up of lug nuts with lens flare accentuating metallic texture. Audio: subtle mechanical whirr of rotation.
+```
+
+**Why it works**: Combines dynamic rotation with detailed close-up to showcase craftsmanship and quality, essential for catalog clarity.
+
+**Technique**: timestamp multi-shot with dolly push and macro close-up
+
+---
+
+### [veo_31_0004] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, golden hour, dolly push, texture, luxury
+
+```
+Studio shot featuring a premium leather steering wheel on pedestal, enveloped in warm golden hour lighting simulated by spotlights. [00:00-00:05] Slow dolly push around 360 degrees capturing stitched details and grain texture. Lens flare highlights glossy finish. Depth of field isolates product against gradient dark background. Audio: soft ambient hum mimicking car interior.
+```
+
+**Why it works**: Focuses on material quality and craftsmanship through lighting and motion enhancing luxurious appeal.
+
+**Technique**: dolly push with simulated golden hour studio lighting
+
+---
+
+### [veo_31_0006] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: neon-lit, crane shot, macro, high-tech, photorealistic
+
+```
+[00:00-00:03] Wide shot of an illuminated LED headlight assembly on a dark background with neon-lit accents. Camera slowly cranes in to reveal multi-layered lens and LED arrays. Sharp reflections and controlled shadows enhance high-tech look. Cut to [00:03-00:06] extreme macro of LED diodes pulsing softly. Audio: subtle electronic hum synced with LED lighting pulses.
+```
+
+**Why it works**: Tech-focused lighting and macro detail capture innovative design elements essential for catalog showcase.
+
+**Technique**: neon-lit crane shot with macro and synced audio
+
+---
+
+### [veo_31_0009] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: macro, studio lighting, dolly push, precision, photorealistic
+
+```
+[00:00-00:03] Macro lens close-up of a precision-engineered brake caliper, showing vibrant red paint and logo. Controlled studio lighting with high contrast shadows highlights contours. Cut to [00:03-00:06] slow dolly push revealing the entire brake assembly with carbon ceramic disc. Background softly blurred with bokeh. Audio: gentle metallic scraping sounds.
+```
+
+**Why it works**: Detailed framing communicates product sophistication and performance orientation clearly.
+
+**Technique**: macro to dolly push transition with bokeh background
+
+---
+
+### [veo_31_0016] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: neon-lit, steadycam, close-up, futuristic, photorealistic
+
+```
+Handheld steadycam close-range shot of a futuristic side mirror with integrated turn signal LED strip, illuminated by soft neon blue studio lights. [00:00-00:05] Slow movement circling mirror highlights aerodynamic shape and glass reflectivity. Lens flare used sparingly to accent edges. Audio: soft electrical beep of turn signal activation.
+```
+
+**Why it works**: Dynamic camera movement combined with neon lighting emphasizes product innovation and detail.
+
+**Technique**: steadycam circling shot with neon lighting and lens flare
+
+---
+
+### [veo_31_0019] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: macro, studio lighting, carbon fiber, depth of field, photorealistic
+
+```
+[00:00-00:05] Close-up macro shot of a high-gloss painted gear shift knob with visible carbon fiber inlays, illuminated by soft studio spotlights. Depth of field shifts focus from textured grip to gloss finish edges. Cut to [00:05-00:08] slow dolly out revealing entire car interior console. Audio: soft mechanical clicks simulating gear shifts.
+```
+
+**Why it works**: Detail and context shots combined effectively demonstrate product quality and integration inside vehicle.
+
+**Technique**: macro focus pull to dolly out shot with soft studio lighting
+
+---
+
+### [veo_31_0023] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, dolly push, macro, machined metal, photorealistic
+
+```
+[00:00-00:06] Slow dolly push on a high-performance brake rotor with cooled ventilation holes, set on metallic stand inside studio. Studio lighting uses spotlights and softboxes to create balanced shadows and sharp highlights on machined surfaces. Cut to [00:06-00:09] extreme close-up macro of rotor edge and drilled holes. Audio: light metallic scraping.
+```
+
+**Why it works**: Shows product engineering and quality through clean studio presentation and detailed macro focus.
+
+**Technique**: dolly push with macro extreme close-up and balanced studio lighting
+
+---
+
+### [veo_31_0026] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: photorealistic, studio lighting, shallow depth of field
+
+```
+A sleek, photorealistic close-up of a high-performance sports car alloy wheel, focusing on intricate spoke details and metallic texture. Use a shallow depth of field with bokeh highlights reflecting in the polished surfaces. Lighting is studio softbox on one side, creating gentle shadows and emphasizing contours. Camera movement: a slow 360-degree dolly push around the wheel. Background is minimalist matte black to isolate the product. [00:00-00:05] Wide shot establishing the wheel within the car frame. [00:05-00:10] Close-up with rack focus shifting between lug nuts and spokes. Audio: subtle metallic clicks syncing with focus shifts.
+```
+
+**Why it works**: Combines detailed close-ups with dynamic camera movement and refined lighting to highlight product craftsmanship.
+
+**Technique**: Timestamp-based multi-shot with rack focus
+
+---
+
+### [veo_31_0028] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: photorealistic, natural diffused, anamorphic
+
+```
+A high-detail photorealistic shot of a premium leather car seat interior, captured with natural diffused lighting streaming through a car window. Use an anamorphic lens to add cinematic flare and subtle lens artifacts. Camera movement: gentle handheld push-in focusing on texture of stitching and material grain. Background softly blurred for depth of field. [00:00-00:04] Wide shot of the seat in context. [00:04-00:08] Close-up detail of stitch pattern. Audio: soft ambient car interior sounds.
+```
+
+**Why it works**: Combines realistic detail with cinematic techniques to convey luxury and craftsmanship.
+
+**Technique**: Anamorphic lens flare and handheld push-in
+
+---
+
+### [veo_31_0032] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: photorealistic, natural diffused, futuristic
+
+```
+A photorealistic close-up of a modern LED headlight assembly, showcasing lens optics and internal reflector details. Lighting uses a cool, natural diffused source with subtle glow effects around the LED elements. Camera movement: slow tracking shot from outer lens to inner LED array. Background: soft black gradient. Mood: futuristic and precise. Audio: faint electrical buzzing synced to LED illumination pulses.
+```
+
+**Why it works**: Focuses on technological complexity with clean lighting and subtle motion to maintain viewer interest.
+
+**Technique**: Tracking shot with native audio pulsing
+
+---
+
+### [veo_31_0035] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: macro, natural diffused, anamorphic
+
+```
+An ultra-detailed macro shot of a car dashboard control knob, highlighting tactile surface textures and engraved icons. Use natural diffused lighting with subtle anamorphic lens flare along edges. Camera movement: micro handheld push focusing on rotating knob mechanism. Background: blurred dashboard elements with bokeh. Audio: mechanical click sounds synchronized with knob rotation.
+```
+
+**Why it works**: Macro detail combined with tactile audio cues immerses viewers in product interaction.
+
+**Technique**: Micro handheld push with synced mechanical audio
+
+---
+
+### [veo_31_0038] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: color graded, softbox lighting, shallow depth of field
+
+```
+A sharp, color-graded close-up of a carbon fiber steering wheel grip section with red stitching accents, illuminated by diffused softbox lighting. Camera movement: slow handheld push focusing on texture and detail with shallow depth of field. Background: blurred car interior elements with subtle bokeh lights. Mood: sporty and luxurious. Audio: light leather rubbing and car interior ambiance.
+```
+
+**Why it works**: Texture and color accents paired with intimate camera movement create premium feel.
+
+**Technique**: Handheld push with ambient sound layering
+
+---
+
+### [veo_31_0042] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: macro, natural diffused, photorealistic
+
+```
+A macro photorealistic shot of an engine oil dipstick with oily metal textures and engraved measurement markings. Use natural diffused window light and shallow depth of field to isolate detail. Camera movement: micro handheld push-in with slow rack focus from tip to engraved scale. Background: softly blurred engine block. Audio: faint metallic scrape synced with focus changes.
+```
+
+**Why it works**: Macro detail paired with natural light reveals quality and precision essential for automotive parts.
+
+**Technique**: Micro handheld push with rack focus and synced sound
+
+---
+
+### [veo_31_0047] Score: 9/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: photorealistic, golden hour, color graded
+
+```
+A photorealistic, color-graded close-up of a luxury car emblem badge on a glossy hood surface, captured with golden hour lighting creating warm reflections and subtle lens flare. Camera movement: slow handheld push with shallow depth of field focusing on emblem details and textured paint. Background: softly blurred hood contours. Audio: soft wind and distant traffic ambiance.
+```
+
+**Why it works**: Warm natural light combined with close-up focus conveys brand prestige and product quality.
+
+**Technique**: Handheld push with natural lighting and native ambient audio
+
+---
+
+### [veo_31_0002] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: natural lighting, tracking shot, rack focus, carbon fiber, photorealistic
+
+```
+Handheld camera captures a sleek carbon fiber spoiler mounted on a glossy black sports car under natural diffused daylight. [00:00-00:05] Tracking shot from front to rear, emphasizing aerodynamic curves and weave textures. Golden hour lighting casts warm tones and soft shadows to evoke premium quality. Rack focus shifts from logo badge to spoiler edge. Audio: gentle ambient breeze with faint city sounds in the background.
+```
+
+**Why it works**: Natural environment and dynamic focus guide viewer’s attention to product texture and design elegance.
+
+**Technique**: tracking shot with rack focus under natural diffused lighting
+
+---
+
+### [veo_31_0003] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: aerial drone, magic hour, close-up, textured, cinematic
+
+```
+[00:00-00:03] Aerial drone shot of a rugged all-terrain tire set on rocky ground, softly illuminated by magic hour light. Slow crane shot closes in to show aggressive tread patterns and sidewall branding. Neon-lit reflective highlights accentuate rubber textures. Cut to [00:03-00:06] close-up on tire's tread depth with shallow depth of field and film grain for gritty feel. Audio: distant off-road engine revving enhances adventurous mood.
+```
+
+**Why it works**: Showcases product durability and design in authentic outdoor setting, appealing to adventurous buyers.
+
+**Technique**: aerial drone with crane shot and textured close-up
+
+---
+
+### [veo_31_0005] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: anamorphic, rack focus, natural lighting, chrome, cinematic
+
+```
+Close-up details of chrome car emblem on glossy red hood, captured with anamorphic lens for cinematic horizontal lens flares. [00:00-00:04] Rack focus shifts from emblem to paint texture showing flawless finish. Natural diffused daylight mixed with subtle neon reflections adds vibrancy. Cut to [00:04-00:07] handheld steadycam shot pulling back to reveal entire front grille. Audio: soft engine purring.
+```
+
+**Why it works**: Cinematic lens effects and focus techniques elevate product prestige and surface detail clarity.
+
+**Technique**: anamorphic lens flare with rack focus and handheld steadycam
+
+---
+
+### [veo_31_0008] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: golden hour, steadicam, rack focus, outdoor, adventure
+
+```
+[00:00-00:04] Handheld steadicam shot of a rugged off-road roof rack mounted on SUV, shot at golden hour with warm natural sunlight casting dynamic shadows. Camera moves from side profile to front, showing sturdy construction and mounting system. Rack focus switches from background mountains to close rack bolts. Audio: soft wind with distant bird calls.
+```
+
+**Why it works**: Combines product functionality with aspirational outdoor lifestyle, using natural lighting and dynamic camera to engage.
+
+**Technique**: steadicam tracking with rack focus under golden hour lighting
+
+---
+
+### [veo_31_0010] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: cinematic, neon-lit, tracking shot, digital, photorealistic
+
+```
+Cinematic 4K slow tracking shot of a futuristic digital dashboard display, lit by cool blue neon lights inside a darkened cabin. Lens flare and subtle film grain add cinematic texture. [00:00-00:05] Focus pull from digital speedometer to ambient lighting controls. Audio: soft electronic beeps and interface clicks.
+```
+
+**Why it works**: Futuristic tech feel with cinematic atmosphere enhances perceived product innovation.
+
+**Technique**: tracking shot with focus pull and neon lighting
+
+---
+
+### [veo_31_0013] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: aerial drone, natural lighting, close-up, reflective, photorealistic
+
+```
+[00:00-00:03] Slow aerial drone circle around a set of sporty brake discs arranged on black reflective surface. Natural diffused lighting with soft reflections emphasizes metallic grooves and drilled holes. Cut to [00:03-00:06] extreme close-up capturing signature manufacturer etching with shallow depth of field. Audio: quiet ambient workshop noise.
+```
+
+**Why it works**: Dynamic aerial framing combined with macro detail highlights product craftsmanship and design signature.
+
+**Technique**: aerial drone with macro close-up on reflective surface
+
+---
+
+### [veo_31_0015] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, tracking shot, reflective, warm tone, photorealistic
+
+```
+[00:00-00:06] Tracking shot of a sleek car battery on a reflective surface with studio lighting simulating golden hour warmth. Camera glides from side to front capturing embossed branding and textured casing. Depth of field isolates battery from softly blurred background. Audio: faint electrical hum enhancing tech vibe.
+```
+
+**Why it works**: Warm lighting and smooth tracking convey product reliability and premium feel effectively.
+
+**Technique**: tracking shot with golden hour simulated studio lighting
+
+---
+
+### [veo_31_0017] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, dolly push, macro, soft shadows, photorealistic
+
+```
+Wide shot of a set of premium car speakers arranged on black velvet under diffused studio light, creating soft shadows and reflections. [00:00-00:04] Slow dolly push forward with depth of field isolating central speaker cone. Cut to [00:04-00:07] close-up macro of speaker mesh and branding embossed on surround. Audio: subtle low bass vibration synchronized with camera movement.
+```
+
+**Why it works**: Combination of wide and macro shots showcases both overall design and fine detail for comprehensive product display.
+
+**Technique**: dolly push with macro close-up and synchronized audio
+
+---
+
+### [veo_31_0020] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: anamorphic, tracking shot, neon-lit, wet texture, cinematic
+
+```
+Anamorphic lens wide shot of a luxury car tire rolling slowly on reflective wet asphalt under neon city lights. Camera performs smooth tracking shot parallel to tire rotation, emphasizing wet texture and tread detail. Lens flare enhances neon reflections. Audio: soft wet road splash and urban night ambiance.
+```
+
+**Why it works**: Cinematic style captures product in dynamic, atmospheric urban environment for aspirational appeal.
+
+**Technique**: anamorphic tracking shot with neon-lit wet surface and synchronized audio
+
+---
+
+### [veo_31_0022] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: natural lighting, handheld, golden hour, bokeh, luxury
+
+```
+Close-up handheld shot of an advanced car key fob resting on smooth leather seat, illuminated by warm golden hour sunlight streaming through window. Lens flare and soft bokeh background create luxury atmosphere. Focus pull shifts from logo to button details. Audio: faint soft click of button press.
+```
+
+**Why it works**: Warm natural lighting combined with tight focus shifts enhance product prestige and tactile appeal.
+
+**Technique**: handheld close-up with focus pull and golden hour lighting
+
+---
+
+### [veo_31_0024] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: neon-lit, steadycam, close-up, futuristic, photorealistic
+
+```
+Handheld steadycam shot circling a premium car sunroof control panel with illuminated buttons, under subtle neon violet lighting in darkened car interior. Lens flare on glass surfaces enhances futuristic mood. Focus transitions from buttons to textured panel finish. Audio: soft button clicks with ambient electronic hum.
+```
+
+**Why it works**: Dynamic camera movement and lighting create an immersive feel that highlights product usability and design.
+
+**Technique**: steadycam circling with neon lighting and focus transitions
+
+---
+
+### [veo_31_0027] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: cinematic 4K, neon-lit, modern
+
+```
+A cinematic 4K shot of a futuristic electric car charging plug, positioned against a neon-lit urban night backdrop. Use vibrant neon pink and blue rim lighting to accentuate the plug’s edges and high-tech design. Camera movement: slow tracking shot moving from handle grip to connector tip. Lighting: neon-lit with reflections on glossy surfaces. Mood: modern, sleek, and cutting-edge. Audio: soft electric hum mixed with city ambient sounds.
+```
+
+**Why it works**: Neon lighting combined with dynamic tracking emphasizes the tech-forward nature of the product.
+
+**Technique**: Camera tracking shot with native audio layering
+
+---
+
+### [veo_31_0029] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: golden hour, natural lighting, aerial drone
+
+```
+A golden hour outdoor shot of a rugged off-road tire, positioned on rocky terrain. Use warm natural sunlight highlighting tread depth and sidewall branding. Camera movement: slow aerial drone sweptown starting wide and finishing focused on tire details. Depth of field: moderate to keep the tire and foreground sharp. Mood: adventurous, durable. Audio: subtle wind and distant nature ambiance.
+```
+
+**Why it works**: Utilizes natural rugged environment and warm lighting to evoke durability and performance.
+
+**Technique**: Aerial drone with timestamped wide to close-up shots
+
+---
+
+### [veo_31_0031] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: film grain, studio lighting, cinematic
+
+```
+A dynamic film grain cinematic shot of a high-performance brake caliper painted bright red, mounted on a matte black wheel. Use studio spotlighting with strong shadows to emphasize shape and color contrast. Camera movement: crane shot descending slowly from wheel rim to caliper. [00:00-00:06] Wide establishing wheel with caliper. [00:06-00:12] Close-up on caliper logo and brake pad textures. Audio: faint mechanical scraping and subtle heartbeat rhythm.
+```
+
+**Why it works**: Contrasting colors and dramatic lighting highlight performance and design quality.
+
+**Technique**: Crane shot with layered audio for mood
+
+---
+
+### [veo_31_0033] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, steadycam, high resolution
+
+```
+A high-resolution product shot of a carbon fiber car spoiler mounted on a matte black vehicle body. Use strong directional studio lighting from the side to reveal carbon weave texture and aerodynamic shape. Camera movement: steadycam lateral tracking along spoiler length. Background: solid white for contrast. Mood: performance and precision engineering. Audio: soft wind rush sound synced with camera glide.
+```
+
+**Why it works**: Side lighting accentuates texture and shape, while smooth camera movement conveys sleekness.
+
+**Technique**: Steadycam tracking with synced ambient sound
+
+---
+
+### [veo_31_0037] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: golden hour, studio lighting, dynamic
+
+```
+A dynamic wide shot of a luxury car’s rearview mirror assembly in a studio setting, with a subtle gold hour light filter to warm the reflections. Camera movement: smooth dolly circle around the mirror, showcasing reflective glass and integrated sensors. Background: deep charcoal gradient. Mood: elegant and refined. Audio: soft ambient studio hum with mirror adjustment clicks.
+```
+
+**Why it works**: Combining warm light and fluid motion emphasizes both design and function attractively.
+
+**Technique**: Dolly circle with layered ambient sounds
+
+---
+
+### [veo_31_0040] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: photorealistic, soft diffused, neutral background
+
+```
+A detailed photorealistic shot of a premium car key fob resting on a dark textured surface, illuminated by soft diffused overhead lighting. Camera movement: slow dolly zoom from wide to close-up on button details and branding. Background: neutral dark to emphasize the product. Audio: soft button clicks synced with zoom.
+```
+
+**Why it works**: Soft lighting and zoom accentuate tactile details making the key fob feel premium and accessible.
+
+**Technique**: Dolly zoom with synced button click audio
+
+---
+
+### [veo_31_0041] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: cinematic, neon-lit, color graded
+
+```
+A cinematic, color graded profile shot of a matte black custom motorcycle helmet with reflective visor. Lighting is mixed natural diffused with neon rim lights in red and blue creating contrast. Camera movement: slow crane shot from top of helmet down to chin guard. Mood: edgy and futuristic. Audio: distant city night sounds with faint motorcycle engine revving.
+```
+
+**Why it works**: Neon accents and mixed lighting evoke modern urban appeal aligning with product style.
+
+**Technique**: Crane shot with layered ambient audio
+
+---
+
+### [veo_31_0043] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: cinematic 4K, studio lighting, film grain
+
+```
+A wide, cinematic 4K shot of a multi-spoke aluminum rim on a sports sedan, with rim flare effects and subtle film grain. Studio lighting uses three-point setup with strong key light highlighting the rim’s curves. Camera movement: slow lateral dolly tracking the rim circumference. Mood: sporty and high-end. Audio: low mechanical whirr synced with camera movement.
+```
+
+**Why it works**: Combining film grain and dynamic lighting adds texture and a tactile feel to the product shot.
+
+**Technique**: Dolly tracking with film grain and synced sound
+
+---
+
+### [veo_31_0044] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: photorealistic, softbox lighting, warm tone
+
+```
+A crisp, high-detail photorealistic shot of a car headrest with integrated active noise cancellation speakers. Use softbox lighting with a slight warm tone to highlight curves and speaker mesh texture. Camera movement: slow zoom from wide headrest to speaker grille close-up with shallow depth of field. Background: blurred car interior. Audio: soft white noise sound synced with zoom.
+```
+
+**Why it works**: Emphasizes the product’s tech features with balanced lighting and synchronized audio for immersion.
+
+**Technique**: Zoom with native ambient audio
+
+---
+
+### [veo_31_0046] Score: 8/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: dramatic, neon-lit, low-angle
+
+```
+A dramatic low-angle shot of a high-performance car suspension spring, isolated with neon purple rim lighting against a dark background. Camera movement: slow crane upward revealing spring coils. Lighting: neon-lit with emphasis on metallic reflections. Mood: industrial and powerful. Audio: metallic spring tension sound synced with camera reveal.
+```
+
+**Why it works**: Strong lighting and unique angle highlight mechanical strength and design precision.
+
+**Technique**: Crane shot with synced mechanical audio
+
+---
+
+### [veo_31_0007] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, tracking shot, matte finish, industrial, macro
+
+```
+Studio lighting setup with natural diffused softboxes illuminates a matte black exhaust tip mounted horizontally. [00:00-00:05] Slow tracking shot from side, highlighting brushed metal texture and subtle carbon fiber inlays. Lens flare and film grain added for industrial aesthetic. Cut to [00:05-00:07] close-up on weld seams with shallow depth of field. Audio: faint metallic clink and gentle airflow.
+```
+
+**Why it works**: Balanced lighting and textural detail emphasize build quality and design precision.
+
+**Technique**: tracking shot with macro close-up and film grain
+
+---
+
+### [veo_31_0011] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: natural lighting, dolly push, macro, chrome, photorealistic
+
+```
+[00:00-00:04] Wide shot of a chrome fuel cap on a polished muscle car hood, illuminated by natural diffused light with soft shadows. Camera performs a smooth dolly push forward, capturing reflections and engraved logo. Cut to [00:04-00:07] macro focus on cap texture and threading with shallow depth of field. Audio: ambient garage sounds with faint metallic clicks.
+```
+
+**Why it works**: Combines wide establishing shot and intimate detail to showcase both form and function effectively.
+
+**Technique**: timestamp multi-shot with dolly push and macro detail
+
+---
+
+### [veo_31_0012] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, crane shot, texture, matte finish, photorealistic
+
+```
+Studio shot of a set of high-end car floor mats arranged flat with overhead softbox illumination creating soft shadows. [00:00-00:05] Crane shot from above slowly descending to show textures and precise stitching. Depth of field keeps entire product sharp. Matte finish fabric contrasts with glossy rubber edging. Audio: soft fabric rustling as camera moves.
+```
+
+**Why it works**: Overhead crane shot perfectly displays product layout and material details important for buyers.
+
+**Technique**: crane shot with softbox studio lighting
+
+---
+
+### [veo_31_0014] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, macro, chrome, shallow depth of field, product catalog
+
+```
+Close-up of a set of premium chrome lug nuts arranged in a symmetrical pattern on matte black background. Controlled studio lighting with high contrast and subtle lens flare emphasizes shape and polished finish. [00:00-00:05] Slow dolly push across nuts with shallow depth of field highlights design variations. Audio: light metallic clinking sounds.
+```
+
+**Why it works**: Symmetry and controlled lighting draw attention to product details critical for buyer confidence.
+
+**Technique**: dolly push with shallow depth of field and lens flare
+
+---
+
+### [veo_31_0018] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: natural lighting, steadicam, bokeh, chrome, photorealistic
+
+```
+[00:00-00:06] Steadicam tracking shot following the curve of a polished chrome exhaust manifold under natural diffused daylight. Camera movement emphasizes smooth bends and weld quality. Background softly blurred with bokeh. Audio: subtle metallic clinks and airflow sounds enhance authenticity.
+```
+
+**Why it works**: Natural lighting paired with smooth camera movement highlights product craftsmanship in a realistic setting.
+
+**Technique**: steadicam tracking shot with natural diffused lighting and bokeh
+
+---
+
+### [veo_31_0021] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, crane shot, macro, carbon fiber, precision
+
+```
+[00:00-00:04] Studio shot of a high-precision torque wrench laid flat on textured carbon fiber surface, illuminated by overhead soft diffused lights. Slow crane shot descends vertically to reveal engraved measurement markings and ergonomic handle design. Cut to [00:04-00:07] macro detail of the ratchet mechanism with shallow depth of field. Audio: subtle metallic clicks.
+```
+
+**Why it works**: Vertical crane shot combined with macro details highlights tool functionality and material contrast clearly.
+
+**Technique**: crane shot with macro and diffused overhead lighting
+
+---
+
+### [veo_31_0025] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, dolly push, macro, reflective, photorealistic
+
+```
+[00:00-00:05] Wide shot of a set of colorful automotive fuses on a reflective black surface with diffused studio lighting. Camera performs a smooth dolly push bringing the viewer closer to detailed fuse markings. Cut to [00:05-00:08] macro close-up highlighting fuse filament texture with shallow depth of field and subtle lens flare. Audio: faint electrical crackle.
+```
+
+**Why it works**: Combines wide product overview with intimate detail to communicate both variety and quality.
+
+**Technique**: timestamp multi-shot with dolly push and macro close-up under diffused lighting
+
+---
+
+### [veo_31_0030] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: studio lighting, minimalist, reflective
+
+```
+A clean, minimalist studio shot of a chrome car gear knob with intricate engraving. Use soft, diffused studio lighting and a reflective black base to create subtle reflections. Camera movement: slow dolly push-in with a shallow depth of field focusing on the engraving. Background: seamless white gradient fade. Audio: subtle metallic swivel sound synced with camera motion.
+```
+
+**Why it works**: Minimalism and reflective surfaces emphasize product elegance and detail with clarity.
+
+**Technique**: Dolly push with synced native audio effects
+
+---
+
+### [veo_31_0034] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: cinematic, color graded, studio lighting
+
+```
+A minimalist, color graded cinematic shot of a polished stainless steel exhaust tip, resting on a reflective black surface with soft studio rim lighting emphasizing curves and edges. Camera movement: slow dolly-out revealing entire length of exhaust pipe. Depth of field: shallow with focused highlight on pipe opening. Mood: premium and modern. Audio: low rumble sound matching camera retreat.
+```
+
+**Why it works**: Color grading and rim lighting create a premium aesthetic that highlights material quality.
+
+**Technique**: Dolly-out with native audio rumble
+
+---
+
+### [veo_31_0036] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: photorealistic, softbox lighting, cool-toned
+
+```
+A cool-toned photorealistic shot of a car tire pressure sensor embedded in the valve stem, isolated on a matte grey background. Use softbox overhead lighting for even illumination and minimal shadows. Camera movement: static close-up with slight rack focus from valve stem to sensor chip. Audio: subtle electronic beep indicating sensor activation.
+```
+
+**Why it works**: Even lighting and focus shifts highlight small technical features clearly for commercial clarity.
+
+**Technique**: Static shot with rack focus and native audio beep
+
+---
+
+### [veo_31_0039] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: black and white, high contrast, hard lighting
+
+```
+A minimalist, high-contrast black and white shot of a chrome side mirror against a black glossy car door, emphasizing reflections and form. Use hard directional studio lighting creating strong shadows. Camera movement: static with slow rack focus from mirror edges to mounting base. Audio: soft mechanical clank synchronized with focus shifts.
+```
+
+**Why it works**: Monochrome and contrast isolate form and texture, ideal for sophisticated product presentation.
+
+**Technique**: Rack focus with synced mechanical audio
+
+---
+
+### [veo_31_0045] Score: 7/10
+
+**Subcategory**: Automotive Products | **Use Case**: `product_catalog`
+
+**Tags**: minimalist, natural diffused, textured
+
+```
+A minimalist, top-down shot of a set of car floor mats arranged neatly on a textured concrete floor. Use natural diffused lighting with soft shadows to emphasize texture and material quality. Camera movement: static with a slow rack focus moving between different mat patterns. Background: rough industrial. Audio: ambient soft footsteps and floor mat shuffle sounds.
+```
+
+**Why it works**: Top-down perspective combined with textural lighting communicates material feel and utility clearly.
+
+**Technique**: Static shot with rack focus and native audio
+
+---
+
+## Social Media (47 prompts)
+
+### [veo_31_0054] Score: 10/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: travel, aerial drone, vibrant
+
+```
+An exciting travel reveal of a tropical beach destination. [00:00-00:06] Aerial drone sweeping over turquoise water and white sand. [00:06-00:12] Handheld close-up of smiling traveler dipping toes in water, natural sunlight with lens flare. Cinematic 4K with vivid color grading. Audio: ambient ocean waves mixed with cheerful tropical music.
+```
+
+**Why it works**: Captures viewers’ wanderlust and excitement vividly using immersive angles and authentic sounds.
+
+**Technique**: Aerial drone with handheld intimate shots and lens flare
+
+---
+
+### [veo_31_0079] Score: 10/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: golden hour, handheld, dynamic, warm
+
+```
+A playful pet reel featuring a golden retriever catching a frisbee in a sunlit park. Use a handheld camera for dynamic tracking shots matching the dog's movement, switching between wide shots of the park and close-ups of the joyful expression. Golden hour lighting enhances warmth and happiness. Audio: joyful panting, birds chirping, upbeat instrumental music.
+```
+
+**Why it works**: Combines emotional appeal and action to attract pet lovers, maximizing shareability with heartwarming visuals and sounds.
+
+**Technique**: Handheld tracking shots with golden hour lighting
+
+---
+
+### [veo_31_0085] Score: 10/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: quick cuts, studio lighting, overhead shot, energetic
+
+```
+A fast-paced cooking reel demonstrating a chef preparing a gourmet dish. Use quick cuts between wide shots of the kitchen, close-ups of chopping and sizzling, and overhead shots focusing on plating. Use bright studio lighting with slight film grain for texture. Audio: sizzling, chopping sounds mixed with energetic background music.
+```
+
+**Why it works**: High energy and visual variety keep viewers engaged and inspired to try recipes, ideal for food content creators.
+
+**Technique**: Fast multi-shot cuts with overhead and close-up camera angles
+
+---
+
+### [veo_31_0048] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: urban, golden hour, cinematic 4K
+
+```
+A vibrant streetwear fashion shoot in an urban alley during golden hour. [00:00-00:04] Wide establishing shot of the model walking confidently, dolly push forward. [00:04-00:08] Close-up on clothing textures with rack focus. Natural diffused lighting enhances skin tones. Cinematic 4K with shallow depth of field. Audio: upbeat hip-hop instrumental with ambient city sounds.
+```
+
+**Why it works**: Combines dynamic movement and rich lighting to showcase fashion details appealing to Instagram audiences.
+
+**Technique**: Timestamp-based multi-shot with dolly push and rack focus
+
+---
+
+### [veo_31_0050] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: fitness, neon-lit, cinematic
+
+```
+A high-energy fitness workout in a neon-lit gym. [00:00-00:05] Tracking shot following athlete sprinting on treadmill, neon pink and blue lighting. [00:05-00:10] Cut to close-up of muscular detail with lens flare and bokeh background. Cinematic color grading emphasizing contrast and saturation. Audio: motivating electronic dance music with breath and footstep SFX.
+```
+
+**Why it works**: Dynamic visuals and energetic soundtrack engage fitness enthusiasts looking for motivation on reels.
+
+**Technique**: Tracking shot with neon lighting and lens flare effects
+
+---
+
+### [veo_31_0052] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: cooking, bright, natural light
+
+```
+A mouth-watering cooking tutorial for a vegan recipe in a bright kitchen. [00:00-00:03] Overhead drone shot of fresh ingredients artfully arranged. [00:03-00:07] Tracking shot of chopping vegetables, handheld for intimacy. Natural diffused daylight with color grading to enhance colors. Audio: upbeat acoustic background music with chopping and sizzling SFX.
+```
+
+**Why it works**: Combines visually appealing food prep with immersive natural sounds, increasing viewer appetite and engagement.
+
+**Technique**: Aerial drone shot plus handheld tracking
+
+---
+
+### [veo_31_0056] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: tech, studio lighting, modern
+
+```
+A fast-paced tech unboxing and review in a sleek modern setting. [00:00-00:03] Close-up of hands opening package with shallow depth of field. [00:03-00:07] Tracking shot revealing product features with studio lighting and cool blue color grading. [00:07-00:10] Cut to presenter demonstrating device. Audio: energetic electronic music with button clicks and voiceover.
+```
+
+**Why it works**: Clear product focus with polished lighting and sound keeps tech-savvy viewers engaged and informed.
+
+**Technique**: Shallow depth of field with tracking shot and studio lighting
+
+---
+
+### [veo_31_0058] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: street food, neon-lit, lively
+
+```
+A vibrant street food market bustling with activity at dusk. [00:00-00:05] Tracking shot weaving through stalls with neon signage. [00:05-00:10] Close-up on sizzling food and smiling vendor faces, neon-lit ambiance with film grain. Audio: lively market chatter mixed with sizzling and frying SFX.
+```
+
+**Why it works**: Captures authentic cultural moments with immersive sound and vibrant lighting, ideal for food content.
+
+**Technique**: Tracking shot with neon lighting and film grain
+
+---
+
+### [veo_31_0061] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: pets, golden hour, playful
+
+```
+A cheerful pet morning routine featuring a dog playing in a sun-drenched backyard. [00:00-00:04] Wide establishing shot from aerial drone circling the dog. [00:04-00:08] Close-up handheld shots of tail wagging and joyful eyes with natural golden hour light. Audio: happy acoustic melody with playful barks and nature sounds.
+```
+
+**Why it works**: Combines adorable pet moments with warm natural lighting, perfect for high engagement pet content.
+
+**Technique**: Aerial drone and handheld close-ups with golden hour lighting
+
+---
+
+### [veo_31_0066] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: product, neon-lit, high contrast
+
+```
+A dynamic product showcase of handmade jewelry under neon studio lighting. [00:00-00:05] Rotating shot on turntable with close-up detail of gems and textures. [00:05-00:10] Cut to model wearing pieces with lens flare highlights. Color graded for high contrast and saturation. Audio: sleek electronic beats with subtle metal clinks.
+```
+
+**Why it works**: Bold aesthetic and multi-angle close-ups highlight craftsmanship, attracting fashion and luxury followers.
+
+**Technique**: Rotating turntable shot with neon lighting and lens flare
+
+---
+
+### [veo_31_0069] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: coffee, slow motion, warm
+
+```
+A visually rich slow pour coffee art shot in a stylish café. [00:00-00:03] Close-up of slow-motion coffee pouring with steam rising, natural light with bokeh. [00:03-00:07] Cut to wide shot showing barista smiling and latte art on cup, warm golden hour light. Audio: ambient café chatter with soft jazz music.
+```
+
+**Why it works**: Slow-motion and warm lighting create an inviting sensory experience that resonates well on food and lifestyle reels.
+
+**Technique**: Slow-motion close-up with warm golden hour lighting
+
+---
+
+### [veo_31_0070] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: technology, futuristic, night
+
+```
+A sleek montage of electric car features in a futuristic cityscape at night. [00:00-00:06] Tracking shot following car illuminated by neon signs with high contrast color grading. [00:06-00:12] Close-up on dashboard and futuristic displays with lens flare. Audio: futuristic synth music with electric engine hum and city sounds.
+```
+
+**Why it works**: Combination of striking visuals and immersive audio elevates modern tech appeal for automotive marketing.
+
+**Technique**: Tracking shot with neon-lit night cityscape and lens flare
+
+---
+
+### [veo_31_0072] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: luxury, slow motion, studio
+
+```
+A stylish slow-motion reveal of a luxury watch on a wrist in a dark studio. [00:00-00:06] Rotating close-up on watch face with soft spotlight and bokeh. [00:06-00:12] Cut to medium shot of model adjusting cufflink, cinematic color grading with subtle film grain. Audio: sophisticated jazz instrumental with ticking watch sound.
+```
+
+**Why it works**: Elegant lighting and slow-motion details underscore product quality, appealing to high-end brand audiences.
+
+**Technique**: Rotating close-up with soft spotlight and slow motion
+
+---
+
+### [veo_31_0073] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: cinematic 4K, golden hour, natural diffused, film grain
+
+```
+A vibrant street food market at golden hour bustling with diverse people tasting colorful dishes. Start with a wide establishing shot capturing the lively stalls and crowd, dolly push in to close-up shots of sizzling food and happy faces, then rack focus between vendor’s hands and customers. Use natural diffused lighting with cinematic 4K clarity and subtle film grain to add warmth. Audio: ambient chatter, sizzling sounds, and upbeat background music.
+```
+
+**Why it works**: Combines sensory-rich visuals and relatable social scenes to engage viewers quickly in a vibrant, authentic environment.
+
+**Technique**: Timestamp-based multi-shot with rack focus and dolly push
+
+---
+
+### [veo_31_0074] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: neon-lit, tracking shot, slow-motion, lens flare
+
+```
+A stylish urban fashion influencer walking confidently on a neon-lit city street at night. Start with a tracking shot following from behind, switch to a close-up with lens flare from neon signs, then a slow-motion turn to camera with bokeh lights in background. Lighting is neon-lit with strong contrasts, creating a moody, energetic vibe. Audio: pulsing electronic beat synced with motion.
+```
+
+**Why it works**: High energy and trendy aesthetic appeals to fashion-forward social audiences, with dynamic camera work adding cinematic flair.
+
+**Technique**: Tracking shot combined with slow-motion and lens flare
+
+---
+
+### [veo_31_0076] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: handheld, high contrast, studio lighting, energetic
+
+```
+A dynamic fitness reel showing a personal trainer demonstrating a HIIT workout in an industrial gym. Use a handheld camera for energetic close-ups on muscles flexing, sweat, and fast movements, intercut with wide shots showing the full body in action. Lighting is high contrast studio with sharp shadows. Audio: intense motivational voiceover with fast-paced beats.
+```
+
+**Why it works**: Captures intensity and authenticity essential for fitness motivation, engaging viewers with fast cuts and dynamic camera work.
+
+**Technique**: Handheld close-ups with high contrast studio lighting
+
+---
+
+### [veo_31_0081] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: macro, studio lighting, slow-motion, lens flare
+
+```
+A glamorous beauty product reveal featuring a model applying shimmering highlighter in a studio. Start with a macro lens close-up of the product texture, then cut to a slow-motion shot of the model’s face with lens flare and soft bokeh. Use studio lighting with a warm golden hue and color graded for enhanced skin tones. Audio: smooth electronic beats with light sparkle SFX.
+```
+
+**Why it works**: Luxury aesthetic and detailed product showcase attract beauty-conscious audiences with visually rich and sensual appeal.
+
+**Technique**: Macro close-up with slow-motion and lens flare
+
+---
+
+### [veo_31_0082] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: steadicam, magic hour, shallow depth of field, energetic
+
+```
+An energetic dance challenge filmed outdoors during magic hour. Use a combination of steadicam tracking shots and quick cuts between dancers performing synchronized moves. Incorporate natural warm lighting with lens flare and shallow depth of field for focus on movement. Audio: catchy upbeat pop track with clear rhythmic beats.
+```
+
+**Why it works**: Dynamic movement and vibrant atmosphere encourage audience participation and viral sharing for dance trends.
+
+**Technique**: Steadicam tracking with shallow depth of field and quick cuts
+
+---
+
+### [veo_31_0087] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: tracking shot, natural lighting, color graded, urban
+
+```
+A trendy sneaker unboxing and styling reel shot in a vibrant urban environment. Use tracking shots following the influencer’s hands unboxing, then cut to close-ups of sneakers paired with streetwear. Lighting is natural with color grading to enhance saturation. Audio: upbeat hip-hop instrumental with sneaker tapping sounds.
+```
+
+**Why it works**: Combines product focus with lifestyle context appealing to streetwear culture and sneaker enthusiasts.
+
+**Technique**: Tracking shot with color grading and synchronized SFX
+
+---
+
+### [veo_31_0089] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: studio lighting, dolly push, lens flare, glamorous
+
+```
+A glamorous makeover transformation with before and after shots. Start with a wide shot of the model’s face before makeup, then cut to close-ups of brush application with studio lighting and lens flare. End with slow dolly push to the final glowing look with bokeh background. Audio: upbeat pop track with sparkle SFX at reveal.
+```
+
+**Why it works**: Visually dramatic and satisfying transformation reels captivate beauty audiences encouraging shares and saves.
+
+**Technique**: Dolly push with lens flare and bokeh transitions
+
+---
+
+### [veo_31_0090] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: aerial drone, handheld, natural diffused, vibrant
+
+```
+A scenic travel reel capturing a mountain trail hike. Use aerial drone establishing shots of the landscape, dissolve to handheld close-ups of footsteps on rocks and flowing streams. Natural diffused lighting with vibrant color grading enhances lush greens and blue skies. Audio: birdsong, flowing water, gentle instrumental folk music.
+```
+
+**Why it works**: Evokes adventure and nature appreciation, ideal for travel brands and outdoor lifestyle creators.
+
+**Technique**: Aerial drone combined with handheld shots and dissolve transitions
+
+---
+
+### [veo_31_0094] Score: 9/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: aerial drone, golden hour, natural lighting, uplifting
+
+```
+An inspiring environmental activism reel showing a community beach cleanup. Start with aerial drone establishing shot of the littered shore, then cut to close-ups of volunteers picking trash and smiling faces. Lighting is natural with golden hour warmth and subtle color grading to enhance hopefulness. Audio: ambient ocean waves, chatter, and uplifting motivational music.
+```
+
+**Why it works**: Emotionally impactful visuals combined with community action inspire social awareness and engagement.
+
+**Technique**: Aerial drone establishing shot with close-ups and warm color grading
+
+---
+
+### [veo_31_0049] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: cozy, magic hour, nostalgic
+
+```
+A cozy morning coffee ritual inside a rustic kitchen. [00:00-00:03] Steadicam follows hands brewing coffee, close-up on steam rising. [00:03-00:06] Cut to wide shot of person enjoying the first sip by a window with natural diffused light. Warm magic hour ambiance, film grain for nostalgic feel. Audio: soft acoustic guitar with kettle whistle and pouring water SFX.
+```
+
+**Why it works**: Invokes a warm, relatable mood perfect for lifestyle content, enhanced by detailed natural sounds.
+
+**Technique**: Steadicam close-ups paired with wide environmental shots
+
+---
+
+### [veo_31_0051] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: beauty, studio lighting, cinematic
+
+```
+An artistic makeup transformation tutorial in a studio setting. [00:00-00:04] Close-up detail of makeup brush applying vibrant colors, focus rack from brush to eye. [00:04-00:08] Wide shot revealing full face with anamorphic lens for cinematic framing and studio lighting. Color graded to emphasize hues. Audio: calm instrumental with brush strokes and soft spoken tips.
+```
+
+**Why it works**: Detailed and visually rich shots make it easy for viewers to follow and appreciate the makeup process.
+
+**Technique**: Rack focus combined with anamorphic lens cinematic framing
+
+---
+
+### [veo_31_0053] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: motivational, golden hour, cozy
+
+```
+A motivational daily journaling routine filmed in a sunlit home office. [00:00-00:05] Close-up of pen writing on paper with shallow depth of field. [00:05-00:10] Cut to wide shot showing cozy workspace with plants and coffee cup, golden hour lighting. Soft film grain overlay for warmth. Audio: gentle piano melody with page turning SFX.
+```
+
+**Why it works**: Creates a calm, inspiring atmosphere perfect for mindfulness and productivity content.
+
+**Technique**: Shallow depth of field with soft film grain
+
+---
+
+### [veo_31_0055] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: minimalist, time-lapse, clean
+
+```
+A minimalist desk organization makeover with before and after shots. [00:00-00:04] Static wide shot of cluttered desk. [00:04-00:08] Time-lapse sequence cleaning and rearranging, handheld camera with natural diffused daylight. [00:08-00:12] Final steady wide shot of tidy workspace, color graded for crispness. Audio: light indie pop instrumental with ambient room sounds.
+```
+
+**Why it works**: Visual transformation and satisfying time-lapse editing appeal to productivity and lifestyle audiences.
+
+**Technique**: Time-lapse handheld sequence with natural lighting
+
+---
+
+### [veo_31_0057] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: dance, slow-motion, magic hour
+
+```
+A dreamy slow-motion capture of a dancer performing in a misty forest at magic hour. [00:00-00:06] Crane shot circling dancer with golden backlight creating lens flare. [00:06-00:12] Close-up slow-motion of flowing movements with shallow depth of field. Audio: ethereal ambient music with soft wind SFX.
+```
+
+**Why it works**: Combines ethereal visuals and slow motion to create mesmerizing, shareable artistic content.
+
+**Technique**: Crane shot with slow-motion and lens flare
+
+---
+
+### [veo_31_0059] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: skincare, soft lighting, pastel
+
+```
+A calming skincare routine in a softly lit bathroom. [00:00-00:04] Close-up on hands applying cream with shallow depth of field. [00:04-00:08] Wide shot with natural diffused morning light highlighting soft textures. Color graded for pastel tones. Audio: gentle harp music with water dripping and soft breathing.
+```
+
+**Why it works**: Soothing visuals and sounds encourage relaxation and self-care engagement on Instagram.
+
+**Technique**: Shallow depth of field with natural diffused lighting
+
+---
+
+### [veo_31_0062] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: timelapse, cityscape, dramatic
+
+```
+A fast-motion timelapse of a city skyline transitioning from day to night. [00:00-00:12] Fixed position wide shot with subtle film grain and color graded for dramatic contrast. Lens flare as city lights turn on. Audio: ambient city sounds with soft electronic rhythm building.
+```
+
+**Why it works**: Visually captivating transition that holds viewer attention and suits travel or urban lifestyle feeds.
+
+**Technique**: Fixed wide shot timelapse with lens flare
+
+---
+
+### [veo_31_0064] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: DIY, colorful, bright
+
+```
+A fun, colorful DIY craft project tutorial on a bright table. [00:00-00:04] Overhead drone shot of supplies arranged. [00:04-00:10] Handheld tracking of hands creating item, with natural daylight and vivid color grading. Audio: upbeat pop tune with cutting and glue SFX.
+```
+
+**Why it works**: Bright visuals and clear steps make it easy and fun to follow, boosting shareability in craft communities.
+
+**Technique**: Overhead drone plus handheld tracking with vivid grading
+
+---
+
+### [veo_31_0067] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: party, golden hour, joyful
+
+```
+A colorful kids’ birthday party highlight reel outdoors. [00:00-00:06] Wide drone shot of party area with balloons and decorations. [00:06-00:12] Handheld close-ups of kids laughing and playing, golden hour sunlight with soft lens flare. Audio: cheerful kids cheering with upbeat festive music.
+```
+
+**Why it works**: Captures joyful moments with warm lighting and lively soundscape, ideal for family content sharing.
+
+**Technique**: Aerial drone plus handheld close-ups with golden hour lens flare
+
+---
+
+### [veo_31_0068] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: tutorial, urban, bright
+
+```
+A quick tutorial on smartphone photography tips in a bright urban park. [00:00-00:05] Close-up on phone screen showing settings, with shallow depth of field. [00:05-00:10] Wide shot of photographer framing composition, natural diffused daylight. Audio: clear voiceover with soft ambient park sounds.
+```
+
+**Why it works**: Clear instructional content paired with bright, relatable environment encourages skill sharing and engagement.
+
+**Technique**: Shallow depth of field close-up with wide environmental shots
+
+---
+
+### [veo_31_0071] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: farmers market, aerial, fresh
+
+```
+A vibrant farmers market morning scene highlighting fresh produce. [00:00-00:05] Wide aerial drone shot over colorful stalls. [00:05-00:10] Handheld close-up on hands selecting fruits with natural diffused daylight. Color graded for bright, fresh tones. Audio: lively market ambiance with soft folk music.
+```
+
+**Why it works**: Bright, authentic visuals combined with rich ambient sounds enhance viewer connection to wholesome lifestyle.
+
+**Technique**: Aerial drone with handheld close-up and natural lighting
+
+---
+
+### [veo_31_0075] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: magic hour, crane shot, natural lighting, depth of field
+
+```
+A cozy morning routine scene inside a minimalist apartment with natural light flooding in. Crane shot moves from a steaming cup of coffee on a wooden table to a person journaling by the window. Use magic hour lighting for warm tones and soft shadows, with depth of field focusing on the journal text. Audio: soft acoustic guitar and coffee pouring sounds.
+```
+
+**Why it works**: Creates an intimate, calming atmosphere ideal for wellness and lifestyle content that resonates with mindful audiences.
+
+**Technique**: Crane shot with depth of field focus and natural magic hour lighting
+
+---
+
+### [veo_31_0077] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: time-lapse, aerial drone, natural diffused, color graded
+
+```
+A time-lapse transformation of a small urban garden blossoming through the seasons. Start wide with an aerial drone shot of the rooftop, then dissolve to close-ups of blooming flowers with soft bokeh. Use natural diffused lighting and color grading to enhance greens and floral colors. Ambient nature sounds with gentle music underscore growth and renewal.
+```
+
+**Why it works**: Visually satisfying and emotionally uplifting, perfect for environmental and lifestyle content promoting growth and care.
+
+**Technique**: Aerial drone with time-lapse and soft bokeh transitions
+
+---
+
+### [veo_31_0080] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: steadycam, natural diffused, close-up, tutorial
+
+```
+A quick DIY home decor tutorial showing step-by-step making of a macrame wall hanging. Use close-up shots capturing hand movements and materials, with a steadycam glide revealing progress. Use natural diffused lighting for clear visibility and soft shadows. Audio: calm voiceover instructions synchronized with gentle acoustic background.
+```
+
+**Why it works**: Clear visuals and pacing support instructional content, making it accessible and engaging for craft enthusiasts.
+
+**Technique**: Close-ups combined with steadycam glide and synchronized voiceover
+
+---
+
+### [veo_31_0083] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: aerial drone, studio lighting, film grain, minimalist
+
+```
+A tech gadget unboxing and first impressions with a modern minimalist desk setup. Start wide with a top-down aerial drone shot of the boxed product, cut to close-ups of hands unwrapping and assembling. Use studio lighting with soft shadows and film grain for subtle texture. Audio: crisp mechanical sounds mixed with calm, explanatory voiceover.
+```
+
+**Why it works**: Professional presentation style combined with detailed close-ups boosts credibility and viewer trust for tech audiences.
+
+**Technique**: Aerial drone top-down combined with close-ups and film grain
+
+---
+
+### [veo_31_0084] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: aerial drone, golden hour, warm, bokeh
+
+```
+A romantic picnic setup in a lush park during late afternoon. Begin with an aerial drone shot revealing the blanket, basket, and surrounding greenery, then cut to close-ups of hands pouring wine and arranging flowers. Use golden hour natural lighting with warm color grading and soft bokeh. Audio: gentle acoustic guitar and nature sounds.
+```
+
+**Why it works**: Evokes emotional warmth and aspirational lifestyle imagery that resonates with couples and romantic content viewers.
+
+**Technique**: Aerial drone establishing shot with close-ups and color grading
+
+---
+
+### [veo_31_0086] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: aerial drone, golden hour, natural diffused, serene
+
+```
+A serene yoga session filmed at sunrise on a beach. Start with a wide aerial drone shot of the practitioner in lotus pose, dissolve to close-ups of breath and hand mudras. Use natural diffused golden hour lighting with soft shadows and color graded for pastel tones. Audio: calming ocean waves and gentle flute music.
+```
+
+**Why it works**: Peaceful and visually beautiful, perfect for wellness brands seeking to inspire mindfulness and relaxation.
+
+**Technique**: Aerial drone with dissolve transitions and natural diffused lighting
+
+---
+
+### [veo_31_0088] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: handheld, natural diffused, film grain, cinematic
+
+```
+A cinematic storytelling reel about a day in the life of a barista at a busy café. Use handheld shots capturing latte art close-ups, customer interactions, and coffee brewing. Incorporate natural diffused morning light with subtle film grain and warm color grading. Audio: espresso machine sounds, ambient café chatter, soft indie music.
+```
+
+**Why it works**: Authentic and relatable slice-of-life visuals create emotional connection for food and lifestyle content.
+
+**Technique**: Handheld multi-shot with natural lighting and film grain
+
+---
+
+### [veo_31_0091] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: quick cuts, studio lighting, high key, tutorial
+
+```
+A fast-paced tech tutorial demonstrating smartphone photography tips. Use quick cuts between screen captures, close-ups of hands adjusting settings, and example photos. Studio lighting with high key brightness and clean aesthetics. Audio: clear voiceover with digital click SFX and upbeat electronic background.
+```
+
+**Why it works**: Clear, concise instructional style with modern aesthetics captures the tech-savvy audience’s attention.
+
+**Technique**: Quick cuts with studio lighting and synchronized SFX
+
+---
+
+### [veo_31_0093] Score: 8/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: stop-motion, macro, natural diffused, color graded
+
+```
+A creative stop-motion style reel showing a coffee cup filling up with latte art forming. Combine macro lens close-ups with smooth transitions between frames, use natural diffused lighting and color grading to highlight creamy textures. Audio: gentle pouring sound with soft piano melody.
+```
+
+**Why it works**: Unique visual style paired with satisfying motion keeps viewers engaged and encourages replays.
+
+**Technique**: Macro close-ups and smooth transitions mimicking stop-motion
+
+---
+
+### [veo_31_0060] Score: 7/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: behind the scenes, studio, dynamic
+
+```
+A dynamic behind-the-scenes look at a creative photoshoot. [00:00-00:05] Handheld footage of makeup artists and stylists prepping model. [00:05-00:10] Cut to wide shot of photographer directing with studio lighting. Color graded with cool tones and subtle film grain. Audio: casual chatter and camera clicks mixed with upbeat background music.
+```
+
+**Why it works**: Offers authenticity and insider perspective which followers find engaging and relatable.
+
+**Technique**: Handheld with studio lighting and film grain
+
+---
+
+### [veo_31_0063] Score: 7/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: books, cozy, vintage
+
+```
+An inspiring book recommendation video with cozy library background. [00:00-00:05] Close-up handheld of flipping pages with soft bokeh. [00:05-00:10] Medium shot of presenter holding book and smiling, warm natural diffused window light. Film grain for vintage charm. Audio: calm jazz instrumental with soft page turning SFX.
+```
+
+**Why it works**: Evokes warmth and intimacy, encouraging audience trust and connection through relatable content.
+
+**Technique**: Close-up with soft bokeh and film grain
+
+---
+
+### [veo_31_0065] Score: 7/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: meditation, minimalist, calm
+
+```
+A quiet moment of meditation in a minimalist zen garden. [00:00-00:06] Slow dolly push in on seated figure with soft natural light and shallow depth of field. [00:06-00:12] Cut to close-up of hands in mudra pose with ambient wind chimes and bird calls. Color graded with pastel tones and slight film grain.
+```
+
+**Why it works**: Promotes mindfulness and calmness with visually and sonically soothing elements, appealing to wellness audiences.
+
+**Technique**: Dolly push with shallow depth of field and ambient audio
+
+---
+
+### [veo_31_0078] Score: 7/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: studio lighting, film grain, cinematic 4K, close-up
+
+```
+A creative behind-the-scenes reel showing an artist painting a mural in a bright studio. Begin with a wide shot of the entire mural, then cut to close-ups of brush strokes and paint mixing on palette. Use studio lighting with soft shadows, incorporate film grain for texture and cinematic 4K clarity. Audio: brush strokes and soft indie music.
+```
+
+**Why it works**: Engages artistic communities by showcasing craftsmanship in detail, providing an immersive and inspiring visual experience.
+
+**Technique**: Multi-shot with cut-to close-ups and film grain
+
+---
+
+### [veo_31_0092] Score: 7/10
+
+**Subcategory**: Instagram Reels | **Use Case**: `instagram_reel`
+
+**Tags**: dolly push, warm lighting, bokeh, film grain
+
+```
+A cozy winter fashion lookbook filmed in a softly lit indoor scene with fairy lights. Use slow dolly push and rack focus between layered outfits and accessories. Lighting is warm with soft bokeh and subtle film grain for texture. Audio: soft jazz instrumental with crackling fireplace SFX.
+```
+
+**Why it works**: Invokes seasonal warmth and style inspiration with cinematic techniques that appeal to fashion followers.
+
+**Technique**: Slow dolly push with rack focus and warm bokeh
+
+---
+
+## Social Media Content (45 prompts)
+
+### [veo_31_0189] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: culinary, bright, rhythmic editing, natural lighting, professional
+
+```
+Film a dynamic cooking reel featuring a chef preparing a signature dish in a bright, modern kitchen. Start with a crane down shot over the counter revealing fresh ingredients, then switch to a steadicam close-up on the chef’s hands chopping and stirring. Utilize natural diffused lighting for a clean, appetizing look with subtle rim light highlighting steam and textures. Incorporate rhythmic cuts synced to upbeat background music. Use [00:00-00:04] aerial ingredient overview; [00:04-00:10] close-up of cooking process; [00:10-00:15] plated dish reveal with lens flare to emphasize freshness. Native audio captures sizzling sounds and chopping for realism.
+```
+
+**Why it works**: Engages viewers with sensory-rich visuals and sounds, perfect for food enthusiasts.
+
+**Technique**: Crane down shot and native audio integration
+
+---
+
+### [veo_31_0192] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: beauty, studio lighting, cinematic 4K, slow-motion, professional
+
+```
+Design a beauty tutorial reel featuring a makeup artist applying bold evening makeup in a studio setting. Use a combination of close-ups and mid-shots with a dolly pull-back to reveal the finished look. Employ studio lighting with softboxes for even diffused light and rim light to highlight facial contours. Integrate cinematic 4K quality with subtle film grain to enhance texture. Timestamp shots: [00:00-00:05] close-up on eye makeup; [00:05-00:10] dolly pull-back revealing full face; [00:10-00:15] slow-motion application of lipstick. Add native audio of brush strokes with upbeat background music.
+```
+
+**Why it works**: Combines detailed visuals and high production value to captivate beauty enthusiasts.
+
+**Technique**: Dolly pull-back with studio lighting and slow-motion close-ups
+
+---
+
+### [veo_31_0197] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: dance, neon lighting, steadycam, slow-motion, energetic
+
+```
+Produce a high-energy dance reel shot in a neon-lit studio with dynamic camera movement. Use steadicam tracking to follow the dancer’s fluid motions and rack focus to highlight hand gestures and facial expressions. Employ neon rim lighting for dramatic effect and 4K cinematic clarity. Timestamp shots: [00:00-00:06] wide steadicam tracking; [00:06-00:12] rack focus close-ups; [00:12-00:15] slow-motion spin with lens flare. Incorporate native audio capturing foot taps and rhythmic breath alongside electronic dance music.
+```
+
+**Why it works**: Captures vibrant movement with immersive audio and striking lighting for high engagement.
+
+**Technique**: Steadicam tracking with rack focus and neon rim lighting
+
+---
+
+### [veo_31_0203] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: luxury, golden hour, aerial drone, cinematic, sunset
+
+```
+Create a luxury lifestyle reel featuring a sunset yacht party. Use aerial drone shots for wide ocean views and dolly push-ins on guests enjoying cocktails. Employ golden hour lighting enhanced with lens flare and cinematic 4K quality. Timestamp segmentation: [00:00-00:06] drone wide ocean shot; [00:06-00:12] dolly close-ups on guests; [00:12-00:15] slow-motion champagne toasts. Overlay ambient ocean waves and party chatter with upbeat electronic music for an immersive vibe.
+```
+
+**Why it works**: Combines aspirational visuals with immersive audio to captivate luxury lifestyle followers.
+
+**Technique**: Aerial drone combined with dolly push and slow-motion
+
+---
+
+### [veo_31_0207] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: gaming, neon lighting, steadicam, dynamic focus, energetic
+
+```
+Film a fast-paced gaming highlights reel with neon-lit room ambiance. Use steadicam for smooth close-ups on player reactions and keyboard action. Employ dynamic rack focus between screen reflections and controller movements. Timestamp: [00:00-00:06] wide shot of player; [00:06-00:12] close-ups with rack focus; [00:12-00:15] slow-motion celebration. Incorporate native game audio mixed with energetic electronic soundtrack to captivate gamers.
+```
+
+**Why it works**: Engages gaming audiences with immersive lighting, dynamic focus, and authentic audio.
+
+**Technique**: Steadicam with dynamic rack focus and neon-lit environment
+
+---
+
+### [veo_31_0212] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: culinary, warm, detailed, cinematic, inviting
+
+```
+Create a cooking recipe step-by-step reel inside a modern kitchen during magic hour. Use a top-down crane shot to show ingredients being chopped, then cut to close-up handheld shots of sizzling pans. Incorporate warm golden hour light with subtle lens flare and shallow depth of field. Add a rack focus transitioning from knife to sizzling food. Timestamp multi-shot: [00:00-00:05] crane top-down, [00:05-00:10] handheld close-ups with rack focus. Audio: upbeat cooking music with pan sizzling SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: The combination of warm lighting and detailed shots makes the cooking process visually appetizing and immersive.
+
+**Technique**: Top-down crane shot paired with handheld close-ups and rack focus
+
+---
+
+### [veo_31_0213] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: motivational, dynamic, neon-lit, fitness, energetic
+
+```
+Film a motivational fitness transformation reel in a neon-lit gym environment. Begin with a tracking steadicam shot following the athlete warming up, cut to close-up slow-motion of intense workout movements. Use vibrant neon rim lighting to accentuate muscle definition and create dynamic shadows. Transition with a dissolve to a before and after side-by-side split screen. Timestamp multi-shot: [00:00-00:04] tracking steadicam, [00:04-00:09] slow-motion close-ups, [00:09-00:12] dissolve to split screen. Audio: motivational electronic beat. SFX: gym ambient sounds. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: High-energy visuals combined with neon lighting and transformations inspire and engage fitness audiences effectively.
+
+**Technique**: Steadicam tracking with slow-motion close-ups and dissolve transition
+
+---
+
+### [veo_31_0220] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: makeup, neon-lit, energetic, glamorous, fast-paced
+
+```
+Create an upbeat makeup transformation reel in a neon-lit vanity room. Start with a close-up on the influencer’s bare face under pink and blue neon rim lighting, then fast-cut montage of applying makeup products. Use a handheld steadycam to capture brush strokes and expressions, ending with a crane up shot revealing the final glamorous look. Timestamp multi-shot: [00:00-00:03] close-up bare face, [00:03-00:09] fast-cut montage handheld, [00:09-00:12] crane up. Audio: trendy pop music. SFX: brush swishes. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Fast-paced editing and vibrant neon lighting create high energy content that resonates with beauty enthusiasts.
+
+**Technique**: Handheld fast-cut montage with crane up and neon rim lighting
+
+---
+
+### [veo_31_0227] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: sports, energetic, golden hour, dynamic, cinematic
+
+```
+Create a high-energy sports training reel on an outdoor basketball court at golden hour. Begin with aerial drone establishing shot, then switch to handheld close-ups of dribbling, shooting, and intense facial expressions. Use warm natural lighting with subtle lens flare and bokeh effects. End with a slow-motion jump shot freeze frame. Timestamp multi-shot: [00:00-00:03] aerial drone, [00:03-00:10] handheld close-ups, [00:10-00:12] slow-motion freeze frame. Audio: energetic hip-hop track with court ambient SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Dynamic sports action combined with golden hour light creates visually stunning and motivational content.
+
+**Technique**: Aerial drone plus handheld close-ups and slow-motion freeze frame
+
+---
+
+### [veo_31_0231] Score: 10/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: neon-lit, high-energy, dynamic, close-up, motivational
+
+```
+Produce a high-energy fitness reel shot in a neon-lit gym at night featuring a personal trainer demonstrating explosive workout moves. Use a combination of crane up/down and handheld close-ups to capture the intensity and sweat details. Incorporate lens flare and vibrant neon colors to amplify the dynamic atmosphere. Timestamp multi-shot: [00:00-00:04] crane down establishing the gym environment, [00:04-00:10] handheld close-ups focusing on muscle contractions and facial determination. Audio: motivational upbeat electronic track synced with movement, enhanced with realistic gym ambient sounds.
+```
+
+**Why it works**: The intense visuals combined with neon lighting and aggressive camera work motivate fitness enthusiasts and boost shareability.
+
+**Technique**: crane down with handheld close-ups and neon-lit cinematic lighting
+
+---
+
+### [veo_31_0188] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: urban, cinematic, natural lighting, film grain, fashion
+
+```
+Create a vibrant urban fashion reel showcasing a young model walking through a graffiti alley at golden hour. Use a handheld camera with subtle dolly push-ins to capture details of the outfit. Incorporate natural diffused lighting to enhance skin tones and urban textures. Transition smoothly between wide shots and close-ups focusing on accessories with a shallow depth of field to create cinematic bokeh. Overlay ambient city sounds mixed with trendy beats to match the energetic vibe. Timestamp shots for a dynamic 15-second reel: [00:00-00:05] wide establishing shot; [00:05-00:10] close-up on fabric and accessories; [00:10-00:15] tracking shot following the model. Emphasize film grain for a stylish, professional look.
+```
+
+**Why it works**: Combines edgy urban aesthetics with cinematic techniques to engage fashion-forward audiences.
+
+**Technique**: Timestamp multi-shot with handheld dolly push and shallow depth of field
+
+---
+
+### [veo_31_0190] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: fitness, dramatic lighting, neon, slow-motion, motivational
+
+```
+Produce a motivational fitness reel set in a neon-lit gym during magic hour. Capture a female athlete’s intense workout using a mix of tracking shots and rack focus to shift attention between the athlete’s focused expression and muscle movements. Use neon rim lighting to create dramatic contrast and accentuate sweat droplets, adding film grain for grit. Sequence timestamps as [00:00-00:06] tracking close-up running on the treadmill; [00:06-00:12] rack focus between dumbbells and athlete’s face; [00:12-00:15] wide shot with slow-motion jump rope. Layer motivating voice-over with subtle gym sound effects to enhance immersion.
+```
+
+**Why it works**: Harnesses high-energy visuals and sound to inspire and motivate fitness audiences.
+
+**Technique**: Rack focus combined with neon rim lighting and slow-motion
+
+---
+
+### [veo_31_0193] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: technology, minimalist, natural lighting, rack focus, professional
+
+```
+Create a tech review reel set in a sleek modern office with natural diffused lighting. Feature close-ups of the latest smartphone’s design and features using rack focus to highlight buttons, screen, and camera module. Incorporate smooth crane up/down camera movement to reveal the device on a minimalist desk. Use a fade-in/out transition to maintain a clean aesthetic. Timestamp layout: [00:00-00:05] close-up on device edges; [00:05-00:10] crane down to reveal workspace; [00:10-00:15] tracking shot showing usage demo. Overlay clear voice commentary with subtle tech sounds for credibility.
+```
+
+**Why it works**: Showcases product details with clarity and professionalism, appealing to tech audiences.
+
+**Technique**: Rack focus paired with crane movement and fade transitions
+
+---
+
+### [veo_31_0195] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: entrepreneurship, studio lighting, cinematic, motivational, film grain
+
+```
+Film a motivational entrepreneur reel filmed in a modern co-working space with studio lighting. Begin with a wide establishing shot, then dolly push in tightly during a passionate pitch. Use rim light to create depth and cinematic film grain for a polished look. Timestamp shots: [00:00-00:05] wide shot introducing subject; [00:05-00:12] dolly close-up on face; [00:12-00:15] cut to typing on laptop. Overlay inspiring background music with native audio capturing voice clarity and ambient office sounds.
+```
+
+**Why it works**: Builds professional credibility and connection through cinematic storytelling.
+
+**Technique**: Dolly push with rim lighting and native audio clarity
+
+---
+
+### [veo_31_0199] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: sports, aerial drone, magic hour, dynamic, slow-motion
+
+```
+Produce a dynamic sports highlight reel featuring a skateboarder performing tricks at dusk. Capture with aerial drone and handheld tracking shots to emphasize motion and environment. Use magic hour lighting with subtle lens flare and rim light to highlight action silhouettes. Timestamp shots: [00:00-00:06] drone establishing aerial; [00:06-00:12] handheld close-up on tricks; [00:12-00:15] slow-motion ollie with natural shadows. Add native urban sounds with energetic hip-hop beats to complement intensity.
+```
+
+**Why it works**: Combines kinetic energy with cinematic visuals to captivate action sport fans.
+
+**Technique**: Aerial drone with handheld tracking and slow-motion
+
+---
+
+### [veo_31_0201] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: professional, motivational, studio lighting, cinematic, leadership
+
+```
+Design a motivational leadership reel shot in a modern conference room with studio lighting. Start with a wide shot of a team meeting, then dolly push in to the leader’s confident expression. Use rim light to accentuate presence and add subtle film grain for cinematic feel. Timestamp plan: [00:00-00:06] wide shot of team; [00:06-00:12] dolly close-up on leader; [00:12-00:15] cut to leader gesturing while speaking. Incorporate native audio of voice with light inspirational background music for emotional impact.
+```
+
+**Why it works**: Fosters emotional connection and authority through refined cinematic presentation.
+
+**Technique**: Dolly push with rim lighting and native voice audio
+
+---
+
+### [veo_31_0204] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: tech, minimalist, studio lighting, rack focus, 4K clarity
+
+```
+Produce a tech unboxing reel in a minimalist studio with natural diffused and rim lighting. Start with a close-up on the sealed box, then dolly pull back revealing the presenter’s excited expression. Use rack focus to highlight unboxed components in crisp 4K resolution. Timestamps: [00:00-00:05] close-up on box; [00:05-00:10] dolly pull-back to presenter; [00:10-00:15] rack focus on device details. Incorporate native unboxing sounds with energetic background music to maintain viewer interest.
+```
+
+**Why it works**: Delivers crisp, engaging visuals that enhance viewer anticipation and excitement.
+
+**Technique**: Rack focus with dolly pull-back and natural rim lighting
+
+---
+
+### [veo_31_0206] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: fashion, urban, magic hour, cinematic, drone
+
+```
+Create a cinematic fashion haul reel in an urban rooftop during magic hour. Begin with a drone establishing shot, then transition to dolly push-ins highlighting fabrics and accessories with shallow depth of field. Use rim lighting and subtle film grain for texture. Timestamps: [00:00-00:05] drone establishing rooftop; [00:05-00:12] dolly close-ups on outfits; [00:12-00:15] wide shot with model posing against skyline. Overlay native street sounds mixed with chill electronic music for atmosphere.
+```
+
+**Why it works**: Combines aspirational fashion with cinematic quality and immersive environment sounds.
+
+**Technique**: Drone to dolly push with rim lighting and shallow depth of field
+
+---
+
+### [veo_31_0208] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: urban, dynamic, golden hour, cinematic, photorealistic
+
+```
+Create a vibrant urban street dance reel set at golden hour outside a graffiti-covered wall. Begin with a wide aerial drone shot establishing the cityscape, then cut to a handheld close-up of the dancer's feet tapping in sync with upbeat music. Use natural diffused lighting with subtle lens flare to highlight movement. Incorporate a gentle dolly push-in to build intimacy, finishing with a rack focus between dancer and background. Timestamp multi-shot: [00:00-00:03] drone wide shot, [00:03-00:07] close-up handheld, [00:07-00:10] dolly push-in. Audio: energetic urban beats. SFX: ambient city sounds. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: The combination of dynamic camera work and golden hour lighting creates an engaging and relatable urban vibe perfect for social media.
+
+**Technique**: Timestamp multi-shot with aerial drone and dolly push-in
+
+---
+
+### [veo_31_0210] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: fashion, neon-lit, retro, stylish, dynamic
+
+```
+Showcase a fast-paced fashion transition reel in an industrial studio setting using neon-lit ambient lighting. Start with a medium handheld shot of the influencer in monochrome outfit, then quick cut transitions to various colorful outfits using jump cuts. Utilize anamorphic lens flare and film grain for a stylish retro vibe. End with a crane up shot to reveal the full look. Timestamp multi-shot: [00:00-00:03] medium handheld, [00:03-00:08] jump cut transitions, [00:08-00:12] crane up. Audio: upbeat electronic pop track. SFX: whoosh transitions. Quality: cinematic 4K with film grain.
+```
+
+**Why it works**: Energetic cuts and neon lighting create visually striking content that captures fashion-forward audiences.
+
+**Technique**: Jump cut transitions with anamorphic lens flare and crane up shot
+
+---
+
+### [veo_31_0214] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: travel, warm, natural, cinematic, relaxing
+
+```
+Produce a travel highlights reel on a tropical beach at magic hour. Start with an aerial drone shot revealing turquoise water, then smoothly crane down to a close-up of feet walking on sand. Use warm natural light with subtle film grain and bokeh in the background. Include a hand-held tracking shot following a smiling traveler picking shell souvenirs. Timestamp multi-shot: [00:00-00:03] aerial drone, [00:03-00:07] crane down close-up, [00:07-00:12] handheld tracking. Audio: soft acoustic tropical music with ocean waves SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Combining breathtaking aerials with intimate moments under warm light invites viewers to experience travel vicariously.
+
+**Technique**: Aerial drone plus crane down with handheld tracking and film grain
+
+---
+
+### [veo_31_0216] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: tech, neon-lit, minimalistic, intimate, modern
+
+```
+Film a tech unboxing reel in a minimalistic, neon-lit room. Start with a close-up of hands opening a sleek gadget box under blue and purple neon rim light, then dolly pull back to reveal influencer’s excited reaction. Use handheld steadycam for intimacy and incorporate lens flare on reflective surfaces. Timestamp multi-shot: [00:00-00:03] close-up hands, [00:03-00:07] dolly pull back steadycam. Audio: futuristic electronic music with unboxing SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Stylish neon lighting and intimate camera angles create an engaging reveal experience appealing to tech enthusiasts.
+
+**Technique**: Handheld steadycam with dolly pull back and neon rim lighting
+
+---
+
+### [veo_31_0218] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: luxury, natural, golden hour, intimate, wellness
+
+```
+Show a luxury skincare morning routine in a sunlit bathroom using golden hour natural light. Start with a wide tripod shot capturing the influencer applying serum, then dolly push in for a close-up on the glowing skin with subtle lens flare. Finish with a handheld rack focus from product bottle to face. Timestamp multi-shot: [00:00-00:05] wide tripod, [00:05-00:09] dolly push-in close-up, [00:09-00:12] handheld rack focus. Audio: soft spa music with gentle water SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Warm natural light with intimate camera movements enhances the aspirational and relaxing vibe ideal for beauty content.
+
+**Technique**: Dolly push-in with handheld rack focus and golden hour lighting
+
+---
+
+### [veo_31_0221] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: relaxing, natural, golden hour, calm, cinematic
+
+```
+Film a relaxing yoga morning flow reel outdoors during golden hour. Start with a wide aerial drone shot showing serene nature surroundings, then cut to a steadycam tracking shot of the yogi executing poses. Use warm natural light and add subtle lens flare to enhance calm mood. Finish with a close-up slow-motion breath exhale. Timestamp multi-shot: [00:00-00:04] aerial wide shot, [00:04-00:09] steadycam tracking, [00:09-00:12] slow-motion close-up. Audio: soft ambient nature sounds with gentle flute music. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Combining serene nature with slow-motion and warm light creates calming content ideal for wellness audiences.
+
+**Technique**: Aerial drone plus steadycam tracking and slow-motion close-up
+
+---
+
+### [veo_31_0223] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: playful, colorful, natural, energetic, cute
+
+```
+Create a fun pet trick compilation reel in a colorful backyard during daylight. Use a handheld steadicam to follow the dog performing tricks like fetch and roll over. Incorporate natural diffused light with vibrant colors and add bokeh effects on flowers. Use jump cuts to keep energy high between tricks. Timestamp multi-shot: [00:00-00:04] handheld steadycam tracking, [00:04-00:10] jump cuts between tricks. Audio: playful upbeat tune with dog barks. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Energetic jump cuts combined with natural lighting highlight the pet’s personality and charm for high engagement.
+
+**Technique**: Handheld steadicam with jump cut editing and bokeh effects
+
+---
+
+### [veo_31_0224] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: fashion, neon-lit, urban, trendy, moody
+
+```
+Showcase a trendy street fashion lookbook reel at dusk with neon city lights. Start with a tracking dolly shot capturing the model walking confidently, shift to close-up handheld shots showing outfit details with shallow depth of field. Use neon ambient lighting and subtle film grain to enhance mood. End with a fade-out to logo. Timestamp multi-shot: [00:00-00:05] dolly tracking, [00:05-00:10] close-up handheld, [00:10-00:12] fade out. Audio: chill electronic track. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Stylish neon urban visuals paired with smooth camera moves create aspirational content for fashion followers.
+
+**Technique**: Dolly tracking with handheld close-ups and fade-out transition
+
+---
+
+### [veo_31_0228] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: dynamic, urban, golden hour, energetic, natural lighting
+
+```
+Create a vibrant urban dance reel featuring a diverse group of young adults performing energetic choreography on a bustling city street during golden hour. Use a handheld camera with dynamic tracking shots to follow the dancers closely, interspersed with smooth dolly pushes for dramatic emphasis. Employ natural diffused lighting enhanced by subtle lens flare effects to highlight movement and emotion. Utilize timestamp multi-shot: [00:00-00:05] wide shot establishing the location and group, [00:05-00:10] close-ups of individual dancers’ expressions and footwork. Audio: upbeat pop instrumental with natural city ambient sounds layered softly beneath. The video should feel lively, inspiring, and shareable.
+```
+
+**Why it works**: It captures authentic energy and vibrant visuals that resonate with young audiences on Instagram and TikTok.
+
+**Technique**: timestamp multi-shot with handheld tracking and dolly push
+
+---
+
+### [veo_31_0230] Score: 9/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: cozy, cinematic, magic hour, film grain, steadycam
+
+```
+Capture a quick recipe tutorial reel set in a cozy kitchen bathed in warm magic hour light streaming through a window. Use steadycam shots to smoothly follow the chef’s hands preparing ingredients, intercut with overhead drone shots showcasing the workspace. Employ film grain and shallow depth of field to add cinematic warmth and focus on textures. Timestamp multi-shot: [00:00-00:05] overhead drone establishing the scene, [00:05-00:15] steadycam close-ups of chopping, mixing, and plating. Audio: native cooking sounds like chopping and sizzling, combined with soft acoustic background music.
+```
+
+**Why it works**: Combining intimate camera movements with warm lighting creates an inviting visual story that drives viewer engagement.
+
+**Technique**: steadycam with overhead drone and film grain layering
+
+---
+
+### [veo_31_0191] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: travel, serene, golden hour, aerial drone, natural
+
+```
+Craft a travel reel capturing a serene beach sunrise experience. Begin with an aerial drone shot sweeping over calm waves, gradually descending to a handheld close-up of footprints in wet sand. Use golden hour lighting for warm tones and natural lens flare over the water. Employ a dissolve transition between shots to evoke a dreamy mood. Timestamp structure: [00:00-00:05] drone establishing shot; [00:05-00:10] handheld close-up of sand and shells; [00:10-00:15] wide shot of a lone traveler meditating. Include native audio of gentle waves and soft morning breeze.
+```
+
+**Why it works**: Evokes calm and wanderlust with immersive visuals and ambient sound.
+
+**Technique**: Aerial drone to handheld transition with dissolve and natural audio
+
+---
+
+### [veo_31_0194] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: pets, natural lighting, playful, slow-motion, golden hour
+
+```
+Produce an engaging pet care reel featuring a dog playing in a sunny park during magic hour. Use handheld tracking shots to follow playful movements, with a shallow depth of field capturing joyful expressions. Employ natural diffused light with warm golden tones and lens flare for warmth. Structure timestamps as [00:00-00:06] wide shot of dog running; [00:06-00:12] close-up on face with bokeh background; [00:12-00:15] slow-motion catching a frisbee. Incorporate native ambient park sounds and light upbeat music to enhance mood.
+```
+
+**Why it works**: Captures candid, heartwarming moments that resonate with pet lovers.
+
+**Technique**: Handheld tracking with shallow depth of field and slow-motion
+
+---
+
+### [veo_31_0196] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: eco-friendly, natural lighting, botanical, cinematic, warm
+
+```
+Create an eco-friendly lifestyle reel set in a lush botanical garden during golden hour. Capture a subject engaging in sustainable gardening using crane up and dolly pull shots. Apply natural diffused light with soft bokeh effects for a warm, inviting mood. Timestamp shots: [00:00-00:05] crane down over plants; [00:05-00:10] dolly close-up on hands planting; [00:10-00:15] wide shot with subject watering plants. Add native audio of birds and water with mellow acoustic music for immersive ambiance.
+```
+
+**Why it works**: Inspires environmentally conscious audiences with soothing visuals and sounds.
+
+**Technique**: Crane and dolly shots combined with natural ambient audio
+
+---
+
+### [veo_31_0198] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: minimalist, natural lighting, calm, professional, home decor
+
+```
+Film a minimalist home decor reel featuring a morning routine in a sunlit living room. Utilize natural diffused lighting and a dolly push-in to focus on hands unboxing artisanal decor. Use rack focus to shift between textured objects and subject’s face expressing delight. Timestamp layout: [00:00-00:05] wide shot of the room; [00:05-00:10] dolly push close-up on unboxing; [00:10-00:15] rack focus on details. Incorporate subtle ambient sounds with soft acoustic music to evoke calm and inspiration.
+```
+
+**Why it works**: Appeals to lifestyle audiences with a polished, soothing aesthetic and storytelling.
+
+**Technique**: Dolly push combined with rack focus and natural ambient audio
+
+---
+
+### [veo_31_0202] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: DIY, bright, natural lighting, steadycam, detailed
+
+```
+Film a colorful DIY craft reel set at a bright table with natural diffused lighting. Use close-ups with rack focus to capture detailed hand movements and textures. Employ steadycam for smooth movement around the work area. Timestamp shots: [00:00-00:05] close-up on materials; [00:05-00:10] rack focus on crafting steps; [00:10-00:15] wide steadycam shot of final product. Include native audio of cutting and assembling with cheerful background music for a lively atmosphere.
+```
+
+**Why it works**: Engages creative audiences with clear visuals and satisfying process shots.
+
+**Technique**: Rack focus combined with steadycam smoothness and native audio
+
+---
+
+### [veo_31_0205] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: humor, pets, natural lighting, quick cuts, shallow depth
+
+```
+Film a humorous pet trick reel in a cozy living room with natural lighting. Use handheld shots with quick cuts and jump cuts to emphasize comedic timing. Apply shallow depth of field focusing on the pet’s face and movements. Timestamp plan: [00:00-00:06] wide shot of pet; [00:06-00:12] close-up reactions; [00:12-00:15] jump cut to trick completion. Overlay playful sound effects and native pet vocalizations to enhance humor.
+```
+
+**Why it works**: Utilizes comedic pacing and expressive visuals to boost engagement and shares.
+
+**Technique**: Handheld quick cuts with shallow depth of field and native sound effects
+
+---
+
+### [veo_31_0209] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: minimalist, cozy, morning, slow-motion, natural
+
+```
+Film a cozy morning coffee ritual reel in a minimalist kitchen using natural diffused lighting. Begin with a steadycam tracking shot following hands grinding coffee beans, then cut to a close-up slow-motion pour of steaming coffee into a ceramic mug. Use shallow depth of field for bokeh background softly lit by morning sunlight. Incorporate a subtle rack focus from the coffee to a smiling face. Timestamp multi-shot: [00:00-00:04] tracking shot, [00:04-00:08] close-up slow-motion, [00:08-00:12] rack focus. Audio: gentle acoustic guitar with coffee brewing SFX. Quality: film-quality 4K photorealistic.
+```
+
+**Why it works**: Slow-motion combined with natural lighting evokes sensory appeal and calm that resonates well with lifestyle audiences.
+
+**Technique**: Steadicam tracking and slow-motion close-up with rack focus
+
+---
+
+### [veo_31_0211] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: friendly, natural, intimate, bright, educational
+
+```
+Produce an engaging pet care tutorial reel in a bright living room with natural diffused light. Start with a close-up of hands brushing a golden retriever, then smoothly dolly pull back to reveal the joyful pet owner. Use a handheld camera for intimacy and add soft rim light to separate subject from background. Timestamp multi-shot: [00:00-00:04] close-up brushing, [00:04-00:09] dolly pull back handheld. Audio: friendly voiceover explaining tips with ambient pet sounds. Quality: film-quality 4K photorealistic.
+```
+
+**Why it works**: Close, warm visuals paired with friendly audio create trust and engagement perfect for tutorial content.
+
+**Technique**: Handheld dolly pull back with natural diffused lighting and soft rim light
+
+---
+
+### [veo_31_0215] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: professional, studio, rim-lit, fashion, cinematic
+
+```
+Create a behind-the-scenes fashion photoshoot reel in a studio with controlled rim lighting. Begin with a dolly push in on the stylist adjusting the model’s hair, then cut to a close-up of camera shutter clicks with bokeh highlights. Use a subtle film grain overlay and shallow depth of field to emphasize professional atmosphere. End with a crane up shot revealing the full set. Timestamp multi-shot: [00:00-00:04] dolly push in, [00:04-00:08] close-up shutter, [00:08-00:12] crane up. Audio: upbeat lounge music with shutter SFX. Quality: film-quality 4K photorealistic.
+```
+
+**Why it works**: The polished studio environment and detailed shots communicate exclusivity and professionalism for fashion audiences.
+
+**Technique**: Dolly push in with rim lighting and shallow depth of field
+
+---
+
+### [veo_31_0217] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: DIY, bright, cheerful, detailed, natural
+
+```
+Present a quick DIY craft tutorial reel in a bright workspace with natural diffused lighting. Use a top-down steadycam to capture hands assembling colorful paper art. Cut to a close-up with shallow depth of field showing intricate folds, then dissolve to a smiling creator holding the final product. Timestamp multi-shot: [00:00-00:05] top-down steadycam, [00:05-00:09] close-up shallow focus, [00:09-00:12] dissolve to creator. Audio: cheerful ukulele music with crafting SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Clear top-down shots combined with cheerful music make tutorials easy to follow and visually appealing.
+
+**Technique**: Top-down steadycam with shallow depth of field and dissolve transition
+
+---
+
+### [veo_31_0219] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: tech, modern, professional, studio, clear
+
+```
+Capture a tech gadget review reel in a modern home office with studio lighting. Begin with a dolly push in to a sleek laptop on desk, cut to close-up steadicam shots of hands typing and product details. Incorporate subtle film grain and deep depth of field to emphasize clarity. End on a rack focus between product and expressive reviewer face. Timestamp multi-shot: [00:00-00:04] dolly push-in, [00:04-00:09] close-up steadicam, [00:09-00:12] rack focus. Audio: calm electronic background with voiceover. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Clean, professional visuals combined with focused detail shots build trust and engagement for tech audiences.
+
+**Technique**: Dolly push-in with steadicam close-ups and rack focus
+
+---
+
+### [veo_31_0222] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: dramatic, industrial, warm, creative, cinematic
+
+```
+Produce a creative product reveal reel using an industrial setting at magic hour with rim lighting. Open with a dolly push through smoke or haze to a spotlighted product, then cut to close-up slow-motion of hands unveiling the item with shallow depth of field. End with a crane up shot revealing full product display with warm light and lens flare. Timestamp multi-shot: [00:00-00:05] dolly push, [00:05-00:09] close-up slow-motion, [00:09-00:12] crane up. Audio: dramatic synth music with reveal SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Dramatic lighting and slow-motion reveal build anticipation and emphasize product quality effectively.
+
+**Technique**: Dolly push with slow-motion close-up and crane up with rim lighting
+
+---
+
+### [veo_31_0225] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: fresh, natural, clean, slow-motion, bright
+
+```
+Film a quick morning skincare routine in a bright bathroom with natural diffused lighting. Use a tripod wide shot of the influencer applying cleanser, then cut to a slow-motion close-up handheld shot of water splashing on face. Add soft rim light and shallow depth of field to highlight freshness. Timestamp multi-shot: [00:00-00:05] tripod wide shot, [00:05-00:10] slow-motion handheld close-up. Audio: gentle acoustic background with water splash SFX. Quality: film-quality 4K photorealistic.
+```
+
+**Why it works**: Slow-motion water effects and natural light emphasize freshness and purity, resonating with skincare audiences.
+
+**Technique**: Tripod wide shot plus slow-motion handheld close-up with rim lighting
+
+---
+
+### [veo_31_0226] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: tech, professional, studio, clean, detailed
+
+```
+Produce a tech unboxing and first impressions reel in a sleek home office with studio lighting. Start with dolly push-in to product box, cut to close-up steadicam shots of unwrapping and product details. Use deep depth of field and subtle film grain for professional look. End on a rack focus from product to smiling reviewer. Timestamp multi-shot: [00:00-00:04] dolly push-in, [00:04-00:09] close-up steadicam, [00:09-00:12] rack focus. Audio: calm synth background with unboxing SFX. Quality: cinematic 4K photorealistic.
+```
+
+**Why it works**: Professional lighting and close-up detail shots build credibility and attract tech-savvy viewers.
+
+**Technique**: Dolly push-in with close-up steadicam and rack focus
+
+---
+
+### [veo_31_0229] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: minimalist, premium, studio lighting, bokeh, soft rim light
+
+```
+Film a sleek fashion unboxing reel in a minimalist studio setting with clean white backdrops and soft rim lighting to create a premium look. Use a smooth crane down to reveal the influencer opening a luxury box, followed by rack focus shots shifting from product details to the influencer’s delighted expressions. Incorporate bokeh effects on product shots to emphasize texture and detail. Timestamp multi-shot: [00:00-00:04] crane down for reveal, [00:04-00:09] close-ups with rack focus on product and hands. Audio: crisp packaging sounds with light ambient lounge music to set an upscale yet relaxed tone.
+```
+
+**Why it works**: The clean aesthetic and precise camera work enhance product appeal, boosting engagement for fashion brands.
+
+**Technique**: crane down with rack focus and timestamp multi-shot
+
+---
+
+### [veo_31_0232] Score: 8/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: lifestyle, warm, natural lighting, film-quality, handheld
+
+```
+Showcase a day-in-the-life lifestyle reel of a creative artist working in a sunlit home studio. Use a mix of handheld tracking shots following the artist’s movements and rack focus between tools and expressions. Apply a warm film-quality 4K aesthetic with natural diffused lighting and subtle bokeh in background details. Timestamp multi-shot: [00:00-00:06] tracking shot entering the studio, [00:06-00:12] rack focus on brush strokes and face. Audio: soft ambient studio sounds with light acoustic music to evoke calm creativity.
+```
+
+**Why it works**: Intimate visual storytelling with professional techniques creates relatable content that sparks viewer connection.
+
+**Technique**: handheld tracking with rack focus and natural diffused lighting
+
+---
+
+### [veo_31_0200] Score: 7/10
+
+**Subcategory**: Instagram & TikTok Reels | **Use Case**: `social_reel`
+
+**Tags**: cozy, cinematic, warm lighting, film grain, intimate
+
+```
+Create a cozy book review reel filmed in a warm-lit home library. Use a dolly pull-back from stacked books to the reviewer’s face, enhanced by rim lighting and film grain for texture. Sequence timestamps as [00:00-00:05] close-up on book spine; [00:05-00:12] dolly pull-back revealing reviewer; [00:12-00:15] cut to reviewer flipping pages. Employ natural diffused lighting with subtle lens flare on window light. Overlay native audio of pages turning and soft acoustic background music for intimacy.
+```
+
+**Why it works**: Creates a relatable and inviting atmosphere appealing to literature lovers.
+
+**Technique**: Dolly pull-back with rim lighting and native ambient audio
+
+---
+
+## Sports & Action (18 prompts)
+
+### [veo_31_0391] Score: 10/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: slow-motion, tracking shot, crane shot, natural diffused, cinematic
+
+```
+[00:00-00:06] Slow-motion close-up of a soccer player’s feet controlling a branded ball on wet grass, droplets flying. [00:06-00:13] Tracking shot following player dribbling past opponents in a packed stadium under natural diffused lighting. [00:13-00:20] Crane shot pulling back to reveal roaring crowd and full field during golden hour. Audio: crowd roar, ball kicks. SFX: rain drops hitting grass.
+```
+
+**Why it works**: Captures skill and atmosphere in a dramatic, immersive way that highlights brand in real match conditions.
+
+**Technique**: Slow-motion with dynamic crane and tracking shots
+
+---
+
+### [veo_31_0395] Score: 10/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: studio rim light, steadicam, slow-motion, cinematic 4K, intense
+
+```
+[00:00-00:08] Slow dolly push into a female martial artist’s intense face as she prepares for a fight, studio rim light accentuating contours. [00:08-00:15] Wide steadycam capturing high-speed sparring with branded gloves, inked with subtle lens flare. [00:15-00:22] Cut to slow-motion knockout punch with cinematic 4K clarity. Audio: controlled breathing, glove impacts. SFX: gloves hitting pads.
+```
+
+**Why it works**: Combines tension and fluid action with cinematic clarity to emphasize brand toughness and precision.
+
+**Technique**: Slow dolly push combined with steadicam and slow-motion
+
+---
+
+### [veo_31_0383] Score: 9/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: golden hour, aerial drone, steadicam, motivational, photorealistic
+
+```
+[00:00-00:05] Wide aerial drone shot capturing sunrise over an urban running track with diverse athletes warming up. [00:05-00:10] Steadicam close-up tracking a female sprinter tying her shoelaces, focusing on branded shoes. [00:10-00:15] Dolly push-in as the sprinter dashes off with intense focus. Golden hour lighting enhances the warm, motivational mood. Cut to motivational slogan overlay with natural diffused light. Audio: energetic heartbeat thumping with ambient city sounds. SFX: shoe strikes on track.
+```
+
+**Why it works**: Combines dynamic movement and emotional lighting to highlight athleticism and product detail authentically.
+
+**Technique**: Timestamp multi-shot with golden hour lighting and aerial drone
+
+---
+
+### [veo_31_0385] Score: 9/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: slow-motion, natural diffused, tracking shot, gritty, photorealistic
+
+```
+[00:00-00:04] Close-up slow-motion of a cyclist’s legs pedaling on a mountain trail, mud splashing. [00:04-00:10] Tracking shot from behind follows cyclist navigating rugged terrain with branded gear clearly visible. [00:10-00:16] Crane pull-up to reveal expansive mountainous background under natural diffused lighting. Film grain added for gritty, authentic feel. Audio: wind rushing, gear shifting. SFX: bike tires crunching gravel.
+```
+
+**Why it works**: Authentically showcases endurance sports and gear durability in challenging natural environments.
+
+**Technique**: Slow-motion close-up combined with crane pull and film grain
+
+---
+
+### [veo_31_0387] Score: 9/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: rim light, slow-motion, crane shot, gritty, cinematic 4K
+
+```
+[00:00-00:05] Tracking shot follows a boxer shadowboxing in a gritty industrial gym with rim light casting dramatic shadows. [00:05-00:10] Close-up slow-motion on gloves punching heavy bag showing branded boxing gloves detail. [00:10-00:15] Crane shot pulling back reveals intense training session with coach’s encouragement. Film-quality 4K with subtle lens flare. Audio: heavy bag hits, breath exertion. SFX: gloves hitting leather.
+```
+
+**Why it works**: Dramatic lighting and slow-motion highlight intensity and branded equipment in authentic training.
+
+**Technique**: Slow-motion close-up paired with rim light and crane shot
+
+---
+
+### [veo_31_0390] Score: 9/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: aerial drone, handheld, steadycam, golden hour, cinematic
+
+```
+[00:00-00:05] Aerial drone shot over a deserted football stadium at early morning golden hour. [00:05-00:12] Handheld close-up follows a quarterback throwing a branded football during training. [00:12-00:18] Wide steadycam shot capturing teammates catching passes with intense focus. Soft lens flare enhances cinematic feel. Audio: whistle blows, calls, ball impact. SFX: grass crunching underfoot.
+```
+
+**Why it works**: Combines epic scale with intimate athletic moments to showcase gear and teamwork beautifully.
+
+**Technique**: Multi-camera setup with aerial drone and handheld steadycam
+
+---
+
+### [veo_31_0393] Score: 9/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: dolly shot, handheld, rim light, misty dawn, cinematic
+
+```
+[00:00-00:07] Wide dolly shot of a group of rowers propelling a branded boat through misty lake at dawn. [00:07-00:14] Close-up handheld shots of synchronized paddle strokes with rim light accentuating muscles. [00:14-00:20] Crane shot rising above lake showing mist clearing to reveal sunrise and reflective water. Audio: water splashes, oars cutting through lake. SFX: rhythmic rowing sounds.
+```
+
+**Why it works**: Evokes teamwork and perseverance in a visually stunning natural setting highlighting branded gear.
+
+**Technique**: Dolly and crane shots with rim lighting in misty environment
+
+---
+
+### [veo_31_0397] Score: 9/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: dolly pull-back, slow-motion, steadicam, magic hour, classic
+
+```
+[00:00-00:05] Dolly pull-back from branded tennis racket to wide shot of player serving on clay court at magic hour. [00:05-00:12] Slow-motion close-up of ball impact and follow-through. [00:12-00:18] Steadicam tracking player sprinting baseline with intense focus, film grain added for classic sport vibe. Audio: ball hits, shoes scraping court. SFX: crowd murmurs.
+```
+
+**Why it works**: Classic sports cinematography highlights brand in high-energy tennis action with nostalgic feel.
+
+**Technique**: Dolly pull-back with slow-motion and steadicam
+
+---
+
+### [veo_31_0399] Score: 9/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: slow-motion, steadicam, studio lighting, motivational, dynamic
+
+```
+[00:00-00:05] Close-up slow-motion of branded crossfit shoes kicking up chalk dust before lifting. [00:05-00:12] Steadicam follows athlete performing clean and jerk with intense studio lighting. [00:12-00:18] Cut to wide shot showing group workout with motivational energy. Audio: clanking weights, heavy breaths. SFX: chalk dust clouds.
+```
+
+**Why it works**: Captures raw power and branded gear in high-energy functional fitness environment effectively.
+
+**Technique**: Slow-motion with steadicam under studio lighting
+
+---
+
+### [veo_31_0384] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: neon-lit, handheld, rack focus, urban, dramatic
+
+```
+[00:00-00:07] Handheld camera follows a basketball player weaving through defenders in an intense urban outdoor court. Rim light highlights sweat and muscle definition. [00:07-00:12] Rack focus shifts from player’s focused eyes to branded basketball spinning on fingertip. [00:12-00:18] Crane up shot reveals cheering teammates as player scores. Neon-lit street lamps create vibrant night ambiance. Audio: crowd cheers mixed with sneaker squeaks on court. SFX: ball bouncing and net swish.
+```
+
+**Why it works**: Captures raw energy and intensity of street basketball, emphasizing brand in a dynamic nighttime environment.
+
+**Technique**: Rack focus combined with neon-lit handheld shots
+
+---
+
+### [veo_31_0388] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: underwater, slow-motion, natural diffused, dynamic, cinematic
+
+```
+[00:00-00:04] Wide shot of a competitive swimmer diving into an indoor pool with underwater camera capturing splash. [00:04-00:10] Underwater tracking shot following swimmer’s powerful strokes, showcasing branded swimwear and goggles. [00:10-00:15] Cut to above water slow-motion close-up of swimmer’s determined face as they turn at wall. Natural diffused lighting inside pool hall. Audio: water splashes, muffled breathing. SFX: water rush.
+```
+
+**Why it works**: Combines immersive underwater footage with brand exposure, ideal for high-performance swimwear promotions.
+
+**Technique**: Underwater tracking combined with slow-motion and natural lighting
+
+---
+
+### [veo_31_0389] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: studio lighting, dolly push, steadicam, dynamic, photorealistic
+
+```
+[00:00-00:07] Dolly push shot through a bustling indoor climbing gym, focusing on climbers pressing on colorful holds. [00:07-00:14] Close-up on climber’s branded shoes and chalked hands gripping a challenging route. [00:14-00:20] Steadicam crane shot from below climbing wall to emphasize height and determination under studio lighting. Audio: grunts, chalk dust shaking. SFX: climbing hold taps.
+```
+
+**Why it works**: Highlights climbing agility and branded gear in a controlled, visually compelling environment.
+
+**Technique**: Dolly push combined with steadicam crane in studio lighting
+
+---
+
+### [veo_31_0392] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: studio lighting, steadicam, slow-motion, film grain, artistic
+
+```
+[00:00-00:05] Close-up handheld shot of a gymnast’s hands gripping branded rings under soft studio lighting. [00:05-00:11] Steadicam pulls back revealing full aerial routine with fluid motion and depth of field. [00:11-00:17] Cut to slow-motion mid-air flip with film grain for artistic effect. Audio: focused breathing, subtle gym noises. SFX: rings swinging.
+```
+
+**Why it works**: Artfully showcases skill and brand detail with cinematic techniques emphasizing grace and power.
+
+**Technique**: Steadicam tracking paired with slow-motion and film grain
+
+---
+
+### [veo_31_0394] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: extreme close-up, tracking shot, drone, golden hour, adventurous
+
+```
+[00:00-00:05] Extreme close-up on a climber’s branded harness carabiner clicking into rock bolts. [00:05-00:12] Tracking shot alongside climber ascending steep cliff face under natural diffused lighting. [00:12-00:18] Wide drone shot reveals vast mountainous landscape with climber silhouetted, golden hour rim light. Audio: rock scraping, wind gusts. SFX: harness rattling.
+```
+
+**Why it works**: Showcases brand technical gear in an adventurous, awe-inspiring natural environment.
+
+**Technique**: Extreme close-up with drone and tracking shots
+
+---
+
+### [veo_31_0396] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: handheld, tracking shot, rim light, golden hour, urban
+
+```
+[00:00-00:06] Handheld close-up of a skateboarder’s branded shoes landing tricks on urban concrete ledges under natural light. [00:06-00:12] Tracking shot following skater through skatepark with colorful graffiti walls, rim light highlighting motion. [00:12-00:18] Wide crane shot showing group camaraderie under golden hour lighting. Audio: board wheels rolling, laughter. SFX: skateboard landing impacts.
+```
+
+**Why it works**: Captures youthful energy and branded footwear in authentic street environment with warm lighting.
+
+**Technique**: Handheld combined with tracking and crane shots
+
+---
+
+### [veo_31_0398] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: neon-lit, extreme close-up, crane up, dynamic, cinematic
+
+```
+[00:00-00:06] Wide low-angle shot of a track cyclist accelerating on velodrome under neon-lit stadium. [00:06-00:12] Extreme close-up on branded helmet with reflections of speed. [00:12-00:18] Crane up and away to reveal packed crowd and dynamic race atmosphere. Audio: crowd roar, chain whirring. SFX: bicycle tires on track.
+```
+
+**Why it works**: Neon lighting and dynamic camera angles create a futuristic, high-speed brand impression.
+
+**Technique**: Extreme close-up combined with crane and neon lighting
+
+---
+
+### [veo_31_0400] Score: 8/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: steadicam, slow-motion, natural light, golden hour, adventurous
+
+```
+[00:00-00:06] Steadicam tracking of a trail runner navigating forest terrain with dappled natural light. [00:06-00:12] Close-up slow-motion on feet stepping over moss and roots, showcasing branded trail shoes. [00:12-00:18] Crane shot rising above canopy revealing expansive wilderness under golden hour. Audio: birds, footfalls. SFX: leaves crunching.
+```
+
+**Why it works**: Blends immersive nature and athlete connection to highlight durable trail gear in stunning environment.
+
+**Technique**: Steadicam tracking combined with slow-motion and crane shots
+
+---
+
+### [veo_31_0386] Score: 7/10
+
+**Subcategory**: Athletic Brand Content | **Use Case**: `sports_video`
+
+**Tags**: magic hour, rack focus, steadicam, calm, urban
+
+```
+[00:00-00:06] Wide shot of a group yoga session at dawn on a rooftop with city skyline backdrop, soft magic hour lighting. [00:06-00:12] Rack focus shifts from instructor’s calm face to branded mat and flexible movements. [00:12-00:18] Steadicam circling close-up on hands and feet holding poses, emphasizing flexibility and brand logos. Audio: gentle ambient city noises, soft breathing. SFX: mat softly moving on rooftop surface.
+```
+
+**Why it works**: Combines serene mood with product visibility, appealing to mindful athletic consumers.
+
+**Technique**: Rack focus with magic hour lighting and steadicam circling
+
+---

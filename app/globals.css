@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --color-background: #ffffff;
@@ -34,6 +35,20 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Prose overflow fixes for chat messages */
+.prose pre {
+  overflow-x: auto;
+  white-space: pre;
+}
+.prose code {
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+.prose p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .dark {

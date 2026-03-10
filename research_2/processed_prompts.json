@@ -1,0 +1,1430 @@
+{
+  "Veo 3.1": {
+    "prompts": [
+      {
+        "category": "Landscape, Cinematic, Fantasy",
+        "prompt_text": "Crane shot starting low on a lone hiker and ascending high above, revealing they are standing on the edge of a colossal, mist-filled canyon at sunrise, epic fantasy style, awe-inspiring, soft morning light.",
+        "rating": 4,
+        "why_it_works": "Uses specific camera movement (crane shot) and detailed environmental descriptions to create an epic, awe-inspiring scene with soft morning light.",
+        "model_notes": "Demonstrates effective use of cinematography and context for grand scenes."
+      },
+      {
+        "category": "Portrait, Cinematic",
+        "prompt_text": "Close-up with very shallow depth of field, a young woman's face, looking out a bus window at the passing city lights with her reflection faintly visible on the glass, inside a bus at night during a rainstorm, melancholic mood with cool blue tones, moody, cinematic.",
+        "rating": 4,
+        "why_it_works": "Focuses on composition (close-up, shallow depth of field) and mood (melancholic, cool blue tones) to create an intimate, cinematic shot.",
+        "model_notes": "Highlights the model's ability to handle lens effects and emotional ambiance."
+      },
+      {
+        "category": "Corporate, Retro",
+        "prompt_text": "Medium shot, a tired corporate worker, rubbing his temples in exhaustion, in front of a bulky 1980s computer in a cluttered office late at night. The scene is lit by the harsh fluorescent overhead lights and the green glow of the monochrome monitor. Retro aesthetic, shot as if on 1980s color film, slightly grainy.",
+        "rating": 4,
+        "why_it_works": "Follows the 5-part formula ([Cinematography] + [Subject] + [Action] + [Context] + [Style & Ambiance]) with specific details on setting, lighting, and retro aesthetic.",
+        "model_notes": "Good example of the structured prompt formula for consistent results."
+      },
+      {
+        "category": "Music Video, Cinematic",
+        "prompt_text": "The camera performs a smooth 180-degree arc shot, starting with the front-facing view of the singer and circling around her to seamlessly end on the POV shot from behind her on stage. The singer sings \"when you look me in the eyes, I can see a million stars.\"",
+        "rating": 5,
+        "why_it_works": "Utilizes precise camera movement for a dynamic transition and integrates dialogue/lyrics for synchronized audio, demonstrating the 'first and last frame' workflow.",
+        "model_notes": "Excellent for dynamic transitions and audio synchronization."
+      },
+      {
+        "category": "Film Noir, Dialogue",
+        "prompt_text": "Using the provided images for the detective, the woman, and the office setting, create a medium shot of the detective behind his desk. He looks up at the woman and says in a weary voice, \"Of all the offices in this town, you had to walk into mine.\"",
+        "rating": 4,
+        "why_it_works": "Uses reference images for character consistency and includes dialogue with specific tone, suitable for narrative scenes.",
+        "model_notes": "Demonstrates 'ingredients to video' for consistent characters and dialogue."
+      },
+      {
+        "category": "Film Noir, Dialogue",
+        "prompt_text": "Using the provided images for the detective, the woman, and the office setting, create a shot focusing on the woman. A slight, mysterious smile plays on her lips as she replies, \"You were highly recommended.\"",
+        "rating": 4,
+        "why_it_works": "Continues character consistency with reference images and focuses on character expression and dialogue.",
+        "model_notes": "Good for multi-shot scenes with consistent characters."
+      },
+      {
+        "category": "Adventure, Cinematic",
+        "prompt_text": "[00:00-00:02] Medium shot from behind a young female explorer with a leather satchel and messy brown hair in a ponytail, as she pushes aside a large jungle vine to reveal a hidden path.\n[00:02-00:04] Reverse shot of the explorer's freckled face, her expression filled with awe as she gazes upon ancient, moss-covered ruins in the background. SFX: The rustle of dense leaves, distant exotic bird calls.\n[00:04-00:06] Tracking shot following the explorer as she steps into the clearing and runs her hand over the intricate carvings on a crumbling stone wall. Emotion: Wonder and reverence.\n[00:06-00:08] Wide, high-angle crane shot, revealing the lone explorer standing small in the center of the vast, forgotten temple complex, half-swallowed by the jungle. SFX: A swelling, gentle orchestral score begins to play.",
+        "rating": 5,
+        "why_it_works": "Uses timestamp prompting for a multi-shot sequence, building a narrative arc with varied camera work, sound effects, and emotional cues.",
+        "model_notes": "Exemplifies advanced timestamp prompting for complex narratives."
+      },
+      {
+        "category": "Commercial, Product",
+        "prompt_text": "Medium shot of a tired office worker rubbing his temples at his desk in a cluttered 1980s office late at night. The scene is lit by harsh fluorescent overhead lights and the green glow of a monochrome monitor. Retro aesthetic, shot as if on 1980s color film, slightly grainy.",
+        "rating": 4,
+        "why_it_works": "Clear definition of camera framing, subject, action, setting, and style, providing all necessary details for Veo 3.1.",
+        "model_notes": "Follows the 5-element prompt formula for consistent control."
+      },
+      {
+        "category": "Cinematic, Landscape, Fantasy",
+        "prompt_text": "Crane shot starting low on a lone hiker standing at the edge of a massive canyon and ascending high above to reveal they are standing on the edge of a colossal, mist-filled canyon at sunrise. Epic fantasy style, awe-inspiring scale, soft morning light washing over the landscape. Audio: Gentle wind ambience building into a swelling orchestral score as the camera rises.",
+        "rating": 5,
+        "why_it_works": "Combines specific camera movement, detailed setting, mood, and synchronized audio to create an epic and awe-inspiring scene.",
+        "model_notes": "Demonstrates advanced camera movement and audio integration."
+      },
+      {
+        "category": "Commercial, Lifestyle",
+        "prompt_text": "Close-up of a woman taking her first sip of coffee on a small balcony overlooking a quiet city street. She's wrapped in a soft sweater, morning light grazing her face. Steam rises gently from the mug. Her shoulders drop slightly as the warmth hits. TV commercial style.",
+        "rating": 4,
+        "why_it_works": "Focuses on close-up composition, sensory details (steam, warmth), and a specific style (TV commercial) to evoke a feeling.",
+        "model_notes": "Good for emotional intimacy and commercial aesthetics."
+      },
+      {
+        "category": "Product, Cinematic, Landscape",
+        "prompt_text": "A sleek smartwatch sits on a rugged rock near the edge of a mountain cliff. The camera begins close, then pulls back in a smooth, continuous drone-style shot. As it rises, a vast alpine landscape unfolds—jagged peaks, mist rolling through the valley, and golden sunrise light washing over everything. Cinematic and epic, emphasizing the contrast between modern technology and untamed nature.",
+        "rating": 5,
+        "why_it_works": "Combines product focus with cinematic landscape, using smooth drone-style camera movement and emphasizing contrast for an epic feel.",
+        "model_notes": "Highlights the model's ability to handle complex camera movements and detailed scene descriptions."
+      },
+      {
+        "category": "Sports, Gritty, Cinematic",
+        "prompt_text": "Low-angle medium shot frames a boxer from below as he bounces in place before a match, lit by harsh overhead fluorescents. Sweat glistens on his jawline and neck, catching the cold light. His breath is slow and controlled, his shoulders rolling with each inhale. Huge crowd visible in background. Gritty, cinematic realism.",
+        "rating": 4,
+        "why_it_works": "Uses low-angle shot for power, detailed subject description (sweat, breath), and specific lighting (harsh fluorescents) to create a gritty, realistic sports scene.",
+        "model_notes": "Effective for conveying power and realism through camera angles and details."
+      },
+      {
+        "category": "Commercial, Lifestyle",
+        "prompt_text": "Medium shot of a woman in her 30s reading a book at a sunlit Parisian café, warm natural light streaming through tall windows. She looks up from her book and smiles slightly, noticing someone off-camera. Relaxed morning atmosphere, contemporary lifestyle photography. Audio: Gentle café ambience—quiet conversation, espresso machine hiss, light jazz in background.",
+        "rating": 4,
+        "why_it_works": "Creates a relaxed atmosphere with warm natural light, subtle action, and detailed ambient audio.",
+        "model_notes": "Good for text-to-video (T2V) for concept exploration and rapid prototyping."
+      },
+      {
+        "category": "Product, Commercial",
+        "prompt_text": "The mountain logo on the tote bag subtly animates, with clean lines tracing the peaks from base to summit. The camera slowly zooms in, focusing on the logo movement. Audio: A gentle whooshing sound as the lines animate, followed by a soft, satisfying click.",
+        "rating": 4,
+        "why_it_works": "Animates a specific element (logo) with subtle camera movement and synchronized sound effects, ideal for product showcases.",
+        "model_notes": "Demonstrates Image-to-Video (I2V) for animating static frames."
+      },
+      {
+        "category": "Music Video, Cinematic",
+        "prompt_text": "The camera performs a smooth 180-degree arc shot, starting with the front-facing view of the singer and circling around her to seamlessly end on the POV shot from behind her on stage. As the camera moves, the singer opens her eyes and turns slightly. The lighting shifts from dramatic spotlight to bright, energetic stage wash. She sings 'when you look me in the eyes, I can see a million stars.' Audio: Her voice carries throughout with increasing crowd energy as the camera reveals the audience.",
+        "rating": 5,
+        "why_it_works": "Provides a detailed camera path, describes visual changes (lighting shift), and integrates dialogue and evolving audio to create a seamless and emotional transition.",
+        "model_notes": "Excellent for Start/End Frame (S/E) for controlled transitions and complex audio."
+      },
+      {
+        "category": "Adventure, Cinematic",
+        "prompt_text": "[00:00-00:02] Medium shot from behind a young explorer as she pushes aside a large jungle vine to reveal a hidden path, her leather satchel visible, messy brown ponytail.\n[00:02-00:04] Reverse shot of the explorer's freckled face, expression filled with awe as she gazes upon ancient moss-covered ruins in the background. SFX: Dense leaves rustling, distant exotic bird calls.\n[00:04-00:06] Tracking shot following the explorer as she steps into the clearing and runs her hand over intricate carvings on a crumbling stone wall. Emotion: Wonder and reverence.\n[00:06-00:08] Wide high-angle crane shot revealing the lone explorer standing small in the center of the vast forgotten temple complex, half-swallowed by jungle. Audio: Gentle orchestral score begins to play.",
+        "rating": 5,
+        "why_it_works": "Uses timestamp prompting to create a multi-shot narrative with evolving camera angles, sound effects, and emotional progression.",
+        "model_notes": "Ideal for multi-shot sequences with precise cinematic pacing."
+      },
+      {
+        "category": "Film Noir, Character Study",
+        "prompt_text": "Medium shot of a detective in his 40s with short gray hair, rectangular silver glasses, wearing rumpled brown suit. He sits behind his desk in a dimly lit office with venetian blind shadows across his face. Film noir aesthetic. He looks up as someone enters. Audio: Ceiling fan creaking, distant street noise.",
+        "rating": 4,
+        "why_it_works": "Detailed character description, specific setting and lighting (film noir, venetian blind shadows), and ambient audio create a strong mood.",
+        "model_notes": "Good for establishing character and atmosphere with consistent elements."
+      },
+      {
+        "category": "Film Noir, Character Study",
+        "prompt_text": "Close-up of the same detective with short gray hair and rectangular silver glasses, now shown in profile as he lights a cigarette. The flame briefly illuminates his weathered face. Same dimly lit office, same film noir aesthetic. Audio: Lighter click, slow exhale.",
+        "rating": 4,
+        "why_it_works": "Maintains character consistency with repeated details, uses close-up for intimacy, and adds specific sound effects for realism.",
+        "model_notes": "Demonstrates character consistency across shots using reference images and text."
+      },
+      {
+        "category": "Film Noir, Character Study",
+        "prompt_text": "Wide shot of the detective with short gray hair and rectangular silver glasses standing at his rain-streaked office window, silhouetted against neon signs outside. He holds a drink, looking out at the city. Film noir with strong backlighting. Audio: Rain pattering on window, distant jazz from neighboring building.",
+        "rating": 4,
+        "why_it_works": "Continues character consistency, uses wide shot for context, strong backlighting for dramatic effect, and detailed ambient audio.",
+        "model_notes": "Effective for showing character in different contexts while maintaining consistency."
+      },
+      {
+        "category": "Portrait, Cinematic",
+        "prompt_text": "Close-up of a woman's face looking out a bus window at passing city lights, her reflection faintly visible on the glass. Inside a bus at night during a rainstorm. Very shallow depth of field with bokeh from exterior lights. Melancholic mood with cool blue tones. Soft side lighting from window creates gentle shadows on her face. Moody, cinematic.",
+        "rating": 4,
+        "why_it_works": "Detailed description of lighting, mood, and composition to create an emotional and cinematic portrait.",
+        "model_notes": "Emphasizes control over light sources, quality, direction, and color."
+      },
+      {
+        "category": "Product, Commercial",
+        "prompt_text": "On a matte black tabletop, a ceramic pour-over coffee dripper in glossy white steams gently. Slow dolly-in, macro detail on condensation. Three-point lighting with soft rim light, minimal reflections. High-contrast, modern commercial look. Ambient café hush and subtle kettle pour. She says, 'Meet our morning ritual.' No subtitles.",
+        "rating": 5,
+        "why_it_works": "Tight subject focus, controlled lighting, slow camera movement, and integrated voiceover create a polished commercial feel.",
+        "model_notes": "Excellent for product hero shots, leveraging Veo's adherence and native ambience."
+      },
+      {
+        "category": "Cinematic, Cityscape",
+        "prompt_text": "Handheld tracking shot through a sunlit city alley at golden hour. Shallow depth of field; flares and dust motes. Warm amber grade, soft film grain. Footsteps and distant traffic wash; a muted indie guitar chord. No dialogue. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Clear time of day, camera motion, and sound design create a believable urban atmosphere.",
+        "model_notes": "Good for lyrical motion and atmospheric B-roll."
+      },
+      {
+        "category": "Corporate, Interview",
+        "prompt_text": "Medium close-up of a friendly founder in a bright studio with plants. Soft key light, gentle bounce, clean white backdrop accents. Static camera on tripod. She says, 'Welcome—here’s what we’re building.' Light room tone and soft piano notes. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Simple composition, clear lighting, and short dialogue make for a professional brand introduction.",
+        "model_notes": "Effective for talking-head style videos with controlled ambience."
+      },
+      {
+        "category": "Educational, Animation",
+        "prompt_text": "A clean animated chalkboard shows a simple solar eclipse diagram: Sun, Moon, Earth labeled. Smooth push-in as arrows animate to show movement. Flat, high-contrast classroom style with white lines on dark green. Soft chalk scratch and classroom ambience. Voice says, 'An eclipse happens when the Moon blocks the Sun.' No subtitles.",
+        "rating": 4,
+        "why_it_works": "Diagrammatic clarity, animated elements, and short narration are well-suited for educational content.",
+        "model_notes": "Leverages Veo's native audio for explainer videos."
+      },
+      {
+        "category": "Fashion, Lookbook",
+        "prompt_text": "Runway medium-wide of a model in a flowing linen suit, cream on cream. Slow tracking left. High-key studio light, soft shadows. Fabric rustle and faint catwalk crowd murmur. She says, 'Effortless for spring.' No subtitles.",
+        "rating": 4,
+        "why_it_works": "Captures movement, fabric texture, and ambient crowd sounds to convey a fashion context.",
+        "model_notes": "Good for showcasing movement and texture in fashion lookbooks."
+      },
+      {
+        "category": "Food, ASMR",
+        "prompt_text": "Extreme close-up of a cast-iron pan as butter foams and a steak sears. Macro steam, micro bubbles. Overhead practical light; warm grade. Sizzle, soft kitchen clatter, no dialogue. No subtitles.",
+        "rating": 5,
+        "why_it_works": "Tight macro shot with detailed sound design (sizzle, clatter) creates a realistic ASMR experience.",
+        "model_notes": "Excellent for micro-detail and sensory experiences."
+      },
+      {
+        "category": "Travel, Landscape",
+        "prompt_text": "Wide aerial sweep over terraced hills at sunrise. Mist drift, golden light. Smooth drone-style motion. Distant birds and morning insects. No dialogue. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Clear landscape, time of day, and motion guide the composition and color for a sense of place.",
+        "model_notes": "Effective for travel postcards and drone-style sweeps."
+      },
+      {
+        "category": "Sports, Slow Motion",
+        "prompt_text": "Sideline medium shot as a soccer ball hits the net in slow motion; net ripples crisply. Cool stadium lights, shallow DOF. Crowd swell, thump of ball, whistle in distance. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Focuses on a single decisive action in slow motion with iconic sounds for kinetic energy.",
+        "model_notes": "Good for capturing sports micro-moments with impactful audio."
+      },
+      {
+        "category": "Nature, Science",
+        "prompt_text": "Macro time-slice of a desert cactus flower opening as sunlight sweeps across. Cinematic macro lens, shallow DOF, pastel color palette. Soft wind and a faint synth pad. No dialogue. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Specific subject, lens, and color mood, combined with subtle audio, create a poetic science visualization.",
+        "model_notes": "Effective for nature macros and time-slice effects."
+      },
+      {
+        "category": "Corporate, Tech",
+        "prompt_text": "Over-the-shoulder shot of a designer at a minimal desk; monitor glow reflects in glasses. Neutral key light, cool grade. Quiet office ambience and subtle keyboard taps. She says, 'Prototype ready.' No subtitles.",
+        "rating": 4,
+        "why_it_works": "Clean blocking, specific lighting, and subtle audio cues create a professional B2B feel.",
+        "model_notes": "Good for tech workspaces and corporate settings."
+      },
+      {
+        "category": "Branding, Abstract",
+        "prompt_text": "Abstract close-up of soft light sweeping over brushed metal. The light reveals a simple geometric logo etched into the surface. Minimalist, high-contrast studio look. Sub-bass whoosh and subtle sparkle chime. No dialogue. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Describes motion and material with abstract elements and specific sound design for a brand intro.",
+        "model_notes": "Effective for logo stings and abstract branding visuals."
+      },
+      {
+        "category": "Social Media, Montage",
+        "prompt_text": "Fast three-beat montage: 1) close-up button press; 2) medium shot product in use; 3) wide shot satisfied user. Crisp snap sound for each beat, then a short swell. High-key lighting, modern color grade. She says, 'Done.' No subtitles.",
+        "rating": 4,
+        "why_it_works": "Explicit beat structure and sound cues help pace a quick montage for social media.",
+        "model_notes": "Good for rhythmic audio and quick cuts for social hooks."
+      },
+      {
+        "category": "Drama, Character Study",
+        "prompt_text": "Intimate close-up of a young adult at a rain-streaked window, soft backlight shaping silhouette. Slow push-in. Gentle piano and rain ambience. He whispers, 'I’m ready.' No subtitles.",
+        "rating": 4,
+        "why_it_works": "Strong lighting, restrained voiceover, and ambient sounds create an emotional and intimate character moment.",
+        "model_notes": "Effective for emotional beats and story tone."
+      },
+      {
+        "category": "Social Media, Meme",
+        "prompt_text": "Medium handheld shot of a person pointing up and nodding in a bright living room. Natural light, playful vibe. Upbeat clap beat and room tone. No dialogue. No subtitles.",
+        "rating": 3,
+        "why_it_works": "Keeps the frame clean for post-production text and sets an upbeat tone with audio.",
+        "model_notes": "Useful for meme/trend formats where text is added later."
+      },
+      {
+        "category": "Tutorial, How-to",
+        "prompt_text": "Overhead top-down of hands assembling a simple origami crane on a clean white desk. Even softbox lighting, high-contrast paper edges. Paper rustle ASMR. Voice says, 'Fold to center, then flip.' No subtitles.",
+        "rating": 4,
+        "why_it_works": "Top-down clarity, crisp details, and short instruction line make it suitable for tutorials.",
+        "model_notes": "Good for step-by-step instructions and ASMR details."
+      },
+      {
+        "category": "Event, Recap",
+        "prompt_text": "Wide crowd shot at a tech conference as lights sweep the stage. Slow pan. Warm concert lighting with haze. Audience cheer, sub-bass thump. No dialogue. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Distinct lighting, motion, and crowd sounds convey a live event atmosphere.",
+        "model_notes": "Effective for event recaps and live vibes."
+      },
+      {
+        "category": "Architectural Visualization, Interior Design",
+        "prompt_text": "Slow dolly through a minimalist living room with floor-to-ceiling windows. Morning sun casting long, soft shadows across oak floors; clean white walls. Quiet interior ambience. No dialogue. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Clear materials, light direction, and motion create a refined architectural visualization.",
+        "model_notes": "Good for CG-like polish and detailed interior scenes."
+      },
+      {
+        "category": "Science Visualization, Abstract",
+        "prompt_text": "Close-up visualization of a simple water molecule model rotating in a dark studio. Cool blue rim light and subtle volumetric haze. Soft synth bed and a faint ‘ping’ as it completes a turn. Voice says, ‘H2O—simple, powerful.’ No subtitles.",
+        "rating": 4,
+        "why_it_works": "Single subject, controlled lighting, and restrained voiceover effectively convey a scientific concept.",
+        "model_notes": "Useful for STEM shorts and abstract visualizations."
+      },
+      {
+        "category": "Image-to-Video, Retro",
+        "prompt_text": "Animate this still image: a vintage poster of a cyclist on a coastal road. Add gentle paper texture flutter, subtle shadow movement, and a slow parallax dolly-in. Warm retro grade. Seaside wind and distant gulls. No dialogue. No subtitles.",
+        "rating": 4,
+        "why_it_works": "Specifies micro-motions and ambience to animate a still image while preserving its aesthetic.",
+        "model_notes": "Demonstrates Image-to-Video capabilities for stylized breathing shots."
+      }
+    ],
+    "key_techniques": "1. Structured Prompting: Using a 5-part formula ([Cinematography] + [Subject] + [Action] + [Context] + [Style & Ambiance]) for optimal control.\n2. Detailed Cinematography: Specifying camera movements (dolly, tracking, crane, pan, aerial, POV), shot types (close-up, medium, wide, extreme close-up), angles (low, high, eye-level), and lens/focus (shallow depth of field, wide-angle).\n3. Rich Audio & Dialogue: Integrating dialogue with quotation marks, specific sound effects (SFX), ambient noise, and music with genre/mood descriptions.\n4. Negative Prompting: Describing what to exclude to refine output.\n5. Multi-step Workflows: Combining Veo 3.1 with Gemini 2.5 Flash Image for advanced techniques like dynamic transitions, consistent characters, and timestamp prompting.\n6. Character Consistency: Using reference images and consistent text descriptions of distinctive features across multiple shots.\n7. Lighting & Ambiance Control: Detailed descriptions of light sources, quality, direction, and color to define mood.\n8. Object Count Specification: Understanding the model's limitations and specifying exact object counts when crucial.",
+    "categories": "Landscape, Cinematic, Fantasy, Portrait, Corporate, Retro, Music Video, Film Noir, Dialogue, Adventure, Commercial, Product, Cityscape, Interview, Educational, Animation, Fashion, Lookbook, Food, ASMR, Travel, Sports, Slow Motion, Nature, Science, Tech, Branding, Abstract, Social Media, Montage, Drama, Character Study, Meme, Tutorial, How-to, Event, Recap, Architectural Visualization, Interior Design, Image-to-Video",
+    "model_specific_tips": "1. Veo 3.1 excels at generating realistic, synchronized sound, from multi-person conversations to precisely timed sound effects, all guided by the prompt.\n2. The model has a deeper understanding of narrative structure and cinematic styles, enabling it to better depict character interactions and follow storytelling cues.\n3. Improved image-to-video capabilities with greater prompt adherence and enhanced audio-visual quality.\n4. Consistent elements with \"ingredients to video\" feature to maintain a consistent aesthetic across multiple shots using reference images.\n5. Seamless transitions with \"first and last frame\" feature to generate natural video transitions between a provided start image and end image, complete with audio.\n6. Add/remove object feature (currently uses Veo 2 model and does not generate audio) to introduce new objects or remove existing ones while preserving scene composition.\n7. Timestamp prompting allows directing a complete, multi-shot sequence with precise cinematic pacing within a single generation.\n8. Combining reference images with repeated text descriptions of distinctive features maintains visual consistency across sequences.\n9. Veo 3.1 handles low-to-moderate object counts well (typically up to around 15 identical items with good fidelity); beyond that, precision drops.\n10. Digital watermarking: All generated videos are marked with SynthID to indicate the content is AI-generated."
+  },
+  "Kling 3.0": {
+    "prompts": [
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "A dim kitchen late at night. Only the refrigerator hum fills the silence. A plate is set down too hard. Ceramic clinks sharply. [Character A: Exhausted Partner, trembling frustrated voice]: “You never listen to me.” Immediately, the other partner turns around, eyes wide. [Character B: Defensive Partner, shouting loudly]: “Because you never stop blaming!” The exhausted partner exhales shakily. [Exhausted Partner, voice cracking]: “I’m not blaming… I’m begging.” Silence. The defensive partner sighs heavily. [Defensive Partner, softly, regretful]: “I don’t know how to fix this.” A sad piano chord enters quietly.",
+        "rating": 5,
+        "why_it_works": "Establishes characters early, uses bold tone descriptions for realistic dialogues, clear sequence of events.",
+        "model_notes": "Demonstrates multi-character dialogue and emotional nuance."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "A sleek modern interrogation room with cold LED lighting. Muted gray walls, a glass window, security cameras blinking red. Low atmospheric suspense music hums with deep bass drones. A detective in a navy suit leans forward slowly. His hands rest calmly on the table. [Character A: Lead Detective, controlled serious voice]: “Let’s stop pretending.” Immediately, the suspect shifts in their chair, tense. [Character B: Prime Suspect, sharp defensive voice]: “I already told you everything.” The detective slides a folder across the table. Paper scraping sound. [Lead Detective, calm but threatening tone]: “Then explain why your fingerprints are here.” The suspect’s breathing quickens. [Prime Suspect, voice trembling]: “That’s impossible…” The detective stands suddenly, chair scraping back. Music tightens with a rising pulse.",
+        "rating": 5,
+        "why_it_works": "Establishes characters and dialogue sequence clearly, uses keywords for pace and tonality, understands cinematic language, builds suspense.",
+        "model_notes": "Effective use of environmental details and sound cues."
+      },
+      {
+        "category": "Cinematic/Narrative",
+        "prompt_text": "Joker begins his iconic dance descent down the stairs, arms outstretched, pure chaotic joy.",
+        "rating": 5,
+        "why_it_works": "Describes progression over time, actions, camera reactions, and scene transitions for longer durations, demonstrating multi-shot capability.",
+        "model_notes": "Shows how to break down a complex scene into multiple shots for better control."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "A busy kitchen in the morning. Cereal pouring. Coffee machine buzzing. Kids running footsteps. Backpack zippers. A mother flips toast quickly, stressed. [Character A: Mom, fast urgent voice]: “Shoes on! We’re leaving in five minutes!” Immediately, a little girl whines from the hallway. [Character B: Little Daughter, crying voice]: “I can’t find my sweater!” The older brother groans dramatically. [Character C: Older Brother, annoyed sarcastic tone]: “Because you never put it away.” Mom sighs heavily. [Mom, shouting louder]: “Nobody is fighting before 8 AM!” The dad walks in calmly sipping coffee. [Character D: Dad, sleepy amused voice]: “Good morning, team.” Mom turns sharply. [Mom, exhausted voice]: “Help.”",
+        "rating": 4,
+        "why_it_works": "Detailed character interactions, distinct voices and emotions, realistic scenario.",
+        "model_notes": "Good example of managing multiple characters and their dialogue in a dynamic scene."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Inside a parked car at night. Rain tapping softly on the roof. Low lo-fi music playing from the speakers. A driver grips the steering wheel, nervous. [Character A: Driver Friend, hesitant voice]: “So… are you mad at me?” Immediately, the passenger stares out the window. [Character B: Passenger Friend, quiet cold tone]: “I don’t know.” The driver swallows. [Driver Friend, softly speaking]: “That’s worse than yes.” The passenger sighs deeply. [Passenger Friend, tired voice]: “I just didn’t expect it from you.”",
+        "rating": 4,
+        "why_it_works": "Captures a specific mood and emotional tension, uses environmental sounds, and distinct character voices.",
+        "model_notes": "Highlights the model's ability to handle subtle emotional cues and atmospheric details."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "A quiet park bench in the late afternoon. Birds chirping. Wind through trees. Soft acoustic guitar music. Two old friends sit side by side. One smiles softly. [Character A: Old Friend 1, warm nostalgic voice]: “It’s been… what, ten years?” Immediately, the other laughs quietly. [Character B: Old Friend 2, emotional voice]: “Too long.” Pause. [Old Friend 1, softly speaking]: “I missed you.” The other nods slowly. [Old Friend 2, whispering]: “Me too.”",
+        "rating": 4,
+        "why_it_works": "Evokes nostalgia and warmth, uses ambient sounds, and conveys emotional depth through dialogue.",
+        "model_notes": "Good for generating emotionally resonant, character-driven scenes."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "A scene with a family of four watching TV. Woman: \"Wow, I didn't expect this plot at all.\" Man: \"Yeah, it's totally unexpected. Never thought that would happen.\" Boy: \"It's the best twist ever!\" Girl: \"I can't believe they did that.\"",
+        "rating": 4,
+        "why_it_works": "Demonstrates multi-character dialogue with corresponding camera cuts.",
+        "model_notes": "Good for testing multi-character dialogue and camera switching."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Warm sunlight washes over the old streets of Madrid. Outside a small street-side bakery, a female tourist and a male tourist in a blue shirt step up to the counter, both smiling politely. Female tourist (carefully, with a noticeable accent, in Spanish): 'Hola... perdón. ¿Como llegamos al centro?' The white-haired Spanish shop clerk turns slightly and gestures down the street, friendly and relaxed. Shop clerk (in Spanish): 'Todo recto, y luego a la derecha. No tiene pérdida.' The female tourist nods, slightly relieved. Female tourist (in Spanish): 'Ah, vale... gracias.' The male tourist smiles and adds, Male tourist (in Spanish): 'Perfecto, muchas gracias.' The shop clerk smiles back and gives a small nod. The two tourists turn and walk off together, following the direction he pointed, blending into the sunlit street.",
+        "rating": 5,
+        "why_it_works": "Detailed setting, character actions, and exact multi-language dialogue for a natural animated short.",
+        "model_notes": "Highlights the model's ability to handle specific languages and accents."
+      },
+      {
+        "category": "Cinematic/Character Consistency",
+        "prompt_text": "@predator slowly walking behind him, a man is on stage doing stand-up comedy, he says 'He's behind me isn't he...', then slowly walks behind him and pushes him",
+        "rating": 4,
+        "why_it_works": "Demonstrates character consistency using the \"Elements\" feature and specific actions.",
+        "model_notes": "Effective use of the `@` symbol for referencing custom characters."
+      },
+      {
+        "category": "Cinematic/Emotional",
+        "prompt_text": "a wizard laughing uncontrollably",
+        "rating": 3,
+        "why_it_works": "Simple prompt to generate strong emotional performance.",
+        "model_notes": "Good for testing basic emotional expressions."
+      },
+      {
+        "category": "Cinematic/Emotional",
+        "prompt_text": "a man crying uncontrollably",
+        "rating": 3,
+        "why_it_works": "Simple prompt to generate strong emotional performance.",
+        "model_notes": "Good for testing basic emotional expressions."
+      },
+      {
+        "category": "Animation Style",
+        "prompt_text": "A man and his dog getting ready for a walk, Pixar style animation.",
+        "rating": 4,
+        "why_it_works": "Specifies a distinct animation style for the output.",
+        "model_notes": "Shows the model's capability to adapt to different artistic styles."
+      },
+      {
+        "category": "Animation Style",
+        "prompt_text": "A lonely old man making tea and remembering his late wife, claymation style.",
+        "rating": 4,
+        "why_it_works": "Specifies a distinct animation style and conveys a narrative.",
+        "model_notes": "Demonstrates the model's ability to render in specific artistic styles."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Cinematic sunset scene on a coastal balcony overlooking the sea. A young woman wearing a light linen dress leans on the railing as waves crash below. The camera slowly dolly-moves forward. She sighs softly and says, “I always forget how loud the ocean can be.” Shot 2: Cut to a medium close-up of a young man placing two cups of tea on the table, replying calmly, “That’s because you only notice it when you stop running.” Shot 3: Over-the-shoulder shot from behind the woman as she turns, smiles faintly, and asks, “And you? Do you ever stop?” Natural lighting, warm color grading, realistic facial expressions, gentle ambient wind and distant seagulls, cinematic realism.",
+        "rating": 5,
+        "why_it_works": "Uses multi-shot for different perspectives, detailed scene and character descriptions, includes audio and visual cues, and cinematic realism.",
+        "model_notes": "Demonstrates multi-shot and cinematic intent with emotional depth."
+      },
+      {
+        "category": "Cinematic/Multi-shot",
+        "prompt_text": "Shot 1: \"A wide shot of the woman walking through the park.\" Shot 2: \"A close-up as she smiles and waves at a friend.\" Shot 3: \"A tracking shot as she turns to look behind her, following the camera movement as she keeps walking.\"",
+        "rating": 4,
+        "why_it_works": "Clear shot descriptions and camera movements for a simple narrative.",
+        "model_notes": "Basic multi-shot example focusing on camera work."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Shot 1: \"A cinematic shot on a European villa’s terrace. A young Caucasian woman in a blue-and-white striped shirt and khaki shorts sits at a table. The camera slowly pushes in.\" Shot 2: \"The woman swirls juice in her glass, gazing at the distant woods, and says, 'These trees will turn yellow in a month.'\" Shot 3: \"Close-up of a young Caucasian man in a white T-shirt, who whispers, 'But they'll be green again next summer.'\" Shot 4: \"The woman turns and smiles, 'Are you always this optimistic?' The man replies, 'Only about summers with you.'\" Atmosphere: \"High-quality, 4K, realistic textures, natural sunlight, with an emotional atmosphere.\"",
+        "rating": 5,
+        "why_it_works": "Multi-shot structure, detailed atmosphere, and character dialogue with emotional context.",
+        "model_notes": "Good for complex scenes with multiple characters and emotional undertones."
+      },
+      {
+        "category": "Cinematic/Multi-character",
+        "prompt_text": "The woman smiles as the man, standing beside her, whispers something in her ear. The camera alternates between their faces.",
+        "rating": 3,
+        "why_it_works": "Focuses on character interaction and camera alternation.",
+        "model_notes": "Simple example for multi-character coreference."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Interior café scene during a rainy afternoon. The barista, speaking cheerfully: “Your drinks will be ready in just a moment.” The woman in the red coat, turning toward her friend, whispers: “I told you this place was worth the wait.” The man with glasses, smiling quietly, replies: “You were right this time.” Camera alternates between medium shots and close-ups, rain tapping softly against the windows, ambient café chatter in the background.",
+        "rating": 4,
+        "why_it_works": "Detailed setting, distinct character voices, and ambient sounds create a realistic scene.",
+        "model_notes": "Effective use of audio and visual details for atmosphere."
+      },
+      {
+        "category": "Cinematic/Multilingual",
+        "prompt_text": "The woman speaks in fluent French: 'Je t'aime,' as the man responds in English: 'I love you too.' The accent and lip-sync match perfectly.",
+        "rating": 5,
+        "why_it_works": "Explicitly defines languages and emphasizes perfect accent and lip-sync.",
+        "model_notes": "Highlights Kling 3.0's multilingual capabilities."
+      },
+      {
+        "category": "Cinematic/Multilingual",
+        "prompt_text": "A small night market street in Tokyo illuminated by hanging lanterns. The vendor speaks in Japanese with a friendly tone: “今日は寒いですね。” A tourist responds in slightly accented Japanese: “はい、でも雰囲気が素敵です。” Her companion adds softly in English: “This feels like a movie scene.” Natural mouth movement, accurate lip sync, gentle crowd noise, light wind brushing fabric and paper lanterns.",
+        "rating": 5,
+        "why_it_works": "Rich environmental description, multi-language dialogue with accents, and detailed audio/visual cues.",
+        "model_notes": "Excellent example of combining multilingual dialogue with atmospheric details."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Scene: \"A cozy indoor home environment with a soft hum of an air conditioner in the background.\" Dialogue: Mother (in surprise): \"Wow, I didn’t expect this plot at all!\" Father (calmly): \"Yeah, it’s totally unexpected, never thought that would happen.\" Boy (excited): \"It’s the best twist ever!\" Girl (nodding): \"I can't believe they did that!\" Additional Detail: \"The dialogue is in clear English with realistic lip movements and expressions.\"",
+        "rating": 4,
+        "why_it_works": "Multi-character dialogue with emotional expressions and clear language specification.",
+        "model_notes": "Demonstrates multi-character coreference and realistic lip movements."
+      },
+      {
+        "category": "Subject Consistency",
+        "prompt_text": "The woman’s red dress remains the same throughout the video, even as the camera zooms and shifts around her.",
+        "rating": 4,
+        "why_it_works": "Explicitly states the need for subject consistency despite camera movements.",
+        "model_notes": "Simple yet effective for testing subject consistency."
+      },
+      {
+        "category": "Image-to-Video/Subject Consistency",
+        "prompt_text": "Scene: \"A close-up of a woman in a red dress standing by a scenic mountain lake. The camera orbits around her, capturing her face as she smiles warmly.\" Subject Consistency: \"Throughout the video, the woman’s red dress and long brown hair remain consistent as the camera moves.\" Action: \"The woman lifts her head and looks directly at the camera, smiling as if seeing an old friend after years.\"",
+        "rating": 5,
+        "why_it_works": "Combines image-to-video with strong subject consistency and emotional action.",
+        "model_notes": "Ideal for advertising or branded content where visual details must be maintained."
+      },
+      {
+        "category": "Cinematic/Narrative",
+        "prompt_text": "Scene: \"A low-angle shot of a young woman running at full speed through a moonlit garden.\" Action: \"As she runs, her skirt billows in the wind, and she holds a small white flower in her hand. Several people in vintage formal attire run parallel to her, creating a sense of chase.\" Camera Movement: \"At the 8-second mark, the camera zooms into a close-up, then tracks her as she glances back at a young man, locking eyes for a brief moment.\" Ending: \"In the final 3 seconds, the couple breaks through the crowd and runs toward the starry sky, the camera following their movement.\"",
+        "rating": 5,
+        "why_it_works": "Detailed narrative progression, specific camera movements, and clear time markers for a longer video.",
+        "model_notes": "Leverages Kling 3.0's longer duration capabilities for complex storytelling."
+      },
+      {
+        "category": "Cinematic/Narrative",
+        "prompt_text": "Wide tracking shot through a quiet train station at dawn. 0–4s: A young man walks briskly along the platform, breath visible in cold air. 5–9s: The camera accelerates slightly as he spots a woman ahead and slows down. 10–13s: Close-up as their eyes meet; background sound fades. 14–15s: The train doors close behind them as they smile softly. Muted color palette, cinematic pacing, natural movement, emotional restraint.",
+        "rating": 5,
+        "why_it_works": "Uses time markers for precise control over a longer narrative, detailed visual and audio cues, and emotional context.",
+        "model_notes": "Excellent for continuous storytelling and dynamic scene progression."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Modern office hallway with low ambient noise. The woman in a navy blazer says confidently: “Send the proposal before noon.” The assistant responds quickly, slightly nervous: “Already queued for delivery.” Footsteps echo softly, voices clearly tied to the correct speakers, natural reverb and spatial audio.",
+        "rating": 4,
+        "why_it_works": "Realistic office setting, clear dialogue attribution, and detailed audio environment.",
+        "model_notes": "Good for professional or corporate video generation."
+      },
+      {
+        "category": "E-commerce/Branding",
+        "prompt_text": "Morning sunlight fills a minimalist studio kitchen. The camera glides across a marble countertop toward a matte black coffee machine. Clean engraved lettering on the machine reads: “Brew Calm.” A soft voiceover begins: “Every morning deserves intention.” Steam rises naturally, reflections remain sharp, typography is crisp and readable.",
+        "rating": 5,
+        "why_it_works": "Focuses on product presentation, clear text rendering, and atmospheric details for advertising.",
+        "model_notes": "Highlights native-level text rendering and product-focused video generation."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Warm family living room at night. The grandmother speaks in a slow regional dialect with a soft laugh: “Back in my day, we didn’t rush so much.” The teenager replies in casual modern slang: “Yeah, but things move faster now.” The mother chuckles quietly between them. Subtle background TV hum, realistic pauses, expressive facial movements, cozy lighting.",
+        "rating": 5,
+        "why_it_works": "Uses distinct dialects and slang, realistic family interaction, and detailed environmental cues.",
+        "model_notes": "Demonstrates Kling 3.0's ability to handle diverse linguistic nuances."
+      },
+      {
+        "category": "Cinematic/Dialogue",
+        "prompt_text": "Shot 1 (6s): Handheld medium shot on a snowy hillside. @Male lead laughs nervously and says, “Maybe we chose the coldest place possible.” Shot 2 (9s): Camera pans to @Female lead smiling warmly: “At least we’ll remember it forever.” Natural camera shake, wind audio, cinematic realism, smooth transition between shots.",
+        "rating": 5,
+        "why_it_works": "Uses shot-level precision with time markers, character referencing, and detailed audio/visuals.",
+        "model_notes": "Excellent for Omni Storyboard control and multi-shot cinematic realism."
+      }
+    ],
+    "key_techniques": "Anchor Subjects Early for Consistency** Define core subjects clearly at the beginning and maintain consistency across shots, especially for characters.. Define the Scene First (Context Anchor)** Location, time of day/lighting, overall atmosphere.. Describe Actions as a Timeline** Sequential actions, use time markers for longer scenes, physically realistic actions.. Describe Motion Explicitly** Explicit instructions for subject movement and camera behavior (tracking, following, freezing, panning).. Direct the Camera Like a Cinematographer** Shot type (wide, medium, close-up), movement (push-in, orbit, pan, tracking), transitions (cut, shift focus, pull back).. Image-to-Video Lock First, Then Move** Preserves identity, layout, and text details of the source image while introducing motion and depth.. Kling 3.0 Prompt Template** Scene → Characters → Action → Camera → Audio & Style. Lock Audio, Dialogue, and Tone Explicitly** Attribute dialogue to specific characters, specify tone, pace, and language, add ambient sound.. Specify Characters with Clear Roles** Unique and consistent character labels, explicit reference to who speaks or acts.. Take Advantage of Longer Durations** Flexible output up to 15 seconds, describe progression over time, actions, camera reactions, and scene transitions.. Think in Shots, Not Clips** Multi-shot generation, cinematic language (profile shots, macro close-ups, tracking shots, POV, shot-reverse-shot dialogue).. Use Native Audio Intentionally** Explicitly indicate who is speaking and when, supports multiple languages, dialects, accents, and multilingual code-switching.",
+    "categories": "Animation Style, Cinematic/Character Consistency, Cinematic/Dialogue, Cinematic/Emotional, Cinematic/Multi-character, Cinematic/Multi-shot, Cinematic/Multilingual, Cinematic/Narrative, E-commerce/Branding, Image-to-Video/Subject Consistency, Subject Consistency",
+    "model_specific_tips": "Avoid Overloading with Dialogue** Do not add too much dialogue or complex lyrics, especially for longer videos, to prevent chaotic results. Manage Dialogue in Long Videos** Place most dialogue at the beginning of 15-second videos; use non-speaking scenes towards the end to avoid sync issues. Use a Storyboard Image** Generate a 3x3 grid image as a visual storyboard, then use \\\"Generate the frames in sequence as per the storyboard\\\" prompt. Use the \\\"Elements\\\" Feature** Maintain character consistency across shots/videos by creating custom characters (e.g., `@character_name`). Use the \\\"Multi-shot\\\" Feature** Describe the entire sequence in one prompt or add individual prompts for each shot, specifying duration"
+  },
+  "Seedream 2.0": {
+    "prompts": [
+      {
+        "category": "photorealistic",
+        "prompt_text": "Female marine biologist on research vessel deck, weathered face with genuine smile, holding water sampling equipment, ocean horizon in background, golden hour side lighting, documentary photography style, sense of dedication and expertise",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "photorealistic",
+        "prompt_text": "Turn (provide a reference image) this picture into a professional headshot. The person should be wearing a neat dark grey suit with a tie and a clean hairstyle. Keep the background minimal. Sharp focus on eyes, natural skin texture, subtle smile, high resolution, and clean composition.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "photorealistic",
+        "prompt_text": "Extreme macro photography of honey being poured from a wooden dipper onto a slice of bread. The honey strand catches warm backlight, showing its amber transparency. Tiny air bubbles are visible inside the pour. The background is soft and out of focus with warm kitchen tones. Natural morning window light from the right. Shallow depth of field, no text, no props outside the pour and bread.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "photorealistic",
+        "prompt_text": "Leather watch on textured concrete block, brass accents catching warm directional light, shallow depth with blurred industrial elements in background, masculine luxury positioning.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "photorealistic",
+        "prompt_text": "A male model sliding down a stairway with a skateboard. The time is around dusk with a greyish sky. The pattern on the skateboard matches with the colors of the model’s shirt. Make it look stylish and unique. ",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "Create a dramatic closeup of a woman with terror in her eyes and ready to run. Dark lighting setup with a tense mood.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "Generate an image of a soldier running with a bomb in his hand and a tank behind him. Create an intense environment with dust on the soldier’s face. It should be a wide shot with dramatic lighting showing explosions and smoke around the tank behind the soldier.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "Create a post-apocalyptic cityscape at dusk with a person standing in the middle of the road. Smoke coming from the buildings fills the air. The background includes cars colliding with each other. Cinematic wide-angle composition, realistic textures, dynamic lighting, desaturated colors with warm highlights, and moody atmosphere.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "An aerial shot of a girl standing alongside a beautiful white horse on a mountain with lots of flowers. The overall mood is happy and exciting. Blue sky and a panoramic view of the whole mountain. Add golden hour sunlight casting dramatic shadows everywhere.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "Soft, high-contrast portrait with the subject is next to a large, sheer-curtained window with a cup of coffee in hand and a subtle warm smile. Natural soft light illuminates one side of the face while the other falls into a deep, velvety shadow. Muted, warm color grade, peaceful, contemplative mood.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "anime/illustration",
+        "prompt_text": "Anime-style portrait of a mysterious sorceress with glowing runes and a dark forest backdrop. Surrounded by floating leaves with ethereal fog in the background. The atmosphere is enigmatic with dramatic lighting.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "anime/illustration",
+        "prompt_text": "A cartoon illustration of a fox rendered in bold pen-and-ink line art with heavy cross-hatching and stippling, overlaid with flat, watercolor-style color washes and subtle halftone texture. Use a slightly muted, desaturated palette. Overall composition should balance impactful line work and washes with a polished digital finish reminiscent of traditional print illustration.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "anime/illustration",
+        "prompt_text": "Anime-style image of a superhero team in dynamic action poses. The team has 5 members with 2 girls and three boys ready for action. Exaggerated facial expressions with everyone crossing their hands. The overall mood should be exciting with high contrast shadows.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "anime/illustration",
+        "prompt_text": "Create an image of a cartoon character standing in the middle of a road in the future with flying cars. The background should have robots working on food carts. Use a bright neon color palette. Make it anime-style.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "anime/illustration",
+        "prompt_text": "Turn (insert a reference image) the image into a ghibli style portrait with the girl riding a bike in the middle of a street with the background of Japanese homes. Natural lighting with warm hues.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "artistic",
+        "prompt_text": "Create an oil painting of a serene countryside landscape, with rolling hills and a clear blue sky. It should be a wide-shot painting with warm colors.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "artistic",
+        "prompt_text": "Using the provided reference photo, recreate the same person as a highly detailed Black INK hand-drawn sketch, exactly like a ballpoint pen illustration. Preserve the exact facial likeness and maintain the original clothing. Fine pen line work, cross-hatching, layered strokes, and controlled shading to create depth and realism. The background must be plain white or very lightly textured paper. No colors other than blue ink are allowed anywhere in the image.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "artistic",
+        "prompt_text": "Landscape painting of an autumn day in the thick woods, falling leaves in a golden and red hue, sunlight penetrating the foliage, twisting forest trail, oil paint style, painterly brushwork, realistic shadows and lights, warm color scheme, ultra-detailed, high-resolution, warm and cozy atmosphere.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "artistic",
+        "prompt_text": "Realistic view of a rustic wooden table, fruit on it, a glass of water, a ceramic vase, soft directional light, shadows and textures, oil painting style, high realism, subtle reflections, ultra-definition, calm and timeless mood, 4K resolution, pensive and serene atmosphere.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "artistic",
+        "prompt_text": "Abstract expressionism painting of a cityscape, vibrant colors, dynamic brushstrokes, emotional intensity.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cgi/3d render",
+        "prompt_text": "Design a 3D character based on Pixar animation; a young happy adventurer with expressive eyes and playful attitude wearing a slightly worn-out backpack. Soft cinematic light, smooth textures, detailed, but soft and subtle, and vivid colors.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cgi/3d render",
+        "prompt_text": "Create a realistic 3D environment of a futuristic city plaza at nightfall, wet sidewalks with neon lights, and interior lights in the shops. Real glass, metal, and concrete should be used, and the lighting should be moving and cinematic.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cgi/3d render",
+        "prompt_text": "A 3D portrait of a friendly-looking middle-aged man, facial features a soft texture with a few flaws, hands in their natural form, soft shadows with warm light, slightly exaggerated proportions such as a stop-motion figure, and handcrafted, playful appearance.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cgi/3d render",
+        "prompt_text": "Create a 3D isometric image of a comfortable modern living room, wood, sun rays coming in through the large windows, soft fabrics on the couch and cushions, bookshelf with some books scattered, plants inside, warm lighting ambiance, natural shadows, natural sense of space, consideration of scale and viewpoint.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cgi/3d render",
+        "prompt_text": "Make a 3D render of a luxury sports car parked on a mountain road at golden hour, the reflection on polished surfaces, treads on tires and brake calipers, the dust on the car, the soft sunlight playing along curves, real-world environment with rocks and trees, cinematic wide-angle shot.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "e-commerce",
+        "prompt_text": "The product image should contain high-resolution product images, a solid package design, product benefits and promotional text with a color scheme of dominating dark and light green.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "e-commerce",
+        "prompt_text": "A fashioned flat lay of a high-end skin care company. White marble surface. There are three glass skincare bottles that are loosely placed in a triangle shape. Far left diffused light on the window. Light pink and creamy color scheme in the entire.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "e-commerce",
+        "prompt_text": "Gold bracelet on textured platform, brass accents catching warm directional light, shallow depth with blurred industrial elements in background, feminine luxury vibes.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "e-commerce",
+        "prompt_text": "Cold brew coffee being poured into a glass with ice, catching droplets and movement, condensation on the glass visible, summer afternoon light, refreshing and appealing atmosphere.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "e-commerce",
+        "prompt_text": "Create a magazine cover similar to Vogue magazine with (insert your magazine name) written on it. Use the (insert an image) as the cover image. Maintain her pose and facial expression, style her in a chic outfit with a flowing coat, soft golden hour lighting to highlight her features, cinematic color grading, realistic skin and hair textures, bold typography placeholders for title and headlines, dynamic composition.",
+        "rating": 4,
+        "why_it_works": "Detailed description, specific style elements.",
+        "model_notes": "Seedream 5.0 compatible. Focus on detailed descriptions for better output."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "A rainy Tokyo street at night, neon lights flickering, wet pavement reflecting the glow",
+        "rating": 5,
+        "why_it_works": "Specific location, time, lighting, and atmosphere details.",
+        "model_notes": "Seedance 2.0 (Seedream 2.0) benefits from highly detailed scene descriptions."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "A young agent wearing a black trench coat, looking tense",
+        "rating": 5,
+        "why_it_works": "Detailed character description including clothing and emotion.",
+        "model_notes": "Detailed subject descriptions ensure character consistency."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "He quickly moves through the crowd, whispers into his earpiece, and glances back",
+        "rating": 5,
+        "why_it_works": "Continuous and descriptive actions for fluid video.",
+        "model_notes": "Avoid single actions; use continuous movements for natural video generation."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "Start with a wide shot, track the protagonist’s movement, and finish with a push-in close-up",
+        "rating": 5,
+        "why_it_works": "Explicit camera movements for controlled video output.",
+        "model_notes": "Specifying camera language is a key advantage of Seedance 2.0; otherwise, results may be random."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "Cool-toned cinematic style, high contrast, shallow depth of field",
+        "rating": 5,
+        "why_it_works": "Specific visual style elements for desired aesthetic.",
+        "model_notes": "Seedance 2.0 allows detailed control over visual texture and mood."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "Deep electronic music, gradually intensifying as the camera pushes forward",
+        "rating": 5,
+        "why_it_works": "Integration of sound with visual progression.",
+        "model_notes": "Seedance 2.0 supports synchronization between music and visuals."
+      }
+    ],
+    "key_techniques": "Explicit camera language (wide shot, close-up, tracking, push-in, zoom-in, aerial, horizontal, vertical).; Detailed scene descriptions (location, time, lighting, atmosphere).; Few-Shot Prompt: In the few-shot prompt, you provide AI with some reference images to mimic and create an output.; The best prompt is the one that describes the subject, background, overall environment, and color palette. To generate the best possible outcome, you can try different prompt types according to your requirements.; Specifying visual style (cinematic, sci-fi, anime, tones, contrast, focus).; Integrating sound (background music, rhythm, emotional progression, ambient sound).; Zero-Shot Prompt: It is the simplest type of prompt. Just clearly provide instructions and AI will create an image based on the input. For instance, provide a direct prompt like “a white cat standing near a window staring at a bird.”; Specific subject descriptions (who, clothing, age, emotion).; Continuous actions for fluid video.; Role-Based Prompt: In this type, you prompt the AI to play a certain role. For example, you can ask the tool to create a picture of a model standing in the middle of a busy road, just like a picture a professional photographer would take. This type is more efficient for tools like ChatGPT.; Negative Prompting: In this type, you simply mention instructions about what to avoid. You can add words like “no bright colors, avoid overhead lighting,” etc.; Contextual Prompt: Contextual prompting includes providing detailed information for the tool to understand the input better.; Six-part prompt structure: Scene, Subject, Action, Camera, Style, Sound.",
+    "categories": "cinematic, photorealistic, anime/illustration, artistic, cgi/3d render, e-commerce",
+    "model_specific_tips": "Real-time web search was not available in the previous models. Now, Seedream 5.0 has optional real-time web search integration. When you activate this option, the tool searches the web engine, gathers information online based on the provided data, and generates an output according to the current trends.; Improved Character Consistency; Multimodal input support: text-to-video, reference-based camera movement, audio-synced generation, multi-asset blended generation.; Seedance 2.0 understands 'storyboards' and benefits from a six-part prompt structure.; Seedream has introduced its latest model Seedream 5.0. It is more powerful than Seedream 4.0. Here are the updates introduced in this model for better AI image generation.; Real-Time Web Search; Seedream 5.0 ensures stability in the features of a character across multiple generations. Usually, AI models may subtly change the hairstyle, eye shape, or other features. The new Seedream model ensures consistency regardless of the number of revisions to achieve the final output.; Seedream 4.0 usually allows its users to add up to 6 reference images to create an AI image. With Seedream 5.0, users can upload up to 15 images at a single time. This helps the user describe their requirements better. With enhanced understanding, the AI tool can generate accurate outputs.; If camera is not specified, the system decides automatically, which may lead to random results.; Increased Number of Reference Images; Seedance 2.0 supports synchronization between music and visuals."
+  },
+  "Nano Banana Pro": {
+    "prompts": [
+      {
+        "category": "Utility/Professional",
+        "prompt_text": "A high resolution biometric ID photograph of the person in the input image, preserving the exact facial structure, identity, and key features.\n\nThe final image size is exactly 35 x 45 millimeters at 300 DPI (approximately 413 x 531 pixels). The aspect ratio is exactly 7:9 in a vertical portrait orientation, not cropped to 1:1 or 4:3.\n\nThe head height from chin to crown occupies about 70 to 80 percent of the total image height, with around 3 to 5 millimeters of space between the top of the head and the upper edge of the frame.\n\nThe subject is perfectly centered in the frame, shown from the top of the shoulders to just above the head. The person faces the camera directly with a perfectly frontal view: head straight, no tilt or rotation. Eyes are fully open and looking directly into the camera. Expression is neutral, mouth closed, no visible teeth, no exaggerated smile. Both ears and both sides of the face are clearly visible.\n\nThe subject is wearing a simple, plain, dark top (for example a dark crew neck t shirt or a simple collared shirt) with no logos, text, or distracting patterns. No accessories that obscure the face: no sunglasses, no hats, no bulky jewelry. Glasses are allowed only if they are thin framed, non reflective, and do not cast shadows or glare over the eyes.\n\nThe background is a clean, solid light neutral color, such as light gray or off white, with no texture, patterns, or gradients. Lighting is soft, even, and diffused across the entire face, minimizing shadows under the eyes, nose, and chin. No strong highlights, no color casts, and no visible shadows on the background.\n\nShot with a 50mm or 85mm lens at around f/5.6 to ensure full facial sharpness. The entire face, ears, and hairline are in crisp focus while the background remains smooth and unobtrusive. Skin texture looks natural and realistic, with true to life skin tones.\n\nColor grading is minimal and compliant with biometric standards: no filters, no stylized color grading, no exaggerated contrast or saturation. The overall look is clean, clinical, and suitable for official biometric passport and ID photo requirements.",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "Portrait/Creative",
+        "prompt_text": "Render an 8K ultrarealistic close shot of a woman (face characteristics 100% same as uploaded image) with windswept black hair partially covering one eye. A sharp diagonal natural light beam illuminates her elevated gaze, showcasing her light irises, high cheekbones, and glossy lips. Deep shadows envelop the rest of her face and the environment, creating a dark, cinematic, editorial mood.",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "Product/E-commerce",
+        "prompt_text": "Create a 9-image Instagram feed for this product in the same aesthetic. Use different locations, angles, and compositions, incorporating people, animals, nature, and various environments while maintaining a cohesive visual style.",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "Utility/Professional",
+        "prompt_text": "A professional, high-resolution profile photo, maintaining the exact facial structure, identity, and key features of the person in the input image. The subject is framed from the chest up, with ample headroom. The person looks directly at the camera. They are styled for a professional photo studio shoot, wearing a premium smart casual blazer in a subtle charcoal gray. The background is a solid '#562226' neutral studio color. Shot from a high angle with bright and airy soft, diffused studio lighting, gently illuminating the face and creating a subtle catchlight in the eyes, conveying a sense of clarity. Captured on an 85mm f/1.8 lens with a shallow depth of field, exquisite focus on the eyes, and beautiful, soft bokeh. Observe crisp detail on the fabric texture of the blazer, individual strands of hair, and natural, realistic skin texture. The atmosphere exudes confidence, professionalism, and approachability. Clean and bright cinematic color grading with subtle warmth and balanced tones, ensuring a polished and contemporary feel.",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "Portrait/Creative",
+        "prompt_text": "{\n  \"image_generation_prompt\": {\n    \"subject\": {\n      \"type\": \"Young woman\",\n      \"hair\": \"Long, silky blonde hair, straight with slight wave, center part, cascading over shoulders\",\n      \"facial_features\": {\n        \"expression\": \"Pouty lips, alluring gaze, soft makeup\",\n        \"eyes\": \"Light colored, defined with eyeliner\"\n      },\n      \"body_type\": \"Slender, fit physique\"\n    },\n    \"attire\": {\n      \"headwear\": \"Large, dark brown faux fur trapper hat (ushanka style) with ear flaps\",\n      \"clothing\": \"Tight-fitting black sleeveless top or bodysuit with a scoop neckline\"\n    },\n    \"accessories\": [\n      \"Gold chain bracelet with clover motifs (Van Cleef & Arpels Alhambra style) on right wrist\",\n      \"Delicate necklace\",\n      \"Manicure with light polish\"\n    ],\n    \"pose_and_action\": {\n      \"type\": \"Mirror selfie\",\n      \"arms\": \"Right arm raised horizontally across the chest with hand framing the chin; Left arm raised holding the camera\",\n      \"framing\": \"Upper body shot\"\n    },\n    \"technical_details\": {\n      \"camera_prop\": \"White compact digital point-and-shoot camera held in hand\",\n      \"lighting\": \"Harsh, direct camera flash creating a bright lens flare and strong highlights\",\n      \"aesthetic\": \"Y2K aesthetics, vintage digital camera vibe, flash photography, candid social media style\",\n      \"background\": \"Neutral, plain beige or off-white wall, slightly shadowed\"\n    }\n  }\n}",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "Product/E-commerce",
+        "prompt_text": "Create an editorial photoreal 3x3 storyboard contact sheet for a high end beauty e commerce ad featuring only the following products: {{product_main}} and {{product_secondary}}\n\nBackground {{background}}.  \nLighting  {{lighting}}.  \n\ngenerate as one evenly spaced 3x3 grid.  \n\n{{panels}}",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "Creative/Abstract",
+        "prompt_text": "Present a clear, 45° top-down isometric miniature 3D cartoon scene of [CITY], featuring its most iconic landmarks and architectural elements. Use soft, refined textures with realistic PBR materials and gentle, lifelike lighting and shadows. Integrate the current weather conditions directly into the city environment to create an immersive atmospheric mood.\nUse a clean, minimalistic composition with a soft, solid-colored background.\n\nAt the top-center, place the title \"[CITY]\" in large bold text, a prominent weather icon beneath it, then the date (small text) and temperature (medium text). All text must be centered with consistent spacing, and may subtly overlap the tops of the buildings.",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "Portrait/Creative",
+        "prompt_text": "{\n  \"style\": {\n    \"type\": \"hyperrealistic caricature\",\n    \"lighting\": \"soft studio lighting\",\n    \"mood\": \"serious, dramatic\",\n    \"details\": \"exaggerated facial proportions, smooth skin texture, painterly realism\"\n  },\n  \"subject\": {\n    \"type\": \"older man\",\n    \"features\": {\n      \"hair\": \"light blond, voluminous, swept to the side with dramatic flow\",\n      \"face\": \"large exaggerated cheeks and chin, deep frown lines, pronounced brows, slightly drooping eyelids\",\n      \"expression\": \"stern, pouting, serious\"\n    },\n    \"clothing\": {\n      \"outfit\": \"dark formal suit\",\n      \"shirt\": \"light-colored dress shirt\",\n      \"tie\": \"light blue textured tie\"\n    },\n    \"pose\": \"straight posture, facing forward\"\n  },\n  \"background\": {\n    \"type\": \"plain dark gradient\",\n    \"atmosphere\": \"studio portrait, minimalistic\"\n  },\n  \"camera\": {\n    \"angle\": \"straight-on\",\n    \"depth_of_field\": \"shallow, soft background\",\n    \"focus\": \"sharp on face\"\n  }\n}",
+        "rating": 4,
+        "why_it_works": "Detailed description of subject, action, location, composition, and style.",
+        "model_notes": ""
+      },
+      {
+        "category": "E-commerce",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A succinct prompt to build a store interface themed in the style of Thanksgiving Charlie Brown, suitable as a web storefront design.",
+        "prompt_text": "Build me a store in the theme and style of {argument name=\"theme_en\" default=\"Thanksgiving Charlie Brown\"}."
+      },
+      {
+        "category": "Gaming",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "An English prompt used inside a Claude Code skill that asks Gemini 3 Pro to design a futuristic, animation-rich landing page for a new AI game.",
+        "prompt_text": "I want to design the landing page for a new {argument name=\"product_type_en\" default=\"AI game\"}. We want it to look futuristic and use as many animations as possible."
+      },
+      {
+        "category": "Web Development",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "Three simple prompts for Gemini 3.0 that show how adding style and imagery—specifically a Linear-style design and an image prompt—changes the quality of a generated hello world page.",
+        "prompt_text": "Help me build a hello world page.\n\nHelp me build a hello world page with {argument name=\"style_en\" default=\"Linear\"} style.\n\nHelp me build a hello world page with {argument name=\"style_en\" default=\"Linear\"} style."
+      },
+      {
+        "category": "Product Design",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A long, detailed Japanese prompt for designing a luxury 3D product experience web page for high-end watches, using Next.js, Three.js, React Three Fiber, GLSL, and specific scroll sections and shader requirements.",
+        "prompt_text": "Design a 3D product experience page for a luxury wristwatch.\n**Target users:** wealthy customers, watch enthusiasts, and business people aged 30–50.\n**Brand tone:** Luxury × Tech (a modern, sophisticated high-end feel).\nScroll experience (5 sections):\nHero section – the wristwatch slowly appears from darkness into light while rotating. Implement holographic effects and Fresnel reflections with custom shaders.\nDetail zoom – close-up of the dial. Use GLSL to achieve metallic reflections, parallax mapping, and real-time glossiness.\nMechanism breakdown – the watch disassembles and the internal movement floats in space. Use a displacement shader for an energy-field effect and add glow effects to each part.\nMaterial experience – switch between different material variations. Express metalness, glass refraction, and the matte texture of titanium with PBR shaders in a physically based way.\nEnding – the watch reassembles, with an abstract gradient mesh background made with a custom shader. Apply post-processing such as bloom and depth of field.\n**Tech stack:** Next.js 15 + Three.js + React Three Fiber + GLSL (custom shaders) + react-postprocessing + Lenis.\nShader requirements:\nFresnel reflection shader (rim-light effect)\nPBR material shader (roughness, metallic, AO)\nHolographic shader (iridescent interference effect)\nDisplacement shader (waving and distortion effects)\nCustom background shader (gradient noise)\nPost-process: Bloom, ChromaticAberration, DepthOfField, Vignette.\nPlease propose specific numerical values for:\nScroll range of each section (from, to)\nCamera position (x, y, z) and rotation (x, y, z) for each section\nGLSL shader uniform values (e.g., uFresnelPower, uDisplacementStrength, uGradientColor1, uGradientColor2)\nPost-processing effect parameters (e.g., bloom intensity, DoF focusDistance, vignette darkness)"
+      },
+      {
+        "category": "Web Development",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt for creating a web page with a custom color palette, layout, and font, demonstrating Gemini 3.0's ability to interpret and apply specific design instructions.",
+        "prompt_text": "I want to build a web page with a custom color palette, layout, and font.\n\nI want to build a web page with a custom color palette, layout, and font.\n\nI want to build a web page with a custom color palette, layout, and font."
+      },
+      {
+        "category": "Gaming",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a Zelda-themed web page, showcasing Gemini 3.0's ability to generate a design based on a well-known visual style.",
+        "prompt_text": "I want to build a Zelda-themed web page."
+      },
+      {
+        "category": "Graphic Design",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to generate a set of icons with a specified style and color palette, demonstrating Gemini 3.0's ability to create consistent visual assets.",
+        "prompt_text": "I want to generate a set of icons with a specified style and color palette."
+      },
+      {
+        "category": "Art/Voxel",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a voxel-art style image, showcasing Gemini 3.0's ability to generate images in a specific artistic style.",
+        "prompt_text": "I want to create a voxel-art style image."
+      },
+      {
+        "category": "Data Visualization",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to generate a dashboard for visualizing cryptocurrency data, demonstrating Gemini 3.0's ability to create data-driven interfaces.",
+        "prompt_text": "I want to generate a dashboard for visualizing cryptocurrency data."
+      },
+      {
+        "category": "General",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a 3D scene with a specified object and lighting, demonstrating Gemini 3.0's ability to generate 3D graphics.",
+        "prompt_text": "I want to create a 3D scene with a specified object and lighting."
+      },
+      {
+        "category": "General",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a 3D animation with a specified object and motion path, demonstrating Gemini 3.0's ability to generate animated 3D graphics.",
+        "prompt_text": "I want to create a 3D animation with a specified object and motion path."
+      },
+      {
+        "category": "General",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a 3D game with specified characters, environment, and gameplay mechanics, demonstrating Gemini 3.0's ability to generate complex interactive experiences.",
+        "prompt_text": "I want to create a 3D game with specified characters, environment, and gameplay mechanics."
+      },
+      {
+        "category": "General",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a 3D simulation of a physical system with specified parameters and initial conditions, demonstrating Gemini 3.0's ability to generate scientific visualizations.",
+        "prompt_text": "I want to create a 3D simulation of a physical system with specified parameters and initial conditions."
+      },
+      {
+        "category": "General",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a 3D model of a building from architectural plans, demonstrating Gemini 3.0's ability to work with technical drawings.",
+        "prompt_text": "I want to create a 3D model of a building from architectural plans."
+      },
+      {
+        "category": "General",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a 3D model of a human from a photograph, demonstrating Gemini 3.0's ability to work with image data.",
+        "prompt_text": "I want to create a 3D model of a human from a photograph."
+      },
+      {
+        "category": "General",
+        "rating": 4,
+        "model_notes": "",
+        "why_it_works": "A prompt to create a 3D model of a car from a sketch, demonstrating Gemini 3.0's ability to work with hand-drawn images.",
+        "prompt_text": "I want to create a 3D model of a car from a sketch."
+      },
+      {
+        "category": "cinematic",
+        "prompt_text": "A cinematic shot of a lone astronaut standing on a desolate, alien planet. The sky is a swirling vortex of nebulae in shades of deep purple and magenta. Two moons hang in the sky, one casting a soft, ethereal glow. The astronaut, clad in a sleek, futuristic suit, looks out at the vast, unknown landscape. The ground is a cracked, dark terrain, with strange, crystalline formations jutting out. The mood is one of awe and isolation. 16k, sharp focus, f/2.8, Canon EOS R5.",
+        "rating": 5,
+        "why_it_works": "This prompt is highly detailed, specifying the subject, setting, mood, and even technical camera settings. This level of detail helps the AI to generate a precise and high-quality image.",
+        "model_notes": "Nano Banana Pro excels at interpreting complex scenes and detailed lighting instructions. The mention of specific camera settings seems to enhance the realism."
+      },
+      {
+        "category": "e-commerce",
+        "prompt_text": "A minimalist, professional product shot of a sleek, modern smartwatch. The watch face displays a vibrant, abstract design. The watch is placed on a clean, white background, with a soft, diffused light from the side creating a gentle shadow. The image should be sharp, clean, and ready for an e-commerce website. Shot on a Sony A7R IV, 90mm macro lens, f/8.",
+        "rating": 5,
+        "why_it_works": "This prompt is perfect for e-commerce as it clearly defines the product, the desired aesthetic (minimalist, professional), and the background. The technical details guide the AI to create a commercially viable image.",
+        "model_notes": "This model is particularly good at creating clean, well-lit product images. It understands the nuances of commercial photography and can produce images that require minimal post-processing."
+      },
+      {
+        "category": "portrait",
+        "prompt_text": "A dramatic, black and white portrait of an elderly man with deep wrinkles and a thoughtful expression. The lighting is high-contrast, with one side of his face in shadow. He wears a simple, dark turtleneck sweater. The background is a plain, dark gray. The focus is on his eyes, which convey a sense of wisdom and experience. Hasselblad X1D II 50C, 80mm f/1.9.",
+        "rating": 5,
+        "why_it_works": "This prompt uses strong emotional and descriptive words (dramatic, deep wrinkles, thoughtful expression) to guide the AI in creating a powerful portrait. The black and white specification is a key creative choice.",
+        "model_notes": "Nano Banana Pro has a remarkable ability to capture and convey human emotion. It also handles monochrome palettes with a high degree of sophistication, creating rich and nuanced black and white images."
+      },
+      {
+        "category": "landscape",
+        "prompt_text": "An epic, breathtaking landscape of the Scottish Highlands at sunrise. A thick fog blankets the valleys, with the peaks of the mountains piercing through. The rising sun casts a warm, golden light on the scene. A lone stag stands on a ridge, silhouetted against the sky. The image should be wide-angle, capturing the vastness of the landscape. Fujifilm GFX 100S, 23mm f/4.",
+        "rating": 5,
+        "why_it_works": "This prompt paints a vivid picture for the AI, using evocative language (epic, breathtaking, thick fog) and specifying the time of day and a key focal point (the lone stag).",
+        "model_notes": "This model is excellent at generating atmospheric and realistic landscapes. It is particularly adept at rendering complex weather conditions like fog and the warm light of sunrise."
+      },
+      {
+        "category": "abstract",
+        "prompt_text": "A vibrant, abstract explosion of color and light. The image should be a dynamic interplay of swirling, organic shapes and sharp, geometric lines. The color palette is a mix of neon pinks, electric blues, and deep purples. The texture is a combination of smooth, glossy surfaces and rough, grainy elements. The overall feeling is one of energy and movement. 3D render, Octane Render, 4k.",
+        "rating": 4,
+        "why_it_works": "This prompt gives the AI a lot of creative freedom while still providing clear guidelines on color, shape, and texture. The mention of 3D rendering software (Octane Render) can also influence the style.",
+        "model_notes": "Nano Banana Pro can generate stunning abstract images. It is not limited to photorealism and can create unique and imaginative visuals based on abstract concepts."
+      },
+      {
+        "category": "illustration",
+        "prompt_text": "A charming, whimsical illustration of a fox reading a book in a cozy, cluttered library. The style is reminiscent of classic children’s book illustrations, with soft colors and a warm, inviting atmosphere. The fox wears a pair of reading glasses and a cozy sweater. The library is filled with books, with a fireplace crackling in the background. Watercolor and ink on textured paper.",
+        "rating": 5,
+        "why_it_works": "This prompt clearly defines the subject, setting, and desired artistic style. The mention of specific media (watercolor and ink on textured paper) is a powerful instruction for the AI.",
+        "model_notes": "This model can emulate a wide range of artistic styles, including traditional media like watercolor. It can create charming and detailed illustrations that are perfect for storytelling."
+      }
+    ],
+    "key_techniques": "For Nano Banana Pro, the most effective prompts are highly detailed and specific. They often include information about the subject, setting, mood, lighting, and even technical camera settings. Using strong, descriptive language and specifying a desired artistic style or medium can significantly improve the quality of the generated image. The model also responds well to prompts that are structured like a scene description from a screenplay.",
+    "categories": "cinematic, e-commerce, portrait, landscape, abstract, illustration, Utility/Professional, Product/E-commerce, Creative/Abstract, Gaming, Web Development, Product Design, Graphic Design, Art/Voxel, Data Visualization, General",
+    "model_specific_tips": "Nano Banana Pro has a unique ability to interpret and render complex lighting and atmospheric conditions with a high degree of realism. It also excels at capturing and conveying human emotion in portraits. Unlike other models, it seems to be particularly responsive to prompts that include specific camera and lens information, which can be used to fine-tune the final image. It can also generate non-photorealistic images, including illustrations and abstract art, with a high level of detail."
+  },
+  "Flux (FLUX.1 dev, FLUX.1 pro, FLUX.2)": {
+    "prompts": [
+      {
+        "category": "General/Structured Prompt",
+        "prompt": "Red fox sitting in tall grass, wildlife documentary photography, misty dawn",
+        "rating": 4,
+        "why_it_works": "Follows the Subject + Action + Style + Context framework, providing a clear and detailed description.",
+        "model_notes": "Demonstrates the effectiveness of the core FLUX framework."
+      },
+      {
+        "category": "Sci-Fi/Fantasy",
+        "prompt": "Human explorer in futuristic gear walking through cyberpunk forest, dramatic atmospheric lighting, sci-fi fantasy art style, cinematic composition",
+        "rating": 4,
+        "why_it_works": "Uses natural language and structured descriptions for a complex scene, incorporating visual and atmospheric layers.",
+        "model_notes": "Highlights the model's ability to handle imaginative settings."
+      },
+      {
+        "category": "Space/Cinematic",
+        "prompt": "An astronaut with a silver spacesuit floating outside the International Space Station, cinematic photography with dramatic lighting, peaceful and awe-inspiring",
+        "rating": 4,
+        "why_it_works": "Combines subject, action, style, and context with emotional tone, showcasing enhancement layers.",
+        "model_notes": "Good example of using natural language for evocative imagery."
+      },
+      {
+        "category": "Retro/Character",
+        "prompt": "Retro game style detective in old school suit, upper body shot, colorful, futuristic design with vibrant glow",
+        "rating": 4,
+        "why_it_works": "Focuses on character and style, using descriptive adjectives for visual impact.",
+        "model_notes": "Demonstrates how to combine different stylistic elements effectively."
+      },
+      {
+        "category": "Enhanced/Cinematic",
+        "prompt": "An astronaut with silver spacesuit floating gracefully outside the International Space Station, cinematic photography with dramatic lighting, bathed in golden sunlight, deep blue Earth tones, shallow depth of field, 85mm lens, conveying wonder and achievement",
+        "rating": 5,
+        "why_it_works": "Excellent use of enhancement layers, including visual (golden sunlight, deep blue Earth tones), technical (shallow depth of field, 85mm lens), and atmospheric (wonder and achievement) details.",
+        "model_notes": "Shows the power of detailed, layered prompts for high-quality results."
+      },
+      {
+        "category": "Character-focused",
+        "prompt": "Elderly wizard with long white beard and piercing blue eyes, casting a spell, fantasy art style, in a magical forest clearing",
+        "rating": 4,
+        "why_it_works": "Follows the character-focused pattern: Detailed character -> Action -> Style -> Context.",
+        "model_notes": "Illustrates how to build a prompt step-by-step for character-centric images."
+      },
+      {
+        "category": "Context-focused",
+        "prompt": "Ancient Greek temple ruins at sunset, golden hour lighting, cinematic photography style, with scattered marble columns",
+        "rating": 4,
+        "why_it_works": "Follows the context-focused pattern: Setting -> Atmospheric conditions -> Style -> Technical specs.",
+        "model_notes": "Good for generating detailed landscapes and architectural scenes."
+      },
+      {
+        "category": "Style-focused",
+        "prompt": "Van Gogh painting style with swirling brushstrokes, depicting a modern city street, vibrant blues and yellows, impressionist technique",
+        "rating": 4,
+        "why_it_works": "Follows the style-focused pattern: Artistic reference -> Subject -> Context -> Technical execution.",
+        "model_notes": "Effective for artistic interpretations and style transfers."
+      },
+      {
+        "category": "Technical-focused",
+        "prompt": "Professional headshot of a business executive, clean white background, studio lighting, 85mm lens, f/1.4, shallow depth of field",
+        "rating": 5,
+        "why_it_works": "Follows the technical-focused pattern: Subject -> Background -> Lighting -> Lens/settings, with precise camera details.",
+        "model_notes": "Ideal for generating professional photography with specific technical controls."
+      },
+      {
+        "category": "Professional Photography",
+        "prompt": "Professional headshot, 85mm lens, f/2.8, Rembrandt lighting, corporate setting",
+        "rating": 5,
+        "why_it_works": "Combines advanced photography controls (lens, aperture, lighting style) with context for a highly specific output.",
+        "model_notes": "Demonstrates the model's capability for fine-grained control over photographic elements."
+      },
+      {
+        "category": "Nature Documentary",
+        "prompt": "Nature documentary capture on Hasselblad X2D 100C with XCD 90V lens at f/4: [Majestic snow-capped mountain peak emerges through swirling morning mist], [golden sunrise light catches crystalline ice formations], creating [ethereal alpenglow effect]. Low-angle perspective, focus stacking enabled, Hasselblad Natural Color Solution. Early dawn atmospheric conditions with layered cloud formations in background.",
+        "rating": 5,
+        "why_it_works": "Highly specific technical foundation (camera, lens, aperture), active language for the main subject, and detailed environmental storytelling (light interaction, atmospheric conditions). Uses brackets for emphasis.",
+        "model_notes": "Flux responds well to active language and understands context and nuance due to T5 and CLIP encoders. High-resolution output on Nebius AI Studio enhances detail."
+      },
+      {
+        "category": "Dynamic Sports (Rally Racing)",
+        "prompt": "Vehicle-mounted GoPro HERO12 Black: [Rally car powerslides through forest stage] in Finnish wilderness, [gravel spray creating dramatic patterns] in low autumn sunlight. HDR mode handles extreme contrast between dark forest and bright clearings. Audio capture of engine notes and gravel impacts.",
+        "rating": 4,
+        "why_it_works": "Specifies camera, active action, environmental details, and technical settings (HDR mode) for dynamic scenes.",
+        "model_notes": "Good for action-oriented scenes and capturing dynamic elements."
+      },
+      {
+        "category": "Animated Magic (Studio Ghibli Style)",
+        "prompt": "Studio Ghibli meets Makoto Shinkai aesthetic: [A young witch practices spells] in her floating treehouse observatory, where [magical particles swirl through shafts of dusty sunset light]. Emphasized light bloom, classic cel shading technique, detailed background art with multiple parallax layers. Volumetric god rays, detailed wood grain textures, signature anime floating particles. Reference: Howl's Moving Castle architectural detail mixed with Your Name lighting.",
+        "rating": 5,
+        "why_it_works": "Combines two distinct artistic styles, uses active language, and includes numerous stylistic and technical details (light bloom, cel shading, volumetric god rays, specific references).",
+        "model_notes": "Demonstrates Flux's ability to blend styles and interpret detailed artistic instructions."
+      },
+      {
+        "category": "Modern Smartphone Photography (Ballet)",
+        "prompt": "iPhone 15 Pro ProRAW capture in Portrait Mode (48MP): [A ballet dancer practices alone] in [an abandoned Detroit theater], dust particles swirling through dramatic light beams. Natural lens flare and cinematic color grading emphasize the contrast between decay and grace. Shot with Morning light, Photographic Styles set to Rich Contrast.",
+        "rating": 4,
+        "why_it_works": "Specifies modern camera and mode, detailed subject and context, and advanced photographic effects (lens flare, color grading, lighting).",
+        "model_notes": "Shows how to achieve specific photographic looks with modern camera settings."
+      },
+      {
+        "category": "Street Art / Animation (Spider-Verse Style)",
+        "prompt": "Spider-verse-inspired animation style: [A street artist creates a massive mural] while [gravity shifts around them], bending the city's perspective. Comic book halftone dots visible in shadows, bold line work, dynamic color palette with purposeful chromatic aberration. Includes Ben-Day dots, ink outlines, and purposeful animation smears. Style of Into the Spider-Verse meets Arcane.",
+        "rating": 5,
+        "why_it_works": "Combines a strong artistic style reference with dynamic action, unique visual effects (gravity shifts, halftone dots), and specific animation techniques.",
+        "model_notes": "Excellent for generating stylized, dynamic, and complex animated scenes."
+      },
+      {
+        "category": "Dynamic Sports (Mountain Biking)",
+        "prompt": "GoPro HERO12 Black chest-mounted: [Professional mountain biker hits a massive drop] in Utah's Red Bull Rampage, [red dust exploding around wheels] against piercing blue desert sky. Natural sunlight creating lens flares, extreme wide-angle perspective showing vertical drop below. RAW capture preserves both shadow detail in dust clouds and bright sky. Ultra-realistic motion blur at edges.",
+        "rating": 4,
+        "why_it_works": "Specifies camera and mounting, intense action, detailed environmental interaction, and advanced photographic effects (lens flares, wide-angle, RAW capture, motion blur).",
+        "model_notes": "Effective for high-energy sports photography with detailed environmental interaction."
+      },
+      {
+        "category": "Street Photography (Film Noir)",
+        "prompt": "Leica M11 with 35mm Summilux-M f/1.4: [Rain-slicked cobblestone street reflects neon signs], while [steam rises from subway grates], creating [film noir atmosphere]. Shot at street level, pushed Tri-X processing simulation, heavy contrast with preserved shadow detail.",
+        "rating": 5,
+        "why_it_works": "Uses specific high-end camera and lens, detailed atmospheric conditions, and strong stylistic elements (film noir, processing simulation, contrast).",
+        "model_notes": "Demonstrates fine control over photographic style and mood, suitable for artistic street photography."
+      },
+      {
+        "category": "Landscape",
+        "prompt": "A vibrant orange and pink sunset over a snow-capped mountain range, with soft, wispy clouds reflecting off a calm lake in the foreground.",
+        "rating": 4,
+        "why_it_works": "Demonstrates the importance of specific details for improved image generation.",
+        "model_notes": "FLUX.1 responds best to precise and clear language."
+      },
+      {
+        "category": "Nature",
+        "prompt": "A majestic mountain peak emerging through swirling morning mist, with golden sunrise light catching the crystalline ice formations.",
+        "rating": 4,
+        "why_it_works": "Uses dynamic and active language to create a sense of movement and drama.",
+        "model_notes": "Active language helps FLUX.1 create dynamic and energetic images."
+      },
+      {
+        "category": "Interior/Object",
+        "prompt": "A hanging glass terrarium featuring a miniature rainforest scene with colorful orchids and tiny waterfalls (foreground). Just beyond the glass, a neon sign reads ‘Rainforest Retreat’ in bright green and yellow letters (middle ground). The rain-soaked glass creates a beautiful distortion, adding a soft glow to the sign's vibrant colors (background).",
+        "rating": 5,
+        "why_it_works": "Clearly defines placement of elements in foreground, middle ground, and background for depth.",
+        "model_notes": "FLUX.1 allows defining placement of objects in different layers."
+      },
+      {
+        "category": "Abstract/Contrasting",
+        "prompt": "A single tree standing in the middle of the image. The left half of the tree has bright, vibrant green leaves under a sunny blue sky, while the right half has bare branches covered in frost, with a cold, dark, thunderous sky. On the left, there's lush green grass; on the right, thick snow. The split is sharp, with the transition happening right down the middle of the tree.",
+        "rating": 4,
+        "why_it_works": "Uses strong contrasting elements to create a visually striking image.",
+        "model_notes": "Contrasting colors and aesthetics make images more striking and memorable."
+      },
+      {
+        "category": "Landscape",
+        "prompt": "A landscape where the left side is sunny and bright, with golden fields and a clear blue sky, while the right side is rainy and dark, with storm clouds and wet grass. The transition between the two sides is soft and blended, creating a dreamy effect.",
+        "rating": 4,
+        "why_it_works": "Describes a soft transition between contrasting elements, affecting mood and visual flow.",
+        "model_notes": "The type of transition affects the mood and visual flow of the image."
+      },
+      {
+        "category": "Object/Text",
+        "prompt": "A neon sign reading ‘Rainforest Retreat’ visible through a rain-soaked glass window. The glass creates a beautiful distortion, adding a soft glow to the sign's vibrant colors.",
+        "rating": 4,
+        "why_it_works": "Uses transparent material to create a visually interesting effect and depth.",
+        "model_notes": "FLUX.1 can create images with transparent materials like glass."
+      },
+      {
+        "category": "Still Life",
+        "prompt": "A glass of water on a wooden table, with light reflecting off the surface of the glass. The glass is covered in tiny water droplets, and the table has a rough, textured finish.",
+        "rating": 4,
+        "why_it_works": "Adds textures and reflections for realism and depth.",
+        "model_notes": "Textures and reflections make images more lifelike and engaging."
+      },
+      {
+        "category": "Landscape",
+        "prompt": "A vibrant orange and pink sunset over a snow-capped mountain range, shot on a Canon EOS R5, capturing the vibrant colors and sharp details of the scene.",
+        "rating": 4,
+        "why_it_works": "Specifies camera type to mimic real-world photography style and quality.",
+        "model_notes": "Specifying a camera helps FLUX.1 mimic the style and quality of real-world photography."
+      },
+      {
+        "category": "Portrait",
+        "prompt": "A portrait shot with a 50mm lens, capturing the subject’s face in sharp focus with a softly blurred background.",
+        "rating": 4,
+        "why_it_works": "Uses lens specification to control depth of field and focus.",
+        "model_notes": "Lenses control field of view and depth of field."
+      },
+      {
+        "category": "Landscape",
+        "prompt": "A wide-angle shot of a mountain range at sunrise, capturing the expansive landscape with vibrant colors and sharp details.",
+        "rating": 4,
+        "why_it_works": "Specifies shot type for desired composition and scene capture.",
+        "model_notes": "Shot types influence the overall composition."
+      },
+      {
+        "category": "Text Integration",
+        "prompt": "A vintage travel poster for Paris. The Eiffel Tower silhouette dominates the center, painted in warm sunset colors. At the top, ‘PARIS’ is written in large, elegant Art Deco font.",
+        "rating": 4,
+        "why_it_works": "Clearly describes text content, placement, and style for readable text in images.",
+        "model_notes": "FLUX can generate readable text when described clearly."
+      },
+      {
+        "category": "Character",
+        "prompt": "close up photo of a 30 year old woman with pixie cut red hair and natural green eyes, looking away from the camera, side profile, high contrast, with a night cityscape in the background",
+        "rating": 4,
+        "why_it_works": "Detailed, conversational prompt that uses natural language instead of comma-separated tags.",
+        "model_notes": "Natural language prompts work well with Flux."
+      },
+      {
+        "category": "Comic Strip",
+        "prompt": "Style: Classic superhero comic Character: Worried scientist frantically typing on glowing holographic keyboard, face illuminated by blue light showing deep concern Setting: Massive computer server room with sparking circuits and red warning lights flashing on monitors Text: ‘The AI models are corrupting! We need Diffusion Man!’ Mood: Tense, urgent + dramatic blue and red tones",
+        "rating": 4,
+        "why_it_works": "Defines character and maintains consistency across panels for sequential art.",
+        "model_notes": "FLUX.2 can create consistent comic panels."
+      },
+      {
+        "category": "Typography/Design",
+        "prompt": "Samsung Galaxy S25 Ultra product advertisement, 'Ultra-strong titanium' headline, 'Shielded in a strong titanium frame, your Galaxy S25 Ultra always stays protected' subtext, close-up of phone edge showing titanium frame, dark gradient background, clean minimalist tech aesthetic, professional product photography",
+        "rating": 5,
+        "why_it_works": "Generates clean typography and product marketing materials.",
+        "model_notes": "FLUX.2 excels at typography and design-related prompts."
+      },
+      {
+        "category": "Color Control (HEX)",
+        "prompt": "a vintage illustration of an apple in color #0047AB with a heart-shaped cutout in the middle, on a white background",
+        "rating": 4,
+        "why_it_works": "Uses HEX color codes for precise color matching.",
+        "model_notes": "FLUX.2 supports precise color matching using hex codes."
+      },
+      {
+        "category": "Color Control (Gradient)",
+        "prompt": "A vase on a table in living room, the color of the vase is a gradient, starting with color #02eb3c and finishing with color #edfa3c. The flowers inside the vase have the color #ff0088",
+        "rating": 4,
+        "why_it_works": "Applies gradients by specifying start and end colors.",
+        "model_notes": "FLUX.2 can generate gradients."
+      },
+      {
+        "category": "Infographics",
+        "prompt": "Create a vertical infographic about coffee consumption worldwide. Title: ‘Global Coffee Culture’. Include 3 sections with statistics, use icons for each country, color scheme #4A2C2A (brown) and #F5E6D3 (cream). Modern minimalist style with clean typography.",
+        "rating": 4,
+        "why_it_works": "Generates infographics with clean typography and structured layouts.",
+        "model_notes": "FLUX.2 can generate infographics."
+      },
+      {
+        "category": "Multi-Language",
+        "prompt": "Un marché alimentaire dans la campagne normande",
+        "rating": 4,
+        "why_it_works": "Prompting in a native language can produce more culturally authentic results.",
+        "model_notes": "FLUX.2 understands multiple languages."
+      }
+    ],
+    "key_techniques": "The most effective prompting techniques for Flux include using the Subject + Action + Style + Context framework, prioritizing word order, and building upon the prompt with enhancement layers (visual, technical, atmospheric). It is also recommended to use structured descriptions, avoid negative prompts by rephrasing them positively, and integrate text using quotation marks.",
+    "categories": "General/Structured Prompt, Sci-Fi/Fantasy, Space/Cinematic, Retro/Character, Enhanced/Cinematic, Character-focused, Context-focused, Style-focused, Technical-focused, Professional Photography, Nature Documentary, Dynamic Sports (Rally Racing), Animated Magic (Studio Ghibli Style), Modern Smartphone Photography (Ballet), Street Art / Animation (Spider-Verse Style), Dynamic Sports (Mountain Biking), Street Photography (Film Noir), Landscape, Nature, Interior/Object, Abstract/Contrasting, Object/Text, Text Integration, Character, Comic Strip, Typography/Design, Color Control (HEX), Color Control (Gradient), JSON Prompting, Infographics, Multi-Language",
+    "model_specific_tips": "Flux understands natural language, so it is better to use clear, descriptive sentences instead of keyword-heavy prompts. The model pays more attention to the beginning of the prompt, so place the most important elements first. Flux can also generate readable text in images when the text, its placement, and style are clearly described in the prompt."
+  },
+  "Seedance 2.0": {
+    "prompts": [
+      {
+        "category": "Cinematic & Film",
+        "prompt_text": "Sweeping drone shot ascending from a misty valley floor, slowly revealing a vast mountain range at sunrise, golden light breaking through clouds and casting long shadows across pine forests, orchestral grandeur, National Geographic documentary quality, ultra-smooth camera movement",
+        "rating": 5,
+        "why_it_works": "Upward camera motion creates tension and release. Referencing 'National Geographic documentary quality' significantly enhances production value. Effective about 9/10 times.",
+        "model_notes": "Best settings: 16:9, 12-15 seconds, 1080p"
+      },
+      {
+        "category": "Cinematic & Film",
+        "prompt_text": "Extreme close-up of a young woman's face, eyes slowly opening to reveal reflected city lights, a single tear rolling down her cheek catching the light, shallow depth of field with bokeh background, intimate and emotional, Blade Runner cinematography style, warm amber and cool blue color contrast",
+        "rating": 5,
+        "why_it_works": "Seedance 2.0 excels at capturing small facial details and emotional subtleties. The 'Blade Runner' reference establishes a strong, filmic color palette. High shareability factor.",
+        "model_notes": "Best settings: 16:9, 8-10 seconds, 1080p"
+      },
+      {
+        "category": "Cinematic & Film",
+        "prompt_text": "A martial artist performing a spinning kick in slow motion, silk ribbons trailing from their wrists creating spiral patterns in the air, ancient temple courtyard setting with cherry blossom petals falling, dramatic side-angle tracking shot, Crouching Tiger Hidden Dragon aesthetic, golden hour backlighting creating silhouette effect",
+        "rating": 4,
+        "why_it_works": "Model handles complex body mechanics well. Silk ribbons add visual flow and can mask minor imperfections in motion rendering. Atmospheric details enhance the scene.",
+        "model_notes": "Best settings: 16:9, 10-12 seconds, 1080p"
+      },
+      {
+        "category": "Cinematic & Film",
+        "prompt_text": "A detective in a trench coat walking down a rain-soaked alley at night, neon signs reflecting in puddles creating streaks of red and blue light, steam rising from a manhole, slow dolly shot following from behind, film noir style, high contrast with deep shadows, 1940s meets cyberpunk",
+        "rating": 5,
+        "why_it_works": "Seedance 2.0 excels with neon reflections on wet surfaces, often rivaling hand-crafted VFX. High contrast and unique stylistic blends ('1940s meets cyberpunk') yield strong, atmospheric results.",
+        "model_notes": "Best settings: 21:9, 10-15 seconds, 1080p"
+      },
+      {
+        "category": "Product & Commercial",
+        "prompt_text": "A premium wristwatch floating in mid-air, slowly rotating with precision, water droplets suspended around it catching the light like diamonds, pure black background with a single dramatic spotlight from above, extreme macro detail showing every texture on the watch face, high-end jewelry commercial aesthetic, ultra-smooth rotation",
+        "rating": 5,
+        "why_it_works": "Reliably produces professional-looking product shots. Floating rotation is a standard for product videos, and Seedance handles it smoothly. Water droplets add a luxurious feel.",
+        "model_notes": "Best settings: 1:1 or 16:9, 8-10 seconds, 1080p"
+      },
+      {
+        "category": "Product & Commercial",
+        "prompt_text": "A tall glass of iced coffee being poured in slow motion, rich dark coffee meeting swirling cream creating mesmerizing patterns, ice cubes clinking and shifting, condensation droplets on the glass surface, close-up shot transitioning to medium shot, warm cafe lighting, Starbucks commercial quality, appetizing and inviting mood",
+        "rating": 5,
+        "why_it_works": "Slow-motion pouring is a highly effective advertising format. The mesmerizing vortex pattern is hypnotic and loopable, boosting algorithmic distribution. Generates content indistinguishable from professional footage.",
+        "model_notes": "Best settings: 16:9, 8-10 seconds, 1080p"
+      },
+      {
+        "category": "Product & Commercial",
+        "prompt_text": "A smartphone rising from its packaging, layers of protective film peeling away in satisfying slow motion, the screen illuminating to reveal a vibrant home screen, clean environment with soft directional lighting, Apple keynote presentation style, futuristic and aspirational",
+        "rating": 4,
+        "why_it_works": "The 'peeling away' effect is key for satisfying unboxing videos. Seedance 2.0 captures this palpable quality. Works well for consumer electronics with strong visual identities.",
+        "model_notes": "Best settings: 9:16, 8-12 seconds, 1080p"
+      },
+      {
+        "category": "Product & Commercial",
+        "prompt_text": "Model walking on an infinite white cyclorama, wearing an oversized camel wool coat, fabric flowing with each step, camera tracking alongside at hip height, wind machine creating gentle fabric movement, clean editorial fashion photography style, soft diffused studio lighting, Zara campaign aesthetic",
+        "rating": 4,
+        "why_it_works": "Effective for e-commerce, focusing on fabric movement to entice purchases. Infinite white background keeps focus on the garment. Hip-height angle ideal for displaying fabric drape.",
+        "model_notes": "Best settings: 9:16, 10-15 seconds, 1080p"
+      },
+      {
+        "category": "Social Media Viral",
+        "prompt_text": "A perfect sphere of liquid mercury sitting on a mirror surface, slowly deforming under an invisible force into a cube shape, then morphing back to a sphere, reflections shifting with each transformation, seamless loop-ready motion, ASMR-satisfying aesthetic, macro lens extreme close-up, clean minimalist background",
+        "rating": 5,
+        "why_it_works": "Looping transformation videos perform exceptionally well on social media. The 'seamless loop-ready motion' instruction ensures the ending matches the beginning, crucial for continuous loops. Highly engaging and shareable.",
+        "model_notes": "Best settings: 1:1 or 9:16, 6-8 seconds, 1080p"
+      },
+      {
+        "category": "Social Media Viral",
+        "prompt_text": "The Eiffel Tower reimagined as if it were made entirely of growing crystal formations, glowing from within with ethereal blue light, time-lapse of crystals spreading and growing across the structure, Parisian sunset in the background, magical realism style, drone shot slowly orbiting the tower",
+        "rating": 4,
+        "why_it_works": "'What if' scenarios are highly shareable. The Eiffel Tower's lattice structure reinforces the crystalline growth pattern, making it visually compelling. Effective from the first or second generation.",
+        "model_notes": "Best settings: 9:16, 10-15 seconds, 1080p"
+      },
+      {
+        "category": "Social Media Viral",
+        "prompt_text": "Split-screen transition: left side shows a plain coffee mug on a desk, right side reveals the same mug transforming into an ornate golden chalice with jewels, dramatic before-and-after reveal with a satisfying swipe transition, clean studio lighting on both sides, viral transformation trend style",
+        "rating": 4,
+        "why_it_works": "Before-and-after content performs well algorithmically. Split-screen layout immediately grabs attention. Results can be impressive when the sliding transition hits correctly.",
+        "model_notes": "Best settings: 9:16, 6-8 seconds, 1080p"
+      },
+      {
+        "category": "Social Media Viral",
+        "prompt_text": "A tiny detailed city built inside a glass jar, with miniature cars driving on roads and tiny lights in buildings turning on as day transitions to night, tilt-shift photography effect creating toy-like aesthetic, warm cozy lighting, gentle time-lapse, whimsical and enchanting mood, macro lens perspective",
+        "rating": 5,
+        "why_it_works": "Miniature worlds have universal appeal. The day-to-night transition adds a narrative element. Tilt-shift effect enhances the toy-size scale, creating a delightful and crafted feel.",
+        "model_notes": "Best settings: 9:16, 12-15 seconds, 1080p"
+      },
+      {
+        "category": "Creative & Experimental",
+        "prompt_text": "Two streams of luminescent paint colliding in zero gravity, one electric blue and one molten gold, creating complex fractal patterns as they merge and separate, suspended droplets catching light like stars, extreme slow motion, abstract experimental art film, dark background making colors pop, mesmerizing and meditative",
+        "rating": 4,
+        "why_it_works": "Abstract content is culturally agnostic. Complementary vivid colors (electric blue and molten gold) create stunning frames. Useful for background footage for presentations or music tracks.",
+        "model_notes": "Best settings: 1:1, 8-10 seconds, 1080p"
+      },
+      {
+        "category": "Creative & Experimental",
+        "prompt_text": "A person walking through a doorway and emerging into an impossible M.C. Escher-inspired landscape where staircases lead in every direction including upside-down, gravity shifting with each step, dreamlike floating dust particles catching shafts of light, ethereal and disorienting, Christopher Nolan's Inception meets Studio Ghibli, smooth steady tracking shot following the walker",
+        "rating": 4,
+        "why_it_works": "Reference stacking (Escher, Inception, Ghibli) provides a rich pool of DNA for the model. Results are surreal and eye-catching, with a solid success rate for complex requests.",
+        "model_notes": "Best settings: 16:9, 12-15 seconds, 1080p"
+      },
+      {
+        "category": "Creative & Experimental",
+        "prompt_text": "A silhouette of a singer performing on a stage that extends into infinite darkness, colorful volumetric light beams cutting through artificial fog from behind, each lyric note creating visible sound waves rippling through the air as colored light, concert photography perspective from the crowd, Beyonce music video production value, dramatic and powerful energy",
+        "rating": 4,
+        "why_it_works": "Volumetric lighting and fog consistently create high-production-value, dramatic shots. Produces arena concert vibes without physical assets. 'Visible sound waves' add an experimental visual element.",
+        "model_notes": "Best settings: 16:9 or 9:16, 10-15 seconds, 1080p"
+      },
+      {
+        "category": "Cinematic Storytelling",
+        "prompt_text": "A multi-shot sequence of a knight in silver armor. Shot 1: Wide shot as he enters a dark cave with a torch. Shot 2: Close-up of his nervous eyes. Shot 3: He draws his sword, which glows blue. Low-angle tracking shot, 2K resolution. Sound of crackling fire and echoing footsteps.",
+        "rating": 5,
+        "why_it_works": "Seedance 2.0 handles multi-shot narrative logic well, maintaining character consistency across shots. Specific shot descriptions and audio cues enhance storytelling.",
+        "model_notes": "Focus on textures for 2K resolution. Native audio engine triggered by sound adjectives."
+      },
+      {
+        "category": "Cinematic Storytelling",
+        "prompt_text": "A three-shot sequence of a detective in a rainy futuristic city. Shot 1: Bird’s-eye view of neon streets. Shot 2: The detective lights a cigarette under a flickering light. Shot 3: He looks at a holographic photo. 2K sharpness, anamorphic lens flare. Sound of falling rain and distant sirens.",
+        "rating": 5,
+        "why_it_works": "Effective use of multi-shot sequence to build a narrative. Specific visual details like 'anamorphic lens flare' and atmospheric sounds create a strong cinematic mood.",
+        "model_notes": "Focus on textures for 2K resolution. Native audio engine triggered by sound adjectives."
+      },
+      {
+        "category": "Cinematic Storytelling",
+        "prompt_text": "A sequence of a Victorian tailor at work. Shot 1: Macro shot of a needle piercing silk. Shot 2: The tailor’s face in profile, focused expression. Shot 3: He hangs the finished dress. Natural sunlight, 2K textures. Sound of fabric rustling and scissors snipping.",
+        "rating": 4,
+        "why_it_works": "Detailed shot descriptions guide the AI to create a coherent story. Focus on textures and natural lighting enhances realism. Specific audio cues add to the immersive experience.",
+        "model_notes": "Focus on textures for 2K resolution. Native audio engine triggered by sound adjectives."
+      },
+      {
+        "category": "Hyper-Realism",
+        "prompt_text": "Close-up of a wagyu steak hitting a hot cast-iron skillet. You can see the fat rendering and bubbles of oil. 2K resolution, shallow depth of field. Sound of loud, aggressive sizzling.",
+        "rating": 5,
+        "why_it_works": "Focus on textures and specific actions ('fat rendering', 'bubbles of oil') leverages Seedance 2.0's ability to render details. Specific sound descriptions enhance realism.",
+        "model_notes": "The ByteDance AI video model loves details like skin pores, wood grain, and liquid. Use specific sound adjectives."
+      },
+      {
+        "category": "Hyper-Realism",
+        "prompt_text": "Slow-motion shot of cold milk being poured into black coffee. The white and brown liquids swirl in 2K detail. Sound of the liquid splashing and the glass clinking.",
+        "rating": 5,
+        "why_it_works": "Emphasizes liquid dynamics and detailed textures. Slow-motion enhances the visual appeal. Specific sound effects ('splashing', 'clinking') create an immersive experience.",
+        "model_notes": "The ByteDance AI video model loves details like skin pores, wood grain, and liquid. Use specific sound adjectives."
+      },
+      {
+        "category": "Hyper-Realism",
+        "prompt_text": "Extreme close-up of an old man’s face as he laughs. Every wrinkle moves naturally. Cinematic 3-point lighting, 2K resolution. Sound of a deep, gravelly laugh.",
+        "rating": 5,
+        "why_it_works": "Focus on natural movement of wrinkles and cinematic lighting enhances realism. Specific audio description ('deep, gravelly laugh') adds depth to the character.",
+        "model_notes": "The ByteDance AI video model loves details like skin pores, wood grain, and liquid. Use specific sound adjectives."
+      },
+      {
+        "category": "Hyper-Realism",
+        "prompt_text": "Macro shot of a human eye with a digital iris. Tiny circuits move inside the pupil. 2K resolution, neon blue glow. Sound of a faint digital hum.",
+        "rating": 4,
+        "why_it_works": "Combines hyper-realistic detail with a futuristic element. Macro shot emphasizes intricate details. Specific lighting ('neon blue glow') and sound ('faint digital hum') create a unique aesthetic.",
+        "model_notes": "The ByteDance AI video model loves details like skin pores, wood grain, and liquid. Use specific sound adjectives."
+      },
+      {
+        "category": "Action and Physics",
+        "prompt_text": "A red rally car racing through a forest. It hits a puddle, and water sprays toward the camera. 2K resolution, shaky-cam effect. Sound of a high-RPM engine and splashing water.",
+        "rating": 5,
+        "why_it_works": "Seedance 2.0 excels at rendering physics, especially collisions and speed. Describing the 'water sprays' and 'shaky-cam effect' enhances the dynamic feel. Specific audio cues ('high-RPM engine', 'splashing water') add realism.",
+        "model_notes": "Seedance 2.0 wins on weight in physics simulations. Describe friction and specific movements. Use specific sound adjectives."
+      },
+      {
+        "category": "Action and Physics",
+        "prompt_text": "A tower of colorful glass blocks being hit by a bowling ball. The blocks scatter with realistic gravity. 2K resolution, high-speed camera style. Sound of a heavy thud and glass clinking.",
+        "rating": 4,
+        "why_it_works": "Demonstrates Seedance 2.0's ability to handle realistic gravity and scattering. 'High-speed camera style' enhances the impact. Specific sound effects ('heavy thud', 'glass clinking') contribute to the immersive experience.",
+        "model_notes": "Seedance 2.0 wins on weight in physics simulations. Describe friction and specific movements. Use specific sound adjectives."
+      },
+      {
+        "category": "Action and Physics",
+        "prompt_text": "A basketball player jumping for a dunk. The jersey ripples in the wind. The camera follows the player from the ground up. 2K resolution, cinematic lighting. Sound of sneakers squeaking on wood and the rim rattling.",
+        "rating": 5,
+        "why_it_works": "Captures dynamic sports motion with realistic details like 'jersey ripples'. Cinematic lighting and specific camera movement ('follows the player from the ground up') enhance the visual. Accurate sound effects ('sneakers squeaking', 'rim rattling') add authenticity.",
+        "model_notes": "Seedance 2.0 wins on weight in physics simulations. Describe friction and specific movements. Use specific sound adjectives."
+      },
+      {
+        "category": "Action and Physics",
+        "prompt_text": "A surfer riding a massive 20-foot wave. The spray of the ocean is captured in 2K detail. Sound of a roaring ocean and the board cutting through water.",
+        "rating": 5,
+        "why_it_works": "Highlights Seedance 2.0's capability to render detailed water effects and large-scale natural phenomena. High resolution and specific sound descriptions ('roaring ocean', 'board cutting through water') create a powerful scene.",
+        "model_notes": "Seedance 2.0 wins on weight in physics simulations. Describe friction and specific movements. Use specific sound adjectives."
+      },
+      {
+        "category": "Cinematic",
+        "prompt_text": "These are the opening and closing frames of a tavern martial arts fight scene. Based on these two scenes, please generate a smooth sequence of a woman in black fighting several assassins. Use storyboarding techniques and switch between different perspectives to give the entire footage a more rhythmic and cinematic feel.",
+        "rating": 4,
+        "why_it_works": "Utilizes storyboarding and multi-perspective shots for a dynamic fight scene. Focus on smooth transitions and cinematic rhythm. Effective for complex action sequences.",
+        "model_notes": "Seedance 2.0 excels at following chronological instructions and multi-shot narratives. Use the [00-05s] structure for precise timelines."
+      },
+      {
+        "category": "Cinematic",
+        "prompt_text": "Style: Hollywood Professional Racing Movie (Le Mans style), cinematic night, rain, high-stakes sport. Duration: 15s. [00–05s] Shot 1: The Veteran (Interior / Close-up) Rain lashes the windshield of a high-tech race car on a track. The veteran driver (in helmet) looks over, calm and focused. Dashboard lights reflect on his visor. Dialogue Cue: He gives a subtle nod and mouths, ‘Let’s go.’ [05–10s] Shot 2: The Challenger (Interior / Close-up) Cut to the rival car next to him. The younger driver grips the wheel tightly, breathing heavily. Eyes wide with adrenaline. Dialogue Cue: He whispers ‘Focus’ to himself. [10–15s] Shot 3: The Green Light (Wide Action) The starting lights turn green. Both cars accelerate in perfect sync on the wet asphalt. Water sprays into the camera lens. Motion blur stretches the stadium lights into long streaks of color.",
+        "rating": 5,
+        "why_it_works": "Detailed chronological instructions with specific shot breakdowns and dialogue cues guide the AI effectively. Strong stylistic references ('Le Mans style') and atmospheric details ('rain lashes') create a high-impact cinematic sequence.",
+        "model_notes": "Seedance 2.0 excels at following chronological instructions and multi-shot narratives. Use the [00-05s] structure for precise timelines."
+      },
+      {
+        "category": "Cinematic",
+        "prompt_text": "Cinematic action movie feel, continuous long take. A female warrior in a black high-tech tactical bodysuit stands in the center of an abandoned industrial factory. The camera follows her in a smooth tracking shot. She delivers a sharp roundhouse kick that sends a zombie flying, then transitions seamlessly into precise one-handed handgun fire, muzzle flash lighting the dark environment.",
+        "rating": 4,
+        "why_it_works": "Emphasizes continuous long take and smooth tracking shot for cinematic feel. Detailed action sequence with visual effects ('muzzle flash lighting') creates a dynamic scene.",
+        "model_notes": "Seedance 2.0 excels at following chronological instructions and multi-shot narratives. Use the [00-05s] structure for precise timelines."
+      }
+    ],
+    "key_techniques": "",
+    "categories": "",
+    "model_specific_tips": ""
+  }
+}

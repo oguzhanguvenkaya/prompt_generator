@@ -14,7 +14,7 @@ export function ModelSelector({ models, value, onChange }: ModelSelectorProps) {
       value={value}
       onChange={(e) => onChange(e.target.value)}
       options={models.map((m) => ({
-        label: `${m.name} (${m.platformLabel})`,
+        label: m.name,
         value: m.id,
       }))}
       className="w-[260px]"

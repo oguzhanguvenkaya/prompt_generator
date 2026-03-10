@@ -1,0 +1,623 @@
+@import 
+url(https://themes.googleusercontent.com/fonts/css?kit=DFQxm4rd7fRHgM9OTejWVT5Vho6BE7M80rHXEVKqXWdbV0WvE1cEyAoIq5yYZlSc)
+;ol.lst-kix_list_7-0{list-style-type:none}ol.lst-kix_list_3-0{list-style-type:none}.lst-kix_list_3-0>li:before{content:"
+" counter(lst-ctn-kix_list_3-0,decimal) ". 
+"}ul.lst-kix_list_5-7{list-style-type:none}ul.lst-kix_list_5-8{list-style-type:none}.lst-kix_list_3-1>li:before{content:
+"\0025cb "}.lst-kix_list_3-2>li:before{content:"\0025a0 
+"}ul.lst-kix_list_5-5{list-style-type:none}ul.lst-kix_list_5-6{list-style-type:none}.lst-kix_list_8-1>li:before{content:
+"\0025cb "}.lst-kix_list_4-0>li{counter-increment:lst-ctn-kix_list_4-0}.lst-kix_list_8-2>li:before{content:"\0025a0 
+"}.lst-kix_list_5-0>li{counter-increment:lst-ctn-kix_list_5-0}.lst-kix_list_7-0>li{counter-increment:lst-ctn-kix_list_7-
+0}.lst-kix_list_8-0>li{counter-increment:lst-ctn-kix_list_8-0}ul.lst-kix_list_1-3{list-style-type:none}.lst-kix_list_3-5
+>li:before{content:"\0025a0 
+"}ul.lst-kix_list_1-4{list-style-type:none}ul.lst-kix_list_1-1{list-style-type:none}.lst-kix_list_3-4>li:before{content:
+"\0025a0 
+"}ul.lst-kix_list_1-2{list-style-type:none}ul.lst-kix_list_5-3{list-style-type:none}ul.lst-kix_list_1-7{list-style-type:
+none}.lst-kix_list_3-3>li:before{content:"\0025a0 
+"}ul.lst-kix_list_5-4{list-style-type:none}ul.lst-kix_list_1-8{list-style-type:none}ul.lst-kix_list_5-1{list-style-type:
+none}.lst-kix_list_8-0>li:before{content:"" counter(lst-ctn-kix_list_8-0,decimal) ". 
+"}ul.lst-kix_list_1-5{list-style-type:none}ul.lst-kix_list_5-2{list-style-type:none}ul.lst-kix_list_1-6{list-style-type:
+none}.lst-kix_list_8-7>li:before{content:"\0025a0 "}.lst-kix_list_3-8>li:before{content:"\0025a0 
+"}.lst-kix_list_8-5>li:before{content:"\0025a0 "}.lst-kix_list_8-6>li:before{content:"\0025a0 
+"}.lst-kix_list_2-0>li{counter-increment:lst-ctn-kix_list_2-0}.lst-kix_list_8-3>li:before{content:"\0025a0 
+"}.lst-kix_list_3-6>li:before{content:"\0025a0 "}.lst-kix_list_3-7>li:before{content:"\0025a0 
+"}.lst-kix_list_8-4>li:before{content:"\0025a0 "}ol.lst-kix_list_5-0.start{counter-reset:lst-ctn-kix_list_5-0 
+0}.lst-kix_list_8-8>li:before{content:"\0025a0 "}.lst-kix_list_5-0>li:before{content:"" 
+counter(lst-ctn-kix_list_5-0,decimal) ". 
+"}ol.lst-kix_list_2-0{list-style-type:none}.lst-kix_list_4-8>li:before{content:"\0025a0 
+"}.lst-kix_list_5-3>li:before{content:"\0025a0 "}.lst-kix_list_4-7>li:before{content:"\0025a0 
+"}.lst-kix_list_5-2>li:before{content:"\0025a0 "}.lst-kix_list_5-1>li:before{content:"\0025cb 
+"}ul.lst-kix_list_4-8{list-style-type:none}.lst-kix_list_5-7>li:before{content:"\0025a0 
+"}ul.lst-kix_list_8-4{list-style-type:none}ul.lst-kix_list_8-5{list-style-type:none}ul.lst-kix_list_4-6{list-style-type:
+none}.lst-kix_list_5-6>li:before{content:"\0025a0 "}.lst-kix_list_5-8>li:before{content:"\0025a0 
+"}ul.lst-kix_list_8-2{list-style-type:none}ul.lst-kix_list_4-7{list-style-type:none}ul.lst-kix_list_8-3{list-style-type:
+none}ul.lst-kix_list_8-8{list-style-type:none}ul.lst-kix_list_8-6{list-style-type:none}ul.lst-kix_list_8-7{list-style-ty
+pe:none}ul.lst-kix_list_4-1{list-style-type:none}.lst-kix_list_5-4>li:before{content:"\0025a0 
+"}ul.lst-kix_list_4-4{list-style-type:none}.lst-kix_list_5-5>li:before{content:"\0025a0 
+"}ul.lst-kix_list_4-5{list-style-type:none}ul.lst-kix_list_8-1{list-style-type:none}ul.lst-kix_list_4-2{list-style-type:
+none}ul.lst-kix_list_4-3{list-style-type:none}ol.lst-kix_list_1-0.start{counter-reset:lst-ctn-kix_list_1-0 
+0}.lst-kix_list_6-1>li:before{content:"\0025cb "}.lst-kix_list_6-3>li:before{content:"\0025a0 
+"}.lst-kix_list_6-0>li:before{content:"\0025cf "}.lst-kix_list_6-4>li:before{content:"\0025a0 
+"}.lst-kix_list_3-0>li{counter-increment:lst-ctn-kix_list_3-0}ol.lst-kix_list_4-0.start{counter-reset:lst-ctn-kix_list_4
+-0 0}.lst-kix_list_6-2>li:before{content:"\0025a0 "}.lst-kix_list_6-8>li:before{content:"\0025a0 
+"}ol.lst-kix_list_8-0.start{counter-reset:lst-ctn-kix_list_8-0 0}.lst-kix_list_6-5>li:before{content:"\0025a0 
+"}.lst-kix_list_6-7>li:before{content:"\0025a0 "}.lst-kix_list_7-0>li:before{content:"" 
+counter(lst-ctn-kix_list_7-0,decimal) ". "}.lst-kix_list_6-6>li:before{content:"\0025a0 
+"}ol.lst-kix_list_5-0{list-style-type:none}.lst-kix_list_2-6>li:before{content:"\0025a0 
+"}.lst-kix_list_2-7>li:before{content:"\0025a0 "}.lst-kix_list_7-4>li:before{content:"\0025a0 
+"}.lst-kix_list_7-6>li:before{content:"\0025a0 
+"}ol.lst-kix_list_1-0{list-style-type:none}.lst-kix_list_2-4>li:before{content:"\0025a0 
+"}.lst-kix_list_2-5>li:before{content:"\0025a0 "}.lst-kix_list_2-8>li:before{content:"\0025a0 
+"}.lst-kix_list_7-1>li:before{content:"\0025cb "}.lst-kix_list_7-5>li:before{content:"\0025a0 
+"}.lst-kix_list_7-2>li:before{content:"\0025a0 "}.lst-kix_list_7-3>li:before{content:"\0025a0 
+"}ul.lst-kix_list_7-5{list-style-type:none}ul.lst-kix_list_7-6{list-style-type:none}ul.lst-kix_list_7-3{list-style-type:
+none}ul.lst-kix_list_3-7{list-style-type:none}ul.lst-kix_list_7-4{list-style-type:none}ul.lst-kix_list_3-8{list-style-ty
+pe:none}ul.lst-kix_list_7-7{list-style-type:none}ul.lst-kix_list_7-8{list-style-type:none}ol.lst-kix_list_3-0.start{coun
+ter-reset:lst-ctn-kix_list_3-0 
+0}ul.lst-kix_list_3-1{list-style-type:none}ul.lst-kix_list_3-2{list-style-type:none}.lst-kix_list_7-8>li:before{content:
+"\0025a0 
+"}ul.lst-kix_list_7-1{list-style-type:none}ul.lst-kix_list_3-5{list-style-type:none}ul.lst-kix_list_7-2{list-style-type:
+none}ul.lst-kix_list_3-6{list-style-type:none}ul.lst-kix_list_3-3{list-style-type:none}.lst-kix_list_7-7>li:before{conte
+nt:"\0025a0 "}ul.lst-kix_list_3-4{list-style-type:none}.lst-kix_list_4-0>li:before{content:"" 
+counter(lst-ctn-kix_list_4-0,decimal) ". "}.lst-kix_list_4-1>li:before{content:"\0025cb 
+"}.lst-kix_list_4-4>li:before{content:"\0025a0 "}.lst-kix_list_4-3>li:before{content:"\0025a0 
+"}.lst-kix_list_4-5>li:before{content:"\0025a0 "}.lst-kix_list_4-2>li:before{content:"\0025a0 
+"}.lst-kix_list_4-6>li:before{content:"\0025a0 "}ol.lst-kix_list_7-0.start{counter-reset:lst-ctn-kix_list_7-0 
+0}ol.lst-kix_list_4-0{list-style-type:none}ul.lst-kix_list_6-6{list-style-type:none}ul.lst-kix_list_6-7{list-style-type:
+none}ul.lst-kix_list_6-4{list-style-type:none}ul.lst-kix_list_2-8{list-style-type:none}ul.lst-kix_list_6-5{list-style-ty
+pe:none}ul.lst-kix_list_6-8{list-style-type:none}ul.lst-kix_list_2-2{list-style-type:none}.lst-kix_list_1-0>li:before{co
+ntent:"" counter(lst-ctn-kix_list_1-0,decimal) ". 
+"}ul.lst-kix_list_2-3{list-style-type:none}ul.lst-kix_list_2-1{list-style-type:none}ul.lst-kix_list_6-2{list-style-type:
+none}ol.lst-kix_list_8-0{list-style-type:none}ul.lst-kix_list_2-6{list-style-type:none}ul.lst-kix_list_6-3{list-style-ty
+pe:none}.lst-kix_list_1-1>li:before{content:"\0025cb "}.lst-kix_list_1-2>li:before{content:"\0025a0 
+"}ol.lst-kix_list_2-0.start{counter-reset:lst-ctn-kix_list_2-0 
+0}ul.lst-kix_list_2-7{list-style-type:none}ul.lst-kix_list_6-0{list-style-type:none}ul.lst-kix_list_2-4{list-style-type:
+none}ul.lst-kix_list_6-1{list-style-type:none}ul.lst-kix_list_2-5{list-style-type:none}.lst-kix_list_1-3>li:before{conte
+nt:"\0025a0 "}.lst-kix_list_1-4>li:before{content:"\0025a0 
+"}.lst-kix_list_1-0>li{counter-increment:lst-ctn-kix_list_1-0}.lst-kix_list_1-7>li:before{content:"\0025a0 
+"}.lst-kix_list_1-5>li:before{content:"\0025a0 "}.lst-kix_list_1-6>li:before{content:"\0025a0 
+"}li.li-bullet-0:before{margin-left:-18pt;white-space:nowrap;display:inline-block;min-width:18pt}.lst-kix_list_2-0>li:be
+fore{content:"" counter(lst-ctn-kix_list_2-0,decimal) ". "}.lst-kix_list_2-1>li:before{content:"\0025cb 
+"}.lst-kix_list_1-8>li:before{content:"\0025a0 "}.lst-kix_list_2-2>li:before{content:"\0025a0 
+"}.lst-kix_list_2-3>li:before{content:"\0025a0 "}ol{margin:0;padding:0}table td,table 
+th{padding:0}.c15{border-right-style:solid;padding:6pt 9pt 6pt 
+9pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top
+;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#f8fafd;border-left-style:soli
+d;border-bottom-width:1pt;width:78pt;border-top-color:#000000;border-bottom-style:solid}.c8{border-right-style:solid;pad
+ding:6pt 9pt 6pt 
+9pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top
+;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;background-color:#f8fafd;border-left-style:soli
+d;border-bottom-width:1pt;width:93.6pt;border-top-color:#000000;border-bottom-style:solid}.c1{-webkit-text-decoration-sk
+ip:none;color:#0000ee;font-weight:400;text-decoration:underline;text-decoration-skip-ink:none;font-size:12pt;font-family
+:"Google 
+Sans"}.c6{margin-left:30pt;padding-top:0pt;padding-bottom:0pt;line-height:1.0;padding-left:0pt;text-align:left}.c11{vert
+ical-align:super;font-size:12pt;font-family:"Google 
+Sans";color:#444746;font-weight:400}.c5{padding-top:0pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left
+}.c34{padding-top:12pt;padding-bottom:12pt;line-height:1.149999976158142;text-align:left}.c3{padding-top:6pt;padding-bot
+tom:6pt;line-height:1.149999976158142;text-align:left}.c35{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align
+:left}.c29{padding-top:0pt;padding-bottom:12.8pt;line-height:1.0;text-align:left}.c24{border-spacing:0;border-collapse:c
+ollapse;margin-right:auto}.c10{padding-top:0pt;padding-bottom:0pt;line-height:1.149999976158142;text-align:left}.c2{padd
+ing-top:0pt;padding-bottom:12pt;line-height:1.149999976158142;text-align:left}.c4{text-decoration:none;vertical-align:ba
+seline;font-size:11pt;font-style:normal}.c31{padding-top:0pt;padding-bottom:12.8pt;line-height:1.149999976158142;text-al
+ign:left}.c18{padding-top:24pt;padding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c30{padding-top:12pt;pa
+dding-bottom:6pt;line-height:1.149999976158142;text-align:left}.c9{color:#1f1f1f;font-weight:700;font-family:"Google 
+Sans"}.c0{color:#1f1f1f;font-weight:400;font-family:"Google 
+Sans"}.c32{color:#000000;font-weight:700;font-family:"Google 
+Sans"}.c22{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 
+72pt}.c14{font-size:12pt;font-weight:400;font-family:"Google 
+Sans"}.c28{vertical-align:baseline;font-size:14pt}.c27{padding:0;margin:0}.c16{margin-left:24pt;padding-left:0pt}.c33{ve
+rtical-align:baseline;font-size:24pt}.c23{margin-left:44.2pt;padding-left:0pt}.c26{vertical-align:baseline;font-size:12p
+t}.c13{color:inherit;text-decoration:inherit}.c20{text-decoration:none;font-style:normal}.c7{vertical-align:baseline;fon
+t-style:normal}.c12{margin-left:23.2pt;padding-left:0pt}.c25{vertical-align:baseline;font-size:18pt}.c21{height:11pt}.c1
+7{height:0pt}.c19{font-style:italic}.title{padding-top:24pt;color:#000000;font-weight:700;font-size:36pt;padding-bottom:
+6pt;font-family:"Arial";line-height:1.0;page-break-after:avoid;text-align:left}.subtitle{padding-top:18pt;color:#666666;
+font-size:24pt;padding-bottom:4pt;font-family:"Georgia";line-height:1.0;page-break-after:avoid;font-style:italic;text-al
+ign:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"
+}h1{padding-top:12pt;color:#000000;font-weight:700;font-size:24pt;padding-bottom:12pt;font-family:"Arial";line-height:1.
+0;text-align:left}h2{padding-top:11.2pt;color:#000000;font-weight:700;font-size:18pt;padding-bottom:11.2pt;font-family:"
+Arial";line-height:1.0;text-align:left}h3{padding-top:12pt;color:#000000;font-weight:700;font-size:14pt;padding-bottom:1
+2pt;font-family:"Arial";line-height:1.0;text-align:left}h4{padding-top:12.8pt;color:#000000;font-weight:700;font-size:12
+pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h5{padding-top:12.8pt;color:#000000;font-we
+ight:700;font-size:9pt;padding-bottom:12.8pt;font-family:"Arial";line-height:1.0;text-align:left}h6{padding-top:18pt;col
+or:#000000;font-weight:700;font-size:8pt;padding-bottom:18pt;font-family:"Arial";line-height:1.0;text-align:left}G&ouml;
+rsel & Video AI Prompt M&uuml;hendisli&#287;i Stratejik Ara&#351;t&#305;rma ve Sistem Mimarisi Raporu&#304;ki bin yirmi 
+alt&#305; y&#305;l&#305; itibar&#305;yla yapay zeka tabanl&#305; g&ouml;rsel ve video &uuml;retim modelleri, basit 
+anahtar kelime e&#351;le&#351;tirmesinden s&#305;yr&#305;larak derin do&#287;al dil i&#351;leme, &ccedil;oklu-modal 
+(multimodal) kavrama ve mant&#305;ksal ak&#305;l y&uuml;r&uuml;tme (reasoning) yeteneklerine evrilmi&#351;tir. Erken 
+d&ouml;nem dif&uuml;zyon modellerinin gerektirdi&#287;i karma&#351;&#305;k etiket y&#305;&#287;&#305;nlar&#305; ve 
+anlams&#305;z kalite modifikat&ouml;rleri, yerini ba&#287;lamsal b&uuml;t&uuml;nl&uuml;&#287;e, mimari 
+y&ouml;nlendirmelere ve sinematografik direktiflere b&#305;rakm&#305;&#351;t&#305;r. Bu paradigma de&#287;i&#351;imi, 
+kullan&#305;c&#305;lar&#305;n sistemle ileti&#351;im kurma bi&ccedil;imini temelden de&#287;i&#351;tirmi&#351;; "istek" 
+(prompt) olu&#351;turma s&uuml;reci, bir y&ouml;netmen veya sanat y&ouml;netmeni gibi spesifik, teknik ve zamansal 
+komutlar vermeyi gerektiren sofistike bir m&uuml;hendislik disiplini haline gelmi&#351;tir. Geli&#351;tirilecek Prompt 
+Generator uygulamas&#305;, son kullan&#305;c&#305;lar&#305;n soyut fikirlerini, modern yapay zeka modellerinin 
+bekledi&#287;i spesifik ve yap&#305;land&#305;r&#305;lm&#305;&#351; formata &ccedil;eviren mimari bir k&ouml;pr&uuml; 
+g&ouml;revi g&ouml;recektir. Bu rapor, pazar lideri g&ouml;rsel ve video modellerinin anatomisini, evrensel prompt 
+m&uuml;hendisli&#287;i prensiplerini ve bu teknik karma&#351;&#305;kl&#305;&#287;&#305; kullan&#305;c&#305;dan 
+gizleyerek s&uuml;reci optimize edecek bili&#351;sel y&uuml;k azalt&#305;c&#305; kullan&#305;c&#305; deneyimi (UX) 
+stratejilerini kapsaml&#305; bir &#351;ekilde analiz etmektedir.B&Ouml;L&Uuml;M 1: Model-Spesifik Prompt 
+Yap&#305;lar&#305; ve Algoritmik Davran&#305;&#351;larFarkl&#305; yapay zeka mimarileri, do&#287;al dili farkl&#305; 
+bi&ccedil;imlerde i&#351;ler ve g&ouml;rselle&#351;tirir. Dif&uuml;zyon tabanl&#305; sistemler, ak&#305;&#351; 
+e&#351;le&#351;tirme (flow matching) algoritmalar&#305; ve otoregresif transformat&ouml;rler, ayn&#305; metin girdisine 
+tamamen farkl&#305; alg&#305;sal tepkiler verir. Etkili bir prompt &uuml;retim motoru, hedef modelin algoritmik 
+tercihlerine g&ouml;re komut dizisini dinamik olarak yeniden yap&#305;land&#305;ran bir semantik &ccedil;eviri 
+katman&#305;na sahip olmal&#305;d&#305;r.1A. G&ouml;rsel &Uuml;retim ModelleriG&ouml;rsel yapay zeka ekosistemi, 2026 
+y&#305;l&#305;nda metin i&#351;leme do&#287;rulu&#287;u, &ccedil;oklu-referans anlama ve vekt&ouml;rel 
+&ccedil;&#305;kt&#305; sa&#287;lama gibi spesifik alanlarda uzmanla&#351;m&#305;&#351; modellere 
+b&ouml;l&uuml;nm&uuml;&#351;t&uuml;r. Her modelin s&ouml;zdizimi ve k&#305;s&#305;tlamalar&#305; farkl&#305;l&#305;k 
+g&ouml;stermektedir.Nano Banana Pro (Gemini 3.1 Flash Image Mimarisinde)Google DeepMind'&#305;n Imagen 
+altyap&#305;s&#305; &uuml;zerine in&#351;a edilen ve Lovart taraf&#305;ndan &ouml;zelle&#351;tirilen Nano Banana Pro, 
+geleneksel dif&uuml;zyon modellerinin aksine, dil anlama ve g&ouml;rsel sentezi birle&#351;tiren &ccedil;oklu-modal bir 
+mimari kullan&#305;r.1 Bu mimari, modelin ger&ccedil;ek d&uuml;nya fizi&#287;ini, &#305;&#351;&#305;k 
+kurallar&#305;n&#305; ve karma&#351;&#305;k istemleri kavramas&#305;n&#305; sa&#287;layarak "e&#287;lenceli" 
+g&ouml;rsel &uuml;retiminden "i&#351;levsel" profesyonel varl&#305;k &uuml;retimine ge&ccedil;i&#351;i temsil eder.3 
+Sistem, tek seferde on d&ouml;rt farkl&#305; referans g&ouml;rselini i&#351;leyerek karakter, marka renkleri ve 
+ayd&#305;nlatma tutarl&#305;l&#305;&#287;&#305;n&#305; bir marka DNA's&#305; gibi kilitleyebilir.4 Model, &uuml;retim 
+&ouml;ncesinde ortam&#305;n fizik kurallar&#305;n&#305; belirleyen bir ba&#287;lam &ccedil;apas&#305; (contextual 
+anchor) kurarak &ccedil;al&#305;&#351;&#305;r.4Nano Banana Pro'nun prompt yap&#305;s&#305;, ana konudan ba&#351;layarak 
+detaylara inen be&#351; bile&#351;enli bir form&uuml;l&uuml; takip eder: Ana Konu (Subject), Ba&#287;lam/Ortam 
+(Context/Setting), Sanatsal Stil (Style), I&#351;&#305;kland&#305;rma (Lighting) ve Teknik Detaylar (Technical).2 
+Etiket y&#305;&#287;&#305;nlar&#305; (tag soup) yerine, kurall&#305; tam c&uuml;mleler ve ak&#305;c&#305; bir dil 
+kullan&#305;lmas&#305; zorunludur; aksi takdirde modelin ba&#287;lamsal anlama yetene&#287;i devre d&#305;&#351;&#305; 
+kal&#305;r.3 "Cool car, neon, 8k" gibi bir giri&#351; yerine, "A cinematic wide shot of a futuristic sports car 
+speeding through a rainy Tokyo street at night" gibi tan&#305;mlay&#305;c&#305;, edebi bir tasvir 
+kullan&#305;lmas&#305; sonu&ccedil; kalitesini dramatik &ouml;l&ccedil;&uuml;de art&#305;r&#305;r.3 Metin render 
+kapasitesi kusursuzdur ve prompt i&ccedil;indeki metinlerin t&#305;rnak i&#351;areti ile belirtilmesi do&#287;ruluk 
+oran&#305;n&#305; maksimize eder. Modelin en belirgin etkile&#351;im kural&#305; "Yeniden &Uuml;retme, D&uuml;zenle" 
+(Edit, Don't Re-roll) prensibidir.3 Kullan&#305;c&#305; g&ouml;rselin %80'inden memnunsa, s&#305;f&#305;rdan prompt 
+yazmak yerine yaln&#305;zca de&#287;i&#351;tirilmesi gereken k&#305;sm&#305; (&ouml;rne&#287;in 
+"&#305;&#351;&#305;&#287;&#305; g&uuml;n bat&#305;m&#305; yap ve metni maviye &ccedil;evir") belirtebilir.Uygulama 
+mimarisinde Nano Banana Pro i&ccedil;in kullan&#305;c&#305;dan al&#305;nan da&#287;&#305;n&#305;k veriler, do&#287;al 
+dil i&#351;leme katman&#305;ndan ge&ccedil;irilerek ak&#305;c&#305; &#304;ngilizce paragraflara 
+d&ouml;n&uuml;&#351;t&uuml;r&uuml;lmelidir. Kullan&#305;c&#305;n&#305;n aray&uuml;zden se&ccedil;ti&#287;i estetik ve 
+teknik parametreler, modelin bekledi&#287;i tam c&uuml;mle format&#305;na entegre edilerek API'ye iletilmelidir. 4K 
+do&#287;al &ccedil;&#305;kt&#305; &ccedil;&ouml;z&uuml;n&uuml;rl&uuml;&#287;&uuml;n&uuml; destekleyen model, bu teknik 
+parametreleri prompt metninden de&#287;il, do&#287;rudan sistem ayarlar&#305;ndan okur.5Seedream 5.0 ve 4.5 
+(ByteDance)ByteDance taraf&#305;ndan geli&#351;tirilen Seedream ekosistemi, yapay zeka &uuml;retiminde "mant&#305;ksal 
+ak&#305;l y&uuml;r&uuml;tme" (logical reasoning) katman&#305;n&#305; tan&#305;tan &ouml;nc&uuml; mimarilerden biridir. 
+Seedream 5.0, pikselleri olu&#351;turmaya ba&#351;lamadan &ouml;nce prompt &uuml;zerinde &ccedil;ok ad&#305;ml&#305; 
+bir mant&#305;ksal &ccedil;&#305;kar&#305;m yapar; nesnelerin uzaysal ili&#351;kilerini, yer&ccedil;ekimi 
+kurallar&#305;n&#305; ve sahne boyunca &#305;&#351;&#305;k tutarl&#305;l&#305;&#287;&#305;n&#305; analiz eder.6 
+Sistemin en yenilik&ccedil;i y&ouml;n&uuml;, ger&ccedil;ek zamanl&#305; web aramas&#305; entegrasyonudur. Model, 
+"bug&uuml;n&uuml;n en pop&uuml;ler haber ba&#351;l&#305;&#287;&#305;" gibi promptlar i&ccedil;in internetten canl&#305; 
+veri &ccedil;ekerek ve g&uuml;ncel g&ouml;rsel bilgi k&uuml;lliyat&#305;n&#305; kullanarak hal&uuml;sinasyonlar&#305; 
+minimuma indirir.7Ticari foto&#287;raf&ccedil;&#305;l&#305;k ve &uuml;r&uuml;n g&ouml;rselleri i&ccedil;in Seedream, 
+HEX renk kodlar&#305;n&#305; do&#287;rudan anlama kapasitesine sahiptir. Kullan&#305;c&#305; prompt i&ccedil;ine 
+#FF006E hot pink yazd&#305;&#287;&#305;nda, model bu kesin renk de&#287;erini &uuml;r&uuml;n tasar&#305;mlar&#305;nda 
+hatas&#305;z bir &#351;ekilde uygular.6 Ayr&#305;ca promptun yaz&#305;ld&#305;&#287;&#305; dil, g&ouml;rselin t&uuml;m 
+k&uuml;lt&uuml;rel ve mimari esteti&#287;ini do&#287;rudan de&#287;i&#351;tirir; Frans&#305;zca yaz&#305;lan bir 
+prompt, mimariyi ve &#305;&#351;&#305;k kullan&#305;m&#305;n&#305; do&#287;rudan o k&uuml;lt&uuml;r&uuml;n estetik 
+alg&#305;s&#305;na g&ouml;re &#351;ekillendirir.6 Geli&#351;mi&#351; &uuml;retimler i&ccedil;in model 
+yap&#305;land&#305;r&#305;lm&#305;&#351; JSON prompting format&#305;n&#305; destekler. Sahne, &ouml;zneler, stil, renk 
+paleti, &#305;&#351;&#305;k ve kamera detaylar&#305; ayr&#305;&#351;t&#305;r&#305;larak modele iletilebilir.6 Uzaysal 
+komutlara ("foreground", "upper left") kesin itaat eden model, metin entegrasyonu i&ccedil;in yaz&#305;lan 
+karakterlerin &ccedil;ift t&#305;rnak i&ccedil;inde olmas&#305;n&#305; &#351;art ko&#351;ar.6 Estetik ve g&uuml;zellik 
+odakl&#305; &ccedil;al&#305;&#351;malarda Seedream 4.5 versiyonu daha y&uuml;ksek ba&#351;ar&#305; g&ouml;sterirken, 
+bilgi odakl&#305;, kompleks mant&#305;ksal kompozisyonlarda 5.0 s&uuml;r&uuml;m&uuml; tercih edilmelidir.8 Uygulama 
+altyap&#305;s&#305;nda, ByteDance API'sine g&ouml;nderilecek verilerin do&#287;rudan JSON objesi olarak derlenmesi, 
+nesne yerle&#351;im do&#287;rulu&#287;unu optimize edecektir.Imagen 4 (Google DeepMind)Google DeepMind'&#305;n amiral 
+gemisi Imagen 4, fotoger&ccedil;ek&ccedil;ilik, kusursuz heceleme ve karma&#351;&#305;k komutlara itaat 
+konular&#305;nda s&#305;n&#305;rlar&#305; zorlayan bir modeldir. Sistem, genel tasar&#305;m g&ouml;revleri i&ccedil;in 
+Imagen 4 ve talimatlara harfiyen uyulmas&#305; gereken hassas i&#351;ler i&ccedil;in Imagen 4 Ultra olmak &uuml;zere 
+iki ana versiyona ayr&#305;l&#305;r.10 Imagen 4'&uuml;n en g&uuml;&ccedil;l&uuml; yan&#305;, s&#305;f&#305;rdan 
+storyboard olu&#351;turma ve &ccedil;ok panelli &ccedil;izgi roman &uuml;retimindeki yetkinli&#287;idir. 
+S&#305;ral&#305; ve senaryo tarz&#305; promptlara m&uuml;kemmel tepki verir.10Kullan&#305;c&#305;lar, tek bir prompt 
+i&ccedil;inde Panel 1, Panel 2 ve Panel 3 &#351;eklinde ard&#305;&#351;&#305;k sahneleri, diyaloglar&#305; ve ses 
+efektlerini (SFX) tan&#305;mlayabilir. Model, bu uzun ve yo&#287;un talimatlar&#305; hal&uuml;sinasyon yapmadan, her 
+paneldeki karakter tutarl&#305;l&#305;&#287;&#305;n&#305; koruyarak ve metinleri hatas&#305;z render ederek tek bir 
+g&ouml;rselde birle&#351;tirir.10 Geli&#351;tirilecek uygulaman&#305;n kullan&#305;c&#305; aray&uuml;z&uuml;, Imagen 4 
+i&ccedil;in &ouml;zel bir "Hikaye Panosu / &Ccedil;oklu Sahne" olu&#351;turucu mod&uuml;l 
+bar&#305;nd&#305;rmal&#305;d&#305;r. Bu mod&uuml;l, kullan&#305;c&#305;dan sahneleri par&ccedil;a par&ccedil;a 
+al&#305;p, modelin bekledi&#287;i ard&#305;&#351;&#305;k senaryo metnine &ccedil;evirme g&ouml;revini 
+&uuml;stlenmelidir.Flux 2 (Black Forest Labs)Geleneksel g&uuml;r&uuml;lt&uuml; giderme (denoising) temelli 
+dif&uuml;zyon modellerinin aksine Flux 2, metin tan&#305;mlar&#305; ve g&ouml;rsel gizli alanlar (latent spaces) 
+aras&#305;nda do&#287;rudan e&#351;leme yapan otuz iki milyar parametreli bir Ak&#305;&#351; E&#351;le&#351;tirme (Flow 
+Matching) mimarisi kullan&#305;r.12 Bu yap&#305;sal fark, daha az &ouml;rnekleme ad&#305;m&#305;yla y&uuml;ksek 
+sadakatli g&ouml;r&uuml;nt&uuml;ler &uuml;retilmesine olanak tan&#305;rken, karma&#351;&#305;k talimatlara itaat 
+oran&#305;n&#305; benzeri g&ouml;r&uuml;lmemi&#351; bir seviyeye &ccedil;&#305;kar&#305;r.12Flux 2'nin prompt 
+anatomisinde s&#305;ralama kritik &ouml;neme sahiptir. Model, promptun ba&#351;&#305;nda yer alan kelimelere 
+matematiksel olarak &ccedil;ok daha y&uuml;ksek a&#287;&#305;rl&#305;k verir. Form&uuml;l; Ana Konu, Eylem, Stil ve 
+Ba&#287;lam s&#305;ralamas&#305;n&#305; s&#305;k&#305; bir &#351;ekilde takip etmelidir.13 Di&#287;er sistemlerin 
+aksine Flux 2 kesinlikle negatif prompt desteklemez. &Ouml;rne&#287;in "eller olmas&#305;n" komutu verildi&#287;inde, 
+model "eller" kelimesine odaklanarak istem d&#305;&#351;&#305; uzuvlar &uuml;retebilir. Bu nedenle d&#305;&#351;lama 
+i&#351;lemleri tamamen pozitif bir dille (&ouml;rne&#287;in "eller kadraj d&#305;&#351;&#305;nda") 
+yap&#305;lmal&#305;d&#305;r.13 Model, bir arama motoruna kelime yazar gibi de&#287;il, bir romana betimleme yazar gibi 
+ak&#305;c&#305;, edebi bir d&uuml;zyaz&#305; ile beslendi&#287;inde en y&uuml;ksek performans&#305; verir.15 "14-24mm 
+geni&#351; a&ccedil;&#305; lens" veya "f/1.4 s&#305;&#287; alan derinli&#287;i" gibi kesin optik fizik terimlerini 
+m&uuml;kemmel &#351;ekilde sim&uuml;le eder.13 H&#305;zl&#305; iterasyon ve d&uuml;zenleme s&uuml;re&ccedil;lerinde 
+Flux 2, eski resmi ve yeni promptu analiz ederek &ccedil;al&#305;&#351;&#305;r. D&uuml;zenleme promptunda nesnenin neye 
+benzedi&#287;i de&#287;il, neyin de&#287;i&#351;ece&#287;i analitik tek bir talimat olarak 
+tan&#305;mlanmal&#305;d&#305;r.16 Geli&#351;tirilecek Prompt Generator uygulamas&#305;, kullan&#305;c&#305; "Negatif 
+&#304;stem" alan&#305;na veri girdi&#287;inde, e&#287;er hedef model Flux 2 ise bu giri&#351;leri otomatik olarak 
+pozitif e&#351;anlaml&#305;lar&#305;na &ccedil;eviren bir semantik &ccedil;eviri ara katman&#305; (middleware) 
+i&ccedil;ermelidir.GPT Image-1 (OpenAI)OpenAI'&#305;n DALL-E serisinin yerini alan GPT Image-1 modeli, g&ouml;rsel 
+&uuml;retiminde dif&uuml;zyon mimarisinden otoregresif &ccedil;oklu-modal transformat&ouml;r mimarisine 
+ge&ccedil;i&#351;in en g&uuml;&ccedil;l&uuml; &ouml;rne&#287;idir. Bu model, pikselleri dil modellerinin kelimeleri 
+tahmin etti&#287;i gibi s&#305;ral&#305; bir &#351;ekilde tahmin eder.17 Bu mimari devrim, nesnelerin 
+konumland&#305;r&#305;lmas&#305;nda, fiziksel d&uuml;zen k&#305;s&#305;tlamalar&#305;nda ve &ouml;zellikle g&ouml;rsel 
+i&ccedil;i metin yaz&#305;m&#305;nda benzersiz bir tutarl&#305;l&#305;k sa&#287;lar.17 Model hem metin hem de 
+g&ouml;rsel girdileri ayn&#305; transformat&ouml;r omurgas&#305;nda i&#351;leyerek, dilsel ve g&ouml;rsel modaliteler 
+aras&#305;nda kusursuz bir ge&ccedil;i&#351; sunar.GPT Image-1, prompt i&ccedil;i karma&#351;&#305;k parametreler 
+yerine API tabanl&#305; y&ouml;nlendirmeleri tercih eder. G&ouml;rselin en-boy oran&#305; veya kalitesi metin 
+i&ccedil;inden de&#287;il, API'deki boyut, kalite ve &#351;effaf arka plan gibi spesifik parametrelerle kontrol 
+edilir.18 Model varsay&#305;lan olarak kare g&ouml;rsel &uuml;retme e&#287;iliminde oldu&#287;undan, uygulaman&#305;n 
+kullan&#305;c&#305; aray&uuml;z&uuml;ndeki dikey veya yatay format se&ccedil;imleri, arka planda do&#287;rudan API 
+y&uuml;k&uuml;ne (payload) kesin &ccedil;&ouml;z&uuml;n&uuml;rl&uuml;k parametreleri olarak enjekte edilmelidir.Recraft 
+V3Grafik tasar&#305;m, vekt&ouml;rel ill&uuml;strasyon ve marka kimli&#287;i olu&#351;turma s&uuml;re&ccedil;lerinde 
+Recraft V3 (red_panda), end&uuml;stri standard&#305;n&#305; belirleyen modeldir. Pazardaki rakipleri kelime seviyesinde 
+metin render ederken, Recraft V3 uzun c&uuml;mleleri ve karma&#351;&#305;k hiyerar&#351;ik paragraflar&#305; 
+g&ouml;rsellere hatas&#305;z yerle&#351;tirmede en y&uuml;ksek de&#287;erlendirme skorlar&#305;na sahiptir.20 Modelin 
+as&#305;l fark yaratan &ouml;zelli&#287;i, sadece rasterize edilmi&#351; (piksel tabanl&#305;) g&ouml;rseller 
+de&#287;il, do&#287;rudan &ouml;l&ccedil;eklenebilir SVG vekt&ouml;r format&#305;nda logolar, ikon setleri ve dijital 
+ill&uuml;strasyonlar &uuml;retebilmesidir.20S&ouml;zdizimsel olarak model, y&ouml;nlendirmeleri &ouml;nceden 
+e&#287;itilmi&#351; kesin stil belirte&ccedil;leri (style tokens) ile al&#305;r. API &uuml;zerinden veya prompt 
+i&ccedil;inde dijital ill&uuml;strasyon/piksel sanat&#305;, ger&ccedil;ek&ccedil;i g&ouml;rsel/sert fla&#351;, dijital 
+ill&uuml;strasyon/el &ccedil;izimi taslak gibi kesin kategorizasyonlar kullan&#305;r.20 Aray&uuml;z tasar&#305;m&#305;, 
+kullan&#305;c&#305;n&#305;n kullan&#305;m amac&#305; ad&#305;m&#305;nda "Vekt&ouml;r Grafik", "Logo" veya "Aray&uuml;z 
+Tasar&#305;m&#305;" se&ccedil;mesi durumunda Recraft V3'&uuml; birincil model olarak &ouml;nermeli ve se&ccedil;ilen 
+stil parametresini sistemsel etiket olarak komut dizisine otomatik eklemelidir.Leonardo Phoenix ve Ideogram 3Leonardo 
+Phoenix modeli, detayl&#305; y&ouml;nlendirme parametreleri ve &ccedil;oklu &ouml;zne (multi-subject) prompt anlama 
+kapasitesiyle &ouml;ne &ccedil;&#305;kar. Geli&#351;mi&#351; &uuml;retim s&uuml;re&ccedil;lerinde kontrol 
+a&#287;lar&#305; ve stil referanslar&#305; ile &ccedil;al&#305;&#351;arak kullan&#305;c&#305;n&#305;n fikirleri 
+aras&#305;nda gezinmesini ve parametreleri daraltarak nihai sonuca ula&#351;mas&#305;n&#305; sa&#287;lar.23 Kendi 
+b&uuml;nyesinde bar&#305;nd&#305;rd&#305;&#287;&#305; &ouml;zel simya (alchemy) modifikat&ouml;rleri, g&ouml;rselin 
+sinematik veya fotoger&ccedil;ek&ccedil;i dokusunu matematiksel olarak art&#305;r&#305;r.Ideogram 3 ise tamamen 
+tipografi ve grafik tasar&#305;m odakl&#305; bir mimari sunar. Hiyerar&#351;ik metin yerle&#351;imlerinde, poster ve 
+afi&#351; tasar&#305;mlar&#305;nda &uuml;st&uuml;n ba&#351;ar&#305; g&ouml;sterir. Metinlerin kesin olarak t&#305;rnak 
+i&ccedil;ine al&#305;nmas&#305; ve kullan&#305;lacak yaz&#305; tiplerinin (&ouml;rne&#287;in bold condensed sans, 
+elegant serif) prompt i&ccedil;inde a&ccedil;&#305;k&ccedil;a belirtilmesi gerekir.24 &#304;deogram modelleri, negatif 
+komutlar&#305;n yap&#305;sal k&#305;s&#305;tlamalar&#305;na m&uuml;kemmel uyum sa&#287;lar. &Ccedil;arp&#305;k harfler 
+istenmiyorsa veya e&#287;risel metin hatlar&#305; reddediliyorsa, bu "yap&#305;lmayacaklar" listesi komutun sonuna 
+kesin direktifler olarak eklenmelidir.25Model Ad&#305;Temel Mimari / G&uuml;&ccedil;l&uuml; Y&ouml;nMaksimum 
+&Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;kMetin/Tipografi Do&#287;rulu&#287;uNegatif Komut Deste&#287;i&Ouml;nerilen Komut 
+Format&#305;Nano Banana Pro&Ccedil;oklu-Modal / Ger&ccedil;ek D&uuml;nya Fizi&#287;i4K&Ccedil;ok Y&uuml;ksekDestekler 
+(Do&#287;al Dil)Ba&#287;lam &Ccedil;apas&#305; + Ak&#305;c&#305; C&uuml;mlelerSeedream 5.0Mant&#305;ksal 
+&Ccedil;&#305;kar&#305;m / Web Aramas&#305;4KY&uuml;ksek (&Ccedil;ift T&#305;rnak)DesteklerJSON &#350;emas&#305; / 
+Yap&#305;sal S&#305;ralamaImagen 4Dif&uuml;zyon / &Ccedil;ok Panelli Senaryo2KKusursuzDesteklerArd&#305;&#351;&#305;k 
+Sahne TasviriFlux 2Ak&#305;&#351; E&#351;le&#351;tirme / Foto&#287;rafik &#304;taat4 
+MegapikselY&uuml;ksekDesteklemezRomanvari Edebi MetinGPT Image-1Otoregresif / Nesne Yerle&#351;imi1024x1536 
+(De&#287;i&#351;ken)&Ccedil;ok Y&uuml;ksekAPI ParametresiKonu&#351;maya Dayal&#305; Do&#287;al DilRecraft V3Vekt&ouml;r 
+&Uuml;retimi / Uzun Metin&Ccedil;e&#351;itli OranlarSOTA (En &#304;yi)DesteklerStil Tokenleri + Metin 
+Hiyerar&#351;isi1B. Video &Uuml;retim Modelleri&#304;ki bin yirmi alt&#305; y&#305;l&#305; itibar&#305;yla video 
+modelleri, dura&#287;an g&ouml;rsellerin ula&#351;t&#305;&#287;&#305; komut itaati seviyesine, "Zamansal (Temporal) 
+Boyut", "Kamera Hareket Fizi&#287;i" ve "&#304;&#351;itsel (Audio) Senkronizasyonu" ekleyerek &uuml;retim 
+s&uuml;re&ccedil;lerini sinematografik bir boyuta ta&#351;&#305;m&#305;&#351;t&#305;r.Kling 3.0 ve 2.6 (Kuaishou)Kling 
+3.0, &ouml;zellikle geli&#351;tirilmi&#351; O3 mant&#305;k modeliyle, yapay zeka video &uuml;retiminde kurgu 
+a&#351;amas&#305;n&#305; do&#287;rudan prompt i&ccedil;ine ta&#351;&#305;yan bir sistemdir. Rakipleri genellikle tek 
+bir sabit plan &uuml;retirken, Kling 3.0 &ccedil;oklu-&ccedil;ekim (multi-shot) hikaye 
+anlat&#305;c&#305;l&#305;&#287;&#305; &ouml;zelli&#287;iyle tek bir metin komutundan sahne ge&ccedil;i&#351;leri, 
+diyaloglar ve kamera a&ccedil;&#305; de&#287;i&#351;imlerini kurgulayabilir.26 Sistemin hareket yo&#287;unlu&#287;u 
+kontrol&uuml; son derece hassast&#305;r. Hareket yo&#287;unlu&#287;u skalas&#305; 0.1 ile 1.0 aras&#305;nda 
+belirlenebilir; d&uuml;&#351;&uuml;k de&#287;erler ince jestleri ve nefes almay&#305; sim&uuml;le ederken, y&uuml;ksek 
+de&#287;erler dinamik ko&#351;u ve aksiyon sahnelerini tetikler.29 Omni versiyonu, y&uuml;klenen bir karakter 
+g&ouml;rselini video boyunca farkl&#305; a&ccedil;&#305;larda tutarl&#305; tutarak kimlik kayb&#305;n&#305; (identity 
+loss) &ouml;nler.26 Uygulama altyap&#305;s&#305; Kling 3.0 i&ccedil;in "Sahne Bloklar&#305;" aray&uuml;z&uuml; 
+sunmal&#305;, kullan&#305;c&#305; her blokta kamera ve aksiyonu tan&#305;mlamal&#305;, ajan bu bloklar&#305; 
+birle&#351;tirerek tek bir &ccedil;oklu-&ccedil;ekim prompt paragraf&#305; &uuml;retmelidir.Seedance 2.0 
+(ByteDance)ByteDance'in Seedance 2.0 modeli, yapay zeka videosunda kompozisyon olu&#351;turma motoru olarak devrim 
+yaratm&#305;&#351;t&#305;r. Sistemin kalbinde, e&#351; zamanl&#305; olarak metin, g&ouml;rsel, video ve ses 
+referans&#305;n&#305; okuyabilen d&ouml;rtl&uuml;-modal (quad-modal) referans sistemi yatar.30 Model, 
+&#305;&#351;&#305;k referans&#305; i&ccedil;in bir resim, kamera hareketi i&ccedil;in bir referans video ve zamanlama 
+i&ccedil;in bir m&uuml;zik dosyas&#305;n&#305; ayn&#305; anda i&#351;leyebilir.33 Rakipler &ouml;nce videoyu 
+&uuml;retip sesi sonradan eklerken, Seedance 2.0 &ccedil;ift dall&#305; yay&#305;lma (dual-branch diffusion) 
+mimarisiyle a&#287;&#305;z hareketlerini, &ccedil;arpma seslerini ve m&uuml;zikal ritmi video ile kare kare e&#351; 
+zamanl&#305; olarak sentezler.30 Model, promptlar zamansal bloklar halinde (&ouml;rne&#287;in [00-05s] Sahne 1, 
+[05-10s] Sahne 2) yap&#305;land&#305;r&#305;ld&#305;&#287;&#305;nda kusursuz kurgu dizileri olu&#351;turur.36 Prompt 
+jenerat&ouml;r&uuml; bu model i&ccedil;in kullan&#305;c&#305;dan kronolojik bir ak&#305;&#351; &#351;emas&#305; alacak 
+&#351;ekilde tasarlanmal&#305;d&#305;r.Sora 2 (OpenAI)OpenAI'&#305;n Sora 2 modeli, konseptsel ifadelerden ziyade 
+fiziksel lens komutlar&#305;na ve kesin koreografik talimatlara yan&#305;t veren bir sanal g&ouml;r&uuml;nt&uuml; 
+y&ouml;netmeni gibi &ccedil;al&#305;&#351;&#305;r. Soyut kavramlar yerine g&ouml;zlemlenebilir fiziksel eylemler 
+kullan&#305;lmal&#305;d&#305;r.37 "Sinematik" demek yerine "geni&#351; kurulum &ccedil;ekimi, g&ouml;z hizas&#305;, 
+yava&#351;&ccedil;a i&ccedil;eri itme (push-in)" gibi somut lens komutlar&#305; verilmelidir.37 Aksiyonlar ritmik 
+vuru&#351;lar (beats) veya say&#305;mlar halinde zamanland&#305;r&#305;lmal&#305;d&#305;r; "odada y&uuml;r&uuml;r" 
+yerine "d&ouml;rt ad&#305;m at&#305;p pencerede durur, son saniyede perdeyi &ccedil;eker" &#351;eklindeki komutlar, 
+modelin hareketi zamana oturtmas&#305;n&#305; sa&#287;lar.38 Modelin talimatlara sadakati k&#305;sa videolarda 
+&ccedil;ok daha y&uuml;ksektir. On iki saniyelik videolarda karma&#351;&#305;k eylemlerin rotadan &ccedil;&#305;kma 
+ihtimali y&uuml;ksek oldu&#287;undan, d&ouml;rt saniyelik net eylem bloklar&#305; hedeflenmelidir.38 Sistem 
+aray&uuml;z&uuml;, Sora 2 i&ccedil;in hareketleri bir zaman &ccedil;izelgesi &uuml;zerinde "eylem ad&#305;mlar&#305;na" 
+b&ouml;lerek arka planda birle&#351;tirmelidir.Veo 3.1 (Google DeepMind)Google DeepMind taraf&#305;ndan 
+geli&#351;tirilen Veo 3.1, end&uuml;stri standartlar&#305;ndaki sinematik terimleri ve kurgu dillerini teknik 
+derinlikleriyle kavrayan ve uygulayan bir modeldir. Eylem e&#351;leme (match cut), s&#305;&ccedil;ramal&#305; kurgu 
+(jump cut) ve b&ouml;l&uuml;nm&uuml;&#351; diyopter efekti (split diopter effect) gibi profesyonel film tekniklerini 
+do&#287;rudan prompt &uuml;zerinden i&#351;ler.41 G&ouml;r&uuml;nt&uuml;den videoya (Image-to-Video) 
+d&ouml;n&uuml;&#351;&uuml;m s&uuml;re&ccedil;lerinde, kaynak g&ouml;rsel ilk kare olarak 
+al&#305;nd&#305;&#287;&#305;nda, g&ouml;rselin ortam&#305;n&#305; veya karakterin statik &ouml;zelliklerini prompt 
+i&ccedil;inde tekrar betimlemek modelin kafas&#305;n&#305; kar&#305;&#351;t&#305;r&#305;r; bunun yerine odak tamamen 
+ger&ccedil;ekle&#351;ecek fiziksel harekete (&ouml;rne&#287;in "&ouml;zneye yava&#351;&ccedil;a dolly in") 
+verilmelidir.41 Ses ve diyalog y&ouml;netimi, prompt i&ccedil;inde belirli s&ouml;zdizimsel i&#351;aretlerle 
+sa&#287;lan&#305;r. Diyaloglar "Karakter diyor ki: [Metin]" format&#305;nda kolon (:) kullan&#305;larak, 
+&ccedil;evresel sesler ise "Ortam Sesi: &#351;ehir trafi&#287;i" &#351;eklinde tan&#305;mlanarak modelin yerle&#351;ik 
+ses sentezleyicisi tetiklenir.41WAN 2.5 (Alibaba)WAN 2.5 modeli, yapay zeka video &uuml;retimini d&ouml;rt boyutlu 
+kesin bir form&uuml;le oturtur: &Ouml;zne ve Sahne, Fiziksel Hareket, Kamera Y&ouml;nlendirmesi ve &#304;&#351;itsel 
+Atmosfer.44 Model, bu d&ouml;rt elementin seksen ile y&uuml;z yirmi kelime aral&#305;&#287;&#305;nda dengeli bir 
+&#351;ekilde da&#287;&#305;t&#305;ld&#305;&#287;&#305; komut dizilerinde en y&uuml;ksek verimi sa&#287;lar.45 
+A&#351;&#305;r&#305; k&#305;sa promptlar detays&#305;z sonu&ccedil;lar do&#287;ururken, &ccedil;ok uzun promptlar 
+modelin odaklanmas&#305;n&#305; zorla&#351;t&#305;r&#305;r. Modelin talimat i&#351;leme mant&#305;&#287;&#305; 
+a&#351;&#305;r&#305; spesifikasyon gerektirir; genel ifadeler yerine "mavi ceketli orta ya&#351;l&#305; bir kad&#305;n, 
+hafif&ccedil;e g&uuml;l&uuml;mseyerek, kamerayla g&ouml;z temas&#305; kurarak kendinden emin ad&#305;mlarla 
+y&uuml;r&uuml;yor" gibi mikro d&uuml;zeyde detayland&#305;r&#305;lm&#305;&#351; komutlar kesin sonu&ccedil;lar 
+verir.45MiniMax ve HiggsfieldMiniMax, y&uuml;ksek sinematik kaliteyi ve ger&ccedil;ek&ccedil;i fizik sim&uuml;lasyonunu 
+h&#305;zl&#305; &uuml;retim s&uuml;re&ccedil;leriyle birle&#351;tiren bir modeldir. &Ouml;zellikle abart&#305;l&#305; 
+animasyon stilleri ile do&#287;al, a&#287;&#305;r &ccedil;ekim sinematik hareketler aras&#305;ndaki ayr&#305;m&#305; 
+iyi yapar.46 Renk derecelendirme ve y&uuml;ksek &ccedil;&ouml;z&uuml;n&uuml;rl&uuml;&#287;e &ouml;l&ccedil;ekleme 
+(upscaling) i&#351; ak&#305;&#351;lar&#305;na m&uuml;kemmel uyum sa&#287;lar.Higgsfield ise AI video &uuml;retimindeki 
+belirsizli&#287;i (guesswork) ortadan kald&#305;ran donan&#305;msal bir yakla&#351;&#305;m sunar. Kamera hareketleri 
+prompt metni arac&#305;l&#305;&#287;&#305;yla yoruma a&ccedil;&#305;k b&#305;rak&#305;lmaz; bunun yerine aray&uuml;z 
+veya API &uuml;zerinden "&Ccedil;arpma Yak&#305;nla&#351;t&#305;rma (Crash Zoom)", "Yay &Ccedil;izerek Sola Kayma (Arc 
+Left)", "Snorricam" veya "Birinci &#350;ah&#305;s G&ouml;r&uuml;&#351;l&uuml; Dron (FPV Drone)" gibi elliden fazla 
+kilitli sinematik &ouml;n ayar se&ccedil;ilir.49 Kamera rotas&#305; &ouml;nceden kilitlendi&#287;i i&ccedil;in, prompt 
+tamamen bu sabit hareket s&#305;ras&#305;nda &ccedil;evre ve karakter etkile&#351;imini tan&#305;mlamaya odaklan&#305;r 
+("Dolly yakla&#351;&#305;rken oyuncu elini kald&#305;r&#305;p ileri i&#351;aret eder").50 Bu mekanizma, karakter 
+hareketi ile kamera hareketinin birbirine kar&#305;&#351;t&#305;&#287;&#305; &ccedil;ak&#305;&#351;ma 
+sorunlar&#305;n&#305; tamamen ortadan kald&#305;r&#305;r.Video Modeli&Ouml;ne &Ccedil;&#305;kan Teknoloji / 
+Yakla&#351;&#305;mSes/Diyalog EntegrasyonuKamera Kontrol Mekanizmas&#305;&#304;deal Prompt 
+Uzunlu&#287;u/Yap&#305;s&#305;Kling 3.0O3 Ak&#305;l Y&uuml;r&uuml;tme / &Ccedil;oklu-&Ccedil;ekim (Multi-shot)Dudak 
+SenkronizasyonuPrompt &#304;&ccedil;i Y&ouml;nlendirmeSahne Sahne BloklarSeedance 2.0D&ouml;rtl&uuml;-Modal Referans / 
+&Ccedil;ift Dall&#305; Yay&#305;lmaE&#351; Zamanl&#305; SentezReferans Video &#304;le KilitliZaman Damgal&#305; 
+StoryboardSora 2Fiziksel Sim&uuml;lasyon / G&ouml;r&uuml;nt&uuml; Y&ouml;netmeniS&#305;n&#305;rl&#305; Ses 
+Deste&#287;iG&ouml;zlemlenebilir Fiziksel A&ccedil;&#305;4 Saniyelik Aksiyon Vuru&#351;lar&#305;Veo 3.1Profesyonel 
+Kurgu / Kesin Uyumluluk&#304;leri D&uuml;zey (Kolon Kullan&#305;m&#305;)Sinematik Terimler&#304;majdan Videoya Sadece 
+HareketWAN 2.54 Boyutlu Form&uuml;l / Yerle&#351;ik SesY&uuml;ksek SenkronizasyonY&ouml;nlendirme ve 
+Ak&#305;&#351;80-120 Kelimelik DengeHiggsfieldKilitli Hareket / Lens Sim&uuml;lasyonuDesteklenmez50+ Parametrik &Ouml;n 
+AyarKameradan Ba&#287;&#305;ms&#305;z Aksiyon Tan&#305;m&#305;B&Ouml;L&Uuml;M 2: Evrensel Prompt M&uuml;hendisli&#287;i 
+Prensipleri ve Katmanlar&#305;Gerek g&ouml;rsel gerekse video modelleri i&ccedil;in ge&ccedil;erli olan ortak 
+terminolojik k&uuml;t&uuml;phane ve yap&#305;sal iskelet, &uuml;retim kalitesini belirleyen yegane unsurdur. Raporun bu 
+b&ouml;l&uuml;m&uuml;, uygulamada bir s&ouml;zl&uuml;k veya arka plan semantik &ccedil;eviri motoru olarak 
+g&ouml;m&uuml;lebilecek evrensel anatomik standartlar&#305; ortaya koymaktad&#305;r.2A. G&ouml;rsel Prompt Anatomisi ve 
+Terminolojik Hiyerar&#351;iEtkili bir komut dizisi, mimari bir yap&#305; gibi katmanlardan olu&#351;ur. Belirsiz 
+b&#305;rak&#305;lan her de&#287;i&#351;ken, yapay zekan&#305;n e&#287;itim verisindeki a&#287;&#305;rl&#305;kl&#305; 
+ortalamaya (genellikle &ouml;nyarg&#305;l&#305; veya jenerik sonu&ccedil;lara) d&ouml;nmesine neden olur.Ana Konu 
+(Subject) Tan&#305;mlama &Ccedil;er&ccedil;evesi: Karakter veya nesne tan&#305;mlamalar&#305; mikro detaylar 
+i&ccedil;ermelidir. &#304;nsan tan&#305;mlar&#305;nda ya&#351;, etnik k&ouml;ken, sa&ccedil; dokusu, ten kusurlar&#305; 
+(&ccedil;iller, yara izleri), k&#305;yafet kuma&#351;&#305;n&#305;n materyali, duru&#351; ve mikro y&uuml;z ifadeleri 
+net bir bi&ccedil;imde ifade edilmelidir.Stil ve Medyum S&#305;n&#305;fland&#305;rmas&#305;: Sanatsal y&ouml;nlendirme, 
+sadece "resim" demekle kalmay&#305;p, medyumun fiziksel &ouml;zelliklerini i&ccedil;ermelidir (&ouml;rne&#287;in 
+"kal&#305;n f&#305;r&ccedil;a darbeli ya&#287;l&#305; boya", "grenli 35mm film foto&#287;raf&#305;", "izometrik 3D 
+render").Kompozisyon ve Kamera Matemati&#287;i: Kadrajlama ve perspektif, g&ouml;rselin psikolojik etkisini 
+belirler.&Ccedil;ekim &Ouml;l&ccedil;ekleri: Ekstrem yak&#305;n &ccedil;ekim (mikro detaylar), yak&#305;n &ccedil;ekim 
+(duygu aktar&#305;m&#305;), orta &ccedil;ekim, tam boy &ccedil;ekim, geni&#351; kurulum &ccedil;ekimi (mekan 
+vurgusu).41Kamera A&ccedil;&#305;lar&#305;: G&ouml;z hizas&#305; (tarafs&#305;zl&#305;k), d&uuml;&#351;&uuml;k 
+a&ccedil;&#305; (g&uuml;&ccedil;/heybet), y&uuml;ksek a&ccedil;&#305; (zay&#305;fl&#305;k/yaln&#305;zl&#305;k), 
+ku&#351; bak&#305;&#351;&#305;, Hollanda a&ccedil;&#305;s&#305; (dutch angle - gerilim).Alan Derinli&#287;i: 
+S&#305;&#287; alan derinli&#287;i (arka plan&#305; bulan&#305;kla&#351;t&#305;rarak &ouml;zneyi ay&#305;rma/bokeh), 
+derin odak (&ouml;n ve arka plan&#305;n tamamen net olmas&#305;), e&#287;ik kayd&#305;rma (tilt-shift - minyat&uuml;r 
+etkisi).41Ayd&#305;nlatma Kontrol&uuml;: Ortam&#305;n duygu durumu ayd&#305;nlatma ile manip&uuml;le 
+edilir.41Do&#287;al I&#351;&#305;k: Alt&#305;n saatler (s&#305;cak yanal &#305;&#351;&#305;k), mavi saatler (so&#287;uk 
+alacakaranl&#305;k), bulutlu (yumu&#351;ak, g&ouml;lgesiz dif&uuml;ze &#305;&#351;&#305;k), alacal&#305; 
+&#305;&#351;&#305;k (dappled light - yapraklar&#305;n aras&#305;ndan s&uuml;z&uuml;len).St&uuml;dyo ve Yapay 
+I&#351;&#305;k: Rembrandt ayd&#305;nlatmas&#305; (y&uuml;z&uuml;n bir taraf&#305;nda ters &uuml;&ccedil;gen 
+g&ouml;lge), kelebek ayd&#305;nlatma, tepe &#305;&#351;&#305;&#287;&#305;, hacimsel &#305;&#351;&#305;k (volumetric 
+lighting/tanr&#305; &#305;&#351;&#305;nlar&#305;).Renk ve Atmosfer Psikolojisi: Renk paletleri (sessiz/muted, 
+canl&#305;, pastel, monokromatik) ve renk derecelendirme terimleri (sinematik, kara film, &ccedil;apraz 
+i&#351;lemeli/cross-processed) sahnenin tonunu belirler.Kalite Modifikat&ouml;rlerinin Evrimi: Erken d&ouml;nem 
+modellerde kullan&#305;lan "masterpiece, best quality, 8k, trending on ArtStation" gibi kelimeler, Flux 2 ve Sora 2 
+gibi yeni nesil algoritmik mimarilerde tamamen gereksiz token israf&#305;na d&ouml;n&uuml;&#351;m&uuml;&#351;, hatta 
+modelin &ccedil;&#305;kt&#305;s&#305;n&#305; bozan bir plasebo etkisine indirgenmi&#351;tir. Ger&ccedil;ek kalite 
+tan&#305;m&#305;, art&#305;k fiziksel lens spesifikasyonlar&#305;nda ("Sony A7IV, 85mm lens, f/1.4") ve doku 
+tan&#305;mlamalar&#305;nda ("g&ouml;zenek detaylar&#305;", "f&#305;r&ccedil;alanm&#305;&#351; &ccedil;elik 
+mikrodokusu") yatmaktad&#305;r.2B. Zaman, Hareket ve Video AnatomisiDura&#287;an karelerden farkl&#305; olarak video 
+promptlar&#305;nda "zaman" ve "hareket" kontrol&uuml;, komut mimarisinin merkezine yerle&#351;ir.Fiillerin 
+G&ouml;rselle&#351;tirilmesi: Video promptlar&#305;nda soyut eylemler anla&#351;&#305;lamaz. Zarf ve s&#305;fatlardan 
+ziyade g&uuml;&ccedil;l&uuml; ve kesin fiziksel fiiller kullan&#305;lmal&#305;d&#305;r. "H&#305;zl&#305;ca hareket 
+eder" gibi bir ifade yerine "kald&#305;r&#305;ma do&#287;ru &uuml;&ccedil; ad&#305;m hafif tempoda ko&#351;ar ve aniden 
+durur" gibi &ouml;l&ccedil;&uuml;lebilir koreografik metinler &uuml;retilmelidir.38Kamera Hareket Terminolojisi: 
+Modelin kameray&#305; nas&#305;l fiziksel olarak hareket ettirece&#287;i veya merce&#287;i nas&#305;l 
+kullanaca&#287;&#305; kesinle&#351;tirilmelidir.Pan (kameran&#305;n sabit eksende sa&#287;a/sola d&ouml;nmesi), Tilt 
+(yukar&#305;/a&#351;a&#287;&#305; d&ouml;nmesi), Dolly/Tracking (kameran&#305;n fiziksel olarak ray &uuml;zerinde 
+ileri/geri veya yana kaymas&#305;), Zoom (kameran&#305;n sabit kal&#305;p merce&#287;in odak 
+uzakl&#305;&#287;&#305;n&#305;n de&#287;i&#351;mesi) komutlar&#305; birbirine 
+kar&#305;&#351;t&#305;r&#305;lmamal&#305;d&#305;r.41 Vin&ccedil; (crane) &ccedil;ekimleri veya 
+sars&#305;nt&#305;l&#305; el kameras&#305; (handheld) efektleri dinamizmi ayarlar.Zamansal (Temporal) Yap&#305;: 
+Geli&#351;mi&#351; modeller (Seedance 2.0, Kling 3.0), zaman damgal&#305; bloklar&#305; anlar. Eylemler kronolojik bir 
+s&#305;ra ile, [0-4 sn], [5-8 sn] gibi bloklara ayr&#305;larak sahne ge&ccedil;i&#351;leri y&ouml;netilir.2C. Negatif 
+Prompt ve D&#305;&#351;lama StratejileriNegatif prompt kullan&#305;m&#305;, istenmeyen unsurlar&#305;n (ekstra uzuvlar, 
+bozuk metinler, filigranlar) &uuml;retimden &ccedil;&#305;kar&#305;lmas&#305; i&ccedil;in geli&#351;tirilmi&#351;tir. 
+Ancak yeni nesil Flow Matching mimarileri (&ouml;rne&#287;in Flux 2), geleneksel negatif komutlar&#305; desteklemez; 
+model, reddedilen kelimeyi tam tersine odak noktas&#305; haline getirebilir.13 Bu nedenle evrensel kural, 
+d&#305;&#351;lamalar&#305;n "pozitif dil" ile yap&#305;lmas&#305;d&#305;r. "Eller olmas&#305;n" komutu yerine "eller 
+kadraj&#305;n d&#305;&#351;&#305;nda kal&#305;yor" gibi durum bildiren &ccedil;eviriler kullan&#305;lmal&#305;d&#305;r. 
+GPT Image-1 ve Seedream modellerinde ise API d&uuml;zeyinde negatif prompt parametresi hala g&uuml;venilir bir 
+filtredir.B&Ouml;L&Uuml;M 3: Kullan&#305;c&#305; Deneyimi (UX) ve Bili&#351;sel Rehberlik SistemiGeli&#351;tirilecek 
+uygulaman&#305;n (Prompt Generator) nihai ba&#351;ar&#305;s&#305;, B&ouml;l&uuml;m 1 ve 2'de detayland&#305;r&#305;lan 
+devasa teknik terminolojiyi ve model bazl&#305; matematiksel kurallar&#305; kullan&#305;c&#305;dan ne kadar zarif bir 
+&#351;ekilde gizleyebildi&#287;ine ba&#287;l&#305;d&#305;r. Kullan&#305;c&#305;lar&#305;n teknik terimleri ezberleme 
+zorunlulu&#287;unu (bili&#351;sel y&uuml;k/cognitive load) ortadan kald&#305;rmak i&ccedil;in stratejik bir mimari 
+&#351;artt&#305;r.3A. Karar Yorgunlu&#287;u ve Sihirbaz (Wizard) UI Yakla&#351;&#305;m&#305;Ayn&#305; anda onlarca 
+parametrenin, kayd&#305;rma &ccedil;ubuklar&#305;n&#305;n ve metin kutular&#305;n&#305;n sunuldu&#287;u aray&uuml;zler, 
+insan zihninde "Se&ccedil;im A&#351;&#305;r&#305; Y&uuml;klenmesi" (Choice Overload) ve Karar Yorgunlu&#287;u 
+yarat&#305;r.51 Geli&#351;tirilecek sistem, karma&#351;&#305;k s&uuml;reci do&#287;rusal, mant&#305;ksal ve 
+k&uuml;&ccedil;&uuml;k par&ccedil;alara b&ouml;len bir Sihirbaz Aray&uuml;z&uuml; (Wizard UI) 
+kullanmal&#305;d&#305;r.53 Bu yap&#305;, kullan&#305;c&#305;n&#305;n belle&#287;ini yormadan her sayfada tek bir odak 
+noktas&#305; sunarak s&uuml;reci y&ouml;netilebilir k&#305;lar.Sistem mimarisinde kullan&#305;c&#305;y&#305; ad&#305;m 
+ad&#305;m y&ouml;nlendiren bir ak&#305;&#351; tasarlanmal&#305;d&#305;r. Bu ak&#305;&#351;, insan zihninin 
+g&ouml;rselle&#351;tirme s&#305;ras&#305;na uygun olarak s&#305;ras&#305;yla Konu ve Fikir (Step 1), Ortam ve Zaman 
+(Step 2), Sanatsal Stil (Step 3), Kamera ve I&#351;&#305;k (Step 4) ve son olarak Model Se&ccedil;imi veya AI 
+Y&ouml;nlendirmesi (Step 5) ad&#305;mlar&#305;n&#305; i&ccedil;ermelidir. Nihai a&#351;amada sistem, bu 
+se&ccedil;imleri derleyerek arkada &ccedil;al&#305;&#351;an semantik motor arac&#305;l&#305;&#287;&#305;yla modele 
+&ouml;zel optimize edilmi&#351;, s&ouml;zdizimsel olarak kusursuz bir komut dizisi &uuml;retir. Karar felcini 
+&ouml;nlemek i&ccedil;in her ad&#305;mda kullan&#305;c&#305;ya, g&ouml;rsel &ouml;rneklerle desteklenmi&#351; en fazla 
+&uuml;&ccedil; veya d&ouml;rt ana se&ccedil;enek sunulmal&#305;, esneklik arayanlar i&ccedil;in bir "Kendi c&uuml;mleni 
+yaz" alan&#305; b&#305;rak&#305;lmal&#305;d&#305;r.3B. Otomatik &Ccedil;eviri ve Geri Bildirim 
+D&ouml;ng&uuml;s&uuml;&#304;nsanlar sanatsal isteklerini "Daha s&#305;cak ve nostaljik bir hava olsun" &#351;eklinde 
+ifade eder. Uygulaman&#305;n en g&uuml;&ccedil;l&uuml; yan&#305;, bu do&#287;al dili yapay zeka ajanlar&#305; 
+vas&#305;tas&#305;yla teknik parametrelere &ccedil;evirmesi olacakt&#305;r. "Nostaljik ve s&#305;cak" ifadesi, arka 
+planda se&ccedil;ilen modele g&ouml;re "warm backlight, golden hour, deep shadows, vintage color grading, shot on 35mm 
+film" gibi kesin komutlara d&ouml;n&uuml;&#351;t&uuml;r&uuml;lmelidir.Bir g&ouml;rsel &uuml;retildikten sonra iterasyn 
+s&uuml;reci, "Bu g&ouml;rsel iyi mi?" gibi kapal&#305; u&ccedil;lu sorular yerine boyut bazl&#305; 
+y&ouml;nlendirmelerle yap&#305;lmal&#305;d&#305;r. Sistem, "I&#351;&#305;&#287;&#305; dramatikle&#351;tirmek mi 
+istersin, yoksa karakterin ya&#351;&#305;n&#305; m&#305; de&#287;i&#351;tirelim?" gibi parametre bazl&#305; A/B 
+se&ccedil;enekleri sunarak, kullan&#305;c&#305;n&#305;n deneme-yan&#305;lma (trial and error) s&uuml;recinde 
+kaybolmas&#305;n&#305; engeller. Flux 2 gibi modellerde d&uuml;zenleme yap&#305;l&#305;rken, 
+kullan&#305;c&#305;n&#305;n y&ouml;nlendirmesi "neyin de&#287;i&#351;ece&#287;i" &uuml;zerine tekil bir talimata ("arka 
+plan&#305; neon &#351;ehre &ccedil;evir") indirgenerek modele iletilir.163C. Sistem &#304;&ccedil;i Destekleyici ve 
+Y&ouml;nlendirici &Ouml;zelliklerUygulaman&#305;n zenginli&#287;ini art&#305;racak ak&#305;ll&#305; &ouml;zellikler 
+&#351;unlar&#305; i&ccedil;ermelidir:Model Bazl&#305; Dinamik Varsay&#305;lanlar: Kullan&#305;c&#305; vekt&ouml;r 
+tasar&#305;m veya logo &uuml;retmek istiyorsa, sistem otomatik olarak Recraft V3'&uuml; atamal&#305; ve promptun 
+yap&#305;s&#305;na gerekli stil tokenlerini g&ouml;r&uuml;nmez bir &#351;ekilde eklemelidir. Tipografi i&ccedil;eren 
+bir afi&#351; tasar&#305;m&#305; hedefleniyorsa, Ideogram 3 devreye girmeli ve kullan&#305;c&#305;n&#305;n girdi&#287;i 
+metinleri otomatik olarak t&#305;rnak i&ccedil;ine alarak hiyerar&#351;ik yap&#305;land&#305;rmay&#305; 
+sa&#287;lamal&#305;d&#305;r.Video &#304;&ccedil;in Zaman-Vuru&#351; (Timeline) E&#351;leme: Video modelleri (Seedance, 
+Sora 2) i&ccedil;in aray&uuml;zde bir zaman &ccedil;izelgesi sunularak, eylemlerin s&uuml;r&uuml;kle-b&#305;rak 
+y&ouml;ntemiyle 0-4 saniye, 5-8 saniye gibi bloklara yerle&#351;tirilmesi ve arkada bu bloklar&#305;n kronolojik bir 
+metne d&ouml;k&uuml;lmesi sa&#287;lanmal&#305;d&#305;r.G&ouml;rsel S&ouml;zl&uuml;k ve 
+Kar&#351;&#305;la&#351;t&#305;rma: Kullan&#305;c&#305;lar&#305;n "bokeh" ile "derin odak" veya "so&#287;uk 
+&#305;&#351;&#305;k" ile "s&#305;cak &#305;&#351;&#305;k" aras&#305;ndaki fark&#305; anlamas&#305; i&ccedil;in teknik 
+terimler, &uuml;zerine gelindi&#287;inde (hover) k&uuml;&ccedil;&uuml;k &ouml;rnek g&ouml;rsellerle 
+a&ccedil;&#305;klanmal&#305;d&#305;r.B&Ouml;L&Uuml;M 4: Rekabet ve Pazar Dinamikleri Analizi&#304;ki bin yirmi 
+alt&#305; itibar&#305;yla prompt m&uuml;hendisli&#287;i ve g&ouml;rsel &uuml;retim ara&ccedil;lar&#305; pazar&#305;, 
+birbirinden farkl&#305; kullan&#305;c&#305; ihtiya&ccedil;lar&#305;n&#305; hedefleyen &uuml;&ccedil; ana kategoriye 
+ayr&#305;lm&#305;&#351;t&#305;r.23 Bu pazar analizi, geli&#351;tirilecek uygulaman&#305;n bo&#351;lu&#287;u nas&#305;l 
+dolduraca&#287;&#305;n&#305; netle&#351;tirmektedir.Pasif Prompt K&uuml;t&uuml;phaneleri (Lexica, PromptHero, 
+PromptBase): Bu platformlar devasa birer galeri g&ouml;revi g&ouml;r&uuml;r. Kullan&#305;c&#305; be&#287;endi&#287;i 
+g&ouml;rselin alt&#305;ndaki promptu kopyalay&#305;p kendi modeline yap&#305;&#351;t&#305;r&#305;r. Ancak bu 
+kopyala-yap&#305;&#351;t&#305;r mimarisi, modellerin yeni s&uuml;r&uuml;mleri (&ouml;rne&#287;in Midjourney V6 veya 
+Flux 2) &ccedil;&#305;kt&#305;&#287;&#305;nda eski promptlar&#305;n tamamen i&#351;levsiz kalmas&#305; (prompt decay) 
+sorununu ya&#351;at&#305;r. Rehberlik veya iterasyon imkan&#305; sunmazlar.Platform &#304;&ccedil;i Karma&#351;&#305;k 
+Jenerat&ouml;rler (Leonardo AI vb.): Bu ara&ccedil;lar do&#287;rudan modele entegre olsalar da, st&uuml;dyo 
+d&uuml;zeyinde karma&#351;&#305;k bir aray&uuml;ze sahiptirler. Kullan&#305;c&#305; "CFG &Ouml;l&ccedil;e&#287;i", 
+"Ad&#305;m Say&#305;s&#305;" veya "Simya (Alchemy) Modifikat&ouml;rleri" gibi ne anlama geldi&#287;i belli olmayan 
+d&uuml;&#287;melerle ba&#351; ba&#351;a b&#305;rak&#305;l&#305;r.5 Uzmanlar i&ccedil;in m&uuml;kemmel olsalar da 
+ortalama kullan&#305;c&#305; i&ccedil;in y&uuml;ksek bir giri&#351; bariyeri yarat&#305;rlar.Genel Ama&ccedil;l&#305; 
+Sohbet Botlar&#305; (ChatGPT, Claude): &Ccedil;ok serbest bir do&#287;al dil aray&uuml;z&uuml;ne sahip 
+olduklar&#305;ndan, kullan&#305;c&#305; "G&uuml;zel bir ofis videosu yap" gibi s&#305;&#287; komutlar vererek modelin 
+potansiyelinin &ccedil;ok k&uuml;&ccedil;&uuml;k bir k&#305;sm&#305;n&#305; kullan&#305;r; sistem, eksik kalan 
+y&uuml;zlerce fiziksel ve &ccedil;evresel parametreyi kendi varsay&#305;lanlar&#305;na g&ouml;re rastgele 
+doldurur.Stratejik Konumland&#305;rma ve Fark Yaratma:Geli&#351;tirilecek uygulama, Lexica'n&#305;n g&ouml;rsel 
+ke&#351;if kolayl&#305;&#287;&#305;n&#305;, Leonardo'nun alt&#305;ndaki &uuml;retim g&uuml;c&uuml;n&uuml; ve Claude'un 
+dilsel rehberli&#287;ini Sihirbaz Aray&uuml;z&uuml; ile tek bir potada eritecektir. "Sadece vizyonunu belirt, biz hangi 
+modelin ne t&uuml;r bir teknik s&ouml;zdizimine (JSON, edebi metin, kronolojik storyboard) ihtiyac&#305; oldu&#287;unu 
+bilip senin ad&#305;na kodlar&#305;z" vaadi, ara&ccedil; setinin temel rekabet avantaj&#305;n&#305; 
+olu&#351;turmaktad&#305;r.B&Ouml;L&Uuml;M 5: Test Edilmi&#351;, Modele &Ouml;zel Algoritmik Prompt 
+&#350;emalar&#305;Sistemin "Kural Motoruna" (Rule Engine) entegre edilecek, farkl&#305; kullan&#305;m senaryolar&#305; 
+ve modeller i&ccedil;in &ouml;zel olarak derlenmi&#351;, algoritmik yap&#305;lar&#305; test edilmi&#351; evrensel 
+&#351;ablonlar a&#351;a&#287;&#305;da form&uuml;le edilmi&#351;tir. Ajan, kullan&#305;c&#305;dan ald&#305;&#287;&#305; 
+verileri bu bo&#351;luklara dolduracakt&#305;r.5A. G&ouml;rsel &Uuml;retim &#350;emalar&#305;1. Sinematik Portre ve 
+Karakter &#350;emas&#305; (&Ouml;zellikle Flux 2 ve Nano Banana Pro Optimizasyonu):Ak&#305;c&#305;, romanvari bir dil 
+ve fiziksel kamera parametreleri gerektirir.Format: [Medium: A cinematic portrait photograph of], [Clothing: wearing a 
+heavy wool turtleneck], [Action/Expression: looking thoughtfully out a rain-streaked window].... [Mood/Color: 
+Melancholic, muted color palette with dominant cool blues and greys].2. Ticari &Uuml;r&uuml;n ve Marka &#350;emas&#305; 
+(Seedream 5.0 ve Recraft V3 Optimizasyonu):Kesin &#305;&#351;&#305;kland&#305;rma, HEX renk kodlar&#305; ve mikro doku 
+tan&#305;mlar&#305; gerektirir.Format: ......3. Tipografi, Grafik Tasar&#305;m ve Poster &#350;emas&#305; (Ideogram 3 
+Optimizasyonu):Hiyerar&#351;ik d&uuml;zen, kesin t&#305;rnak i&#351;areti kullan&#305;m&#305; ve negatif "do-not-do" 
+k&#305;s&#305;tlamalar&#305; gerektirir.Format: ... [Layout: Asymmetrical grid, generous negative space].. No distorted 
+text, keep letters flat and straight.5B. Video &Uuml;retim &#350;emalar&#305;1. Tek Planl&#305;k Uzaysal Eylem 
+&#350;emas&#305; (Sora 2 ve Veo 3.1 Optimizasyonu):Kesin kamera a&ccedil;&#305;s&#305;, ritmik vuru&#351;lara 
+b&ouml;l&uuml;nm&uuml;&#351; eylem ve &ccedil;evresel sim&uuml;lasyon gerektirir.Format: .......2. 
+&Ccedil;oklu-&Ccedil;ekim (Multi-Shot) ve Diyalog &#350;emas&#305; (Kling 3.0 ve Seedance 2.0 Optimizasyonu):Zaman 
+damgal&#305; bloklar, kesme teknikleri ve sesli diyalog i&#351;aretleyicileri gerektirir.Format: . [0-5s]. The seasoned 
+detective leans over the metal table.. [5-10s]. The suspect nervously wipes sweat from his forehead, looking away.. 
+[10-15s]. The detective slams a folder onto the table. Dust rises under the swinging ceiling bulb.3. Dinamik Kamera 
+Kilitli Aksiyon &#350;emas&#305; (Higgsfield ve MiniMax Optimizasyonu):&Ouml;nceden tan&#305;ml&#305; donan&#305;msal 
+kamera hareketi ve bu harekete uyumlu &ccedil;evresel eylem gerektirir.Format: ... [Lighting: Neon reflections 
+streaking across the wet asphalt]..Sonu&ccedil; ve Stratejik Eylem Plan&#305;&#304;ki bin yirmi alt&#305; 
+y&#305;l&#305; yapay zeka jenerat&ouml;rleri, prompt m&uuml;hendisli&#287;inde "sihirli kelimeler" ve rastgele 
+etiketler d&ouml;nemini kesin olarak kapatm&#305;&#351;; yerini mimari, sinematografik ve s&ouml;zdizimsel kurallara 
+s&#305;k&#305; s&#305;k&#305;ya ba&#287;l&#305; bir m&uuml;hendislik disiplinine b&#305;rakm&#305;&#351;t&#305;r. 
+Kullan&#305;c&#305;lar&#305;n s&#305;radan do&#287;al dillerini, Flow Matching mimarilerinin edebi yap&#305;s&#305;na, 
+otoregresif sistemlerin nesne yerle&#351;im mant&#305;&#287;&#305;na veya &ccedil;oklu-modal video sistemlerinin zaman 
+damgal&#305; senaryolar&#305;na d&ouml;n&uuml;&#351;t&uuml;rmek uzmanl&#305;k gerektirir.Geli&#351;tirilecek Prompt 
+Generator projesinin &ccedil;ekirdek de&#287;eri, bu derin algoritmik karma&#351;&#305;kl&#305;&#287;&#305; ne kadar 
+zarif bir &#351;ekilde gizleyebildi&#287;ine ba&#287;l&#305;d&#305;r. Sistemin mimarisi, Model Spesifik 
+Y&ouml;nlendirme &uuml;zerine in&#351;a edilmelidir. Kullan&#305;c&#305;, aray&uuml;zde karar yorgunlu&#287;unu 
+&ouml;nleyen Bili&#351;sel Sihirbaz (Wizard UI) e&#351;li&#287;inde sadece sanatsal niyetini ve ne g&ouml;rmek 
+istedi&#287;ini belirtecektir. Sistem ise arkada bir sanat y&ouml;netmeni gibi &ccedil;al&#305;&#351;arak; 
+vekt&ouml;rel bir tasar&#305;m isteniyorsa Recraft V3'&uuml;n stil tokenlerini kodlayacak, e&#351; zamanl&#305; sesli 
+bir kurgu dizisi isteniyorsa Seedance 2.0'&#305;n zamansal bloklar&#305;n&#305; derleyecek, fotoger&ccedil;ek&ccedil;i 
+bir portre isteniyorsa Flux 2'nin lens fizi&#287;ini do&#287;al bir d&uuml;zyaz&#305;ya entegre edecektir. Bu stratejik 
+yakla&#351;&#305;m, kullan&#305;c&#305;lar&#305;n teknik bariyerlere tak&#305;lmadan do&#287;rudan 
+yarat&#305;c&#305;l&#305;&#287;a odaklanmas&#305;n&#305; sa&#287;layarak, mevcut pazar ara&ccedil;lar&#305;na 
+k&#305;yasla tart&#305;&#351;mas&#305;z bir rekabet avantaj&#305; ve p&uuml;r&uuml;zs&uuml;z bir kullan&#305;c&#305; 
+deneyimi yaratacakt&#305;r.Al&#305;nt&#305;lanan &ccedil;al&#305;&#351;malarGemini Image &ndash; Nano Banana - Google 
+DeepMind, eri&#351;im tarihi Mart 6, 2026, https://deepmind.google/models/gemini-image/6 Best Nano Banana 2 Prompts in 
+2026: How to Generate Smarter AI Images, eri&#351;im tarihi Mart 6, 2026, 
+https://www.eweek.com/news/best-nano-banana-2-prompts-gemini-3-1-flash-image/Nano-Banana Pro: Prompting Guide & 
+Strategies - DEV Community, eri&#351;im tarihi Mart 6, 2026, 
+https://dev.to/googleai/nano-banana-pro-prompting-guide-strategies-1h9nNano Banana 2 in Lovart: Surgical AI Image 
+Editing for Agencies, eri&#351;im tarihi Mart 6, 2026, 
+https://www.lovart.ai/blog/nano-banana-2-gemini-image-editor-lovartNano Banana Prompt Guide: How to Prompt for Best 
+Results | Leonardo.Ai, eri&#351;im tarihi Mart 6, 2026, https://leonardo.ai/news/nano-banana-prompt-guide/Seedream 5.0 
+Lite Prompting Guide - fal.ai Blog, eri&#351;im tarihi Mart 6, 2026, 
+https://blog.fal.ai/seedream-5-0-lite-prompting-guide/Seedream 5.0 is here: full breakdown, prompting tricks, and 
+comparison - Reddit, eri&#351;im tarihi Mart 6, 2026, 
+https://www.reddit.com/r/fal/comments/1rdqxsi/seedream_50_is_here_full_breakdown_prompting/Seedream 5.0-Preview 
+Complete Guide: Intelligent Image Generation | WaveSpeedAI Blog, eri&#351;im tarihi Mart 6, 2026, 
+https://wavespeed.ai/blog/posts/seedream-5-0-preview-complete-guide-intelligent-image-generation/How to prompt Seedream 
+5.0 &ndash; Replicate blog, eri&#351;im tarihi Mart 6, 2026, https://replicate.com/blog/how-to-prompt-seedream-5Imagen 
+4 is now available in the Gemini API and Google AI Studio, eri&#351;im tarihi Mart 6, 2026, 
+https://developers.googleblog.com/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/Imagen &mdash; Google 
+DeepMind, eri&#351;im tarihi Mart 6, 2026, https://deepmind.google/models/imagen/Flux 2 Complete Guide: Black Forest 
+Labs' Photorealistic AI Image Models | WaveSpeedAI Blog, eri&#351;im tarihi Mart 6, 2026, 
+https://wavespeed.ai/blog/posts/flux-2-complete-guide-2026/FLUX.2 Prompting Guide: Best FLUX.2 Prompts | LTX Studio, 
+eri&#351;im tarihi Mart 6, 2026, https://ltx.studio/blog/flux-prompting-guideFlux 2 [klein] Prompt Guide: Sub-Second 
+Image Generation - Fal.ai, eri&#351;im tarihi Mart 6, 2026, 
+https://fal.ai/learn/devs/flux-2-klein-prompt-guidePrompting Guide - FLUX.2 [klein] - BFL Documentation! - Black Forest 
+Labs, eri&#351;im tarihi Mart 6, 2026, https://docs.bfl.ml/guides/prompting_guide_flux2_kleinBFL's Flux.2 Klein 
+Official Prompting Guide is Misleading : r/StableDiffusion - Reddit, eri&#351;im tarihi Mart 6, 2026, 
+https://www.reddit.com/r/StableDiffusion/comments/1qlihrk/bfls_flux2_klein_official_prompting_guide_is/What Is GPT 
+Image 1? OpenAI's Native Image Generation Model | MindStudio, eri&#351;im tarihi Mart 6, 2026, 
+https://www.mindstudio.ai/blog/what-is-gpt-image-1-openai/Image generation | OpenAI API, eri&#351;im tarihi Mart 6, 
+2026, https://developers.openai.com/api/docs/guides/image-generation/Image generation not following aspect ratio of the 
+reference image - Use cases and examples - OpenAI Developer Community, eri&#351;im tarihi Mart 6, 2026, 
+https://community.openai.com/t/image-generation-not-following-aspect-ratio-of-the-reference-image/1245684Recraft V3 | 
+Text to Image API - Replicate, eri&#351;im tarihi Mart 6, 2026, https://replicate.com/recraft-ai/recraft-v3How To 
+Create SOTA Image Generation with Text: Recraft's ML Team Insights, eri&#351;im tarihi Mart 6, 2026, 
+https://www.recraft.ai/blog/how-to-create-sota-image-generation-with-text-recrafts-ml-team-insightsRecraft V3: how to 
+use it on Swiftask?, eri&#351;im tarihi Mart 6, 2026, https://www.swiftask.ai/ai/recraftv3Based on your experience, 
+which AI tool should I subscribe to? : r/aiArt - Reddit, eri&#351;im tarihi Mart 6, 2026, 
+https://www.reddit.com/r/aiArt/comments/1ibb0rs/based_on_your_experience_which_ai_tool_should_i/Ideogram v3 &mdash; 
+Prompting Guide & Examples | Promptomania, eri&#351;im tarihi Mart 6, 2026, 
+https://promptomania.com/models/ideogram/ideogram-v3How to Use Ideogram for Text&#8209;Heavy Graphic Designs: Best 
+Prompts for Posters and Ads, eri&#351;im tarihi Mart 6, 2026, 
+https://sider.ai/blog/ai-tools/how-to-use-ideogram-for-text-heavy-graphic-designs-best-prompts-for-posters-and-adsHow 
+to Access Kling 3.0 API? : r/comfyui - Reddit, eri&#351;im tarihi Mart 6, 2026, 
+https://www.reddit.com/r/comfyui/comments/1r4sh9x/how_to_access_kling_30_api/Kling VIDEO 3.0 Model User Guide - Kling 
+AI, eri&#351;im tarihi Mart 6, 2026, https://app.klingai.com/global/quickstart/klingai-video-3-model-user-guideKling 
+3.0 vs Sora 2 vs VEO 3.1: AI Video Generator Battle (Clear Winner), eri&#351;im tarihi Mart 6, 2026, 
+https://www.youtube.com/watch?v=bTpQpwjCmhQKling 3.0 Prompting Guide: Get Better Videos in 5 Steps - VEED, eri&#351;im 
+tarihi Mart 6, 2026, https://www.veed.io/learn/kling-3-0-promptsWhat Is Seedance 2.0? A Guide With Examples - DataCamp, 
+eri&#351;im tarihi Mart 6, 2026, https://www.datacamp.com/pt/blog/seedance-2-0Kling 3.0 vs Seedance 2.0 vs Sora 2: Best 
+AI Video API for Developers (2026) - ModelsLab, eri&#351;im tarihi Mart 6, 2026, 
+https://modelslab.com/blog/video-generation/kling-3-vs-seedance-2-sora-2-ai-video-api-comparison-2026What is Seedance 
+2.0? [Features, Architecture, and More] - Analytics Vidhya, eri&#351;im tarihi Mart 6, 2026, 
+https://www.analyticsvidhya.com/blog/2026/02/what-is-seedance-2-0/Seedance 2.0 Prompt Guide: From Zero to Cinematic AI 
+Videos (5 Copy-Paste Prompts), eri&#351;im tarihi Mart 6, 2026, 
+https://www.glbgpt.com/hub/seedance-2-0-prompt-guide/How To Use Seedance 2.0? | ImagineArt, eri&#351;im tarihi Mart 6, 
+2026, https://www.imagine.art/blogs/how-to-use-seedance-2-0Seedance 2.0 Complete Guide: ByteDance's Revolutionary AI 
+Video Generator (2026), eri&#351;im tarihi Mart 6, 2026, 
+https://www.nxcode.io/resources/news/seedance-2-0-complete-guide-ai-video-generation-2026Sharing a few Seedance 2.0 
+prompt examples : r/generativeAI - Reddit, eri&#351;im tarihi Mart 6, 2026, 
+https://www.reddit.com/r/generativeAI/comments/1rgt5iu/sharing_a_few_seedance_20_prompt_examples/How to Prompt Sora 2: 
+A Practical, Business-ready Guide - The Visla Blog, eri&#351;im tarihi Mart 6, 2026, 
+https://www.visla.us/blog/guides/how-to-prompt-sora-2/Sora 2 Prompting Guide - OpenAI for developers, eri&#351;im 
+tarihi Mart 6, 2026, https://developers.openai.com/cookbook/examples/sora/sora2_prompting_guide/Sora 2 Official 
+Prompting Guide: Master the Basics in 10 Minutes, eri&#351;im tarihi Mart 6, 2026, 
+https://help.apiyi.com/sora-2-prompt-basic-guide-10min-202510.htmlSora 2 Prompting Guide, eri&#351;im tarihi Mart 6, 
+2026, https://soratoai.com/en/docs/guides/sora-2-prompting-guide/Veo on Vertex AI video generation prompt guide | 
+Generative AI on ..., eri&#351;im tarihi Mart 6, 2026, 
+https://cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guideVeo on Vertex AI video generation 
+prompt guide - Google Cloud Documentation, eri&#351;im tarihi Mart 6, 2026, 
+https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guideUltimate prompting guide for Veo 
+3.1 | Google Cloud Blog, eri&#351;im tarihi Mart 6, 2026, 
+https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1Wan 2.5 Video Prompt 
+Guide - AKOOL, eri&#351;im tarihi Mart 6, 2026, https://akool.com/blog-posts/wan-2-5-video-prompt-guideWhat Is Wan 2.5 
+Image? Open-Source AI Image Generation Explained | MindStudio, eri&#351;im tarihi Mart 6, 2026, 
+https://www.mindstudio.ai/blog/what-is-wan-2-5-imagePrompt Engineering for Video Models - MiniMax 
+&#24320;&#25918;&#24179;&#21488;&#25991;&#26723;&#20013;&#24515;, eri&#351;im tarihi Mart 6, 2026, 
+https://platform.minimaxi.com/docs/guides/prompt/video-prompt-guideUltimate Guide to Cinematic AI Video Prompts in 
+Hailuo - YouTube, eri&#351;im tarihi Mart 6, 2026, https://www.youtube.com/watch?v=fgZXMKHv78QCreate Cinematic Ai 
+Videos for FREE with Minimax! - Prompts & Tutorial - YouTube, eri&#351;im tarihi Mart 6, 2026, 
+https://www.youtube.com/watch?v=dwpEP4TY1MEHiggsfield Camera Controls &ndash; 50+ Cinematic AI-Motion Presets, 
+eri&#351;im tarihi Mart 6, 2026, https://higgsfield.ai/camera-controlsHiggsfield WAN Camera Control: Your Guide to 
+Cinematic Motion, eri&#351;im tarihi Mart 6, 2026, 
+https://higgsfield.ai/blog/WAN-AI-Camera-Control-Your-Guide-to-Cinematic-MotionThe Power of Suggestion: Why Subtle Cues 
+Create Better Conversations - Gorgias, eri&#351;im tarihi Mart 6, 2026, 
+https://www.gorgias.com/blog/the-power-of-suggestionAvoiding Decision Fatigue with AI-Assisted Decision-Making | 
+Request PDF - ResearchGate, eri&#351;im tarihi Mart 6, 2026, 
+https://www.researchgate.net/publication/381640911_Avoiding_Decision_Fatigue_with_AI-Assisted_Decision-MakingWizard UI 
+Pattern Explained: When to Use It and How to Get It Right - Eleken, eri&#351;im tarihi Mart 6, 2026, 
+https://www.eleken.co/blog-posts/wizard-ui-pattern-explainedWizards: Definition and Design Recommendations - NN/G, 
+eri&#351;im tarihi Mart 6, 2026, https://nngroup.com/articles/wizards/I Tested 5 AI Prompt Libraries For 30 Days. 
+Here's What Worked. | by Jess - Medium, eri&#351;im tarihi Mart 6, 2026, 
+https://medium.com/design-bootcamp/i-tested-5-ai-prompt-libraries-for-30-days-heres-what-worked-f6efa8dc1b00Lexica vs 
+Leonardo: Which AI Image Generation Tool is Better? | @adilsherdotpro, eri&#351;im tarihi Mart 6, 2026, 
+https://www.youtube.com/watch?v=OzgSQFTQXM0How to Write Effective AI Image Prompts | Leonardo.Ai, eri&#351;im tarihi 
+Mart 6, 2026, https://leonardo.ai/news/ai-image-prompts/

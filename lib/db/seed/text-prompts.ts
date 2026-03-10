@@ -31,6 +31,9 @@ Respond in structured Markdown with:
     tags: ["architecture", "microservices", "migration", "gpt-5.4"],
     quality: 0.97,
     source: "curated",
+    domain: "general",
+    styleSet: "structured",
+    description: "Monolitten mikroservislere geçiş stratejisi, CO-STAR framework, Mermaid diagram",
   },
   {
     category: "text",
@@ -63,6 +66,9 @@ Think through each step carefully. Show your working for the complexity analysis
     tags: ["algorithm", "optimization", "reasoning", "competitive-programming", "gpt-5.4-thinking"],
     quality: 0.96,
     source: "curated",
+    domain: "general",
+    styleSet: "structured",
+    description: "TSP optimizasyon problemi, bitmask DP yaklaşımı, Python implementasyonu",
   },
 
   // ─── Claude ──────────────────────────────────────────────────
@@ -96,6 +102,9 @@ Output: JWT access token (15min) and refresh token (7d)
     tags: ["api-docs", "technical-writing", "authentication", "claude"],
     quality: 0.96,
     source: "curated",
+    domain: "general",
+    styleSet: "structured",
+    description: "REST API auth endpoint dokümantasyonu, OpenAPI 3.0 formatında",
   },
   {
     category: "text",
@@ -129,6 +138,9 @@ Structured report with:
     tags: ["security", "audit", "soc2", "owasp", "claude-opus"],
     quality: 0.98,
     source: "curated",
+    domain: "general",
+    styleSet: "structured",
+    description: "SOC 2 güvenlik denetimi, OWASP Top 10 uyumluluk checklist",
   },
 
   // ─── GPT-4o ──────────────────────────────────────────────────
@@ -161,6 +173,9 @@ Analyze the provided sales data and generate a comprehensive monthly report.
     tags: ["data-analysis", "e-commerce", "report", "gpt-4o"],
     quality: 0.93,
     source: "curated",
+    domain: "e-commerce",
+    styleSet: "structured",
+    description: "E-ticaret aylık satış raporu, KPI analizi ve aksiyon önerileri",
   },
 
   // ─── Gemini ──────────────────────────────────────────────────
@@ -187,6 +202,9 @@ This is for a weekly research digest newsletter targeting senior researchers in 
     tags: ["research", "academic", "summary", "gemini"],
     quality: 0.91,
     source: "curated",
+    domain: "general",
+    styleSet: "structured",
+    description: "Akademik makale özeti, araştırma digest newsletter formatında",
   },
 
   // ─── Kimi K2.5 ───────────────────────────────────────────────
@@ -216,5 +234,104 @@ Markdown格式，包含翻译正文和术语对照表`,
     tags: ["translation", "chinese", "technical", "bilingual", "kimi"],
     quality: 0.90,
     source: "curated",
+    domain: "general",
+    styleSet: "structured",
+    description: "Teknik doküman İngilizce-Çince çeviri, terim tablosu ile",
+  },
+
+  // ─── GPT-5.4 Pro ──────────────────────────────────────────────
+  {
+    category: "text",
+    targetModel: "gpt-5.4-pro",
+    prompt: `## Role
+You are a constitutional law expert and ethicist specializing in AI governance.
+
+## Task
+Draft a comprehensive policy framework for responsible AI deployment in healthcare settings.
+
+## Requirements
+1. Define risk categories for medical AI systems (diagnostic, treatment recommendation, administrative)
+2. Establish testing and validation requirements per risk category
+3. Create transparency obligations (explainability requirements for clinicians and patients)
+4. Design incident reporting and response protocols
+5. Address liability allocation between AI vendor, healthcare provider, and practitioner
+6. Include equity auditing requirements (bias testing across demographics)
+
+## Constraints
+- Must align with EU AI Act and FDA guidance on AI/ML-based SaMD
+- Consider HIPAA implications for training data
+- Balance innovation enablement with patient safety
+- Include enforcement mechanisms
+
+## Output Format
+Policy document with numbered sections, each containing:
+- Policy statement
+- Rationale
+- Implementation guidance
+- Compliance metrics`,
+    tags: ["policy", "healthcare", "ai-governance", "legal", "gpt-5.4-pro"],
+    quality: 0.98,
+    source: "curated",
+    domain: "general",
+    styleSet: "structured",
+    description: "Sağlık AI politika çerçevesi, EU AI Act ve FDA uyumlu",
+  },
+
+  // ─── Qwen ────────────────────────────────────────────────────
+  {
+    category: "text",
+    targetModel: "qwen",
+    prompt: `## Role
+You are a multilingual content strategist specializing in global market expansion.
+
+## Task
+Create a localization strategy guide for launching a SaaS product in 5 new markets: Japan, Brazil, Germany, India, and South Korea.
+
+## Steps
+1. For each market, analyze: language nuances, cultural preferences, competitive landscape
+2. Identify localization priorities (UI text, documentation, marketing materials)
+3. Recommend translation vs transcreation decisions per content type
+4. Create a quality assurance checklist for each locale
+5. Estimate resource requirements (translators, reviewers, timeline)
+
+## Output Format
+- Market analysis table (5 rows x key metrics)
+- Priority matrix per market
+- Resource estimation spreadsheet format
+- Timeline (Gantt-style)`,
+    tags: ["localization", "global", "saas", "multilingual", "qwen"],
+    quality: 0.89,
+    source: "curated",
+    domain: "e-commerce",
+    styleSet: "structured",
+    description: "SaaS ürünü 5 pazarlık lokalizasyon stratejisi",
+  },
+
+  // ─── Claude Sonnet — Creative writing ─────────────────────────
+  {
+    category: "text",
+    targetModel: "claude-sonnet",
+    prompt: `<role>You are an award-winning fiction editor with expertise in narrative structure and voice development.</role>
+
+<context>I'm writing a literary fiction novel set in a small fishing village in Portugal. The protagonist is a 65-year-old retired lighthouse keeper who discovers old letters hidden in the lighthouse walls.</context>
+
+<task>Help me craft the opening chapter (2000 words) that:
+1. Establishes the setting through sensory details (sound of waves, smell of salt, feel of weathered stone)
+2. Introduces the protagonist through action, not exposition
+3. Creates a sense of mystery with the discovery of the first letter
+4. Sets a contemplative, slightly melancholic tone</task>
+
+<constraints>
+- Show, don't tell — no info dumps about backstory
+- Use present tense for immediacy
+- Include at least one Portuguese phrase naturally woven in
+- End the chapter on a hook that makes the reader want to continue
+</constraints>`,
+    tags: ["fiction", "creative-writing", "literary", "novel", "claude-sonnet"],
+    quality: 0.95,
+    source: "curated",
+    domain: "general",
+    styleSet: "freeform",
+    description: "Portekiz balıkçı köyü temalı edebi roman açılış bölümü",
   },
 ];

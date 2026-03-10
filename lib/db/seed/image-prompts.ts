@@ -7,6 +7,9 @@ export const imagePromptsSeed = [
     tags: ["cafe", "cats", "cozy", "illustration", "warm"],
     quality: 0.92,
     source: "curated",
+    domain: "general",
+    styleSet: "watercolor",
+    description: "Bohemian kedi kafe iç mekan illüstrasyonu, sıcak tonlar ve suluboya doku",
   },
   {
     category: "image",
@@ -15,6 +18,9 @@ export const imagePromptsSeed = [
     tags: ["landscape", "vector", "minimalist", "sunset", "geometric"],
     quality: 0.89,
     source: "curated",
+    domain: "general",
+    styleSet: "vector",
+    description: "Minimalist dağ manzarası vektör illüstrasyon, logo/poster uyumlu",
   },
   {
     category: "image",
@@ -23,6 +29,9 @@ export const imagePromptsSeed = [
     tags: ["coffee", "interior", "realistic", "warm", "lifestyle"],
     quality: 0.91,
     source: "curated",
+    domain: "e-commerce",
+    styleSet: "photorealistic",
+    description: "Artisan kahve dükkanı iç mekan, sıcak tonlarda gerçekçi fotoğraf",
   },
   {
     category: "image",
@@ -31,6 +40,9 @@ export const imagePromptsSeed = [
     tags: ["icon", "weather", "vector", "flat-design", "ui"],
     quality: 0.93,
     source: "curated",
+    domain: "ui-design",
+    styleSet: "vector",
+    description: "12 parçalık minimalist hava durumu ikon seti, SaaS tarzı flat design",
   },
 
   // ─── Lovart ───────────────────────────────────────────────────
@@ -41,6 +53,9 @@ export const imagePromptsSeed = [
     tags: ["portrait", "realistic", "craftsman", "dramatic", "pottery"],
     quality: 0.95,
     source: "curated",
+    domain: "photography",
+    styleSet: "photorealistic",
+    description: "Yaşlı Japon zanaatkar portresi, dramatik aydınlatma ile hiper-gerçekçi",
   },
   {
     category: "image",
@@ -49,6 +64,9 @@ export const imagePromptsSeed = [
     tags: ["fantasy", "landscape", "ethereal", "bioluminescent", "painterly"],
     quality: 0.94,
     source: "curated",
+    domain: "illustration",
+    styleSet: "watercolor",
+    description: "Uçan adalar ve biyolüminesan bitki örtüsü ile fantastik manzara",
   },
   {
     category: "image",
@@ -57,6 +75,9 @@ export const imagePromptsSeed = [
     tags: ["fashion", "editorial", "studio", "monochrome", "avant-garde"],
     quality: 0.92,
     source: "curated",
+    domain: "e-commerce",
+    styleSet: "photorealistic",
+    description: "Avant-garde moda editöryal fotoğraf, seçici renk splash efekti",
   },
 
   // ─── Leonardo Phoenix ────────────────────────────────────────
@@ -68,6 +89,9 @@ export const imagePromptsSeed = [
     tags: ["cyberpunk", "tokyo", "neon", "cinematic", "rain"],
     quality: 0.94,
     source: "curated",
+    domain: "illustration",
+    styleSet: "photorealistic",
+    description: "Cyberpunk Tokyo sokak sahnesi, neon yansımaları ve sinematik kompozisyon",
   },
   {
     category: "image",
@@ -77,6 +101,9 @@ export const imagePromptsSeed = [
     tags: ["library", "ancient", "volumetric-light", "books", "magical"],
     quality: 0.96,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Antik kütüphane iç mekanı, volumetrik ışıklandırma ve büyülü atmosfer",
   },
   {
     category: "image",
@@ -86,6 +113,9 @@ export const imagePromptsSeed = [
     tags: ["product", "watch", "luxury", "macro", "text-rendering"],
     quality: 0.95,
     source: "curated",
+    domain: "e-commerce",
+    styleSet: "photorealistic",
+    description: "Lüks mekanik saat ürün fotoğrafı, makro detay ve metin render",
   },
 
   // ─── Leonardo Kino XL ────────────────────────────────────────
@@ -97,6 +127,9 @@ export const imagePromptsSeed = [
     tags: ["film-noir", "detective", "cinematic", "rain", "silhouette"],
     quality: 0.93,
     source: "curated",
+    domain: "general",
+    styleSet: "photorealistic",
+    description: "Film noir dedektif sahnesi, yüksek kontrast siyah-beyaz sinematik",
   },
   {
     category: "image",
@@ -105,6 +138,9 @@ export const imagePromptsSeed = [
     tags: ["portrait", "golden-hour", "train", "bokeh", "cinematic"],
     quality: 0.94,
     source: "curated",
+    domain: "photography",
+    styleSet: "photorealistic",
+    description: "Altın saat portre, tren penceresinden yağmur damlacıkları ve bokeh",
   },
 
   // ─── Leonardo Lightning XL ───────────────────────────────────
@@ -115,5 +151,137 @@ export const imagePromptsSeed = [
     tags: ["steampunk", "airship", "concept-art", "dynamic", "fantasy"],
     quality: 0.88,
     source: "curated",
+    domain: "illustration",
+    styleSet: "3d-render",
+    description: "Steampunk hava gemisi konsept art, dinamik perspektif",
+  },
+
+  // ─── Lovart — Nano Banana Pro (Gemini Imagen) ─────────────────
+  {
+    category: "image",
+    targetModel: "lovart-nano-banana-pro",
+    prompt: "A watercolor painting of a Parisian street cafe on a rainy afternoon. Couples sitting under striped awnings, reflections on wet cobblestones. Soft diffused light filtering through clouds. Loose, impressionistic brushwork with visible paint drips. Portrait orientation for social media post.",
+    tags: ["watercolor", "paris", "cafe", "impressionistic", "gemini-imagen"],
+    quality: 0.92,
+    source: "curated",
+    domain: "social-media",
+    styleSet: "watercolor",
+    description: "Paris sokak kafesi suluboya, sosyal medya dikey formatında impressionistik",
+  },
+
+  // ─── Lovart — Seedream 5.0 ──────────────────────────────────
+  {
+    category: "image",
+    targetModel: "lovart-seedream-5.0",
+    prompt: "Commercial product photography of a premium skincare bottle on a marble surface. Water droplets on the bottle surface catching studio light. Soft gradient background from ivory to blush pink. Reflection visible on marble. Text on label reads 'LUMINA'. 4K native resolution, 300 DPI print ready.",
+    tags: ["product", "commercial", "skincare", "4K", "seedream", "text-render"],
+    quality: 0.95,
+    source: "curated",
+    domain: "e-commerce",
+    styleSet: "photorealistic",
+    description: "Premium cilt bakım ürünü ticari fotoğraf, 4K metin render",
+  },
+
+  // ─── Lovart — Flux 2 ──────────────────────────────────────────
+  {
+    category: "image",
+    targetModel: "lovart-flux-2",
+    prompt: "Graphic design poster for a jazz music festival. Bold typography reading 'MIDNIGHT JAZZ' in art deco font. Silhouette of a saxophone player against a gradient of deep indigo to gold. Musical notes flowing as abstract smoke trails. Clean vector-style composition.",
+    tags: ["poster", "jazz", "typography", "graphic-design", "flux2"],
+    quality: 0.91,
+    source: "curated",
+    domain: "branding",
+    styleSet: "vector",
+    description: "Jazz festivali grafik tasarım posteri, art deco tipografi",
+  },
+
+  // ─── Lovart — GPT Image-1 ─────────────────────────────────────
+  {
+    category: "image",
+    targetModel: "lovart-gpt-image-1",
+    prompt: "Infographic showing the lifecycle of a butterfly. Four stages arranged in a circular flow: egg, caterpillar, chrysalis, butterfly. Each stage labeled with clean sans-serif text. Realistic scientific illustration style with subtle watercolor background. Educational poster format.",
+    tags: ["infographic", "educational", "butterfly", "text-render", "scientific"],
+    quality: 0.93,
+    source: "curated",
+    domain: "general",
+    styleSet: "vector",
+    description: "Kelebek yaşam döngüsü infografik, eğitim amaçlı bilimsel illüstrasyon",
+  },
+
+  // ─── Leonardo Vision XL ────────────────────────────────────────
+  {
+    category: "image",
+    targetModel: "leonardo-vision-xl",
+    prompt: "Macro photography of morning dew drops on a spider web. Each droplet acting as a tiny lens reflecting the surrounding garden. Extreme shallow depth of field with creamy bokeh. Soft golden backlight from rising sun. Nature documentary quality.",
+    negativePrompt: "blurry, oversaturated, artificial looking, low quality",
+    tags: ["macro", "nature", "dew", "bokeh", "spider-web"],
+    quality: 0.94,
+    source: "curated",
+    domain: "photography",
+    styleSet: "photorealistic",
+    description: "Örümcek ağında çiy damlaları makro fotoğraf, doğa belgeseli kalitesi",
+  },
+
+  // ─── Leonardo Anime XL ─────────────────────────────────────────
+  {
+    category: "image",
+    targetModel: "leonardo-anime-xl",
+    prompt: "Anime-style portrait of a warrior princess with flowing silver hair and ice-blue eyes. Ornate crystal armor reflecting aurora borealis colors. Standing on a frozen lake at twilight. Detailed cel-shading with soft gradients. Studio Ghibli meets Final Fantasy aesthetic.",
+    negativePrompt: "deformed face, bad anatomy, low quality, western cartoon style",
+    tags: ["anime", "warrior", "fantasy", "portrait", "cel-shading"],
+    quality: 0.92,
+    source: "curated",
+    domain: "illustration",
+    styleSet: "anime",
+    description: "Anime tarzı savaşçı prenses portresi, Ghibli x Final Fantasy estetiği",
+  },
+
+  // ─── Leonardo Ideogram 3 ───────────────────────────────────────
+  {
+    category: "image",
+    targetModel: "leonardo-ideogram-3",
+    prompt: "A vintage coffee shop logo design. Circular badge format with text 'BREW HOUSE' at top and 'EST. 1952' at bottom. Steaming coffee cup illustration in center. Rustic brown and cream color palette. Retro typography with distressed texture. Transparent background, SVG-ready.",
+    negativePrompt: "blurry text, unreadable, modern style",
+    tags: ["logo", "typography", "vintage", "coffee", "brand-design"],
+    quality: 0.95,
+    source: "curated",
+    domain: "branding",
+    styleSet: "vector",
+    description: "Vintage kahve dükkanı logo tasarımı, retro tipografi ve badge format",
+  },
+
+  // ─── Cross-model: Different use cases ──────────────────────────
+  {
+    category: "image",
+    targetModel: "recraft-v3",
+    prompt: "A set of 6 app interface icons in a cohesive flat design system. Icons for: Home, Search, Profile, Settings, Notifications, Chat. Rounded rectangle frames. Consistent 2px stroke weight. Gradient fills from coral to soft purple. Dark mode variant. 64x64px grid.",
+    tags: ["ui-icons", "app-design", "flat", "icon-set", "dark-mode"],
+    quality: 0.94,
+    source: "curated",
+    domain: "ui-design",
+    styleSet: "vector",
+    description: "6 parçalık uygulama ikon seti, tutarlı flat design sistemi, dark mode",
+  },
+  {
+    category: "image",
+    targetModel: "lovart-seedream-4.5",
+    prompt: "Aerial photograph of a geometric lavender field in Provence, France. Perfectly aligned rows creating a purple and green pattern. A single stone farmhouse in the middle distance. Late afternoon sun casting long shadows. Professional drone photography quality.",
+    tags: ["aerial", "lavender", "provence", "geometric", "landscape"],
+    quality: 0.93,
+    source: "curated",
+    domain: "photography",
+    styleSet: "photorealistic",
+    description: "Provence lavanta tarlası hava fotoğrafı, geometrik desen ve drone kalitesi",
+  },
+  {
+    category: "image",
+    targetModel: "lovart-gemini-imagen-3",
+    prompt: "Children's book illustration of a friendly dragon reading a story to a group of forest animals. Whimsical, soft pastel colors. Cozy forest clearing with mushroom houses in background. Warm firefly lighting. Playful, round character design with expressive eyes.",
+    tags: ["children", "illustration", "dragon", "whimsical", "storybook"],
+    quality: 0.91,
+    source: "curated",
+    domain: "illustration",
+    styleSet: "watercolor",
+    description: "Çocuk kitabı illüstrasyonu, sevimli ejderha ve orman hayvanları",
   },
 ];

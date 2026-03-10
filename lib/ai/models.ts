@@ -59,6 +59,13 @@ export const platforms: PlatformInfo[] = [
     description: "Multi-model video platformu — Sora, Veo, WAN, Kling entegrasyonu",
     website: "https://higgsfield.ai",
   },
+  {
+    id: "bytedance",
+    name: "ByteDance",
+    category: "video",
+    description: "Seedance — fizik simülasyonu, @reference sistemi, multi-shot",
+    website: "https://jimeng.jianying.com",
+  },
   // Text Platforms (direct providers)
   {
     id: "openai",
@@ -179,7 +186,6 @@ export const models: ModelInfo[] = [
   },
 
   // ═══ IMAGE Models ═════════════════════════════════════════════
-  // Recraft
   {
     id: "recraft-v3",
     name: "Recraft V3",
@@ -188,7 +194,6 @@ export const models: ModelInfo[] = [
     platformLabel: "Recraft",
     provider: "recraft",
   },
-  // Lovart — Gen AI Studio (20+ models inside)
   {
     id: "lovart-nano-banana-pro",
     name: "Nano Banana Pro",
@@ -200,14 +205,6 @@ export const models: ModelInfo[] = [
   {
     id: "lovart-seedream-5.0",
     name: "Seedream 5.0",
-    category: "image",
-    platformId: "lovart",
-    platformLabel: "Lovart",
-    provider: "lovart",
-  },
-  {
-    id: "lovart-seedream-4.5",
-    name: "Seedream 4.5",
     category: "image",
     platformId: "lovart",
     platformLabel: "Lovart",
@@ -230,73 +227,8 @@ export const models: ModelInfo[] = [
     provider: "lovart",
   },
   {
-    id: "lovart-gemini-imagen-3",
-    name: "Gemini Imagen 3",
-    category: "image",
-    platformId: "lovart",
-    platformLabel: "Lovart",
-    provider: "lovart",
-  },
-  // Leonardo AI — Gen AI Studio (10+ models inside)
-  {
     id: "leonardo-phoenix",
-    name: "Phoenix 1.0",
-    category: "image",
-    platformId: "leonardo",
-    platformLabel: "Leonardo AI",
-    provider: "leonardo",
-  },
-  {
-    id: "leonardo-lucid-origin",
-    name: "Lucid Origin",
-    category: "image",
-    platformId: "leonardo",
-    platformLabel: "Leonardo AI",
-    provider: "leonardo",
-  },
-  {
-    id: "leonardo-lucid-realism",
-    name: "Lucid Realism",
-    category: "image",
-    platformId: "leonardo",
-    platformLabel: "Leonardo AI",
-    provider: "leonardo",
-  },
-  {
-    id: "leonardo-kino-xl",
-    name: "Kino XL",
-    category: "image",
-    platformId: "leonardo",
-    platformLabel: "Leonardo AI",
-    provider: "leonardo",
-  },
-  {
-    id: "leonardo-lightning-xl",
-    name: "Lightning XL",
-    category: "image",
-    platformId: "leonardo",
-    platformLabel: "Leonardo AI",
-    provider: "leonardo",
-  },
-  {
-    id: "leonardo-vision-xl",
-    name: "Vision XL",
-    category: "image",
-    platformId: "leonardo",
-    platformLabel: "Leonardo AI",
-    provider: "leonardo",
-  },
-  {
-    id: "leonardo-anime-xl",
-    name: "Anime XL",
-    category: "image",
-    platformId: "leonardo",
-    platformLabel: "Leonardo AI",
-    provider: "leonardo",
-  },
-  {
-    id: "leonardo-flux-kontext",
-    name: "FLUX Kontext",
+    name: "Leonardo Phoenix",
     category: "image",
     platformId: "leonardo",
     platformLabel: "Leonardo AI",
@@ -304,7 +236,7 @@ export const models: ModelInfo[] = [
   },
   {
     id: "leonardo-ideogram-3",
-    name: "Ideogram 3.0",
+    name: "Ideogram 3",
     category: "image",
     platformId: "leonardo",
     platformLabel: "Leonardo AI",
@@ -312,7 +244,6 @@ export const models: ModelInfo[] = [
   },
 
   // ═══ VIDEO Models ═════════════════════════════════════════════
-  // Kling AI — Native video models
   {
     id: "kling-3.0",
     name: "Kling 3.0",
@@ -322,33 +253,8 @@ export const models: ModelInfo[] = [
     provider: "kling",
   },
   {
-    id: "kling-2.6",
-    name: "Kling 2.6",
-    category: "video",
-    platformId: "kling",
-    platformLabel: "Kling AI",
-    provider: "kling",
-  },
-  {
-    id: "kling-o1",
-    name: "Kling O1",
-    category: "video",
-    platformId: "kling",
-    platformLabel: "Kling AI",
-    provider: "kling",
-  },
-  // Higgsfield — Multi-model video studio
-  {
     id: "higgsfield-sora-2",
     name: "Sora 2",
-    category: "video",
-    platformId: "higgsfield",
-    platformLabel: "Higgsfield",
-    provider: "higgsfield",
-  },
-  {
-    id: "higgsfield-sora-2-max",
-    name: "Sora 2 MAX",
     category: "video",
     platformId: "higgsfield",
     platformLabel: "Higgsfield",
@@ -371,20 +277,12 @@ export const models: ModelInfo[] = [
     provider: "higgsfield",
   },
   {
-    id: "higgsfield-kling-2.6",
-    name: "Kling 2.6",
+    id: "seedance-2.0",
+    name: "Seedance 2.0",
     category: "video",
-    platformId: "higgsfield",
-    platformLabel: "Higgsfield",
-    provider: "higgsfield",
-  },
-  {
-    id: "higgsfield-minimax",
-    name: "Minimax",
-    category: "video",
-    platformId: "higgsfield",
-    platformLabel: "Higgsfield",
-    provider: "higgsfield",
+    platformId: "bytedance",
+    platformLabel: "ByteDance",
+    provider: "bytedance",
   },
 ];
 

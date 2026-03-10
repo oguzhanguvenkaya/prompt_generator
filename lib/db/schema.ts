@@ -40,6 +40,7 @@ export const messages = pgTable("messages", {
     .references(() => sessions.id, { onDelete: "cascade" }),
   role: varchar("role", { length: 20 }).notNull(),
   content: text("content").notNull(),
+  attachments: jsonb("attachments"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
@@ -112,6 +113,14 @@ export const promptDatasets = pgTable("prompt_datasets", {
   tags: jsonb("tags"),
   quality: real("quality"),
   source: varchar("source", { length: 200 }),
+  domain: varchar("domain", { length: 50 }).default("general"),
+  styleSet: varchar("style_set", { length: 100 }),
+  description: text("description"),
+  usageContext: varchar("usage_context", { length: 50 }).default("example"),
+  whyItWorks: text("why_it_works"),
+  modelNotes: text("model_notes"),
+  rating: real("rating"),
+  // embedding vector(1024) — managed via raw SQL migration (Drizzle lacks pgvector support)
 });
 
 // ─── Usage Stats ────────────────────────────────────────────────────────────

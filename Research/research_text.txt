@@ -1,0 +1,324 @@
+Görsel & Video AI Prompt Mühendisliği Stratejik Araştırma ve Sistem Mimarisi Raporu
+İki bin yirmi altı yılı itibarıyla yapay zeka tabanlı görsel ve video üretim modelleri, basit anahtar kelime eşleştirmesinden sıyrılarak derin doğal dil işleme, çoklu-modal (multimodal) kavrama ve mantıksal akıl yürütme (reasoning) yeteneklerine evrilmiştir. Erken dönem difüzyon modellerinin gerektirdiği karmaşık etiket yığınları ve anlamsız kalite modifikatörleri, yerini bağlamsal bütünlüğe, mimari yönlendirmelere ve sinematografik direktiflere bırakmıştır. Bu paradigma değişimi, kullanıcıların sistemle iletişim kurma biçimini temelden değiştirmiş; "istek" (prompt) oluşturma süreci, bir yönetmen veya sanat yönetmeni gibi spesifik, teknik ve zamansal komutlar vermeyi gerektiren sofistike bir mühendislik disiplini haline gelmiştir. Geliştirilecek Prompt Generator uygulaması, son kullanıcıların soyut fikirlerini, modern yapay zeka modellerinin beklediği spesifik ve yapılandırılmış formata çeviren mimari bir köprü görevi görecektir. Bu rapor, pazar lideri görsel ve video modellerinin anatomisini, evrensel prompt mühendisliği prensiplerini ve bu teknik karmaşıklığı kullanıcıdan gizleyerek süreci optimize edecek bilişsel yük azaltıcı kullanıcı deneyimi (UX) stratejilerini kapsamlı bir şekilde analiz etmektedir.
+BÖLÜM 1: Model-Spesifik Prompt Yapıları ve Algoritmik Davranışlar
+Farklı yapay zeka mimarileri, doğal dili farklı biçimlerde işler ve görselleştirir. Difüzyon tabanlı sistemler, akış eşleştirme (flow matching) algoritmaları ve otoregresif transformatörler, aynı metin girdisine tamamen farklı algısal tepkiler verir. Etkili bir prompt üretim motoru, hedef modelin algoritmik tercihlerine göre komut dizisini dinamik olarak yeniden yapılandıran bir semantik çeviri katmanına sahip olmalıdır.
+1A. Görsel Üretim Modelleri
+Görsel yapay zeka ekosistemi, 2026 yılında metin işleme doğruluğu, çoklu-referans anlama ve vektörel çıktı sağlama gibi spesifik alanlarda uzmanlaşmış modellere bölünmüştür. Her modelin sözdizimi ve kısıtlamaları farklılık göstermektedir.
+Nano Banana Pro (Gemini 3.1 Flash Image Mimarisinde)
+Google DeepMind'ın Imagen altyapısı üzerine inşa edilen ve Lovart tarafından özelleştirilen Nano Banana Pro, geleneksel difüzyon modellerinin aksine, dil anlama ve görsel sentezi birleştiren çoklu-modal bir mimari kullanır.1 Bu mimari, modelin gerçek dünya fiziğini, ışık kurallarını ve karmaşık istemleri kavramasını sağlayarak "eğlenceli" görsel üretiminden "işlevsel" profesyonel varlık üretimine geçişi temsil eder.3 Sistem, tek seferde on dört farklı referans görselini işleyerek karakter, marka renkleri ve aydınlatma tutarlılığını bir marka DNA'sı gibi kilitleyebilir.4 Model, üretim öncesinde ortamın fizik kurallarını belirleyen bir bağlam çapası (contextual anchor) kurarak çalışır.4
+Nano Banana Pro'nun prompt yapısı, ana konudan başlayarak detaylara inen beş bileşenli bir formülü takip eder: Ana Konu (Subject), Bağlam/Ortam (Context/Setting), Sanatsal Stil (Style), Işıklandırma (Lighting) ve Teknik Detaylar (Technical).2 Etiket yığınları (tag soup) yerine, kurallı tam cümleler ve akıcı bir dil kullanılması zorunludur; aksi takdirde modelin bağlamsal anlama yeteneği devre dışı kalır.3 "Cool car, neon, 8k" gibi bir giriş yerine, "A cinematic wide shot of a futuristic sports car speeding through a rainy Tokyo street at night" gibi tanımlayıcı, edebi bir tasvir kullanılması sonuç kalitesini dramatik ölçüde artırır.3 Metin render kapasitesi kusursuzdur ve prompt içindeki metinlerin tırnak işareti ile belirtilmesi doğruluk oranını maksimize eder. Modelin en belirgin etkileşim kuralı "Yeniden Üretme, Düzenle" (Edit, Don't Re-roll) prensibidir.3 Kullanıcı görselin %80'inden memnunsa, sıfırdan prompt yazmak yerine yalnızca değiştirilmesi gereken kısmı (örneğin "ışığı gün batımı yap ve metni maviye çevir") belirtebilir.
+Uygulama mimarisinde Nano Banana Pro için kullanıcıdan alınan dağınık veriler, doğal dil işleme katmanından geçirilerek akıcı İngilizce paragraflara dönüştürülmelidir. Kullanıcının arayüzden seçtiği estetik ve teknik parametreler, modelin beklediği tam cümle formatına entegre edilerek API'ye iletilmelidir. 4K doğal çıktı çözünürlüğünü destekleyen model, bu teknik parametreleri prompt metninden değil, doğrudan sistem ayarlarından okur.5
+Seedream 5.0 ve 4.5 (ByteDance)
+ByteDance tarafından geliştirilen Seedream ekosistemi, yapay zeka üretiminde "mantıksal akıl yürütme" (logical reasoning) katmanını tanıtan öncü mimarilerden biridir. Seedream 5.0, pikselleri oluşturmaya başlamadan önce prompt üzerinde çok adımlı bir mantıksal çıkarım yapar; nesnelerin uzaysal ilişkilerini, yerçekimi kurallarını ve sahne boyunca ışık tutarlılığını analiz eder.6 Sistemin en yenilikçi yönü, gerçek zamanlı web araması entegrasyonudur. Model, "bugünün en popüler haber başlığı" gibi promptlar için internetten canlı veri çekerek ve güncel görsel bilgi külliyatını kullanarak halüsinasyonları minimuma indirir.7
+Ticari fotoğrafçılık ve ürün görselleri için Seedream, HEX renk kodlarını doğrudan anlama kapasitesine sahiptir. Kullanıcı prompt içine #FF006E hot pink yazdığında, model bu kesin renk değerini ürün tasarımlarında hatasız bir şekilde uygular.6 Ayrıca promptun yazıldığı dil, görselin tüm kültürel ve mimari estetiğini doğrudan değiştirir; Fransızca yazılan bir prompt, mimariyi ve ışık kullanımını doğrudan o kültürün estetik algısına göre şekillendirir.6 Gelişmiş üretimler için model yapılandırılmış JSON prompting formatını destekler. Sahne, özneler, stil, renk paleti, ışık ve kamera detayları ayrıştırılarak modele iletilebilir.6 Uzaysal komutlara ("foreground", "upper left") kesin itaat eden model, metin entegrasyonu için yazılan karakterlerin çift tırnak içinde olmasını şart koşar.6 Estetik ve güzellik odaklı çalışmalarda Seedream 4.5 versiyonu daha yüksek başarı gösterirken, bilgi odaklı, kompleks mantıksal kompozisyonlarda 5.0 sürümü tercih edilmelidir.8 Uygulama altyapısında, ByteDance API'sine gönderilecek verilerin doğrudan JSON objesi olarak derlenmesi, nesne yerleşim doğruluğunu optimize edecektir.
+Imagen 4 (Google DeepMind)
+Google DeepMind'ın amiral gemisi Imagen 4, fotogerçekçilik, kusursuz heceleme ve karmaşık komutlara itaat konularında sınırları zorlayan bir modeldir. Sistem, genel tasarım görevleri için Imagen 4 ve talimatlara harfiyen uyulması gereken hassas işler için Imagen 4 Ultra olmak üzere iki ana versiyona ayrılır.10 Imagen 4'ün en güçlü yanı, sıfırdan storyboard oluşturma ve çok panelli çizgi roman üretimindeki yetkinliğidir. Sıralı ve senaryo tarzı promptlara mükemmel tepki verir.10
+Kullanıcılar, tek bir prompt içinde Panel 1, Panel 2 ve Panel 3 şeklinde ardışık sahneleri, diyalogları ve ses efektlerini (SFX) tanımlayabilir. Model, bu uzun ve yoğun talimatları halüsinasyon yapmadan, her paneldeki karakter tutarlılığını koruyarak ve metinleri hatasız render ederek tek bir görselde birleştirir.10 Geliştirilecek uygulamanın kullanıcı arayüzü, Imagen 4 için özel bir "Hikaye Panosu / Çoklu Sahne" oluşturucu modül barındırmalıdır. Bu modül, kullanıcıdan sahneleri parça parça alıp, modelin beklediği ardışık senaryo metnine çevirme görevini üstlenmelidir.
+
+Flux 2 (Black Forest Labs)
+Geleneksel gürültü giderme (denoising) temelli difüzyon modellerinin aksine Flux 2, metin tanımları ve görsel gizli alanlar (latent spaces) arasında doğrudan eşleme yapan otuz iki milyar parametreli bir Akış Eşleştirme (Flow Matching) mimarisi kullanır.12 Bu yapısal fark, daha az örnekleme adımıyla yüksek sadakatli görüntüler üretilmesine olanak tanırken, karmaşık talimatlara itaat oranını benzeri görülmemiş bir seviyeye çıkarır.12
+Flux 2'nin prompt anatomisinde sıralama kritik öneme sahiptir. Model, promptun başında yer alan kelimelere matematiksel olarak çok daha yüksek ağırlık verir. Formül; Ana Konu, Eylem, Stil ve Bağlam sıralamasını sıkı bir şekilde takip etmelidir.13 Diğer sistemlerin aksine Flux 2 kesinlikle negatif prompt desteklemez. Örneğin "eller olmasın" komutu verildiğinde, model "eller" kelimesine odaklanarak istem dışı uzuvlar üretebilir. Bu nedenle dışlama işlemleri tamamen pozitif bir dille (örneğin "eller kadraj dışında") yapılmalıdır.13 Model, bir arama motoruna kelime yazar gibi değil, bir romana betimleme yazar gibi akıcı, edebi bir düzyazı ile beslendiğinde en yüksek performansı verir.15 "14-24mm geniş açı lens" veya "f/1.4 sığ alan derinliği" gibi kesin optik fizik terimlerini mükemmel şekilde simüle eder.13 Hızlı iterasyon ve düzenleme süreçlerinde Flux 2, eski resmi ve yeni promptu analiz ederek çalışır. Düzenleme promptunda nesnenin neye benzediği değil, neyin değişeceği analitik tek bir talimat olarak tanımlanmalıdır.16 Geliştirilecek Prompt Generator uygulaması, kullanıcı "Negatif İstem" alanına veri girdiğinde, eğer hedef model Flux 2 ise bu girişleri otomatik olarak pozitif eşanlamlılarına çeviren bir semantik çeviri ara katmanı (middleware) içermelidir.
+GPT Image-1 (OpenAI)
+OpenAI'ın DALL-E serisinin yerini alan GPT Image-1 modeli, görsel üretiminde difüzyon mimarisinden otoregresif çoklu-modal transformatör mimarisine geçişin en güçlü örneğidir. Bu model, pikselleri dil modellerinin kelimeleri tahmin ettiği gibi sıralı bir şekilde tahmin eder.17 Bu mimari devrim, nesnelerin konumlandırılmasında, fiziksel düzen kısıtlamalarında ve özellikle görsel içi metin yazımında benzersiz bir tutarlılık sağlar.17 Model hem metin hem de görsel girdileri aynı transformatör omurgasında işleyerek, dilsel ve görsel modaliteler arasında kusursuz bir geçiş sunar.
+GPT Image-1, prompt içi karmaşık parametreler yerine API tabanlı yönlendirmeleri tercih eder. Görselin en-boy oranı veya kalitesi metin içinden değil, API'deki boyut, kalite ve şeffaf arka plan gibi spesifik parametrelerle kontrol edilir.18 Model varsayılan olarak kare görsel üretme eğiliminde olduğundan, uygulamanın kullanıcı arayüzündeki dikey veya yatay format seçimleri, arka planda doğrudan API yüküne (payload) kesin çözünürlük parametreleri olarak enjekte edilmelidir.
+Recraft V3
+Grafik tasarım, vektörel illüstrasyon ve marka kimliği oluşturma süreçlerinde Recraft V3 (red_panda), endüstri standardını belirleyen modeldir. Pazardaki rakipleri kelime seviyesinde metin render ederken, Recraft V3 uzun cümleleri ve karmaşık hiyerarşik paragrafları görsellere hatasız yerleştirmede en yüksek değerlendirme skorlarına sahiptir.20 Modelin asıl fark yaratan özelliği, sadece rasterize edilmiş (piksel tabanlı) görseller değil, doğrudan ölçeklenebilir SVG vektör formatında logolar, ikon setleri ve dijital illüstrasyonlar üretebilmesidir.20
+Sözdizimsel olarak model, yönlendirmeleri önceden eğitilmiş kesin stil belirteçleri (style tokens) ile alır. API üzerinden veya prompt içinde dijital illüstrasyon/piksel sanatı, gerçekçi görsel/sert flaş, dijital illüstrasyon/el çizimi taslak gibi kesin kategorizasyonlar kullanır.20 Arayüz tasarımı, kullanıcının kullanım amacı adımında "Vektör Grafik", "Logo" veya "Arayüz Tasarımı" seçmesi durumunda Recraft V3'ü birincil model olarak önermeli ve seçilen stil parametresini sistemsel etiket olarak komut dizisine otomatik eklemelidir.
+Leonardo Phoenix ve Ideogram 3
+Leonardo Phoenix modeli, detaylı yönlendirme parametreleri ve çoklu özne (multi-subject) prompt anlama kapasitesiyle öne çıkar. Gelişmiş üretim süreçlerinde kontrol ağları ve stil referansları ile çalışarak kullanıcının fikirleri arasında gezinmesini ve parametreleri daraltarak nihai sonuca ulaşmasını sağlar.23 Kendi bünyesinde barındırdığı özel simya (alchemy) modifikatörleri, görselin sinematik veya fotogerçekçi dokusunu matematiksel olarak artırır.
+Ideogram 3 ise tamamen tipografi ve grafik tasarım odaklı bir mimari sunar. Hiyerarşik metin yerleşimlerinde, poster ve afiş tasarımlarında üstün başarı gösterir. Metinlerin kesin olarak tırnak içine alınması ve kullanılacak yazı tiplerinin (örneğin bold condensed sans, elegant serif) prompt içinde açıkça belirtilmesi gerekir.24 İdeogram modelleri, negatif komutların yapısal kısıtlamalarına mükemmel uyum sağlar. Çarpık harfler istenmiyorsa veya eğrisel metin hatları reddediliyorsa, bu "yapılmayacaklar" listesi komutun sonuna kesin direktifler olarak eklenmelidir.25
+
+Model Adı
+
+Temel Mimari / Güçlü Yön
+
+Maksimum Çözünürlük
+
+Metin/Tipografi Doğruluğu
+
+Negatif Komut Desteği
+
+Önerilen Komut Formatı
+
+Nano Banana Pro
+
+Çoklu-Modal / Gerçek Dünya Fiziği
+
+4K
+
+Çok Yüksek
+
+Destekler (Doğal Dil)
+
+Bağlam Çapası + Akıcı Cümleler
+
+Seedream 5.0
+
+Mantıksal Çıkarım / Web Araması
+
+4K
+
+Yüksek (Çift Tırnak)
+
+Destekler
+
+JSON Şeması / Yapısal Sıralama
+
+Imagen 4
+
+Difüzyon / Çok Panelli Senaryo
+
+2K
+
+Kusursuz
+
+Destekler
+
+Ardışık Sahne Tasviri
+
+Flux 2
+
+Akış Eşleştirme / Fotoğrafik İtaat
+
+4 Megapiksel
+
+Yüksek
+
+Desteklemez
+
+Romanvari Edebi Metin
+
+GPT Image-1
+
+Otoregresif / Nesne Yerleşimi
+
+1024x1536 (Değişken)
+
+Çok Yüksek
+
+API Parametresi
+
+Konuşmaya Dayalı Doğal Dil
+
+Recraft V3
+
+Vektör Üretimi / Uzun Metin
+
+Çeşitli Oranlar
+
+SOTA (En İyi)
+
+Destekler
+
+Stil Tokenleri + Metin Hiyerarşisi
+1B. Video Üretim Modelleri
+İki bin yirmi altı yılı itibarıyla video modelleri, durağan görsellerin ulaştığı komut itaati seviyesine, "Zamansal (Temporal) Boyut", "Kamera Hareket Fiziği" ve "İşitsel (Audio) Senkronizasyonu" ekleyerek üretim süreçlerini sinematografik bir boyuta taşımıştır.
+Kling 3.0 ve 2.6 (Kuaishou)
+Kling 3.0, özellikle geliştirilmiş O3 mantık modeliyle, yapay zeka video üretiminde kurgu aşamasını doğrudan prompt içine taşıyan bir sistemdir. Rakipleri genellikle tek bir sabit plan üretirken, Kling 3.0 çoklu-çekim (multi-shot) hikaye anlatıcılığı özelliğiyle tek bir metin komutundan sahne geçişleri, diyaloglar ve kamera açı değişimlerini kurgulayabilir.26 Sistemin hareket yoğunluğu kontrolü son derece hassastır. Hareket yoğunluğu skalası 0.1 ile 1.0 arasında belirlenebilir; düşük değerler ince jestleri ve nefes almayı simüle ederken, yüksek değerler dinamik koşu ve aksiyon sahnelerini tetikler.29 Omni versiyonu, yüklenen bir karakter görselini video boyunca farklı açılarda tutarlı tutarak kimlik kaybını (identity loss) önler.26 Uygulama altyapısı Kling 3.0 için "Sahne Blokları" arayüzü sunmalı, kullanıcı her blokta kamera ve aksiyonu tanımlamalı, ajan bu blokları birleştirerek tek bir çoklu-çekim prompt paragrafı üretmelidir.
+Seedance 2.0 (ByteDance)
+ByteDance'in Seedance 2.0 modeli, yapay zeka videosunda kompozisyon oluşturma motoru olarak devrim yaratmıştır. Sistemin kalbinde, eş zamanlı olarak metin, görsel, video ve ses referansını okuyabilen dörtlü-modal (quad-modal) referans sistemi yatar.30 Model, ışık referansı için bir resim, kamera hareketi için bir referans video ve zamanlama için bir müzik dosyasını aynı anda işleyebilir.33 Rakipler önce videoyu üretip sesi sonradan eklerken, Seedance 2.0 çift dallı yayılma (dual-branch diffusion) mimarisiyle ağız hareketlerini, çarpma seslerini ve müzikal ritmi video ile kare kare eş zamanlı olarak sentezler.30 Model, promptlar zamansal bloklar halinde (örneğin [00-05s] Sahne 1, [05-10s] Sahne 2) yapılandırıldığında kusursuz kurgu dizileri oluşturur.36 Prompt jeneratörü bu model için kullanıcıdan kronolojik bir akış şeması alacak şekilde tasarlanmalıdır.
+Sora 2 (OpenAI)
+OpenAI'ın Sora 2 modeli, konseptsel ifadelerden ziyade fiziksel lens komutlarına ve kesin koreografik talimatlara yanıt veren bir sanal görüntü yönetmeni gibi çalışır. Soyut kavramlar yerine gözlemlenebilir fiziksel eylemler kullanılmalıdır.37 "Sinematik" demek yerine "geniş kurulum çekimi, göz hizası, yavaşça içeri itme (push-in)" gibi somut lens komutları verilmelidir.37 Aksiyonlar ritmik vuruşlar (beats) veya sayımlar halinde zamanlandırılmalıdır; "odada yürür" yerine "dört adım atıp pencerede durur, son saniyede perdeyi çeker" şeklindeki komutlar, modelin hareketi zamana oturtmasını sağlar.38 Modelin talimatlara sadakati kısa videolarda çok daha yüksektir. On iki saniyelik videolarda karmaşık eylemlerin rotadan çıkma ihtimali yüksek olduğundan, dört saniyelik net eylem blokları hedeflenmelidir.38 Sistem arayüzü, Sora 2 için hareketleri bir zaman çizelgesi üzerinde "eylem adımlarına" bölerek arka planda birleştirmelidir.
+Veo 3.1 (Google DeepMind)
+Google DeepMind tarafından geliştirilen Veo 3.1, endüstri standartlarındaki sinematik terimleri ve kurgu dillerini teknik derinlikleriyle kavrayan ve uygulayan bir modeldir. Eylem eşleme (match cut), sıçramalı kurgu (jump cut) ve bölünmüş diyopter efekti (split diopter effect) gibi profesyonel film tekniklerini doğrudan prompt üzerinden işler.41 Görüntüden videoya (Image-to-Video) dönüşüm süreçlerinde, kaynak görsel ilk kare olarak alındığında, görselin ortamını veya karakterin statik özelliklerini prompt içinde tekrar betimlemek modelin kafasını karıştırır; bunun yerine odak tamamen gerçekleşecek fiziksel harekete (örneğin "özneye yavaşça dolly in") verilmelidir.41 Ses ve diyalog yönetimi, prompt içinde belirli sözdizimsel işaretlerle sağlanır. Diyaloglar "Karakter diyor ki: [Metin]" formatında kolon (:) kullanılarak, çevresel sesler ise "Ortam Sesi: şehir trafiği" şeklinde tanımlanarak modelin yerleşik ses sentezleyicisi tetiklenir.41
+WAN 2.5 (Alibaba)
+WAN 2.5 modeli, yapay zeka video üretimini dört boyutlu kesin bir formüle oturtur: Özne ve Sahne, Fiziksel Hareket, Kamera Yönlendirmesi ve İşitsel Atmosfer.44 Model, bu dört elementin seksen ile yüz yirmi kelime aralığında dengeli bir şekilde dağıtıldığı komut dizilerinde en yüksek verimi sağlar.45 Aşırı kısa promptlar detaysız sonuçlar doğururken, çok uzun promptlar modelin odaklanmasını zorlaştırır. Modelin talimat işleme mantığı aşırı spesifikasyon gerektirir; genel ifadeler yerine "mavi ceketli orta yaşlı bir kadın, hafifçe gülümseyerek, kamerayla göz teması kurarak kendinden emin adımlarla yürüyor" gibi mikro düzeyde detaylandırılmış komutlar kesin sonuçlar verir.45
+MiniMax ve Higgsfield
+MiniMax, yüksek sinematik kaliteyi ve gerçekçi fizik simülasyonunu hızlı üretim süreçleriyle birleştiren bir modeldir. Özellikle abartılı animasyon stilleri ile doğal, ağır çekim sinematik hareketler arasındaki ayrımı iyi yapar.46 Renk derecelendirme ve yüksek çözünürlüğe ölçekleme (upscaling) iş akışlarına mükemmel uyum sağlar.
+Higgsfield ise AI video üretimindeki belirsizliği (guesswork) ortadan kaldıran donanımsal bir yaklaşım sunar. Kamera hareketleri prompt metni aracılığıyla yoruma açık bırakılmaz; bunun yerine arayüz veya API üzerinden "Çarpma Yakınlaştırma (Crash Zoom)", "Yay Çizerek Sola Kayma (Arc Left)", "Snorricam" veya "Birinci Şahıs Görüşlü Dron (FPV Drone)" gibi elliden fazla kilitli sinematik ön ayar seçilir.49 Kamera rotası önceden kilitlendiği için, prompt tamamen bu sabit hareket sırasında çevre ve karakter etkileşimini tanımlamaya odaklanır ("Dolly yaklaşırken oyuncu elini kaldırıp ileri işaret eder").50 Bu mekanizma, karakter hareketi ile kamera hareketinin birbirine karıştığı çakışma sorunlarını tamamen ortadan kaldırır.
+
+Video Modeli
+
+Öne Çıkan Teknoloji / Yaklaşım
+
+Ses/Diyalog Entegrasyonu
+
+Kamera Kontrol Mekanizması
+
+İdeal Prompt Uzunluğu/Yapısı
+
+Kling 3.0
+
+O3 Akıl Yürütme / Çoklu-Çekim (Multi-shot)
+
+Dudak Senkronizasyonu
+
+Prompt İçi Yönlendirme
+
+Sahne Sahne Bloklar
+
+Seedance 2.0
+
+Dörtlü-Modal Referans / Çift Dallı Yayılma
+
+Eş Zamanlı Sentez
+
+Referans Video İle Kilitli
+
+Zaman Damgalı Storyboard
+
+Sora 2
+
+Fiziksel Simülasyon / Görüntü Yönetmeni
+
+Sınırlı Ses Desteği
+
+Gözlemlenebilir Fiziksel Açı
+
+4 Saniyelik Aksiyon Vuruşları
+
+Veo 3.1
+
+Profesyonel Kurgu / Kesin Uyumluluk
+
+İleri Düzey (Kolon Kullanımı)
+
+Sinematik Terimler
+
+İmajdan Videoya Sadece Hareket
+
+WAN 2.5
+
+4 Boyutlu Formül / Yerleşik Ses
+
+Yüksek Senkronizasyon
+
+Yönlendirme ve Akış
+
+80-120 Kelimelik Denge
+
+Higgsfield
+
+Kilitli Hareket / Lens Simülasyonu
+
+Desteklenmez
+
+50+ Parametrik Ön Ayar
+
+Kameradan Bağımsız Aksiyon Tanımı
+BÖLÜM 2: Evrensel Prompt Mühendisliği Prensipleri ve Katmanları
+Gerek görsel gerekse video modelleri için geçerli olan ortak terminolojik kütüphane ve yapısal iskelet, üretim kalitesini belirleyen yegane unsurdur. Raporun bu bölümü, uygulamada bir sözlük veya arka plan semantik çeviri motoru olarak gömülebilecek evrensel anatomik standartları ortaya koymaktadır.
+2A. Görsel Prompt Anatomisi ve Terminolojik Hiyerarşi
+Etkili bir komut dizisi, mimari bir yapı gibi katmanlardan oluşur. Belirsiz bırakılan her değişken, yapay zekanın eğitim verisindeki ağırlıklı ortalamaya (genellikle önyargılı veya jenerik sonuçlara) dönmesine neden olur.
+Ana Konu (Subject) Tanımlama Çerçevesi: Karakter veya nesne tanımlamaları mikro detaylar içermelidir. İnsan tanımlarında yaş, etnik köken, saç dokusu, ten kusurları (çiller, yara izleri), kıyafet kumaşının materyali, duruş ve mikro yüz ifadeleri net bir biçimde ifade edilmelidir.
+Stil ve Medyum Sınıflandırması: Sanatsal yönlendirme, sadece "resim" demekle kalmayıp, medyumun fiziksel özelliklerini içermelidir (örneğin "kalın fırça darbeli yağlı boya", "grenli 35mm film fotoğrafı", "izometrik 3D render").
+Kompozisyon ve Kamera Matematiği: Kadrajlama ve perspektif, görselin psikolojik etkisini belirler.
+Çekim Ölçekleri: Ekstrem yakın çekim (mikro detaylar), yakın çekim (duygu aktarımı), orta çekim, tam boy çekim, geniş kurulum çekimi (mekan vurgusu).41
+Kamera Açıları: Göz hizası (tarafsızlık), düşük açı (güç/heybet), yüksek açı (zayıflık/yalnızlık), kuş bakışı, Hollanda açısı (dutch angle - gerilim).
+Alan Derinliği: Sığ alan derinliği (arka planı bulanıklaştırarak özneyi ayırma/bokeh), derin odak (ön ve arka planın tamamen net olması), eğik kaydırma (tilt-shift - minyatür etkisi).41
+Aydınlatma Kontrolü: Ortamın duygu durumu aydınlatma ile manipüle edilir.41
+Doğal Işık: Altın saatler (sıcak yanal ışık), mavi saatler (soğuk alacakaranlık), bulutlu (yumuşak, gölgesiz difüze ışık), alacalı ışık (dappled light - yaprakların arasından süzülen).
+Stüdyo ve Yapay Işık: Rembrandt aydınlatması (yüzün bir tarafında ters üçgen gölge), kelebek aydınlatma, tepe ışığı, hacimsel ışık (volumetric lighting/tanrı ışınları).
+Renk ve Atmosfer Psikolojisi: Renk paletleri (sessiz/muted, canlı, pastel, monokromatik) ve renk derecelendirme terimleri (sinematik, kara film, çapraz işlemeli/cross-processed) sahnenin tonunu belirler.
+Kalite Modifikatörlerinin Evrimi: Erken dönem modellerde kullanılan "masterpiece, best quality, 8k, trending on ArtStation" gibi kelimeler, Flux 2 ve Sora 2 gibi yeni nesil algoritmik mimarilerde tamamen gereksiz token israfına dönüşmüş, hatta modelin çıktısını bozan bir plasebo etkisine indirgenmiştir. Gerçek kalite tanımı, artık fiziksel lens spesifikasyonlarında ("Sony A7IV, 85mm lens, f/1.4") ve doku tanımlamalarında ("gözenek detayları", "fırçalanmış çelik mikrodokusu") yatmaktadır.
+2B. Zaman, Hareket ve Video Anatomisi
+Durağan karelerden farklı olarak video promptlarında "zaman" ve "hareket" kontrolü, komut mimarisinin merkezine yerleşir.
+Fiillerin Görselleştirilmesi: Video promptlarında soyut eylemler anlaşılamaz. Zarf ve sıfatlardan ziyade güçlü ve kesin fiziksel fiiller kullanılmalıdır. "Hızlıca hareket eder" gibi bir ifade yerine "kaldırıma doğru üç adım hafif tempoda koşar ve aniden durur" gibi ölçülebilir koreografik metinler üretilmelidir.38
+Kamera Hareket Terminolojisi: Modelin kamerayı nasıl fiziksel olarak hareket ettireceği veya merceği nasıl kullanacağı kesinleştirilmelidir.
+Pan (kameranın sabit eksende sağa/sola dönmesi), Tilt (yukarı/aşağı dönmesi), Dolly/Tracking (kameranın fiziksel olarak ray üzerinde ileri/geri veya yana kayması), Zoom (kameranın sabit kalıp merceğin odak uzaklığının değişmesi) komutları birbirine karıştırılmamalıdır.41 Vinç (crane) çekimleri veya sarsıntılı el kamerası (handheld) efektleri dinamizmi ayarlar.
+Zamansal (Temporal) Yapı: Gelişmiş modeller (Seedance 2.0, Kling 3.0), zaman damgalı blokları anlar. Eylemler kronolojik bir sıra ile, [0-4 sn], [5-8 sn] gibi bloklara ayrılarak sahne geçişleri yönetilir.
+2C. Negatif Prompt ve Dışlama Stratejileri
+Negatif prompt kullanımı, istenmeyen unsurların (ekstra uzuvlar, bozuk metinler, filigranlar) üretimden çıkarılması için geliştirilmiştir. Ancak yeni nesil Flow Matching mimarileri (örneğin Flux 2), geleneksel negatif komutları desteklemez; model, reddedilen kelimeyi tam tersine odak noktası haline getirebilir.13 Bu nedenle evrensel kural, dışlamaların "pozitif dil" ile yapılmasıdır. "Eller olmasın" komutu yerine "eller kadrajın dışında kalıyor" gibi durum bildiren çeviriler kullanılmalıdır. GPT Image-1 ve Seedream modellerinde ise API düzeyinde negatif prompt parametresi hala güvenilir bir filtredir.
+BÖLÜM 3: Kullanıcı Deneyimi (UX) ve Bilişsel Rehberlik Sistemi
+Geliştirilecek uygulamanın (Prompt Generator) nihai başarısı, Bölüm 1 ve 2'de detaylandırılan devasa teknik terminolojiyi ve model bazlı matematiksel kuralları kullanıcıdan ne kadar zarif bir şekilde gizleyebildiğine bağlıdır. Kullanıcıların teknik terimleri ezberleme zorunluluğunu (bilişsel yük/cognitive load) ortadan kaldırmak için stratejik bir mimari şarttır.
+3A. Karar Yorgunluğu ve Sihirbaz (Wizard) UI Yaklaşımı
+Aynı anda onlarca parametrenin, kaydırma çubuklarının ve metin kutularının sunulduğu arayüzler, insan zihninde "Seçim Aşırı Yüklenmesi" (Choice Overload) ve Karar Yorgunluğu yaratır.51 Geliştirilecek sistem, karmaşık süreci doğrusal, mantıksal ve küçük parçalara bölen bir Sihirbaz Arayüzü (Wizard UI) kullanmalıdır.53 Bu yapı, kullanıcının belleğini yormadan her sayfada tek bir odak noktası sunarak süreci yönetilebilir kılar.
+Sistem mimarisinde kullanıcıyı adım adım yönlendiren bir akış tasarlanmalıdır. Bu akış, insan zihninin görselleştirme sırasına uygun olarak sırasıyla Konu ve Fikir (Step 1), Ortam ve Zaman (Step 2), Sanatsal Stil (Step 3), Kamera ve Işık (Step 4) ve son olarak Model Seçimi veya AI Yönlendirmesi (Step 5) adımlarını içermelidir. Nihai aşamada sistem, bu seçimleri derleyerek arkada çalışan semantik motor aracılığıyla modele özel optimize edilmiş, sözdizimsel olarak kusursuz bir komut dizisi üretir. Karar felcini önlemek için her adımda kullanıcıya, görsel örneklerle desteklenmiş en fazla üç veya dört ana seçenek sunulmalı, esneklik arayanlar için bir "Kendi cümleni yaz" alanı bırakılmalıdır.
+3B. Otomatik Çeviri ve Geri Bildirim Döngüsü
+İnsanlar sanatsal isteklerini "Daha sıcak ve nostaljik bir hava olsun" şeklinde ifade eder. Uygulamanın en güçlü yanı, bu doğal dili yapay zeka ajanları vasıtasıyla teknik parametrelere çevirmesi olacaktır. "Nostaljik ve sıcak" ifadesi, arka planda seçilen modele göre "warm backlight, golden hour, deep shadows, vintage color grading, shot on 35mm film" gibi kesin komutlara dönüştürülmelidir.
+Bir görsel üretildikten sonra iterasyn süreci, "Bu görsel iyi mi?" gibi kapalı uçlu sorular yerine boyut bazlı yönlendirmelerle yapılmalıdır. Sistem, "Işığı dramatikleştirmek mi istersin, yoksa karakterin yaşını mı değiştirelim?" gibi parametre bazlı A/B seçenekleri sunarak, kullanıcının deneme-yanılma (trial and error) sürecinde kaybolmasını engeller. Flux 2 gibi modellerde düzenleme yapılırken, kullanıcının yönlendirmesi "neyin değişeceği" üzerine tekil bir talimata ("arka planı neon şehre çevir") indirgenerek modele iletilir.16
+3C. Sistem İçi Destekleyici ve Yönlendirici Özellikler
+Uygulamanın zenginliğini artıracak akıllı özellikler şunları içermelidir:
+Model Bazlı Dinamik Varsayılanlar: Kullanıcı vektör tasarım veya logo üretmek istiyorsa, sistem otomatik olarak Recraft V3'ü atamalı ve promptun yapısına gerekli stil tokenlerini görünmez bir şekilde eklemelidir. Tipografi içeren bir afiş tasarımı hedefleniyorsa, Ideogram 3 devreye girmeli ve kullanıcının girdiği metinleri otomatik olarak tırnak içine alarak hiyerarşik yapılandırmayı sağlamalıdır.
+Video İçin Zaman-Vuruş (Timeline) Eşleme: Video modelleri (Seedance, Sora 2) için arayüzde bir zaman çizelgesi sunularak, eylemlerin sürükle-bırak yöntemiyle 0-4 saniye, 5-8 saniye gibi bloklara yerleştirilmesi ve arkada bu blokların kronolojik bir metne dökülmesi sağlanmalıdır.
+Görsel Sözlük ve Karşılaştırma: Kullanıcıların "bokeh" ile "derin odak" veya "soğuk ışık" ile "sıcak ışık" arasındaki farkı anlaması için teknik terimler, üzerine gelindiğinde (hover) küçük örnek görsellerle açıklanmalıdır.
+BÖLÜM 4: Rekabet ve Pazar Dinamikleri Analizi
+İki bin yirmi altı itibarıyla prompt mühendisliği ve görsel üretim araçları pazarı, birbirinden farklı kullanıcı ihtiyaçlarını hedefleyen üç ana kategoriye ayrılmıştır.23 Bu pazar analizi, geliştirilecek uygulamanın boşluğu nasıl dolduracağını netleştirmektedir.
+Pasif Prompt Kütüphaneleri (Lexica, PromptHero, PromptBase): Bu platformlar devasa birer galeri görevi görür. Kullanıcı beğendiği görselin altındaki promptu kopyalayıp kendi modeline yapıştırır. Ancak bu kopyala-yapıştır mimarisi, modellerin yeni sürümleri (örneğin Midjourney V6 veya Flux 2) çıktığında eski promptların tamamen işlevsiz kalması (prompt decay) sorununu yaşatır. Rehberlik veya iterasyon imkanı sunmazlar.
+Platform İçi Karmaşık Jeneratörler (Leonardo AI vb.): Bu araçlar doğrudan modele entegre olsalar da, stüdyo düzeyinde karmaşık bir arayüze sahiptirler. Kullanıcı "CFG Ölçeği", "Adım Sayısı" veya "Simya (Alchemy) Modifikatörleri" gibi ne anlama geldiği belli olmayan düğmelerle baş başa bırakılır.5 Uzmanlar için mükemmel olsalar da ortalama kullanıcı için yüksek bir giriş bariyeri yaratırlar.
+Genel Amaçlı Sohbet Botları (ChatGPT, Claude): Çok serbest bir doğal dil arayüzüne sahip olduklarından, kullanıcı "Güzel bir ofis videosu yap" gibi sığ komutlar vererek modelin potansiyelinin çok küçük bir kısmını kullanır; sistem, eksik kalan yüzlerce fiziksel ve çevresel parametreyi kendi varsayılanlarına göre rastgele doldurur.
+Stratejik Konumlandırma ve Fark Yaratma:
+Geliştirilecek uygulama, Lexica'nın görsel keşif kolaylığını, Leonardo'nun altındaki üretim gücünü ve Claude'un dilsel rehberliğini Sihirbaz Arayüzü ile tek bir potada eritecektir. "Sadece vizyonunu belirt, biz hangi modelin ne tür bir teknik sözdizimine (JSON, edebi metin, kronolojik storyboard) ihtiyacı olduğunu bilip senin adına kodlarız" vaadi, araç setinin temel rekabet avantajını oluşturmaktadır.
+BÖLÜM 5: Test Edilmiş, Modele Özel Algoritmik Prompt Şemaları
+Sistemin "Kural Motoruna" (Rule Engine) entegre edilecek, farklı kullanım senaryoları ve modeller için özel olarak derlenmiş, algoritmik yapıları test edilmiş evrensel şablonlar aşağıda formüle edilmiştir. Ajan, kullanıcıdan aldığı verileri bu boşluklara dolduracaktır.
+5A. Görsel Üretim Şemaları
+1. Sinematik Portre ve Karakter Şeması (Özellikle Flux 2 ve Nano Banana Pro Optimizasyonu):
+Akıcı, romanvari bir dil ve fiziksel kamera parametreleri gerektirir.
+Format: [Medium: A cinematic portrait photograph of], [Clothing: wearing a heavy wool turtleneck], [Action/Expression: looking thoughtfully out a rain-streaked window].... [Mood/Color: Melancholic, muted color palette with dominant cool blues and greys].
+2. Ticari Ürün ve Marka Şeması (Seedream 5.0 ve Recraft V3 Optimizasyonu):
+Kesin ışıklandırma, HEX renk kodları ve mikro doku tanımları gerektirir.
+Format: ......
+3. Tipografi, Grafik Tasarım ve Poster Şeması (Ideogram 3 Optimizasyonu):
+Hiyerarşik düzen, kesin tırnak işareti kullanımı ve negatif "do-not-do" kısıtlamaları gerektirir.
+Format: ... [Layout: Asymmetrical grid, generous negative space].. No distorted text, keep letters flat and straight.
+5B. Video Üretim Şemaları
+1. Tek Planlık Uzaysal Eylem Şeması (Sora 2 ve Veo 3.1 Optimizasyonu):
+Kesin kamera açısı, ritmik vuruşlara bölünmüş eylem ve çevresel simülasyon gerektirir.
+Format: .......
+2. Çoklu-Çekim (Multi-Shot) ve Diyalog Şeması (Kling 3.0 ve Seedance 2.0 Optimizasyonu):
+Zaman damgalı bloklar, kesme teknikleri ve sesli diyalog işaretleyicileri gerektirir.
+Format: . [0-5s]. The seasoned detective leans over the metal table.. [5-10s]. The suspect nervously wipes sweat from his forehead, looking away.. [10-15s]. The detective slams a folder onto the table. Dust rises under the swinging ceiling bulb.
+3. Dinamik Kamera Kilitli Aksiyon Şeması (Higgsfield ve MiniMax Optimizasyonu):
+Önceden tanımlı donanımsal kamera hareketi ve bu harekete uyumlu çevresel eylem gerektirir.
+Format: ... [Lighting: Neon reflections streaking across the wet asphalt]..
+Sonuç ve Stratejik Eylem Planı
+İki bin yirmi altı yılı yapay zeka jeneratörleri, prompt mühendisliğinde "sihirli kelimeler" ve rastgele etiketler dönemini kesin olarak kapatmış; yerini mimari, sinematografik ve sözdizimsel kurallara sıkı sıkıya bağlı bir mühendislik disiplinine bırakmıştır. Kullanıcıların sıradan doğal dillerini, Flow Matching mimarilerinin edebi yapısına, otoregresif sistemlerin nesne yerleşim mantığına veya çoklu-modal video sistemlerinin zaman damgalı senaryolarına dönüştürmek uzmanlık gerektirir.
+Geliştirilecek Prompt Generator projesinin çekirdek değeri, bu derin algoritmik karmaşıklığı ne kadar zarif bir şekilde gizleyebildiğine bağlıdır. Sistemin mimarisi, Model Spesifik Yönlendirme üzerine inşa edilmelidir. Kullanıcı, arayüzde karar yorgunluğunu önleyen Bilişsel Sihirbaz (Wizard UI) eşliğinde sadece sanatsal niyetini ve ne görmek istediğini belirtecektir. Sistem ise arkada bir sanat yönetmeni gibi çalışarak; vektörel bir tasarım isteniyorsa Recraft V3'ün stil tokenlerini kodlayacak, eş zamanlı sesli bir kurgu dizisi isteniyorsa Seedance 2.0'ın zamansal bloklarını derleyecek, fotogerçekçi bir portre isteniyorsa Flux 2'nin lens fiziğini doğal bir düzyazıya entegre edecektir. Bu stratejik yaklaşım, kullanıcıların teknik bariyerlere takılmadan doğrudan yaratıcılığa odaklanmasını sağlayarak, mevcut pazar araçlarına kıyasla tartışmasız bir rekabet avantajı ve pürüzsüz bir kullanıcı deneyimi yaratacaktır.
+Alıntılanan çalışmalar
+Gemini Image – Nano Banana - Google DeepMind, erişim tarihi Mart 6, 2026, https://deepmind.google/models/gemini-image/
+6 Best Nano Banana 2 Prompts in 2026: How to Generate Smarter AI Images, erişim tarihi Mart 6, 2026, https://www.eweek.com/news/best-nano-banana-2-prompts-gemini-3-1-flash-image/
+Nano-Banana Pro: Prompting Guide & Strategies - DEV Community, erişim tarihi Mart 6, 2026, https://dev.to/googleai/nano-banana-pro-prompting-guide-strategies-1h9n
+Nano Banana 2 in Lovart: Surgical AI Image Editing for Agencies, erişim tarihi Mart 6, 2026, https://www.lovart.ai/blog/nano-banana-2-gemini-image-editor-lovart
+Nano Banana Prompt Guide: How to Prompt for Best Results | Leonardo.Ai, erişim tarihi Mart 6, 2026, https://leonardo.ai/news/nano-banana-prompt-guide/
+Seedream 5.0 Lite Prompting Guide - fal.ai Blog, erişim tarihi Mart 6, 2026, https://blog.fal.ai/seedream-5-0-lite-prompting-guide/
+Seedream 5.0 is here: full breakdown, prompting tricks, and comparison - Reddit, erişim tarihi Mart 6, 2026, https://www.reddit.com/r/fal/comments/1rdqxsi/seedream_50_is_here_full_breakdown_prompting/
+Seedream 5.0-Preview Complete Guide: Intelligent Image Generation | WaveSpeedAI Blog, erişim tarihi Mart 6, 2026, https://wavespeed.ai/blog/posts/seedream-5-0-preview-complete-guide-intelligent-image-generation/
+How to prompt Seedream 5.0 – Replicate blog, erişim tarihi Mart 6, 2026, https://replicate.com/blog/how-to-prompt-seedream-5
+Imagen 4 is now available in the Gemini API and Google AI Studio, erişim tarihi Mart 6, 2026, https://developers.googleblog.com/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/
+Imagen — Google DeepMind, erişim tarihi Mart 6, 2026, https://deepmind.google/models/imagen/
+Flux 2 Complete Guide: Black Forest Labs' Photorealistic AI Image Models | WaveSpeedAI Blog, erişim tarihi Mart 6, 2026, https://wavespeed.ai/blog/posts/flux-2-complete-guide-2026/
+FLUX.2 Prompting Guide: Best FLUX.2 Prompts | LTX Studio, erişim tarihi Mart 6, 2026, https://ltx.studio/blog/flux-prompting-guide
+Flux 2 [klein] Prompt Guide: Sub-Second Image Generation - Fal.ai, erişim tarihi Mart 6, 2026, https://fal.ai/learn/devs/flux-2-klein-prompt-guide
+Prompting Guide - FLUX.2 [klein] - BFL Documentation! - Black Forest Labs, erişim tarihi Mart 6, 2026, https://docs.bfl.ml/guides/prompting_guide_flux2_klein
+BFL's Flux.2 Klein Official Prompting Guide is Misleading : r/StableDiffusion - Reddit, erişim tarihi Mart 6, 2026, https://www.reddit.com/r/StableDiffusion/comments/1qlihrk/bfls_flux2_klein_official_prompting_guide_is/
+What Is GPT Image 1? OpenAI's Native Image Generation Model | MindStudio, erişim tarihi Mart 6, 2026, https://www.mindstudio.ai/blog/what-is-gpt-image-1-openai/
+Image generation | OpenAI API, erişim tarihi Mart 6, 2026, https://developers.openai.com/api/docs/guides/image-generation/
+Image generation not following aspect ratio of the reference image - Use cases and examples - OpenAI Developer Community, erişim tarihi Mart 6, 2026, https://community.openai.com/t/image-generation-not-following-aspect-ratio-of-the-reference-image/1245684
+Recraft V3 | Text to Image API - Replicate, erişim tarihi Mart 6, 2026, https://replicate.com/recraft-ai/recraft-v3
+How To Create SOTA Image Generation with Text: Recraft's ML Team Insights, erişim tarihi Mart 6, 2026, https://www.recraft.ai/blog/how-to-create-sota-image-generation-with-text-recrafts-ml-team-insights
+Recraft V3: how to use it on Swiftask?, erişim tarihi Mart 6, 2026, https://www.swiftask.ai/ai/recraftv3
+Based on your experience, which AI tool should I subscribe to? : r/aiArt - Reddit, erişim tarihi Mart 6, 2026, https://www.reddit.com/r/aiArt/comments/1ibb0rs/based_on_your_experience_which_ai_tool_should_i/
+Ideogram v3 — Prompting Guide & Examples | Promptomania, erişim tarihi Mart 6, 2026, https://promptomania.com/models/ideogram/ideogram-v3
+How to Use Ideogram for Text‑Heavy Graphic Designs: Best Prompts for Posters and Ads, erişim tarihi Mart 6, 2026, https://sider.ai/blog/ai-tools/how-to-use-ideogram-for-text-heavy-graphic-designs-best-prompts-for-posters-and-ads
+How to Access Kling 3.0 API? : r/comfyui - Reddit, erişim tarihi Mart 6, 2026, https://www.reddit.com/r/comfyui/comments/1r4sh9x/how_to_access_kling_30_api/
+Kling VIDEO 3.0 Model User Guide - Kling AI, erişim tarihi Mart 6, 2026, https://app.klingai.com/global/quickstart/klingai-video-3-model-user-guide
+Kling 3.0 vs Sora 2 vs VEO 3.1: AI Video Generator Battle (Clear Winner), erişim tarihi Mart 6, 2026, https://www.youtube.com/watch?v=bTpQpwjCmhQ
+Kling 3.0 Prompting Guide: Get Better Videos in 5 Steps - VEED, erişim tarihi Mart 6, 2026, https://www.veed.io/learn/kling-3-0-prompts
+What Is Seedance 2.0? A Guide With Examples - DataCamp, erişim tarihi Mart 6, 2026, https://www.datacamp.com/pt/blog/seedance-2-0
+Kling 3.0 vs Seedance 2.0 vs Sora 2: Best AI Video API for Developers (2026) - ModelsLab, erişim tarihi Mart 6, 2026, https://modelslab.com/blog/video-generation/kling-3-vs-seedance-2-sora-2-ai-video-api-comparison-2026
+What is Seedance 2.0? [Features, Architecture, and More] - Analytics Vidhya, erişim tarihi Mart 6, 2026, https://www.analyticsvidhya.com/blog/2026/02/what-is-seedance-2-0/
+Seedance 2.0 Prompt Guide: From Zero to Cinematic AI Videos (5 Copy-Paste Prompts), erişim tarihi Mart 6, 2026, https://www.glbgpt.com/hub/seedance-2-0-prompt-guide/
+How To Use Seedance 2.0? | ImagineArt, erişim tarihi Mart 6, 2026, https://www.imagine.art/blogs/how-to-use-seedance-2-0
+Seedance 2.0 Complete Guide: ByteDance's Revolutionary AI Video Generator (2026), erişim tarihi Mart 6, 2026, https://www.nxcode.io/resources/news/seedance-2-0-complete-guide-ai-video-generation-2026
+Sharing a few Seedance 2.0 prompt examples : r/generativeAI - Reddit, erişim tarihi Mart 6, 2026, https://www.reddit.com/r/generativeAI/comments/1rgt5iu/sharing_a_few_seedance_20_prompt_examples/
+How to Prompt Sora 2: A Practical, Business-ready Guide - The Visla Blog, erişim tarihi Mart 6, 2026, https://www.visla.us/blog/guides/how-to-prompt-sora-2/
+Sora 2 Prompting Guide - OpenAI for developers, erişim tarihi Mart 6, 2026, https://developers.openai.com/cookbook/examples/sora/sora2_prompting_guide/
+Sora 2 Official Prompting Guide: Master the Basics in 10 Minutes, erişim tarihi Mart 6, 2026, https://help.apiyi.com/sora-2-prompt-basic-guide-10min-202510.html
+Sora 2 Prompting Guide, erişim tarihi Mart 6, 2026, https://soratoai.com/en/docs/guides/sora-2-prompting-guide/
+Veo on Vertex AI video generation prompt guide | Generative AI on ..., erişim tarihi Mart 6, 2026, https://cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide
+Veo on Vertex AI video generation prompt guide - Google Cloud Documentation, erişim tarihi Mart 6, 2026, https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide
+Ultimate prompting guide for Veo 3.1 | Google Cloud Blog, erişim tarihi Mart 6, 2026, https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1
+Wan 2.5 Video Prompt Guide - AKOOL, erişim tarihi Mart 6, 2026, https://akool.com/blog-posts/wan-2-5-video-prompt-guide
+What Is Wan 2.5 Image? Open-Source AI Image Generation Explained | MindStudio, erişim tarihi Mart 6, 2026, https://www.mindstudio.ai/blog/what-is-wan-2-5-image
+Prompt Engineering for Video Models - MiniMax 开放平台文档中心, erişim tarihi Mart 6, 2026, https://platform.minimaxi.com/docs/guides/prompt/video-prompt-guide
+Ultimate Guide to Cinematic AI Video Prompts in Hailuo - YouTube, erişim tarihi Mart 6, 2026, https://www.youtube.com/watch?v=fgZXMKHv78Q
+Create Cinematic Ai Videos for FREE with Minimax! - Prompts & Tutorial - YouTube, erişim tarihi Mart 6, 2026, https://www.youtube.com/watch?v=dwpEP4TY1ME
+Higgsfield Camera Controls – 50+ Cinematic AI-Motion Presets, erişim tarihi Mart 6, 2026, https://higgsfield.ai/camera-controls
+Higgsfield WAN Camera Control: Your Guide to Cinematic Motion, erişim tarihi Mart 6, 2026, https://higgsfield.ai/blog/WAN-AI-Camera-Control-Your-Guide-to-Cinematic-Motion
+The Power of Suggestion: Why Subtle Cues Create Better Conversations - Gorgias, erişim tarihi Mart 6, 2026, https://www.gorgias.com/blog/the-power-of-suggestion
+Avoiding Decision Fatigue with AI-Assisted Decision-Making | Request PDF - ResearchGate, erişim tarihi Mart 6, 2026, https://www.researchgate.net/publication/381640911_Avoiding_Decision_Fatigue_with_AI-Assisted_Decision-Making
+Wizard UI Pattern Explained: When to Use It and How to Get It Right - Eleken, erişim tarihi Mart 6, 2026, https://www.eleken.co/blog-posts/wizard-ui-pattern-explained
+Wizards: Definition and Design Recommendations - NN/G, erişim tarihi Mart 6, 2026, https://nngroup.com/articles/wizards/
+I Tested 5 AI Prompt Libraries For 30 Days. Here's What Worked. | by Jess - Medium, erişim tarihi Mart 6, 2026, https://medium.com/design-bootcamp/i-tested-5-ai-prompt-libraries-for-30-days-heres-what-worked-f6efa8dc1b00
+Lexica vs Leonardo: Which AI Image Generation Tool is Better? | @adilsherdotpro, erişim tarihi Mart 6, 2026, https://www.youtube.com/watch?v=OzgSQFTQXM0
+How to Write Effective AI Image Prompts | Leonardo.Ai, erişim tarihi Mart 6, 2026, https://leonardo.ai/news/ai-image-prompts/

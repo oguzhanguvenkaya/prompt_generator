@@ -1,13 +1,30 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils/cn";
+import { SettingDropdown } from "@/components/ui/setting-dropdown";
 
 interface QualityOption {
   label: string;
   value: string;
   costMultiplier?: number;
 }
+
+const qualityDescriptions: Record<string, string> = {
+  clean: "Temiz, keskin detaylar, ticari kullanım",
+  artistic: "Sanatsal dokunuş, yaratıcı ifade",
+  standard: "Hızlı üretim, dengeli kalite",
+  professional: "Profesyonel kalite, yüksek detay",
+  high: "Yüksek çözünürlük, fazla detay",
+  draft: "Hızlı taslak, düşük detay",
+  ultra: "Maksimum çözünürlük (5MP+)",
+  quality: "Yüksek kalite, yavaş üretim",
+  fast: "Hızlı üretim, orta kalite",
+  max: "En yüksek kalite ayarı",
+  premium: "Premium kalite, en iyi sonuç",
+  "300dpi": "Baskı kalitesi — 300 DPI çözünürlük",
+  "480p": "SD çözünürlük — hızlı önizleme",
+  "720p": "HD çözünürlük — orta kalite",
+  "1080p": "Full HD — yüksek kalite",
+};
 
 interface QualitySelectorProps {
   options: QualityOption[];
@@ -19,28 +36,16 @@ export function QualitySelector({ options, selected, onChange }: QualitySelector
   if (!options.length) return null;
 
   return (
-    <div>
-      <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 block">
-        Kalite
-      </label>
-      <div className="flex flex-wrap gap-1.5">
-        {options.map((opt) => (
-          <Button
-            key={opt.value}
-            variant={selected === opt.value ? "default" : "outline"}
-            size="sm"
-            className={cn("text-xs h-7", selected === opt.value && "ring-1 ring-primary")}
-            onClick={() => onChange(opt.value)}
-          >
-            {opt.label}
-            {opt.costMultiplier && opt.costMultiplier > 1 && (
-              <span className="ml-1 text-[10px] opacity-60">
-                {opt.costMultiplier}x
-              </span>
-            )}
-          </Button>
-        ))}
-      </div>
-    </div>
+    <SettingDropdown
+      label="Kalite"
+      tooltip="Üretim kalitesi. Yüksek kalite = daha yavaş, daha detaylı."
+      options={options.map((o) => ({
+        label: o.label + (o.costMultiplier && o.costMultiplier > 1 ? ` (${o.costMultiplier}x)` : ""),
+        value: o.value,
+        description: qualityDescriptions[o.value] ?? "",
+      }))}
+      selected={selected}
+      onChange={onChange}
+    />
   );
 }

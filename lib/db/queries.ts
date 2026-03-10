@@ -44,16 +44,24 @@ export async function getSessions(agentId?: string) {
   });
 }
 
+export async function updateSessionTitle(id: string, title: string) {
+  await db
+    .update(sessions)
+    .set({ title, updatedAt: new Date() })
+    .where(eq(sessions.id, id));
+}
+
 // ─── Messages ────────────────────────────────────────────────────────────────
 
 export async function addMessage(
   sessionId: string,
   role: string,
-  content: string
+  content: string,
+  attachments?: unknown[]
 ) {
   const [message] = await db
     .insert(messages)
-    .values({ sessionId, role, content })
+    .values({ sessionId, role, content, attachments: attachments ?? null })
     .returning();
 
   // Touch session updatedAt

@@ -280,12 +280,12 @@ async function annotateExamples(
     )
     .join("\n\n");
 
-  logger.debug(MODULE, "Annotating examples with gpt-4o-mini", {
+  logger.debug(MODULE, "Annotating examples with gpt-5-mini", {
     exampleCount: candidates.length,
   });
 
   const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai("gpt-5-mini"),
     system: `You are a prompt engineering expert. Analyze the provided example prompts and generate educational annotations for each. Respond ONLY with valid JSON array.
 
 For each example, provide:
@@ -299,11 +299,10 @@ Respond as JSON array matching the order of examples:
 
 Examples to annotate:
 ${examplesText}`,
-    temperature: 0.3,
   });
 
   try {
-    // Strip markdown code fences if present (gpt-4o-mini sometimes wraps in ```json)
+    // Strip markdown code fences if present (model may wrap JSON in ```json)
     const cleaned = text.replace(/^```(?:json)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
     const annotations = JSON.parse(cleaned) as {
       annotation: string;
