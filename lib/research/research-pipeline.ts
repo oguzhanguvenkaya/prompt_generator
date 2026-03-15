@@ -1,11 +1,11 @@
-import { generateQueryEmbedding } from "@/lib/embeddings/openai";
+import { generateQueryEmbedding, generateImageEmbedding } from "@/lib/embeddings/gemini";
 import { rerankDocuments } from "@/lib/rerank/cohere";
-import { vectorSearch, type SearchResult } from "@/lib/search/hybrid-search";
+import { vectorSearch, hybridSearch, type SearchResult } from "@/lib/search/hybrid-search";
 import { generateText } from "ai";
 import { openai } from "@ai-sdk/openai";
 import { logger, withTiming } from "@/lib/utils/logger";
 
-// Simple in-memory cache for query embeddings — avoids repeated OpenAI calls
+// Simple in-memory cache for query embeddings — avoids repeated Gemini API calls
 // for the same or very similar queries within a session.
 const embeddingCache = new Map<string, { embedding: number[]; timestamp: number }>();
 const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
@@ -29,6 +29,11 @@ function setCachedEmbedding(query: string, embedding: number[]): void {
   embeddingCache.set(query, { embedding, timestamp: Date.now() });
 }
 
+export interface ReferenceImage {
+  base64: string;
+  mimeType: string;
+}
+
 export interface ResearchRequest {
   query: string;
   intent?: string;
@@ -36,6 +41,7 @@ export interface ResearchRequest {
   targetModel?: string;
   domain?: string;
   maxResults?: number;
+  referenceImages?: ReferenceImage[];
 }
 
 export interface AnnotatedExample {
@@ -131,7 +137,7 @@ async function fetchVectorCandidates(
 export async function executeResearch(
   request: ResearchRequest
 ): Promise<ResearchResult> {
-  const { query, intent, category, targetModel, domain, maxResults = 5 } = request;
+  const { query, intent, category, targetModel, domain, maxResults = 5, referenceImages } = request;
 
   logger.info(MODULE, "━━━ Pipeline started ━━━", {
     query: query.slice(0, 100),
@@ -139,6 +145,7 @@ export async function executeResearch(
     category,
     targetModel: targetModel || "any",
     domain: domain || "any",
+    referenceImageCount: referenceImages?.length || 0,
   });
 
   const pipelineStart = Date.now();
@@ -149,7 +156,7 @@ export async function executeResearch(
   // 2. Generate query embedding (with cache)
   let queryEmbedding = getCachedEmbedding(enrichedQuery);
   if (!queryEmbedding) {
-    queryEmbedding = await withTiming(MODULE, "OpenAI embedding", () =>
+    queryEmbedding = await withTiming(MODULE, "Gemini text embedding", () =>
       generateQueryEmbedding(enrichedQuery)
     );
     setCachedEmbedding(enrichedQuery, queryEmbedding);
@@ -157,17 +164,42 @@ export async function executeResearch(
     logger.info(MODULE, "Embedding cache hit", { query: enrichedQuery.slice(0, 60) });
   }
 
-  // 3. Vector search — top candidates
-  // Try strict model filter first, then safe fallback(s) to keep recall high.
-  const candidates = await withTiming(MODULE, "pgvector search", () =>
-    fetchVectorCandidates({
-      queryEmbedding,
-      category,
-      ...(targetModel ? { targetModel } : {}),
-      limit: 10,
-      ...(domain && domain !== "general" ? { domain } : {}),
-    })
-  );
+  // 3. Generate image embeddings if reference images provided
+  const imageEmbeddings: number[][] = [];
+  if (referenceImages?.length) {
+    for (let i = 0; i < referenceImages.length; i++) {
+      const imgEmbed = await withTiming(MODULE, `Gemini image embedding [${i + 1}/${referenceImages.length}]`, () =>
+        generateImageEmbedding(referenceImages[i].base64, referenceImages[i].mimeType)
+      );
+      imageEmbeddings.push(imgEmbed);
+    }
+  }
+
+  // 4. Search — text embedding + image embeddings (if any)
+  const allEmbeddings = [queryEmbedding, ...imageEmbeddings];
+  const allCandidates = new Map<number, SearchResult>();
+
+  for (const embedding of allEmbeddings) {
+    const searchResults = await withTiming(MODULE, "hybrid search", () =>
+      fetchVectorCandidates({
+        queryEmbedding: embedding,
+        category,
+        ...(targetModel ? { targetModel } : {}),
+        limit: 10,
+        ...(domain && domain !== "general" ? { domain } : {}),
+      })
+    );
+    for (const r of searchResults) {
+      const existing = allCandidates.get(r.id);
+      if (!existing || r.similarity > existing.similarity) {
+        allCandidates.set(r.id, r);
+      }
+    }
+  }
+
+  const candidates = Array.from(allCandidates.values())
+    .sort((a, b) => b.similarity - a.similarity)
+    .slice(0, 20);
 
   logger.info(MODULE, "Vector search results", {
     candidateCount: candidates.length,

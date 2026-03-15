@@ -3,7 +3,8 @@ import { getConversationModel, getTextAgentModel } from "@/lib/ai/providers";
 import { getAgent } from "@/lib/agents/registry";
 import { addMessage, updateSessionTitle, getMessages } from "@/lib/db/queries";
 import { getMessageAttachments, getMessageText } from "@/lib/chat/message-parts";
-import { searchInspirationTool } from "@/lib/tools/search-inspiration";
+import { createSearchInspirationTool } from "@/lib/tools/search-inspiration";
+import type { ReferenceImage } from "@/lib/research/research-pipeline";
 import { trimMessages } from "@/lib/utils/context-window";
 import { logger } from "@/lib/utils/logger";
 import type { AgentId } from "@/lib/agents/types";
@@ -126,6 +127,30 @@ export async function POST(req: Request) {
     }
   }
 
+  // Extract reference images from user messages for cross-modal search
+  const referenceImages: ReferenceImage[] = [];
+  for (const msg of messages) {
+    if (msg.role !== "user" || !msg.parts) continue;
+    for (const part of msg.parts) {
+      if (part.type === "file" && typeof part.url === "string" && part.url.startsWith("data:")) {
+        const commaIdx = part.url.indexOf(",");
+        if (commaIdx === -1) continue;
+        const meta = part.url.slice(5, commaIdx);
+        const mimeType = meta.split(";")[0];
+        if (!mimeType?.startsWith("image/")) continue;
+        const base64 = part.url.slice(commaIdx + 1);
+        referenceImages.push({ base64, mimeType });
+      }
+    }
+  }
+
+  if (referenceImages.length > 0) {
+    logger.info("CHAT", "Reference images extracted for cross-modal search", {
+      count: referenceImages.length,
+      types: referenceImages.map(r => r.mimeType),
+    });
+  }
+
   const model = agent.category === "text" && targetModel
     ? getTextAgentModel(targetModel)
     : getConversationModel();
@@ -134,18 +159,24 @@ export async function POST(req: Request) {
     const coreMessages = await convertToModelMessages(messages);
     const trimmedMessages = trimMessages(coreMessages);
 
+    // Create tool with reference images injected for cross-modal search
+    const searchTool = createSearchInspirationTool(
+      referenceImages.length > 0 ? referenceImages : undefined
+    );
+
     logger.info("CHAT", "Starting streamText", {
       model: targetModel || "gpt-5.4",
       tools: "search_inspiration",
       maxSteps: 3,
       trimmedMessageCount: trimmedMessages.length,
+      hasReferenceImages: referenceImages.length > 0,
     });
     const result = streamText({
       model,
       system: systemPrompt,
       messages: trimmedMessages,
       tools: {
-        search_inspiration: searchInspirationTool,
+        search_inspiration: searchTool,
       },
       stopWhen: stepCountIs(3),
       experimental_download: async (downloads) => {

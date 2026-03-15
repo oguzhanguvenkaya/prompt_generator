@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/projectx/Desktop/prompt_generator log --oneline -15)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.openviking.ai)"
+    ]
+  }
+}

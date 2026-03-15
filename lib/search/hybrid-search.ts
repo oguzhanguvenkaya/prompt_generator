@@ -26,6 +26,10 @@ interface VectorSearchParams {
   limit?: number;
 }
 
+interface HybridSearchParams extends VectorSearchParams {
+  queryText: string;
+}
+
 const VALID_CATEGORIES = ["text", "image", "video"] as const;
 const OPTIONAL_COLUMN_CACHE_TTL_MS = 10 * 60 * 1000;
 
@@ -99,7 +103,7 @@ export async function vectorSearch(
 
   const conditions: string[] = [
     `category = '${category}'`,
-    `embedding IS NOT NULL`,
+    `embedding_v2 IS NOT NULL`,
   ];
 
   if (targetModel) {
@@ -143,10 +147,10 @@ export async function vectorSearch(
       quality,
       ${whyItWorksSelect},
       ${modelNotesSelect},
-      1 - (embedding <=> '${vectorLiteral}'::vector(1024)) as similarity
+      1 - (embedding_v2 <=> '${vectorLiteral}'::vector(768)) as similarity
     FROM prompt_datasets
     WHERE ${whereClause}
-    ORDER BY embedding <=> '${vectorLiteral}'::vector(1024)
+    ORDER BY embedding_v2 <=> '${vectorLiteral}'::vector(768)
     LIMIT ${safeLimit}
   `));
 
@@ -162,4 +166,101 @@ export async function vectorSearch(
 function sanitizeLiteral(value: string): string {
   const sanitized = value.replace(/'/g, "''").replace(/[\\;]/g, "");
   return `'${sanitized}'`;
+}
+
+/**
+ * Hybrid search: combines vector similarity (pgvector) with
+ * full-text search (tsvector) using Reciprocal Rank Fusion.
+ */
+export async function hybridSearch(
+  params: HybridSearchParams
+): Promise<SearchResult[]> {
+  const { queryEmbedding, queryText, category, targetModel, domain, limit = 10 } = params;
+
+  const vectorLiteral = `[${queryEmbedding.join(",")}]`;
+
+  if (!VALID_CATEGORIES.includes(category)) {
+    throw new Error(`Invalid category: ${category}`);
+  }
+
+  const conditions: string[] = [`category = '${category}'`];
+  if (targetModel) {
+    conditions.push(`target_model = ${sanitizeLiteral(targetModel)}`);
+  }
+  if (domain && domain !== "general") {
+    conditions.push(`domain = ${sanitizeLiteral(domain)}`);
+  }
+  const whereClause = conditions.join(" AND ");
+  const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 50);
+  const optionalColumns = await getOptionalColumns();
+  const whyItWorksSelect = optionalColumns.whyItWorks
+    ? `why_it_works as "whyItWorks"`
+    : `NULL::text as "whyItWorks"`;
+  const modelNotesSelect = optionalColumns.modelNotes
+    ? `model_notes as "modelNotes"`
+    : `NULL::text as "modelNotes"`;
+
+  // Sanitize FTS query — strip characters that break plainto_tsquery
+  const sanitizedQueryText = queryText.replace(/['"\\;]/g, " ").trim();
+
+  logger.debug("HYBRID", "Executing hybrid search (vector + FTS)", {
+    category,
+    targetModel: targetModel || "any",
+    domain: domain || "any",
+    limit: safeLimit,
+    queryTextLen: sanitizedQueryText.length,
+  });
+
+  const results = await db.execute(sql.raw(`
+    WITH vector_results AS (
+      SELECT id,
+             ROW_NUMBER() OVER (ORDER BY embedding_v2 <=> '${vectorLiteral}'::vector(768)) as vrank
+      FROM prompt_datasets
+      WHERE ${whereClause} AND embedding_v2 IS NOT NULL
+      LIMIT 50
+    ),
+    fts_results AS (
+      SELECT id,
+             ROW_NUMBER() OVER (
+               ORDER BY ts_rank(search_vector, plainto_tsquery('english', '${sanitizedQueryText}')) DESC
+             ) as frank
+      FROM prompt_datasets
+      WHERE search_vector @@ plainto_tsquery('english', '${sanitizedQueryText}')
+        AND ${conditions[0]}
+      LIMIT 50
+    ),
+    combined AS (
+      SELECT COALESCE(v.id, f.id) as id,
+             1.0/(60+COALESCE(v.vrank, 1000)) + 1.0/(60+COALESCE(f.frank, 1000)) as rrf_score
+      FROM vector_results v
+      FULL OUTER JOIN fts_results f ON v.id = f.id
+      ORDER BY rrf_score DESC
+      LIMIT ${safeLimit}
+    )
+    SELECT
+      p.id,
+      p.category,
+      p.target_model as "targetModel",
+      p.prompt,
+      p.negative_prompt as "negativePrompt",
+      p.domain,
+      p.style_set as "styleSet",
+      p.description,
+      p.tags,
+      p.quality,
+      ${whyItWorksSelect},
+      ${modelNotesSelect},
+      c.rrf_score as similarity
+    FROM combined c
+    JOIN prompt_datasets p ON p.id = c.id
+    ORDER BY c.rrf_score DESC
+  `));
+
+  const rows = results.rows as unknown as SearchResult[];
+  logger.debug("HYBRID", "Search returned", {
+    resultCount: rows.length,
+    scores: rows.map((r) => r.similarity?.toFixed(4)).join(", ") || "none",
+  });
+
+  return rows;
 }

@@ -13,7 +13,7 @@ import { researchNanaBananaProPrompts } from "./research-nanabananapro-prompts";
 import { researchFluxPrompts } from "./research-flux-prompts";
 import { researchSeedancePrompts } from "./research-seedance-prompts";
 import { loadResearchNewPrompts } from "./research-new-prompts";
-import { generateEmbeddings } from "../../embeddings/openai";
+import { generateEmbeddings } from "../../embeddings/gemini";
 
 async function seed() {
   const databaseUrl = process.env.DATABASE_URL;
@@ -100,9 +100,9 @@ async function seed() {
     return parts.join(" | ");
   });
 
-  console.log("Generating embeddings via OpenAI text-embedding-3-small...");
+  console.log("Generating embeddings via Gemini Embedding 2 (768d)...");
   const embeddings = await generateEmbeddings(textsForEmbedding);
-  console.log(`Generated ${embeddings.length} embeddings.`);
+  console.log(`Generated ${embeddings.length} Gemini embeddings.`);
 
   // Clear existing prompt datasets and insert fresh
   await db.delete(promptDatasets);
@@ -116,7 +116,7 @@ async function seed() {
     const vectorLiteral = `[${embeddings[i].join(",")}]`;
 
     await db.execute(rawSql.raw(`
-      INSERT INTO prompt_datasets (category, target_model, prompt, negative_prompt, tags, quality, source, domain, style_set, description, usage_context, why_it_works, model_notes, rating, embedding)
+      INSERT INTO prompt_datasets (category, target_model, prompt, negative_prompt, tags, quality, source, domain, style_set, description, usage_context, why_it_works, model_notes, rating, embedding_v2)
       VALUES (
         ${sqlStr(p.category)},
         ${sqlStr(p.targetModel)},
@@ -132,7 +132,7 @@ async function seed() {
         ${sqlStr(pr.whyItWorks as string)},
         ${sqlStr(pr.modelNotes as string)},
         ${pr.rating != null ? pr.rating : 'NULL'},
-        '${vectorLiteral}'::vector(1024)
+        '${vectorLiteral}'::vector(768)
       )
     `));
   }
