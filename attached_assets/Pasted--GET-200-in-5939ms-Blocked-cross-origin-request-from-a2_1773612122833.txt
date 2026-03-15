@@ -1,0 +1,118 @@
+ GET / 200 in 5939ms
+ ⚠ Blocked cross-origin request from a252a155-5f53-424d-b626-809465548d91-00-2oq9dunbs8704.worf.replit.dev to /_next/* resource. To allow this, configure "allowedDevOrigins" in next.config
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 118ms
+ ○ Compiling /agent/[agentId] ...
+ ✓ Compiled /agent/[agentId] in 2s
+ GET /agent/pixel-forge 200 in 2494ms
+ ○ Compiling /api/sessions ...
+ ✓ Compiled /api/sessions in 506ms
+ GET /api/sessions?agentId=pixel-forge 200 in 956ms
+ GET /api/sessions?agentId=pixel-forge 200 in 263ms
+ GET /api/sessions?agentId=pixel-forge 200 in 337ms
+ GET /api/sessions?agentId=pixel-forge 200 in 271ms
+ GET /api/sessions?agentId=pixel-forge 200 in 312ms
+ GET /api/sessions?agentId=pixel-forge 200 in 305ms
+ GET /api/sessions?agentId=pixel-forge 200 in 318ms
+ POST /api/sessions 200 in 319ms
+ ○ Compiling /api/chat ...
+ ✓ Compiled /api/chat in 1883ms
+[21:59:39.513] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=1
+[21:59:39.514] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[21:59:39.514] [CHAT] Saving user message to DB preview=bu ürün flex marka random orbital bir polisaj makinası araç pasta cila işleminde attachmentCount=4
+[21:59:40.346] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[21:59:40.347] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=1 hasReferenceImages=true
+[21:59:40.349] [CHAT] Stream created, sending response...
+[21:59:44.472] [STREAM] Text streaming started
+[21:59:48.699] [CHAT] Step #0 completed elapsed=9200ms finishReason=stop toolCalls=none toolResults=0 textLength=559
+[21:59:48.701] [CHAT] ⚠️ No tool calls made during this conversation turn — search_inspiration was NOT used
+[21:59:48.701] [CHAT] ━━━ Stream finished ━━━ totalDuration=9202ms steps=1 toolCallSteps=0 textLength=559 tokens=14250+155
+[21:59:48.833] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 11649ms
+ GET /api/sessions?agentId=pixel-forge 200 in 260ms
+ GET /api/sessions?agentId=pixel-forge 200 in 318ms
+[22:00:15.410] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=3
+[22:00:15.411] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[22:00:15.411] [CHAT] Saving user message to DB preview=**a)** Aksiyon odaklı — usta polisaj yaparken ürün performansı önde   attachmentCount=0
+[22:00:15.730] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[22:00:15.731] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=3 hasReferenceImages=true
+[22:00:15.732] [CHAT] Stream created, sending response...
+[22:00:17.262] [STREAM] Text streaming started
+[22:00:20.818] [CHAT] Step #0 completed elapsed=5449ms finishReason=stop toolCalls=none toolResults=0 textLength=471
+[22:00:20.821] [CHAT] ⚠️ No tool calls made during this conversation turn — search_inspiration was NOT used
+[22:00:20.821] [CHAT] ━━━ Stream finished ━━━ totalDuration=5452ms steps=1 toolCallSteps=0 textLength=471 tokens=14432+149
+[22:00:20.955] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 5841ms
+ GET /api/sessions?agentId=pixel-forge 200 in 327ms
+ GET /api/sessions?agentId=pixel-forge 200 in 270ms
+[22:00:46.629] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=5
+[22:00:46.630] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[22:00:46.630] [CHAT] Saving user message to DB preview=**b)** Kaput üstünde çalışma — geniş yüzeyde kontrollü uygulama hissi   attachmentCount=0
+[22:00:46.948] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[22:00:46.949] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=5 hasReferenceImages=true
+[22:00:46.952] [CHAT] Stream created, sending response...
+[22:00:49.679] [STREAM] Text streaming started
+[22:00:52.361] [CHAT] Step #0 completed elapsed=5742ms finishReason=stop toolCalls=none toolResults=0 textLength=381
+[22:00:52.363] [CHAT] ⚠️ No tool calls made during this conversation turn — search_inspiration was NOT used
+[22:00:52.363] [CHAT] ━━━ Stream finished ━━━ totalDuration=5744ms steps=1 toolCallSteps=0 textLength=381 tokens=14607+117
+[22:00:52.492] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 6122ms
+[22:00:56.249] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=7
+[22:00:56.249] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[22:00:56.249] [CHAT] Saving user message to DB preview=**c)** Editoryal — dergi çekimi gibi doğal ama rafine   attachmentCount=0
+[22:00:56.478] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[22:00:56.478] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=7 hasReferenceImages=true
+[22:00:56.479] [CHAT] Stream created, sending response...
+[22:00:58.214] [STREAM] Text streaming started
+[22:01:00.671] [CHAT] Step #0 completed elapsed=4435ms finishReason=stop toolCalls=none toolResults=0 textLength=383
+[22:01:00.672] [CHAT] ⚠️ No tool calls made during this conversation turn — search_inspiration was NOT used
+[22:01:00.672] [CHAT] ━━━ Stream finished ━━━ totalDuration=4436ms steps=1 toolCallSteps=0 textLength=383 tokens=14747+123
+[22:01:00.803] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 4826ms
+[22:01:05.853] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=9
+[22:01:05.853] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[22:01:05.853] [CHAT] Saving user message to DB preview=**a)** Sıcak tonlar — davetkâr, premium workshop hissi   attachmentCount=0
+ GET /api/sessions?agentId=pixel-forge 200 in 275ms
+[22:01:06.216] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[22:01:06.216] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=9 hasReferenceImages=true
+[22:01:06.217] [CHAT] Stream created, sending response...
+[22:01:11.401] [STREAM] Text streaming started
+[22:01:14.163] [CHAT] Step #0 completed elapsed=8318ms finishReason=stop toolCalls=none toolResults=0 textLength=366
+[22:01:14.164] [CHAT] ⚠️ No tool calls made during this conversation turn — search_inspiration was NOT used
+[22:01:14.164] [CHAT] ━━━ Stream finished ━━━ totalDuration=8319ms steps=1 toolCallSteps=0 textLength=366 tokens=14895+112
+[22:01:14.293] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 8723ms
+[22:01:22.713] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=11
+[22:01:22.713] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[22:01:22.713] [CHAT] Saving user message to DB preview=**b)** Medium shot — usta, makine ve kaput birlikte dengeli   attachmentCount=0
+[22:01:23.037] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[22:01:23.038] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=11 hasReferenceImages=true
+[22:01:23.039] [CHAT] Stream created, sending response...
+[22:01:26.492] [STREAM] 🔧 Tool CALLED toolName=search_inspiration query=N/A intent=none category=N/A targetModel=any domain=any
+[22:01:26.495] [TOOL] search_inspiration called query=editorial automotive detailing action shot polishing machine on car hood warm pr intent=Create a social media post prompt for FLEX random orbital polisher in real use, editorial premium workshop style, warm tones, medium shot category=image targetModel=lovart-nano-banana-pro domain=social-media referenceImageCount=4
+[22:01:26.498] [RESEARCH] ━━━ Pipeline started ━━━ query=editorial automotive detailing action shot polishing machine on car hood warm premium workshop mediu intent=Create a social media post prompt for FLEX random orbital polisher in real use, editorial premium workshop style, warm tones, medium shot category=image targetModel=lovart-nano-banana-pro domain=social-media referenceImageCount=4
+[22:01:26.498] [RESEARCH] Gemini text embedding started
+[22:01:27.057] [RESEARCH] Gemini text embedding completed duration=559ms
+[22:01:27.057] [RESEARCH] Gemini image embedding [1/4] started
+[22:01:27.308] [RESEARCH] Gemini image embedding [1/4] failed duration=250ms error=Gemini Image Embedding API error (400): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[22:01:27.308] [TOOL] search_inspiration failed error=Gemini Image Embedding API error (400): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[22:01:27.308] [STREAM] 🔧 Tool RESULT received toolName=search_inspiration exampleCount=0 summary=N/A topExamples=[]
+[22:01:28.667] [STREAM] Text streaming started
+[22:01:31.419] [CHAT] Step #1 completed elapsed=8715ms finishReason=stop toolCalls=none toolResults=0 textLength=457
+[22:01:31.420] [CHAT] ━━━ Stream finished ━━━ totalDuration=8716ms steps=2 toolCallSteps=1 textLength=457 tokens=15195+119
+[22:01:31.550] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 9090ms

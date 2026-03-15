@@ -55,6 +55,7 @@ function buildQuickSettingsContext(qs: QuickSettings, agentCategory: string): st
   lines.push(
     `search_inspiration aracını çağırırsan category='${agentCategory}', targetModel='${qs.model || "any"}', domain='${qs.domain || "general"}' kullan.`
   );
+  lines.push("Referans görseller varsa, search_inspiration aracını İLK TURDA çağır — görsellere benzer promptlar bulunacak.");
   return lines.join("\n");
 }
 
@@ -149,6 +150,8 @@ export async function POST(req: Request) {
       count: referenceImages.length,
       types: referenceImages.map(r => r.mimeType),
     });
+    systemPrompt += `\n\n## ⚡ REFERANS GÖRSELLER ALGILANDI (${referenceImages.length} adet)
+Kullanıcı referans görsel yükledi. search_inspiration aracını ŞİMDİ çağır — görsellere benzer tarzda promptları veritabanından getir ve cevabını bu referanslara göre özelleştir. Bu ZORUNLUDUR.`;
   }
 
   const model = agent.category === "text" && targetModel

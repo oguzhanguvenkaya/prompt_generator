@@ -1,8 +1,10 @@
 import { GoogleGenAI } from "@google/genai";
+import { logger } from "@/lib/utils/logger";
 
 const MODEL = "gemini-embedding-2-preview";
 const DIMENSIONS = 768;
 const BATCH_SIZE = 100;
+const MAX_IMAGE_BASE64_LENGTH = 4 * 1024 * 1024; // ~3MB decoded
 
 function getClient(): GoogleGenAI {
   const apiKey = process.env.GOOGLE_AI_API_KEY;
@@ -12,19 +14,11 @@ function getClient(): GoogleGenAI {
   return new GoogleGenAI({ apiKey });
 }
 
-/**
- * L2 normalize a vector — required for MRL-truncated embeddings
- * to ensure cosine distance works correctly in pgvector.
- */
 function l2Normalize(v: number[]): number[] {
   const norm = Math.sqrt(v.reduce((sum, x) => sum + x * x, 0));
   return norm === 0 ? v : v.map((x) => x / norm);
 }
 
-/**
- * Generate embeddings for multiple texts (for indexing/seeding).
- * Uses RETRIEVAL_DOCUMENT task type for asymmetric retrieval.
- */
 export async function generateEmbeddings(
   texts: string[]
 ): Promise<number[][]> {
@@ -48,10 +42,6 @@ export async function generateEmbeddings(
   return allEmbeddings;
 }
 
-/**
- * Generate a single query embedding (for search).
- * Uses RETRIEVAL_QUERY task type for asymmetric retrieval.
- */
 export async function generateQueryEmbedding(
   text: string
 ): Promise<number[]> {
@@ -67,14 +57,37 @@ export async function generateQueryEmbedding(
   return l2Normalize(result.embeddings![0].values!);
 }
 
-/**
- * Generate embedding for an image (cross-modal search).
- * The resulting vector lives in the same space as text embeddings,
- * enabling image-to-text retrieval.
- *
- * Uses REST API directly because the JS SDK has issues with
- * image inline_data serialization in the current version.
- */
+function cleanBase64(base64Data: string): string {
+  let cleaned = base64Data.replace(/[\s\n\r]/g, "");
+  if (cleaned.startsWith("data:")) {
+    const commaIdx = cleaned.indexOf(",");
+    if (commaIdx !== -1) {
+      cleaned = cleaned.slice(commaIdx + 1);
+    }
+  }
+  cleaned = cleaned.replace(/[^A-Za-z0-9+/=]/g, "");
+  return cleaned;
+}
+
+function validateAndPrepareImage(base64Data: string, mimeType: string): string {
+  let cleaned = cleanBase64(base64Data);
+
+  if (cleaned.length > MAX_IMAGE_BASE64_LENGTH) {
+    logger.warn("EMBEDDING", "Image too large for embedding API", {
+      originalSizeKB: Math.round(cleaned.length / 1024),
+      maxSizeKB: Math.round(MAX_IMAGE_BASE64_LENGTH / 1024),
+      mimeType,
+    });
+    throw new Error(`Image too large: ${Math.round(cleaned.length / 1024)}KB base64 exceeds limit`);
+  }
+
+  if (cleaned.length < 100) {
+    throw new Error(`Image base64 data too small (${cleaned.length} chars) — likely invalid`);
+  }
+
+  return cleaned;
+}
+
 export async function generateImageEmbedding(
   base64Data: string,
   mimeType: string
@@ -84,30 +97,62 @@ export async function generateImageEmbedding(
     throw new Error("GOOGLE_AI_API_KEY environment variable is not set");
   }
 
+  const preparedBase64 = validateAndPrepareImage(base64Data, mimeType);
+
+  logger.debug("EMBEDDING", "Sending image to Gemini embedding API", {
+    model: MODEL,
+    mimeType,
+    rawInputLength: base64Data.length,
+    cleanedLength: preparedBase64.length,
+    approxSizeKB: Math.round((preparedBase64.length * 3) / 4 / 1024),
+    first20chars: preparedBase64.slice(0, 20),
+  });
+
+  const requestBody = {
+    model: `models/${MODEL}`,
+    content: {
+      parts: [
+        {
+          inline_data: {
+            mime_type: mimeType,
+            data: preparedBase64,
+          },
+        },
+      ],
+    },
+    taskType: "RETRIEVAL_QUERY",
+    outputDimensionality: DIMENSIONS,
+  };
+
   const response = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:embedContent?key=${apiKey}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: `models/${MODEL}`,
-        content: {
-          parts: [{ inline_data: { mime_type: mimeType, data: base64Data } }],
-        },
-        outputDimensionality: DIMENSIONS,
-      }),
+      body: JSON.stringify(requestBody),
     }
   );
 
   if (!response.ok) {
-    const error = await response.text();
+    const errorText = await response.text();
+    logger.error("EMBEDDING", "Gemini image embedding API error", {
+      status: response.status,
+      mimeType,
+      base64Length: preparedBase64.length,
+      error: errorText.slice(0, 300),
+    });
     throw new Error(
-      `Gemini Image Embedding API error (${response.status}): ${error}`
+      `Gemini Image Embedding API error (${response.status}): ${errorText}`
     );
   }
 
   const data = (await response.json()) as {
     embedding: { values: number[] };
   };
+
+  logger.debug("EMBEDDING", "Image embedding generated successfully", {
+    dimensions: data.embedding.values.length,
+  });
+
   return l2Normalize(data.embedding.values);
 }

@@ -96,13 +96,15 @@ Kullanıcı sadece harf yazarak (a, b, c) veya kendi cümlesini yazarak yanıt v
 ## Araştırma Aracı — search_inspiration
 \`search_inspiration\` aracını kullanarak prompt veritabanından ilham ve referans al.
 
-**ZORUNLU KULLANIM**: Adım 5 (Onay) veya Adım 6 (Üretim) aşamasına geldiğinde, prompt üretmeden ÖNCE mutlaka \`search_inspiration\` aracını çağır. Bu araç veritabanındaki gerçek, test edilmiş video promptları getirir ve ürettiğin promptun kalitesini dramatik şekilde artırır.
+**ZORUNLU KULLANIM — 2 DURUM**:
+1. Kullanıcı referans görsel/video paylaştığında → İLK YANITINDA hemen \`search_inspiration\` çağır. Benzer tarzda video promptları bul ve seçenekleri buna göre özelleştir.
+2. Prompt üretme aşamasına geldiğinde (Adım 5-6) → Prompt üretmeden ÖNCE mutlaka \`search_inspiration\` çağır. Veritabanındaki gerçek, test edilmiş video promptları getir.
 
 **Ne zaman çağır**:
+- ✅ Kullanıcı referans görsel/video paylaştığında (İLK TURDA — ZORUNLU)
 - ✅ Prompt üretme aşamasına geldiğinde (ZORUNLU)
 - ✅ Kullanıcı yaratıcı sahne/kurgu fikirleri istediğinde
 - ✅ Belirli bir kamera hareketi veya sinematik teknik referans gerektiğinde
-- ❌ Wizard'ın ilk adımlarında (Adım 1-3) henüz konu netleşmemişken
 
 **Nasıl kullan**:
 - Kullanıcının seçimlerini İngilizce arama sorgusuna çevir

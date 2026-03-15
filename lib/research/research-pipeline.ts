@@ -164,14 +164,31 @@ export async function executeResearch(
     logger.info(MODULE, "Embedding cache hit", { query: enrichedQuery.slice(0, 60) });
   }
 
-  // 3. Generate image embeddings if reference images provided
+  // 3. Generate image embeddings if reference images provided (non-fatal)
   const imageEmbeddings: number[][] = [];
   if (referenceImages?.length) {
-    for (let i = 0; i < referenceImages.length; i++) {
-      const imgEmbed = await withTiming(MODULE, `Gemini image embedding [${i + 1}/${referenceImages.length}]`, () =>
-        generateImageEmbedding(referenceImages[i].base64, referenceImages[i].mimeType)
-      );
-      imageEmbeddings.push(imgEmbed);
+    const maxImages = Math.min(referenceImages.length, 2);
+    for (let i = 0; i < maxImages; i++) {
+      try {
+        const imgEmbed = await withTiming(MODULE, `Gemini image embedding [${i + 1}/${maxImages}]`, () =>
+          generateImageEmbedding(referenceImages[i].base64, referenceImages[i].mimeType)
+        );
+        imageEmbeddings.push(imgEmbed);
+      } catch (err) {
+        logger.warn(MODULE, `Image embedding [${i + 1}/${maxImages}] failed — skipping`, {
+          error: err instanceof Error ? err.message.slice(0, 150) : String(err),
+          mimeType: referenceImages[i].mimeType,
+          base64Length: referenceImages[i].base64.length,
+        });
+      }
+    }
+    if (imageEmbeddings.length === 0 && maxImages > 0) {
+      logger.warn(MODULE, "All image embeddings failed — continuing with text-only search");
+    } else if (imageEmbeddings.length > 0) {
+      logger.info(MODULE, "Image embeddings generated", {
+        succeeded: imageEmbeddings.length,
+        attempted: maxImages,
+      });
     }
   }
 
