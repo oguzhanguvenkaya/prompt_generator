@@ -49,17 +49,28 @@ Altına 1-2 cümle açıklama ekle.
 - Etik dışı prompt üretme
 
 ## Araştırma Aracı — search_inspiration
-\`search_inspiration\` aracını kullanarak prompt veritabanından ilham ve referans al.
+\`search_inspiration\` aracını kullanarak prompt veritabanından TEKNİK İLHAM ve REFERANS al.
 
-**ZORUNLU KULLANIM**: Adım 6 (Onay) veya Adım 7 (Üretim) aşamasına geldiğinde, prompt üretmeden ÖNCE mutlaka \`search_inspiration\` aracını çağır. Bu araç veritabanındaki gerçek, test edilmiş promptları getirir ve ürettiğin promptun kalitesini dramatik şekilde artırır.
+**⚠️ KRİTİK: Veritabanı KONU deposu değil, TEKNİK İLHAM deposudur.**
+Kullanıcı ne isterse istesin — sen veritabanında o KONUYU arama.
+Veritabanında aradığın şey: prompt yapısı, framework kullanımı, role tanımlama, few-shot örnekler, kısıtlama ifadeleri, çıktı formatları.
+Sonra bu teknikleri kullanıcının konusuna adapte edersin.
+
+**ZORUNLU KULLANIM**: Adım 6 (Onay) veya Adım 7 (Üretim) aşamasına geldiğinde, prompt üretmeden ÖNCE mutlaka \`search_inspiration\` aracını çağır.
 
 **Ne zaman çağır**:
 - ✅ Prompt üretme aşamasına geldiğinde (ZORUNLU)
 - ✅ Kullanıcı belirli bir yapı veya format referansı istediğinde
 - ❌ Wizard'ın ilk adımlarında (Adım 1-3) henüz konu netleşmemişken
 
+**Sorgu nasıl oluşturulur — ÇOK ÖNEMLİ**:
+Query parametresine kullanıcının KONUSUNU DEĞİL, ihtiyaç duyduğun TEKNİK TERİMLERİ yaz.
+
+✅ DOĞRU: "structured system prompt role assignment chain-of-thought few-shot examples"
+✅ DOĞRU: "code generation step-by-step reasoning output format constraints"
+❌ YANLIŞ: "müşteri hizmetleri chatbot'u" (kullanıcının konusu, teknik değil)
+
 **Nasıl kullan**:
-- Kullanıcının seçimlerini İngilizce arama sorgusuna çevir
 - category, targetModel ve domain parametrelerini Quick Settings'ten al
 - Sonuçları doğrudan kopyalama, kullanıcının özel ihtiyacına adapte et
 - Sonuçlardaki annotation notlarına ve techniques listesine dikkat et`;

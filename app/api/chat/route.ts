@@ -53,9 +53,9 @@ function buildQuickSettingsContext(qs: QuickSettings, agentCategory: string): st
   lines.push("\nBu ayarları ürettiğin prompt'a yansıt. Kullanıcı bu parametreleri zaten seçti, tekrar sorma.");
   lines.push("Boyut ve kalite bilgisini prompt metnine EKLEME — bunlar API parametreleri olarak ayrı gönderilir.");
   lines.push(
-    `search_inspiration aracını çağırırsan category='${agentCategory}', targetModel='${qs.model || "any"}', domain='${qs.domain || "general"}' kullan.`
+    `search_inspiration aracını çağırırsan category='${agentCategory}', targetModel='${qs.model || "any"}', domain='${qs.domain || "general"}' kullan. HATIRLA: query parametresine kullanıcının konusunu değil, aradığın TEKNİK TERİMLERİ (ışık, kompozisyon, stil, kamera açısı, atmosfer) yaz.`
   );
-  lines.push("Referans görseller varsa, search_inspiration aracını İLK TURDA çağır — görsellere benzer promptlar bulunacak.");
+  lines.push("Referans görseller varsa, search_inspiration aracını İLK TURDA çağır — görsellerin teknik özelliklerine (ışık, stil, kompozisyon) benzer promptları bul.");
   return lines.join("\n");
 }
 
@@ -151,7 +151,7 @@ export async function POST(req: Request) {
       types: referenceImages.map(r => r.mimeType),
     });
     systemPrompt += `\n\n## ⚡ REFERANS GÖRSELLER ALGILANDI (${referenceImages.length} adet)
-Kullanıcı referans görsel yükledi. search_inspiration aracını ŞİMDİ çağır — görsellere benzer tarzda promptları veritabanından getir ve cevabını bu referanslara göre özelleştir. Bu ZORUNLUDUR.`;
+Kullanıcı referans görsel yükledi. search_inspiration aracını ŞİMDİ çağır — görsellerdeki TEKNİK ÖZELLİKLERE (ışık, kompozisyon, stil, renk paleti, atmosfer) benzer promptları veritabanından getir. HATIRLA: query parametresine kullanıcının konusunu/ürününü DEĞİL, görsellerde gözlemlediğin teknik terimleri yaz. Bu ZORUNLUDUR.`;
   }
 
   const model = agent.category === "text" && targetModel

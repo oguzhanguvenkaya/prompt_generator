@@ -94,11 +94,16 @@ Kullanıcı sadece harf yazarak (a, b, c) veya kendi cümlesini yazarak yanıt v
 - Ses/audio tanımı eksik → HER ZAMAN ambient ses veya müzik ipucu ekle (video)
 
 ## Araştırma Aracı — search_inspiration
-\`search_inspiration\` aracını kullanarak prompt veritabanından ilham ve referans al.
+\`search_inspiration\` aracını kullanarak prompt veritabanından TEKNİK İLHAM ve REFERANS al.
+
+**⚠️ KRİTİK: Veritabanı KONU deposu değil, TEKNİK İLHAM deposudur.**
+Kullanıcı ne isterse istesin (ürün tanıtımı, doğa sahnesi, reklam) — sen veritabanında o KONUYU arama.
+Veritabanında aradığın şey: kamera hareketi, sahne geçişleri, ışık tasarımı, atmosfer, sinematik teknikler, tempo.
+Sonra bu teknikleri kullanıcının sahnesine adapte edersin.
 
 **ZORUNLU KULLANIM — 2 DURUM**:
-1. Kullanıcı referans görsel/video paylaştığında → İLK YANITINDA hemen \`search_inspiration\` çağır. Benzer tarzda video promptları bul ve seçenekleri buna göre özelleştir.
-2. Prompt üretme aşamasına geldiğinde (Adım 5-6) → Prompt üretmeden ÖNCE mutlaka \`search_inspiration\` çağır. Veritabanındaki gerçek, test edilmiş video promptları getir.
+1. Kullanıcı referans görsel/video paylaştığında → İLK YANITINDA hemen \`search_inspiration\` çağır. Görsellerdeki teknik özelliklere benzer promptları bul.
+2. Prompt üretme aşamasına geldiğinde (Adım 5-6) → Prompt üretmeden ÖNCE mutlaka \`search_inspiration\` çağır.
 
 **Ne zaman çağır**:
 - ✅ Kullanıcı referans görsel/video paylaştığında (İLK TURDA — ZORUNLU)
@@ -106,12 +111,25 @@ Kullanıcı sadece harf yazarak (a, b, c) veya kendi cümlesini yazarak yanıt v
 - ✅ Kullanıcı yaratıcı sahne/kurgu fikirleri istediğinde
 - ✅ Belirli bir kamera hareketi veya sinematik teknik referans gerektiğinde
 
+**Sorgu nasıl oluşturulur — ÇOK ÖNEMLİ**:
+Query parametresine kullanıcının KONUSUNU DEĞİL, ihtiyaç duyduğun TEKNİK TERİMLERİ yaz.
+
+✅ DOĞRU sorgu örnekleri:
+- "slow dolly push in dramatic lighting cinematic product reveal" (ürün tanıtım tekniği)
+- "orbit 360 camera movement smooth product showcase" (ürün vitrin tekniği)
+- "aerial drone shot golden hour landscape sweeping" (manzara kamera tekniği)
+- "close-up macro detail shot rack focus transition" (detay geçiş tekniği)
+- "split screen montage fast cuts dynamic transition" (montaj tekniği)
+
+❌ YANLIŞ sorgu örnekleri:
+- "polisaj makinası tanıtım videosu" (KONU arıyorsun, teknik değil)
+- "restoran reklamı" (kullanıcının projesi, teknik değil)
+
 **Nasıl kullan**:
-- Kullanıcının seçimlerini İngilizce arama sorgusuna çevir
 - category, targetModel ve domain parametrelerini Quick Settings'ten al
-- Sonuçları doğrudan kopyalama, kullanıcının özel ihtiyacına adapte et
-- Sonuçlardaki annotation notlarına ve techniques listesine dikkat et
-- Gelen örneklerdeki kamera hareketi, sahne geçişi, atmosfer detaylarını kendi promptuna entegre et`;
+- Sonuçları doğrudan kopyalama, kullanıcının özel sahnesine adapte et
+- Sonuçlardaki kamera hareketi, sahne geçişi, atmosfer detaylarını al
+- Bu teknikleri kullanıcının konusu üzerine uygula`;
 
 function getModelSpecificPrompt(modelId: string): string {
   switch (modelId) {

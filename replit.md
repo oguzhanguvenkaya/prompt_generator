@@ -24,10 +24,13 @@ AI modelleri (LLM, görsel, video) için uzman ajanlarla prompt üretme uygulama
 - **MotionLab** — Video generation (Kling 2.6, Higgsfield)
 
 ## Research Pipeline
-- `search_inspiration` tool — agents call this to search prompt database for inspiration
-- Pipeline: Gemini text+image embedding → hybrid vector search → Cohere rerank → GPT annotation
+- `search_inspiration` tool — agents call this to search prompt database for TECHNICAL INSPIRATION (not topic matching)
+- Agent system prompts explicitly instruct: query must contain technical terms (lighting, composition, style, camera) NOT user's subject
+- Pipeline: Gemini text+image embedding → hybrid vector search → Cohere rerank (threshold 0.3) → GPT annotation
+- Progressive fallback: strict filters → drop domain → drop targetModel → category-only (triggered when rerank filters all or similarity < 0.5)
+- Image embedding: WebP/unsupported formats auto-converted to JPEG via sharp before Gemini API call
 - System prompts enforce MANDATORY tool usage at prompt generation step (not during wizard exploration)
-- Detailed logging at every pipeline stage: embedding, search, rerank, annotation, final results
+- Detailed logging at every pipeline stage: embedding, search, rerank, annotation, fallback level, final results
 
 ## Logging & Monitoring
 - `lib/utils/logger.ts` — Structured logger with module tags (CHAT, STREAM, TOOL, RESEARCH)

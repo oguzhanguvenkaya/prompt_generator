@@ -95,11 +95,16 @@ Kullanıcı sadece harf yazarak (a, b, c) veya kendi cümlesini yazarak yanıt v
 - Aydınlatma tanımı yok → HER ZAMAN ışık kaynağı + yönü belirt
 
 ## Araştırma Aracı — search_inspiration
-\`search_inspiration\` aracını kullanarak prompt veritabanından ilham ve referans al.
+\`search_inspiration\` aracını kullanarak prompt veritabanından TEKNİK İLHAM ve REFERANS al.
+
+**⚠️ KRİTİK: Veritabanı KONU deposu değil, TEKNİK İLHAM deposudur.**
+Kullanıcı ne isterse istesin (polisaj makinası, ayakkabı, araba) — sen veritabanında o KONUYU arama.
+Veritabanında aradığın şey: ışık teknikleri, kompozisyon stilleri, renk paletleri, kamera açıları, sahne kurguları, atmosfer tanımları.
+Sonra bu teknikleri kullanıcının konusuna adapte edersin.
 
 **ZORUNLU KULLANIM — 2 DURUM**:
-1. Kullanıcı referans görsel yüklediğinde → İLK YANITINDA hemen \`search_inspiration\` çağır. Görsellere benzer tarzda promptları bul ve seçenekleri bu referanslara göre özelleştir.
-2. Prompt üretme aşamasına geldiğinde (Adım 6-7) → Prompt üretmeden ÖNCE mutlaka \`search_inspiration\` çağır. Veritabanındaki gerçek, test edilmiş promptları getir.
+1. Kullanıcı referans görsel yüklediğinde → İLK YANITINDA hemen \`search_inspiration\` çağır. Görsellerdeki teknik özelliklere (ışık, kompozisyon, stil) benzer promptları bul.
+2. Prompt üretme aşamasına geldiğinde (Adım 6-7) → Prompt üretmeden ÖNCE mutlaka \`search_inspiration\` çağır.
 
 **Ne zaman çağır**:
 - ✅ Kullanıcı referans görsel paylaştığında (İLK TURDA — ZORUNLU)
@@ -107,12 +112,26 @@ Kullanıcı sadece harf yazarak (a, b, c) veya kendi cümlesini yazarak yanıt v
 - ✅ Kullanıcı yaratıcı kurgu/sahne fikirleri istediğinde
 - ✅ Belirli bir stil veya teknik referans gerektiğinde
 
+**Sorgu nasıl oluşturulur — ÇOK ÖNEMLİ**:
+Query parametresine kullanıcının KONUSUNU DEĞİL, ihtiyaç duyduğun TEKNİK TERİMLERİ yaz.
+
+✅ DOĞRU sorgu örnekleri:
+- "dramatic rim lighting product hero shot cinematic atmosphere" (ürün çekimi için ışık/sahne teknikleri)
+- "soft natural window light minimalist composition flat lay" (doğal ışıklı ürün düzeni)
+- "Rembrandt lighting portrait shallow depth of field bokeh" (portre ışık teknikleri)
+- "golden hour warm tones lifestyle photography candid" (yaşam tarzı fotoğraf stili)
+- "hyperrealistic 8K commercial product reflective surface studio" (ticari ürün çekimi teknikleri)
+
+❌ YANLIŞ sorgu örnekleri:
+- "polisaj makinası" veya "orbital polisher" (KONU arıyorsun, teknik değil)
+- "ayakkabı sosyal medya kampanyası" (kullanıcının ürünü, teknik değil)
+- "FLEX marka araç bakım ürünü" (marka/ürün adı, teknik değil)
+
 **Nasıl kullan**:
-- Kullanıcının seçimlerini İngilizce arama sorgusuna çevir
 - category, targetModel ve domain parametrelerini Quick Settings'ten al
-- Sonuçları doğrudan kopyalama, kullanıcının özel ihtiyacına adapte et
-- Sonuçlardaki annotation notlarına ve techniques listesine dikkat et
-- Gelen örneklerdeki teknik detayları (ışık, lens, kompozisyon) kendi promptuna entegre et`;
+- Sonuçları doğrudan kopyalama, kullanıcının özel konusuna adapte et
+- Sonuçlardaki techniques listesi ve annotation notlarından ışık/lens/kompozisyon detaylarını al
+- Bu teknikleri kullanıcının ürünü/konusu üzerine uygula`;
 
 function getModelSpecificPrompt(modelId: string): string {
   switch (modelId) {
