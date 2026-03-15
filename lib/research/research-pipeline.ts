@@ -351,9 +351,12 @@ export async function executeResearch(
   );
 
   const totalDuration = Date.now() - pipelineStart;
+  const fallbackNote = fallbackLevel !== "strict"
+    ? ` (fallback: ${fallbackLevel})`
+    : "";
   const summary = `${annotated.length} ilgili örnek bulundu${
     domain ? `, domain: ${domain}` : ""
-  }${targetModel ? `, model: ${targetModel}` : ""}.`;
+  }${targetModel ? `, model: ${targetModel}` : ""}${fallbackNote}.`;
 
   logger.info(MODULE, "━━━ Pipeline completed ━━━", {
     totalDuration: `${totalDuration}ms`,
