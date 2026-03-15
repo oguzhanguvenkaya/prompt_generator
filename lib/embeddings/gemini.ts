@@ -69,23 +69,88 @@ function cleanBase64(base64Data: string): string {
   return cleaned;
 }
 
-function validateAndPrepareImage(base64Data: string, mimeType: string): string {
-  let cleaned = cleanBase64(base64Data);
+const MAGIC_BYTES: Array<{ prefix: string; mime: string; label: string }> = [
+  { prefix: "UklGR",    mime: "image/webp",  label: "WebP" },
+  { prefix: "iVBORw0K", mime: "image/png",   label: "PNG" },
+  { prefix: "/9j/",     mime: "image/jpeg",  label: "JPEG" },
+  { prefix: "R0lGOD",   mime: "image/gif",   label: "GIF" },
+  { prefix: "Qk0",      mime: "image/bmp",   label: "BMP" },
+];
 
-  if (cleaned.length > MAX_IMAGE_BASE64_LENGTH) {
-    logger.warn("EMBEDDING", "Image too large for embedding API", {
-      originalSizeKB: Math.round(cleaned.length / 1024),
-      maxSizeKB: Math.round(MAX_IMAGE_BASE64_LENGTH / 1024),
-      mimeType,
-    });
-    throw new Error(`Image too large: ${Math.round(cleaned.length / 1024)}KB base64 exceeds limit`);
+function detectActualFormat(base64Data: string): { mime: string; label: string } | null {
+  for (const { prefix, mime, label } of MAGIC_BYTES) {
+    if (base64Data.startsWith(prefix)) {
+      return { mime, label };
+    }
   }
+  return null;
+}
+
+const GEMINI_SUPPORTED_MIMES = new Set(["image/png", "image/jpeg", "image/gif", "image/bmp"]);
+
+async function convertToJpeg(base64Data: string): Promise<string> {
+  const sharp = (await import("sharp")).default;
+  const inputBuffer = Buffer.from(base64Data, "base64");
+  const jpegBuffer = await sharp(inputBuffer)
+    .jpeg({ quality: 85 })
+    .resize({ width: 1024, height: 1024, fit: "inside", withoutEnlargement: true })
+    .toBuffer();
+  return jpegBuffer.toString("base64");
+}
+
+async function validateAndPrepareImage(
+  base64Data: string,
+  declaredMime: string
+): Promise<{ data: string; mimeType: string }> {
+  const cleaned = cleanBase64(base64Data);
 
   if (cleaned.length < 100) {
     throw new Error(`Image base64 data too small (${cleaned.length} chars) — likely invalid`);
   }
 
-  return cleaned;
+  const detected = detectActualFormat(cleaned);
+  const actualMime = detected?.mime || declaredMime;
+
+  if (detected && detected.mime !== declaredMime) {
+    logger.warn("EMBEDDING", "Mime type mismatch — correcting", {
+      declared: declaredMime,
+      detected: detected.mime,
+      format: detected.label,
+    });
+  }
+
+  if (!GEMINI_SUPPORTED_MIMES.has(actualMime)) {
+    logger.info("EMBEDDING", `Converting ${detected?.label || actualMime} → JPEG for Gemini API`, {
+      originalMime: actualMime,
+      originalSizeKB: Math.round((cleaned.length * 3) / 4 / 1024),
+    });
+
+    try {
+      const jpegBase64 = await convertToJpeg(cleaned);
+      logger.info("EMBEDDING", "Image converted to JPEG successfully", {
+        originalSizeKB: Math.round((cleaned.length * 3) / 4 / 1024),
+        convertedSizeKB: Math.round((jpegBase64.length * 3) / 4 / 1024),
+      });
+      return { data: jpegBase64, mimeType: "image/jpeg" };
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      throw new Error(`Failed to convert ${actualMime} to JPEG: ${msg}`);
+    }
+  }
+
+  if (cleaned.length > MAX_IMAGE_BASE64_LENGTH) {
+    logger.info("EMBEDDING", "Image too large, resizing with sharp", {
+      originalSizeKB: Math.round((cleaned.length * 3) / 4 / 1024),
+    });
+    try {
+      const resizedBase64 = await convertToJpeg(cleaned);
+      return { data: resizedBase64, mimeType: "image/jpeg" };
+    } catch {
+      throw new Error(`Image too large: ${Math.round(cleaned.length / 1024)}KB base64 exceeds limit`);
+    }
+  }
+
+  return { data: cleaned, mimeType: actualMime };
 }
 
 export async function generateImageEmbedding(
@@ -97,15 +162,15 @@ export async function generateImageEmbedding(
     throw new Error("GOOGLE_AI_API_KEY environment variable is not set");
   }
 
-  const preparedBase64 = validateAndPrepareImage(base64Data, mimeType);
+  const prepared = await validateAndPrepareImage(base64Data, mimeType);
 
   logger.debug("EMBEDDING", "Sending image to Gemini embedding API", {
     model: MODEL,
-    mimeType,
-    rawInputLength: base64Data.length,
-    cleanedLength: preparedBase64.length,
-    approxSizeKB: Math.round((preparedBase64.length * 3) / 4 / 1024),
-    first20chars: preparedBase64.slice(0, 20),
+    declaredMime: mimeType,
+    actualMime: prepared.mimeType,
+    base64Length: prepared.data.length,
+    approxSizeKB: Math.round((prepared.data.length * 3) / 4 / 1024),
+    first20chars: prepared.data.slice(0, 20),
   });
 
   const requestBody = {
@@ -114,8 +179,8 @@ export async function generateImageEmbedding(
       parts: [
         {
           inline_data: {
-            mime_type: mimeType,
-            data: preparedBase64,
+            mime_type: prepared.mimeType,
+            data: prepared.data,
           },
         },
       ],
@@ -137,8 +202,9 @@ export async function generateImageEmbedding(
     const errorText = await response.text();
     logger.error("EMBEDDING", "Gemini image embedding API error", {
       status: response.status,
-      mimeType,
-      base64Length: preparedBase64.length,
+      declaredMime: mimeType,
+      actualMime: prepared.mimeType,
+      base64Length: prepared.data.length,
       error: errorText.slice(0, 300),
     });
     throw new Error(
@@ -150,8 +216,10 @@ export async function generateImageEmbedding(
     embedding: { values: number[] };
   };
 
-  logger.debug("EMBEDDING", "Image embedding generated successfully", {
+  logger.info("EMBEDDING", "Image embedding generated successfully", {
     dimensions: data.embedding.values.length,
+    mimeType: prepared.mimeType,
+    sizeKB: Math.round((prepared.data.length * 3) / 4 / 1024),
   });
 
   return l2Normalize(data.embedding.values);

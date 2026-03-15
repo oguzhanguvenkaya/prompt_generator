@@ -1,0 +1,101 @@
+
+> prompt-generator@0.1.0 dev
+   ▲ Next.js 15.5.12 (Turbopack)H 0.0.0.0
+   - Local:        http://localhost:5000
+   - Network:      http://0.0.0.0:5000
+
+ ✓ Starting...
+ ✓ Ready in 991ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.2s
+ GET / 200 in 3575ms
+ ⚠ Blocked cross-origin request from a252a155-5f53-424d-b626-809465548d91-00-2oq9dunbs8704.worf.replit.dev to /_next/* resource. To allow this, configure "allowedDevOrigins" in next.config
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /api/sessions in 435ms
+ GET /api/sessions?agentId=pixel-forge 200 in 894ms
+ GET /api/sessions?agentId=pixel-forge 200 in 275ms
+ ○ Compiling /agent/[agentId] ...
+ ✓ Compiled /agent/[agentId] in 1507ms
+ GET /agent/pixel-forge?session=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 200 in 2223ms
+ ✓ Compiled /api/sessions/[sessionId]/messages in 169ms
+ GET /api/sessions?agentId=pixel-forge 200 in 273ms
+ GET /api/sessions/2d972dc0-8e6c-4f1d-9ecd-138e210bde72/messages 200 in 1246ms
+ GET /agent/pixel-forge 200 in 123ms
+ GET /api/sessions/2d972dc0-8e6c-4f1d-9ecd-138e210bde72/messages 200 in 583ms
+ GET /agent/pixel-forge 200 in 98ms
+ GET /api/sessions?agentId=pixel-forge 200 in 312ms
+ POST /api/sessions 200 in 263ms
+ ○ Compiling /api/chat ...
+ ✓ Compiled /api/chat in 1145ms
+[22:07:29.582] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=692afe3c-710e-4cf5-886c-02e8040c7009 messageCount=1
+[22:07:29.583] [CHAT] System prompt built length=6702 hasQuickSettings=true domain=social-media
+[22:07:29.583] [CHAT] Saving user message to DB preview=bu ürün flex marka random orbital bir polisaj makinası araç pasta cila işleminde attachmentCount=4
+[22:07:30.445] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[22:07:30.446] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=1 hasReferenceImages=true
+[22:07:30.449] [CHAT] Stream created, sending response...
+[22:07:35.208] [STREAM] 🔧 Tool CALLED toolName=search_inspiration query=N/A intent=none category=N/A targetModel=any domain=any
+[22:07:35.209] [TOOL] search_inspiration called query=automotive detailing polisher social media product campaign workshop dramatic cl intent=reference images and prompt patterns for a social media post featuring a FLEX random orbital polisher in automotive detailing use, matching uploaded workshop/product references category=image targetModel=lovart-nano-banana-pro domain=social-media referenceImageCount=4
+[22:07:35.209] [RESEARCH] ━━━ Pipeline started ━━━ query=automotive detailing polisher social media product campaign workshop dramatic clean commercial photo intent=reference images and prompt patterns for a social media post featuring a FLEX random orbital polisher in automotive detailing use, matching uploaded workshop/product references category=image targetModel=lovart-nano-banana-pro domain=social-media referenceImageCount=4
+[22:07:35.210] [RESEARCH] Gemini text embedding started
+[22:07:35.801] [RESEARCH] Gemini text embedding completed duration=591ms
+[22:07:35.801] [RESEARCH] Gemini image embedding [1/2] started
+[22:07:35.803] [EMBEDDING] Sending image to Gemini embedding API model=gemini-embedding-2-preview mimeType=image/png rawInputLength=529212 cleanedLength=529212 approxSizeKB=388 first20chars=UklGRmQOBgBXRUJQVlA4
+[22:07:36.109] [EMBEDDING] Gemini image embedding API error status=400 mimeType=image/png base64Length=529212 error={
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[22:07:36.109] [RESEARCH] Gemini image embedding [1/2] failed duration=308ms error=Gemini Image Embedding API error (400): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[22:07:36.109] [RESEARCH] Image embedding [1/2] failed — skipping error=Gemini Image Embedding API error (400): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID mimeType=image/png base64Length=529212
+[22:07:36.109] [RESEARCH] Gemini image embedding [2/2] started
+[22:07:36.110] [EMBEDDING] Sending image to Gemini embedding API model=gemini-embedding-2-preview mimeType=image/png rawInputLength=390424 cleanedLength=390424 approxSizeKB=286 first20chars=UklGRsh3BABXRUJQVlA4
+[22:07:36.356] [EMBEDDING] Gemini image embedding API error status=400 mimeType=image/png base64Length=390424 error={
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[22:07:36.356] [RESEARCH] Gemini image embedding [2/2] failed duration=247ms error=Gemini Image Embedding API error (400): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[22:07:36.356] [RESEARCH] Image embedding [2/2] failed — skipping error=Gemini Image Embedding API error (400): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID mimeType=image/png base64Length=390424
+[22:07:36.356] [RESEARCH] All image embeddings failed — continuing with text-only search
+[22:07:36.356] [RESEARCH] hybrid search started
+ GET /api/sessions?agentId=pixel-forge 200 in 308ms
+[22:07:36.461] [VECTOR] Executing pgvector search category=image targetModel=lovart-nano-banana-pro domain=social-media limit=10 filters=4 optionalColumns={"whyItWorks":true,"modelNotes":true}
+[22:07:36.559] [VECTOR] Search returned resultCount=10 similarities=0.697, 0.686, 0.683, 0.683, 0.680, 0.677, 0.674, 0.674, 0.672, 0.671
+[22:07:36.559] [RESEARCH] hybrid search completed duration=203ms
+[22:07:36.559] [RESEARCH] Vector search results candidateCount=10 uniqueFromEmbeddings=1 topSimilarity=0.697 bottomSimilarity=0.671 topCandidates=[{"id":6557,"similarity":"0.697","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Generate a vibrant, photorealistic lifestyle image showcasin"},{"id":6579,"similarity":"0.686","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Illustrate a sleek, commercial-style product showcase for Pi"},{"id":6558,"similarity":"0.683","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Render a professional, ultra-sharp 8K image of a high-end fi"}]
+[22:07:36.559] [RESEARCH] Cohere rerank started
+[22:07:36.560] [RERANK] Calling Cohere rerank API documentCount=10 topN=5 threshold=0.3
+[22:07:36.717] [RERANK] Results rawCount=5 filteredCount=0 allScores=0.208, 0.103, 0.071, 0.070, 0.054
+[22:07:36.717] [RESEARCH] Cohere rerank completed duration=158ms
+[22:07:36.717] [RESEARCH] Rerank results inputCount=10 passedThreshold=0 scores=none topReranked=[]
+[22:07:36.717] [RESEARCH] Rerank returned no usable matches; using vector similarity fallback
+[22:07:36.718] [RESEARCH] LLM annotation started
+[22:07:36.718] [RESEARCH] Annotating examples with gpt-5-mini exampleCount=5
