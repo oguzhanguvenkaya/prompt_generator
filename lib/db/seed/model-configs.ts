@@ -505,7 +505,7 @@ export const modelConfigsSeed: NewModelConfig[] = [
     documentationUrl: "https://platform.openai.com/docs",
     specificRules:
       "GPT-4o is a legacy model. Use GPT-5.4 for better results. Works with Markdown-formatted prompts. Supports system, user, and assistant message roles.",
-    isActive: true,
+    isActive: false,
   },
   {
     id: "gemini-pro",

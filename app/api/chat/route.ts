@@ -239,12 +239,12 @@ Kullanıcı referans görsel yükledi. search_inspiration aracını ŞİMDİ ça
           for (const tc of toolCalls) {
             logger.info("CHAT", `Step #${stepNumber} — Tool call detail`, {
               toolName: tc.toolName,
-              args: JSON.stringify(tc.args).slice(0, 200),
+              args: JSON.stringify((tc as Record<string, unknown>).args ?? {}).slice(0, 200),
             });
           }
           if (toolResults) {
             for (const tr of toolResults) {
-              const result = tr.result as Record<string, unknown> | undefined;
+              const result = (tr as Record<string, unknown>).result as Record<string, unknown> | undefined;
               const examples = Array.isArray(result?.examples) ? result.examples : [];
               logger.info("CHAT", `Step #${stepNumber} — Tool result detail`, {
                 toolName: tr.toolName,

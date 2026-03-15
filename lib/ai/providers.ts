@@ -46,18 +46,26 @@ import { models } from "./models";
 const modelIdOverrides: Record<string, string> = {
   "claude-sonnet": "claude-sonnet-4-20250514",
   "claude-opus": "claude-opus-4-20250514",
-  "gpt-4o": "gpt-4o",
   "gpt-5.4-thinking": "gpt-5.4",
   "gemini-pro": "gemini-2.5-pro",
   "kimi-k2.5": "kimi-k2.5",
   "qwen": "qwen-plus",
 };
 
-export function getTextAgentModel(targetModelId: string) {
-  const modelInfo = models.find((m) => m.id === targetModelId);
-  if (!modelInfo) return getLanguageModel("openai"); // fallback
+const legacyModelRedirects: Record<string, string> = {
+  "gpt-4o": "gpt-5.4",
+};
 
-  const actualModelId = modelIdOverrides[targetModelId] || targetModelId;
+export function normalizeModelId(modelId: string): string {
+  return legacyModelRedirects[modelId] || modelId;
+}
+
+export function getTextAgentModel(targetModelId: string) {
+  const normalized = normalizeModelId(targetModelId);
+  const modelInfo = models.find((m) => m.id === normalized);
+  if (!modelInfo) return getLanguageModel("openai"); // fallback to gpt-5.4
+
+  const actualModelId = modelIdOverrides[normalized] || normalized;
   return getLanguageModel(modelInfo.provider, actualModelId);
 }
 

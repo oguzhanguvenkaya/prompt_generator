@@ -64,15 +64,6 @@ export interface ResearchResult {
 
 const MODULE = "RESEARCH";
 
-interface CandidateSearchParams {
-  queryEmbedding: number[];
-  category: "text" | "image" | "video";
-  targetModel?: string;
-  domain?: string;
-  limit: number;
-}
-
-
 interface CandidateWithScore extends SearchResult {
   relevanceScore: number;
 }

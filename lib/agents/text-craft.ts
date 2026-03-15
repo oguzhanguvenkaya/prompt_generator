@@ -89,16 +89,6 @@ function getModelSpecificPrompt(modelId: string): string {
 - Claude excels at: nuanced writing, following complex instructions, maintaining consistency, code generation
 - Avoid: excessive repetition of constraints (Claude follows well on first mention)`;
 
-    case "gpt-4o":
-      return `## GPT-4o-Specific Prompt Rules
-- Use Markdown formatting for structure: headers (##), bold (**), lists (-)
-- System message should define the role clearly
-- Use "You must" and "You should" for instruction hierarchy
-- Few-shot examples work best in user/assistant turn format
-- For JSON output, specify "Respond in valid JSON format" explicitly
-- GPT-4o excels at: structured data, function calling, multi-modal understanding
-- Leverage GPT-4o's strength in systematic, structured outputs`;
-
     case "gpt-5.4":
     case "gpt-5.4-thinking":
     case "gpt-5.4-pro":
@@ -153,7 +143,7 @@ export const textCraftConfig: AgentConfig = {
   category: "text",
   icon: "pen-tool",
   color: "textcraft",
-  supportedModels: ["gpt-5.4", "gpt-5.4-thinking", "gpt-5.4-pro", "claude-sonnet", "claude-opus", "gpt-4o", "gemini-pro", "kimi-k2.5", "qwen"],
+  supportedModels: ["gpt-5.4", "gpt-5.4-thinking", "gpt-5.4-pro", "claude-sonnet", "claude-opus", "gemini-pro", "kimi-k2.5", "qwen"],
   defaultModel: "gpt-5.4",
   systemPrompt,
   getModelSpecificPrompt,
