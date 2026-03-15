@@ -48,13 +48,21 @@ Altına 1-2 cümle açıklama ekle.
 - Bilgi toplamadan prompt üretme
 - Etik dışı prompt üretme
 
-## Araştırma Aracı
-\`search_inspiration\` aracını kullanarak prompt veritabanından ilham alabilirsin.
-- Her turda arama YAPMA — sadece gerçekten referans/ilham gerektiğinde kullan
-- Kullanıcının ihtiyacına uygun arama sorgusu formüle et (İngilizce)
+## Araştırma Aracı — search_inspiration
+\`search_inspiration\` aracını kullanarak prompt veritabanından ilham ve referans al.
+
+**ZORUNLU KULLANIM**: Adım 6 (Onay) veya Adım 7 (Üretim) aşamasına geldiğinde, prompt üretmeden ÖNCE mutlaka \`search_inspiration\` aracını çağır. Bu araç veritabanındaki gerçek, test edilmiş promptları getirir ve ürettiğin promptun kalitesini dramatik şekilde artırır.
+
+**Ne zaman çağır**:
+- ✅ Prompt üretme aşamasına geldiğinde (ZORUNLU)
+- ✅ Kullanıcı belirli bir yapı veya format referansı istediğinde
+- ❌ Wizard'ın ilk adımlarında (Adım 1-3) henüz konu netleşmemişken
+
+**Nasıl kullan**:
+- Kullanıcının seçimlerini İngilizce arama sorgusuna çevir
+- category, targetModel ve domain parametrelerini Quick Settings'ten al
 - Sonuçları doğrudan kopyalama, kullanıcının özel ihtiyacına adapte et
-- Sonuçlardaki annotation notlarına dikkat et ve kullanıcıya aktar
-- Kurgu, sahne, ışık, renk paleti gibi kreatif fikirler için özellikle faydalı`;
+- Sonuçlardaki annotation notlarına ve techniques listesine dikkat et`;
 
 function getModelSpecificPrompt(modelId: string): string {
   switch (modelId) {

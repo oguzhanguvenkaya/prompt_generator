@@ -203,7 +203,16 @@ export async function executeResearch(
 
   logger.info(MODULE, "Vector search results", {
     candidateCount: candidates.length,
+    uniqueFromEmbeddings: allEmbeddings.length,
     topSimilarity: candidates[0]?.similarity?.toFixed(3) || "N/A",
+    bottomSimilarity: candidates.length > 0 ? candidates[candidates.length - 1]?.similarity?.toFixed(3) : "N/A",
+    topCandidates: candidates.slice(0, 3).map(c => ({
+      id: c.id,
+      similarity: c.similarity?.toFixed(3),
+      domain: c.domain || "?",
+      model: c.targetModel || "?",
+      promptPreview: c.prompt?.slice(0, 60) || "?",
+    })),
   });
 
   if (candidates.length === 0) {
@@ -237,6 +246,11 @@ export async function executeResearch(
       inputCount: candidates.length,
       passedThreshold: rerankResults.length,
       scores: rerankResults.map((r) => r.relevanceScore.toFixed(3)).join(", ") || "none",
+      topReranked: rerankResults.slice(0, 3).map((r) => ({
+        index: r.index,
+        score: r.relevanceScore.toFixed(3),
+        promptPreview: candidates[r.index]?.prompt?.slice(0, 60) || "?",
+      })),
     });
 
     const mappedCandidates = rerankResults
@@ -285,6 +299,14 @@ export async function executeResearch(
     totalDuration: `${totalDuration}ms`,
     examplesReturned: annotated.length,
     summary,
+    returnedExamples: annotated.map((ex, i) => ({
+      index: i + 1,
+      score: ex.relevanceScore?.toFixed(3),
+      domain: ex.domain,
+      model: ex.targetModel || "any",
+      promptPreview: ex.prompt.slice(0, 80),
+      techniques: ex.techniques.slice(0, 3).join(", "),
+    })),
   });
 
   return {

@@ -93,13 +93,23 @@ Kullanıcı sadece harf yazarak (a, b, c) veya kendi cümlesini yazarak yanıt v
 - Aydınlatma tanımı yok → HER ZAMAN ışık kaynağı + yönü belirt
 - Ses/audio tanımı eksik → HER ZAMAN ambient ses veya müzik ipucu ekle (video)
 
-## Araştırma Aracı
-\`search_inspiration\` aracını kullanarak prompt veritabanından ilham alabilirsin.
-- Her turda arama YAPMA — sadece gerçekten referans/ilham gerektiğinde kullan
-- Kullanıcının ihtiyacına uygun arama sorgusu formüle et (İngilizce)
+## Araştırma Aracı — search_inspiration
+\`search_inspiration\` aracını kullanarak prompt veritabanından ilham ve referans al.
+
+**ZORUNLU KULLANIM**: Adım 5 (Onay) veya Adım 6 (Üretim) aşamasına geldiğinde, prompt üretmeden ÖNCE mutlaka \`search_inspiration\` aracını çağır. Bu araç veritabanındaki gerçek, test edilmiş video promptları getirir ve ürettiğin promptun kalitesini dramatik şekilde artırır.
+
+**Ne zaman çağır**:
+- ✅ Prompt üretme aşamasına geldiğinde (ZORUNLU)
+- ✅ Kullanıcı yaratıcı sahne/kurgu fikirleri istediğinde
+- ✅ Belirli bir kamera hareketi veya sinematik teknik referans gerektiğinde
+- ❌ Wizard'ın ilk adımlarında (Adım 1-3) henüz konu netleşmemişken
+
+**Nasıl kullan**:
+- Kullanıcının seçimlerini İngilizce arama sorgusuna çevir
+- category, targetModel ve domain parametrelerini Quick Settings'ten al
 - Sonuçları doğrudan kopyalama, kullanıcının özel ihtiyacına adapte et
-- Sonuçlardaki annotation notlarına dikkat et ve kullanıcıya aktar
-- Kurgu, sahne, ışık, renk paleti gibi kreatif fikirler için özellikle faydalı`;
+- Sonuçlardaki annotation notlarına ve techniques listesine dikkat et
+- Gelen örneklerdeki kamera hareketi, sahne geçişi, atmosfer detaylarını kendi promptuna entegre et`;
 
 function getModelSpecificPrompt(modelId: string): string {
   switch (modelId) {

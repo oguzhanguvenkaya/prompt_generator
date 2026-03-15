@@ -23,6 +23,19 @@ AI modelleri (LLM, görsel, video) için uzman ajanlarla prompt üretme uygulama
 - **PixelForge** — Image generation (Recraft V3, Lovart, Leonardo)
 - **MotionLab** — Video generation (Kling 2.6, Higgsfield)
 
+## Research Pipeline
+- `search_inspiration` tool — agents call this to search prompt database for inspiration
+- Pipeline: Gemini text+image embedding → hybrid vector search → Cohere rerank → GPT annotation
+- System prompts enforce MANDATORY tool usage at prompt generation step (not during wizard exploration)
+- Detailed logging at every pipeline stage: embedding, search, rerank, annotation, final results
+
+## Logging & Monitoring
+- `lib/utils/logger.ts` — Structured logger with module tags (CHAT, STREAM, TOOL, RESEARCH)
+- Chat route logs: request start, system prompt, tool calls with full args/results, step details, finish summary
+- Research pipeline logs: embedding timing, vector search candidates with similarity scores, rerank scores, returned examples
+- Warning emitted when no tool calls made during a turn (⚠️ search_inspiration was NOT used)
+- Session polling: 30s interval (only when tab visible) + visibility change trigger
+
 ## Environment Variables
 - `DATABASE_URL` — Neon PostgreSQL connection string
 - `OPENAI_API_KEY` — OpenAI API

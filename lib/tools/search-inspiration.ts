@@ -9,12 +9,18 @@ import { logger } from "@/lib/utils/logger";
  */
 export function createSearchInspirationTool(referenceImages?: ReferenceImage[]) {
   return tool({
-    description: `Prompt veritabanında ilham arar. Kullanıcının isteğine uygun örnek promptlar, kurgu fikirleri ve stil referansları bulur. Kullanıcı referans görsel yüklediyse, görsellere benzer tarzda promptlar da arar (cross-modal). Şu durumlarda kullan:
-- Kullanıcı belirli bir konu/stil için prompt istediğinde
+    description: `Prompt veritabanında ilham ve referans arar. Test edilmiş, yüksek kaliteli örnek promptlar, kurgu fikirleri ve stil referansları bulur. Kullanıcı referans görsel yüklediyse, görsellere benzer tarzda promptlar da arar (cross-modal search).
+
+ZORUNLU KULLANIM: Prompt üretme aşamasına geldiğinde (kullanıcı onay verdikten sonra) bu aracı MUTLAKA çağır. Veritabanındaki gerçek örnekler promptun kalitesini dramatik şekilde artırır.
+
+Çağır:
+- Prompt üretmeden hemen önce (ZORUNLU)
 - Yaratıcı kurgu/sahne ilhamı gerektiğinde
-- Spesifik bir model için örnek prompt formatı ararken
-- Kullanıcı referans görsel yükleyip benzer tarz istediğinde
-Her turda arama YAPMA — sadece gerçekten ilham/referans gerektiğinde kullan.`,
+- Spesifik bir model için format referansı ararken
+- Referans görsel yüklendiğinde benzer tarz bulmak için
+
+Çağırma:
+- Wizard'ın ilk adımlarında (konu henüz netleşmemişken)`,
     inputSchema: z.object({
       query: z
         .string()
