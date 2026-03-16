@@ -18,6 +18,7 @@ export interface ModelInfo {
   platformId: string;        // Which platform/studio this model belongs to
   platformLabel: string;     // Display name of the platform
   provider: string;          // AI SDK provider key for API routing
+  deprecated?: boolean;
 }
 
 // ─── Platforms (Gen AI Studios) ──────────────────────────────────
@@ -139,6 +140,7 @@ export const models: ModelInfo[] = [
     platformId: "openai",
     platformLabel: "OpenAI",
     provider: "openai",
+    deprecated: true,
   },
   // Anthropic
   {
@@ -288,12 +290,12 @@ export const models: ModelInfo[] = [
 
 // ─── Query helpers ──────────────────────────────────────────────
 
-export function getModelsByCategory(category: "text" | "image" | "video") {
-  return models.filter((m) => m.category === category);
+export function getModelsByCategory(category: "text" | "image" | "video", includeDeprecated = false) {
+  return models.filter((m) => m.category === category && (includeDeprecated || !m.deprecated));
 }
 
-export function getModelsByPlatform(platformId: string) {
-  return models.filter((m) => m.platformId === platformId);
+export function getModelsByPlatform(platformId: string, includeDeprecated = false) {
+  return models.filter((m) => m.platformId === platformId && (includeDeprecated || !m.deprecated));
 }
 
 export function getPlatformsByCategory(category: "text" | "image" | "video") {

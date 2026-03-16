@@ -1,0 +1,41 @@
+✓ Starting...
+ ✓ Ready in 1479ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.2s
+ GET / 200 in 5853ms
+ GET / 200 in 5939ms
+ ⚠ Blocked cross-origin request from a252a155-5f53-424d-b626-809465548d91-00-2oq9dunbs8704.worf.replit.dev to /_next/* resource. To allow this, configure "allowedDevOrigins" in next.config
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 118ms
+ ○ Compiling /agent/[agentId] ...
+ ✓ Compiled /agent/[agentId] in 2s
+ GET /agent/pixel-forge 200 in 2494ms
+ ○ Compiling /api/sessions ...
+ ✓ Compiled /api/sessions in 506ms
+ GET /api/sessions?agentId=pixel-forge 200 in 956ms
+ GET /api/sessions?agentId=pixel-forge 200 in 263ms
+ GET /api/sessions?agentId=pixel-forge 200 in 337ms
+ GET /api/sessions?agentId=pixel-forge 200 in 271ms
+ GET /api/sessions?agentId=pixel-forge 200 in 312ms
+ GET /api/sessions?agentId=pixel-forge 200 in 305ms
+ GET /api/sessions?agentId=pixel-forge 200 in 318ms
+ POST /api/sessions 200 in 319ms
+ ○ Compiling /api/chat ...
+ ✓ Compiled /api/chat in 1883ms
+[21:59:39.513] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=1
+[21:59:39.514] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[21:59:39.514] [CHAT] Saving user message to DB preview=bu ürün flex marka random orbital bir polisaj makinası araç pasta cila işleminde attachmentCount=4
+[21:59:40.346] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[21:59:40.347] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=1 hasReferenceImages=true
+[21:59:40.349] [CHAT] Stream created, sending response...
+[21:59:44.472] [STREAM] Text streaming started
+[21:59:48.699] [CHAT] Step #0 completed elapsed=9200ms finishReason=stop toolCalls=none toolResults=0 textLength=559
+[21:59:48.701] [CHAT] ⚠️ No tool calls made during this conversation turn — search_inspiration was NOT used
+[21:59:48.701] [CHAT] ━━━ Stream finished ━━━ totalDuration=9202ms steps=1 toolCallSteps=0 textLength=559 tokens=14250+155
+[21:59:48.833] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 11649ms
+ GET /api/sessions?agentId=pixel-forge 200 in 260ms
+ GET /api/sessions?agentId=pixel-forge 200 in 318ms
+[22:00:15.410] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=2d972dc0-8e6c-4f1d-9ecd-138e210bde72 messageCount=3
+[22:00:15.411] [CHAT] System prompt built length=6485 hasQuickSettings=true domain=social-media
+[22:00:15.411] [CHAT] Saving user message to DB preview=**a)** Aksiyon odaklı — usta polisaj yaparken ürün performansı önde   attachmentCount=0

@@ -1,7 +1,9 @@
 const pricing: Record<string, { input: number; output: number }> = {
   "claude-sonnet": { input: 3, output: 15 },
   "claude-opus": { input: 15, output: 75 },
-  "gpt-4o": { input: 2.5, output: 10 },
+  "gpt-5.4": { input: 2, output: 8 },
+  "gpt-5.4-thinking": { input: 2, output: 8 },
+  "gpt-5.4-pro": { input: 30, output: 180 },
   "gemini-pro": { input: 1.25, output: 5 },
   "kimi-k2.5": { input: 1, output: 3 },
   "qwen": { input: 0.5, output: 1.5 },

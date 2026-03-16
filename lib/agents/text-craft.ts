@@ -48,13 +48,32 @@ Altına 1-2 cümle açıklama ekle.
 - Bilgi toplamadan prompt üretme
 - Etik dışı prompt üretme
 
-## Araştırma Aracı
-\`search_inspiration\` aracını kullanarak prompt veritabanından ilham alabilirsin.
-- Her turda arama YAPMA — sadece gerçekten referans/ilham gerektiğinde kullan
-- Kullanıcının ihtiyacına uygun arama sorgusu formüle et (İngilizce)
+## Araştırma Aracı — search_inspiration
+\`search_inspiration\` aracını kullanarak prompt veritabanından TEKNİK İLHAM ve REFERANS al.
+
+**⚠️ KRİTİK: Veritabanı KONU deposu değil, TEKNİK İLHAM deposudur.**
+Kullanıcı ne isterse istesin — sen veritabanında o KONUYU arama.
+Veritabanında aradığın şey: prompt yapısı, framework kullanımı, role tanımlama, few-shot örnekler, kısıtlama ifadeleri, çıktı formatları.
+Sonra bu teknikleri kullanıcının konusuna adapte edersin.
+
+**ZORUNLU KULLANIM**: Adım 6 (Onay) veya Adım 7 (Üretim) aşamasına geldiğinde, prompt üretmeden ÖNCE mutlaka \`search_inspiration\` aracını çağır.
+
+**Ne zaman çağır**:
+- ✅ Prompt üretme aşamasına geldiğinde (ZORUNLU)
+- ✅ Kullanıcı belirli bir yapı veya format referansı istediğinde
+- ❌ Wizard'ın ilk adımlarında (Adım 1-3) henüz konu netleşmemişken
+
+**Sorgu nasıl oluşturulur — ÇOK ÖNEMLİ**:
+Query parametresine kullanıcının KONUSUNU DEĞİL, ihtiyaç duyduğun TEKNİK TERİMLERİ yaz.
+
+✅ DOĞRU: "structured system prompt role assignment chain-of-thought few-shot examples"
+✅ DOĞRU: "code generation step-by-step reasoning output format constraints"
+❌ YANLIŞ: "müşteri hizmetleri chatbot'u" (kullanıcının konusu, teknik değil)
+
+**Nasıl kullan**:
+- category, targetModel ve domain parametrelerini Quick Settings'ten al
 - Sonuçları doğrudan kopyalama, kullanıcının özel ihtiyacına adapte et
-- Sonuçlardaki annotation notlarına dikkat et ve kullanıcıya aktar
-- Kurgu, sahne, ışık, renk paleti gibi kreatif fikirler için özellikle faydalı`;
+- Sonuçlardaki annotation notlarına ve techniques listesine dikkat et`;
 
 function getModelSpecificPrompt(modelId: string): string {
   switch (modelId) {
@@ -69,16 +88,6 @@ function getModelSpecificPrompt(modelId: string): string {
 - For complex tasks, use chain-of-thought with explicit reasoning sections
 - Claude excels at: nuanced writing, following complex instructions, maintaining consistency, code generation
 - Avoid: excessive repetition of constraints (Claude follows well on first mention)`;
-
-    case "gpt-4o":
-      return `## GPT-4o-Specific Prompt Rules
-- Use Markdown formatting for structure: headers (##), bold (**), lists (-)
-- System message should define the role clearly
-- Use "You must" and "You should" for instruction hierarchy
-- Few-shot examples work best in user/assistant turn format
-- For JSON output, specify "Respond in valid JSON format" explicitly
-- GPT-4o excels at: structured data, function calling, multi-modal understanding
-- Leverage GPT-4o's strength in systematic, structured outputs`;
 
     case "gpt-5.4":
     case "gpt-5.4-thinking":
@@ -134,7 +143,7 @@ export const textCraftConfig: AgentConfig = {
   category: "text",
   icon: "pen-tool",
   color: "textcraft",
-  supportedModels: ["gpt-5.4", "gpt-5.4-thinking", "gpt-5.4-pro", "claude-sonnet", "claude-opus", "gpt-4o", "gemini-pro", "kimi-k2.5", "qwen"],
+  supportedModels: ["gpt-5.4", "gpt-5.4-thinking", "gpt-5.4-pro", "claude-sonnet", "claude-opus", "gemini-pro", "kimi-k2.5", "qwen"],
   defaultModel: "gpt-5.4",
   systemPrompt,
   getModelSpecificPrompt,

@@ -64,71 +64,184 @@ export interface ResearchResult {
 
 const MODULE = "RESEARCH";
 
-interface CandidateSearchParams {
-  queryEmbedding: number[];
-  category: "text" | "image" | "video";
-  targetModel?: string;
-  domain?: string;
-  limit: number;
+interface CandidateWithScore extends SearchResult {
+  relevanceScore: number;
 }
 
-function getTargetModelFallbacks(targetModel: string): string[] {
-  const fallbacks: string[] = [];
+const SIMILARITY_QUALITY_THRESHOLD = 0.5;
 
-  // Legacy rows in some datasets use generic "lovart" instead of specific model IDs.
-  if (targetModel.startsWith("lovart-")) {
-    fallbacks.push("lovart");
-  }
+type FallbackLevel = "strict" | "drop-domain" | "drop-model" | "category-only";
 
-  // Keep a safe fallback for model-family compatibility.
-  if (targetModel === "higgsfield-sora-2-max") {
-    fallbacks.push("higgsfield-sora-2");
-  }
-
-  return [...new Set(fallbacks.filter((m) => m !== targetModel))];
-}
-
-async function fetchVectorCandidates(
-  params: CandidateSearchParams
+async function searchWithExactFilters(
+  embeddings: number[][],
+  category: "text" | "image" | "video",
+  targetModel?: string,
+  domain?: string,
+  limit: number = 10,
 ): Promise<SearchResult[]> {
-  const { queryEmbedding, category, targetModel, domain, limit } = params;
-  const baseParams = {
-    queryEmbedding,
-    category,
-    limit,
-    ...(domain && domain !== "general" ? { domain } : {}),
-  };
-
-  if (!targetModel) {
-    return vectorSearch(baseParams);
-  }
-
-  const strictResults = await vectorSearch({ ...baseParams, targetModel });
-  if (strictResults.length > 0) {
-    return strictResults;
-  }
-
-  for (const fallbackModel of getTargetModelFallbacks(targetModel)) {
-    const fallbackResults = await vectorSearch({
-      ...baseParams,
-      targetModel: fallbackModel,
+  const allCandidates = new Map<number, SearchResult>();
+  for (const embedding of embeddings) {
+    const results = await vectorSearch({
+      queryEmbedding: embedding,
+      category,
+      limit,
+      ...(targetModel ? { targetModel } : {}),
+      ...(domain && domain !== "general" ? { domain } : {}),
     });
-    if (fallbackResults.length > 0) {
-      logger.warn(MODULE, "No strict model matches; used fallback model", {
-        requestedModel: targetModel,
-        fallbackModel,
-        candidateCount: fallbackResults.length,
+    for (const r of results) {
+      const existing = allCandidates.get(r.id);
+      if (!existing || r.similarity > existing.similarity) {
+        allCandidates.set(r.id, r);
+      }
+    }
+  }
+  return Array.from(allCandidates.values())
+    .sort((a, b) => b.similarity - a.similarity)
+    .slice(0, 20);
+}
+
+async function rerankCandidates(
+  candidates: SearchResult[],
+  query: string,
+  maxResults: number,
+): Promise<CandidateWithScore[]> {
+  if (candidates.length === 0) return [];
+
+  const documentsForRerank = candidates.map((c) => {
+    const parts = [c.prompt];
+    if (c.description) parts.push(c.description);
+    if (c.domain) parts.push(`domain: ${c.domain}`);
+    return parts.join(" | ");
+  });
+
+  try {
+    const rerankResults = await withTiming(MODULE, "Cohere rerank", () =>
+      rerankDocuments({
+        query,
+        documents: documentsForRerank,
+        topN: maxResults,
+        relevanceThreshold: 0.3,
+      })
+    );
+
+    logger.info(MODULE, "Rerank results", {
+      inputCount: candidates.length,
+      passedThreshold: rerankResults.length,
+      scores: rerankResults.map((r) => r.relevanceScore.toFixed(3)).join(", ") || "none",
+      topReranked: rerankResults.slice(0, 3).map((r) => ({
+        index: r.index,
+        score: r.relevanceScore.toFixed(3),
+        promptPreview: candidates[r.index]?.prompt?.slice(0, 60) || "?",
+      })),
+    });
+
+    return rerankResults
+      .map((r) => {
+        const candidate = candidates[r.index];
+        if (!candidate) return null;
+        return { ...candidate, relevanceScore: r.relevanceScore };
+      })
+      .filter((c): c is CandidateWithScore => c !== null);
+  } catch (err) {
+    logger.warn(MODULE, "Cohere rerank failed", {
+      error: err instanceof Error ? err.message : String(err),
+    });
+    return [];
+  }
+}
+
+async function fetchWithProgressiveFallback(
+  allEmbeddings: number[][],
+  category: "text" | "image" | "video",
+  targetModel: string | undefined,
+  domain: string | undefined,
+  enrichedQuery: string,
+  maxResults: number,
+): Promise<{ candidates: SearchResult[]; rankedCandidates: CandidateWithScore[]; fallbackLevel: FallbackLevel }> {
+  const hasDomain = !!(domain && domain !== "general");
+  const hasModel = !!targetModel;
+
+  const stages: { level: FallbackLevel; tm?: string; dom?: string }[] = [
+    { level: "strict", tm: targetModel, dom: domain },
+  ];
+
+  if (hasDomain && hasModel) {
+    stages.push({ level: "drop-domain", tm: targetModel, dom: undefined });
+    stages.push({ level: "drop-model", tm: undefined, dom: domain });
+    stages.push({ level: "category-only", tm: undefined, dom: undefined });
+  } else if (hasDomain) {
+    stages.push({ level: "drop-domain", tm: undefined, dom: undefined });
+  } else if (hasModel) {
+    stages.push({ level: "drop-model", tm: undefined, dom: undefined });
+  }
+
+  let bestCandidates: SearchResult[] = [];
+  let bestRanked: CandidateWithScore[] = [];
+  let bestLevel: FallbackLevel = "strict";
+
+  for (const stage of stages) {
+    if (stage.level !== "strict") {
+      const reason = bestRanked.length === 0
+        ? "rerank filtered all candidates"
+        : `low similarity (${bestCandidates[0]?.similarity?.toFixed(3)})`;
+      logger.info(MODULE, `⤵️ Fallback: ${stage.level}`, {
+        reason,
+        droppedDomain: stage.dom === undefined && hasDomain ? domain : undefined,
+        droppedModel: stage.tm === undefined && hasModel ? targetModel : undefined,
       });
-      return fallbackResults;
+    }
+
+    const candidates = await searchWithExactFilters(
+      allEmbeddings, category, stage.tm, stage.dom,
+    );
+    logCandidates(candidates, allEmbeddings.length, stage.level);
+
+    if (candidates.length === 0) continue;
+
+    const topSimilarity = candidates[0]?.similarity ?? 0;
+    const ranked = await rerankCandidates(candidates, enrichedQuery, maxResults);
+
+    if (ranked.length > 0 && topSimilarity >= SIMILARITY_QUALITY_THRESHOLD) {
+      return { candidates, rankedCandidates: ranked, fallbackLevel: stage.level };
+    }
+
+    if (candidates.length > bestCandidates.length || topSimilarity > (bestCandidates[0]?.similarity ?? 0)) {
+      bestCandidates = candidates;
+      bestRanked = ranked;
+      bestLevel = stage.level;
     }
   }
 
-  logger.warn(MODULE, "No model-specific matches; falling back to category/domain search", {
-    requestedModel: targetModel,
-    category,
-    domain: domain || "general",
+  if (bestCandidates.length === 0) {
+    logger.warn(MODULE, "No candidates found at any fallback level");
+    return { candidates: [], rankedCandidates: [], fallbackLevel: "strict" };
+  }
+
+  if (bestRanked.length === 0) {
+    logger.warn(MODULE, "No rerank matches at any level; using vector similarity scores");
+    bestRanked = bestCandidates.slice(0, maxResults).map((c) => ({
+      ...c,
+      relevanceScore: c.similarity,
+    }));
+  }
+
+  return { candidates: bestCandidates, rankedCandidates: bestRanked, fallbackLevel: bestLevel };
+}
+
+function logCandidates(candidates: SearchResult[], embeddingCount: number, level: string): void {
+  logger.info(MODULE, `Vector search results [${level}]`, {
+    candidateCount: candidates.length,
+    uniqueFromEmbeddings: embeddingCount,
+    topSimilarity: candidates[0]?.similarity?.toFixed(3) || "N/A",
+    bottomSimilarity: candidates.length > 0 ? candidates[candidates.length - 1]?.similarity?.toFixed(3) : "N/A",
+    topCandidates: candidates.slice(0, 3).map(c => ({
+      id: c.id,
+      similarity: c.similarity?.toFixed(3),
+      domain: c.domain || "?",
+      model: c.targetModel || "?",
+      promptPreview: c.prompt?.slice(0, 60) || "?",
+    })),
   });
-  return vectorSearch(baseParams);
 }
 
 /**
@@ -164,111 +277,63 @@ export async function executeResearch(
     logger.info(MODULE, "Embedding cache hit", { query: enrichedQuery.slice(0, 60) });
   }
 
-  // 3. Generate image embeddings if reference images provided
+  // 3. Generate image embeddings if reference images provided (non-fatal)
   const imageEmbeddings: number[][] = [];
   if (referenceImages?.length) {
-    for (let i = 0; i < referenceImages.length; i++) {
-      const imgEmbed = await withTiming(MODULE, `Gemini image embedding [${i + 1}/${referenceImages.length}]`, () =>
-        generateImageEmbedding(referenceImages[i].base64, referenceImages[i].mimeType)
-      );
-      imageEmbeddings.push(imgEmbed);
-    }
-  }
-
-  // 4. Search — text embedding + image embeddings (if any)
-  const allEmbeddings = [queryEmbedding, ...imageEmbeddings];
-  const allCandidates = new Map<number, SearchResult>();
-
-  for (const embedding of allEmbeddings) {
-    const searchResults = await withTiming(MODULE, "hybrid search", () =>
-      fetchVectorCandidates({
-        queryEmbedding: embedding,
-        category,
-        ...(targetModel ? { targetModel } : {}),
-        limit: 10,
-        ...(domain && domain !== "general" ? { domain } : {}),
-      })
-    );
-    for (const r of searchResults) {
-      const existing = allCandidates.get(r.id);
-      if (!existing || r.similarity > existing.similarity) {
-        allCandidates.set(r.id, r);
+    const maxImages = Math.min(referenceImages.length, 2);
+    for (let i = 0; i < maxImages; i++) {
+      try {
+        const imgEmbed = await withTiming(MODULE, `Gemini image embedding [${i + 1}/${maxImages}]`, () =>
+          generateImageEmbedding(referenceImages[i].base64, referenceImages[i].mimeType)
+        );
+        imageEmbeddings.push(imgEmbed);
+      } catch (err) {
+        logger.warn(MODULE, `Image embedding [${i + 1}/${maxImages}] failed — skipping`, {
+          error: err instanceof Error ? err.message.slice(0, 150) : String(err),
+          mimeType: referenceImages[i].mimeType,
+          base64Length: referenceImages[i].base64.length,
+        });
       }
     }
+    if (imageEmbeddings.length === 0 && maxImages > 0) {
+      logger.warn(MODULE, "All image embeddings failed — continuing with text-only search");
+    } else if (imageEmbeddings.length > 0) {
+      logger.info(MODULE, "Image embeddings generated", {
+        succeeded: imageEmbeddings.length,
+        attempted: maxImages,
+      });
+    }
   }
 
-  const candidates = Array.from(allCandidates.values())
-    .sort((a, b) => b.similarity - a.similarity)
-    .slice(0, 20);
+  // 4. Search + Rerank with progressive fallback
+  const allEmbeddings = [queryEmbedding, ...imageEmbeddings];
 
-  logger.info(MODULE, "Vector search results", {
-    candidateCount: candidates.length,
-    topSimilarity: candidates[0]?.similarity?.toFixed(3) || "N/A",
-  });
+  const { candidates, rankedCandidates, fallbackLevel } = await withTiming(
+    MODULE,
+    "search + rerank (with fallback)",
+    () => fetchWithProgressiveFallback(
+      allEmbeddings,
+      category,
+      targetModel,
+      domain,
+      enrichedQuery,
+      maxResults,
+    )
+  );
 
   if (candidates.length === 0) {
-    logger.warn(MODULE, "No candidates found — pipeline ending early");
     return {
       examples: [],
       searchSummary: "Veritabanında uygun örnek bulunamadı.",
     };
   }
 
-  // 4. Rerank with Cohere
-  const documentsForRerank = candidates.map((c) => {
-    const parts = [c.prompt];
-    if (c.description) parts.push(c.description);
-    if (c.domain) parts.push(`domain: ${c.domain}`);
-    return parts.join(" | ");
-  });
-
-  let rankedCandidates: CandidateWithScore[];
-  try {
-    const rerankResults = await withTiming(MODULE, "Cohere rerank", () =>
-      rerankDocuments({
-        query: enrichedQuery,
-        documents: documentsForRerank,
-        topN: maxResults,
-        relevanceThreshold: 0.3,
-      })
-    );
-
-    logger.info(MODULE, "Rerank results", {
-      inputCount: candidates.length,
-      passedThreshold: rerankResults.length,
-      scores: rerankResults.map((r) => r.relevanceScore.toFixed(3)).join(", ") || "none",
+  if (fallbackLevel !== "strict") {
+    logger.info(MODULE, "Fallback was used", {
+      finalLevel: fallbackLevel,
+      originalDomain: domain || "general",
+      originalModel: targetModel || "any",
     });
-
-    const mappedCandidates = rerankResults
-      .map((r) => {
-        const candidate = candidates[r.index];
-        if (!candidate) return null;
-        return {
-          ...candidate,
-          relevanceScore: r.relevanceScore,
-        };
-      })
-      .filter(
-        (c): c is SearchResult & { relevanceScore: number } => c !== null
-      );
-
-    if (mappedCandidates.length > 0) {
-      rankedCandidates = mappedCandidates;
-    } else {
-      logger.warn(MODULE, "Rerank returned no usable matches; using vector similarity fallback");
-      rankedCandidates = candidates.slice(0, maxResults).map((c) => ({
-        ...c,
-        relevanceScore: c.similarity,
-      }));
-    }
-  } catch (err) {
-    logger.warn(MODULE, "Cohere rerank unavailable; using vector similarity fallback", {
-      error: err instanceof Error ? err.message : String(err),
-    });
-    rankedCandidates = candidates.slice(0, maxResults).map((c) => ({
-      ...c,
-      relevanceScore: c.similarity,
-    }));
   }
 
   // 6. LLM Annotation
@@ -277,24 +342,32 @@ export async function executeResearch(
   );
 
   const totalDuration = Date.now() - pipelineStart;
+  const fallbackNote = fallbackLevel !== "strict"
+    ? ` (fallback: ${fallbackLevel})`
+    : "";
   const summary = `${annotated.length} ilgili örnek bulundu${
     domain ? `, domain: ${domain}` : ""
-  }${targetModel ? `, model: ${targetModel}` : ""}.`;
+  }${targetModel ? `, model: ${targetModel}` : ""}${fallbackNote}.`;
 
   logger.info(MODULE, "━━━ Pipeline completed ━━━", {
     totalDuration: `${totalDuration}ms`,
     examplesReturned: annotated.length,
+    fallbackLevel,
     summary,
+    returnedExamples: annotated.map((ex, i) => ({
+      index: i + 1,
+      score: ex.relevanceScore?.toFixed(3),
+      domain: ex.domain,
+      model: ex.targetModel || "any",
+      promptPreview: ex.prompt.slice(0, 80),
+      techniques: ex.techniques.slice(0, 3).join(", "),
+    })),
   });
 
   return {
     examples: annotated,
     searchSummary: summary,
   };
-}
-
-interface CandidateWithScore extends SearchResult {
-  relevanceScore: number;
 }
 
 async function annotateExamples(

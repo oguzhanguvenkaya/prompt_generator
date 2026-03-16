@@ -53,8 +53,9 @@ function buildQuickSettingsContext(qs: QuickSettings, agentCategory: string): st
   lines.push("\nBu ayarları ürettiğin prompt'a yansıt. Kullanıcı bu parametreleri zaten seçti, tekrar sorma.");
   lines.push("Boyut ve kalite bilgisini prompt metnine EKLEME — bunlar API parametreleri olarak ayrı gönderilir.");
   lines.push(
-    `search_inspiration aracını çağırırsan category='${agentCategory}', targetModel='${qs.model || "any"}', domain='${qs.domain || "general"}' kullan.`
+    `search_inspiration aracını çağırırsan category='${agentCategory}', targetModel='${qs.model || "any"}', domain='${qs.domain || "general"}' kullan. HATIRLA: query parametresine kullanıcının konusunu değil, aradığın TEKNİK TERİMLERİ (ışık, kompozisyon, stil, kamera açısı, atmosfer) yaz.`
   );
+  lines.push("Referans görseller varsa, search_inspiration aracını İLK TURDA çağır — görsellerin teknik özelliklerine (ışık, stil, kompozisyon) benzer promptları bul.");
   return lines.join("\n");
 }
 
@@ -149,6 +150,8 @@ export async function POST(req: Request) {
       count: referenceImages.length,
       types: referenceImages.map(r => r.mimeType),
     });
+    systemPrompt += `\n\n## ⚡ REFERANS GÖRSELLER ALGILANDI (${referenceImages.length} adet)
+Kullanıcı referans görsel yükledi. search_inspiration aracını ŞİMDİ çağır — görsellerdeki TEKNİK ÖZELLİKLERE (ışık, kompozisyon, stil, renk paleti, atmosfer) benzer promptları veritabanından getir. HATIRLA: query parametresine kullanıcının konusunu/ürününü DEĞİL, görsellerde gözlemlediğin teknik terimleri yaz. Bu ZORUNLUDUR.`;
   }
 
   const model = agent.category === "text" && targetModel
@@ -199,15 +202,28 @@ export async function POST(req: Request) {
         let textStartLogged = false;
         return ({ chunk }: { chunk: Record<string, unknown> }) => {
           if (chunk.type === "tool-call") {
-            logger.info("STREAM", "Tool call chunk", {
+            const args = chunk.args as Record<string, unknown> | undefined;
+            logger.info("STREAM", "🔧 Tool CALLED", {
               toolName: chunk.toolName,
-              argsPreview: JSON.stringify(chunk.input).slice(0, 120),
+              query: typeof args?.query === "string" ? args.query.slice(0, 100) : "N/A",
+              intent: typeof args?.intent === "string" ? args.intent.slice(0, 80) : "none",
+              category: args?.category || "N/A",
+              targetModel: args?.targetModel || "any",
+              domain: args?.domain || "any",
             });
           } else if (chunk.type === "tool-result") {
-            const res = chunk.output as unknown as Record<string, unknown> | undefined;
-            logger.info("STREAM", "Tool result chunk", {
+            const res = chunk.result as unknown as Record<string, unknown> | undefined;
+            const examples = Array.isArray(res?.examples) ? res.examples : [];
+            logger.info("STREAM", "🔧 Tool RESULT received", {
               toolName: chunk.toolName,
-              exampleCount: Array.isArray(res?.examples) ? res.examples.length : "N/A",
+              exampleCount: examples.length,
+              summary: typeof res?.searchSummary === "string" ? res.searchSummary.slice(0, 120) : "N/A",
+              topExamples: examples.slice(0, 3).map((ex: Record<string, unknown>) => ({
+                promptPreview: typeof ex.prompt === "string" ? ex.prompt.slice(0, 80) : "?",
+                score: typeof ex.relevanceScore === "number" ? ex.relevanceScore.toFixed(3) : "?",
+                domain: ex.domain || "?",
+                model: ex.targetModel || "?",
+              })),
             });
           } else if (chunk.type === "text-delta" && !textStartLogged) {
             textStartLogged = true;
@@ -218,6 +234,27 @@ export async function POST(req: Request) {
       async onStepFinish({ stepNumber, toolCalls, toolResults, text, finishReason }) {
         const elapsed = Date.now() - requestStart;
         const hasToolCalls = toolCalls && toolCalls.length > 0;
+
+        if (hasToolCalls) {
+          for (const tc of toolCalls) {
+            logger.info("CHAT", `Step #${stepNumber} — Tool call detail`, {
+              toolName: tc.toolName,
+              args: JSON.stringify((tc as Record<string, unknown>).args ?? {}).slice(0, 200),
+            });
+          }
+          if (toolResults) {
+            for (const tr of toolResults) {
+              const result = (tr as Record<string, unknown>).result as Record<string, unknown> | undefined;
+              const examples = Array.isArray(result?.examples) ? result.examples : [];
+              logger.info("CHAT", `Step #${stepNumber} — Tool result detail`, {
+                toolName: tr.toolName,
+                examplesReturned: examples.length,
+                searchSummary: typeof result?.searchSummary === "string" ? result.searchSummary : "N/A",
+              });
+            }
+          }
+        }
+
         logger.info("CHAT", `Step #${stepNumber} completed`, {
           elapsed: `${elapsed}ms`,
           finishReason: finishReason || "unknown",
@@ -229,6 +266,10 @@ export async function POST(req: Request) {
       async onFinish({ text, steps, usage }) {
         const elapsed = Date.now() - requestStart;
         const toolCallSteps = steps?.filter((s) => s.toolCalls && s.toolCalls.length > 0).length || 0;
+
+        if (toolCallSteps === 0) {
+          logger.warn("CHAT", "⚠️ No tool calls made during this conversation turn — search_inspiration was NOT used");
+        }
 
         logger.info("CHAT", "━━━ Stream finished ━━━", {
           totalDuration: `${elapsed}ms`,

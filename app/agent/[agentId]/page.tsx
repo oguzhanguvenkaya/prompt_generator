@@ -57,12 +57,12 @@ export default function AgentPage() {
     };
     document.addEventListener("visibilitychange", handleVisibility);
 
-    // Light polling only when tab is active — 15s interval
+    // Light polling only when tab is active — 30s interval
     const interval = setInterval(() => {
       if (document.visibilityState === "visible") {
         fetchSessions();
       }
-    }, 15000);
+    }, 30000);
 
     return () => {
       document.removeEventListener("visibilitychange", handleVisibility);

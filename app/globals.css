@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@source not "../.local";
+@source not "../reports";
+@source not "../research_2";
+@source not "../research_new";
+@source not "../Research";
+@source not "../docs";
+
 @theme {
   --color-background: #ffffff;
   --color-foreground: #0a0a0a;

@@ -9,17 +9,22 @@ import { logger } from "@/lib/utils/logger";
  */
 export function createSearchInspirationTool(referenceImages?: ReferenceImage[]) {
   return tool({
-    description: `Prompt veritabanında ilham arar. Kullanıcının isteğine uygun örnek promptlar, kurgu fikirleri ve stil referansları bulur. Kullanıcı referans görsel yüklediyse, görsellere benzer tarzda promptlar da arar (cross-modal). Şu durumlarda kullan:
-- Kullanıcı belirli bir konu/stil için prompt istediğinde
-- Yaratıcı kurgu/sahne ilhamı gerektiğinde
-- Spesifik bir model için örnek prompt formatı ararken
-- Kullanıcı referans görsel yükleyip benzer tarz istediğinde
-Her turda arama YAPMA — sadece gerçekten ilham/referans gerektiğinde kullan.`,
+    description: `Prompt veritabanından TEKNİK İLHAM arar. Veritabanı KONU deposu değil, TEKNİK İLHAM deposudur — ışık, kompozisyon, stil, kamera, atmosfer gibi prompt mühendisliği tekniklerini bulur. Kullanıcının konusu ne olursa olsun (polisaj makinası, ayakkabı, restoran), sen TEKNİK TERİMLERLE ara ve bulunan teknikleri kullanıcının konusuna adapte et. Referans görsel yüklendiyse görsellerin teknik özelliklerine benzer promptlar da arar (cross-modal search).
+
+ZORUNLU KULLANIM: Prompt üretme aşamasına geldiğinde (kullanıcı onay verdikten sonra) bu aracı MUTLAKA çağır.
+
+Çağır:
+- Prompt üretmeden hemen önce (ZORUNLU)
+- Yaratıcı kurgu/sahne/teknik ilhamı gerektiğinde
+- Referans görsel yüklendiğinde teknik benzerlik bulmak için
+
+Çağırma:
+- Wizard'ın ilk adımlarında (konu henüz netleşmemişken)`,
     inputSchema: z.object({
       query: z
         .string()
         .describe(
-          "Ne arıyoruz? Örn: 'product photography dramatic lighting'"
+          "TEKNİK arama sorgusu — kullanıcının konusunu DEĞİL, aradığın ışık/kompozisyon/stil/kamera tekniklerini yaz. DOĞRU: 'dramatic rim lighting product hero shot cinematic' YANLIŞ: 'polisaj makinası' veya 'ayakkabı reklamı'"
         ),
       intent: z
         .string()

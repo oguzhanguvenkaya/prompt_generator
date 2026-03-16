@@ -143,10 +143,10 @@ Structured report with:
     description: "SOC 2 güvenlik denetimi, OWASP Top 10 uyumluluk checklist",
   },
 
-  // ─── GPT-4o ──────────────────────────────────────────────────
+  // ─── GPT-5.4 (E-Commerce Report) ─────────────────────────────
   {
     category: "text",
-    targetModel: "gpt-4o",
+    targetModel: "gpt-5.4",
     prompt: `## Role
 You are an experienced data analyst with expertise in e-commerce metrics.
 
@@ -170,7 +170,7 @@ Analyze the provided sales data and generate a comprehensive monthly report.
 - Use only the provided data, do not assume
 - Round all percentages to 1 decimal place
 - Flag any data quality issues you notice`,
-    tags: ["data-analysis", "e-commerce", "report", "gpt-4o"],
+    tags: ["data-analysis", "e-commerce", "report", "gpt-5.4"],
     quality: 0.93,
     source: "curated",
     domain: "e-commerce",

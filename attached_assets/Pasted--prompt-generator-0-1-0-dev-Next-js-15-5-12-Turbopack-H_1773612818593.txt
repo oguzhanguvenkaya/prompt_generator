@@ -1,0 +1,86 @@
+
+> prompt-generator@0.1.0 dev
+   ▲ Next.js 15.5.12 (Turbopack)H 0.0.0.0
+   - Local:        http://localhost:5000
+   - Network:      http://0.0.0.0:5000
+
+ ✓ Starting...
+ ✓ Ready in 1058ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3s
+ GET / 200 in 3354ms
+ ⚠ Blocked cross-origin request from a252a155-5f53-424d-b626-809465548d91-00-2oq9dunbs8704.worf.replit.dev to /_next/* resource. To allow this, configure "allowedDevOrigins" in next.config
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /api/sessions in 451ms
+ GET /api/sessions?agentId=pixel-forge 200 in 879ms
+ POST /api/sessions 200 in 271ms
+ ○ Compiling /api/chat ...
+ ✓ Compiled /api/chat in 1173ms
+ GET /api/sessions?agentId=pixel-forge 200 in 309ms
+ GET /api/sessions?agentId=pixel-forge 200 in 314ms
+ GET /api/sessions?agentId=pixel-forge 200 in 321ms
+ GET /api/sessions?agentId=pixel-forge 200 in 314ms
+ ○ Compiling /agent/[agentId] ...
+ ✓ Compiled /agent/[agentId] in 1600ms
+ GET /agent/pixel-forge?session=986b2248-1746-4cb9-a656-95d636273ba4 200 in 2348ms
+ ✓ Compiled /api/sessions/[sessionId]/messages in 150ms
+ GET /api/sessions?agentId=pixel-forge 200 in 314ms
+ GET /api/sessions/986b2248-1746-4cb9-a656-95d636273ba4/messages 200 in 1065ms
+[22:12:29.220] [CHAT] ━━━ New request ━━━ agentId=pixel-forge targetModel=lovart-nano-banana-pro sessionId=986b2248-1746-4cb9-a656-95d636273ba4 messageCount=1
+[22:12:29.221] [CHAT] System prompt built length=6702 hasQuickSettings=true domain=social-media
+[22:12:29.221] [CHAT] Saving user message to DB preview=bu ürün flex marka random orbital bir polisaj makinası araç pasta cila işleminde attachmentCount=4
+[22:12:37.815] [CHAT] Reference images extracted for cross-modal search count=4 types=["image/png","image/png","image/png","image/png"]
+[22:12:37.817] [CHAT] Starting streamText model=lovart-nano-banana-pro tools=search_inspiration maxSteps=3 trimmedMessageCount=1 hasReferenceImages=true
+[22:12:37.821] [CHAT] Stream created, sending response...
+[22:12:52.713] [STREAM] 🔧 Tool CALLED toolName=search_inspiration query=N/A intent=none category=N/A targetModel=any domain=any
+[22:12:52.714] [TOOL] search_inspiration called query=automotive detailing polisher social media product campaign workshop cinematic p intent=reference-led social media post concepts for FLEX random orbital polisher used in car polishing/detailing, based on uploaded workshop and product visuals category=image targetModel=lovart-nano-banana-pro domain=social-media referenceImageCount=4
+[22:12:52.715] [RESEARCH] ━━━ Pipeline started ━━━ query=automotive detailing polisher social media product campaign workshop cinematic photograph cordless r intent=reference-led social media post concepts for FLEX random orbital polisher used in car polishing/detailing, based on uploaded workshop and product visuals category=image targetModel=lovart-nano-banana-pro domain=social-media referenceImageCount=4
+[22:12:52.715] [RESEARCH] Gemini text embedding started
+[22:12:53.208] [RESEARCH] Gemini text embedding completed duration=493ms
+[22:12:53.209] [RESEARCH] Gemini image embedding [1/2] started
+[22:12:53.223] [EMBEDDING] Image too large, resizing with sharp originalSizeKB=6208
+[22:12:53.356] [EMBEDDING] Sending image to Gemini embedding API model=gemini-embedding-2-preview declaredMime=image/png actualMime=image/jpeg base64Length=166768 approxSizeKB=122 first20chars=/9j/2wBDAAUDBAQEAwUE
+[22:12:54.660] [EMBEDDING] Image embedding generated successfully dimensions=768 mimeType=image/jpeg sizeKB=122
+[22:12:54.660] [RESEARCH] Gemini image embedding [1/2] completed duration=1.45s
+[22:12:54.660] [RESEARCH] Gemini image embedding [2/2] started
+[22:12:54.679] [EMBEDDING] Image too large, resizing with sharp originalSizeKB=4902
+[22:12:54.777] [EMBEDDING] Sending image to Gemini embedding API model=gemini-embedding-2-preview declaredMime=image/png actualMime=image/jpeg base64Length=142772 approxSizeKB=105 first20chars=/9j/2wBDAAUDBAQEAwUE
+[22:12:55.680] [EMBEDDING] Image embedding generated successfully dimensions=768 mimeType=image/jpeg sizeKB=105
+[22:12:55.680] [RESEARCH] Gemini image embedding [2/2] completed duration=1.02s
+[22:12:55.680] [RESEARCH] Image embeddings generated succeeded=2 attempted=2
+[22:12:55.680] [RESEARCH] hybrid search started
+[22:12:55.756] [VECTOR] Executing pgvector search category=image targetModel=lovart-nano-banana-pro domain=social-media limit=10 filters=4 optionalColumns={"whyItWorks":true,"modelNotes":true}
+[22:12:55.848] [VECTOR] Search returned resultCount=10 similarities=0.652, 0.646, 0.644, 0.644, 0.644, 0.639, 0.638, 0.632, 0.632, 0.632
+[22:12:55.848] [RESEARCH] hybrid search completed duration=168ms
+[22:12:55.848] [RESEARCH] hybrid search started
+[22:12:55.848] [VECTOR] Executing pgvector search category=image targetModel=lovart-nano-banana-pro domain=social-media limit=10 filters=4 optionalColumns={"whyItWorks":true,"modelNotes":true}
+[22:12:55.893] [VECTOR] Search returned resultCount=10 similarities=0.306, 0.304, 0.303, 0.297, 0.297, 0.295, 0.294, 0.294, 0.294, 0.289
+[22:12:55.893] [RESEARCH] hybrid search completed duration=45ms
+[22:12:55.893] [RESEARCH] hybrid search started
+[22:12:55.894] [VECTOR] Executing pgvector search category=image targetModel=lovart-nano-banana-pro domain=social-media limit=10 filters=4 optionalColumns={"whyItWorks":true,"modelNotes":true}
+[22:12:55.919] [VECTOR] Search returned resultCount=10 similarities=0.305, 0.298, 0.296, 0.290, 0.280, 0.276, 0.275, 0.273, 0.272, 0.272
+[22:12:55.919] [RESEARCH] hybrid search completed duration=26ms
+[22:12:55.919] [RESEARCH] Vector search results candidateCount=15 uniqueFromEmbeddings=3 topSimilarity=0.652 bottomSimilarity=0.273 topCandidates=[{"id":6697,"similarity":"0.652","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Produce a conceptual image featuring a sleek modern coffee s"},{"id":6509,"similarity":"0.646","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Design a hyperrealistic, editorial-style portrait of a young"},{"id":6558,"similarity":"0.644","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Render a professional, ultra-sharp 8K image of a high-end fi"}]
+[22:12:55.919] [RESEARCH] Cohere rerank started
+[22:12:55.919] [RERANK] Calling Cohere rerank API documentCount=15 topN=5 threshold=0.3
+[22:12:56.076] [RERANK] Results rawCount=5 filteredCount=0 allScores=0.189, 0.125, 0.099, 0.086, 0.066
+[22:12:56.076] [RESEARCH] Cohere rerank completed duration=157ms
+[22:12:56.077] [RESEARCH] Rerank results inputCount=15 passedThreshold=0 scores=none topReranked=[]
+[22:12:56.077] [RESEARCH] Rerank returned no usable matches; using vector similarity fallback
+[22:12:56.077] [RESEARCH] LLM annotation started
+[22:12:56.077] [RESEARCH] Annotating examples with gpt-5-mini exampleCount=5
+[22:13:17.195] [RESEARCH] Annotation parsed successfully annotationCount=5
+[22:13:17.195] [RESEARCH] LLM annotation completed duration=21.12s
+[22:13:17.195] [RESEARCH] ━━━ Pipeline completed ━━━ totalDuration=24480ms examplesReturned=5 summary=5 ilgili örnek bulundu, domain: social-media, model: lovart-nano-banana-pro. returnedExamples=[{"index":1,"score":"0.652","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Produce a conceptual image featuring a sleek modern coffee shop interior with wa","techniques":"Butterfly lighting, Selective focus, Muted earth tones"},{"index":2,"score":"0.646","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Design a hyperrealistic, editorial-style portrait of a young entrepreneur workin","techniques":"Clamshell lighting, Brand color integration, 8K HDR"},{"index":3,"score":"0.644","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Render a professional, ultra-sharp 8K image of a high-end fitness influencer mid","techniques":"Clamshell lighting, Dynamic motion blur, Cool color palette"},{"index":4,"score":"0.644","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Design a conceptual image visualizing a digital entrepreneur’s workspace with du","techniques":"Split lighting, Dual reference color matching, 8K HDR"},{"index":5,"score":"0.644","domain":"social-media","model":"lovart-nano-banana-pro","promptPreview":"Generate a vibrant, photorealistic lifestyle image showcasing a young influencer","techniques":"Paramount lighting, Subtle branding, Minimalist composition"}]
+[22:13:17.195] [TOOL] search_inspiration result exampleCount=5 summary=5 ilgili örnek bulundu, domain: social-media, model: lovart-nano-banana-pro.
+[22:13:17.196] [STREAM] 🔧 Tool RESULT received toolName=search_inspiration exampleCount=0 summary=N/A topExamples=[]
+ GET /api/sessions?agentId=pixel-forge 200 in 329ms
+ GET /api/sessions?agentId=pixel-forge 200 in 302ms
+ POST /api/chat 200 in 107765ms
+ GET /api/sessions?agentId=pixel-forge 200 in 310ms
+[22:13:27.724] [STREAM] Text streaming started
+ GET /api/sessions?agentId=pixel-forge 200 in 269ms
+[22:13:33.300] [CHAT] Step #1 completed elapsed=68949ms finishReason=stop toolCalls=none toolResults=0 textLength=516
+[22:13:33.301] [CHAT] ━━━ Stream finished ━━━ totalDuration=68950ms steps=2 toolCallSteps=1 textLength=516 tokens=15731+154
+[22:13:33.394] [CHAT] Assistant message saved to DB
+ POST /api/chat 200 in 69334ms
