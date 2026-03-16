@@ -27,7 +27,10 @@ export function PromptOutput({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(prompt);
+    const text = negativePrompt
+      ? `${prompt}\n\n--neg\n${negativePrompt}`
+      : prompt;
+    await navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -43,7 +46,7 @@ export function PromptOutput({
             </span>
           )}
         </div>
-        <pre className="whitespace-pre-wrap text-sm bg-muted rounded-md p-3 font-mono">
+        <pre className="whitespace-pre-wrap text-sm bg-muted rounded-md p-3 font-mono min-h-[7.5rem] max-h-[20rem] overflow-y-auto">
           {prompt}
         </pre>
         {negativePrompt && (
@@ -51,7 +54,7 @@ export function PromptOutput({
             <div className="text-xs font-medium text-muted-foreground mt-3 mb-2 uppercase tracking-wider">
               Negatif Prompt
             </div>
-            <pre className="whitespace-pre-wrap text-sm bg-muted rounded-md p-3 font-mono text-destructive">
+            <pre className="whitespace-pre-wrap text-sm bg-muted rounded-md p-3 font-mono text-destructive max-h-[10rem] overflow-y-auto">
               {negativePrompt}
             </pre>
           </>

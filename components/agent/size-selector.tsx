@@ -9,11 +9,13 @@ interface SizeOption {
 }
 
 const sizeDescriptions: Record<string, string> = {
-  "1:1": "Kare format — Instagram, profil fotoğrafı",
-  "4:3": "Klasik oran — sunum, web banner",
   "16:9": "Geniş ekran — YouTube, sinema, kapak",
+  "4:3": "Klasik oran — sunum, web banner",
+  "5:4": "Hafif yatay — fotoğraf baskı",
+  "1:1": "Kare format — Instagram, profil fotoğrafı",
+  "4:5": "Hafif dikey — Instagram portre",
+  "3:4": "Dikey klasik — Pinterest, poster",
   "9:16": "Dikey — TikTok, Reels, Stories",
-  "3:2": "Fotoğraf oranı — baskı, poster",
 };
 
 interface SizeSelectorProps {
@@ -36,6 +38,7 @@ export function SizeSelector({ sizes, selected, onChange }: SizeSelectorProps) {
       }))}
       selected={selected}
       onChange={onChange}
+      columns={2}
     />
   );
 }

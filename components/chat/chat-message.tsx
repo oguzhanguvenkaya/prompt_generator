@@ -4,7 +4,9 @@ import ReactMarkdown from "react-markdown";
 import { cn } from "@/lib/utils/cn";
 import { Bot, User } from "lucide-react";
 import { parseWizardOptions } from "@/lib/utils/parse-wizard-options";
+import { parsePromptBlocks } from "@/lib/utils/parse-prompt-blocks";
 import { WizardOptionCards } from "./wizard-option-cards";
+import { PromptOutput } from "./prompt-output";
 
 interface ChatMessageProps {
   role: "user" | "assistant";
@@ -29,6 +31,9 @@ export function ChatMessage({
 
   const parsed = !isUser ? parseWizardOptions(content) : null;
   const showCards = parsed && !isStreaming;
+
+  // Parse prompt/negative code fence blocks from assistant messages
+  const promptBlocks = !isUser && !isStreaming ? parsePromptBlocks(content) : null;
 
   // Extract file/image parts from user messages
   const fileParts = parts?.filter((p) => p.type === "file") ?? [];
@@ -79,17 +84,37 @@ export function ChatMessage({
         )}
         {content && content.trim() && (
           <>
-            <div className="prose prose-sm dark:prose-invert max-w-none overflow-hidden [&_pre]:overflow-x-auto [&_code]:break-all">
-              <ReactMarkdown>
-                {showCards ? parsed.intro : content}
-              </ReactMarkdown>
-            </div>
-            {showCards && onOptionSelect && (
-              <WizardOptionCards
-                options={parsed.options}
-                onSelect={onOptionSelect}
-                disabled={!isLastAssistant}
-              />
+            {promptBlocks ? (
+              // Render parsed prompt blocks with PromptOutput component
+              promptBlocks.segments.map((segment, i) =>
+                segment.type === "text" ? (
+                  <div key={i} className="prose prose-sm dark:prose-invert max-w-none overflow-hidden [&_pre]:overflow-x-auto [&_code]:break-all">
+                    <ReactMarkdown>{segment.content}</ReactMarkdown>
+                  </div>
+                ) : (
+                  <PromptOutput
+                    key={i}
+                    prompt={segment.prompt}
+                    negativePrompt={segment.negativePrompt}
+                  />
+                )
+              )
+            ) : (
+              // Default rendering: markdown + wizard option cards
+              <>
+                <div className="prose prose-sm dark:prose-invert max-w-none overflow-hidden [&_pre]:overflow-x-auto [&_code]:break-all">
+                  <ReactMarkdown>
+                    {showCards ? parsed.intro : content}
+                  </ReactMarkdown>
+                </div>
+                {showCards && onOptionSelect && (
+                  <WizardOptionCards
+                    options={parsed.options}
+                    onSelect={onOptionSelect}
+                    disabled={!isLastAssistant}
+                  />
+                )}
+              </>
             )}
           </>
         )}

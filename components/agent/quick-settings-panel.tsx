@@ -24,9 +24,12 @@ const modelPresets: Record<string, {
   // ─── Recraft ──────────────────────────────────────────────────
   "recraft-v3": {
     sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
-      { label: "4:3", width: 1024, height: 768 },
       { label: "16:9", width: 1024, height: 576 },
+      { label: "4:3", width: 1024, height: 768 },
+      { label: "5:4", width: 1024, height: 819 },
+      { label: "1:1", width: 1024, height: 1024 },
+      { label: "4:5", width: 819, height: 1024 },
+      { label: "3:4", width: 768, height: 1024 },
       { label: "9:16", width: 576, height: 1024 },
     ],
     qualities: [
@@ -48,8 +51,10 @@ const modelPresets: Record<string, {
   // ─── Lovart (Gen AI Studio — ortak boyut/kalite) ──────────────
   "lovart-nano-banana-pro": {
     sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
       { label: "16:9", width: 1344, height: 768 },
+      { label: "4:3", width: 1152, height: 896 },
+      { label: "1:1", width: 1024, height: 1024 },
+      { label: "3:4", width: 896, height: 1152 },
       { label: "9:16", width: 768, height: 1344 },
     ],
     qualities: [
@@ -65,8 +70,10 @@ const modelPresets: Record<string, {
   },
   "lovart-seedream-5.0": {
     sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
       { label: "16:9", width: 1344, height: 768 },
+      { label: "4:3", width: 1152, height: 896 },
+      { label: "1:1", width: 1024, height: 1024 },
+      { label: "3:4", width: 896, height: 1152 },
       { label: "9:16", width: 768, height: 1344 },
       { label: "4K", width: 2048, height: 2048 },
     ],
@@ -84,8 +91,10 @@ const modelPresets: Record<string, {
   },
   "lovart-flux-2": {
     sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
       { label: "16:9", width: 1440, height: 810 },
+      { label: "4:3", width: 1152, height: 864 },
+      { label: "1:1", width: 1024, height: 1024 },
+      { label: "3:4", width: 864, height: 1152 },
       { label: "9:16", width: 810, height: 1440 },
     ],
     qualities: [
@@ -100,8 +109,10 @@ const modelPresets: Record<string, {
   },
   "lovart-gpt-image-1": {
     sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
       { label: "16:9", width: 1792, height: 1024 },
+      { label: "4:3", width: 1344, height: 1024 },
+      { label: "1:1", width: 1024, height: 1024 },
+      { label: "3:4", width: 1024, height: 1344 },
       { label: "9:16", width: 1024, height: 1792 },
     ],
     qualities: [
@@ -118,10 +129,13 @@ const modelPresets: Record<string, {
   // ─── Leonardo AI ─────────────────────────────────────────────
   "leonardo-phoenix": {
     sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
       { label: "16:9", width: 1280, height: 720 },
-      { label: "9:16", width: 720, height: 1280 },
       { label: "4:3", width: 1024, height: 768 },
+      { label: "5:4", width: 1024, height: 819 },
+      { label: "1:1", width: 1024, height: 1024 },
+      { label: "4:5", width: 819, height: 1024 },
+      { label: "3:4", width: 768, height: 1024 },
+      { label: "9:16", width: 720, height: 1280 },
     ],
     qualities: [
       { label: "Ultra (5MP+)", value: "ultra" },
@@ -143,8 +157,10 @@ const modelPresets: Record<string, {
   },
   "leonardo-ideogram-3": {
     sizes: [
-      { label: "1:1", width: 1024, height: 1024 },
       { label: "16:9", width: 1344, height: 768 },
+      { label: "4:3", width: 1152, height: 896 },
+      { label: "1:1", width: 1024, height: 1024 },
+      { label: "3:4", width: 896, height: 1152 },
       { label: "9:16", width: 768, height: 1344 },
     ],
     qualities: [
@@ -161,8 +177,10 @@ const modelPresets: Record<string, {
   "kling-3.0": {
     sizes: [
       { label: "16:9 (4K)", width: 3840, height: 2160 },
-      { label: "9:16 (4K)", width: 2160, height: 3840 },
+      { label: "4:3 (4K)", width: 2880, height: 2160 },
       { label: "1:1 (4K)", width: 2160, height: 2160 },
+      { label: "3:4 (4K)", width: 2160, height: 2880 },
+      { label: "9:16 (4K)", width: 2160, height: 3840 },
     ],
     qualities: [
       { label: "Standard", value: "standard" },
@@ -179,8 +197,10 @@ const modelPresets: Record<string, {
   "higgsfield-sora-2": {
     sizes: [
       { label: "16:9", width: 1920, height: 1080 },
-      { label: "9:16", width: 1080, height: 1920 },
+      { label: "4:3", width: 1440, height: 1080 },
       { label: "1:1", width: 1080, height: 1080 },
+      { label: "3:4", width: 1080, height: 1440 },
+      { label: "9:16", width: 1080, height: 1920 },
     ],
     qualities: [
       { label: "Standard", value: "standard" },
@@ -195,6 +215,9 @@ const modelPresets: Record<string, {
   "higgsfield-veo-3.1": {
     sizes: [
       { label: "16:9", width: 1920, height: 1080 },
+      { label: "4:3", width: 1440, height: 1080 },
+      { label: "1:1", width: 1080, height: 1080 },
+      { label: "3:4", width: 1080, height: 1440 },
       { label: "9:16", width: 1080, height: 1920 },
     ],
     qualities: [
@@ -210,6 +233,9 @@ const modelPresets: Record<string, {
   "higgsfield-wan-2.5": {
     sizes: [
       { label: "16:9", width: 1920, height: 1080 },
+      { label: "4:3", width: 1440, height: 1080 },
+      { label: "1:1", width: 1080, height: 1080 },
+      { label: "3:4", width: 1080, height: 1440 },
       { label: "9:16", width: 1080, height: 1920 },
     ],
     qualities: [
@@ -227,8 +253,10 @@ const modelPresets: Record<string, {
   "seedance-2.0": {
     sizes: [
       { label: "16:9", width: 1920, height: 1080 },
-      { label: "9:16", width: 1080, height: 1920 },
+      { label: "4:3", width: 1440, height: 1080 },
       { label: "1:1", width: 1080, height: 1080 },
+      { label: "3:4", width: 1080, height: 1440 },
+      { label: "9:16", width: 1080, height: 1920 },
     ],
     qualities: [
       { label: "Standard", value: "standard" },
