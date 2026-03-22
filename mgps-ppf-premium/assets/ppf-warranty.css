@@ -1,68 +1,109 @@
 /* ========================================
    MGPS PPF Warranty Section
-   v2.0 — DESIGN.MD Uyumlu
+   v2.1 — Yeni Tasarım
    ======================================== */
 
 :root {
     --mgps-gold: #D4AF37;
 }
 
-/* --- Header --- */
+/* --- Section Arka Plan: Gradient --- */
+.mgps-warranty {
+    background: linear-gradient(160deg, #1a1d22 0%, #22262c 40%, #1e2127 70%, #16181c 100%) !important;
+}
+
+/* --- Header: Ortalanmış --- */
 .mgps-warranty .mgps-warranty-header {
-    max-width: 640px;
-    margin-bottom: 48px;
+    max-width: 700px;
+    margin: 0 auto 56px;
+    text-align: center;
+}
+
+.mgps-warranty .mgps-warranty-header .mgps-divider-accent {
+    margin: 16px auto;
 }
 
 /* --- 3 Kart Grid --- */
 .mgps-warranty-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 28px;
 }
 
-/* --- Kart --- */
+/* --- Kart: Yeni Tasarım --- */
 .mgps-warranty-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-    padding: 36px 28px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 40px 32px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
     transition: transform var(--mgps-transition),
                 background var(--mgps-transition),
-                border-color var(--mgps-transition);
+                border-color var(--mgps-transition),
+                box-shadow var(--mgps-transition);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Üst dekoratif glow */
+.mgps-warranty-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--mgps-gold), transparent);
+    border-radius: 0 0 4px 4px;
+    opacity: 0;
+    transition: opacity var(--mgps-transition);
 }
 
 .mgps-warranty-card:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(212, 175, 55, 0.15);
+    transform: translateY(-6px);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border-color: rgba(212, 175, 55, 0.2);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3),
+                0 0 32px rgba(212, 175, 55, 0.05);
 }
 
-/* --- İkon --- */
+.mgps-warranty-card:hover::before {
+    opacity: 1;
+}
+
+/* --- İkon: Daha Büyük --- */
 .mgps-warranty-icon {
-    width: 56px;
-    height: 56px;
+    width: 72px;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
-    background: rgba(212, 175, 55, 0.1);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0.06) 100%);
     color: var(--mgps-gold);
     transition: background var(--mgps-transition),
                 transform var(--mgps-transition);
 }
 
+.mgps-warranty-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
 .mgps-warranty-card:hover .mgps-warranty-icon {
-    background: rgba(212, 175, 55, 0.15);
-    transform: scale(1.05);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
+    transform: scale(1.08);
 }
 
 /* --- Başlık --- */
 .mgps-warranty-title {
     font-family: var(--mgps-font-display);
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--mgps-text-light);
     letter-spacing: -0.01em;
@@ -87,13 +128,17 @@
 @media (max-width: 1024px) {
     .mgps-warranty-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 24px;
+    }
+
+    .mgps-warranty-card {
+        padding: 36px 28px;
     }
 }
 
 @media (max-width: 768px) {
     .mgps-warranty .mgps-warranty-header {
-        margin-bottom: 36px;
+        margin: 0 auto 40px;
     }
 
     .mgps-warranty-grid {
@@ -102,18 +147,20 @@
     }
 
     .mgps-warranty-card {
-        padding: 28px 24px;
-        gap: 12px;
+        padding: 32px 24px;
+        border-radius: 16px;
+        gap: 16px;
     }
 
     .mgps-warranty-icon {
-        width: 48px;
-        height: 48px;
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
     }
 
     .mgps-warranty-icon svg {
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
     }
 
     .mgps-warranty-title {

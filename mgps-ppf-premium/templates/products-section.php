@@ -24,7 +24,7 @@
             <!-- Protecta Philic -->
             <div class="mgps-product-card" data-accent="default">
                 <div class="mgps-product-img">
-                    <div class="mgps-product-img-placeholder"></div>
+                    <img src="http://mgpolishing.local/wp-content/uploads/2026/03/darkgreytrans-scaled-1.webp" alt="Protecta Philic PPF" class="mgps-product-img-real" />
                     <span class="mgps-product-badge">MG|PS</span>
                 </div>
                 <div class="mgps-product-body">
@@ -62,7 +62,7 @@
             <!-- Fortified Philic -->
             <div class="mgps-product-card" data-accent="default">
                 <div class="mgps-product-img">
-                    <div class="mgps-product-img-placeholder"></div>
+                    <img src="http://mgpolishing.local/wp-content/uploads/2026/03/darkgreytrans-scaled-1.webp" alt="Fortified Philic PPF" class="mgps-product-img-real" />
                     <span class="mgps-product-badge">MG|PS</span>
                 </div>
                 <div class="mgps-product-body">
@@ -100,7 +100,7 @@
             <!-- Expand Phobic -->
             <div class="mgps-product-card" data-accent="default">
                 <div class="mgps-product-img">
-                    <div class="mgps-product-img-placeholder"></div>
+                    <img src="http://mgpolishing.local/wp-content/uploads/2026/03/darkgreytrans-scaled-1.webp" alt="Expand Phobic PPF" class="mgps-product-img-real" />
                     <span class="mgps-product-badge">MG|PS</span>
                 </div>
                 <div class="mgps-product-body">
@@ -138,7 +138,7 @@
             <!-- Exalted Phobic -->
             <div class="mgps-product-card" data-accent="default">
                 <div class="mgps-product-img">
-                    <div class="mgps-product-img-placeholder"></div>
+                    <img src="http://mgpolishing.local/wp-content/uploads/2026/03/darkgreytrans-scaled-1.webp" alt="Exalted Phobic PPF" class="mgps-product-img-real" />
                     <span class="mgps-product-badge">MG|PS</span>
                 </div>
                 <div class="mgps-product-body">
@@ -176,7 +176,7 @@
             <!-- Reinforced Phobic -->
             <div class="mgps-product-card" data-accent="default">
                 <div class="mgps-product-img">
-                    <div class="mgps-product-img-placeholder"></div>
+                    <img src="http://mgpolishing.local/wp-content/uploads/2026/03/darkgreytrans-scaled-1.webp" alt="Reinforced Phobic PPF" class="mgps-product-img-real" />
                     <span class="mgps-product-badge">MG|PS</span>
                 </div>
                 <div class="mgps-product-body">
@@ -237,7 +237,7 @@
         <!-- Tek ürün: Geniş asimetrik layout -->
         <div class="mgps-product-single">
             <div class="mgps-product-single-img">
-                <div class="mgps-product-img-placeholder mgps-product-img-placeholder--lg"></div>
+                <img src="http://mgpolishing.local/wp-content/uploads/2026/03/darkgreytrans-scaled-1.webp" alt="Satinato Phobic PPF" class="mgps-product-img-real mgps-product-img-real--lg" />
                 <span class="mgps-product-badge">MG|PS</span>
             </div>
             <div class="mgps-product-single-body">
@@ -297,7 +297,7 @@
         <!-- Tek ürün: Geniş asimetrik layout -->
         <div class="mgps-product-single">
             <div class="mgps-product-single-img">
-                <div class="mgps-product-img-placeholder mgps-product-img-placeholder--lg"></div>
+                <img src="http://mgpolishing.local/wp-content/uploads/2026/03/darkgreytrans-scaled-1.webp" alt="Color Phobic PPF" class="mgps-product-img-real mgps-product-img-real--lg" />
                 <span class="mgps-product-badge">MG|PS</span>
             </div>
             <div class="mgps-product-single-body">
@@ -359,23 +359,26 @@
      GRUP D: CAM FİLMİ GRUBU (4 seri, tablo)
      Aksan: Orange (#FF8C00)
      ═══════════════════════════════════════ -->
-<section class="mgps-section mgps-section-dark mgps-products mgps-products--orange" id="cam-filmi">
+<section class="mgps-section mgps-section-dark mgps-products mgps-products--orange mgps-section--cam-gradient" id="cam-filmi">
     <div class="mgps-container">
 
-        <!-- Grup Header -->
-        <div class="mgps-products-header">
-            <span class="mgps-label" style="color: var(--mgps-orange);">MG PS CAM FİLMİ SERİSİ</span>
-            <h2 class="mgps-group-title" style="color: var(--mgps-text-light);">CAM FİLMİ GRUBU</h2>
-            <p class="mgps-group-subtitle" style="color: var(--mgps-text-muted);">Optik Netlik, Yüksek Performans</p>
-            <hr class="mgps-divider-accent mgps-divider--orange" />
-            <p class="mgps-group-desc" style="color: var(--mgps-text-muted);">
-                MG PS Cam filmleri; 4 farklı ürün serisi, optik netliği, yüksek güneş enerjisi ve ısı reddi, %99'a varan UV koruması ve parlama azaltma özellikleri ile araç camlarında 10 yıla varan dayanım sunar.
-            </p>
-        </div>
+        <!-- 2 Sütunlu Layout: Sol (metin+tablo) + Sağ (görsel) -->
+        <div class="mgps-cam-layout">
+            <div class="mgps-cam-content">
+                <!-- Grup Header -->
+                <div class="mgps-products-header">
+                    <span class="mgps-label" style="color: var(--mgps-orange);">MG PS CAM FİLMİ SERİSİ</span>
+                    <h2 class="mgps-group-title" style="color: var(--mgps-text-light);">CAM FİLMİ GRUBU</h2>
+                    <p class="mgps-group-subtitle" style="color: var(--mgps-text-muted);">Optik Netlik, Yüksek Performans</p>
+                    <hr class="mgps-divider-accent mgps-divider--orange" />
+                    <p class="mgps-group-desc" style="color: var(--mgps-text-muted);">
+                        MG PS Cam filmleri; 4 farklı ürün serisi, optik netliği, yüksek güneş enerjisi ve ısı reddi, %99'a varan UV koruması ve parlama azaltma özellikleri ile araç camlarında 10 yıla varan dayanım sunar.
+                    </p>
+                </div>
 
-        <!-- Cam Filmi Tablo -->
-        <div class="mgps-film-table-wrap">
-            <table class="mgps-film-table">
+                <!-- Cam Filmi Tablo -->
+                <div class="mgps-film-table-wrap">
+                    <table class="mgps-film-table">
                 <thead>
                     <tr>
                         <th>ÜRÜN</th>
@@ -425,7 +428,16 @@
                         <td>58</td>
                     </tr>
                 </tbody>
-            </table>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Sağ: Logo Görseli -->
+            <div class="mgps-cam-visual">
+                <div class="mgps-cam-img-placeholder">
+                    <img src="http://mgpolishing.local/wp-content/uploads/2026/03/siyah-yatay.webp" alt="MG PS Logo" class="mgps-cam-logo-img" />
+                </div>
+            </div>
         </div>
 
     </div>

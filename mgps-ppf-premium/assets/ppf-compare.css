@@ -13,7 +13,7 @@
 .mgps-compare-table-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    border-radius: 12px;
+    border-radius: 16px;
     background: var(--mgps-white);
     box-shadow: var(--mgps-shadow-sm);
 }

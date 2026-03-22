@@ -126,9 +126,9 @@
     color: var(--mgps-text-muted);
 }
 
-/* Grup başlığı: Space Grotesk display */
+/* Grup başlığı: ethnocentric (marka fontu) */
 .mgps-group-title {
-    font-family: var(--mgps-font-display);
+    font-family: var(--mgps-font-heading);
     font-size: 28px;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -263,7 +263,7 @@
 /* --- Cards (DESIGN.MD: No dividers, tonal layering) --- */
 .mgps-card {
     background: var(--mgps-white);
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     transition: transform var(--mgps-transition),
                 box-shadow var(--mgps-transition);

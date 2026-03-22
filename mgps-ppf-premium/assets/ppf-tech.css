@@ -262,7 +262,7 @@
     align-items: center;
     background-color: var(--mgps-dark);
     padding: 40px 48px;
-    border-radius: 12px;
+    border-radius: 16px;
     gap: 24px;
 }
 
@@ -353,38 +353,36 @@
         margin-bottom: 48px;
     }
 
+    /* Layer stack: perspektif kaldırılıp dikey liste yapılıyor */
     .mgps-tech-visual {
-        min-height: 280px;
+        min-height: auto;
     }
 
     .mgps-layer-stack {
-        width: 260px;
-        height: 300px;
+        perspective: none;
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .mgps-layer {
-        width: 230px;
-        height: 48px;
+        position: relative;
+        width: 100%;
+        height: 52px;
+        transform: none !important;
+        border-radius: 10px;
+    }
+
+    .mgps-layer-stack:hover .mgps-layer {
+        transform: none !important;
     }
 
     .mgps-layer-label {
-        font-size: 10px;
-    }
-
-    .mgps-layer--top {
-        transform: rotateX(-18deg) rotateY(8deg) translateZ(65px);
-    }
-
-    .mgps-layer--base {
-        transform: rotateX(-18deg) rotateY(8deg) translateZ(25px);
-    }
-
-    .mgps-layer--adhesive {
-        transform: rotateX(-18deg) rotateY(8deg) translateZ(-25px);
-    }
-
-    .mgps-layer--liner {
-        transform: rotateX(-18deg) rotateY(8deg) translateZ(-65px);
+        font-size: 11px;
+        letter-spacing: 0.12em;
     }
 
     .mgps-tech-features {
@@ -404,14 +402,36 @@
         font-size: 13px;
     }
 
+    /* 9'lu spec grid: mobilde yatay kaydırmalı kompakt tasarım */
     .mgps-tech-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         gap: 12px;
         margin-bottom: 40px;
+        padding-bottom: 12px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .mgps-tech-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .mgps-tech-grid::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+    }
+
+    .mgps-tech-grid::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
     }
 
     .mgps-spec-box {
-        padding: 20px;
+        min-width: 160px;
+        flex-shrink: 0;
+        padding: 20px 18px;
+        scroll-snap-align: start;
     }
 
     .mgps-spec-value {
@@ -434,29 +454,20 @@
 /* Small mobile: <= 480px */
 @media (max-width: 480px) {
     .mgps-layer-stack {
-        width: 220px;
-        height: 260px;
+        max-width: 280px;
     }
 
     .mgps-layer {
-        width: 200px;
-        height: 42px;
+        height: 46px;
     }
 
-    .mgps-layer--top {
-        transform: rotateX(-16deg) rotateY(6deg) translateZ(55px);
+    .mgps-spec-box {
+        min-width: 145px;
+        padding: 18px 16px;
     }
 
-    .mgps-layer--base {
-        transform: rotateX(-16deg) rotateY(6deg) translateZ(21px);
-    }
-
-    .mgps-layer--adhesive {
-        transform: rotateX(-16deg) rotateY(6deg) translateZ(-21px);
-    }
-
-    .mgps-layer--liner {
-        transform: rotateX(-16deg) rotateY(6deg) translateZ(-55px);
+    .mgps-spec-value {
+        font-size: 16px;
     }
 
     .mgps-tech-icons {

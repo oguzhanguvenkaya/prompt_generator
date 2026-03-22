@@ -21,7 +21,7 @@
 /* --- Ana Görsel --- */
 .mgps-gallery-main {
     position: relative;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
     aspect-ratio: 4 / 3;
@@ -90,7 +90,7 @@
 
 .mgps-gallery-thumb {
     position: relative;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
     aspect-ratio: 1 / 1;

@@ -18,7 +18,7 @@
 /* --- Kart: Tonal layering (No-Line Rule) --- */
 .mgps-why-card {
     background: var(--mgps-white);
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 36px 28px;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 14px;
     background: rgba(230, 0, 73, 0.06);
     color: var(--mgps-accent-solid);
     transition: background var(--mgps-transition),

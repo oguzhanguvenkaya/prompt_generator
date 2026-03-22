@@ -78,10 +78,38 @@
     gap: 24px;
 }
 
+/* --- Ürün Görsel (gerçek img) --- */
+.mgps-product-img-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mgps-product-img-real--lg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Cam filmi logo görseli */
+.mgps-cam-logo-img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: opacity var(--mgps-transition);
+}
+
+.mgps-cam-img-placeholder:hover .mgps-cam-logo-img {
+    opacity: 1;
+}
+
 /* --- Ürün Kartı --- */
-.mgps-product-card {
-    background: var(--mgps-white);
-    border-radius: 12px;
+.mgps-spec-box {
+    background-color: var(--mgps-dark);
+    border-radius: 14px;
     overflow: hidden;
     transition: transform var(--mgps-transition),
                 box-shadow var(--mgps-transition);
@@ -217,7 +245,7 @@
     gap: 40px;
     align-items: center;
     background: var(--mgps-white);
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -297,17 +325,61 @@
 }
 
 /* ========================================
-   Cam Filmi Tablo (Koyu Arka Plan)
+   Cam Filmi Tablo (Gradient Arka Plan)
    ======================================== */
 
-.mgps-section-dark {
-    background: var(--mgps-dark);
+/* Cam filmi gradient arka plan */
+.mgps-section--cam-gradient {
+    background: linear-gradient(145deg, #1e2128 0%, #2a2d35 35%, #1f2229 65%, #181b1f 100%) !important;
+}
+
+/* 2 Sütunlu Layout: Sol (metin+tablo) + Sağ (görsel) */
+.mgps-cam-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 48px;
+    align-items: start;
+}
+
+.mgps-cam-content {
+    min-width: 0;
+}
+
+.mgps-cam-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 120px;
+}
+
+.mgps-cam-img-placeholder {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    max-height: 420px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mgps-cam-img-label {
+    font-family: var(--mgps-font-display);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .mgps-film-table-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 
 .mgps-film-table {
@@ -315,7 +387,7 @@
     border-collapse: separate;
     border-spacing: 0;
     font-family: var(--mgps-font-body);
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
 }
 
@@ -435,10 +507,26 @@
         grid-template-columns: 1fr;
     }
 
+    /* Cam Filmi: Mobilde tek sütun */
+    .mgps-cam-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .mgps-cam-visual {
+        position: static;
+        order: -1;
+    }
+
+    .mgps-cam-img-placeholder {
+        aspect-ratio: 16 / 9;
+        max-height: 200px;
+    }
+
     /* Cam Filmi Tablo: Yatay scroll */
     .mgps-film-table-wrap {
-        margin: 0 -20px;
-        padding: 0 20px;
+        margin: 0 -16px;
+        padding: 0 16px;
     }
 
     .mgps-film-table thead th,
