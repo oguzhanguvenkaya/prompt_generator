@@ -1,0 +1,367 @@
+/* ========================================
+   MGPS PPF Premium — Ortak Stiller v2.0
+   Design System: "The Kinetic Atelier"
+   ======================================== */
+
+/* --- Design Tokens --- */
+:root {
+    /* Arka plan katmanları (Tonal Architecture) */
+    --mgps-white:       #FFFFFF;
+    --mgps-light-grey:  #F8F9FA;
+    --mgps-surface-dim: #1A1D21;
+    --mgps-dark:        #111316;
+
+    /* Metin */
+    --mgps-text-primary:   #1A1A1A;
+    --mgps-text-secondary: #666666;
+    --mgps-text-light:     #FFFFFF;
+    --mgps-text-muted:     rgba(255, 255, 255, 0.6);
+    --mgps-silver:         #94A3B8;
+
+    /* Vurgu */
+    --mgps-accent:         linear-gradient(90deg, #E60049, #FF4D79);
+    --mgps-accent-solid:   #E60049;
+    --mgps-accent-hover:   #FF4D79;
+    --mgps-gold:           #FFD700;
+
+    /* Ghost Border (DESIGN.MD: outline-variant 15% opacity) */
+    --mgps-ghost-border:       rgba(148, 163, 184, 0.15);
+    --mgps-ghost-border-light: rgba(26, 26, 26, 0.08);
+
+    /* Aksan renkleri (grup bazlı) */
+    --mgps-cyan:   #00BCD4;
+    --mgps-amber:  #F5B82E;
+    --mgps-orange: #FF8C00;
+
+    /* Tipografi */
+    --mgps-font-heading: 'ethnocentric', sans-serif;
+    --mgps-font-display: 'Space Grotesk', sans-serif;
+    --mgps-font-body:    'Manrope', sans-serif;
+
+    /* Layout */
+    --mgps-max-width:       1400px;
+    --mgps-section-padding: 100px 0;
+    --mgps-container-px:    24px;
+
+    /* Geçişler */
+    --mgps-transition:      0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --mgps-transition-slow: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Gölgeler (DESIGN.MD: Tinted, 5% opacity, 32px+ blur) */
+    --mgps-shadow-sm:  0 2px 16px rgba(17, 19, 22, 0.04);
+    --mgps-shadow-md:  0 4px 32px rgba(17, 19, 22, 0.06);
+    --mgps-shadow-lg:  0 8px 48px rgba(17, 19, 22, 0.08);
+    --mgps-shadow-glow: 0 0 24px rgba(230, 0, 73, 0.3);
+}
+
+/* --- Reset (scoped) --- */
+.mgps-section *,
+.mgps-section *::before,
+.mgps-section *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Section Variants --- */
+.mgps-section {
+    padding: var(--mgps-section-padding);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mgps-section-light {
+    background-color: var(--mgps-white);
+    color: var(--mgps-text-primary);
+}
+
+.mgps-section-grey {
+    background-color: var(--mgps-light-grey);
+    color: var(--mgps-text-primary);
+}
+
+.mgps-section-dark {
+    background-color: var(--mgps-dark);
+    color: var(--mgps-text-light);
+}
+
+/* Tonal geçiş: bölümler arası yumuşak sınır (No-Line Rule) */
+.mgps-section-light + .mgps-section-grey,
+.mgps-section-grey + .mgps-section-light {
+    /* Arka plan renk değişimi yeterli, ek border yok */
+}
+
+/* --- Container --- */
+.mgps-container {
+    max-width: var(--mgps-max-width);
+    margin: 0 auto;
+    padding: 0 var(--mgps-container-px);
+}
+
+/* --- Typography --- */
+
+/* Ana başlık: ethnocentric (marka fontu) */
+.mgps-heading {
+    font-family: 'ethnocentric', sans-serif !important;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+/* Alt başlık: Manrope */
+.mgps-subheading {
+    font-family: var(--mgps-font-body);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--mgps-text-secondary);
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+
+.mgps-section-dark .mgps-subheading {
+    color: var(--mgps-text-muted);
+}
+
+/* Grup başlığı: Space Grotesk display */
+.mgps-group-title {
+    font-family: var(--mgps-font-display);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+/* Grup alt başlık */
+.mgps-group-subtitle {
+    font-family: var(--mgps-font-body);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mgps-text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Grup açıklama */
+.mgps-group-desc {
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--mgps-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 720px;
+}
+
+/* Etiket (DESIGN.MD: label-sm, all-caps, 0.1em tracking) */
+.mgps-label {
+    font-family: var(--mgps-font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mgps-text-secondary);
+}
+
+.mgps-section-dark .mgps-label {
+    color: var(--mgps-silver);
+}
+
+/* Metin yardımcıları */
+.mgps-text-center { text-align: center; }
+.mgps-text-left   { text-align: left; }
+
+/* --- Stars --- */
+.mgps-stars {
+    color: var(--mgps-gold);
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.mgps-stars-sm {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* --- Buttons --- */
+
+/* Primary: Gradient CTA (DESIGN.MD: md rounding, liquid gold effect) */
+.mgps-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 40px;
+    background: var(--mgps-accent);
+    color: var(--mgps-text-light);
+    font-family: var(--mgps-font-display);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: box-shadow var(--mgps-transition),
+                transform var(--mgps-transition);
+    text-decoration: none;
+    line-height: 1;
+}
+
+.mgps-btn:hover {
+    box-shadow: var(--mgps-shadow-glow);
+    transform: translateY(-1px);
+}
+
+.mgps-btn:active {
+    transform: translateY(0);
+}
+
+/* Secondary: Ghost button (DESIGN.MD: transparent + ghost border) */
+.mgps-btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 40px;
+    background: transparent;
+    color: var(--mgps-text-primary);
+    font-family: var(--mgps-font-display);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--mgps-ghost-border-light);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background var(--mgps-transition),
+                border-color var(--mgps-transition);
+    text-decoration: none;
+    line-height: 1;
+}
+
+.mgps-btn-ghost:hover {
+    background: rgba(26, 26, 26, 0.04);
+    border-color: rgba(26, 26, 26, 0.2);
+}
+
+.mgps-section-dark .mgps-btn-ghost {
+    color: var(--mgps-text-light);
+    border-color: var(--mgps-ghost-border);
+}
+
+.mgps-section-dark .mgps-btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* --- Cards (DESIGN.MD: No dividers, tonal layering) --- */
+.mgps-card {
+    background: var(--mgps-white);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform var(--mgps-transition),
+                box-shadow var(--mgps-transition);
+}
+
+.mgps-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--mgps-shadow-lg);
+}
+
+.mgps-section-grey .mgps-card {
+    background: var(--mgps-white);
+    box-shadow: var(--mgps-shadow-sm);
+}
+
+/* --- Inputs (DESIGN.MD: Underline-only, gold focus) --- */
+.mgps-input {
+    width: 100%;
+    padding: 14px 0;
+    font-family: var(--mgps-font-body);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mgps-text-light);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--mgps-ghost-border);
+    outline: none;
+    transition: border-color var(--mgps-transition);
+}
+
+.mgps-input::placeholder {
+    color: var(--mgps-silver);
+    opacity: 0.6;
+}
+
+.mgps-input:focus {
+    border-bottom: 2px solid var(--mgps-accent-solid);
+}
+
+.mgps-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* --- Ayırıcı: Gradient accent çizgi (border yerine) --- */
+.mgps-divider-accent {
+    width: 48px;
+    height: 2px;
+    background: var(--mgps-accent);
+    border: none;
+    border-radius: 1px;
+    margin: 16px 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .mgps-heading {
+        font-size: 30px;
+    }
+    .mgps-group-title {
+        font-size: 24px;
+    }
+    :root {
+        --mgps-section-padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .mgps-heading {
+        font-size: 24px;
+    }
+    .mgps-subheading {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    .mgps-group-title {
+        font-size: 22px;
+    }
+    .mgps-group-desc {
+        font-size: 13px;
+        margin-bottom: 28px;
+    }
+    :root {
+        --mgps-section-padding: 60px 0;
+        --mgps-container-px: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mgps-heading {
+        font-size: 20px;
+    }
+    .mgps-group-title {
+        font-size: 20px;
+    }
+    .mgps-btn,
+    .mgps-btn-ghost {
+        padding: 12px 28px;
+        font-size: 13px;
+    }
+}

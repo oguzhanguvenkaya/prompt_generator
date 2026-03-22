@@ -1,0 +1,164 @@
+/* ========================================
+   MGPS PPF FAQ Section
+   v2.0 — DESIGN.MD Uyumlu
+   ======================================== */
+
+/* --- Header --- */
+.mgps-faq .mgps-faq-header {
+    max-width: 640px;
+    margin-bottom: 48px;
+}
+
+/* --- Accordion List --- */
+.mgps-faq-list {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* --- Accordion Item --- */
+.mgps-faq-item {
+    background: var(--mgps-white);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow var(--mgps-transition);
+}
+
+.mgps-faq-item:hover {
+    box-shadow: var(--mgps-shadow-sm);
+}
+
+/* --- Soru Butonu --- */
+.mgps-faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background var(--mgps-transition);
+}
+
+.mgps-faq-question:hover {
+    background: rgba(0, 0, 0, 0.015);
+}
+
+.mgps-faq-question:focus-visible {
+    outline: 2px solid var(--mgps-accent-solid);
+    outline-offset: -2px;
+    border-radius: 12px;
+}
+
+.mgps-faq-q-text {
+    font-family: var(--mgps-font-display);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mgps-text-primary);
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+/* --- Chevron --- */
+.mgps-faq-chevron {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--mgps-surface);
+    color: var(--mgps-text-secondary);
+    transition: transform 0.3s ease,
+                background var(--mgps-transition),
+                color var(--mgps-transition);
+}
+
+/* --- Açık Durum --- */
+.mgps-faq-item.mgps-faq-item--open .mgps-faq-chevron {
+    transform: rotate(180deg);
+    background: var(--mgps-accent-solid);
+    color: white;
+}
+
+.mgps-faq-item.mgps-faq-item--open .mgps-faq-q-text {
+    color: var(--mgps-accent-solid);
+}
+
+/* --- Cevap --- */
+.mgps-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease,
+                padding 0.35s ease;
+    padding: 0 24px;
+}
+
+.mgps-faq-item.mgps-faq-item--open .mgps-faq-answer {
+    max-height: 300px;
+    padding: 0 24px 24px;
+}
+
+.mgps-faq-answer p {
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--mgps-text-secondary);
+    margin: 0;
+}
+
+.mgps-faq-answer strong {
+    color: var(--mgps-text-primary);
+    font-weight: 600;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 768px) {
+    .mgps-faq .mgps-faq-header {
+        margin-bottom: 32px;
+    }
+
+    .mgps-faq-list {
+        gap: 8px;
+    }
+
+    .mgps-faq-question {
+        padding: 16px 20px;
+        gap: 12px;
+    }
+
+    .mgps-faq-q-text {
+        font-size: 14px;
+    }
+
+    .mgps-faq-chevron {
+        width: 28px;
+        height: 28px;
+    }
+
+    .mgps-faq-chevron svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .mgps-faq-answer {
+        padding: 0 20px;
+    }
+
+    .mgps-faq-item.mgps-faq-item--open .mgps-faq-answer {
+        padding: 0 20px 20px;
+    }
+
+    .mgps-faq-answer p {
+        font-size: 13px;
+    }
+}

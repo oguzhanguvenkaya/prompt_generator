@@ -1,0 +1,466 @@
+/* ========================================
+   MGPS PPF Tech Section — ÜRETİM TEKNOLOJİSİ VE ALTYAPI
+   v2.0 — DESIGN.MD Uyumlu
+   ======================================== */
+
+/* --- Header --- */
+.mgps-tech .mgps-tech-header {
+    margin-bottom: 64px;
+}
+
+.mgps-tech .mgps-text-center {
+    text-align: center;
+}
+
+/* --- Bölüm 1: 2 Sütunlu Intro --- */
+.mgps-tech-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/* Sol Sütun — Katmanlı PPF İllüstrasyon */
+.mgps-tech-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    position: relative;
+}
+
+.mgps-layer-stack {
+    perspective: 900px;
+    position: relative;
+    width: 380px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mgps-layer {
+    position: absolute;
+    width: 320px;
+    height: 64px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(10deg);
+    transition: transform var(--mgps-transition-slow),
+                box-shadow var(--mgps-transition-slow);
+}
+
+.mgps-layer-label {
+    font-family: var(--mgps-font-display);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    user-select: none;
+}
+
+/* Katman renkleri ve z-derinlikleri */
+.mgps-layer--top {
+    background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+    box-shadow:
+        0 4px 32px rgba(17, 19, 22, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(87px);
+    z-index: 4;
+}
+
+.mgps-layer--base {
+    background: linear-gradient(135deg, #333333 0%, #444444 100%);
+    box-shadow:
+        0 4px 32px rgba(17, 19, 22, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(39px);
+    z-index: 3;
+}
+
+.mgps-layer--adhesive {
+    background: linear-gradient(135deg, #555555 0%, #666666 100%);
+    box-shadow:
+        0 4px 32px rgba(17, 19, 22, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(-39px);
+    z-index: 2;
+}
+
+.mgps-layer--liner {
+    background: linear-gradient(135deg, #888888 0%, #999999 100%);
+    box-shadow:
+        0 4px 32px rgba(17, 19, 22, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(-87px);
+    z-index: 1;
+}
+
+/* Hover efekti — katmanlar ayrışır */
+.mgps-layer-stack:hover .mgps-layer--top {
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(111px);
+    box-shadow:
+        0 8px 48px rgba(17, 19, 22, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.mgps-layer-stack:hover .mgps-layer--base {
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(47px);
+}
+
+.mgps-layer-stack:hover .mgps-layer--adhesive {
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(-47px);
+}
+
+.mgps-layer-stack:hover .mgps-layer--liner {
+    transform: rotateX(-20deg) rotateY(10deg) translateZ(-111px);
+}
+
+/* Accent çizgi — illüstrasyon altı */
+.mgps-tech-visual::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: var(--mgps-accent);
+    border-radius: 1px;
+    opacity: 0.5;
+}
+
+/* Sağ Sütun — Özellikler
+   DÜZELTME: border-left kaldırıldı → Tonal layering ile değiştirildi (No-Line Rule) */
+.mgps-tech-features {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mgps-tech-feat {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 24px;
+    border-radius: 10px;
+    background: rgba(17, 19, 22, 0.03);
+    transition: background var(--mgps-transition),
+                box-shadow var(--mgps-transition);
+}
+
+.mgps-tech-feat:hover {
+    background: rgba(17, 19, 22, 0.06);
+    box-shadow: var(--mgps-shadow-sm);
+}
+
+.mgps-tech-feat-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mgps-tech-feat-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.mgps-tech-feat-content {
+    flex: 1;
+}
+
+.mgps-tech-feat-title {
+    font-family: var(--mgps-font-display);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--mgps-text-primary);
+    margin: 0 0 6px 0;
+    letter-spacing: -0.01em;
+}
+
+.mgps-tech-feat-desc {
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--mgps-text-secondary);
+    margin: 0;
+}
+
+/* --- Bölüm 2: 3x3 Teknik Spec Grid --- */
+.mgps-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.mgps-spec-box {
+    background-color: var(--mgps-dark);
+    border-radius: 8px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--mgps-transition),
+                box-shadow var(--mgps-transition);
+}
+
+/* Üst accent çizgi — bu border değil, dekoratif gradient (kabul edilebilir) */
+.mgps-spec-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--mgps-accent);
+    border-radius: 8px 8px 0 0;
+}
+
+.mgps-spec-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 48px rgba(17, 19, 22, 0.15);
+}
+
+.mgps-spec-label {
+    font-family: var(--mgps-font-body);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--mgps-accent-solid);
+}
+
+.mgps-spec-value {
+    font-family: var(--mgps-font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--mgps-text-light);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+/* --- Bölüm 3: 4 İkon Satırı --- */
+.mgps-tech-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mgps-dark);
+    padding: 40px 48px;
+    border-radius: 12px;
+    gap: 24px;
+}
+
+.mgps-tech-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+    flex: 1;
+}
+
+.mgps-tech-icon-svg {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color var(--mgps-transition),
+                transform var(--mgps-transition);
+}
+
+.mgps-tech-icon-svg img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.mgps-tech-icon-item:hover .mgps-tech-icon-svg {
+    color: var(--mgps-accent-solid);
+    transform: translateY(-2px);
+}
+
+.mgps-tech-icon-label {
+    font-family: 'ethnocentric', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--mgps-transition);
+}
+
+.mgps-tech-icon-item:hover .mgps-tech-icon-label {
+    color: var(--mgps-text-light);
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+/* Tablet: <= 1024px */
+@media (max-width: 1024px) {
+    .mgps-tech-intro {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .mgps-tech-visual {
+        min-height: 340px;
+        order: -1;
+    }
+
+    .mgps-tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mgps-tech-icons {
+        padding: 32px 24px;
+        gap: 16px;
+    }
+
+    .mgps-tech-icon-label {
+        font-size: 11px;
+        letter-spacing: 0.08em;
+    }
+}
+
+/* Mobile: <= 768px */
+@media (max-width: 768px) {
+    .mgps-tech .mgps-tech-header {
+        margin-bottom: 40px;
+    }
+
+    .mgps-tech-intro {
+        gap: 32px;
+        margin-bottom: 48px;
+    }
+
+    .mgps-tech-visual {
+        min-height: 280px;
+    }
+
+    .mgps-layer-stack {
+        width: 260px;
+        height: 300px;
+    }
+
+    .mgps-layer {
+        width: 230px;
+        height: 48px;
+    }
+
+    .mgps-layer-label {
+        font-size: 10px;
+    }
+
+    .mgps-layer--top {
+        transform: rotateX(-18deg) rotateY(8deg) translateZ(65px);
+    }
+
+    .mgps-layer--base {
+        transform: rotateX(-18deg) rotateY(8deg) translateZ(25px);
+    }
+
+    .mgps-layer--adhesive {
+        transform: rotateX(-18deg) rotateY(8deg) translateZ(-25px);
+    }
+
+    .mgps-layer--liner {
+        transform: rotateX(-18deg) rotateY(8deg) translateZ(-65px);
+    }
+
+    .mgps-tech-features {
+        gap: 20px;
+    }
+
+    .mgps-tech-feat {
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .mgps-tech-feat-title {
+        font-size: 15px;
+    }
+
+    .mgps-tech-feat-desc {
+        font-size: 13px;
+    }
+
+    .mgps-tech-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .mgps-spec-box {
+        padding: 20px;
+    }
+
+    .mgps-spec-value {
+        font-size: 18px;
+    }
+
+    .mgps-tech-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        padding: 32px 24px;
+    }
+
+    .mgps-tech-icon-svg img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Small mobile: <= 480px */
+@media (max-width: 480px) {
+    .mgps-layer-stack {
+        width: 220px;
+        height: 260px;
+    }
+
+    .mgps-layer {
+        width: 200px;
+        height: 42px;
+    }
+
+    .mgps-layer--top {
+        transform: rotateX(-16deg) rotateY(6deg) translateZ(55px);
+    }
+
+    .mgps-layer--base {
+        transform: rotateX(-16deg) rotateY(6deg) translateZ(21px);
+    }
+
+    .mgps-layer--adhesive {
+        transform: rotateX(-16deg) rotateY(6deg) translateZ(-21px);
+    }
+
+    .mgps-layer--liner {
+        transform: rotateX(-16deg) rotateY(6deg) translateZ(-55px);
+    }
+
+    .mgps-tech-icons {
+        padding: 24px 16px;
+        gap: 20px;
+    }
+}

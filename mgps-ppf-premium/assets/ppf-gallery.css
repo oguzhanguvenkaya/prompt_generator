@@ -1,0 +1,152 @@
+/* ========================================
+   MGPS PPF Gallery Section
+   v2.0 — DESIGN.MD Uyumlu
+   ======================================== */
+
+/* --- Header --- */
+.mgps-gallery .mgps-gallery-header {
+    max-width: 640px;
+    margin-bottom: 48px;
+}
+
+/* --- Grid: 1 büyük (sol) + 4 küçük (sağ 2x2) --- */
+.mgps-gallery-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* --- Ana Görsel --- */
+.mgps-gallery-main {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 4 / 3;
+}
+
+.mgps-gallery-main:focus-visible {
+    outline: 2px solid var(--mgps-accent-solid);
+    outline-offset: 2px;
+}
+
+/* --- Placeholder (Görsel yokken) --- */
+.mgps-gallery-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--mgps-surface) 0%, #e0e0e0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mgps-gallery-placeholder--main {
+    background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
+}
+
+.mgps-gallery-placeholder-icon {
+    color: var(--mgps-text-tertiary);
+    opacity: 0.5;
+}
+
+.mgps-gallery-placeholder-text {
+    font-family: var(--mgps-font-display);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mgps-text-tertiary);
+    opacity: 0.6;
+}
+
+/* --- Hover Overlay --- */
+.mgps-gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--mgps-transition);
+    color: white;
+}
+
+.mgps-gallery-main:hover .mgps-gallery-overlay,
+.mgps-gallery-thumb:hover .mgps-gallery-overlay {
+    opacity: 1;
+}
+
+/* --- Thumbnail Grid (2x2) --- */
+.mgps-gallery-thumbs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.mgps-gallery-thumb {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+}
+
+.mgps-gallery-thumb:focus-visible {
+    outline: 2px solid var(--mgps-accent-solid);
+    outline-offset: 2px;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .mgps-gallery-grid {
+        gap: 12px;
+    }
+
+    .mgps-gallery-thumbs {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mgps-gallery .mgps-gallery-header {
+        margin-bottom: 32px;
+    }
+
+    .mgps-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .mgps-gallery-main {
+        aspect-ratio: 16 / 10;
+    }
+
+    .mgps-gallery-thumbs {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .mgps-gallery-thumb {
+        aspect-ratio: 1 / 1;
+    }
+
+    .mgps-gallery-placeholder-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mgps-gallery-thumbs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}

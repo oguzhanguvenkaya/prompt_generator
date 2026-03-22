@@ -1,0 +1,240 @@
+/* ========================================
+   MGPS PPF Comparison Table
+   v2.0 — DESIGN.MD Uyumlu
+   ======================================== */
+
+/* --- Header --- */
+.mgps-compare .mgps-compare-header {
+    max-width: 640px;
+    margin-bottom: 48px;
+}
+
+/* --- Tablo Sarmalayıcı --- */
+.mgps-compare-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 12px;
+    background: var(--mgps-white);
+    box-shadow: var(--mgps-shadow-sm);
+}
+
+/* --- Tablo --- */
+.mgps-compare-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--mgps-font-body);
+}
+
+/* --- Thead --- */
+.mgps-compare-table thead tr {
+    background: var(--mgps-dark);
+}
+
+.mgps-compare-th-feature {
+    padding: 20px 20px;
+    text-align: left;
+    font-family: var(--mgps-font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mgps-text-muted);
+    min-width: 140px;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: var(--mgps-dark);
+}
+
+.mgps-compare-th-product {
+    padding: 20px 16px;
+    text-align: center;
+    vertical-align: bottom;
+    min-width: 110px;
+}
+
+.mgps-compare-product-name {
+    display: block;
+    font-family: var(--mgps-font-heading);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--mgps-text-light);
+    letter-spacing: 0.02em;
+    margin-bottom: 2px;
+}
+
+.mgps-compare-product-type {
+    display: block;
+    font-family: var(--mgps-font-display);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mgps-text-muted);
+}
+
+/* --- Highlight Sütun (Reinforced) --- */
+.mgps-compare-th--highlight {
+    background: rgba(230, 0, 73, 0.15) !important;
+    position: relative;
+}
+
+.mgps-compare-th--highlight::before {
+    content: 'EN POPÜLER';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--mgps-font-display);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mgps-accent-solid);
+    background: rgba(230, 0, 73, 0.2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.mgps-compare-td--highlight {
+    background: rgba(230, 0, 73, 0.04);
+    font-weight: 700 !important;
+    color: var(--mgps-text-primary) !important;
+}
+
+/* --- Tbody --- */
+.mgps-compare-table tbody td {
+    padding: 14px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mgps-text-secondary);
+    text-align: center;
+    border-bottom: 1px solid var(--mgps-ghost-border);
+    transition: background var(--mgps-transition);
+}
+
+.mgps-compare-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.mgps-compare-table tbody tr:hover td {
+    background: rgba(0, 0, 0, 0.015);
+}
+
+.mgps-compare-table tbody tr:hover .mgps-compare-td--highlight {
+    background: rgba(230, 0, 73, 0.07);
+}
+
+/* --- Feature Label (İlk sütun) --- */
+.mgps-compare-feature {
+    text-align: left !important;
+    font-family: var(--mgps-font-heading);
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mgps-text-primary) !important;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--mgps-white);
+    padding-left: 20px !important;
+}
+
+.mgps-compare-table tbody tr:hover .mgps-compare-feature {
+    background: rgba(0, 0, 0, 0.015);
+}
+
+/* --- Yıldızlar (Tablo İçi) --- */
+.mgps-compare-table .mgps-stars {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.mgps-compare-table .mgps-star-empty {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* --- Açıklama Notu --- */
+.mgps-compare-note {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: var(--mgps-white);
+    border-radius: 8px;
+    box-shadow: var(--mgps-shadow-sm);
+}
+
+.mgps-compare-note p {
+    font-family: var(--mgps-font-body);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--mgps-text-secondary);
+    margin: 0;
+}
+
+.mgps-compare-note strong {
+    color: var(--mgps-text-primary);
+    font-weight: 600;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .mgps-compare .mgps-compare-header {
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mgps-compare-table-wrap {
+        margin: 0 -20px;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .mgps-compare-th-feature {
+        min-width: 110px;
+        padding: 14px 12px;
+        font-size: 10px;
+    }
+
+    .mgps-compare-th-product {
+        padding: 14px 10px;
+        min-width: 90px;
+    }
+
+    .mgps-compare-product-name {
+        font-size: 11px;
+    }
+
+    .mgps-compare-table tbody td {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .mgps-compare-feature {
+        font-size: 10px !important;
+        padding-left: 12px !important;
+        min-width: 110px;
+    }
+
+    .mgps-compare-table .mgps-stars,
+    .mgps-compare-table .mgps-star-empty {
+        font-size: 11px;
+    }
+
+    .mgps-compare-note {
+        margin: 16px 0 0;
+    }
+
+    .mgps-compare-note p {
+        font-size: 12px;
+    }
+}

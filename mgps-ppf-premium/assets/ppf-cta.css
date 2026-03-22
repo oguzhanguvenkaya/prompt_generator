@@ -1,0 +1,226 @@
+/* ========================================
+   MGPS PPF CTA / Contact Form
+   v2.0 — DESIGN.MD Uyumlu
+   ======================================== */
+
+/* --- Wrapper: 2 Sütun --- */
+.mgps-cta-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+/* --- Sol: Bilgi --- */
+.mgps-cta-info {
+    padding-top: 8px;
+}
+
+.mgps-cta-desc {
+    font-family: var(--mgps-font-body);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--mgps-text-secondary);
+    margin: 0 0 32px 0;
+}
+
+/* --- İletişim Bilgileri --- */
+.mgps-cta-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mgps-cta-contact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--mgps-text-secondary);
+}
+
+.mgps-cta-contact-row svg {
+    flex-shrink: 0;
+    color: var(--mgps-accent-solid);
+}
+
+.mgps-cta-contact-row span {
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--mgps-text-primary);
+}
+
+/* --- Sağ: Form --- */
+.mgps-cta-form-wrap {
+    background: var(--mgps-white);
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: var(--mgps-shadow-sm);
+}
+
+/* --- Form Group --- */
+.mgps-form-group {
+    margin-bottom: 20px;
+}
+
+.mgps-form-label {
+    display: block;
+    font-family: var(--mgps-font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--mgps-text-primary);
+    margin-bottom: 8px;
+}
+
+.mgps-form-required {
+    color: var(--mgps-accent-solid);
+}
+
+/* --- Input / Textarea --- */
+.mgps-form-input {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--mgps-text-primary);
+    background: var(--mgps-surface);
+    border: 1px solid var(--mgps-ghost-border);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color var(--mgps-transition),
+                box-shadow var(--mgps-transition),
+                background var(--mgps-transition);
+    box-sizing: border-box;
+}
+
+.mgps-form-input::placeholder {
+    color: var(--mgps-text-tertiary);
+    font-weight: 400;
+}
+
+.mgps-form-input:focus {
+    border-color: var(--mgps-accent-solid);
+    box-shadow: 0 0 0 3px rgba(230, 0, 73, 0.08);
+    background: var(--mgps-white);
+}
+
+.mgps-form-input:hover:not(:focus) {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Textarea */
+.mgps-form-textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.6;
+}
+
+/* --- Validation --- */
+.mgps-form-input:invalid:not(:placeholder-shown) {
+    border-color: #DC3545;
+}
+
+/* --- Gönder Butonu --- */
+.mgps-form-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    font-family: var(--mgps-font-heading);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: white;
+    background: var(--mgps-accent-solid);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background var(--mgps-transition),
+                transform var(--mgps-transition),
+                box-shadow var(--mgps-transition);
+    margin-top: 4px;
+}
+
+.mgps-form-submit:hover {
+    background: var(--mgps-accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(230, 0, 73, 0.25);
+}
+
+.mgps-form-submit:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.mgps-form-submit:focus-visible {
+    outline: 2px solid var(--mgps-accent-solid);
+    outline-offset: 2px;
+}
+
+/* --- Başarı Mesajı --- */
+.mgps-form-success {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px;
+    background: rgba(16, 185, 129, 0.08);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.mgps-form-success svg {
+    flex-shrink: 0;
+    color: #10B981;
+    margin-top: 2px;
+}
+
+.mgps-form-success p {
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #065F46;
+    margin: 0;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .mgps-cta-wrapper {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mgps-cta-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .mgps-cta-desc {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .mgps-cta-form-wrap {
+        padding: 28px 24px;
+    }
+
+    .mgps-form-input {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .mgps-form-submit {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+    }
+}

@@ -1,0 +1,466 @@
+/* ========================================
+   MGPS PPF Products Section
+   v2.0 — DESIGN.MD Uyumlu
+   ======================================== */
+
+/* --- Aksan Renk Değişkenleri --- */
+:root {
+    --mgps-cyan: #00BCD4;
+    --mgps-amber: #F5B82E;
+    --mgps-orange: #FF8C00;
+}
+
+/* --- Grup Header --- */
+.mgps-products-header {
+    max-width: 640px;
+    margin-bottom: 56px;
+}
+
+.mgps-label {
+    display: inline-block;
+    font-family: var(--mgps-font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mgps-accent-solid);
+    margin-bottom: 12px;
+}
+
+.mgps-group-title {
+    font-family: var(--mgps-font-heading);
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--mgps-text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin: 0 0 8px 0;
+}
+
+.mgps-group-subtitle {
+    font-family: var(--mgps-font-display);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--mgps-text-secondary);
+    margin: 0 0 20px 0;
+    letter-spacing: 0.02em;
+}
+
+.mgps-divider-accent {
+    width: 48px;
+    height: 3px;
+    border: none;
+    background: var(--mgps-accent-solid);
+    margin: 0 0 20px 0;
+    border-radius: 2px;
+}
+
+.mgps-divider--cyan { background: var(--mgps-cyan); }
+.mgps-divider--amber { background: var(--mgps-amber); }
+.mgps-divider--orange { background: var(--mgps-orange); }
+
+.mgps-group-desc {
+    font-family: var(--mgps-font-body);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--mgps-text-secondary);
+    margin: 0;
+}
+
+/* ========================================
+   Ürün Kartları Grid (Parlak PPF: 5 ürün)
+   ======================================== */
+
+.mgps-product-grid--3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* --- Ürün Kartı --- */
+.mgps-product-card {
+    background: var(--mgps-white);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform var(--mgps-transition),
+                box-shadow var(--mgps-transition);
+    position: relative;
+}
+
+.mgps-section-grey .mgps-product-card {
+    background: var(--mgps-white);
+}
+
+.mgps-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--mgps-shadow-md);
+}
+
+/* --- Ürün Görseli --- */
+.mgps-product-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--mgps-surface);
+}
+
+.mgps-product-img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--mgps-surface) 0%, #e8e8e8 100%);
+}
+
+/* --- MG|PS Badge --- */
+.mgps-product-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--mgps-dark);
+    color: var(--mgps-white);
+    font-family: var(--mgps-font-heading);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 6px 10px;
+    border-radius: 6px;
+    line-height: 1;
+}
+
+/* --- Ürün Body --- */
+.mgps-product-body {
+    padding: 24px 20px 28px;
+}
+
+.mgps-product-name {
+    font-family: var(--mgps-font-heading);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--mgps-text-primary);
+    letter-spacing: -0.01em;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+}
+
+.mgps-product-series {
+    display: block;
+    font-family: var(--mgps-font-display);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mgps-text-tertiary);
+    margin-bottom: 20px;
+}
+
+/* --- Özellik Satırları --- */
+.mgps-product-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.mgps-product-spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--mgps-ghost-border);
+}
+
+.mgps-product-spec-row:last-child {
+    border-bottom: none;
+}
+
+.mgps-product-spec-label {
+    font-family: var(--mgps-font-display);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mgps-text-secondary);
+}
+
+.mgps-product-spec-value {
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--mgps-text-primary);
+}
+
+/* --- Yıldızlar --- */
+.mgps-stars {
+    color: #FFD700;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.mgps-star-empty {
+    color: #D4D4D4;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* --- Aksan Renk Varyantları (Label) --- */
+.mgps-products--cyan .mgps-label { color: var(--mgps-cyan); }
+.mgps-products--amber .mgps-label { color: var(--mgps-amber); }
+.mgps-products--orange .mgps-label { color: var(--mgps-orange); }
+
+/* ========================================
+   Tek Ürün Asimetrik Layout (Mat + Renkli)
+   ======================================== */
+
+.mgps-product-single {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: var(--mgps-white);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.mgps-section-grey .mgps-product-single {
+    background: var(--mgps-white);
+}
+
+.mgps-product-single-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.mgps-product-img-placeholder--lg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--mgps-surface) 0%, #d8d8d8 100%);
+}
+
+.mgps-product-single-body {
+    padding: 40px 40px 40px 0;
+}
+
+.mgps-product-name--lg {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.mgps-product-specs--2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+}
+
+.mgps-product-specs--2col .mgps-product-spec-row {
+    padding: 10px 0;
+}
+
+/* --- Renk Paleti (Color Phobic) --- */
+.mgps-color-palette {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--mgps-ghost-border);
+}
+
+.mgps-color-palette-label {
+    display: block;
+    font-family: var(--mgps-font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mgps-amber);
+    margin-bottom: 12px;
+}
+
+.mgps-color-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.mgps-swatch {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: transform var(--mgps-transition),
+                box-shadow var(--mgps-transition);
+    cursor: pointer;
+}
+
+.mgps-swatch:hover {
+    transform: scale(1.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   Cam Filmi Tablo (Koyu Arka Plan)
+   ======================================== */
+
+.mgps-section-dark {
+    background: var(--mgps-dark);
+}
+
+.mgps-film-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 12px;
+}
+
+.mgps-film-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--mgps-font-body);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.mgps-film-table thead th {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--mgps-orange);
+    font-family: var(--mgps-font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    white-space: nowrap;
+}
+
+.mgps-film-table tbody td {
+    padding: 18px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--mgps-text-muted);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    white-space: nowrap;
+}
+
+.mgps-film-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.mgps-film-table tbody tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.mgps-film-name {
+    font-family: var(--mgps-font-heading);
+    font-weight: 700;
+    color: var(--mgps-text-light) !important;
+    font-size: 14px !important;
+    letter-spacing: 0.02em;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+/* Tablet: <= 1024px */
+@media (max-width: 1024px) {
+    .mgps-product-grid--3col {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .mgps-product-single {
+        gap: 28px;
+    }
+
+    .mgps-product-single-body {
+        padding: 28px 28px 28px 0;
+    }
+
+    .mgps-product-name--lg {
+        font-size: 24px;
+    }
+}
+
+/* Mobile: <= 768px */
+@media (max-width: 768px) {
+    .mgps-products-header {
+        margin-bottom: 36px;
+    }
+
+    .mgps-group-title {
+        font-size: 26px;
+    }
+
+    .mgps-product-grid--3col {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .mgps-product-body {
+        padding: 20px 16px 24px;
+    }
+
+    .mgps-product-name {
+        font-size: 16px;
+    }
+
+    .mgps-product-spec-label {
+        font-size: 10px;
+    }
+
+    .mgps-product-spec-value {
+        font-size: 13px;
+    }
+
+    /* Tek ürün: stack */
+    .mgps-product-single {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .mgps-product-single-img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .mgps-product-single-body {
+        padding: 24px 20px 28px;
+    }
+
+    .mgps-product-name--lg {
+        font-size: 22px;
+    }
+
+    .mgps-product-specs--2col {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cam Filmi Tablo: Yatay scroll */
+    .mgps-film-table-wrap {
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+
+    .mgps-film-table thead th,
+    .mgps-film-table tbody td {
+        padding: 12px 14px;
+        font-size: 12px;
+    }
+
+    .mgps-swatch {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Small Mobile: <= 480px */
+@media (max-width: 480px) {
+    .mgps-product-spec-row {
+        padding: 8px 0;
+    }
+
+    .mgps-stars,
+    .mgps-star-empty {
+        font-size: 12px;
+    }
+}

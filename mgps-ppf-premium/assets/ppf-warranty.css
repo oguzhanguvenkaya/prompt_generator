@@ -1,0 +1,126 @@
+/* ========================================
+   MGPS PPF Warranty Section
+   v2.0 — DESIGN.MD Uyumlu
+   ======================================== */
+
+:root {
+    --mgps-gold: #D4AF37;
+}
+
+/* --- Header --- */
+.mgps-warranty .mgps-warranty-header {
+    max-width: 640px;
+    margin-bottom: 48px;
+}
+
+/* --- 3 Kart Grid --- */
+.mgps-warranty-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* --- Kart --- */
+.mgps-warranty-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform var(--mgps-transition),
+                background var(--mgps-transition),
+                border-color var(--mgps-transition);
+}
+
+.mgps-warranty-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(212, 175, 55, 0.15);
+}
+
+/* --- İkon --- */
+.mgps-warranty-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--mgps-gold);
+    transition: background var(--mgps-transition),
+                transform var(--mgps-transition);
+}
+
+.mgps-warranty-card:hover .mgps-warranty-icon {
+    background: rgba(212, 175, 55, 0.15);
+    transform: scale(1.05);
+}
+
+/* --- Başlık --- */
+.mgps-warranty-title {
+    font-family: var(--mgps-font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--mgps-text-light);
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* --- Açıklama --- */
+.mgps-warranty-desc {
+    font-family: var(--mgps-font-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--mgps-text-muted);
+    margin: 0;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .mgps-warranty-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mgps-warranty .mgps-warranty-header {
+        margin-bottom: 36px;
+    }
+
+    .mgps-warranty-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .mgps-warranty-card {
+        padding: 28px 24px;
+        gap: 12px;
+    }
+
+    .mgps-warranty-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .mgps-warranty-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mgps-warranty-title {
+        font-size: 16px;
+    }
+
+    .mgps-warranty-desc {
+        font-size: 13px;
+    }
+}
