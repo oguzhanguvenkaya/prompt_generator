@@ -83,40 +83,49 @@
         <!-- Bölüm 2: 3x3 Teknik Spec Grid -->
         <div class="mgps-tech-grid">
             <div class="mgps-spec-box">
-                <span class="mgps-spec-label">FİLM KALINLIĞI</span>
-                <span class="mgps-spec-value">170 – 190 μm</span>
+                <span class="mgps-spec-label">FİLM KALINLIKLARI</span>
+                <span class="mgps-spec-value">170 – 190 Mikron</span>
+                <p class="mgps-spec-desc">Yüksek kalınlık sayesinde taş darbesi ve çizilmelere karşı maksimum koruma sağlar.</p>
+            </div>
+            <div class="mgps-spec-box">
+                <span class="mgps-spec-label">GERDİRME DAYANIMI</span>
+                <span class="mgps-spec-value">21,62 Mpa</span>
+                <p class="mgps-spec-desc">Yüksek mukavemet yapısı, film deformasyonunu önler ve uzun ömürlü kullanım sunar.</p>
             </div>
             <div class="mgps-spec-box">
                 <span class="mgps-spec-label">ISI DAYANIMI</span>
-                <span class="mgps-spec-value">180 °C</span>
+                <span class="mgps-spec-value">-40°C – 120°C</span>
+                <p class="mgps-spec-desc">Ekstrem sıcaklık koşullarında bile yapısal stabiliteyi korur.</p>
             </div>
             <div class="mgps-spec-box">
-                <span class="mgps-spec-label">UZAMA ORANI</span>
-                <span class="mgps-spec-value">%180 – %250</span>
+                <span class="mgps-spec-label">FİLM ÖLÇÜLERİ</span>
+                <span class="mgps-spec-value">1.52m x 15m</span>
+                <p class="mgps-spec-desc">Profesyonel uygulamalar için optimize edilmiş standart ölçüler.</p>
             </div>
             <div class="mgps-spec-box">
-                <span class="mgps-spec-label">KENDİNİ YENİLEME</span>
-                <span class="mgps-spec-value">60 °C / 30 sn</span>
+                <span class="mgps-spec-label">PARLAKLIKI DEĞERLERİ</span>
+                <span class="mgps-spec-value">96.2 – 98.8</span>
+                <p class="mgps-spec-desc">Yüksek parlaklık seviyesi ile boya derinliğini ve estetik görünümü artırır.</p>
             </div>
             <div class="mgps-spec-box">
-                <span class="mgps-spec-label">SARARMA DİRENCİ</span>
-                <span class="mgps-spec-value">ΔE &lt; 1.5</span>
+                <span class="mgps-spec-label">KİMYASAL DAYANIM TESTİ</span>
+                <span class="mgps-spec-value">Zarar Yok</span>
+                <p class="mgps-spec-desc">Asidik ve alkali kimyasallara karşı güvenli yüzey koruma sağlar.</p>
             </div>
             <div class="mgps-spec-box">
-                <span class="mgps-spec-label">PARLAKLIKI KORUMA</span>
-                <span class="mgps-spec-value">%95+</span>
+                <span class="mgps-spec-label">GARANTİ</span>
+                <span class="mgps-spec-value">4 – 10 Sene</span>
+                <p class="mgps-spec-desc">Uzun süreli performans ve güvenilir koruma garantisi.</p>
             </div>
             <div class="mgps-spec-box">
-                <span class="mgps-spec-label">UV KORUMA</span>
-                <span class="mgps-spec-value">%99+</span>
+                <span class="mgps-spec-label">TPU ÇEŞİTİ</span>
+                <span class="mgps-spec-value">HDI+Aliphatic</span>
+                <p class="mgps-spec-desc">Sararmaya karşı dirençli, premium poliüretan film teknolojisi.</p>
             </div>
             <div class="mgps-spec-box">
-                <span class="mgps-spec-label">HİDROFOBİK YÜZEY</span>
-                <span class="mgps-spec-value">&gt;110° Temas Açısı</span>
-            </div>
-            <div class="mgps-spec-box">
-                <span class="mgps-spec-label">YAPIŞKAN TEKNOLOJİSİ</span>
-                <span class="mgps-spec-value">Akrilik PSA</span>
+                <span class="mgps-spec-label">UV TESTİ</span>
+                <span class="mgps-spec-value">6,000 Saat Geçildi</span>
+                <p class="mgps-spec-desc">Güneş kaynaklı solma ve oksidasyona karşı uzun süreli koruma sağlar.</p>
             </div>
         </div>
 
