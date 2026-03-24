@@ -1,13 +1,20 @@
 /* ========================================
    MGPS PPF Gallery Section
-   v2.2 — Elementor-Proof Responsive
+   v2.3 — Elementor-Proof + LiteSpeed Uyumlu
    ======================================== */
+
+/* --- GLOBAL: box-sizing kilidi --- */
+.mgps-gallery,
+.mgps-gallery *,
+.mgps-gallery *::before,
+.mgps-gallery *::after {
+    box-sizing: border-box !important;
+}
 
 /* --- Galeri Section — overflow kilidi --- */
 .mgps-gallery {
     overflow: hidden !important;
     max-width: 100% !important;
-    box-sizing: border-box !important;
 }
 
 /* --- Header --- */
@@ -23,17 +30,16 @@
     margin-bottom: 0;
 }
 
-/* --- Grid: 1 büyük (sol) + thumbnails (sağ) --- */
+/* --- Grid: Desktop — 1 büyük (sol) + thumbnails (sağ) --- */
 .mgps-gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
     margin-top: 48px;
     max-width: 100%;
-    box-sizing: border-box;
 }
 
-/* --- Ana Görsel --- */
+/* --- Ana Görsel: Desktop --- */
 .mgps-gallery-main {
     border-radius: 12px;
     overflow: hidden;
@@ -61,7 +67,7 @@
     outline-offset: 2px;
 }
 
-/* --- Nav Wrap (prev/next + thumbs) --- */
+/* --- Nav Wrap --- */
 .mgps-gallery-nav-wrap {
     display: contents;
 }
@@ -70,7 +76,7 @@
     display: none;
 }
 
-/* --- Thumbnail Grid --- */
+/* --- Thumbnail Grid: Desktop 3x3 --- */
 .mgps-gallery-thumbs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -156,51 +162,86 @@
 }
 
 /* ========================================
-   Responsive — Tablet (max-width: 1024px)
-   Elementor-proof: padding-bottom trick
+   Responsive — Tablet & Mobil (max-width: 1024px)
+   
+   PADDING-BOTTOM TRICK:
+   ─────────────────────
+   Container: height:0 + padding-bottom:100% = KARE
+   → padding-bottom yüzdesi PARENT GENİŞLİĞİNE göre hesaplanır
+   → width:100% olan container'da padding-bottom:100% = genişlik = yükseklik
+   
+   Img: position:absolute + inset:0 + object-fit:cover
+   → Container'ın 0 yüksekliği + padding alanını doldurur
+   → object-fit:cover kırparak kare yapar
+   
+   Bu yöntem aspect-ratio'ya BAĞIMLI DEĞİL.
+   Elementor override EDEMEZ çünkü padding-bottom
+   standart CSS box model kuralıdır.
    ======================================== */
 
 @media (max-width: 1024px) {
-    .mgps-gallery-grid {
-        grid-template-columns: 1fr !important;
-        gap: 12px !important;
+
+    .mgps-gallery .mgps-container {
+        padding: 0 16px !important;
         max-width: 100% !important;
         overflow: hidden !important;
-        box-sizing: border-box !important;
     }
 
-    /* ===== PADDING-BOTTOM TRICK =====
-       Neden: Elementor aspect-ratio'yu eziyor.
-       padding-bottom: 100% → parent genişliğinin %100'ü = kare.
-       Bu standart box model'e dayanır, Elementor override edemez.
-    */
+    /* Grid → block (tek sütun) */
+    .mgps-gallery-grid {
+        display: block !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* ===== ANA GÖRSEL — PADDING-BOTTOM TRICK ===== */
     .mgps-gallery-main {
+        display: block !important;
         width: 100% !important;
         height: 0 !important;
         padding-bottom: 100% !important;
-        min-height: auto !important;
-        aspect-ratio: auto !important;
         position: relative !important;
         overflow: hidden !important;
         border-radius: 12px !important;
-        box-sizing: border-box !important;
+        aspect-ratio: unset !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        margin-bottom: 12px !important;
+        background: #1a1a24 !important;
     }
 
-    .mgps-gallery-img {
+    /* ===== IMG — ABSOLUTE POZİSYON =====
+       img[width][height] attribute'ları tarayıcıda
+       intrinsic aspect-ratio oluşturur. Bunu ezmek için
+       aspect-ratio: unset + max-width/max-height: none
+    */
+    .mgps-gallery-main .mgps-gallery-img,
+    .mgps-gallery-main img {
         position: absolute !important;
         top: 0 !important;
         left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
         width: 100% !important;
         height: 100% !important;
+        max-width: none !important;
+        max-height: none !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
         object-fit: cover !important;
+        aspect-ratio: unset !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        inset: 0 !important;
     }
 
-    /* Nav wrap — mobilde block olarak göster */
+    /* Nav wrap — mobilde block */
     .mgps-gallery-nav-wrap {
         display: block !important;
     }
 
-    /* Prev/Next butonları gizle (thumbs yeterli) */
+    /* Prev/Next butonları gizle */
     .mgps-gallery-nav {
         display: none !important;
     }
@@ -213,9 +254,7 @@
         -webkit-overflow-scrolling: touch !important;
         gap: 8px !important;
         scrollbar-width: none !important;
-        flex: 1 !important;
         max-width: 100% !important;
-        box-sizing: border-box !important;
     }
 
     .mgps-gallery-thumbs::-webkit-scrollbar {
@@ -225,37 +264,29 @@
     .mgps-gallery-thumb {
         min-width: 80px !important;
         max-width: 80px !important;
-        aspect-ratio: 1 / 1 !important;
+        height: 80px !important;
+        aspect-ratio: unset !important;
         flex-shrink: 0 !important;
         scroll-snap-align: center !important;
-        box-sizing: border-box !important;
     }
 }
 
 /* ========================================
-   Responsive — Mobil (max-width: 768px)
+   Responsive — Küçük Mobil (max-width: 768px)
    ======================================== */
 
 @media (max-width: 768px) {
     .mgps-gallery-thumb {
         min-width: 70px !important;
         max-width: 70px !important;
+        height: 70px !important;
     }
 }
 
 /* ========================================
    Elementor Override Koruma
-   Galeri section ve parent'lar için
    ======================================== */
 
-.mgps-gallery,
-.mgps-gallery *,
-.mgps-gallery *::before,
-.mgps-gallery *::after {
-    box-sizing: border-box !important;
-}
-
-/* Elementor container'larının galeri genişliğini taşırmasını engelle */
 .elementor-shortcode .mgps-gallery,
 .elementor-widget-container .mgps-gallery,
 .e-con .mgps-gallery {
@@ -263,20 +294,12 @@
     overflow: hidden !important;
 }
 
-/* mgps-container mobil overflow koruması */
 @media (max-width: 1024px) {
-    .mgps-gallery .mgps-container {
-        max-width: 100% !important;
-        overflow: hidden !important;
-        box-sizing: border-box !important;
-    }
-
-    .mgps-gallery .mgps-gallery-grid {
+    .elementor-shortcode .mgps-gallery .mgps-gallery-main,
+    .elementor-widget-container .mgps-gallery .mgps-gallery-main,
+    .e-con .mgps-gallery .mgps-gallery-main {
         width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    .mgps-gallery .mgps-gallery-main {
-        max-width: 100% !important;
+        height: 0 !important;
+        padding-bottom: 100% !important;
     }
 }
